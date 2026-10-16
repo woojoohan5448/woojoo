@@ -54,7 +54,17 @@ export const SEGMENT_LABEL: Record<string, string> = {
 
 export const RESEARCH_STATUS_LABEL: Record<string, string> = {
   NOT_STARTED: '미착수', ENTITY_RESOLVED: '법인 식별', SOURCES_COLLECTED: '자료 수집', MODEL_ESTIMATED: '모델 추정',
-  EVIDENCE_VERIFIED: '근거 검증', QUALITY_APPROVED: '품질 승인', NEEDS_REVIEW: '검토 필요',
+  EVIDENCE_VERIFIED: 'IT지출 원문 확인', INPUTS_VERIFIED: '입력 재무항목 원문 확인(TS는 추정)', QUALITY_APPROVED: '품질 승인', NEEDS_REVIEW: '검토 필요',
+}
+
+/** What the 2026 TS actually rests on (QA-01): a verified input is not a verified IT-spending figure. */
+export const EVIDENCE_BASIS_LABEL: Record<string, string> = {
+  DIRECT_IT_DISCLOSURE: 'IT지출 공시값', RECONSTRUCTED_FINANCIALS: '재무항목 재구성 추정', INDUSTRY_AVERAGE: '산업 평균 적용 추정',
+  SCENARIO: '시나리오', CONTRACT_DIRECT_RAW: '계약 기반(RAW만)', NONE: '근거 없음',
+}
+export const SOURCE_LEVEL_LABEL: Record<string, string> = {
+  PRIMARY: '원문 확인', SECONDARY_PRESS: 'KISA 공시값 언론 인용 — 원문 대조 전', PRIMARY_INPUTS: '입력 항목 원문 확인', SECONDARY_INPUTS: '입력 항목 2차 출처',
+  BENCHMARK: '벤치마크', MIXED: '혼합', SECONDARY: '2차 출처', '-': '',
 }
 
 export const METRIC_LABEL: Record<string, string> = {

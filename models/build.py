@@ -209,7 +209,8 @@ def conf_anchor(anchor, entity_status, consistency) -> tuple[int, dict]:
     m, st, tier, fy = anchor["method"], anchor.get("fact_status"), anchor.get("tier"), anchor.get("fiscal_year")
     if m == "UNKNOWN":
         return 0, {}
-    offic = 30 if (st == "VERIFIED" and tier == 1) else 18 if tier in (1, 2) else 8
+    inp = anchor.get("input_fact_status")
+    offic = 30 if ((st == "VERIFIED" or inp == "VERIFIED") and tier == 1) else 18 if tier in (1, 2) else 8
     ent = {"CONFIRMED": 15, "PROBABLE": 10}.get(entity_status, 4)
     direct = {"DIRECT_IT_BUDGET": 20, "KISA_IT_INVESTMENT": 20, "KISA_DERIVED": 15, "KISA_SEC_SCALED": 10,
               "AUDIT_IT_COMPONENTS": 12, "EMPLOYEE_COMPARABLE": 6, "CAPACITY_MODEL": 8,
@@ -301,18 +302,20 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
                     notes=[f"앵커 방법: {anchor['method']}", f"앵커 회계연도: FY{anchor.get('fiscal_year')}"]
                     + ([anchor["definition_note"]] if anchor.get("definition_note") else []))
     raw_formula = "RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]" if not (special and t26["value"] is None) else special["formula"]
-    m26["RAW"] = rec(raw26, "ESTIMATED" if not (special and t26["value"] is None) else special.get("status", "SCENARIO"),
+    scen26 = t26.get("status") == "SCENARIO"
+    m26["RAW"] = rec(raw26, ("SCENARIO" if scen26 else "ESTIMATED") if not (special and t26["value"] is None) else special.get("status", "SCENARIO"),
                      max(5, base_conf - 15) if raw26 is not None else 0, raw_formula,
                      low=scale(t26.get("low"), r_ratio), high=scale(t26.get("high"), r_ratio),
                      inputs=[{"name": "TS_2026", "value": str(t26["value"]) if t26["value"] is not None else None, "unit": "억원"}],
                      evidence_ids=ev_anchor + ((special or {}).get("evidence_ids", []) if t26["value"] is None else []),
                      assumption_ids=["A-MIX", "C-ADDR"], notes=mix_notes)
-    m26["FPR"] = rec(fpr26, "ESTIMATED" if not (special and t26["value"] is None) else "SCENARIO",
+    m26["FPR"] = rec(fpr26, ("SCENARIO" if scen26 else "ESTIMATED") if not (special and t26["value"] is None) else "SCENARIO",
                      max(5, base_conf - 25) if fpr26 is not None else 0,
                      "FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]",
                      low=scale(t26.get("low"), f_ratio), high=scale(t26.get("high"), f_ratio),
                      inputs=[{"name": "RAW_2026", "value": str(raw26) if raw26 is not None else None, "unit": "억원"}],
-                     evidence_ids=ev_anchor, assumption_ids=["C-CAP"])
+                     evidence_ids=ev_anchor + ((special or {}).get("evidence_ids", []) if t26["value"] is None else []),
+                     assumption_ids=["C-CAP"])
 
     # Current revenue (internal only)
     cr = None
@@ -344,6 +347,7 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
         infra_inputs.append(drv)
     m31 = {}
     target_ref = None
+    ev31 = ev_anchor + ((special or {}).get("evidence_ids", []) if (special and t26["value"] is None) else [])  # QA-05
     for s in SCENARIOS:
         blk = {}
         if ts_by is not None:
@@ -371,18 +375,29 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
             conf31 = max(5, base_conf - 30) if r31 is not None else 0
             blk[f"RAW_{case}"] = rec(r31, "SCENARIO" if case == "expansion" or s != "base" else "ESTIMATED", conf31,
                                      f"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_{case}]",
-                                     evidence_ids=ev_anchor, assumption_ids=["C-ADDR", "B-BRIDGE", "B-ALLOC"])
+                                     evidence_ids=ev31, assumption_ids=["C-ADDR", "B-BRIDGE", "B-ALLOC"])
             blk[f"RAW_{case}"]["by_cat"] = r31_by
             blk[f"FPR_{case}"] = rec(f31, "SCENARIO" if case == "expansion" or s != "base" else "ESTIMATED",
                                      max(5, base_conf - 40) if f31 is not None else 0,
                                      "FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]",
-                                     evidence_ids=ev_anchor, assumption_ids=["C-CAP", "C-ADDR", "B-BRIDGE"])
+                                     evidence_ids=ev31, assumption_ids=["C-CAP", "C-ADDR", "B-BRIDGE"])
             blk[f"FPR_{case}"]["by_cat"] = f31_by
         blk["TS"] = rec(ts31, "ESTIMATED" if s == "base" else "SCENARIO", max(5, base_conf - 20) if ts31 is not None else 0,
                         "TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]",
                         evidence_ids=ev_anchor + [e for d in infra_inputs for e in d.get("evidence_ids", [])],
                         assumption_ids=["B-BRIDGE", "B-ALLOC"], inputs=[{"name": "TS_2026", "value": str(t26["value"]) if t26["value"] is not None else None}])
         blk["TS"]["by_cat"] = ts31_by
+        # QA-07: separate customer-spend growth from the assumed U+ capability uplift (2031 addressability/capture):
+        # FPR_2031 recomputed with the 2026 addressability and capture ceilings
+        if ts31_by is not None:
+            _, r_cc_by = raw_calc(ts31_by, a26)
+            f_cc, _ = fpr_calc(r_cc_by, c26)
+        else:
+            f_cc = None
+        blk["FPR_const_capability"] = rec(f_cc, "SCENARIO", max(5, base_conf - 40) if f_cc is not None else 0,
+                                          "FPR_2031(현 역량 고정) = Σ(TS_2031_i × Addressability_2026_i × Capture_2026_i) — U+ 역량 확대 가정 제외",
+                                          evidence_ids=ev31, assumption_ids=["C-ADDR", "C-CAP", "B-BRIDGE"],
+                                          notes=["FPR_2031(base) − 이 값 = 2031 접근률·포획상한 상향(U+ 경쟁력 확대 가정) 효과"])
         blk["bridge"] = br
         blk["TS_CAGR"] = rec(cagr(t26["value"], ts31), "DERIVED", blk["TS"]["confidence"], "(TS_2031/TS_2026)^(1/5) − 1", unit="%")
         blk["RAW_CAGR"] = rec(cagr(raw26, blk["RAW_base"]["value"]), "DERIVED", blk["RAW_base"]["confidence"], "(RAW_2031/RAW_2026)^(1/5) − 1", unit="%")
@@ -390,6 +405,17 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
         m31[s] = blk
         if s == "base":
             target_ref = blk
+
+    # QA-06: 2031 low/high scenarios start from the 2026 BASE TS, so they omit 2026 anchor uncertainty.
+    # Attach a combined band to the base records: scenario(low/high) × (TS_2026 low/high ÷ TS_2026 base).
+    if t26["value"] and t26.get("low") is not None and t26.get("high") is not None:
+        lo_r, hi_r = t26["low"] / t26["value"], t26["high"] / t26["value"]
+        for k in ("TS", "RAW_base", "FPR_base"):
+            lo_s, hi_s = m31["low"][k]["value"], m31["high"][k]["value"]
+            if m31["base"][k]["value"] is not None and lo_s is not None and hi_s is not None:
+                m31["base"][k]["low"], m31["base"][k]["high"] = lo_s * lo_r, hi_s * hi_r
+                m31["base"][k]["notes"] = m31["base"][k]["notes"] + [
+                    f"범위 = 2031 시나리오(low/high) × 2026 TS 불확실성({float(lo_r):.2f}~{float(hi_r):.2f}) 결합 — 2026 추정 오차가 2031로 전파됨"]
 
     # Target (Layer D)
     tgt_in = (mgmt_row or {}).get("target_revenue_2031_eok", "").strip() if mgmt_row else ""
@@ -489,7 +515,7 @@ def assign_grades(acc, ov):
     elif m26["RAW"]["value"] is not None:  # contract-vehicle / special RAW without TS
         m26["RAW"]["grade"] = m26["FPR"]["grade"] = "ESTIMATED_LOW"
     for s_, blk in acc["m"]["2031"].items():
-        for k in ("TS", "RAW_base", "RAW_expansion", "FPR_base", "FPR_expansion"):
+        for k in ("TS", "RAW_base", "RAW_expansion", "FPR_base", "FPR_expansion", "FPR_const_capability"):
             if blk[k]["value"] is not None:
                 g = m26["TS" if k == "TS" else k.split("_")[0]].get("grade") or "ESTIMATED_LOW"
                 blk[k]["grade"] = _down(g) if (s_ == "base" and k in ("TS", "RAW_base", "FPR_base")) else "ESTIMATED_LOW"
@@ -506,8 +532,12 @@ def research_status(research, model, issues_acc, override):
     if research.get("entity", {}).get("entity_status") == "UNCERTAIN":
         return "NEEDS_REVIEW"
     a = model["anchor"]
-    if a["method"] != "UNKNOWN" and a.get("fact_status") == "VERIFIED" and a.get("tier") == 1:
+    # QA-01: EVIDENCE_VERIFIED = the IT-spending figure itself was read in a primary source;
+    # INPUTS_VERIFIED = only the financial line items used to reconstruct it were (TS remains an estimate)
+    if a["method"] in ("DIRECT_IT_BUDGET", "KISA_IT_INVESTMENT") and a.get("fact_status") == "VERIFIED" and a.get("tier") == 1:
         return "EVIDENCE_VERIFIED"
+    if a["method"] != "UNKNOWN" and a.get("input_fact_status") == "VERIFIED" and a.get("tier") == 1:
+        return "INPUTS_VERIFIED"
     if a["method"] != "UNKNOWN" or model["m"]["2026"]["RAW"]["value"] is not None:
         return "MODEL_ESTIMATED"
     if research.get("facts"):
@@ -858,6 +888,11 @@ def main():
                "_competitive": (research or {}).get("competitive", []),
                "research_log": (research or {}).get("research_log", []), "source_hash": (research or {}).get("_source_hash")}
         acc_issues += validate_account(acc)
+        _mr = mgmt.get(aid) or {}
+        if (_mr.get("cr_2026_forecast_eok") or _mr.get("target_revenue_2031_eok")) and not _mr.get("_from_internal_store"):
+            acc_issues.append({"account_id": aid, "severity": "WARN", "code": "LEGACY_DIRECT_INPUT",
+                               "message": "CR/Target이 레거시 CSV(management_inputs.csv, Git 추적 파일)에서 입력됨 — 미리보기·승인 이력 없음. Excel 승인 절차로 재입력 권장",
+                               "metric": "CR", "year": 2026, "scenario": None})
         if ent.get("entity_status") in ("PROBABLE", "UNCERTAIN"):
             acc_issues.append({"account_id": aid, "severity": "WARN", "code": "ENTITY_MAPPING",
                                "message": f"법인 매핑 {ent.get('entity_status')}: {ent.get('entity_notes', '')[:200]}",
@@ -866,6 +901,9 @@ def main():
             acc_issues.append({"account_id": aid, "severity": "WARN", "code": "NOT_RESEARCHED", "message": "조사 파일 없음",
                                "metric": None, "year": None, "scenario": None})
         acc["research_status"] = research_status(research, model, acc_issues, ov)
+        from models.qa.final_audit import evidence_basis
+        b_, lvl_ = evidence_basis(acc)
+        acc["evidence_basis"] = {"basis": b_, "source_level": lvl_, "definition_mismatch": definition_mismatch}
         acc["narrative"] = narrative(row, research, model, params)
         acc["issues"] = acc_issues
         refs = set(model["anchor"].get("evidence_ids", []))

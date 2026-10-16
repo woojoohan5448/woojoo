@@ -295,7 +295,8 @@ def approve(batch_id: str, approver: str, rows: list[int] | None = None) -> dict
     applied = 0
     layers = {l: load_layer(l) for l in LAYERS}
     for it in b["rows"]:
-        if it["errors"] or (rows and it["row_id"] not in rows) or it["diff"]["type"] == "UNCHANGED":
+        # QA-I2: rows=None → all valid rows; an explicit empty list approves nothing (was: approved everything)
+        if it["errors"] or (rows is not None and it["row_id"] not in rows) or it["diff"]["type"] == "UNCHANGED":
             continue
         L = layers[it["layer"]]
         k = it["key"]
@@ -314,6 +315,8 @@ def approve(batch_id: str, approver: str, rows: list[int] | None = None) -> dict
 
 def reject(batch_id: str, approver: str) -> dict:
     b = load_batch(batch_id)
+    if b["status"] != "PENDING_REVIEW":  # QA-I1: an approved batch is already applied — reject would falsify the audit trail
+        raise ValueError(f"배치 상태 {b['status']} — 거부 불가(승인된 값은 수정 Excel 재업로드로 정정)")
     b.update({"status": "REJECTED", "rejected_by": approver, "rejected_at": datetime.now(timezone.utc).isoformat()})
     _save_batch(b)
     return b
@@ -323,12 +326,16 @@ def management_rows_for_build() -> dict:
     """Approved internal layers → per-account inputs consumed by models.build (CR, Target, sales estimates)."""
     cur = current_values()
     out: dict[str, dict] = {}
+    # QA-I3: FORECAST and ACTUAL_FULL_YEAR rows are alternative views of the same year — never add them together.
+    # ACTUAL_FULL_YEAR (closed books) wins for an account once present; otherwise FORECAST rows are summed.
+    has_actual = {r["account_id"] for r in cur["INTERNAL_ACTUAL"].values()
+                  if r["fiscal_year"] == 2026 and r["period_type"] == "ACTUAL_FULL_YEAR"}
     for k, r in cur["INTERNAL_ACTUAL"].items():
         aid, fy, pt = r["account_id"], r["fiscal_year"], r["period_type"]
         o = out.setdefault(aid, {"account_id": aid})
-        if fy == 2026 and pt in ("FORECAST", "ACTUAL_FULL_YEAR"):
+        if fy == 2026 and pt == ("ACTUAL_FULL_YEAR" if aid in has_actual else "FORECAST"):
             o["cr_2026_forecast_eok"] = str(Decimal(o.get("cr_2026_forecast_eok") or 0) + Decimal(r["value_eok"]))
-            o["cr_basis"] = f"INTERNAL_ACTUAL 승인 배치 {r['batch_id']} ({r['approved_by']})"
+            o["cr_basis"] = f"INTERNAL_ACTUAL {pt} 승인 배치 {r['batch_id']} ({r['approved_by']})"
         if fy == 2026 and pt == "YTD":
             o["cr_2026_ytd_eok"] = str(Decimal(o.get("cr_2026_ytd_eok") or 0) + Decimal(r["value_eok"]))
             o["cr_2026_ytd_asof"] = r.get("as_of")

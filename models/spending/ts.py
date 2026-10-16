@@ -180,7 +180,9 @@ def component_anchor(research: dict, aid: str, family: str, params: dict, fx: De
     cov = [D(x) for x in cov_spec["values"]]
     fy = max(int(f.get("fiscal_year") or 0) for f, _ in lines)
     return {"method": "AUDIT_IT_COMPONENTS", "fiscal_year": fy, "value": total / cov[1],
-            "fact_status": "VERIFIED" if all(f.get("verification_status") == "VERIFIED" for f, _ in lines) else "SECONDARY_UNCONFIRMED",
+            # QA-02: the anchor value itself is reconstructed (Σ items ÷ coverage) → DERIVED; only its inputs may be VERIFIED
+            "fact_status": "DERIVED",
+            "input_fact_status": "VERIFIED" if all(f.get("verification_status") == "VERIFIED" for f, _ in lines) else "SECONDARY_UNCONFIRMED",
             "evidence_ids": [e for f, _ in lines for e in f.get("evidence_ids", [])],
             "tier": min(_evidence_tier(research, f.get("evidence_ids", [])) for f, _ in lines),
             "component_total": total, "coverage": [str(c) for c in cov], "coverage_basis": cov_spec["basis"],
@@ -230,6 +232,7 @@ def ts_2026(anchor: dict, family: str, params: dict) -> dict:
         rev = v / it[1]
         low = rev * it[0] * (1 + D(g[0])) ** years
         high = rev * it[2] * (1 + D(g[2])) ** years
-    status = "VERIFIED" if (anchor["method"] == "DIRECT_IT_BUDGET" and anchor.get("fact_status") == "VERIFIED") else "ESTIMATED"
+    status = "VERIFIED" if (anchor["method"] == "DIRECT_IT_BUDGET" and anchor.get("fact_status") == "VERIFIED") else \
+        "SCENARIO" if anchor.get("fact_status") == "SCENARIO" else "ESTIMATED"  # QA-03: scenario anchors stay SCENARIO
     formula = anchor["formula"] + (f" → × (1+{g[1]})^{years} (B-G26)" if years else "")
     return {"value": base, "low": low, "high": high, "status": status, "growth": g, "years": years, "formula": formula}

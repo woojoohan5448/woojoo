@@ -20,7 +20,14 @@ def test_account_and_evidence_lookup():
     assert c.get("/api/accounts/NOPE").status_code == 404
 
 
-def test_management_input_validation_rejects_bad_values():
+def test_legacy_direct_input_disabled_by_default(monkeypatch):
+    monkeypatch.delenv("KAI_ENABLE_LEGACY_INPUT", raising=False)
+    r = c.post("/api/management-inputs", json={"rows": [{"account_id": "KA03", "cr_2026_forecast_eok": "10", "cr_basis": "x"}]})
+    assert r.status_code == 410  # approval workflow cannot be bypassed
+
+
+def test_management_input_validation_rejects_bad_values(monkeypatch):
+    monkeypatch.setenv("KAI_ENABLE_LEGACY_INPUT", "1")
     assert c.post("/api/management-inputs", json={"rows": [{"account_id": "KA03", "cr_2026_forecast_eok": "-5", "cr_basis": "x"}]}).status_code == 422
     assert c.post("/api/management-inputs", json={"rows": [{"account_id": "KA03", "cr_2026_forecast_eok": "abc", "cr_basis": "x"}]}).status_code == 422
     assert c.post("/api/management-inputs", json={"rows": [{"account_id": "KA03", "cr_2026_forecast_eok": "10"}]}).status_code == 422  # basis required

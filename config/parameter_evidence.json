@@ -1,138 +1,148 @@
 {
-  "_note": "모델 파라미터(가정) ↔ 시장 벤치마크 근거(data/raw/research/_MARKET_BENCHMARKS.json item_id) 연결. 근거가 없는 파라미터는 'ANALYST_JUDGMENT'로 표시되고 신뢰도에 반영된다.",
-  "A-MIX": {
-    "basis": "ANALYST_JUDGMENT",
-    "refs": [
-      "MB03a",
-      "MB03b",
-      "MB03c",
-      "MB03d",
-      "MB03e"
-    ],
-    "comment": "Gartner 세계 IT 지출 세그먼트 구성(통신서비스·IT서비스·SW·디바이스·DC시스템)을 참조한 산업별 분석가 가정. 계정별 KISA 정보보호 비율이 있으면 SECURITY 비중을 실측값으로 대체."
-  },
-  "C-ADDR": {
-    "basis": "ANALYST_JUDGMENT",
-    "refs": [
-      "MB33",
-      "MB36",
-      "MB38",
-      "MB39",
-      "MB40"
-    ],
-    "comment": "LG U+ 기업인프라 사업 구성(AIDC·솔루션·기업회선)을 기준으로 한 역량 판단. 사내 상품 포트폴리오 검토로 교체 필요."
-  },
-  "C-CAP": {
-    "basis": "ANALYST_JUDGMENT",
-    "refs": [],
-    "comment": "이중망 정책, 멀티벤더, 하이퍼스케일러·SI 경쟁에 대한 분석가 판단. 내부 수주/점유 데이터로 보정 필요."
-  },
-  "B-INT": {
-    "basis": "EMPIRICAL_CALIBRATION",
-    "refs": [
-      "MB47",
-      "MB48",
-      "MB49",
-      "MB50",
-      "MB51"
-    ],
-    "comment": "1순위: 본 프로젝트에서 KISA IT 투자액과 매출이 모두 확인된 고객의 산업군별 중앙값(실증). 2순위: 사전값(외부 벤치마크는 2003~2020 자료로 노후)."
-  },
-  "B-G26": {
-    "basis": "BENCHMARK",
-    "refs": [
-      "MB02",
-      "MB05",
-      "MB06",
-      "MB34"
-    ],
-    "comment": "Gartner 2026 세계 IT 지출 +13.5%(AI 서버 주도), 국내 IT서비스 시장 CAGR 2.5%, LG U+ 기업인프라 +6% 사이에서 산업별 설정."
-  },
-  "B-BRIDGE.organic": {
-    "basis": "BENCHMARK",
-    "refs": [
-      "MB06",
-      "MB16",
-      "MB46"
-    ],
-    "comment": "국내 IT서비스 CAGR 2.5%, 상업용 DC 매출 CAGR 12.4%(2024~2029), 서버 시장 CAGR 7.8%."
-  },
-  "B-BRIDGE.cloud": {
-    "basis": "BENCHMARK",
-    "refs": [
-      "MB10",
-      "MB13",
-      "MB14"
-    ],
-    "comment": "국내 클라우드 산업 5년 CAGR 23.2%, 퍼블릭 클라우드 CAGR 16.9%, 금융권 퍼블릭 클라우드 활용 92%."
-  },
-  "B-BRIDGE.ai": {
-    "basis": "BENCHMARK",
-    "refs": [
-      "MB04a",
-      "MB21",
-      "MB22",
-      "MB43",
-      "MB44"
-    ],
-    "comment": "Gartner DC시스템 +55.8%(2026), 정부 GPU 확보 목표, 국내 AI 시장 CAGR 14.9%(노후 자료)."
-  },
-  "B-BRIDGE.regulatory": {
-    "basis": "BENCHMARK",
-    "refs": [
-      "MB24",
-      "MB26",
-      "MB30",
-      "MB31",
-      "MB32"
-    ],
-    "comment": "정보보호 산업 +10.5%, 5대 은행 2026 정보보호 예산 IT 대비 9.1~12.2%, 금융권 정보보호 공시 2027 의무화."
-  },
-  "B-BRIDGE.efficiency": {
-    "basis": "ANALYST_JUDGMENT",
-    "refs": [],
-    "comment": "AI 기반 운영 자동화·클라우드 전환에 따른 인건비·운영비 절감 가정."
-  },
-  "B-BRIDGE.substitution": {
-    "basis": "ANALYST_JUDGMENT",
-    "refs": [],
-    "comment": "클라우드 전환에 따른 자체 HW·전산실 지출 대체."
-  },
-  "D-TGT": {
-    "basis": "SCENARIO",
-    "refs": [],
-    "comment": "경영진 목표 미입력 시 표시용 시나리오."
-  },
-  "B-FX": {
-    "basis": "ASSUMPTION",
-    "refs": [],
-    "comment": "USD/KRW 1,400 적용(외화 수치 환산용 단일 가정). 확정 환율로 교체 필요."
-  },
-  "B-SECR": {
-    "basis": "BENCHMARK",
-    "refs": [
-      "MB29"
-    ],
-    "comment": "정보보호 투자액만 공시된 고객의 IT 투자액 역산 시 비율 우선순위: 동일연도 자사 비율 → 인접연도 자사 비율 → 산업군 실측 중앙값(n≥3) → KISA 전체 평균 6.28%."
-  },
-  "B-COMP": {
-    "basis": "EMPIRICAL_CALIBRATION",
-    "refs": [
-      "MB27",
-      "MB29"
-    ],
-    "comment": "IT 비용 항목 포괄률: 금융 전산업무비 0.468(국민·우리 실측), 클라우드 인프라 0.806(네이버클라우드 실측), 일반기업 0.6(가정)."
-  },
-  "B-EMP": {
-    "basis": "EMPIRICAL_CALIBRATION",
-    "refs": [],
-    "comment": "KISA IT 투자액과 직원 수(OpenDART 직원현황)가 모두 확인된 고객의 1인당 IT 지출 산업군 중앙값(n≥3일 때만 사용)."
-  },
-  "B-DCRENT": {
-    "basis": "BENCHMARK",
-    "refs": [
-      "DCB01"
-    ],
-    "comment": "수도권 평균 상면 임대료 약 25만원/kW(2025, CBRE 인용·기간 미표기→월 해석) → 30억원/MW/년. 원문 미열람."
-  }
+ "_note": "모델 파라미터(가정) ↔ 시장 벤치마크 근거(data/raw/research/_MARKET_BENCHMARKS.json item_id) 연결. 근거가 없는 파라미터는 'ANALYST_JUDGMENT'로 표시되고 신뢰도에 반영된다.",
+ "A-MIX": {
+  "basis": "ANALYST_JUDGMENT",
+  "refs": [
+   "MB03a",
+   "MB03b",
+   "MB03c",
+   "MB03d",
+   "MB03e"
+  ],
+  "comment": "Gartner 세계 IT 지출 세그먼트 구성(통신서비스·IT서비스·SW·디바이스·DC시스템)을 참조한 산업별 분석가 가정. 계정별 KISA 정보보호 비율이 있으면 SECURITY 비중을 실측값으로 대체."
+ },
+ "C-ADDR": {
+  "basis": "ANALYST_JUDGMENT",
+  "refs": [
+   "MB33",
+   "MB36",
+   "MB38",
+   "MB39",
+   "MB40"
+  ],
+  "comment": "LG U+ 기업인프라 사업 구성(AIDC·솔루션·기업회선)을 기준으로 한 역량 판단. 사내 상품 포트폴리오 검토로 교체 필요."
+ },
+ "C-CAP": {
+  "basis": "ANALYST_JUDGMENT",
+  "refs": [],
+  "comment": "이중망 정책, 멀티벤더, 하이퍼스케일러·SI 경쟁에 대한 분석가 판단. 내부 수주/점유 데이터로 보정 필요."
+ },
+ "B-INT": {
+  "basis": "EMPIRICAL_CALIBRATION",
+  "refs": [
+   "MB47",
+   "MB48",
+   "MB49",
+   "MB50",
+   "MB51"
+  ],
+  "comment": "1순위: 본 프로젝트에서 KISA IT 투자액과 매출이 모두 확인된 고객의 산업군별 중앙값(실증). 2순위: 사전값(외부 벤치마크는 2003~2020 자료로 노후)."
+ },
+ "B-G26": {
+  "basis": "BENCHMARK",
+  "refs": [
+   "MB02",
+   "MB05",
+   "MB06",
+   "MB34"
+  ],
+  "comment": "Gartner 2026 세계 IT 지출 +13.5%(AI 서버 주도), 국내 IT서비스 시장 CAGR 2.5%, LG U+ 기업인프라 +6% 사이에서 산업별 설정."
+ },
+ "B-BRIDGE.organic": {
+  "basis": "BENCHMARK",
+  "refs": [
+   "MB06",
+   "MB16",
+   "MB46"
+  ],
+  "comment": "국내 IT서비스 CAGR 2.5%, 상업용 DC 매출 CAGR 12.4%(2024~2029), 서버 시장 CAGR 7.8%."
+ },
+ "B-BRIDGE.cloud": {
+  "basis": "BENCHMARK",
+  "refs": [
+   "MB10",
+   "MB13",
+   "MB14"
+  ],
+  "comment": "국내 클라우드 산업 5년 CAGR 23.2%, 퍼블릭 클라우드 CAGR 16.9%, 금융권 퍼블릭 클라우드 활용 92%."
+ },
+ "B-BRIDGE.ai": {
+  "basis": "BENCHMARK",
+  "refs": [
+   "MB04a",
+   "MB21",
+   "MB22",
+   "MB43",
+   "MB44"
+  ],
+  "comment": "Gartner DC시스템 +55.8%(2026), 정부 GPU 확보 목표, 국내 AI 시장 CAGR 14.9%(노후 자료)."
+ },
+ "B-BRIDGE.regulatory": {
+  "basis": "BENCHMARK",
+  "refs": [
+   "MB24",
+   "MB26",
+   "MB30",
+   "MB31",
+   "MB32"
+  ],
+  "comment": "정보보호 산업 +10.5%, 5대 은행 2026 정보보호 예산 IT 대비 9.1~12.2%, 금융권 정보보호 공시 2027 의무화."
+ },
+ "B-BRIDGE.efficiency": {
+  "basis": "ANALYST_JUDGMENT",
+  "refs": [],
+  "comment": "AI 기반 운영 자동화·클라우드 전환에 따른 인건비·운영비 절감 가정."
+ },
+ "B-BRIDGE.substitution": {
+  "basis": "ANALYST_JUDGMENT",
+  "refs": [],
+  "comment": "클라우드 전환에 따른 자체 HW·전산실 지출 대체."
+ },
+ "D-TGT": {
+  "basis": "SCENARIO",
+  "refs": [],
+  "comment": "경영진 목표 미입력 시 표시용 시나리오."
+ },
+ "B-FX": {
+  "basis": "ASSUMPTION",
+  "refs": [],
+  "comment": "USD/KRW 1,400 적용(외화 수치 환산용 단일 가정). 확정 환율로 교체 필요."
+ },
+ "B-SECR": {
+  "basis": "BENCHMARK",
+  "refs": [
+   "MB29"
+  ],
+  "comment": "정보보호 투자액만 공시된 고객의 IT 투자액 역산 시 비율 우선순위: 동일연도 자사 비율 → 인접연도 자사 비율 → 산업군 실측 중앙값(n≥3) → KISA 전체 평균 6.28%."
+ },
+ "B-COMP": {
+  "basis": "EMPIRICAL_CALIBRATION",
+  "refs": [
+   "MB27",
+   "MB29"
+  ],
+  "comment": "IT 비용 항목 포괄률: 금융 전산업무비 0.468(국민·우리 실측), 클라우드 인프라 0.806(네이버클라우드 실측), 일반기업 0.6(가정)."
+ },
+ "B-EMP": {
+  "basis": "EMPIRICAL_CALIBRATION",
+  "refs": [],
+  "comment": "KISA IT 투자액과 직원 수(OpenDART 직원현황)가 모두 확인된 고객의 1인당 IT 지출 산업군 중앙값(n≥3일 때만 사용)."
+ },
+ "B-DCRENT": {
+  "basis": "BENCHMARK",
+  "refs": [
+   "DCB01"
+  ],
+  "comment": "수도권 평균 상면 임대료 약 25만원/kW(2025, CBRE 인용·기간 미표기→월 해석) → 30억원/MW/년. 원문 미열람."
+ },
+ "B-RANGE": {
+  "basis": "ANALYST_JUDGMENT",
+  "refs": [],
+  "comment": "TS_2026 불확실성 범위 폭(model_parameters.range_width, 앵커 방법별). L2 구성요소법은 포괄률 범위, 집약도·임직원 비교법은 벤치마크 low/high에서 산출(QA-04 등록)."
+ },
+ "B-ALLOC": {
+  "basis": "ANALYST_JUDGMENT",
+  "refs": [],
+  "comment": "2031 브리지 증분(클라우드·AI·인프라·규제·효율·대체)의 카테고리 배분(model_parameters.increment_allocation). 실증 근거 없음 — 민감도 대상(QA-04 등록)."
+ }
 }

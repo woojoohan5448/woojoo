@@ -16,6 +16,7 @@ export interface MetricRec {
 export interface Bridge { components: Record<string, number>; params: Record<string, number | string>; clamped: string[]; organic_cagr?: number }
 export interface Block2031 {
   TS: MetricRec; RAW_base: MetricRec; RAW_expansion: MetricRec; FPR_base: MetricRec; FPR_expansion: MetricRec
+  FPR_const_capability?: MetricRec
   TS_CAGR: MetricRec; RAW_CAGR: MetricRec; FPR_CAGR: MetricRec; bridge: Bridge | null
 }
 export interface Evidence {
@@ -35,6 +36,7 @@ export interface Entity {
 export interface Account {
   account_id: string; original_name: string; segment: string; family: string; pilot: boolean
   entity: Entity; overlap_groups: string[]; research_status: string; aggregate_class: string
+  evidence_basis?: { basis: string; source_level: string; definition_mismatch: boolean }
   anchor: { method: string; fiscal_year: number | null; value: number | null; fact_status: string; evidence_ids: string[]; tier: number | null; formula: string; inputs: Input[]; definition_note?: string; alternatives?: { method: string; fiscal_year: number; value: string }[]; coverage_basis?: string; note?: string }
   conf_parts: Record<string, number>; mix: Record<Category, number>; rates_2026: Record<Category, number>; caps_2026: Record<Category, number>
   sec_ratio: number | null

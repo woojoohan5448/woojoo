@@ -1,6 +1,6 @@
 # SOURCE COVERAGE REPORT — Phase 1
 
-data_version 20261016T044819Z
+data_version 20261016T051757Z
 
 ## 1. 커버리지 지표
 

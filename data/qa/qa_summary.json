@@ -1,0 +1,705 @@
+{
+ "sensitivity": [
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA20",
+   "name": "(주)우리카드",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.6",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 724.77,
+   "TS_alt": 565.3206,
+   "FPR_base": 31.91,
+   "FPR_alt": 24.8898,
+   "delta_pct": -0.21999999999999997
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA20",
+   "name": "(주)우리카드",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.7",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 724.77,
+   "TS_alt": 484.56051428571436,
+   "FPR_base": 31.91,
+   "FPR_alt": 21.33411428571429,
+   "delta_pct": -0.3314285714285713
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA21",
+   "name": "(주)케이비국민카드",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.6",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 1640.85,
+   "TS_alt": 1279.863,
+   "FPR_base": 72.86,
+   "FPR_alt": 56.8308,
+   "delta_pct": -0.21999999999999997
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA21",
+   "name": "(주)케이비국민카드",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.7",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 1640.85,
+   "TS_alt": 1097.0254285714286,
+   "FPR_base": 72.86,
+   "FPR_alt": 48.71211428571429,
+   "delta_pct": -0.3314285714285713
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA23",
+   "name": "(주)한국스탠다드차타드은행",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.56",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 1295.04,
+   "TS_alt": 1082.2834285714284,
+   "FPR_base": 60.9,
+   "FPR_alt": 50.894999999999996,
+   "delta_pct": -0.16428571428571437
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA25",
+   "name": "미래에셋증권(주)",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.6",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 2204.64,
+   "TS_alt": 1719.6191999999999,
+   "FPR_base": 105.13,
+   "FPR_alt": 82.0014,
+   "delta_pct": -0.21999999999999997
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA25",
+   "name": "미래에셋증권(주)",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.7",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 2204.64,
+   "TS_alt": 1473.9593142857145,
+   "FPR_base": 105.13,
+   "FPR_alt": 70.2869142857143,
+   "delta_pct": -0.3314285714285713
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA35",
+   "name": "(주)케이비손해보험",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.6",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 1278.17,
+   "TS_alt": 996.9726,
+   "FPR_base": 56.27,
+   "FPR_alt": 43.890600000000006,
+   "delta_pct": -0.21999999999999997
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA35",
+   "name": "(주)케이비손해보험",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.7",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 1278.17,
+   "TS_alt": 854.5479428571431,
+   "FPR_base": 56.27,
+   "FPR_alt": 37.62051428571429,
+   "delta_pct": -0.3314285714285713
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA52",
+   "name": "토스증권",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.6",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 724.76,
+   "TS_alt": 565.3128,
+   "FPR_base": 34.82,
+   "FPR_alt": 27.1596,
+   "delta_pct": -0.21999999999999997
+  },
+  {
+   "risk_id": "S1_COVERAGE",
+   "account_id": "KA52",
+   "name": "토스증권",
+   "assumption": "FIN_전산업무비 포괄률 0.468 → 0.7",
+   "why": "은행 2곳 실측 포괄률을 카드·증권·보험에 적용",
+   "TS_base": 724.76,
+   "TS_alt": 484.55382857142865,
+   "FPR_base": 34.82,
+   "FPR_alt": 23.279657142857147,
+   "delta_pct": -0.3314285714285713
+  },
+  {
+   "risk_id": "S2_COVERAGE_ASSUMED",
+   "account_id": "KA16",
+   "name": "지에스리테일",
+   "assumption": "CORP_전산비 포괄률 0.6 → 0.8",
+   "why": "실측 없는 분석가 가정",
+   "TS_base": 1144.81,
+   "TS_alt": 858.6074999999998,
+   "FPR_base": 88.64,
+   "FPR_alt": 66.47999999999999,
+   "delta_pct": -0.2500000000000001
+  },
+  {
+   "risk_id": "S2_COVERAGE_ASSUMED",
+   "account_id": "KA17",
+   "name": "현대엘리베이터",
+   "assumption": "CORP_전산비 포괄률 0.6 → 0.8",
+   "why": "실측 없는 분석가 가정",
+   "TS_base": 294.74,
+   "TS_alt": 221.05499999999998,
+   "FPR_base": 15.26,
+   "FPR_alt": 11.444999999999999,
+   "delta_pct": -0.2500000000000001
+  },
+  {
+   "risk_id": "S2_COVERAGE_ASSUMED",
+   "account_id": "KA30",
+   "name": "메르세데스벤츠코리아(주)",
+   "assumption": "CORP_전산비 포괄률 0.6 → 0.8",
+   "why": "실측 없는 분석가 가정",
+   "TS_base": 868.23,
+   "TS_alt": 651.1724999999999,
+   "FPR_base": 44.95,
+   "FPR_alt": 33.7125,
+   "delta_pct": -0.2500000000000001
+  },
+  {
+   "risk_id": "S2_COVERAGE_ASSUMED",
+   "account_id": "KA49",
+   "name": "엔에이치엔클라우드(주)",
+   "assumption": "CLOUD_INFRA 포괄률 0.806 → 0.95",
+   "why": "실측 없는 분석가 가정",
+   "TS_base": 609.26,
+   "TS_alt": 516.9090105263159,
+   "FPR_base": 69.6,
+   "FPR_alt": 59.050105263157896,
+   "delta_pct": -0.15157894736842092
+  },
+  {
+   "risk_id": "S2_COVERAGE_ASSUMED",
+   "account_id": "KA47",
+   "name": "(주)가비아",
+   "assumption": "CLOUD_INFRA 포괄률 0.806 → 0.95",
+   "why": "실측 없는 분석가 가정",
+   "TS_base": 227.1,
+   "TS_alt": 192.6764210526316,
+   "FPR_base": 26.19,
+   "FPR_alt": 22.220147368421056,
+   "delta_pct": -0.15157894736842092
+  },
+  {
+   "risk_id": "S3_PLATFORM_LABOR",
+   "account_id": "KA09",
+   "name": "(주)카카오",
+   "assumption": "IT 인건비 비중 0.20 → 0.35",
+   "why": "KISA 정보기술부문 투자액은 IT 인력 인건비 포함. 카카오 FY2025 급여총액 4,395억(3,922명, OpenDART) — 개발 인력 비중이 크면 비인건비(공략 가능) 몫이 과대",
+   "TS_base": 8884.51,
+   "TS_alt": 8884.51,
+   "RAW_base": 3046.3,
+   "RAW_alt": 2487.6909179767254,
+   "FPR_base": 882.96,
+   "FPR_alt": 721.0490013907787,
+   "delta_pct": -0.18337297115296425
+  },
+  {
+   "risk_id": "S3_PLATFORM_LABOR",
+   "account_id": "KA09",
+   "name": "(주)카카오",
+   "assumption": "IT 인건비 비중 0.20 → 0.5",
+   "why": "KISA 정보기술부문 투자액은 IT 인력 인건비 포함. 카카오 FY2025 급여총액 4,395억(3,922명, OpenDART) — 개발 인력 비중이 크면 비인건비(공략 가능) 몫이 과대",
+   "TS_base": 8884.51,
+   "TS_alt": 8884.51,
+   "RAW_base": 3046.3,
+   "RAW_alt": 1913.6083984436348,
+   "FPR_base": 882.96,
+   "FPR_alt": 554.6530779929067,
+   "delta_pct": -0.37182536242535713
+  },
+  {
+   "risk_id": "S3_PLATFORM_LABOR",
+   "account_id": "KA29",
+   "name": "쿠팡(주)",
+   "assumption": "IT 인건비 비중 0.20 → 0.35",
+   "why": "KISA 정보기술부문 투자액은 IT 인력 인건비 포함. 카카오 FY2025 급여총액 4,395억(3,922명, OpenDART) — 개발 인력 비중이 크면 비인건비(공략 가능) 몫이 과대",
+   "TS_base": 27525.75,
+   "TS_alt": 27525.75,
+   "RAW_base": 9473.18,
+   "RAW_alt": 7712.441476263599,
+   "FPR_base": 2725.07,
+   "FPR_alt": 2218.5731606199447,
+   "delta_pct": -0.1858656252426747
+  },
+  {
+   "risk_id": "S3_PLATFORM_LABOR",
+   "account_id": "KA29",
+   "name": "쿠팡(주)",
+   "assumption": "IT 인건비 비중 0.20 → 0.5",
+   "why": "KISA 정보기술부문 투자액은 IT 인력 인건비 포함. 카카오 FY2025 급여총액 4,395억(3,922명, OpenDART) — 개발 인력 비중이 크면 비인건비(공략 가능) 몫이 과대",
+   "TS_base": 27525.75,
+   "TS_alt": 27525.75,
+   "RAW_base": 9473.18,
+   "RAW_alt": 5932.6472894335375,
+   "FPR_base": 2725.07,
+   "FPR_alt": 1706.594738938419,
+   "delta_pct": -0.3737427886482113
+  },
+  {
+   "risk_id": "S4_UPPER_BOUND_ANCHOR",
+   "account_id": "KA44",
+   "name": "차이나유니콤",
+   "assumption": "상한값을 기준값으로 사용",
+   "why": "TS가 '외부 구매 상한'(매출원가 − 인건비·임차·상각)으로 정의된 상한값을 기준값으로 사용",
+   "TS_base": 109.6,
+   "RAW_base": 78.91,
+   "FPR_base": 31.1,
+   "delta_pct": null
+  },
+  {
+   "risk_id": "S4_UPPER_BOUND_ANCHOR",
+   "account_id": "KA32",
+   "name": "주한미군",
+   "assumption": "상한값을 기준값으로 사용",
+   "why": "RAW = BOA 계약 '상한' 연환산. LG U+ BOA 누적 집행 $59,351(상한 대비 극히 낮음)",
+   "TS_base": null,
+   "RAW_base": 157.0,
+   "FPR_base": 78.5,
+   "delta_pct": null
+  }
+ ],
+ "concentration": {
+  "fpr2026_comparable_total": 8199.8,
+  "top5": [
+   [
+    "KA29",
+    "쿠팡(주)",
+    2725.1
+   ],
+   [
+    "KA10",
+    "네이버클라우드",
+    943.9
+   ],
+   [
+    "KA09",
+    "(주)카카오",
+    883.0
+   ],
+   [
+    "KA05",
+    "한국전력공사",
+    375.6
+   ],
+   [
+    "KA14",
+    "삼성에스디에스(주)",
+    265.5
+   ]
+  ],
+  "top5_share": 0.633,
+  "fpr2026_by_grade": {
+   "ESTIMATED_MEDIUM": 3926.2,
+   "ESTIMATED_LOW": 4273.6
+  }
+ },
+ "data_version": "20261016T051757Z",
+ "contains_internal_data": false,
+ "n_accounts": 53,
+ "evidence_basis": {
+  "DIRECT_IT_DISCLOSURE": 11,
+  "INDUSTRY_AVERAGE": 7,
+  "RECONSTRUCTED_FINANCIALS": 25,
+  "SCENARIO": 4,
+  "NONE": 5,
+  "CONTRACT_DIRECT_RAW": 1
+ },
+ "source_level": {
+  "DIRECT_IT_DISCLOSURE|SECONDARY_PRESS": 11,
+  "INDUSTRY_AVERAGE|BENCHMARK": 7,
+  "RECONSTRUCTED_FINANCIALS|PRIMARY_INPUTS": 16,
+  "SCENARIO|MIXED": 4,
+  "RECONSTRUCTED_FINANCIALS|SECONDARY_INPUTS": 9,
+  "NONE|-": 5,
+  "CONTRACT_DIRECT_RAW|SECONDARY": 1
+ },
+ "definition_mismatch_accounts": [
+  "KA06",
+  "KA07",
+  "KA08",
+  "KA45",
+  "KA46"
+ ],
+ "metric_records_with_status_VERIFIED": [],
+ "research_status": {
+  "MODEL_ESTIMATED": 36,
+  "INPUTS_VERIFIED": 11,
+  "SOURCES_COLLECTED": 2,
+  "NEEDS_REVIEW": 4
+ },
+ "comparable_totals": {
+  "TS_2026": 113542.2,
+  "RAW_2026": 29950.1,
+  "FPR_2026": 8199.8,
+  "TS_2031_base": 170615.5,
+  "RAW_2031_base": 59328.4,
+  "FPR_2031_base": 16168.3,
+  "FPR_2031_expansion": 18202.6
+ },
+ "mismatch_totals": {
+  "TS_2026": 19178.0,
+  "FPR_2026": 2154.7,
+  "FPR_2031_base": 3476.1
+ },
+ "comparable_ts2026_by_basis": {
+  "DIRECT_IT_DISCLOSURE": 52614.1,
+  "INDUSTRY_AVERAGE": 14766.6,
+  "RECONSTRUCTED_FINANCIALS": 44600.6,
+  "NONE": 0.0,
+  "CONTRACT_DIRECT_RAW": 0.0,
+  "SCENARIO": 1561.0
+ },
+ "grades_2026_TS": {
+  "ESTIMATED_HIGH": 10,
+  "ESTIMATED_LOW": 14,
+  "ESTIMATED_MEDIUM": 23,
+  "INSUFFICIENT_EVIDENCE": 5,
+  "NOT_APPLICABLE": 1
+ },
+ "family_stats": {
+  "ITS": {
+   "it_ratio": {
+    "n": 8,
+    "median": 0.06851877172217305,
+    "q1": 0.05249981018822662,
+    "q3": 0.09217196081806131,
+    "min": 0.012209873016721143,
+    "max": 0.10960781145987206
+   },
+   "raw_to_ts": {
+    "n": 8,
+    "median": 0.24400987440744976,
+    "q1": 0.23658128202058587,
+    "q3": 0.24496448615601557,
+    "min": 0.20016703221856896,
+    "max": 0.2622343275584926
+   },
+   "fpr_to_raw": {
+    "n": 8,
+    "median": 0.28947901862516356,
+    "q1": 0.2678061440609979,
+    "q3": 0.2918077438386042,
+    "min": 0.2068003894839338,
+    "max": 0.29208754208754206
+   }
+  },
+  "INDUSTRY": {
+   "it_ratio": {
+    "n": 4,
+    "median": 0.011175193640333522,
+    "q1": 0.007710717102419662,
+    "q3": 0.015107605533758868,
+    "min": 0.0058822645561396195,
+    "max": 0.018339864146573376
+   },
+   "raw_to_ts": {
+    "n": 4,
+    "median": 0.21997455929806725,
+    "q1": 0.2193559831015316,
+    "q3": 0.2199927023110574,
+    "min": 0.21754807692307693,
+    "max": 0.21999930893887562
+   },
+   "fpr_to_raw": {
+    "n": 4,
+    "median": 0.2354383851243314,
+    "q1": 0.23534341103289985,
+    "q3": 0.23594634914035495,
+    "min": 0.2353279932987802,
+    "max": 0.23720073664825048
+   }
+  },
+  "FIN": {
+   "it_ratio": {
+    "n": 13,
+    "median": 0.14686263667965418,
+    "q1": 0.13145147477332272,
+    "q3": 0.2416504126031508,
+    "min": 0.10882544014691524,
+    "max": 0.5748562999543045
+   },
+   "raw_to_ts": {
+    "n": 17,
+    "median": 0.1795264672236281,
+    "q1": 0.17641860369525453,
+    "q3": 0.2066883288939713,
+    "min": 0.17349804799048638,
+    "max": 0.21569899001048626
+   },
+   "fpr_to_raw": {
+    "n": 17,
+    "median": 0.2480754872428619,
+    "q1": 0.22879697726199308,
+    "q3": 0.250955265610438,
+    "min": 0.22273396021237124,
+    "max": 0.25375745526838966
+   }
+  },
+  "PUBLIC": {
+   "it_ratio": {
+    "n": 1,
+    "median": 0.006179994834207494,
+    "q1": 0.006179994834207494,
+    "q3": 0.006179994834207494,
+    "min": 0.006179994834207494,
+    "max": 0.006179994834207494
+   },
+   "raw_to_ts": {
+    "n": 1,
+    "median": 0.2494999263227605,
+    "q1": 0.2494999263227605,
+    "q3": 0.2494999263227605,
+    "min": 0.2494999263227605,
+    "max": 0.2494999263227605
+   },
+   "fpr_to_raw": {
+    "n": 1,
+    "median": 0.2550099112064518,
+    "q1": 0.2550099112064518,
+    "q3": 0.2550099112064518,
+    "min": 0.2550099112064518,
+    "max": 0.2550099112064518
+   }
+  },
+  "PLATFORM": {
+   "it_ratio": {
+    "n": 1,
+    "median": 0.3314050625136473,
+    "q1": 0.3314050625136473,
+    "q3": 0.3314050625136473,
+    "min": 0.3314050625136473,
+    "max": 0.3314050625136473
+   },
+   "raw_to_ts": {
+    "n": 2,
+    "median": 0.34351733835951426,
+    "q1": 0.3431974992334123,
+    "q3": 0.34383717748561615,
+    "min": 0.34287766010731036,
+    "max": 0.3441570166117181
+   },
+   "fpr_to_raw": {
+    "n": 2,
+    "median": 0.2887541435206282,
+    "q1": 0.28820786564367745,
+    "q3": 0.289300421397579,
+    "min": 0.2876615877667267,
+    "max": 0.2898466992745298
+   }
+  },
+  "CLOUD_DC": {
+   "it_ratio": {
+    "n": 4,
+    "median": 0.2475521098703686,
+    "q1": 0.1674987423973669,
+    "q3": 0.3434860734911903,
+    "min": 0.031756129979627026,
+    "max": 0.5268704743523902
+   },
+   "raw_to_ts": {
+    "n": 4,
+    "median": 0.3660474853814156,
+    "q1": 0.3660035721470937,
+    "q3": 0.36653062648649376,
+    "min": 0.36599579453289277,
+    "max": 0.3678560877129633
+   },
+   "fpr_to_raw": {
+    "n": 4,
+    "median": 0.31490793714852316,
+    "q1": 0.31374642366640115,
+    "q3": 0.31502411768348904,
+    "min": 0.31054792075673743,
+    "max": 0.31508662175168434
+   }
+  },
+  "RETAIL_SVC": {
+   "it_ratio": {
+    "n": 2,
+    "median": 0.015486486999306331,
+    "q1": 0.012604579485516496,
+    "q3": 0.018368394513096166,
+    "min": 0.00972267197172666,
+    "max": 0.021250302026886003
+   },
+   "raw_to_ts": {
+    "n": 2,
+    "median": 0.2855223760989073,
+    "q1": 0.2845096004497646,
+    "q3": 0.28653515174805,
+    "min": 0.28349682480062194,
+    "max": 0.28754792739719265
+   },
+   "fpr_to_raw": {
+    "n": 2,
+    "median": 0.2707576934471228,
+    "q1": 0.269578228662442,
+    "q3": 0.2719371582318036,
+    "min": 0.26839876387776124,
+    "max": 0.27311662301648437
+   }
+  },
+  "FINTECH": {
+   "it_ratio": {
+    "n": 3,
+    "median": 0.18397548161120839,
+    "q1": 0.11642293700061014,
+    "q3": 0.2521970424688959,
+    "min": 0.048870392390011896,
+    "max": 0.3204186033265834
+   },
+   "raw_to_ts": {
+    "n": 3,
+    "median": 0.23877460738774606,
+    "q1": 0.23770852142848997,
+    "q3": 0.2405399294276506,
+    "min": 0.23664243546923389,
+    "max": 0.24230525146755513
+   },
+   "fpr_to_raw": {
+    "n": 3,
+    "median": 0.2556739231125521,
+    "q1": 0.2540441967829907,
+    "q3": 0.25670151441466144,
+    "min": 0.25241447045342935,
+    "max": 0.25772910571677077
+   }
+  },
+  "DC_FUND": {
+   "it_ratio": {
+    "n": 0,
+    "median": null,
+    "q1": null,
+    "q3": null,
+    "min": null,
+    "max": null
+   },
+   "raw_to_ts": {
+    "n": 0,
+    "median": null,
+    "q1": null,
+    "q3": null,
+    "min": null,
+    "max": null
+   },
+   "fpr_to_raw": {
+    "n": 0,
+    "median": null,
+    "q1": null,
+    "q3": null,
+    "min": null,
+    "max": null
+   }
+  },
+  "DEFENSE": {
+   "it_ratio": {
+    "n": 0,
+    "median": null,
+    "q1": null,
+    "q3": null,
+    "min": null,
+    "max": null
+   },
+   "raw_to_ts": {
+    "n": 0,
+    "median": null,
+    "q1": null,
+    "q3": null,
+    "min": null,
+    "max": null
+   },
+   "fpr_to_raw": {
+    "n": 1,
+    "median": 0.5,
+    "q1": 0.5,
+    "q3": 0.5,
+    "min": 0.5,
+    "max": 0.5
+   }
+  },
+  "GLOBAL_NET": {
+   "it_ratio": {
+    "n": 1,
+    "median": 0.3660950499508607,
+    "q1": 0.3660950499508607,
+    "q3": 0.3660950499508607,
+    "min": 0.3660950499508607,
+    "max": 0.3660950499508607
+   },
+   "raw_to_ts": {
+    "n": 1,
+    "median": 0.7199817518248175,
+    "q1": 0.7199817518248175,
+    "q3": 0.7199817518248175,
+    "min": 0.7199817518248175,
+    "max": 0.7199817518248175
+   },
+   "fpr_to_raw": {
+    "n": 1,
+    "median": 0.39411988341148146,
+    "q1": 0.39411988341148146,
+    "q3": 0.39411988341148146,
+    "min": 0.39411988341148146,
+    "max": 0.39411988341148146
+   }
+  }
+ },
+ "global_quartiles": {
+  "raw_to_ts": [
+   0.20099971362581015,
+   0.24905738488329546
+  ],
+  "fpr_to_raw": [
+   0.23636447830965346,
+   0.2887541435206282
+  ]
+ },
+ "ratio_flags": {
+  "KA09": "IT_RATIO_GT_2X_BENCH_HIGH;IT_GT_30PCT_REVENUE;RAW_TO_TS_HIGH_OUTLIER",
+  "KA10": "RAW_TO_TS_HIGH_OUTLIER",
+  "KA15": "IT_RATIO_LT_HALF_BENCH_LOW;RAW_TO_TS_HIGH_OUTLIER",
+  "KA21": "IT_RATIO_GT_2X_BENCH_HIGH",
+  "KA27": "IT_GT_30PCT_REVENUE",
+  "KA29": "RAW_TO_TS_HIGH_OUTLIER",
+  "KA32": "FPR_TO_RAW_HIGH_OUTLIER;FPR_RAW_ABOVE_MAX_CAP",
+  "KA34": "IT_RATIO_LT_HALF_BENCH_LOW",
+  "KA37": "IT_RATIO_GT_2X_BENCH_HIGH",
+  "KA44": "RAW_TO_TS_HIGH_OUTLIER;FPR_TO_RAW_HIGH_OUTLIER",
+  "KA47": "RAW_TO_TS_HIGH_OUTLIER",
+  "KA49": "RAW_TO_TS_HIGH_OUTLIER",
+  "KA52": "IT_RATIO_GT_2X_BENCH_HIGH",
+  "KA53": "IT_RATIO_LT_HALF_BENCH_LOW"
+ },
+ "traceability": {
+  "records": 286,
+  "ok": 286,
+  "missing_evidence": [],
+  "unregistered_assumptions": [],
+  "no_evidence_records": []
+ },
+ "forecast": {
+  "n": 47,
+  "multiplier_median": 1.317689028910304,
+  "multiplier_max": "KA07",
+  "elasticity_min": 0.5910839954364974,
+  "comparable_fpr31_from_ts": 5885.0,
+  "comparable_fpr31_from_uplus": 2075.2,
+  "comparable_fpr31_from_expansion": 2034.3,
+  "median_ts26_band": 0.4549316601078104,
+  "median_ts31_scenario_band": 0.3789590914572294,
+  "median_ts31_combined_band": 0.83169071677707
+ }
+}

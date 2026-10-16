@@ -26,5 +26,8 @@ KA28(6) · KA41(6) · KA42(6) · KA43(6) · KA32(2026·2031 TS 2) · KA50(2031 3
 ## 산출물 위치
 `data/processed/dashboard.json`·`intel.db` · `data/exports/*.csv|xlsx` · `data/phase1/*` · `reports/*` · `Key_Account_Dashboard.html`(단일 HTML) · `dist_release/*.zip`
 
-## 테스트 (마지막 실행 결과는 HANDOFF.md 참조)
-pytest 27 · vitest 6 · E2E 14
+## 테스트
+pytest 36 · vitest 6 · E2E 16 (2026-10-16 최종 QA 후)
+
+## 최종 QA
+`reports/final_qa/` — 값 변경 0건, 표시·상태·범위·추적성·사내 결합 로직 수정. 근거 유형: IT지출 공시값 11 · 재무항목 재구성 25 · 산업 평균 7 · 시나리오 4 · 계약 RAW 1 · 근거 없음 5

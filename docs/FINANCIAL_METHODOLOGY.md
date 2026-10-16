@@ -55,7 +55,15 @@
 - Internal Required Count = 사내 입력 필요 필드 수(318) — 외부 조사로 줄이지 않는다.
 
 ## 7. 사내 데이터 통합 (Phase 4, `models/build.py::reconcile`)
-- INTERNAL_ACTUAL → CR_2026 → C-SOW = CR/TS, PCR = CR/FPR, Upside = FPR − CR.
-- MANAGEMENT_TARGET → Target_2031 (Target ≤ FPR_2031 검증), Target SOW = Target/TS_2031.
-- SALES_ESTIMATE는 외부 추정을 덮어쓰지 않고 차이 플래그: |영업/모델 − 1| ≤ 20% ALIGNED, 초과 시 REVIEW_SALES_HIGHER/LOWER, 미입력 NO_SALES_INPUT. opportunity_gap = 모델 FPR − 영업 FPR.
+- INTERNAL_ACTUAL → CR_2026 → C-SOW = CR/RAW_2026, PCR = CR/FPR_2026, Upside = FPR − CR. (QA 정정: 이전 판의 "C-SOW = CR/TS"는 코드·METHODOLOGY.md와 불일치한 문서 오류)
+  - 같은 계정에 ACTUAL_FULL_YEAR 행이 있으면 FORECAST 행은 합산하지 않는다(QA-I3, 이중 계상 방지).
+- MANAGEMENT_TARGET → Target_2031 (Target ≤ FPR_2031 검증), Target SOW = Target/RAW_2031(base). (QA 정정: 이전 판의 "Target/TS_2031"은 문서 오류)
+- SALES_ESTIMATE는 외부 추정을 덮어쓰지 않고 차이 플래그: |영업/모델 − 1| ≤ 20% ALIGNED, 초과 시 REVIEW_SALES_HIGHER/LOWER, 미입력 NO_SALES_INPUT. opportunity_gap = 외부 FPR_2026 − 사내 CR_2026. (QA 정정: 이전 판의 "모델 FPR − 영업 FPR"은 문서 오류)
 - 상품별 LG U+ 매출 배분은 범위 밖.
+
+## 8. QA 감사 반영 사항 (2026-10-16, 브랜치 qa-final-audit)
+- **근거 유형(evidence_basis)**: 계정마다 2026 TS가 무엇에 기대는지 표시 — DIRECT_IT_DISCLOSURE(IT 지출 공시값) / RECONSTRUCTED_FINANCIALS(재무항목 재구성) / INDUSTRY_AVERAGE(산업 평균) / SCENARIO / CONTRACT_DIRECT_RAW / NONE.
+- **VERIFIED 의미 분리**: L2 구성요소 앵커의 fact_status는 DERIVED, 입력 항목 검증 상태는 input_fact_status. research_status EVIDENCE_VERIFIED는 IT 지출 수치 자체를 1차 원문에서 확인한 경우만, 입력만 확인된 경우 INPUTS_VERIFIED.
+- **시나리오 앵커**(KA07·KA38·KA45)의 2026 TS/RAW/FPR status = SCENARIO.
+- **2031 결합 범위**: base 레코드의 low/high = 2031 시나리오(low/high) × 2026 TS 불확실성 비율 — 2026 오차가 2031로 전파됨을 반영.
+- **FPR_const_capability**: 2031 TS에 2026 접근률·포획상한을 적용한 FPR. FPR_2031(base) − 이 값 = U+ 역량 확대 가정 효과.

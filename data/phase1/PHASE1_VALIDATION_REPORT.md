@@ -1,10 +1,10 @@
 # PHASE 1 VALIDATION REPORT
 
-data_version 20261016T044819Z
+data_version 20261016T051757Z
 
 ## 1. 무결성
 - 모델 검증 이슈: {'ERROR': 0, 'WARN': 20, 'INFO': 167}
-- 자동 테스트: 27 passed, 1 warning in 5.05s
+- 자동 테스트: 36 passed, 1 warning in 11.01s
 - 프론트엔드 동기화 오류: 0건
 - 불변식 0 ≤ FPR ≤ RAW ≤ TS, Target ≤ FPR_2031, CR NULL≠0: tests/test_model.py 통과 시 보장
 

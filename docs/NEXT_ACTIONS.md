@@ -11,6 +11,12 @@
 | KA50 키암코 도화동 DC | 2031 | 임차인·준공 시점 확정 시 용량 모델(80MW 수전) | 착공 전·주민 반대 |
 → 네트워크 허용 목록 변경 시 `docs/MCP_SOURCE_REGISTRY.md` §3 재시도 표부터 처리.
 
+## A-1. 최종 QA OPEN 항목 (우선)
+1. QA-05 쿠팡·카카오 IT 인건비 비중 보정(KISA 정보기술부문 인력) — 포트폴리오 FPR 최대 −16%
+2. QA-06 비은행 금융 L2 포괄률 실측
+3. QA-02 KISA 정보보호공시 원문 대조(사내망) → 11개 계정 VERIFIED 전환
+4. QA-10/QA-I5 APPROVED_ACCOUNT_PLAN 레이어를 계정별 성장 동인으로 소비하도록 구현
+
 ## B. 정확도 개선 (LOW → MEDIUM)
 1. REVENUE_INTENSITY 7개 계정(KA02·04·05·13·24 등): MyDART 감사보고서 IT 계정 발췌 → `component_model.accounts` 화이트리스트 추가
 2. 신한카드(KA04) 과소 추정 의심 — 판관비 기준 R02 이상치

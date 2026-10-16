@@ -3,6 +3,7 @@
 > ⚠ 아래 절차는 이 개발 환경(Linux)에서 작성·검증되었다. **Windows 사내 PC에서의 실행은 아직 검증되지 않았다** (Python 설치 권한, 사내 PyPI 미러, 포트 정책, 백신 정책 확인 필요).
 
 ## 0. 패키지
+- 체크리스트: `reports/final_qa/WINDOWS_MIGRATION_CHECKLIST.md` (패키지 검사: `python3 tools/check_release.py`). `wheels/`(win_amd64 cp311~313)가 포함되면 setup이 오프라인 설치.
 - 개발 환경에서 `python3 tools/make_release.py` → `dist_release/KeyAccountIntel_<version>.zip` (외부 데이터만, `MANIFEST.json`에 파일별 SHA-256). 사내 데이터가 감지되면 생성 거부.
 - 조회만 필요하면 `Key_Account_Dashboard.html` 단일 파일(오프라인, 데이터 내장)로 충분.
 

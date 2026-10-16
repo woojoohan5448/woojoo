@@ -22,10 +22,11 @@ python3 -m reports.phase1_reports            # Phase 1 게이트 보고서
 python3 -m reports.generate_reports          # 엔터티·품질·갭·전략 보고서
 python3 -m models.export_xlsx                # Excel 내보내기
 python3 -m models.internal.excel_io template|preview <xlsx>|approve <batch> --approver 이름|status
-python3 -m pytest -q                         # 27 tests (모델·API·Excel import 샌드박스·릴리스 가드)
+python3 -m pytest -q                         # 36 tests (모델·API·Excel import·QA 결합 재검증 샌드박스·릴리스 가드)
 cd frontend && npx tsc --noEmit && npx vitest run && npm run build && npm run build:single
-uvicorn backend.app:app --port 8000 ; node tests/e2e/dashboard.e2e.mjs   # E2E 14 checks
-python3 tools/make_release.py                # 이관 패키지(사내 데이터 감지 시 차단)
+uvicorn backend.app:app --port 8000 ; node tests/e2e/dashboard.e2e.mjs   # E2E 16 checks
+python3 tools/make_release.py && python3 tools/check_release.py   # 이관 패키지(사내 데이터·비밀·허용경로 밖 Excel 차단) + 내용 검사
+python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최종 QA 감사 → reports/final_qa/*.md
 ```
 
 ## 조사 방법 (MCP 우선)
@@ -38,3 +39,7 @@ python3 tools/make_release.py                # 이관 패키지(사내 데이터
 
 ## Git
 작업 브랜치 `phase1-4-na-recovery` (main=v1.0, 태그 `v1.0-checkpoint`). 원격: github.com/woojoohan5448/woojoo — push는 사용자 요청 시에만.
+
+## 최종 QA (2026-10-16)
+- 브랜치 `qa-final-audit`, 안전 체크포인트 태그 `v2.0-phase1-4-checkpoint`. 결과·잔여 위험: `reports/final_qa/` 5종, 발견 목록 `data/qa/QA_FINDINGS.json`.
+- "VERIFIED"는 원천 재무 사실에만 쓴다. 계정의 TS 근거 유형은 `evidence_basis`(IT지출 공시값/재무항목 재구성/산업 평균/시나리오). IT 지출을 1차 원문에서 확인한 계정은 현재 0개.

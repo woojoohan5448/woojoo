@@ -4,7 +4,7 @@ import EChart from '../components/EChart'
 import Inspector from '../components/Inspector'
 import { bridgeOption, categoryOption, opportunityOption, rowLabel, type Palette } from '../components/charts'
 import { ConfidenceMeter, GradeBadge, Pill, StatusBadge, Swatch } from '../components/badges'
-import { NA_KO, RESEARCH_STATUS_LABEL, SEGMENT_LABEL, eok, fmtRec, missingText, naInfo, pct, signedEok } from '../lib/format'
+import { EVIDENCE_BASIS_LABEL, NA_KO, RESEARCH_STATUS_LABEL, SOURCE_LEVEL_LABEL, SEGMENT_LABEL, eok, fmtRec, missingText, naInfo, pct, signedEok } from '../lib/format'
 import { resolveMetric } from '../lib/data'
 import ProductRevenueDrilldown from '../extensions/ProductRevenueDrilldown'
 
@@ -58,6 +58,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
                 <Pill tone={a.research_status === 'NEEDS_REVIEW' ? 'err' : a.research_status === 'MODEL_ESTIMATED' ? 'warn' : 'neutral'}>{RESEARCH_STATUS_LABEL[a.research_status]}</Pill>
                 <Pill tone={a.entity.entity_status === 'CONFIRMED' ? 'ok' : 'warn'}>법인 매핑 {a.entity.entity_status ?? '미확인'}</Pill>
                 <Pill>TS 앵커: {a.anchor.method}{a.anchor.fiscal_year ? ` (FY${a.anchor.fiscal_year})` : ''}</Pill>
+                {a.evidence_basis && <Pill tone={a.evidence_basis.basis === 'DIRECT_IT_DISCLOSURE' ? 'ok' : 'warn'}>근거 유형: {EVIDENCE_BASIS_LABEL[a.evidence_basis.basis] ?? a.evidence_basis.basis}{SOURCE_LEVEL_LABEL[a.evidence_basis.source_level] ? ` · ${SOURCE_LEVEL_LABEL[a.evidence_basis.source_level]}` : ''}</Pill>}
                 {a.aggregate_class !== 'COMPARABLE' && <Pill tone="warn">{a.aggregate_class === 'OVERLAP_RISK' ? `중복 위험: ${a.overlap_groups.join(', ')}` : a.aggregate_class === 'DEFINITION_MISMATCH' ? '정의 상이 — 합계 제외' : '합계 제외(미확인)'}</Pill>}
               </div>
             </div>
@@ -92,6 +93,11 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
                 return <tr key={m} className="border-t border-line"><td className="py-1">{rowLabel(m, 2026).split('  ')[0]}/{rowLabel(m, 2031).split('  ')[0]}</td><td>{r26?.value === null ? missingText(a, { year: 2026, metric: m }) : fmtRec(r26)}</td><td>{r26 && (r26.grade ? <GradeBadge grade={r26.grade} /> : <StatusBadge status={r26.status} compact />)}</td><td>{r31?.value === null ? missingText(a, { year: 2031, metric: m }) : fmtRec(r31)}</td><td>{r31 && (r31.grade ? <GradeBadge grade={r31.grade} /> : <StatusBadge status={r31.status} compact />)}</td></tr>
               })}</tbody>
             </table>
+          )}
+          {b.FPR_const_capability?.value != null && b.FPR_base.value !== null && m26.FPR.value !== null && (
+            <p className="mt-2 text-[11.5px] text-ink3" data-testid="fpr31-decomp">
+              FPR 2031({scen}) 증가 {signedEok(b.FPR_base.value - m26.FPR.value)} = 고객 IT 지출 성장 {signedEok(b.FPR_const_capability.value - m26.FPR.value)} + U+ 역량 확대 가정(2031 접근률·포획상한 상향) {signedEok(b.FPR_base.value - b.FPR_const_capability.value)}
+            </p>
           )}
           <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
             {[

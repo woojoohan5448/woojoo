@@ -94,9 +94,9 @@ export default function AdminView({ data, mode, onSaved }: { data: Dashboard; mo
     <div className="space-y-4 p-4">
       <ExcelImport mode={mode} onSaved={onSaved} />
       <section className="card p-4">
-        <h2 className="text-[18px] font-bold">관리자 입력(간이) — Current Revenue · 2031 Target (사내 데이터)</h2>
+        <h2 className="text-[18px] font-bold">관리자 입력(간이·레거시) — Current Revenue · 2031 Target (사내 데이터)</h2>
         <p className="mt-1 text-[12.5px] text-ink2">CR_2026과 2031 Target은 공개자료로 확인할 수 없는 <b>사내 데이터</b>입니다. 비워두면 <b>NULL(미확인)</b>으로 처리되며 0원으로 간주하지 않습니다. 입력 시 C-SOW·Potential Capture Rate·Upside·Target SOW가 재계산되고 무결성 검증이 수행됩니다.</p>
-        <p className="mt-1 text-[12px] text-ink3">현재 모드: {mode === 'api' ? 'API — 저장 시 data/internal_inputs/management_inputs.csv 갱신 후 모델 재빌드' : '정적 빌드 — 입력 후 CSV를 내려받아 data/internal_inputs/에 저장하고 `python3 -m models.build` 실행'}</p>
+        <p className="mt-1 text-[12px] text-ink3">현재 모드: {mode === 'api' ? 'API — 이 간이 입력의 직접 저장은 기본 비활성화(승인 절차 우회 방지). 위 Excel 업로드·미리보기·승인을 사용하세요.' : '정적 빌드 — 입력 후 CSV를 내려받아 검토용으로만 사용'}</p>
         <div className="mt-3 flex gap-2">
           <button onClick={save} disabled={mode !== 'api' || changed.length === 0} className="rounded-md bg-brand px-3 py-1.5 text-[13px] font-semibold text-white disabled:opacity-40">API로 저장·재계산</button>
           <button onClick={csv} className="rounded-md border border-line px-3 py-1.5 text-[13px] font-semibold">CSV 내보내기</button>

@@ -36,7 +36,7 @@ export default function Header({ data, mode, theme, setTheme }: { data: Dashboar
         </div>
       </div>
       <div className="flex overflow-x-auto px-1 py-2 scroll-thin">
-        <Kpi label="분석 고객" value={`${n}`} sub={`근거검증 ${verified} · 추정 ${data.meta.status_counts['MODEL_ESTIMATED'] ?? 0}`} />
+        <Kpi label="분석 고객" value={`${n}`} sub={`IT지출 원문확인 ${verified} · 입력원문확인 ${data.meta.status_counts['INPUTS_VERIFIED'] ?? 0} · 추정 ${data.meta.status_counts['MODEL_ESTIMATED'] ?? 0}`} />
         <Kpi label="2026 TS" value={eok(a26.TS, 'ESTIMATED')} sub={cov(a26.n_ts)} accent="var(--c-ts)" />
         <Kpi label="2026 RAW" value={eok(a26.RAW, 'ESTIMATED')} sub={cov(a26.n_raw)} accent="var(--c-raw)" />
         <Kpi label="2026 FPR" value={eok(a26.FPR, 'ESTIMATED')} sub={cov(a26.n_fpr)} accent="var(--c-fpr)" />

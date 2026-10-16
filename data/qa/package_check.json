@@ -1,0 +1,13 @@
+{
+ "zip": "dist_release/KeyAccountIntel_20261016T051757Z.zip",
+ "files": 289,
+ "size_mb": 16.5,
+ "internal_check": "사내 데이터 0건 (internal_store·uploads 없음, management_inputs 값 0행, 번들 내 contains_internal_data=true 0건)",
+ "secrets": ".env·키 파일 0건 (.env.example만 포함)",
+ "required": "17/17 포함",
+ "wheels": "26개, pydantic_core cp311, cp312, cp313 win_amd64",
+ "bat": "3종 모두 CRLF + chcp 65001",
+ "manifest_include_internal": false,
+ "data_version": "20261016T051757Z",
+ "problems": []
+}

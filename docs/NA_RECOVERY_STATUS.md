@@ -1,6 +1,6 @@
 # N/A RECOVERY STATUS (53 accounts)
 
-data_version 20261016T044819Z · 외부 커버리지 90.8% · 복구율 72.4%
+data_version 20261016T051757Z · 외부 커버리지 90.8% · 복구율 72.4%
 
 | ID | 고객 | TS 방법 | TS 2026 등급 | 외부 결측 | 상태 | 비고 |
 |---|---|---|---|---|---|---|
@@ -11,7 +11,7 @@ data_version 20261016T044819Z · 외부 커버리지 90.8% · 복구율 72.4%
 | KA05 | 한국전력공사 | REVENUE_INTENSITY | ESTIMATED_LOW | 0 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 |  |
 | KA06 | 구글클라우드 | ACCOUNT_SPECIFIC | ESTIMATED_MEDIUM | 0 | 조사 완료 · 추정 완료 · 내부 데이터 필요 | Phase1: 구글클라우드코리아 감사보고서(VERIFIED)로 국내 인프라 지출 복구. 기존 '3개 법인 합산 매출 6,831 |
 | KA07 | 마이크로소프트 | ACCOUNT_SPECIFIC | ESTIMATED_LOW | 0 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | Phase1: 한국MS 감사보고서상 판매법인 구조(로열티 1.72조, DC 비용 해외 귀속) → 법인 재무로 TS 불가, 용량 |
-| KA08 | 아마존 | ACCOUNT_SPECIFIC | ESTIMATED_LOW | 0 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | 2031 기본 시나리오는 투자 페이스 유지(유기 성장 0%)로 가정 — 7.85조(2023~27)와 7조(2025~31) 프로 |
+| KA08 | 아마존 | ACCOUNT_SPECIFIC | ESTIMATED_LOW | 0 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | QA(2026-10-16): 발표된 누적 투자 계획의 연평균 환산은 실적이 아닌 계획 기반 값 → status SCENARIO |
 | KA09 | (주)카카오 | KISA_IT_INVESTMENT | ESTIMATED_MEDIUM | 0 | 조사 완료 · 추정 완료 · 내부 데이터 필요 |  |
 | KA10 | 네이버클라우드 | KISA_IT_INVESTMENT | ESTIMATED_MEDIUM | 0 | 조사 완료 · 추정 완료 · 내부 데이터 필요 |  |
 | KA11 | (주)신세계아이앤씨 | KISA_IT_INVESTMENT | ESTIMATED_MEDIUM | 0 | 조사 완료 · 추정 완료 · 내부 데이터 필요 |  |

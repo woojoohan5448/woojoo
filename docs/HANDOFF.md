@@ -20,6 +20,11 @@
 4. 프런트: `cd frontend && npm run build && npm run build:single && cp dist-single/index.html ../Key_Account_Dashboard.html`
 5. 테스트: `python3 -m pytest -q`, `npx vitest run`, 서버 기동 후 `node tests/e2e/dashboard.e2e.mjs`
 
+## 3-1. 최종 QA 결과(이어서 할 일)
+- `reports/final_qa/FINAL_DATA_QUALITY_AUDIT.md`부터 읽는다. OPEN 항목: QA-05(플랫폼 인건비 믹스), QA-06(비은행 포괄률), QA-07(상한값 기준), QA-10(계정별 성장 동인), QA-I5(Account Plan 미반영), QA-02(KISA 원문 대조).
+- QA 재실행: `python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports` (수정 전 기준선: `data/qa/before/`).
+- Windows wheel: `pip download -r requirements.txt -d wheels --platform win_amd64 --python-version 3.11 --only-binary=:all:` (3.12·3.13 반복) 후 make_release.
+
 ## 4. 주의
 - WebSearch 턴당 200회 공유 한도, WebFetch·해외 공공 API는 프록시 차단.
 - `pkill -f uvicorn` 금지(자기 셸 종료) → `pgrep -f "[u]vicorn backend"`로 PID 확인 후 kill.

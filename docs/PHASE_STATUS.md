@@ -6,6 +6,7 @@
 | **2. 모델 고도화·N/A 표시** | **완료** | L2 구성요소법·임직원 비교·시나리오 앵커, 등급 체계, 대시보드 7종 상태 표시, Data Quality 탭 기준선 비교, P2 재개 조사(KA45 복구) | 등급 HIGH는 10필드뿐 — 비공시 고객이 많아 구조적 한계 |
 | **3. 이관 패키지·Excel Import** | **구현·Linux 검증 완료 / Windows 미검증** | Excel 템플릿·미리보기·매핑·검증·승인·이력, FastAPI 업로드 API, 관리자 화면, `setup_windows.bat`·`run_dashboard.bat`·`import_excel.bat`, `tools/make_release.py`(사내 데이터 차단), DEPLOYMENT_GUIDE | Windows 사내 PC 실행, 사내 프록시/pip, SSO 권한 분리 미검증 |
 | **4. 사내 매출 통합·전략 인텔리전스** | **구현 + 합성(TEST-ONLY) 데이터로만 테스트** | CR/Target/영업추정 반영, Reconciliation 패널, `meta.contains_internal_data` 경고, 샌드박스 E2E 테스트 | **실제 사내 데이터 검증은 승인된 사내 환경에서 미실시** (아래 체크리스트) |
+| **최종 QA** | **완료(2026-10-16)** | `reports/final_qa/` 5종, 발견 22건(FIXED 14·MITIGATED 1·OPEN 5·DOCUMENTED 2), 결합 로직 결함 4건 수정, 테스트 pytest 36·vitest 6·E2E 16 | OPEN 5건·Windows 실행·사내 실데이터 검증 |
 
 ## 사내 이관 후 Phase 4 검증 체크리스트
 1. [ ] 사내 Excel 실제 고객명 → 53개 계정 매핑률(UNMAPPED/AMBIGUOUS 0건) 확인, 필요 시 `config/account_aliases.json` 보강

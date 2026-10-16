@@ -9,6 +9,7 @@ Run:  cd project && uvicorn backend.app:app --port 8000
 from __future__ import annotations
 
 import csv
+import os
 import json
 import threading
 from datetime import datetime, timezone
@@ -111,6 +112,10 @@ def _num(s: str, field: str, aid: str):
 
 @app.post("/api/management-inputs")
 def save_inputs(p: MgmtPayload):
+    # QA-I4: v1 direct-write path bypasses preview/approval/layer separation and writes a Git-tracked CSV.
+    # Disabled by default; Excel import (/api/import/*) is the approved path. Opt-in only for legacy use.
+    if os.environ.get("KAI_ENABLE_LEGACY_INPUT") != "1":
+        raise HTTPException(410, "레거시 직접 입력 비활성화 — 관리자 입력 화면의 Excel 업로드·미리보기·승인 절차를 사용하세요 (KAI_ENABLE_LEGACY_INPUT=1 로만 재활성화)")
     with _lock:
         existing = {}
         if MGMT.exists():
@@ -189,7 +194,12 @@ def import_approve(batch_id: str, p: ApprovePayload):
 @app.post("/api/import/reject/{batch_id}")
 def import_reject(batch_id: str, p: ApprovePayload):
     from models.internal.excel_io import reject
-    return reject(batch_id, p.approver)
+    try:
+        return reject(batch_id, p.approver)
+    except FileNotFoundError:
+        raise HTTPException(404, "배치 없음")
+    except ValueError as e:
+        raise HTTPException(409, str(e))
 
 
 @app.get("/api/export/xlsx")
