@@ -1045,7 +1045,11 @@ def main():
         "overlap_groups": overlap.get("groups", []),
     }
     strat = strategy_engine(accounts, params, strategy)
-    opportunity_evidence(accounts, params, strat, load_json(CONFIG / "demand_signal_map.json", {"types": {}}))
+    sigmap = load_json(CONFIG / "demand_signal_map.json", {"types": {}})
+    opportunity_evidence(accounts, params, strat, sigmap)
+    # Phase 3A: Opportunity-to-Action (3 evidence lenses, initiatives, weight sensitivity) — additive, scores unchanged
+    from models.strategy_actions import build as _actions
+    initiatives, prio_sens, opp_flow = _actions(accounts, strat, params, market, sigmap)
     db = write_sqlite(accounts, evidence, issues, params, market, strat, mgmt)
     write_exports(accounts)
 
@@ -1075,6 +1079,7 @@ def main():
         "market_benchmarks": market,
         "accounts": [{k: v for k, v in a.items() if not k.startswith("_")} for a in accounts],
         "portfolio": portfolio, "strategy": strat,
+        "initiatives": initiatives, "priority_sensitivity": prio_sens, "opportunity_flow": opp_flow,
         "issues_summary": {sev: sum(1 for i in issues if i["severity"] == sev) for sev in ("ERROR", "WARN", "INFO")},
     }
     # Phase 3A: metric ledger + official-source selection (additive; engine values unchanged, empty internal store → defaults)

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "20261016T203154Z",
-  "generated_at": "2026-10-16T20:31:55.491157+00:00",
+  "data_version": "20261016T204246Z",
+  "generated_at": "2026-10-16T20:42:46.989633+00:00",
   "unit": "억원",
   "currency": "KRW",
   "n_accounts": 53,
@@ -108356,6 +108356,2281 @@
    }
   }
  ],
+ "initiatives": [
+  {
+   "initiative_id": "INIT-01",
+   "area": "Connectivity",
+   "status": "NEEDS_VALIDATION",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 3354.38,
+    "FPR_2031": 5007.31,
+    "FPR_CAGR": 0.083424,
+    "n_accounts": 43,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 1316.96
+     },
+     {
+      "account_id": "KA14",
+      "FPR_2031": 615.81
+     },
+     {
+      "account_id": "KA10",
+      "FPR_2031": 563.28
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "PARTIAL",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [
+      "MB40"
+     ],
+     "flags": [
+      "시장 근거 1건 모두 원문 미열람(2차 인용)"
+     ],
+     "facts": [
+      "MB40: LG U+ Enterprise lines 2Q26 2057 억원 (2026)",
+      "성장 가정 의존도 14%"
+     ]
+    },
+    "demand": {
+     "level": "PARTIAL",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [
+      "KA01",
+      "KA14"
+     ],
+     "flags": [
+      "기존 공급자 관찰 18개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음",
+      "고객별 비중 근거 2개사(KISA 비율·계약 카테고리 등) — 규모 산정 근거, 신규 수요 아님"
+     ],
+     "facts": [
+      "양(+) 수요 근거 2개사 / 기회 보유 43개사 · 해당 고객 FPR 2031 비중 16%",
+      "(주)엘지씨엔에스 · OVERSEAS_EXPANSION · 인도네시아 자카르타 AI 데이터센터(LG 시나르마스 통해 KMG와 계약, 수전 30MW, 향후 220MW 확장 계획) 구축 사업 약 1,000억원, 2026년 말 완공 목표. 고객 DC 구축(DBO) 매출이며 LG CNS 자체 IT 소비 아님",
+      "삼성에스디에스(주) · INFRA_INVESTMENT_PLAN · 삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정"
+     ],
+     "signals": [
+      {
+       "account_id": "KA01",
+       "id": "KA01-D02",
+       "type": "OVERSEAS_EXPANSION",
+       "direction": "UP",
+       "amount_eok": 1000,
+       "period": "2025-2026",
+       "description": "인도네시아 자카르타 AI 데이터센터(LG 시나르마스 통해 KMG와 계약, 수전 30MW, 향후 220MW 확장 계획) 구축 사업 약 1,000억원, 2026년 말 완공 목표. 고객 DC 구축(DBO) 매출이며 LG CNS 자체 IT 소비 아님",
+       "evidence_ids": [
+        "KA01-E09"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-INFRA-AI",
+       "type": "INFRA_INVESTMENT_PLAN",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2031",
+       "description": "삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정",
+       "evidence_ids": [
+        "KA14-E08"
+       ]
+      }
+     ],
+     "contradicting": [],
+     "n_contradicting_accounts": 0,
+     "coverage_share": 0.15568982832248704
+    },
+    "capture": {
+     "level": "SUFFICIENT",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 1.0,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 HIGH",
+      "역량 격차 LOW",
+      "경쟁 HIGH — KT(전용회선 최대 사업자)·SK브로드밴드, 금융권 이중망 정책으로 단일사 100% 불가",
+      "LG U+ 위치: 기존 사업자. 기업회선 매출 2Q26 2,057억원(MB40). 다수 고객에서 이중망 중 1회선 공급자 지위"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 3,354억 → 2031 5,007억 (CAGR 8.3%), 기회 보유 43개사",
+    "상위 고객: 쿠팡(주)(26%), 삼성에스디에스(주)(12%), 네이버클라우드(11%)",
+    "수요 근거: 양(+) 2개사 · 시장 근거 1건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: LOW — 필요 역량 금융·공공 등급 SLA, 이중화 설계, AIDC-클라우드 직결 회선, 보안 결합상품",
+    "고객 수요 근거 일부(2개사)",
+    "시장 근거 1건 모두 원문 미열람(2차 인용)",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "EXPAND",
+    "label": "확장 — 검토 옵션(검증 필요)",
+    "text": "방어·확장: AIDC·클라우드 연결 회선과 보안을 결합한 번들로 이중망 내 점유 확대. 커넥티드카·IoT(현대엘리베이터, KG모빌리티 인포콘 등) 회선 수요 공략",
+    "mode": "검토 옵션(검증 필요)"
+   },
+   "priority": {
+    "baseline_score": 73.3,
+    "baseline_rank": 1,
+    "rank_min": 1,
+    "rank_max": 1,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "CON-A1",
+     "text": "수요 검증: 상위 고객(쿠팡(주), 삼성에스디에스(주), 네이버클라우드)의 구매·투자 계획·예산·RFP 확인",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "CON-A2",
+     "text": "시장 근거 원문 대조(2차 인용 → 1차 보고서·공시)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "CON-A3",
+     "text": "LG U+ 역량·경쟁력 사내 진단(LOW), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "CON-A4",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": null
+  },
+  {
+   "initiative_id": "INIT-02",
+   "area": "AI Infrastructure",
+   "status": "NEEDS_VALIDATION",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 652.36,
+    "FPR_2031": 3426.0,
+    "FPR_CAGR": 0.39335,
+    "n_accounts": 40,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 1346.36
+     },
+     {
+      "account_id": "KA10",
+      "FPR_2031": 676.02
+     },
+     {
+      "account_id": "KA09",
+      "FPR_2031": 437.0
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "PARTIAL",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [
+      "MB04a",
+      "MB20",
+      "MB21",
+      "MB22"
+     ],
+     "flags": [
+      "시장 근거 4건 모두 원문 미열람(2차 인용)",
+      "성장 가정 의존도 74% — 2031 증가분 과반이 배분 가정"
+     ],
+     "facts": [
+      "MB04a: Gartner WW IT spending 2026 by segment 55.8 % (2026)",
+      "MB20: National AI Computing Center 15000 장 (2028)",
+      "MB21: Government GPU securing plan 37000 장 (2026)",
+      "MB22: Government GPU securing plan 50000 장(B200 equiv) (2028)",
+      "성장 가정 의존도 74%"
+     ]
+    },
+    "demand": {
+     "level": "SUFFICIENT",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [
+      "KA01",
+      "KA03",
+      "KA09",
+      "KA10",
+      "KA14",
+      "KA25",
+      "KA38",
+      "KA49"
+     ],
+     "flags": [
+      "기존 공급자 관찰 2개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음",
+      "고객별 비중 근거 1개사(KISA 비율·계약 카테고리 등) — 규모 산정 근거, 신규 수요 아님",
+      "수요 감소(예산 감액) 신호 1개사 — 반대 근거"
+     ],
+     "facts": [
+      "양(+) 수요 근거 8개사 / 기회 보유 40개사 · 해당 고객 FPR 2031 비중 42%",
+      "(주)엘지씨엔에스 · DC_BUILD · 부산 'AI 박스 캠퍼스': 컨테이너형 AI 데이터센터(GPU 576장, 1.2MW급) 'AI 박스' 50개 집적 계획(2026년 3월 발표). 투자금액·일정 미공개",
+      "(주)엘지씨엔에스 · AI_INVESTMENT · 2026년 2분기 실적발표: 신규 AI 플랫폼·차세대 기술 R&D·피지컬 AI·AI 인재 투자 확대로 영업이익률 8.4%(-1.2%p). 상반기 1조원 이상 대형 DBO 수주(삼송·죽전 하이퍼스케일 AI DC 등). 2026 CAPEX 금액 미공개",
+      "국민은행 · DC_BUILD · KB 통합IT센터(김포 한강신도시) 2019년 7월 준공, 연면적 40,236㎡, 그룹 계열사 IT 인프라 통합. 신규 DC 계획은 미발견. 총투자액 미확인(2016년 계획 공사비 1800여억원).",
+      "(주)카카오 · AI_INVESTMENT · 별도 유형자산 취득 FY2024 1,977억 → FY2025 2,204억(+11.5%), 연결 3,796억 → 4,792억(+26.2%). AI/GPU·DC 투자 구체 계획(안산 DC 증설, AI DC)은 이번 세션 검색 한도로 미확인",
+      "네이버클라우드 · AI_INVESTMENT · DART 비유동자산취득결정 공시 3건(2026-03-31, 2026-06-25, 2026-07-14) — GPU/DC 설비 취득으로 추정되나 대상·금액 본문 미확인"
+     ],
+     "signals": [
+      {
+       "account_id": "KA01",
+       "id": "KA01-D01",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-",
+       "description": "부산 'AI 박스 캠퍼스': 컨테이너형 AI 데이터센터(GPU 576장, 1.2MW급) 'AI 박스' 50개 집적 계획(2026년 3월 발표). 투자금액·일정 미공개",
+       "evidence_ids": [
+        "KA01-E08"
+       ]
+      },
+      {
+       "account_id": "KA01",
+       "id": "KA01-D03",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026",
+       "description": "2026년 2분기 실적발표: 신규 AI 플랫폼·차세대 기술 R&D·피지컬 AI·AI 인재 투자 확대로 영업이익률 8.4%(-1.2%p). 상반기 1조원 이상 대형 DBO 수주(삼송·죽전 하이퍼스케일 AI DC 등). 2026 CAPEX 금액 미공개",
+       "evidence_ids": [
+        "KA01-E09",
+        "KA01-E10"
+       ]
+      },
+      {
+       "account_id": "KA03",
+       "id": "KA03-D04",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2019(완료)",
+       "description": "KB 통합IT센터(김포 한강신도시) 2019년 7월 준공, 연면적 40,236㎡, 그룹 계열사 IT 인프라 통합. 신규 DC 계획은 미발견. 총투자액 미확인(2016년 계획 공사비 1800여억원).",
+       "evidence_ids": [
+        "KA03-E21"
+       ]
+      },
+      {
+       "account_id": "KA09",
+       "id": "KA09-D01",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2024-2025",
+       "description": "별도 유형자산 취득 FY2024 1,977억 → FY2025 2,204억(+11.5%), 연결 3,796억 → 4,792억(+26.2%). AI/GPU·DC 투자 구체 계획(안산 DC 증설, AI DC)은 이번 세션 검색 한도로 미확인",
+       "evidence_ids": [
+        "KA09-E03",
+        "KA09-E04"
+       ]
+      },
+      {
+       "account_id": "KA10",
+       "id": "KA10-D01",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026",
+       "description": "DART 비유동자산취득결정 공시 3건(2026-03-31, 2026-06-25, 2026-07-14) — GPU/DC 설비 취득으로 추정되나 대상·금액 본문 미확인",
+       "evidence_ids": [
+        "KA10-E01"
+       ]
+      },
+      {
+       "account_id": "KA10",
+       "id": "KA10-D02",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2023-2024",
+       "description": "KISA 정보기술부문 투자 FY2023 5,201억 → FY2024 약 6,529억(DERIVED). 각 세종 확장·GPU 투자·소버린 AI 사업계획 금액은 검색 한도로 미확인",
+       "evidence_ids": [
+        "KA10-E02",
+        "KA10-E03"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-D01",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": 100000,
+       "period": "2026-2031",
+       "description": "2031년까지 총 10조원 투자(AI 인프라 5조, M&A 4조, AX·AI 서비스/플랫폼 1조). KKR 유치금 약 1.2조원 활용",
+       "evidence_ids": [
+        "KA14-E08"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-D02",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2031",
+       "description": "AI 인프라 110MW→230MW(2029)→800MW 이상(2031). 구미 AI DC 60MW 2029-03 가동(CAPEX형), 동탄 DC 서관 GPU 전 층 2027 가동 예정",
+       "evidence_ids": [
+        "KA14-E07",
+        "KA14-E10"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-D03",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": 4000,
+       "period": "2026-2028",
+       "description": "해남 국가AI컴퓨팅센터(삼성SDS 컨소시엄, 출자 4000억원: 공공 1160억/민간 2840억, GPU 1만5000장, 2028 가동). 지분투자형",
+       "evidence_ids": [
+        "KA14-E09"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-INFRA-AI",
+       "type": "INFRA_INVESTMENT_PLAN",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2031",
+       "description": "삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정",
+       "evidence_ids": [
+        "KA14-E08"
+       ]
+      },
+      {
+       "account_id": "KA25",
+       "id": "KA25-D03",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026",
+       "description": "전방위 AI 경영 강화(투자·보안 영역) 보도. 금액 미확인",
+       "evidence_ids": [
+        "KA25-E14"
+       ]
+      },
+      {
+       "account_id": "KA38",
+       "id": "KA38-P1-D02",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": 250,
+       "period": "2026-2027",
+       "description": "온프레미스 생성형 AI 인프라·클라우드 네이티브 환경 구축 — 250억원(VAT포함), 11개월",
+       "evidence_ids": [
+        "KA38-P1-E02"
+       ]
+      },
+      {
+       "account_id": "KA49",
+       "id": "KA49-P1-D01",
+       "type": "AI_INVESTMENT",
+       "direction": "UP",
+       "amount_eok": 10100.1,
+       "period": "2025-08-01~2030-12-31",
+       "description": "정보통신산업진흥원 AI컴퓨팅자원 활용기반 강화사업(GPU 확보·구축·운용지원) 협약, 총협약금액 1조 100억원",
+       "evidence_ids": [
+        "KA49-P1-E04"
+       ]
+      }
+     ],
+     "contradicting": [
+      {
+       "account_id": "KA47",
+       "id": "KA47-D01",
+       "type": "DC_BUILD",
+       "direction": "DOWN",
+       "amount_eok": null,
+       "period": "2024-2025",
+       "description": "연결 유형자산 취득 FY2024 2,104억 → FY2025 458억: 대형 설비(IDC 등) 투자가 FY2024에 집중된 것으로 보임. 별도 556억 → 187억. 구체 프로젝트 미확인",
+       "evidence_ids": [
+        "KA47-E03",
+        "KA47-E04"
+       ]
+      }
+     ],
+     "n_contradicting_accounts": 1,
+     "coverage_share": 0.4177559765464774
+    },
+    "capture": {
+     "level": "PARTIAL",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 0.5,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 MEDIUM",
+      "역량 격차 MEDIUM–HIGH",
+      "경쟁 HIGH — 하이퍼스케일러, 네이버클라우드·NHN클라우드·KT클라우드, 정부 국가AI컴퓨팅센터(MB20)",
+      "LG U+ 위치: AIDC 사업 보유. GPUaaS·AI 추론 인프라 확대 단계(사내 데이터로 검증 필요)"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 652억 → 2031 3,426억 (CAGR 39.3%), 기회 보유 40개사",
+    "상위 고객: 쿠팡(주)(39%), 네이버클라우드(20%), (주)카카오(13%)",
+    "수요 근거: 양(+) 8개사, 감소 신호 1개사 · 시장 근거 4건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: MEDIUM–HIGH — 필요 역량 GPU 조달(공급망), 고밀도 전력·냉각, AI 플랫폼·MLOps, 소버린 AI 레퍼런스",
+    "시장 근거 4건 모두 원문 미열람(2차 인용)",
+    "성장 가정 의존도 74% — 2031 증가분 과반이 배분 가정",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "PARTNER",
+    "label": "제휴 — 검토 옵션(검증 필요)",
+    "text": "제휴+선택적 투자: GPU 클라우드 사업자·하이퍼스케일러와 소버린/AI 존 제휴로 AIDC 가동률 확보, 금융·공공 AI 추론 수요 선점",
+    "mode": "검토 옵션(검증 필요)"
+   },
+   "priority": {
+    "baseline_score": 63.4,
+    "baseline_rank": 2,
+    "rank_min": 2,
+    "rank_max": 3,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "AI -A1",
+     "text": "감소 신호 1개사 원문 확인 후 수요 판단 재검토",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A2",
+     "text": "시장 근거 원문 대조(2차 인용 → 1차 보고서·공시)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A3",
+     "text": "성장 가정(B-ALLOC 배분) 민감도 검증 — 가정 제외 시 기회 규모 재산정",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A4",
+     "text": "LG U+ 역량·경쟁력 사내 진단(MEDIUM–HIGH), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A5",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": null
+  },
+  {
+   "initiative_id": "INIT-03",
+   "area": "Data Center / IDC",
+   "status": "NEEDS_VALIDATION",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 2648.3,
+    "FPR_2031": 4100.94,
+    "FPR_CAGR": 0.091398,
+    "n_accounts": 42,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 1550.97
+     },
+     {
+      "account_id": "KA10",
+      "FPR_2031": 725.77
+     },
+     {
+      "account_id": "KA09",
+      "FPR_2031": 506.08
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "PARTIAL",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [
+      "MB15",
+      "MB16",
+      "MB18",
+      "MB19",
+      "MB36",
+      "MB38"
+     ],
+     "flags": [
+      "시장 근거 6건 모두 원문 미열람(2차 인용)"
+     ],
+     "facts": [
+      "MB15: Korea commercial DC market (KDCC) 62200 억원 (2024)",
+      "MB16: Korea commercial DC market (KDCC) 12.4 % (2029)",
+      "MB18: Seoul DC capacity (Cushman & Wakefield) 533 MW (2025)",
+      "MB19: Seoul DC pipeline (Cushman & Wakefield) 715 MW (2025)",
+      "MB36: LG U+ AIDC 1Q26 1144 억원 (2026)",
+      "MB38: LG U+ AIDC 2Q26 1241 억원 (2026)",
+      "성장 가정 의존도 16%"
+     ]
+    },
+    "demand": {
+     "level": "PARTIAL",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [
+      "KA01",
+      "KA03",
+      "KA14"
+     ],
+     "flags": [
+      "기존 공급자 관찰 7개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음",
+      "고객별 비중 근거 1개사(KISA 비율·계약 카테고리 등) — 규모 산정 근거, 신규 수요 아님",
+      "수요 감소(예산 감액) 신호 1개사 — 반대 근거"
+     ],
+     "facts": [
+      "양(+) 수요 근거 3개사 / 기회 보유 42개사 · 해당 고객 FPR 2031 비중 10%",
+      "(주)엘지씨엔에스 · DC_BUILD · 부산 'AI 박스 캠퍼스': 컨테이너형 AI 데이터센터(GPU 576장, 1.2MW급) 'AI 박스' 50개 집적 계획(2026년 3월 발표). 투자금액·일정 미공개",
+      "국민은행 · DC_BUILD · KB 통합IT센터(김포 한강신도시) 2019년 7월 준공, 연면적 40,236㎡, 그룹 계열사 IT 인프라 통합. 신규 DC 계획은 미발견. 총투자액 미확인(2016년 계획 공사비 1800여억원).",
+      "삼성에스디에스(주) · DC_BUILD · AI 인프라 110MW→230MW(2029)→800MW 이상(2031). 구미 AI DC 60MW 2029-03 가동(CAPEX형), 동탄 DC 서관 GPU 전 층 2027 가동 예정",
+      "삼성에스디에스(주) · DC_BUILD · 해남 국가AI컴퓨팅센터(삼성SDS 컨소시엄, 출자 4000억원: 공공 1160억/민간 2840억, GPU 1만5000장, 2028 가동). 지분투자형",
+      "삼성에스디에스(주) · INFRA_INVESTMENT_PLAN · 삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정"
+     ],
+     "signals": [
+      {
+       "account_id": "KA01",
+       "id": "KA01-D01",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-",
+       "description": "부산 'AI 박스 캠퍼스': 컨테이너형 AI 데이터센터(GPU 576장, 1.2MW급) 'AI 박스' 50개 집적 계획(2026년 3월 발표). 투자금액·일정 미공개",
+       "evidence_ids": [
+        "KA01-E08"
+       ]
+      },
+      {
+       "account_id": "KA03",
+       "id": "KA03-D04",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2019(완료)",
+       "description": "KB 통합IT센터(김포 한강신도시) 2019년 7월 준공, 연면적 40,236㎡, 그룹 계열사 IT 인프라 통합. 신규 DC 계획은 미발견. 총투자액 미확인(2016년 계획 공사비 1800여억원).",
+       "evidence_ids": [
+        "KA03-E21"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-D02",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2031",
+       "description": "AI 인프라 110MW→230MW(2029)→800MW 이상(2031). 구미 AI DC 60MW 2029-03 가동(CAPEX형), 동탄 DC 서관 GPU 전 층 2027 가동 예정",
+       "evidence_ids": [
+        "KA14-E07",
+        "KA14-E10"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-D03",
+       "type": "DC_BUILD",
+       "direction": "UP",
+       "amount_eok": 4000,
+       "period": "2026-2028",
+       "description": "해남 국가AI컴퓨팅센터(삼성SDS 컨소시엄, 출자 4000억원: 공공 1160억/민간 2840억, GPU 1만5000장, 2028 가동). 지분투자형",
+       "evidence_ids": [
+        "KA14-E09"
+       ]
+      },
+      {
+       "account_id": "KA14",
+       "id": "KA14-INFRA-AI",
+       "type": "INFRA_INVESTMENT_PLAN",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2031",
+       "description": "삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정",
+       "evidence_ids": [
+        "KA14-E08"
+       ]
+      }
+     ],
+     "contradicting": [
+      {
+       "account_id": "KA47",
+       "id": "KA47-D01",
+       "type": "DC_BUILD",
+       "direction": "DOWN",
+       "amount_eok": null,
+       "period": "2024-2025",
+       "description": "연결 유형자산 취득 FY2024 2,104억 → FY2025 458억: 대형 설비(IDC 등) 투자가 FY2024에 집중된 것으로 보임. 별도 556억 → 187억. 구체 프로젝트 미확인",
+       "evidence_ids": [
+        "KA47-E03",
+        "KA47-E04"
+       ]
+      }
+     ],
+     "n_contradicting_accounts": 1,
+     "coverage_share": 0.09987069868359644
+    },
+    "capture": {
+     "level": "SUFFICIENT",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 0.8,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 HIGH",
+      "역량 격차 MEDIUM — 전력·부지 선확보가 병목",
+      "경쟁 HIGH — KT클라우드·SK브로드밴드·외국계 콜로(Equinix 등)·하이퍼스케일러 자가 구축(AWS 인천 100MW 등)",
+      "LG U+ 위치: AIDC 매출 1Q26 1,144억 → 2Q26 1,241억원(MB36, MB38). 상업용 DC 시장 CAGR 12.4%(MB16), 서울권 파이프라인 715MW(MB19)"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 2,648억 → 2031 4,101억 (CAGR 9.1%), 기회 보유 42개사",
+    "상위 고객: 쿠팡(주)(38%), 네이버클라우드(18%), (주)카카오(12%)",
+    "수요 근거: 양(+) 3개사, 감소 신호 1개사 · 시장 근거 6건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: MEDIUM — 전력·부지 선확보가 병목 — 필요 역량 전력(수전 용량) 확보, 고밀도·액체냉각 AI 랙, 하이퍼스케일 임대(빌드투수트), 수도권 입지",
+    "고객 수요 근거 일부(3개사)",
+    "시장 근거 6건 모두 원문 미열람(2차 인용)",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "INVEST",
+    "label": "투자 — 검토 옵션(검증 필요)",
+    "text": "투자 우선순위 상위: 고객별 수요(하이퍼스케일러·플랫폼·금융 DR)와 가용 용량·전력 일정을 대조한 용량 투자 검토. DC 펀드(코람코·키암코)와 리스백·운영 위탁 구조 검토",
+    "mode": "검토 옵션(검증 필요)"
+   },
+   "priority": {
+    "baseline_score": 63.3,
+    "baseline_rank": 3,
+    "rank_min": 2,
+    "rank_max": 3,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "DAT-A1",
+     "text": "수요 검증: 상위 고객(쿠팡(주), 네이버클라우드, (주)카카오)의 구매·투자 계획·예산·RFP 확인",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "DAT-A2",
+     "text": "감소 신호 1개사 원문 확인 후 수요 판단 재검토",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "DAT-A3",
+     "text": "시장 근거 원문 대조(2차 인용 → 1차 보고서·공시)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "DAT-A4",
+     "text": "LG U+ 역량·경쟁력 사내 진단(MEDIUM), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "DAT-A5",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": null
+  },
+  {
+   "initiative_id": "INIT-04",
+   "area": "Cloud",
+   "status": "NEEDS_VALIDATION",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 507.22,
+    "FPR_2031": 1581.07,
+    "FPR_CAGR": 0.255309,
+    "n_accounts": 40,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 604.16
+     },
+     {
+      "account_id": "KA09",
+      "FPR_2031": 196.57
+     },
+     {
+      "account_id": "KA10",
+      "FPR_2031": 94.54
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "PARTIAL",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [
+      "MB10",
+      "MB13",
+      "MB14"
+     ],
+     "flags": [
+      "시장 근거 3건 모두 원문 미열람(2차 인용)",
+      "성장 가정 의존도 77% — 2031 증가분 과반이 배분 가정"
+     ],
+     "facts": [
+      "MB10: Korea cloud industry revenue (MSIT survey) 23.2 % (2024)",
+      "MB13: Korea public cloud services market (IDC) 16.9 % (2027)",
+      "MB14: Korea financial-sector cloud adoption 92 % (2025)",
+      "성장 가정 의존도 77%"
+     ]
+    },
+    "demand": {
+     "level": "PARTIAL",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [
+      "KA26"
+     ],
+     "flags": [
+      "기존 공급자 관찰 4개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음"
+     ],
+     "facts": [
+      "양(+) 수요 근거 1개사 / 기회 보유 40개사 · 해당 고객 FPR 2031 비중 1%",
+      "한국투자증권(주) · CLOUD_MIGRATION · 정보보호 투자 항목에 클라우드 보호 플랫폼·클라우드 기반 사외 접속 보안 포함 → 클라우드 사용 확대 시사(금액 미분리)"
+     ],
+     "signals": [
+      {
+       "account_id": "KA26",
+       "id": "KA26-D03",
+       "type": "CLOUD_MIGRATION",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2024",
+       "description": "정보보호 투자 항목에 클라우드 보호 플랫폼·클라우드 기반 사외 접속 보안 포함 → 클라우드 사용 확대 시사(금액 미분리)",
+       "evidence_ids": [
+        "KA26-E09"
+       ]
+      }
+     ],
+     "contradicting": [],
+     "n_contradicting_accounts": 0,
+     "coverage_share": 0.012030621526466756
+    },
+    "capture": {
+     "level": "PARTIAL",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 0.6,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 MEDIUM",
+      "역량 격차 MEDIUM",
+      "경쟁 HIGH — 전문 MSP(메가존·베스핀 등), SI 계열 MSP(LG CNS·삼성SDS), 하이퍼스케일러 직판",
+      "LG U+ 위치: MSP·멀티클라우드 연결 상품 보유(AWS 파트너십 보도, KA08-E09 등)"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 507억 → 2031 1,581억 (CAGR 25.5%), 기회 보유 40개사",
+    "상위 고객: 쿠팡(주)(38%), (주)카카오(12%), 네이버클라우드(6%)",
+    "수요 근거: 양(+) 1개사 · 시장 근거 3건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: MEDIUM — 필요 역량 하이퍼스케일러 최상위 파트너 등급, 금융 클라우드 규제 대응(CSP 안전성 평가), FinOps",
+    "고객 수요 근거 일부(1개사)",
+    "시장 근거 3건 모두 원문 미열람(2차 인용)",
+    "성장 가정 의존도 77% — 2031 증가분 과반이 배분 가정",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "PARTNER",
+    "label": "제휴 — 검토 옵션(검증 필요)",
+    "text": "제휴 중심: 하이퍼스케일러·국내 CSP와 '회선+IDC+클라우드' 결합 오퍼, 금융권 퍼블릭 클라우드 전환(MB14) 공략",
+    "mode": "검토 옵션(검증 필요)"
+   },
+   "priority": {
+    "baseline_score": 47.2,
+    "baseline_rank": 4,
+    "rank_min": 4,
+    "rank_max": 4,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "CLO-A1",
+     "text": "수요 검증: 상위 고객(쿠팡(주), (주)카카오, 네이버클라우드)의 구매·투자 계획·예산·RFP 확인",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "CLO-A2",
+     "text": "시장 근거 원문 대조(2차 인용 → 1차 보고서·공시)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "CLO-A3",
+     "text": "성장 가정(B-ALLOC 배분) 민감도 검증 — 가정 제외 시 기회 규모 재산정",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "CLO-A4",
+     "text": "LG U+ 역량·경쟁력 사내 진단(MEDIUM), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "CLO-A5",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": null
+  },
+  {
+   "initiative_id": "INIT-05",
+   "area": "Security",
+   "status": "NEEDS_VALIDATION",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 536.72,
+    "FPR_2031": 1187.4,
+    "FPR_CAGR": 0.172114,
+    "n_accounts": 39,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 223.44
+     },
+     {
+      "account_id": "KA14",
+      "FPR_2031": 88.32
+     },
+     {
+      "account_id": "KA10",
+      "FPR_2031": 72.34
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "PARTIAL",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [
+      "MB24",
+      "MB26",
+      "MB30",
+      "MB31"
+     ],
+     "flags": [
+      "시장 근거 4건 모두 원문 미열람(2차 인용)",
+      "성장 가정 의존도 60% — 2031 증가분 과반이 배분 가정"
+     ],
+     "facts": [
+      "MB24: Korea info security industry (KISIA) 10.5 % (2024)",
+      "MB26: Korea info security (cyber only) 15.9 % (2024)",
+      "MB30: Big-5 bank security budget 2026 3320 억원 (2026)",
+      "MB31: Big-5 bank security/IT budget ratio range 9.1-12.2 % (2026)",
+      "성장 가정 의존도 60%"
+     ]
+    },
+    "demand": {
+     "level": "SUFFICIENT",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [
+      "KA03",
+      "KA16",
+      "KA22",
+      "KA25",
+      "KA26",
+      "KA29",
+      "KA33",
+      "KA37",
+      "KA39",
+      "KA52"
+     ],
+     "flags": [
+      "기존 공급자 관찰 3개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음",
+      "고객별 비중 근거 25개사(KISA 비율·계약 카테고리 등) — 규모 산정 근거, 신규 수요 아님",
+      "수요 감소(예산 감액) 신호 2개사 — 반대 근거"
+     ],
+     "facts": [
+      "양(+) 수요 근거 10개사 / 기회 보유 39개사 · 해당 고객 FPR 2031 비중 38%",
+      "국민은행 · REGULATORY_SECURITY · 2026년 정보보호 예산 편성 860억7500만원, 2027년 1000억원 이상으로 증액 계획(그룹 정보보호 관리체계 재정립). 단 2026 상반기 집행률 27%로 저조, 3년간 집행률 60% 미만.",
+      "지에스리테일 · REGULATORY_SECURITY · 정보보호 투자 FY2025 92억(전년 대비 10%+ 증가, 보도). 보안 투자 상향 추세",
+      "(주)하나은행 · REGULATORY_SECURITY · 2026년 KISA 정보보호 자율공시 첫 참여 보도(미확정), 2027년 금융권 의무공시 예정. 2026 IT 예산 대비 정보보호 예산 비중 12.2%로 5대 은행 최고.",
+      "미래에셋증권(주) · REGULATORY_SECURITY · 2026년 정보보호 예산 전년 대비 26% 증액(자체공개, 예산 기준)",
+      "미래에셋증권(주) · REGULATORY_SECURITY · 2026-10 금감원이 증권사에 IT 보안체계 전면 재점검(12개 항목) 요구 → 보안·외부노출 IT자산 점검 투자 압력"
+     ],
+     "signals": [
+      {
+       "account_id": "KA03",
+       "id": "KA03-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": 1000,
+       "period": "2027",
+       "description": "2026년 정보보호 예산 편성 860억7500만원, 2027년 1000억원 이상으로 증액 계획(그룹 정보보호 관리체계 재정립). 단 2026 상반기 집행률 27%로 저조, 3년간 집행률 60% 미만.",
+       "evidence_ids": [
+        "KA03-E17",
+        "KA03-E18"
+       ]
+      },
+      {
+       "account_id": "KA16",
+       "id": "KA16-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": 92,
+       "period": "2025",
+       "description": "정보보호 투자 FY2025 92억(전년 대비 10%+ 증가, 보도). 보안 투자 상향 추세",
+       "evidence_ids": [
+        "KA16-E30"
+       ]
+      },
+      {
+       "account_id": "KA22",
+       "id": "KA22-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2027",
+       "description": "2026년 KISA 정보보호 자율공시 첫 참여 보도(미확정), 2027년 금융권 의무공시 예정. 2026 IT 예산 대비 정보보호 예산 비중 12.2%로 5대 은행 최고.",
+       "evidence_ids": [
+        "KA22-E07",
+        "KA22-E10"
+       ]
+      },
+      {
+       "account_id": "KA25",
+       "id": "KA25-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026",
+       "description": "2026년 정보보호 예산 전년 대비 26% 증액(자체공개, 예산 기준)",
+       "evidence_ids": [
+        "KA25-E11"
+       ]
+      },
+      {
+       "account_id": "KA25",
+       "id": "KA25-D02",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2027",
+       "description": "2026-10 금감원이 증권사에 IT 보안체계 전면 재점검(12개 항목) 요구 → 보안·외부노출 IT자산 점검 투자 압력",
+       "evidence_ids": [
+        "KA25-E13"
+       ]
+      },
+      {
+       "account_id": "KA26",
+       "id": "KA26-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": 187.6,
+       "period": "2025",
+       "description": "정보보호 투자 FY2024 167억→FY2025 187.6억; IT 투자(파생) 1,261억→약 1,770억. 클라우드 보호 플랫폼·클라우드 기반 사외접속 보안 투자 언급",
+       "evidence_ids": [
+        "KA26-E10",
+        "KA26-E09"
+       ]
+      },
+      {
+       "account_id": "KA26",
+       "id": "KA26-D02",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2027",
+       "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구(12개 항목)",
+       "evidence_ids": [
+        "KA26-E12"
+       ]
+      },
+      {
+       "account_id": "KA29",
+       "id": "KA29-D02",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-",
+       "description": "2025년 말 개인정보 유출 사고 이후 보안 투자 확대 압력(FY2025 공시는 사고 이전 투자분)",
+       "evidence_ids": [
+        "KA29-E02"
+       ]
+      },
+      {
+       "account_id": "KA33",
+       "id": "KA33-D02",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2025-",
+       "description": "2025-12 대고객 서비스·커넥티드카 서비스 대상 ISMS 인증 취득, CISO/CPO를 정보보안팀장 겸직으로 전환. 정보보호 투자 FY2023 6.8억→FY2025 9.57억(보도).",
+       "evidence_ids": [
+        "KA33-E51",
+        "KA33-E53"
+       ]
+      },
+      {
+       "account_id": "KA37",
+       "id": "KA37-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2027",
+       "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구(12개 항목)",
+       "evidence_ids": [
+        "KA37-E12"
+       ]
+      },
+      {
+       "account_id": "KA39",
+       "id": "KA39-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": 124,
+       "period": "2025",
+       "description": "정보보호 투자 FY2024 약 100억 → FY2025 124억(대폭 증액 보도)",
+       "evidence_ids": [
+        "KA39-E10",
+        "KA39-E11"
+       ]
+      },
+      {
+       "account_id": "KA39",
+       "id": "KA39-D02",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2027",
+       "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구",
+       "evidence_ids": [
+        "KA39-E12"
+       ]
+      },
+      {
+       "account_id": "KA52",
+       "id": "KA52-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "UP",
+       "amount_eok": null,
+       "period": "2026-2027",
+       "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구",
+       "evidence_ids": [
+        "KA52-E04"
+       ]
+      }
+     ],
+     "contradicting": [
+      {
+       "account_id": "KA18",
+       "id": "KA18-D01",
+       "type": "REGULATORY_SECURITY",
+       "direction": "DOWN",
+       "amount_eok": 405,
+       "period": "2026",
+       "description": "2026년 정보보호 예산 405억원(기사 제목 '신한·우리, 보안 예산 줄였다'). 2027년부터 금융권 정보보호 공시 의무화 예정.",
+       "evidence_ids": [
+        "KA18-E11",
+        "KA18-E08"
+       ]
+      },
+      {
+       "account_id": "KA19",
+       "id": "KA19-D02",
+       "type": "REGULATORY_SECURITY",
+       "direction": "DOWN",
+       "amount_eok": null,
+       "period": "2026",
+       "description": "2026 정보보호 예산 감액 보도('신한·우리, 보안 예산 줄였다'), IT 예산 대비 9.9%. 기사 부제상 AI·클라우드 환경 대응 강화 언급(세부 금액 미확인).",
+       "evidence_ids": [
+        "KA19-E10",
+        "KA19-E09"
+       ]
+      }
+     ],
+     "n_contradicting_accounts": 2,
+     "coverage_share": 0.3842433734621706
+    },
+    "capture": {
+     "level": "INSUFFICIENT",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 0.425,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 MEDIUM",
+      "역량 격차 HIGH",
+      "경쟁 HIGH — SK쉴더스·안랩·이글루코퍼레이션 등 전문기업, 그룹 계열 보안(에스원 등)",
+      "LG U+ 위치: 자체 정보보호 투자 확대 중. 기업 대상 관리형 보안 사업은 전문 보안기업 대비 열위(분석가 판단)"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 537억 → 2031 1,187억 (CAGR 17.2%), 기회 보유 39개사",
+    "상위 고객: 쿠팡(주)(19%), 삼성에스디에스(주)(7%), 네이버클라우드(6%)",
+    "수요 근거: 양(+) 10개사, 감소 신호 2개사 · 시장 근거 4건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: HIGH — 필요 역량 관제(SOC)·MDR, 제로트러스트·SASE, 금융보안 인증, 보안 컨설팅 인력",
+    "시장 근거 4건 모두 원문 미열람(2차 인용)",
+    "성장 가정 의존도 60% — 2031 증가분 과반이 배분 가정",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "M&A_REVIEW",
+    "label": "인수 검토 — 검토 옵션(검증 필요)",
+    "text": "인수·제휴 검토 대상(확정 아님): 고객 보안 지출 증가(MB24, MB30)와 2027 금융권 정보보호 공시 의무화를 근거로, 역량 격차·인수 가능성·결합 시너지(회선+보안)를 별도 실사에서 검증",
+    "mode": "검토 옵션(검증 필요)"
+   },
+   "priority": {
+    "baseline_score": 39.6,
+    "baseline_rank": 5,
+    "rank_min": 5,
+    "rank_max": 5,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "SEC-A1",
+     "text": "감소 신호 2개사 원문 확인 후 수요 판단 재검토",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "SEC-A2",
+     "text": "시장 근거 원문 대조(2차 인용 → 1차 보고서·공시)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "SEC-A3",
+     "text": "성장 가정(B-ALLOC 배분) 민감도 검증 — 가정 제외 시 기회 규모 재산정",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "SEC-A4",
+     "text": "LG U+ 역량·경쟁력 사내 진단(HIGH), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "SEC-A5",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": {
+    "title": "검증 사례 ① Security — 성장 가정 의존도",
+    "finding": "기존 판정 '근거 충분'(Phase 1)이지만 2031 증가분의 60%가 배분 가정에서 발생하고, 시장 근거 4건 모두 원문 미열람, 수요 신호 중 감소(예산 감액) 2개사.",
+    "implication": "인수(M&A) 검토는 확정 권고가 아님 — 가정 민감도·감소 신호·대상 기업 실사 전까지 '검증 필요'."
+   }
+  },
+  {
+   "initiative_id": "INIT-06",
+   "area": "AI Transformation / SI",
+   "status": "NEEDS_VALIDATION",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 119.11,
+    "FPR_2031": 318.83,
+    "FPR_CAGR": 0.217636,
+    "n_accounts": 35,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 63.57
+     },
+     {
+      "account_id": "KA05",
+      "FPR_2031": 42.21
+     },
+     {
+      "account_id": "KA09",
+      "FPR_2031": 20.6
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "INSUFFICIENT",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [],
+     "flags": [
+      "성장 가정 의존도 71% — 2031 증가분 과반이 배분 가정"
+     ],
+     "facts": [
+      "성장 가정 의존도 71%"
+     ]
+    },
+    "demand": {
+     "level": "PARTIAL",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [
+      "KA03",
+      "KA38"
+     ],
+     "flags": [
+      "기존 공급자 관찰 11개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음"
+     ],
+     "facts": [
+      "양(+) 수요 근거 2개사 / 기회 보유 35개사 · 해당 고객 FPR 2031 비중 7%",
+      "국민은행 · NEXT_GEN_CORE · 코어뱅킹 현대화(계정계 클라우드·탈메인프레임) — 5년 4단계 사업. 2단계 총 2704억원 규모 공고(AI 기반 코볼→자바 변환, AI로 인력 투입 감소 시 사업비 변경 조항).",
+      "새마을금고중앙회 · NEXT_GEN_CORE · 계정계·통합단말·대내외 인터페이스·DR 인프라 최신화(Java 전환) — 사업예산 3,370억원(VAT포함), 28개월"
+     ],
+     "signals": [
+      {
+       "account_id": "KA03",
+       "id": "KA03-D02",
+       "type": "NEXT_GEN_CORE",
+       "direction": "UP",
+       "amount_eok": 2704,
+       "period": "2026-(기간 미확인)",
+       "description": "코어뱅킹 현대화(계정계 클라우드·탈메인프레임) — 5년 4단계 사업. 2단계 총 2704억원 규모 공고(AI 기반 코볼→자바 변환, AI로 인력 투입 감소 시 사업비 변경 조항).",
+       "evidence_ids": [
+        "KA03-E19",
+        "KA03-E20"
+       ]
+      },
+      {
+       "account_id": "KA38",
+       "id": "KA38-P1-D01",
+       "type": "NEXT_GEN_CORE",
+       "direction": "UP",
+       "amount_eok": 3370,
+       "period": "2026-2029",
+       "description": "계정계·통합단말·대내외 인터페이스·DR 인프라 최신화(Java 전환) — 사업예산 3,370억원(VAT포함), 28개월",
+       "evidence_ids": [
+        "KA38-P1-E01"
+       ]
+      }
+     ],
+     "contradicting": [],
+     "n_contradicting_accounts": 0,
+     "coverage_share": 0.06678516816550359
+    },
+    "capture": {
+     "level": "INSUFFICIENT",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 0.25,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 LOW",
+      "역량 격차 HIGH",
+      "경쟁 VERY HIGH — 그룹 캡티브 SI(신한DS·우리FIS·하나INS·KB데이타시스템·농협정보시스템 등)와 대형 SI",
+      "LG U+ 위치: AX 프로젝트 레퍼런스 초기 단계(분석가 판단)"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 119억 → 2031 319억 (CAGR 21.8%), 기회 보유 35개사",
+    "상위 고객: 쿠팡(주)(20%), 한국전력공사(13%), (주)카카오(7%)",
+    "수요 근거: 양(+) 2개사 · 시장 근거 0건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: HIGH — 필요 역량 도메인(금융·제조) 컨설팅, LLM 기반 업무 자동화 구축 역량, SI 파트너 생태계",
+    "고객 수요 근거 일부(2개사)",
+    "성장 가정 의존도 71% — 2031 증가분 과반이 배분 가정",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "PARTNER",
+    "label": "제휴 — 검토 옵션(검증 필요)",
+    "text": "선택적 제휴: 인프라(AIDC·회선) 결합형 AX 사업에 한정, SI 파트너와 컨소시엄",
+    "mode": "검토 옵션(검증 필요)"
+   },
+   "priority": {
+    "baseline_score": 24.9,
+    "baseline_rank": 6,
+    "rank_min": 6,
+    "rank_max": 6,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "AI -A1",
+     "text": "수요 검증: 상위 고객(쿠팡(주), 한국전력공사, (주)카카오)의 구매·투자 계획·예산·RFP 확인",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A2",
+     "text": "시장 규모·성장 근거 확보(시장 보고서·공공 통계)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A3",
+     "text": "성장 가정(B-ALLOC 배분) 민감도 검증 — 가정 제외 시 기회 규모 재산정",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A4",
+     "text": "LG U+ 역량·경쟁력 사내 진단(HIGH), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "AI -A5",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": null
+  },
+  {
+   "initiative_id": "INIT-07",
+   "area": "SI / Managed Services",
+   "status": "NEEDS_VALIDATION",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 166.18,
+    "FPR_2031": 282.22,
+    "FPR_CAGR": 0.111741,
+    "n_accounts": 32,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 37.95
+     },
+     {
+      "account_id": "KA05",
+      "FPR_2031": 29.88
+     },
+     {
+      "account_id": "KA03",
+      "FPR_2031": 17.09
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "INSUFFICIENT",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [],
+     "flags": [
+      "성장 가정이 감소 방향(대체·효율화)"
+     ],
+     "facts": [
+      "성장 가정: 감소"
+     ]
+    },
+    "demand": {
+     "level": "PARTIAL",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [
+      "KA03",
+      "KA38"
+     ],
+     "flags": [
+      "기존 공급자 관찰 16개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음"
+     ],
+     "facts": [
+      "양(+) 수요 근거 2개사 / 기회 보유 32개사 · 해당 고객 FPR 2031 비중 10%",
+      "국민은행 · NEXT_GEN_CORE · 코어뱅킹 현대화(계정계 클라우드·탈메인프레임) — 5년 4단계 사업. 2단계 총 2704억원 규모 공고(AI 기반 코볼→자바 변환, AI로 인력 투입 감소 시 사업비 변경 조항).",
+      "새마을금고중앙회 · NEXT_GEN_CORE · 계정계·통합단말·대내외 인터페이스·DR 인프라 최신화(Java 전환) — 사업예산 3,370억원(VAT포함), 28개월"
+     ],
+     "signals": [
+      {
+       "account_id": "KA03",
+       "id": "KA03-D02",
+       "type": "NEXT_GEN_CORE",
+       "direction": "UP",
+       "amount_eok": 2704,
+       "period": "2026-(기간 미확인)",
+       "description": "코어뱅킹 현대화(계정계 클라우드·탈메인프레임) — 5년 4단계 사업. 2단계 총 2704억원 규모 공고(AI 기반 코볼→자바 변환, AI로 인력 투입 감소 시 사업비 변경 조항).",
+       "evidence_ids": [
+        "KA03-E19",
+        "KA03-E20"
+       ]
+      },
+      {
+       "account_id": "KA38",
+       "id": "KA38-P1-D01",
+       "type": "NEXT_GEN_CORE",
+       "direction": "UP",
+       "amount_eok": 3370,
+       "period": "2026-2029",
+       "description": "계정계·통합단말·대내외 인터페이스·DR 인프라 최신화(Java 전환) — 사업예산 3,370억원(VAT포함), 28개월",
+       "evidence_ids": [
+        "KA38-P1-E01"
+       ]
+      }
+     ],
+     "contradicting": [],
+     "n_contradicting_accounts": 0,
+     "coverage_share": 0.09640687185407325
+    },
+    "capture": {
+     "level": "INSUFFICIENT",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 0.425,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 LOW",
+      "역량 격차 MEDIUM",
+      "경쟁 VERY HIGH — 캡티브 SI, 대형 SI",
+      "LG U+ 위치: 네트워크·IDC 운영 위탁 역량 보유, 전사 ITO는 제한적(분석가 판단)"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 166억 → 2031 282억 (CAGR 11.2%), 기회 보유 32개사",
+    "상위 고객: 쿠팡(주)(14%), 한국전력공사(11%), 국민은행(6%)",
+    "수요 근거: 양(+) 2개사 · 시장 근거 0건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: MEDIUM — 필요 역량 인프라 운영 대행(MSP), 장애 대응 SLA",
+    "고객 수요 근거 일부(2개사)",
+    "성장 가정이 감소 방향(대체·효율화)",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "MAINTAIN",
+    "label": "유지 — 검토 옵션(검증 필요)",
+    "text": "인프라 관리형 서비스(네트워크·IDC·보안 운영)에 집중, 전사 ITO 진입은 비우선",
+    "mode": "검토 옵션(검증 필요)"
+   },
+   "priority": {
+    "baseline_score": 22.2,
+    "baseline_rank": 7,
+    "rank_min": 7,
+    "rank_max": 7,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "SI -A1",
+     "text": "수요 검증: 상위 고객(쿠팡(주), 한국전력공사, 국민은행)의 구매·투자 계획·예산·RFP 확인",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "SI -A2",
+     "text": "시장 규모·성장 근거 확보(시장 보고서·공공 통계)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "SI -A3",
+     "text": "LG U+ 역량·경쟁력 사내 진단(MEDIUM), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "SI -A4",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": {
+    "title": "검증 사례 ② SI / Managed Services — 수요 근거 부족",
+    "finding": "기존 판정 '근거 충분'은 기존 공급자 관찰 16개사에 의존. 신규 수요(차세대 사업 등) 양(+) 근거는 2개사, 해당 고객 FPR 비중 10%.",
+    "implication": "기존 지출 관측은 신규 수요가 아님 — 확정 성장 기회로 표시하지 않고 '검증 필요'."
+   }
+  },
+  {
+   "initiative_id": "INIT-08",
+   "area": "기타",
+   "status": "ANALYSIS_HYPOTHESIS",
+   "approval_status": "PROPOSED",
+   "opportunity": {
+    "FPR_2026": 215.54,
+    "FPR_2031": 264.5,
+    "FPR_CAGR": 0.041788,
+    "n_accounts": 33,
+    "top_accounts": [
+     {
+      "account_id": "KA29",
+      "FPR_2031": 84.71
+     },
+     {
+      "account_id": "KA10",
+      "FPR_2031": 39.28
+     },
+     {
+      "account_id": "KA09",
+      "FPR_2031": 27.69
+     }
+    ]
+   },
+   "lenses": {
+    "market": {
+     "level": "INSUFFICIENT",
+     "basis": "시장 벤치마크(MB)·브리지 가정",
+     "refs": [],
+     "flags": [
+      "성장 가정이 감소 방향(대체·효율화)"
+     ],
+     "facts": [
+      "성장 가정: 감소"
+     ]
+    },
+    "demand": {
+     "level": "INSUFFICIENT",
+     "basis": "고객별 구매·투자·예산 신호(조사 drivers, 방향 UP) + 계정별 인프라 투자 계획",
+     "accounts": [],
+     "flags": [
+      "기존 공급자 관찰 1개사 — 현행 지출 관측이며 신규 수요로 집계하지 않음"
+     ],
+     "facts": [
+      "양(+) 수요 근거 0개사 / 기회 보유 33개사 · 해당 고객 FPR 2031 비중 0%"
+     ],
+     "signals": [],
+     "contradicting": [],
+     "n_contradicting_accounts": 0,
+     "coverage_share": 0.0
+    },
+    "capture": {
+     "level": "PARTIAL",
+     "basis": "공개정보 기반 분석가 판단 — 사내 역량 진단·계약 조건 미검증",
+     "score": 0.625,
+     "flags": [
+      "사내 역량·계약 조건 미검증"
+     ],
+     "facts": [
+      "진입 가능성 LOW",
+      "역량 격차 LOW",
+      "경쟁 HIGH — 벤더 직판·총판",
+      "LG U+ 위치: SW·HW 재판매는 부수 사업"
+     ]
+    }
+   },
+   "lens_rules": {
+    "market": {
+     "SUFFICIENT": "시장 근거 ≥2건 중 원문 확인(VERIFIED) ≥1건, 성장 가정 의존도 ≤50%",
+     "PARTIAL": "시장 근거 ≥1건(2차 인용 포함)",
+     "INSUFFICIENT": "시장 근거 없음"
+    },
+    "demand": {
+     "SUFFICIENT": "양(+) 수요 근거 고객 ≥5개사, 영역 FPR 2031 중 해당 고객 비중 ≥30%",
+     "PARTIAL": "양(+) 수요 근거 고객 ≥1개사",
+     "INSUFFICIENT": "양(+) 수요 근거 없음"
+    },
+    "capture": {
+     "SUFFICIENT": "확보 가능성 점수 ≥0.75 (진입 가능성·역량 격차 평균)",
+     "PARTIAL": "≥0.5",
+     "INSUFFICIENT": "<0.5"
+    }
+   },
+   "why": [
+    "기회 규모: FPR 2026 216억 → 2031 265억 (CAGR 4.2%), 기회 보유 33개사",
+    "상위 고객: 쿠팡(주)(33%), 네이버클라우드(15%), (주)카카오(11%)",
+    "수요 근거: 양(+) 0개사 · 시장 근거 0건(원문 확인 0건)"
+   ],
+   "gap": [
+    "역량 격차: LOW — 필요 역량 벤더 파트너십",
+    "고객 수요 근거 부족",
+    "성장 가정이 감소 방향(대체·효율화)",
+    "LG U+ 확보 가능성은 분석가 판단(사내 진단 전)"
+   ],
+   "option": {
+    "type": "MAINTAIN",
+    "label": "유지 — 분석 가설",
+    "text": "결합 판매 수준 유지",
+    "mode": "분석 가설"
+   },
+   "priority": {
+    "baseline_score": 20.3,
+    "baseline_rank": 8,
+    "rank_min": 8,
+    "rank_max": 8,
+    "stability": "STABLE",
+    "note": "전략적 매력도(기존 산식). 근거 3관점과 섞지 않음"
+   },
+   "actions": [
+    {
+     "action_id": "기타-A1",
+     "text": "수요 검증: 상위 고객(쿠팡(주), 네이버클라우드, (주)카카오)의 구매·투자 계획·예산·RFP 확인",
+     "lens": "demand",
+     "owner_role": "영업(Key Account 담당)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "기타-A2",
+     "text": "시장 규모·성장 근거 확보(시장 보고서·공공 통계)",
+     "lens": "market",
+     "owner_role": "전략기획(시장 분석)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "기타-A3",
+     "text": "LG U+ 역량·경쟁력 사내 진단(LOW), 계약 조건 확인",
+     "lens": "capture",
+     "owner_role": "사업부(상품·기술)",
+     "status": "PROPOSED"
+    },
+    {
+     "action_id": "기타-A4",
+     "text": "사내 실적·파이프라인 연동 후 재평가(Phase 3B, Blocker B1·B6 해소 후)",
+     "lens": "internal",
+     "owner_role": "AI사업제휴TF / 데이터 관리",
+     "status": "PROPOSED"
+    }
+   ],
+   "verification_case": null
+  }
+ ],
+ "priority_sensitivity": {
+  "weights_baseline": {
+   "size": 35,
+   "growth": 20,
+   "breadth": 15,
+   "feasibility": 15,
+   "confidence": 15
+  },
+  "components": {
+   "Connectivity": {
+    "size": 1.0,
+    "growth": 0.21208657202234416,
+    "breadth": 1.0,
+    "feasibility": 1.0,
+    "confidence": 0.27,
+    "difficulty": 0
+   },
+   "AI Infrastructure": {
+    "size": 0.6841991295800216,
+    "growth": 1.0,
+    "breadth": 0.9302325581395349,
+    "feasibility": 0.6,
+    "confidence": 0.3,
+    "difficulty": 8
+   },
+   "Data Center / IDC": {
+    "size": 0.81899047085389,
+    "growth": 0.23235764878899715,
+    "breadth": 0.9767441860465116,
+    "feasibility": 1.0,
+    "confidence": 0.29,
+    "difficulty": 4
+   },
+   "Cloud": {
+    "size": 0.31575241874514404,
+    "growth": 0.6490633936485067,
+    "breadth": 0.9302325581395349,
+    "feasibility": 0.6,
+    "confidence": 0.28,
+    "difficulty": 4
+   },
+   "Security": {
+    "size": 0.23713357062765383,
+    "growth": 0.43755925193215434,
+    "breadth": 0.9069767441860465,
+    "feasibility": 0.6,
+    "confidence": 0.26,
+    "difficulty": 4
+   },
+   "AI Transformation / SI": {
+    "size": 0.06367197186550404,
+    "growth": 0.5532888742323476,
+    "breadth": 0.813953488372093,
+    "feasibility": 0.25,
+    "confidence": 0.24,
+    "difficulty": 8
+   },
+   "SI / Managed Services": {
+    "size": 0.05636176344584556,
+    "growth": 0.28407463555048085,
+    "breadth": 0.7441860465116279,
+    "feasibility": 0.25,
+    "confidence": 0.24,
+    "difficulty": 4
+   },
+   "기타": {
+    "size": 0.05282286516857454,
+    "growth": 0.10623529021893763,
+    "breadth": 0.5581395348837209,
+    "feasibility": 0.25,
+    "confidence": 0.28,
+    "difficulty": 0
+   }
+  },
+  "scenarios": [
+   {
+    "id": "BASELINE",
+    "label": "기준안(현행 v1 가중치)",
+    "weights": {
+     "size": 35,
+     "growth": 20,
+     "breadth": 15,
+     "feasibility": 15,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 73.3,
+     "AI Infrastructure": 63.4,
+     "Data Center / IDC": 63.3,
+     "Cloud": 47.2,
+     "Security": 39.6,
+     "AI Transformation / SI": 24.9,
+     "SI / Managed Services": 22.2,
+     "기타": 20.3
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "AI Infrastructure": 2,
+     "Data Center / IDC": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "SIZE_UP",
+    "label": "size 가중치 +50%",
+    "weights": {
+     "size": 52.5,
+     "growth": 20,
+     "breadth": 15,
+     "feasibility": 15,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 90.8,
+     "AI Infrastructure": 75.4,
+     "Data Center / IDC": 77.6,
+     "Cloud": 52.7,
+     "Security": 43.7,
+     "AI Transformation / SI": 26.0,
+     "SI / Managed Services": 23.2,
+     "기타": 21.2
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "Data Center / IDC": 2,
+     "AI Infrastructure": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "SIZE_DOWN",
+    "label": "size 가중치 −50%",
+    "weights": {
+     "size": 17.5,
+     "growth": 20,
+     "breadth": 15,
+     "feasibility": 15,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 55.8,
+     "AI Infrastructure": 51.4,
+     "Data Center / IDC": 49.0,
+     "Cloud": 41.7,
+     "Security": 35.4,
+     "AI Transformation / SI": 23.7,
+     "SI / Managed Services": 21.2,
+     "기타": 19.4
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "AI Infrastructure": 2,
+     "Data Center / IDC": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "GROWTH_UP",
+    "label": "growth 가중치 +50%",
+    "weights": {
+     "size": 35,
+     "growth": 30.0,
+     "breadth": 15,
+     "feasibility": 15,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 75.4,
+     "AI Infrastructure": 73.4,
+     "Data Center / IDC": 65.6,
+     "Cloud": 53.7,
+     "Security": 43.9,
+     "AI Transformation / SI": 30.4,
+     "SI / Managed Services": 25.0,
+     "기타": 21.4
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "AI Infrastructure": 2,
+     "Data Center / IDC": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "GROWTH_DOWN",
+    "label": "growth 가중치 −50%",
+    "weights": {
+     "size": 35,
+     "growth": 10.0,
+     "breadth": 15,
+     "feasibility": 15,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 71.2,
+     "AI Infrastructure": 53.4,
+     "Data Center / IDC": 61.0,
+     "Cloud": 40.7,
+     "Security": 35.2,
+     "AI Transformation / SI": 19.3,
+     "SI / Managed Services": 19.3,
+     "기타": 19.2
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "Data Center / IDC": 2,
+     "AI Infrastructure": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "BREADTH_UP",
+    "label": "breadth 가중치 +50%",
+    "weights": {
+     "size": 35,
+     "growth": 20,
+     "breadth": 22.5,
+     "feasibility": 15,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 80.8,
+     "AI Infrastructure": 70.4,
+     "Data Center / IDC": 70.6,
+     "Cloud": 54.2,
+     "Security": 46.4,
+     "AI Transformation / SI": 31.0,
+     "SI / Managed Services": 27.7,
+     "기타": 24.5
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "Data Center / IDC": 2,
+     "AI Infrastructure": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "BREADTH_DOWN",
+    "label": "breadth 가중치 −50%",
+    "weights": {
+     "size": 35,
+     "growth": 20,
+     "breadth": 7.5,
+     "feasibility": 15,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 65.8,
+     "AI Infrastructure": 56.4,
+     "Data Center / IDC": 56.0,
+     "Cloud": 40.2,
+     "Security": 32.8,
+     "AI Transformation / SI": 18.7,
+     "SI / Managed Services": 16.6,
+     "기타": 16.1
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "AI Infrastructure": 2,
+     "Data Center / IDC": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "FEASIBILITY_UP",
+    "label": "feasibility 가중치 +50%",
+    "weights": {
+     "size": 35,
+     "growth": 20,
+     "breadth": 15,
+     "feasibility": 22.5,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 80.8,
+     "AI Infrastructure": 67.9,
+     "Data Center / IDC": 70.8,
+     "Cloud": 51.7,
+     "Security": 44.1,
+     "AI Transformation / SI": 26.7,
+     "SI / Managed Services": 24.0,
+     "기타": 22.2
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "Data Center / IDC": 2,
+     "AI Infrastructure": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "FEASIBILITY_DOWN",
+    "label": "feasibility 가중치 −50%",
+    "weights": {
+     "size": 35,
+     "growth": 20,
+     "breadth": 15,
+     "feasibility": 7.5,
+     "confidence": 15
+    },
+    "scores": {
+     "Connectivity": 65.8,
+     "AI Infrastructure": 58.9,
+     "Data Center / IDC": 55.8,
+     "Cloud": 42.7,
+     "Security": 35.1,
+     "AI Transformation / SI": 23.0,
+     "SI / Managed Services": 20.3,
+     "기타": 18.4
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "AI Infrastructure": 2,
+     "Data Center / IDC": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "CONFIDENCE_UP",
+    "label": "confidence 가중치 +50%",
+    "weights": {
+     "size": 35,
+     "growth": 20,
+     "breadth": 15,
+     "feasibility": 15,
+     "confidence": 22.5
+    },
+    "scores": {
+     "Connectivity": 75.3,
+     "AI Infrastructure": 65.7,
+     "Data Center / IDC": 65.5,
+     "Cloud": 49.3,
+     "Security": 41.5,
+     "AI Transformation / SI": 26.7,
+     "SI / Managed Services": 24.0,
+     "기타": 22.4
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "AI Infrastructure": 2,
+     "Data Center / IDC": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "CONFIDENCE_DOWN",
+    "label": "confidence 가중치 −50%",
+    "weights": {
+     "size": 35,
+     "growth": 20,
+     "breadth": 15,
+     "feasibility": 15,
+     "confidence": 7.5
+    },
+    "scores": {
+     "Connectivity": 71.3,
+     "AI Infrastructure": 61.2,
+     "Data Center / IDC": 61.1,
+     "Cloud": 45.1,
+     "Security": 37.6,
+     "AI Transformation / SI": 23.1,
+     "SI / Managed Services": 20.4,
+     "기타": 18.2
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "AI Infrastructure": 2,
+     "Data Center / IDC": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   },
+   {
+    "id": "EQUAL",
+    "label": "균등 가중(각 20)",
+    "weights": {
+     "size": 20,
+     "growth": 20,
+     "breadth": 20,
+     "feasibility": 20,
+     "confidence": 20
+    },
+    "scores": {
+     "Connectivity": 69.6,
+     "AI Infrastructure": 62.3,
+     "Data Center / IDC": 62.4,
+     "Cloud": 51.5,
+     "Security": 44.8,
+     "AI Transformation / SI": 30.4,
+     "SI / Managed Services": 27.5,
+     "기타": 24.9
+    },
+    "ranks": {
+     "Connectivity": 1,
+     "Data Center / IDC": 2,
+     "AI Infrastructure": 3,
+     "Cloud": 4,
+     "Security": 5,
+     "AI Transformation / SI": 6,
+     "SI / Managed Services": 7,
+     "기타": 8
+    }
+   }
+  ],
+  "method": "현행 우선순위 산식(35×규모+20×성장+15×수요 고객 수+15×진입 가능성+15×수요 신뢰도−난이도)의 가중치를 하나씩 ±50% 변경하고 균등 가중을 추가해 순위 범위를 계산. 근거 수준(3관점)은 점수에 넣지 않음."
+ },
+ "opportunity_flow": {
+  "n_accounts": 53,
+  "n_accounts_with_fpr": 43,
+  "n_opportunities": 304,
+  "n_areas": 8,
+  "n_initiatives": 8,
+  "n_approved": 0,
+  "n_actions": 37,
+  "status_counts": {
+   "NEEDS_VALIDATION": 7,
+   "ANALYSIS_HYPOTHESIS": 1
+  }
+ },
  "issues_summary": {
   "ERROR": 0,
   "WARN": 20,
@@ -108430,7 +110705,7 @@
   "official_internal": {},
   "accounts": {
    "KA01": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA01",
+    "engine_ref": "ENGINE:20261016T204246Z:KA01",
     "source_hash": "a586685dce22e820",
     "ledger": [
      {
@@ -108716,7 +110991,7 @@
     "recon_rows": []
    },
    "KA02": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA02",
+    "engine_ref": "ENGINE:20261016T204246Z:KA02",
     "source_hash": "80a6dd43dd72725d",
     "ledger": [
      {
@@ -109002,7 +111277,7 @@
     "recon_rows": []
    },
    "KA03": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA03",
+    "engine_ref": "ENGINE:20261016T204246Z:KA03",
     "source_hash": "3e296b4d10c6ead1",
     "ledger": [
      {
@@ -109288,7 +111563,7 @@
     "recon_rows": []
    },
    "KA04": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA04",
+    "engine_ref": "ENGINE:20261016T204246Z:KA04",
     "source_hash": "fede3a709f1654c4",
     "ledger": [
      {
@@ -109574,7 +111849,7 @@
     "recon_rows": []
    },
    "KA05": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA05",
+    "engine_ref": "ENGINE:20261016T204246Z:KA05",
     "source_hash": "d255e8917fa7454d",
     "ledger": [
      {
@@ -109860,7 +112135,7 @@
     "recon_rows": []
    },
    "KA06": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA06",
+    "engine_ref": "ENGINE:20261016T204246Z:KA06",
     "source_hash": "fbd573fae33347a6",
     "ledger": [
      {
@@ -110209,7 +112484,7 @@
     "recon_rows": []
    },
    "KA07": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA07",
+    "engine_ref": "ENGINE:20261016T204246Z:KA07",
     "source_hash": "beee799319fdd962",
     "ledger": [
      {
@@ -110516,7 +112791,7 @@
     "recon_rows": []
    },
    "KA08": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA08",
+    "engine_ref": "ENGINE:20261016T204246Z:KA08",
     "source_hash": "8b645022ad0f4db9",
     "ledger": [
      {
@@ -110823,7 +113098,7 @@
     "recon_rows": []
    },
    "KA09": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA09",
+    "engine_ref": "ENGINE:20261016T204246Z:KA09",
     "source_hash": "786c5a1d85237cd6",
     "ledger": [
      {
@@ -111109,7 +113384,7 @@
     "recon_rows": []
    },
    "KA10": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA10",
+    "engine_ref": "ENGINE:20261016T204246Z:KA10",
     "source_hash": "4a1e09581180f69a",
     "ledger": [
      {
@@ -111395,7 +113670,7 @@
     "recon_rows": []
    },
    "KA11": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA11",
+    "engine_ref": "ENGINE:20261016T204246Z:KA11",
     "source_hash": "0350e3374b209d6f",
     "ledger": [
      {
@@ -111681,7 +113956,7 @@
     "recon_rows": []
    },
    "KA12": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA12",
+    "engine_ref": "ENGINE:20261016T204246Z:KA12",
     "source_hash": "0bcf3be23a847dc3",
     "ledger": [
      {
@@ -111967,7 +114242,7 @@
     "recon_rows": []
    },
    "KA13": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA13",
+    "engine_ref": "ENGINE:20261016T204246Z:KA13",
     "source_hash": "73ea16189a8221bd",
     "ledger": [
      {
@@ -112253,7 +114528,7 @@
     "recon_rows": []
    },
    "KA14": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA14",
+    "engine_ref": "ENGINE:20261016T204246Z:KA14",
     "source_hash": "38618421ec987e46",
     "ledger": [
      {
@@ -112566,7 +114841,7 @@
     "recon_rows": []
    },
    "KA15": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA15",
+    "engine_ref": "ENGINE:20261016T204246Z:KA15",
     "source_hash": "80280c86e3150b73",
     "ledger": [
      {
@@ -112852,7 +115127,7 @@
     "recon_rows": []
    },
    "KA16": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA16",
+    "engine_ref": "ENGINE:20261016T204246Z:KA16",
     "source_hash": "7650c3c7494fbcde",
     "ledger": [
      {
@@ -113138,7 +115413,7 @@
     "recon_rows": []
    },
    "KA17": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA17",
+    "engine_ref": "ENGINE:20261016T204246Z:KA17",
     "source_hash": "fec08230e17e1b80",
     "ledger": [
      {
@@ -113424,7 +115699,7 @@
     "recon_rows": []
    },
    "KA18": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA18",
+    "engine_ref": "ENGINE:20261016T204246Z:KA18",
     "source_hash": "22cbe6bca5b8eb73",
     "ledger": [
      {
@@ -113710,7 +115985,7 @@
     "recon_rows": []
    },
    "KA19": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA19",
+    "engine_ref": "ENGINE:20261016T204246Z:KA19",
     "source_hash": "fe67b2cd0ff3ebd3",
     "ledger": [
      {
@@ -113996,7 +116271,7 @@
     "recon_rows": []
    },
    "KA20": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA20",
+    "engine_ref": "ENGINE:20261016T204246Z:KA20",
     "source_hash": "9a4118ea5a508adc",
     "ledger": [
      {
@@ -114282,7 +116557,7 @@
     "recon_rows": []
    },
    "KA21": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA21",
+    "engine_ref": "ENGINE:20261016T204246Z:KA21",
     "source_hash": "5fac4dd79195a129",
     "ledger": [
      {
@@ -114568,7 +116843,7 @@
     "recon_rows": []
    },
    "KA22": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA22",
+    "engine_ref": "ENGINE:20261016T204246Z:KA22",
     "source_hash": "88d3d72f673c27a3",
     "ledger": [
      {
@@ -114854,7 +117129,7 @@
     "recon_rows": []
    },
    "KA23": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA23",
+    "engine_ref": "ENGINE:20261016T204246Z:KA23",
     "source_hash": "e5910a6c94a2032a",
     "ledger": [
      {
@@ -115140,7 +117415,7 @@
     "recon_rows": []
    },
    "KA24": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA24",
+    "engine_ref": "ENGINE:20261016T204246Z:KA24",
     "source_hash": "1989d25c641290b8",
     "ledger": [
      {
@@ -115426,7 +117701,7 @@
     "recon_rows": []
    },
    "KA25": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA25",
+    "engine_ref": "ENGINE:20261016T204246Z:KA25",
     "source_hash": "3e7b54351d502f20",
     "ledger": [
      {
@@ -115712,7 +117987,7 @@
     "recon_rows": []
    },
    "KA26": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA26",
+    "engine_ref": "ENGINE:20261016T204246Z:KA26",
     "source_hash": "37aab7e96d630b30",
     "ledger": [
      {
@@ -115998,7 +118273,7 @@
     "recon_rows": []
    },
    "KA27": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA27",
+    "engine_ref": "ENGINE:20261016T204246Z:KA27",
     "source_hash": "4bf6d66cabfe1325",
     "ledger": [
      {
@@ -116284,7 +118559,7 @@
     "recon_rows": []
    },
    "KA28": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA28",
+    "engine_ref": "ENGINE:20261016T204246Z:KA28",
     "source_hash": "e918a5b16a9068b6",
     "ledger": [
      {
@@ -116528,7 +118803,7 @@
     "recon_rows": []
    },
    "KA29": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA29",
+    "engine_ref": "ENGINE:20261016T204246Z:KA29",
     "source_hash": "dfabf614f2dbe855",
     "ledger": [
      {
@@ -116814,7 +119089,7 @@
     "recon_rows": []
    },
    "KA30": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA30",
+    "engine_ref": "ENGINE:20261016T204246Z:KA30",
     "source_hash": "20825cd25cf98d3d",
     "ledger": [
      {
@@ -117100,7 +119375,7 @@
     "recon_rows": []
    },
    "KA31": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA31",
+    "engine_ref": "ENGINE:20261016T204246Z:KA31",
     "source_hash": "f8a44190aa870599",
     "ledger": [
      {
@@ -117386,7 +119661,7 @@
     "recon_rows": []
    },
    "KA32": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA32",
+    "engine_ref": "ENGINE:20261016T204246Z:KA32",
     "source_hash": "1e8baa8d3ba1e879",
     "ledger": [
      {
@@ -117686,7 +119961,7 @@
     "recon_rows": []
    },
    "KA33": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA33",
+    "engine_ref": "ENGINE:20261016T204246Z:KA33",
     "source_hash": "bcf2949bde8c9002",
     "ledger": [
      {
@@ -117972,7 +120247,7 @@
     "recon_rows": []
    },
    "KA34": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA34",
+    "engine_ref": "ENGINE:20261016T204246Z:KA34",
     "source_hash": "3d6d48858dcdc788",
     "ledger": [
      {
@@ -118258,7 +120533,7 @@
     "recon_rows": []
    },
    "KA35": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA35",
+    "engine_ref": "ENGINE:20261016T204246Z:KA35",
     "source_hash": "cf53c4b9976d0a4f",
     "ledger": [
      {
@@ -118544,7 +120819,7 @@
     "recon_rows": []
    },
    "KA36": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA36",
+    "engine_ref": "ENGINE:20261016T204246Z:KA36",
     "source_hash": "a967e09c01cbfbce",
     "ledger": [
      {
@@ -118830,7 +121105,7 @@
     "recon_rows": []
    },
    "KA37": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA37",
+    "engine_ref": "ENGINE:20261016T204246Z:KA37",
     "source_hash": "fe19de06d762e90f",
     "ledger": [
      {
@@ -119137,7 +121412,7 @@
     "recon_rows": []
    },
    "KA38": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA38",
+    "engine_ref": "ENGINE:20261016T204246Z:KA38",
     "source_hash": "86712aa9d93f1150",
     "ledger": [
      {
@@ -119465,7 +121740,7 @@
     "recon_rows": []
    },
    "KA39": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA39",
+    "engine_ref": "ENGINE:20261016T204246Z:KA39",
     "source_hash": "261617473f93fc4a",
     "ledger": [
      {
@@ -119814,7 +122089,7 @@
     "recon_rows": []
    },
    "KA40": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA40",
+    "engine_ref": "ENGINE:20261016T204246Z:KA40",
     "source_hash": "61d215825d69ba8e",
     "ledger": [
      {
@@ -120100,7 +122375,7 @@
     "recon_rows": []
    },
    "KA41": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA41",
+    "engine_ref": "ENGINE:20261016T204246Z:KA41",
     "source_hash": "af4bad118dd632f8",
     "ledger": [
      {
@@ -120344,7 +122619,7 @@
     "recon_rows": []
    },
    "KA42": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA42",
+    "engine_ref": "ENGINE:20261016T204246Z:KA42",
     "source_hash": "94ae0d9a80c300c1",
     "ledger": [
      {
@@ -120588,7 +122863,7 @@
     "recon_rows": []
    },
    "KA43": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA43",
+    "engine_ref": "ENGINE:20261016T204246Z:KA43",
     "source_hash": "bda7d56677c7c32b",
     "ledger": [
      {
@@ -120832,7 +123107,7 @@
     "recon_rows": []
    },
    "KA44": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA44",
+    "engine_ref": "ENGINE:20261016T204246Z:KA44",
     "source_hash": "0f098d32f9e6c67b",
     "ledger": [
      {
@@ -121139,7 +123414,7 @@
     "recon_rows": []
    },
    "KA45": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA45",
+    "engine_ref": "ENGINE:20261016T204246Z:KA45",
     "source_hash": "823c21d8d5835777",
     "ledger": [
      {
@@ -121488,7 +123763,7 @@
     "recon_rows": []
    },
    "KA46": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA46",
+    "engine_ref": "ENGINE:20261016T204246Z:KA46",
     "source_hash": "04ba51f32ac76c75",
     "ledger": [
      {
@@ -121795,7 +124070,7 @@
     "recon_rows": []
    },
    "KA47": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA47",
+    "engine_ref": "ENGINE:20261016T204246Z:KA47",
     "source_hash": "c9c023949b85f78f",
     "ledger": [
      {
@@ -122081,7 +124356,7 @@
     "recon_rows": []
    },
    "KA48": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA48",
+    "engine_ref": "ENGINE:20261016T204246Z:KA48",
     "source_hash": "7b0dd6efc9fd40fc",
     "ledger": [
      {
@@ -122367,7 +124642,7 @@
     "recon_rows": []
    },
    "KA49": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA49",
+    "engine_ref": "ENGINE:20261016T204246Z:KA49",
     "source_hash": "87d3184260f2024a",
     "ledger": [
      {
@@ -122653,7 +124928,7 @@
     "recon_rows": []
    },
    "KA50": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA50",
+    "engine_ref": "ENGINE:20261016T204246Z:KA50",
     "source_hash": "c37c93ccde908863",
     "ledger": [
      {
@@ -122897,7 +125172,7 @@
     "recon_rows": []
    },
    "KA51": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA51",
+    "engine_ref": "ENGINE:20261016T204246Z:KA51",
     "source_hash": "8853c277e72aa861",
     "ledger": [
      {
@@ -123183,7 +125458,7 @@
     "recon_rows": []
    },
    "KA52": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA52",
+    "engine_ref": "ENGINE:20261016T204246Z:KA52",
     "source_hash": "64d73baafbe54977",
     "ledger": [
      {
@@ -123469,7 +125744,7 @@
     "recon_rows": []
    },
    "KA53": {
-    "engine_ref": "ENGINE:20261016T203154Z:KA53",
+    "engine_ref": "ENGINE:20261016T204246Z:KA53",
     "source_hash": "34f65bbd1955dcf0",
     "ledger": [
      {
