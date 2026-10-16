@@ -4,11 +4,13 @@ import { TermTip } from '../components/Term'
 import { Pill } from '../components/badges'
 import { LEVEL_LABEL, TIER_LABEL, eok, pct } from '../lib/format'
 import { scenarioTargetVisible } from '../lib/data'
+import { LensPill } from './StrategyView'
 
 type Nav = 'account' | 'portfolio' | 'strategy' | 'quality' | 'method' | 'admin'
 const TIERS: EvidenceTier[] = ['EVIDENCE_BASED', 'MODEL_ESTIMATED', 'UNVERIFIED']
 const TIER_OPACITY: Record<EvidenceTier, number> = { EVIDENCE_BASED: 1, MODEL_ESTIMATED: 0.5, UNVERIFIED: 0.2 }
 const LEVEL_TONE = { SUFFICIENT: 'ok', PARTIAL: 'warn', INSUFFICIENT: 'err' } as const
+const ST_KO: Record<string, { l: string; tone: 'ok' | 'warn' | 'err' }> = { CANDIDATE: { l: '추진 검토 후보', tone: 'ok' }, NEEDS_VALIDATION: { l: '검증 필요', tone: 'warn' }, ANALYSIS_HYPOTHESIS: { l: '분석 가설', tone: 'err' } }
 const REC_KO: Record<string, string> = { EXPAND: '확장', INVEST: '투자', PARTNER: '제휴', 'M&A_REVIEW': 'M&A 검토', MAINTAIN: '유지' }
 
 function Kpi({ term, label, value, sub, accent, testid }: { term?: string; label: string; value: string; sub: string; accent?: string; testid?: string }) {
@@ -55,6 +57,9 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
     strat.forEach(s => s.evidence && (c[s.evidence.evidence_level] += 1))
     return c
   }, [strat])
+  const inits = data.initiatives ?? []
+  const initOf = (area: string) => inits.find(i => i.area === area)
+  const stCount = inits.reduce((c, i) => ({ ...c, [i.status]: (c[i.status] ?? 0) + 1 }), {} as Record<string, number>)
   const name = (id: string) => data.accounts.find(a => a.account_id === id)?.original_name ?? id
   const cagr = (x: number | null | undefined, y: number | null | undefined) => (x && y ? Math.pow(y / x, 1 / 5) - 1 : null)
 
@@ -92,22 +97,22 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
         <Kpi term="FPR" label="2031 FPR (최대 확보 가능 매출)" value={eok(a31.FPR, 'ESTIMATED')} sub={`범위 ${eok(lo31.FPR, 'ESTIMATED')}~${eok(hi31.FPR, 'ESTIMATED')} (Low~High) · 2026 ${eok(a26.FPR, 'ESTIMATED')}`} accent="var(--c-fpr)" />
         <Kpi testid="kpi-target" term="TARGET" label="2031 Target Revenue (2031년 목표 매출)" value={tgtApproved > 0 ? eok(a31.TARGET, 'VERIFIED') : '사내 목표 미입력'}
           sub={tgtApproved > 0 ? `경영진 승인 ${tgtApproved}개사 합계` : `승인 목표 0/${n}개사${showTgt ? ` · 시나리오 참고값 ${eok(a31.TARGET_scenario ?? null, 'SCENARIO')}(공식 합계 아님)` : ''}`} accent="var(--c-rev)" />
-        <Kpi testid="kpi-areas" term="EVIDENCE_LEVEL" label="사업영역 기회 · 근거 수준" value={`${strat.length}개 영역`}
-          sub={`근거 충분 ${levelCount.SUFFICIENT} · 일부 ${levelCount.PARTIAL} · 부족 ${levelCount.INSUFFICIENT} · 외부 커버리지 ${data.meta.coverage ? pct(data.meta.coverage.current.external_coverage) : '—'}`} />
+        <Kpi testid="kpi-areas" term="EVIDENCE_LEVEL" label="전략과제 후보 · 상태" value={`${inits.length}건 · 승인 0`}
+          sub={`추진 검토 후보 ${stCount.CANDIDATE ?? 0} · 검증 필요 ${stCount.NEEDS_VALIDATION ?? 0} · 분석 가설 ${stCount.ANALYSIS_HYPOTHESIS ?? 0} · 외부 커버리지 ${data.meta.coverage ? pct(data.meta.coverage.current.external_coverage) : '—'}`} />
       </section>
 
       {/* Options & decisions (conclusion of ③) */}
       <section className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="card p-4" aria-labelledby="opts">
           <h3 id="opts" className="text-[15px] font-bold">투자·제휴·상품화 옵션 (사업영역별, ③ 엔진 결과)</h3>
-          <ul className="mt-2 space-y-1.5 text-[12.5px]" data-testid="options">{[...strat].sort((x, y) => y.priority_score - x.priority_score).map(s => (
-            <li key={s.area} className="flex flex-wrap items-baseline gap-1.5 border-t border-line pt-1.5">
+          <ul className="mt-2 space-y-1.5 text-[12.5px]" data-testid="options">{[...strat].sort((x, y) => y.priority_score - x.priority_score).map(s => { const it = initOf(s.area); return (
+            <li key={s.area} className="flex flex-wrap items-baseline gap-1.5 border-t border-line pt-1.5" data-area={s.area}>
               <b className="min-w-[150px]">{s.area}</b>
-              <Pill tone={s.evidence?.recommendation_mode === 'HYPOTHESIS' ? 'warn' : 'ok'}>{REC_KO[s.recommendation_type ?? ''] ?? '—'}{s.evidence?.recommendation_mode === 'HYPOTHESIS' ? ' · 검토 가설' : ' · 우선 검토'}</Pill>
-              <span className="text-ink3">{LEVEL_LABEL[s.evidence?.evidence_level ?? 'INSUFFICIENT']} · 가정 의존도 {s.evidence?.assumption_dependency == null ? '—' : s.evidence.assumption_dependency < 0 ? '감소 가정' : pct(s.evidence.assumption_dependency, 0)}</span>
-            </li>))}
+              {it && <Pill tone={ST_KO[it.status].tone}>{it.option.label}</Pill>}
+              {it && <span className="inline-flex flex-wrap items-center gap-1 text-[11px] text-ink3">시장<LensPill lens="market" level={it.lenses.market.level} />수요<LensPill lens="demand" level={it.lenses.demand.level} />확보<LensPill lens="capture" level={it.lenses.capture.level} /></span>}
+            </li>) })}
           </ul>
-          <p className="mt-2 text-[11.5px] text-ink3">근거 충분 영역만 '우선 검토', 그 외는 '검토 가설'. 확정 과제·투자 결정이 아닙니다. 전략과제 후보(WHY/GAP/OPTION/ACTION)는 Phase 3에서 고객 근거와 연결해 도출합니다.</p>
+          <p className="mt-2 text-[11.5px] text-ink3">③ 전략과제 도출 결과(시장·수요·확보 가능성 3관점). 모든 옵션은 제안(PROPOSED) 상태이며 확정 과제·투자 결정이 아닙니다. 수요 근거가 없으면 '분석 가설', 일부 근거가 부족하면 '검증 필요'. <button className="underline" onClick={() => onNavigate('strategy')}>WHY/GAP/OPTION/PRIORITY/ACTION 보기 →</button></p>
         </div>
         <div className="card p-4" aria-labelledby="decide">
           <h3 id="decide" className="text-[15px] font-bold">경영진 의사결정 필요 사항</h3>
@@ -115,7 +120,8 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
             <li>2031 Target Revenue 승인(현재 승인 {tgtApproved}/{n}개사) — 승인 전에는 Target·Target SOW 산출 불가</li>
             <li>우선순위 가중치 확정(현재 v1 기준안: 규모 35·성장 20·수요 고객 15·진입 15·신뢰도 15 − 난이도)</li>
             <li>2031 접근률·포획상한 상향(LG U+ 역량 확대 가정) 승인 — 2031 FPR 증가분의 {pct(capShare, 0)}에 해당</li>
-            <li>근거 수준 판정 기준(충분: 근거 비중 50%·근거 고객 5개사) 및 '기존 공급자 관찰'의 근거 인정 여부</li>
+            <li>근거 3관점 판정 기준 확정(수요: 양(+) 근거 5개사·FPR 비중 30% 등) — 현재 '기존 공급자 관찰'은 신규 수요로 인정하지 않음</li>
+            <li>공식 지표 출처 전환 정책 승인(외부 모델 → 승인된 사내 값, 고객·지표 단위 선택 승인) 및 Phase 3B 사내 데이터 연동(Blocker B1·B2·B3·B4·B6·B8 해소 후)</li>
             <li>가정 의존도가 높은 영역({highDep.map(s => s.area).join(', ') || '없음'})의 투자 판단 보류 여부 — 민감도·고객 수요 검증 후 재평가</li>
           </ol>
         </div>
@@ -130,7 +136,7 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
             { q: '② LGU+가 공략할 수 있는 시장은?', a: `${eok(a26.RAW, 'ESTIMATED')} → ${eok(a31.RAW, 'ESTIMATED')}`, s: `${pct(a26.RAW / (a26.TS || 1), 0)} of TS (2026)`, t: 'RAW' },
             { q: '③ 최대 확보 가능 매출은?', a: `${eok(a26.FPR, 'ESTIMATED')} → ${eok(a31.FPR, 'ESTIMATED')}`, s: `CAGR ${pct(cagr(a26.FPR, a31.FPR))} · 증가분의 ${pct(capShare, 0)}는 U+ 역량 확대 가정`, t: 'FPR' },
             { q: '④ 목표와 현재 매출 사이 성장 기회는?', a: crN === 0 && tgtApproved === 0 ? '사내 매출·목표 미입력' : `CR ${crN}개사 · Target ${tgtApproved}개사`, s: '사내 CR·승인 Target 입력 후 산출(관리자 입력·Excel Import)', t: 'UPSIDE' },
-            { q: '⑤ 무엇을 우선 준비해야 하는가?', a: `검토 후보 영역 ${topAreas.slice(0, 3).map(s => s.area).join(' · ')}`, s: '전략과제 도출·우선순위 확정은 Phase 3 · 근거 수준 함께 확인', t: 'PRIORITY_SCORE' },
+            { q: '⑤ 무엇을 우선 준비해야 하는가?', a: `매력도 상위 ${topAreas.slice(0, 3).map(s => s.area).join(' · ')}`, s: `모두 검증 필요 상태 — 우선 준비는 수요·시장 근거 검증 과제(③ ACTION ${inits.reduce((x, i) => x + i.actions.length, 0)}건 제안)`, t: 'PRIORITY_SCORE' },
           ].map((x, i) => (
             <li key={i} className="rounded-md border border-line bg-sunk p-2.5">
               <div className="text-[12px] font-semibold text-ink2"><TermTip code={x.t}>{x.q}</TermTip></div>
@@ -155,9 +161,9 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
             <table className="w-full min-w-[980px] text-[12.5px] [&_th]:whitespace-nowrap [&_td]:whitespace-nowrap" data-testid="area-table">
               <thead><tr className="text-left text-ink3">
                 <th className="py-1">사업영역</th><th className="text-right">FPR 2026→2031</th><th className="w-[160px] pl-3">근거 구성</th>
-                <th className="text-right"><TermTip code="DEMAND_ACCOUNTS">수요 고객 모델 / 관측 신호</TermTip></th><th className="text-right">공급자 관찰</th>
-                <th><TermTip code="EVIDENCE_LEVEL">근거 수준</TermTip></th><th className="text-right"><TermTip code="ASSUMPTION_DEP">가정 의존도</TermTip></th>
-                <th className="text-right"><TermTip code="PRIORITY_SCORE">전략 점수</TermTip></th><th>권고 성격</th></tr></thead>
+                <th className="text-right"><TermTip code="DEMAND_ACCOUNTS">수요 고객 모델 / 관측 신호</TermTip></th><th className="text-right" title="기존 공급자 관찰 — 현행 지출 관측이며 신규 수요 아님">현행 지출 관측</th>
+                <th>시장</th><th>수요</th><th>확보 가능성</th><th className="text-right"><TermTip code="ASSUMPTION_DEP">가정 의존도</TermTip></th>
+                <th className="text-right"><TermTip code="PRIORITY_SCORE">전략 점수</TermTip></th><th>과제 상태</th></tr></thead>
               <tbody>{[...strat].sort((x, y) => y.FPR_2031 - x.FPR_2031).map(s => {
                 const e = s.evidence
                 const dep = e?.assumption_dependency
@@ -168,15 +174,15 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
                     <td className="pl-3"><TierBar s={s} /></td>
                     <td className="num text-right">{e ? `${e.n_accounts_model} / ${e.n_accounts_signal}` : '—'}</td>
                     <td className="num text-right text-ink2">{e ? e.n_accounts_incumbent_obs : '—'}</td>
-                    <td>{e && <Pill tone={LEVEL_TONE[e.evidence_level]}>{LEVEL_LABEL[e.evidence_level]}</Pill>}</td>
+                    {(['market', 'demand', 'capture'] as const).map(l => <td key={l}>{initOf(s.area) && <LensPill lens={l} level={initOf(s.area)!.lenses[l].level} />}</td>)}
                     <td className="num text-right" style={{ color: dep != null && dep > 0.5 ? 'var(--warn)' : undefined }}>{dep == null ? '—' : dep < 0 ? '감소 가정' : pct(dep, 0)}</td>
                     <td className="num text-right">{s.priority_score.toFixed(1)}</td>
-                    <td className="text-[11.5px]">{s.recommendation_type ? `${REC_KO[s.recommendation_type] ?? s.recommendation_type}${e?.recommendation_mode === 'HYPOTHESIS' ? ' (검토 가설)' : ''}` : '—'}</td>
+                    <td className="text-[11.5px]">{initOf(s.area) ? `${REC_KO[s.recommendation_type ?? ''] ?? '—'} · ${ST_KO[initOf(s.area)!.status].l}` : '—'}</td>
                   </tr>)
               })}</tbody>
             </table>
           </div>
-          <p className="mt-2 text-[11.5px] text-ink3">금액은 모두 모델 산출값입니다. 근거 구성은 금액의 정확도가 아니라 해당 영역 수요가 고객별 원천(수요 신호·고객별 비중·기존 공급자 관찰)으로 관측됐는지를 나타냅니다. 근거 충분이 아닌 영역의 권고는 확정 투자 권고가 아닌 검토 가설입니다.</p>
+          <p className="mt-2 text-[11.5px] text-ink3">금액은 모두 모델 산출값입니다. 근거 구성은 금액의 정확도가 아니라 해당 영역 수요가 고객별 원천(수요 신호·고객별 비중·기존 공급자 관찰)으로 관측됐는지를 나타냅니다. 시장·수요·확보 가능성 3관점은 전략 점수에 반영되지 않으며, 수요 근거가 부족한 영역은 확정 성장 기회·투자 권고로 표시하지 않습니다.</p>
         </section>
 
         {/* Verification needed */}
@@ -191,6 +197,22 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
             <li><Pill>정의 상이</Pill> {mismatch}개사(하이퍼스케일러 국내 인프라 지출·망 이용대가 환산)는 합계에서 별도</li>
           </ul>
           <button onClick={() => onNavigate('quality')} className="mt-3 text-[12px] underline">데이터 신뢰도 →</button>
+        </section>
+
+        {/* Phase 3A: verification tasks by business area (from ③ ACTION) */}
+        <section className="card p-4" aria-labelledby="vtasks" data-testid="verification-tasks">
+          <h3 id="vtasks" className="text-[15px] font-bold">사업영역별 대응 옵션과 검증 과제 <span className="text-[12px] font-normal text-ink3">(③ 도출 결과 · 모두 제안 상태)</span></h3>
+          <div className="mt-2 overflow-x-auto"><table className="w-full min-w-[980px] text-[12.5px]">
+            <thead><tr className="text-left text-ink3 [&_th]:pr-2"><th className="py-1">사업영역</th><th>대응 옵션</th><th>핵심 검증 과제</th><th>담당(제안)</th><th>검증 사례</th></tr></thead>
+            <tbody>{[...inits].sort((x, y) => x.priority.baseline_rank - y.priority.baseline_rank).map(i => (
+              <tr key={i.area} className="border-t border-line align-top [&_td]:pr-2" data-area={i.area}>
+                <td className="py-1.5 font-semibold whitespace-nowrap">{i.area}</td>
+                <td className="whitespace-nowrap"><Pill tone={ST_KO[i.status].tone}>{i.option.label}</Pill></td>
+                <td><ul className="list-disc pl-4">{i.actions.filter(a => a.lens !== 'internal').slice(0, 3).map(a => <li key={a.action_id}>{a.text}</li>)}</ul></td>
+                <td className="text-[11.5px] text-ink3">{[...new Set(i.actions.filter(a => a.lens !== 'internal').slice(0, 3).map(a => a.owner_role))].join(', ')}</td>
+                <td className="text-[11.5px]">{i.verification_case ? <span style={{ color: 'var(--warn)' }}>{i.verification_case.title.replace(/^검증 사례 [①②] /, '')}</span> : '—'}</td>
+              </tr>))}</tbody>
+          </table></div>
         </section>
       </div>
 
@@ -207,7 +229,7 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
                 <td className="text-right text-ink3">{eok(lo31[k], 'ESTIMATED')}~{eok(hi31[k], 'ESTIMATED')}</td><td className="text-right">{pct(cagr(a26[k], a31[k]))}</td></tr>))}
             </tbody>
           </table>
-          <p className="mt-2 text-[11.5px] text-ink3">2027~2030 연도별 궤적 차트는 Phase 2에서 제공(중간연도는 Illustrative Projection).</p>
+          <p className="mt-2 text-[11.5px] text-ink3">연도별 통합 궤적·동일 고객 집합 성장률은 <button className="underline" onClick={() => onNavigate('portfolio')}>② 전사 기회 분석</button>(중간연도는 Illustrative Projection).</p>
         </section>
 
         {/* Industry */}
