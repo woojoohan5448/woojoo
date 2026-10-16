@@ -143,3 +143,15 @@ F. **중복 위험**: 같은 그룹 내 다른 53개 고객과의 관계(지주�
 5. 외화 수치는 원 단위(USD 등) 그대로 기록. 환산은 엔진이 한다.
 6. 매출 정의: 금융사는 OpenDART가 영업수익을 주지 않는 경우가 많다. 손익계산서 전체(`get_full_financial_statement`, OFS)에서 `영업수익` 또는 `순영업수익`(이자+수수료) 계정을 찾아 기록한다. 금융사 판관비(`sga`)도 가능하면 기록.
 7. 법인 별도(OFS) 재무와 연결(CFS)을 모두 기록하되, scope에 반드시 "법인 별도" 또는 "연결"을 표기.
+
+## 6. Phase 1 Evidence Recovery 규칙 (v2.0, 2026-10-16)
+- **출력 위치**: 기존 `data/raw/research/KAxx.json`은 수정하지 않는다. 신규 근거는 `data/raw/research_p1/KAxx.json`(동일 스키마)에 **보충(supplement)** 으로 저장한다. fact_id/evidence_id 접두어는 `KAxx-P1-F01`, `KAxx-P1-E01`.
+- **추가 키**:
+  - `"recovery_levels_tried": ["L1_DIRECT","L2_COMPONENTS","L3_CONTRACT","L4_BENCHMARK","L5_COMPARABLE","L6_SCENARIO"]` 중 실제 시도한 것과 결과(`found`/`not_found`/`not_applicable`)를 기록한 객체 배열
+  - `"conflicts": [{"existing_fact_id": "...", "existing_value": ..., "new_value": ..., "unit": "...", "explanation": "...", "evidence_ids": [...]}]` — 기존 수치와 다른 근거를 찾으면 반드시 기록(과대·과소추정 반박 근거 포함)
+  - `"comparables": [{"peer_account_or_company": "...", "metric": "...", "value": ..., "unit": "...", "why_comparable": "...", "evidence_ids": [...]}]` (L5)
+  - `"estimation_inputs": [{"name": "...", "value": ..., "unit": "...", "basis": "...", "evidence_ids": [...]}]` — 용량(MW), 인원, 단가 등 모델 입력
+- **추가 메트릭**: `employees`(명), `it_employees`, `tangible_asset_acquisition`, `intangible_asset_acquisition`(현금흐름표, SW 투자 프록시), `depreciation`, `it_service_cost`(전산비·전산운영비·지급수수료 중 전산), `dc_capacity_mw`, `colocation_price`(원/kW/월), `contract_value`(+period 필수), `korea_revenue`, `security_budget`.
+- **검색 예산**: WebSearch는 세션 턴당 200회를 모든 에이전트가 공유한다. **배정된 횟수를 넘기지 말 것.** 한 검색으로 여러 고객을 커버하는 비교 기사(예: "정보보호 공시 2026 카드사")를 우선 사용.
+- **DART 우선**: 상장사는 `opendart-get_employees`(FY2025 11011), `get_full_financial_statement`(CF의 유형·무형자산 취득, IS의 전산비 계정)를 우선 수집 — 검색 예산을 쓰지 않는다. 출력이 크면 필요한 계정만 기록.
+- 구할 수 없으면 `research_log`에 레벨별 NOT_FOUND 사유를 남긴다. **숫자를 만들지 않는다.**

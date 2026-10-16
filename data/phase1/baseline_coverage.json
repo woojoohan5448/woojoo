@@ -1,0 +1,17 @@
+{
+ "external_fields": 318,
+ "external_covered": 202,
+ "external_coverage": 0.6352,
+ "external_missing": 116,
+ "verified_or_derived": 0,
+ "internal_required": 318,
+ "not_applicable": 0,
+ "errors": 0,
+ "by_class": {
+  "ESTIMATED_HIGH": 13,
+  "ESTIMATED_MEDIUM": 53,
+  "ESTIMATED_LOW": 136,
+  "INTERNAL_REQUIRED": 318,
+  "INSUFFICIENT_EVIDENCE": 116
+ }
+}
