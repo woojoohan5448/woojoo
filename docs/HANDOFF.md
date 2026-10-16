@@ -54,3 +54,8 @@
   - 단계 커밋: 3A-1 원장·출처 정책 → 3A-2 대사 화면 → 3A-3/4 ② 통합 궤적·FPR 보조 차트 → 3A-5 ③ Opportunity-to-Action → 3A-6 ④ + QA.
   - 테스트: pytest 68 · vitest 18 · E2E 46+46 · Phase 3A E2E 316+316(+합성 120) · 전략 근거 59+59 · 화면 검증 104 · 겹침 0/288 차트(53개사 × 3 해상도).
   - 재개: PHASE3A_REPORT §4(잔여 리스크)·§5(연동 준비) 확인 → Blocker 해소 후 Phase 3B 승인 요청.
+
+## 6. 최종 인계 (외부 개발 종료, 2026-10-16)
+- 기준선 태그 `v3.0-phase3a-final`. 보존 태그 `v1.0-checkpoint`·`v2.0-phase1-4-checkpoint`·`v2.1-pre-vnext`·`v2.2-pre-phase3a`.
+- 사내 환경: 루트 `INTERNAL_SETUP.md`(설치·실행·빌드·테스트·환경변수·Windows 점검) → `INTERNAL_INTEGRATION_HANDOFF.md`(계산 흐름·키·출처 정책·Phase 3B·Blocker·불변 기준선).
+- 패키지 재생성: `python3 tools/make_handoff.py && python3 tools/check_handoff.py`.

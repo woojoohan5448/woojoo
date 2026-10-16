@@ -62,3 +62,8 @@ python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최�
 - ② 통합 궤적 `frontend/src/lib/portfolioTrajectory.ts`(동일 고객 집합, n/53, 0 대체 금지), FPR 확대 보조 차트(별도 축), ① 대사 패널 `components/ReconPanel.tsx`.
 - 테스트: `node tests/e2e/phase3a.e2e.mjs [url] [out.json]`(6개사 × 1280/1440/1920), 합성 샌드박스 `python3 tools/phase3a_synthetic_sandbox.py <dir>` → `INTERNAL_STORE_DIR=<dir> KAI_DATA_OUT=<out> KAI_RECON_MODE=test` build + uvicorn :8001 + `SYNTH=1`.
 - 다음: 사내 Excel Import·Phase 3B는 Blocker B1·B2·B3·B4·B6·B8 해소 후 별도 승인.
+
+## 최종 인계 (2026-10-16) — 외부 개발 종료
+- 기준선 태그 `v3.0-phase3a-final`(브랜치 `vnext-phase3a`). 이후 사내 개발 환경에서 이어서 진행.
+- 인계 패키지 `KA_Dashboard_Phase3A_Handoff.zip` = `python3 tools/make_handoff.py` → `python3 tools/check_handoff.py`.
+- 사내 재현 `INTERNAL_SETUP.md`, 통합 작업 인계 `INTERNAL_INTEGRATION_HANDOFF.md`, 인계 검증 결과 `docs/handoff/HANDOFF_VERIFICATION.md`.

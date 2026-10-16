@@ -15,3 +15,6 @@ data/internal_inputs/*.xlsx
 !data/internal_inputs/templates/
 dist_release/
 wheels/
+
+# final handoff package (built artifact)
+KA_Dashboard_Phase3A_Handoff.zip
