@@ -1,0 +1,313 @@
+{
+  "mode": "test",
+  "n_records": 25,
+  "n_valid": 25,
+  "quarantined": [],
+  "errors": 0,
+  "warnings": 2,
+  "issues": [
+    {
+      "code": "C05_RAW_ADJ_UNBALANCED",
+      "severity": "WARN",
+      "message": "('KA14', 'ACCOUNT', 'ALL', 2026, 'PLAN', 1): 보정 전 + 보정액 = 1200 ≠ 보정 후 1250 (원본 유지, 확인 필요)",
+      "record_id": "S-KA14-003"
+    },
+    {
+      "code": "C07_TARGET_ABOVE_FPR",
+      "severity": "WARN",
+      "message": "KA29 승인 목표 6000.0 > 외부 FPR_2031 5228.12 (값 유지, 검토 필요)",
+      "record_id": "S-KA29-002"
+    }
+  ],
+  "official": {
+    "CR": {
+      "KA03": {
+        "value_eok": "118.5",
+        "period_type": "ACTUAL_FULL_YEAR",
+        "records": [
+          "S-KA03-011"
+        ],
+        "synthetic": true
+      },
+      "KA14": {
+        "value_eok": "55",
+        "period_type": "ACTUAL_FULL_YEAR",
+        "records": [
+          "S-KA14-010",
+          "S-KA14-011"
+        ],
+        "synthetic": true
+      }
+    },
+    "TARGET": {
+      "KA03": {
+        "value_eok": "260",
+        "version": 1,
+        "record": "S-KA03-022",
+        "derived_from_case_id": "TARGET_CASE_B",
+        "synthetic": true
+      },
+      "KA29": {
+        "value_eok": "6000.0",
+        "version": 1,
+        "record": "S-KA29-002",
+        "derived_from_case_id": null,
+        "synthetic": true
+      }
+    },
+    "REVENUE_PLAN": {
+      "KA03": {
+        "2027": "140",
+        "2028": "160",
+        "2029": "185",
+        "2030": "220",
+        "2031": "255"
+      }
+    },
+    "excluded": [
+      {
+        "record_id": "S-KA03-001",
+        "reason": "INT_SAM는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA03-002",
+        "reason": "INT_RAW_SOURCE는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA03-003",
+        "reason": "INT_RAW_ADJ는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA03-004",
+        "reason": "INT_RAW_ADJUSTED는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA03-005",
+        "reason": "INT_RAW_ADJUSTED는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA03-020",
+        "reason": "TARGET_CASE는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA03-021",
+        "reason": "TARGET_CASE는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA03-023",
+        "reason": "STRETCH는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA29-001",
+        "reason": "INT_RAW_ADJUSTED는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA29-003",
+        "reason": "미승인(VERIFIED) — 공식 계산 제외"
+      },
+      {
+        "record_id": "S-KA14-001",
+        "reason": "INT_RAW_SOURCE는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA14-002",
+        "reason": "INT_RAW_ADJ는 대사 비교 전용"
+      },
+      {
+        "record_id": "S-KA14-003",
+        "reason": "INT_RAW_ADJUSTED는 대사 비교 전용"
+      }
+    ]
+  },
+  "reconciliation": [
+    {
+      "record_id": "S-KA03-001",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2026,
+      "internal_measure": "INT_SAM",
+      "internal_eok": "1400",
+      "status": "VERIFIED",
+      "external_measure": "EXT_RAW[BASE|BASE_CASE]",
+      "external_eok": "987.29",
+      "comparability": "UNKNOWN",
+      "synthetic": true,
+      "judgement": "NOT_COMPARABLE"
+    },
+    {
+      "record_id": "S-KA03-002",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2026,
+      "internal_measure": "INT_RAW_SOURCE",
+      "internal_eok": "900",
+      "status": "VERIFIED",
+      "external_measure": "EXT_RAW[BASE|BASE_CASE]",
+      "external_eok": "987.29",
+      "comparability": "PROXY",
+      "synthetic": true,
+      "diff_pct": "-0.0884",
+      "judgement": "REFERENCE_ONLY"
+    },
+    {
+      "record_id": "S-KA03-004",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2026,
+      "internal_measure": "INT_RAW_ADJUSTED",
+      "internal_eok": "1050",
+      "status": "VERIFIED",
+      "external_measure": "EXT_RAW[BASE|BASE_CASE]",
+      "external_eok": "987.29",
+      "comparability": "PROXY",
+      "synthetic": true,
+      "diff_pct": "0.0635",
+      "judgement": "REFERENCE_ONLY"
+    },
+    {
+      "record_id": "S-KA03-005",
+      "account_id": "KA03",
+      "area": "CATEGORY:CONNECTIVITY",
+      "fiscal_year": 2026,
+      "internal_measure": "INT_RAW_ADJUSTED",
+      "internal_eok": "280",
+      "status": "VERIFIED",
+      "external_measure": "EXT_RAW[BASE|BASE_CASE]",
+      "external_eok": "261.82",
+      "comparability": "DIRECT",
+      "synthetic": true,
+      "diff_pct": "0.0694",
+      "judgement": "ALIGNED"
+    },
+    {
+      "record_id": "S-KA03-020",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2031,
+      "internal_measure": "TARGET_CASE",
+      "internal_eok": "200",
+      "status": "VERIFIED",
+      "external_measure": "EXT_FPR[BASE|BASE_CASE]",
+      "external_eok": "456.14",
+      "comparability": "CEILING_ONLY",
+      "synthetic": true,
+      "judgement": "WITHIN_FPR"
+    },
+    {
+      "record_id": "S-KA03-021",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2031,
+      "internal_measure": "TARGET_CASE",
+      "internal_eok": "260",
+      "status": "VERIFIED",
+      "external_measure": "EXT_FPR[BASE|BASE_CASE]",
+      "external_eok": "456.14",
+      "comparability": "CEILING_ONLY",
+      "synthetic": true,
+      "judgement": "WITHIN_FPR"
+    },
+    {
+      "record_id": "S-KA03-022",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2031,
+      "internal_measure": "APPROVED_TARGET",
+      "internal_eok": "260",
+      "status": "APPROVED",
+      "external_measure": "EXT_FPR[BASE|BASE_CASE]",
+      "external_eok": "456.14",
+      "comparability": "CEILING_ONLY",
+      "synthetic": true,
+      "judgement": "WITHIN_FPR"
+    },
+    {
+      "record_id": "S-KA03-023",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2031,
+      "internal_measure": "STRETCH",
+      "internal_eok": "300",
+      "status": "VERIFIED",
+      "external_measure": "EXT_FPR[BASE|BASE_CASE]",
+      "external_eok": "456.14",
+      "comparability": "CEILING_ONLY",
+      "synthetic": true,
+      "judgement": "WITHIN_FPR"
+    },
+    {
+      "record_id": "S-KA03-034",
+      "account_id": "KA03",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2031,
+      "internal_measure": "SALES_PLAN",
+      "internal_eok": "255",
+      "status": "APPROVED",
+      "external_measure": "EXT_FPR[BASE|BASE_CASE]",
+      "external_eok": "456.14",
+      "comparability": "CEILING_ONLY",
+      "synthetic": true,
+      "judgement": "WITHIN_FPR"
+    },
+    {
+      "record_id": "S-KA29-001",
+      "account_id": "KA29",
+      "area": "CATEGORY:CLOUD",
+      "fiscal_year": 2031,
+      "internal_measure": "INT_RAW_ADJUSTED",
+      "internal_eok": "5000",
+      "status": "VERIFIED",
+      "external_measure": "EXT_RAW[BASE|BASE_CASE]",
+      "external_eok": "3356.44",
+      "comparability": "DIRECT",
+      "synthetic": true,
+      "diff_pct": "0.4897",
+      "judgement": "REVIEW_INTERNAL_HIGHER"
+    },
+    {
+      "record_id": "S-KA29-002",
+      "account_id": "KA29",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2031,
+      "internal_measure": "APPROVED_TARGET",
+      "internal_eok": "6000.0",
+      "status": "APPROVED",
+      "external_measure": "EXT_FPR[BASE|BASE_CASE]",
+      "external_eok": "5228.12",
+      "comparability": "CEILING_ONLY",
+      "synthetic": true,
+      "judgement": "TARGET_ABOVE_FPR"
+    },
+    {
+      "record_id": "S-KA14-001",
+      "account_id": "KA14",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2026,
+      "internal_measure": "INT_RAW_SOURCE",
+      "internal_eok": "1000",
+      "status": "VERIFIED",
+      "external_measure": "EXT_RAW[BASE|BASE_CASE]",
+      "external_eok": "1283.75",
+      "comparability": "PROXY",
+      "synthetic": true,
+      "diff_pct": "-0.2210",
+      "judgement": "REFERENCE_ONLY"
+    },
+    {
+      "record_id": "S-KA14-003",
+      "account_id": "KA14",
+      "area": "ACCOUNT:ALL",
+      "fiscal_year": 2026,
+      "internal_measure": "INT_RAW_ADJUSTED",
+      "internal_eok": "1250",
+      "status": "VERIFIED",
+      "external_measure": "EXT_RAW[BASE|BASE_CASE]",
+      "external_eok": "1283.75",
+      "comparability": "PROXY",
+      "synthetic": true,
+      "diff_pct": "-0.0263",
+      "judgement": "REFERENCE_ONLY"
+    }
+  ],
+  "evidence_link_issues": []
+}

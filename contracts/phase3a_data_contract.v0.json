@@ -1,0 +1,79 @@
+{
+  "contract_id": "KAI-RECON-CONTRACT",
+  "version": "0.1.0-draft",
+  "status": "DRAFT — 사용자 승인 전. 실제 사내 Excel 헤더 확인(Blocker B1) 후 v1.0 확정",
+  "grain": ["account_id", "area_level", "area_id", "fiscal_year", "period_type", "case_id", "measure_id", "source.version"],
+  "required_fields": ["record_id", "synthetic", "account_id", "area_level", "area_id", "fiscal_year", "period_type", "case_family", "case_id", "measure_id", "source", "raw", "value_eok", "definition_ref", "status", "history"],
+  "required_source_fields": ["source_id", "layer", "file_sha256", "sheet", "cell_ref", "as_of", "version", "uploaded_by"],
+  "enums": {
+    "area_level": ["ACCOUNT", "CATEGORY", "BIZ_AREA"],
+    "period_type": ["FY", "YTD", "FORECAST", "ACTUAL_FULL_YEAR", "PLAN"],
+    "case_family": ["EXTERNAL_SCENARIO", "INTERNAL_CASE"],
+    "layer": ["EXTERNAL_MODEL", "INTERNAL_EXCEL"],
+    "status": ["SOURCE", "VALIDATED", "VERIFIED", "APPROVED", "REJECTED", "SUPERSEDED"],
+    "unit": ["원", "천원", "백만원", "억원", "조원"],
+    "entity_scope": ["STANDALONE", "CONSOLIDATED", "GROUP", "DOMESTIC_ONLY", "UNKNOWN"],
+    "vat_basis": ["EXCL_VAT", "INCL_VAT", "UNKNOWN"]
+  },
+  "unit_to_eok": {"원": "1e-8", "천원": "1e-5", "백만원": "0.01", "억원": "1", "조원": "10000"},
+  "categories": ["CONNECTIVITY", "DC_COLO", "CLOUD", "AI_INFRA", "SECURITY", "SI_BUILD", "IT_OPS", "SW_LICENSE", "HW_DEVICE", "INTERNAL_LABOR"],
+  "category_to_biz_area": {
+    "CONNECTIVITY": "Connectivity", "DC_COLO": "Data Center / IDC", "CLOUD": "Cloud", "AI_INFRA": "AI Infrastructure",
+    "SECURITY": "Security", "SI_BUILD": "AI Transformation / SI", "IT_OPS": "SI / Managed Services",
+    "SW_LICENSE": "기타", "HW_DEVICE": "기타", "INTERNAL_LABOR": null
+  },
+  "case_ids": {
+    "EXTERNAL_SCENARIO": ["LOW|BASE_CASE", "BASE|BASE_CASE", "HIGH|BASE_CASE", "LOW|STRATEGIC_EXPANSION", "BASE|STRATEGIC_EXPANSION", "HIGH|STRATEGIC_EXPANSION"],
+    "INTERNAL_CASE_PATTERN": "^(PLAN|STRETCH|ACTUAL|APPROVED|TARGET_CASE_[A-Z0-9_]+)$"
+  },
+  "measures": {
+    "EXT_TS":            {"layer": "EXTERNAL_MODEL", "label": "① Customer Total IT Spending (외부 추정)", "basis": "CUSTOMER_SPEND", "timing": "FY2026 기준·FY2031 전망", "official_use": "MODEL_VALUE", "source": "data/processed/dashboard.json m.{2026,2031}.TS(.by_cat)"},
+    "EXT_RAW":           {"layer": "EXTERNAL_MODEL", "label": "② Realistical Addressable Wallet (외부 추정)", "basis": "CUSTOMER_SPEND", "timing": "FY2026·FY2031", "official_use": "MODEL_VALUE", "source": "m.2026.RAW.by_cat / m.2031.<scen>.RAW_<case>"},
+    "EXT_FPR":           {"layer": "EXTERNAL_MODEL", "label": "③ U+ Full Potential Revenue (외부 추정)", "basis": "LGU_REVENUE_POTENTIAL", "timing": "FY2026·FY2031", "official_use": "MODEL_VALUE", "source": "m.2026.FPR / m.2031.<scen>.FPR_<case>"},
+    "INT_SAM":           {"layer": "INTERNAL_EXCEL", "label": "Internal SAM (사내 서비스 가능 시장)", "basis": "CUSTOMER_SPEND", "timing": "원본 시트 기준연도", "official_use": "COMPARISON_ONLY", "preserve_raw": true},
+    "INT_RAW_SOURCE":    {"layer": "INTERNAL_EXCEL", "label": "Internal RAW — 보정 전 원본값", "basis": "CUSTOMER_SPEND", "timing": "원본 시트 기준연도", "official_use": "COMPARISON_ONLY", "preserve_raw": true},
+    "INT_RAW_ADJ":       {"layer": "INTERNAL_EXCEL", "label": "Internal RAW 역산 보정액(±)", "basis": "CUSTOMER_SPEND", "timing": "보정 시점", "official_use": "COMPARISON_ONLY", "preserve_raw": true, "requires": ["adjustment_method", "adjustment_reason"]},
+    "INT_RAW_ADJUSTED":  {"layer": "INTERNAL_EXCEL", "label": "Internal RAW — 보정 후 값(원본 그대로)", "basis": "CUSTOMER_SPEND", "timing": "보정 시점", "official_use": "COMPARISON_ONLY", "preserve_raw": true},
+    "ACTUAL_REVENUE":    {"layer": "INTERNAL_EXCEL", "label": "④ Current Revenue — LG U+ 실제 매출", "basis": "LGU_REVENUE", "timing": "YTD/FORECAST/ACTUAL_FULL_YEAR", "official_use": "OFFICIAL_WHEN_APPROVED", "official_slot": "CR"},
+    "SALES_PLAN":        {"layer": "INTERNAL_EXCEL", "label": "Sales Plan — 연도별 영업 계획 매출", "basis": "LGU_REVENUE", "timing": "FY2026~FY2031", "official_use": "OFFICIAL_WHEN_APPROVED", "official_slot": "REVENUE_PLAN"},
+    "STRETCH":           {"layer": "INTERNAL_EXCEL", "label": "Stretch — 도전 목표 매출", "basis": "LGU_REVENUE", "timing": "FY2026~FY2031", "official_use": "COMPARISON_ONLY"},
+    "TARGET_CASE":       {"layer": "INTERNAL_EXCEL", "label": "2031 Target Case별 수치(원본 그대로)", "basis": "LGU_REVENUE", "timing": "FY2031", "official_use": "COMPARISON_ONLY", "preserve_raw": true},
+    "APPROVED_TARGET":   {"layer": "INTERNAL_EXCEL", "label": "⑧ 2031 Target Revenue (경영진 승인)", "basis": "LGU_REVENUE", "timing": "FY2031", "official_use": "OFFICIAL_WHEN_APPROVED", "official_slot": "TARGET"}
+  },
+  "definitions": {
+    "DEF_EXT_TS_V1":   {"measure": "EXT_TS",  "text": "고객 연간 IT 지출 총액(사내 인건비·HW·SW·서비스 포함), 고객 회계연도, 억원, VAT 제외, 원칙적 별도 법인", "status": "FINAL"},
+    "DEF_EXT_RAW_V1":  {"measure": "EXT_RAW", "text": "TS × 카테고리별 Addressability(사내 인건비·캡티브 제외)", "status": "FINAL"},
+    "DEF_INT_SAM_TBD": {"measure": "INT_SAM", "text": "사내 SAM — 정의 미확인(Blocker B2)", "status": "PROVISIONAL", "compare_to": "EXT_RAW", "comparability": "UNKNOWN"},
+    "DEF_INT_RAW_TBD": {"measure": "INT_RAW_*", "text": "사내 RAW — 매출 계획·목표 점유율 역산 가능성, 산식 미확인(Blocker B3)", "status": "PROVISIONAL", "compare_to": "EXT_RAW", "comparability": "PROXY"},
+    "DEF_INT_REVENUE_TBD": {"measure": "ACTUAL_REVENUE|SALES_PLAN|STRETCH|TARGET_CASE|APPROVED_TARGET", "text": "LG U+ 인식 매출(무선 포함 여부·VAT·수주/매출 기준 미확인, Blocker B7)", "status": "PROVISIONAL", "compare_to": "EXT_FPR", "comparability": "CEILING_ONLY"}
+  },
+  "comparability_rules": {
+    "DIRECT": "±20% 이내 ALIGNED, 초과 시 REVIEW_INTERNAL_HIGHER/LOWER (사유 코드 필수)",
+    "PROXY": "차이율 표시만, 판정은 REFERENCE_ONLY (정의 확정 전 정합/불일치 판정 금지)",
+    "UNKNOWN": "NOT_COMPARABLE (값만 병기)",
+    "CEILING_ONLY": "내부 매출 ≤ 외부 FPR 상한 여부만 점검 (TARGET_ABOVE_FPR 플래그)"
+  },
+  "transitions": {
+    "SOURCE": ["VALIDATED", "REJECTED"],
+    "VALIDATED": ["VERIFIED", "REJECTED"],
+    "VERIFIED": ["APPROVED", "REJECTED"],
+    "APPROVED": ["SUPERSEDED"],
+    "REJECTED": [],
+    "SUPERSEDED": []
+  },
+  "segregation_of_duties": {"VERIFIED": "verifier ≠ uploaded_by", "APPROVED": "approver ≠ uploaded_by AND approver ≠ verifier"},
+  "official_resolution": {
+    "CR":           {"measures": ["ACTUAL_REVENUE"], "fiscal_year": 2026, "status": "APPROVED", "period_priority": ["ACTUAL_FULL_YEAR", "FORECAST"], "aggregate": "SUM over CATEGORY/BIZ_AREA rows only when no ACCOUNT row; never mix", "fallback": "NULL (0 대체 금지)"},
+    "TARGET":       {"measures": ["APPROVED_TARGET"], "fiscal_year": 2031, "status": "APPROVED", "fallback": "NULL — TARGET_CASE·STRETCH·SALES_PLAN·시나리오 목표는 자동 승격 금지 (D1)"},
+    "REVENUE_PLAN": {"measures": ["SALES_PLAN"], "fiscal_year": [2027, 2028, 2029, 2030, 2031], "status": "APPROVED", "fallback": "Illustrative 보간 없음 — 매출 경로는 승인 계획이 있을 때만 표시"},
+    "TS_RAW_FPR":   {"measures": ["EXT_TS", "EXT_RAW", "EXT_FPR"], "note": "공식 기회 규모는 외부 모델 엔진 값 유지. INT_SAM·INT_RAW_*는 대사 비교 전용 — 채택은 별도 경영 결정(ADOPTION, v0 범위 밖)"}
+  },
+  "evidence_link": {
+    "opportunity_key": ["account_id", "area_id", "fiscal_year", "case_id"],
+    "evidence_types": ["DEMAND_SIGNAL", "INCUMBENT_OBSERVED", "ACCOUNT_SPECIFIC_SHARE", "INTERNAL_PIPELINE", "INTERNAL_CONTRACT"],
+    "roles": ["SUPPORTS", "CONTRADICTS", "CONTEXT"],
+    "internal_evidence_types": ["INTERNAL_PIPELINE", "INTERNAL_CONTRACT"],
+    "rule": "근거 tier는 링크된 증거에서만 산출. 링크 없는 사업영역 기회는 MODEL_ESTIMATED/UNVERIFIED — 확정 과제로 표시 금지"
+  },
+  "variance_threshold": "0.2"
+}

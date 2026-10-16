@@ -28,15 +28,16 @@ export function trajectoryOption(t: Trajectory, p: Palette, opts: { band: boolea
     const c = color[s.metric]
     series.push({
       id: `line-${s.metric}`, name: s.metric, type: 'line', z: 3, connectNulls: false, smooth: false,
-      lineStyle: { color: c, width: 2.5, type: s.interpolated ? 'solid' : 'dotted' }, itemStyle: { color: c },
-      emphasis: { focus: 'series' },
+      // The whole 2026→2031 path is an estimate between two engine endpoints → dashed; only the endpoints are source-based (solid markers)
+      lineStyle: { color: c, width: 2.2, type: [7, 5] }, itemStyle: { color: c },
+      emphasis: { focus: 'none', scale: 1.15 },  // no series blur — a click must not leave other metrics faded
       data: s.values.map((v, i) => {
         const end = i === 0 || i === 5
         const sel = opts.selected && opts.selected.metric === s.metric && opts.selected.year === YEARS[i]
         return {
           value: v, metric: s.metric, year: YEARS[i], kind: pointKind(i),
-          symbol: 'circle', symbolSize: end ? (sel ? 13 : 10) : 6,
-          itemStyle: end ? { color: c, borderColor: p.surface, borderWidth: sel ? 3 : 2 } : { color: p.surface, borderColor: c, borderWidth: 1.5 },
+          symbol: 'circle', symbolSize: end ? (sel ? 14 : 12) : 5,
+          itemStyle: end ? { color: c, borderColor: p.surface, borderWidth: sel ? 3 : 2 } : { color: p.surface, borderColor: c, borderWidth: 1.2, opacity: 0.85 },
           // 2026 labels sit above-right of the point (clear of the Y-axis tick labels); 2031 labels to the right
           label: end && v != null ? { show: true, position: i === 0 ? 'top' : 'right', align: i === 0 ? 'left' : undefined, offset: i === 0 ? [-4, -2] : undefined, distance: 8, fontSize: 11.5, fontWeight: 600, color: p.ink1,
             formatter: () => `${s.metric} ${eok(v, 'ESTIMATED')}` } : { show: false },

@@ -44,3 +44,9 @@
   - Step B: 성장 궤적 차트(`lib/trajectory.ts`·`components/trajectoryChart.ts`), 고객 화면 A~F 재구성, 근거 패널 접이식, ECharts MarkArea·LabelLayout 등록.
   - 테스트: pytest 40 · vitest 13 · E2E 46(API)+46(정적) · 라벨 겹침 0/144.
   - 선행 재조사: OpenDART 직접 API는 프록시 403 → PlayMCP로 KA28 DC PFV 감사보고서 확보(값 생성 없음), KA41·KA50 공시 0건, KA42·KA43 국내 법인 없음.
+- Phase 3A 준비(2026-10-16): 브랜치 `vnext-phase3a-prep`(기점 `vnext-correction`, push 금지 — 사용자 승인 대기). **판정: 조건부 가능** — 외부 데이터 기능(A군)은 즉시 가능, 사내 데이터 기능(B군)·실제 Import는 Blocker 해소 후.
+  - 화면 검증 6개 고객(KA03·29·14·32·45·28) API·정적 모두 PASS, 전략 근거 표시 41/41(`docs/vnext/phase3a/SCREEN_VERIFICATION.md`, 캡처 `screens/`).
+  - 시각 변경만: `trajectoryChart.ts` 점선 경로·채운 끝점·emphasis focus none, `AccountView.tsx` 범례. 계산·데이터 불변.
+  - 계약·대사 설계 `DATA_CONTRACT.md`, 판정·기능 분리·Blocker·계획 `PHASE3A_READINESS.md`. 계약 `contracts/phase3a_data_contract.v0.json`, 검증기 `tools/contract_validate.py`, 합성 `tests/phase3a_synthetic.py`·`tests/fixtures/phase3a_synthetic.json`, 테스트 `tests/test_phase3a_contract.py`(18).
+  - 테스트: pytest 58 · vitest 13 · E2E 46 · 겹침 0/144.
+  - 재개: PHASE3A_READINESS §4 승인 사항 확인 후 3A-1부터.

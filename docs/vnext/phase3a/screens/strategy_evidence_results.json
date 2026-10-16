@@ -1,0 +1,220 @@
+{
+  "fail": 0,
+  "n": 41,
+  "rows": [
+    {
+      "area": "Connectivity",
+      "score": "73.3",
+      "evidence": "근거 일부",
+      "recommendation": "확장 · 가설"
+    },
+    {
+      "area": "AI Infrastructure",
+      "score": "63.4",
+      "evidence": "근거 일부",
+      "recommendation": "제휴 · 가설"
+    },
+    {
+      "area": "Data Center / IDC",
+      "score": "63.3",
+      "evidence": "근거 일부",
+      "recommendation": "투자 · 가설"
+    },
+    {
+      "area": "Cloud",
+      "score": "47.2",
+      "evidence": "근거 일부",
+      "recommendation": "제휴 · 가설"
+    },
+    {
+      "area": "Security",
+      "score": "39.6",
+      "evidence": "근거 충분",
+      "recommendation": "인수 검토(권고)"
+    },
+    {
+      "area": "AI Transformation / SI",
+      "score": "24.9",
+      "evidence": "근거 부족",
+      "recommendation": "제휴 · 가설"
+    },
+    {
+      "area": "SI / Managed Services",
+      "score": "22.2",
+      "evidence": "근거 충분",
+      "recommendation": "유지"
+    },
+    {
+      "area": "기타",
+      "score": "20.3",
+      "evidence": "근거 부족",
+      "recommendation": "유지 · 가설"
+    }
+  ],
+  "checks": [
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 점수 73.3 = 엔진 73.3 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 근거 수준 열 별도 표시 '근거 일부' (엔진 PARTIAL)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 권고 '확장 · 가설' — 가설 표기 있음 (mode HYPOTHESIS)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 근거 PARTIAL이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 점수 63.4 = 엔진 63.4 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 근거 수준 열 별도 표시 '근거 일부' (엔진 PARTIAL)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 권고 '제휴 · 가설' — 가설 표기 있음 (mode HYPOTHESIS)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 근거 PARTIAL이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 점수 63.3 = 엔진 63.3 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 근거 수준 열 별도 표시 '근거 일부' (엔진 PARTIAL)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 권고 '투자 · 가설' — 가설 표기 있음 (mode HYPOTHESIS)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 근거 PARTIAL이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 점수 47.2 = 엔진 47.2 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 근거 수준 열 별도 표시 '근거 일부' (엔진 PARTIAL)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 권고 '제휴 · 가설' — 가설 표기 있음 (mode HYPOTHESIS)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 근거 PARTIAL이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 점수 39.6 = 엔진 39.6 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 근거 수준 열 별도 표시 '근거 충분' (엔진 SUFFICIENT)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 권고 '인수 검토(권고)' — 근거 충분 → 가설 표기 없음 (mode RECOMMENDATION)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 근거 SUFFICIENT이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 점수 24.9 = 엔진 24.9 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 근거 수준 열 별도 표시 '근거 부족' (엔진 INSUFFICIENT)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 권고 '제휴 · 가설' — 가설 표기 있음 (mode HYPOTHESIS)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 근거 INSUFFICIENT이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 점수 22.2 = 엔진 22.2 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 근거 수준 열 별도 표시 '근거 충분' (엔진 SUFFICIENT)"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 권고 '유지' — 근거 충분 → 가설 표기 없음 (mode RECOMMENDATION)"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 근거 SUFFICIENT이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 점수 20.3 = 엔진 20.3 (점수 불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 근거 수준 열 별도 표시 '근거 부족' (엔진 INSUFFICIENT)"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 권고 '유지 · 가설' — 가설 표기 있음 (mode HYPOTHESIS)"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 근거 INSUFFICIENT이면 RECOMMENDATION 아님"
+    },
+    {
+      "ok": true,
+      "msg": "④ Connectivity: 'Connectivity확장 · 검토 가설근거 일부 · 가정 의존도 14%' — 검토 가설(단정 표시 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ AI Infrastructure: 'AI Infrastructure제휴 · 검토 가설근거 일부 · 가정 의존도 74%' — 검토 가설(단정 표시 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ Data Center / IDC: 'Data Center / IDC투자 · 검토 가설근거 일부 · 가정 의존도 16%' — 검토 가설(단정 표시 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ Cloud: 'Cloud제휴 · 검토 가설근거 일부 · 가정 의존도 77%' — 검토 가설(단정 표시 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ Security: 'SecurityM&A 검토 · 우선 검토근거 충분 · 가정 의존도 60%' — 근거 충분 → 우선 검토"
+    },
+    {
+      "ok": true,
+      "msg": "④ AI Transformation / SI: 'AI Transformation / SI제휴 · 검토 가설근거 부족 · 가정 의존도 71%' — 검토 가설(단정 표시 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ SI / Managed Services: 'SI / Managed Services유지 · 우선 검토근거 충분 · 가정 의존도 감소 가정' — 근거 충분 → 우선 검토"
+    },
+    {
+      "ok": true,
+      "msg": "④ 기타: '기타유지 · 검토 가설근거 부족 · 가정 의존도 감소 가정' — 검토 가설(단정 표시 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ 확정 과제 아님 고지 표시"
+    }
+  ]
+}

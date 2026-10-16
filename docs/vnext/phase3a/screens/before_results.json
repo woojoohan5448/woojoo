@@ -1,0 +1,477 @@
+[
+ {
+  "id": "KA03",
+  "name": "국민은행",
+  "profile": "FIN · KISA 공시 앵커(HIGH) · 캡티브 IT 존재",
+  "checks": [
+   {
+    "ok": true,
+    "msg": "차트 표시 여부 = 값 존재 여부 (차트)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] TS 끝값 2026 ≈5,600억원 · 2031 ≈7,400억원 = 엔진 (화면: TS ≈5,600억원, TS ≈7,400억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] RAW 끝값 2026 ≈990억원 · 2031 ≈1,800억원 = 엔진 (화면: RAW ≈990억원, RAW ≈1,800억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] FPR 끝값 2026 ≈250억원 · 2031 ≈460억원 = 엔진 (화면: FPR ≈250억원, FPR ≈460억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] TS 끝값 2026 ≈5,600억원 · 2031 ≈8,700억원 = 엔진 (화면: TS ≈5,600억원, TS ≈8,700억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] RAW 끝값 2026 ≈990억원 · 2031 ≈2,300억원 = 엔진 (화면: RAW ≈990억원, RAW ≈2,300억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] FPR 끝값 2026 ≈250억원 · 2031 ≈590억원 = 엔진 (화면: FPR ≈250억원, FPR ≈590억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] TS 끝값 2026 ≈5,600억원 · 2031 ≈6,100억원 = 엔진 (화면: TS ≈5,600억원, TS ≈6,100억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] RAW 끝값 2026 ≈990억원 · 2031 ≈1,400억원 = 엔진 (화면: RAW ≈990억원, RAW ≈1,400억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] FPR 끝값 2026 ≈250억원 · 2031 ≈350억원 = 엔진 (화면: FPR ≈250억원, FPR ≈350억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] TS 끝값 2026 ≈5,600억원 · 2031 ≈7,400억원 = 엔진 (화면: TS ≈5,600억원, TS ≈7,400억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] RAW 끝값 2026 ≈990억원 · 2031 ≈2,300억원 = 엔진 (화면: RAW ≈990억원, RAW ≈2,300억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] FPR 끝값 2026 ≈250억원 · 2031 ≈530억원 = 엔진 (화면: FPR ≈250억원, FPR ≈530억원)"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2028: 'Illustrative' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2031: '2031 전망' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2026: '2026 기준값' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "끝점 클릭 → 근거 패널(FPR 2031 (BASE, BASE CASE))"
+   },
+   {
+    "ok": true,
+    "msg": "근거 패널에 산식 표시"
+   },
+   {
+    "ok": true,
+    "msg": "레이블 겹침 0건"
+   },
+   {
+    "ok": true,
+    "msg": "CR·Target 미입력 상태 1회 표시(마커 없음)"
+   }
+  ],
+  "fail": 0,
+  "status": "CR: 사내 매출 미입력 · Target: 사내 목표 미입력",
+  "tooltip2028": "2028 · Illustrative Projection (예시 경로) TS ≈6,200억원 RAW ≈1,300억원 FPR ≈320억원 예시 경로(CAGR 보간) — 확정 계획 아님"
+ },
+ {
+  "id": "KA29",
+  "name": "쿠팡(주)",
+  "profile": "PLATFORM · 최대 FPR · 인건비 믹스 가정 민감",
+  "checks": [
+   {
+    "ok": true,
+    "msg": "차트 표시 여부 = 값 존재 여부 (차트)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] TS 끝값 2026 ≈2.8조원 · 2031 ≈4.4조원 = 엔진 (화면: TS ≈2.8조원, TS ≈4.4조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] RAW 끝값 2026 ≈9,500억원 · 2031 ≈1.8조원 = 엔진 (화면: RAW ≈9,500억원, RAW ≈1.8조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] FPR 끝값 2026 ≈2,700억원 · 2031 ≈5,200억원 = 엔진 (화면: FPR ≈2,700억원, FPR ≈5,200억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] TS 끝값 2026 ≈2.8조원 · 2031 ≈5.6조원 = 엔진 (화면: TS ≈2.8조원, TS ≈5.6조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] RAW 끝값 2026 ≈9,500억원 · 2031 ≈2.4조원 = 엔진 (화면: RAW ≈9,500억원, RAW ≈2.4조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] FPR 끝값 2026 ≈2,700억원 · 2031 ≈6,800억원 = 엔진 (화면: FPR ≈2,700억원, FPR ≈6,800억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] TS 끝값 2026 ≈2.8조원 · 2031 ≈3.3조원 = 엔진 (화면: TS ≈2.8조원, TS ≈3.3조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] RAW 끝값 2026 ≈9,500억원 · 2031 ≈1.3조원 = 엔진 (화면: RAW ≈9,500억원, RAW ≈1.3조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] FPR 끝값 2026 ≈2,700억원 · 2031 ≈3,900억원 = 엔진 (화면: FPR ≈2,700억원, FPR ≈3,900억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] TS 끝값 2026 ≈2.8조원 · 2031 ≈4.4조원 = 엔진 (화면: TS ≈2.8조원, TS ≈4.4조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] RAW 끝값 2026 ≈9,500억원 · 2031 ≈2.1조원 = 엔진 (화면: RAW ≈9,500억원, RAW ≈2.1조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] FPR 끝값 2026 ≈2,700억원 · 2031 ≈5,800억원 = 엔진 (화면: FPR ≈2,700억원, FPR ≈5,800억원)"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2028: 'Illustrative' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2031: '2031 전망' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2026: '2026 기준값' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "끝점 클릭 → 근거 패널(FPR 2031 (BASE, BASE CASE))"
+   },
+   {
+    "ok": true,
+    "msg": "근거 패널에 산식 표시"
+   },
+   {
+    "ok": true,
+    "msg": "레이블 겹침 0건"
+   },
+   {
+    "ok": true,
+    "msg": "CR·Target 미입력 상태 1회 표시(마커 없음)"
+   }
+  ],
+  "fail": 0,
+  "status": "CR: 사내 매출 미입력 · Target: 사내 목표 미입력",
+  "tooltip2028": "2028 · Illustrative Projection (예시 경로) TS ≈3.3조원 RAW ≈1.2조원 FPR ≈3,500억원 예시 경로(CAGR 보간) — 확정 계획 아님"
+ },
+ {
+  "id": "KA14",
+  "name": "삼성에스디에스(주)",
+  "profile": "ITS · 계정별 인프라 동인(AI 5조) → 비선형 성장",
+  "checks": [
+   {
+    "ok": true,
+    "msg": "차트 표시 여부 = 값 존재 여부 (차트)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] TS 끝값 2026 ≈6,000억원 · 2031 ≈1.2조원 = 엔진 (화면: TS ≈6,000억원, TS ≈1.2조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] RAW 끝값 2026 ≈1,300억원 · 2031 ≈5,000억원 = 엔진 (화면: RAW ≈1,300억원, RAW ≈5,000억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] FPR 끝값 2026 ≈270억원 · 2031 ≈1,100억원 = 엔진 (화면: FPR ≈270억원, FPR ≈1,100억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] TS 끝값 2026 ≈6,000억원 · 2031 ≈1.7조원 = 엔진 (화면: TS ≈6,000억원, TS ≈1.7조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] RAW 끝값 2026 ≈1,300억원 · 2031 ≈7,300억원 = 엔진 (화면: RAW ≈1,300억원, RAW ≈7,300억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] FPR 끝값 2026 ≈270억원 · 2031 ≈1,600억원 = 엔진 (화면: FPR ≈270억원, FPR ≈1,600억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] TS 끝값 2026 ≈6,000억원 · 2031 ≈8,700억원 = 엔진 (화면: TS ≈6,000억원, TS ≈8,700억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] RAW 끝값 2026 ≈1,300억원 · 2031 ≈3,100억원 = 엔진 (화면: RAW ≈1,300억원, RAW ≈3,100억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] FPR 끝값 2026 ≈270억원 · 2031 ≈680억원 = 엔진 (화면: FPR ≈270억원, FPR ≈680억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] TS 끝값 2026 ≈6,000억원 · 2031 ≈1.2조원 = 엔진 (화면: TS ≈6,000억원, TS ≈1.2조원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] RAW 끝값 2026 ≈1,300억원 · 2031 ≈5,600억원 = 엔진 (화면: RAW ≈1,300억원, RAW ≈5,600억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] FPR 끝값 2026 ≈270억원 · 2031 ≈1,200억원 = 엔진 (화면: FPR ≈270억원, FPR ≈1,200억원)"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2028: 'Illustrative' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2031: '2031 전망' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2026: '2026 기준값' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "끝점 클릭 → 근거 패널(FPR 2031 (BASE, BASE CASE))"
+   },
+   {
+    "ok": true,
+    "msg": "근거 패널에 산식 표시"
+   },
+   {
+    "ok": true,
+    "msg": "레이블 겹침 0건"
+   },
+   {
+    "ok": true,
+    "msg": "CR·Target 미입력 상태 1회 표시(마커 없음)"
+   }
+  ],
+  "fail": 0,
+  "status": "CR: 사내 매출 미입력 · Target: 사내 목표 미입력",
+  "tooltip2028": "2028 · Illustrative Projection (예시 경로) TS ≈8,000억원 RAW ≈2,200억원 FPR ≈470억원 예시 경로(CAGR 보간) — 확정 계획 아님"
+ },
+ {
+  "id": "KA32",
+  "name": "주한미군",
+  "profile": "국방 특수 · TS 없음(RESEARCH GAP) · 계약 RAW만",
+  "checks": [
+   {
+    "ok": true,
+    "msg": "차트 표시 여부 = 값 존재 여부 (차트)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] TS 결측 → 라벨·곡선 없음(0 대체 없음)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] RAW 끝값 2026 ≈160억원 · 2031 ≈170억원 = 엔진 (화면: RAW ≈160억원, RAW ≈170억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] FPR 끝값 2026 ≈79억원 · 2031 ≈87억원 = 엔진 (화면: FPR ≈79억원, FPR ≈87억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] TS 결측 → 라벨·곡선 없음(0 대체 없음)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] RAW 끝값 2026 ≈160억원 · 2031 ≈190억원 = 엔진 (화면: RAW ≈160억원, RAW ≈190억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] FPR 끝값 2026 ≈79억원 · 2031 ≈96억원 = 엔진 (화면: FPR ≈79억원, FPR ≈96억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] TS 결측 → 라벨·곡선 없음(0 대체 없음)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] RAW 끝값 2026 ≈160억원 · 2031 ≈160억원 = 엔진 (화면: RAW ≈160억원, RAW ≈160억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] FPR 끝값 2026 ≈79억원 · 2031 ≈79억원 = 엔진 (화면: FPR ≈79억원, FPR ≈79억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] TS 결측 → 라벨·곡선 없음(0 대체 없음)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] RAW 끝값 2026 ≈160억원 · 2031 ≈170억원 = 엔진 (화면: RAW ≈160억원, RAW ≈170억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] FPR 끝값 2026 ≈79억원 · 2031 ≈87억원 = 엔진 (화면: FPR ≈79억원, FPR ≈87억원)"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2028: 'Illustrative' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2031: '2031 전망' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2026: '2026 기준값' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "끝점 클릭 → 근거 패널(FPR 2031 (BASE, BASE CASE))"
+   },
+   {
+    "ok": true,
+    "msg": "근거 패널에 산식 표시"
+   },
+   {
+    "ok": true,
+    "msg": "레이블 겹침 0건"
+   },
+   {
+    "ok": true,
+    "msg": "TS 결측 상태 칩"
+   },
+   {
+    "ok": true,
+    "msg": "CR·Target 미입력 상태 1회 표시(마커 없음)"
+   }
+  ],
+  "fail": 0,
+  "status": "CR: 사내 매출 미입력 · Target: 사내 목표 미입력 · TS N/A — RESEARCH GAP",
+  "tooltip2028": "2028 · Illustrative Projection (예시 경로) TS N/A RAW ≈160억원 FPR ≈82억원 예시 경로(CAGR 보간) — 확정 계획 아님"
+ },
+ {
+  "id": "KA45",
+  "name": "페이스북",
+  "profile": "글로벌 테크 · 시나리오 앵커 · 정의 상이(합계 제외)",
+  "checks": [
+   {
+    "ok": true,
+    "msg": "차트 표시 여부 = 값 존재 여부 (차트)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] TS 끝값 2026 ≈360억원 · 2031 ≈450억원 = 엔진 (화면: TS ≈360억원, TS ≈450억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] RAW 끝값 2026 ≈260억원 · 2031 ≈330억원 = 엔진 (화면: RAW ≈260억원, RAW ≈330억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/base] FPR 끝값 2026 ≈100억원 · 2031 ≈130억원 = 엔진 (화면: FPR ≈100억원, FPR ≈130억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] TS 끝값 2026 ≈360억원 · 2031 ≈560억원 = 엔진 (화면: TS ≈360억원, TS ≈560억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] RAW 끝값 2026 ≈260억원 · 2031 ≈400억원 = 엔진 (화면: RAW ≈260억원, RAW ≈400억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[high/base] FPR 끝값 2026 ≈100억원 · 2031 ≈160억원 = 엔진 (화면: FPR ≈100억원, FPR ≈160억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] TS 끝값 2026 ≈360억원 · 2031 ≈340억원 = 엔진 (화면: TS ≈360억원, TS ≈340억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] RAW 끝값 2026 ≈260억원 · 2031 ≈260억원 = 엔진 (화면: RAW ≈260억원, RAW ≈260억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[low/base] FPR 끝값 2026 ≈100억원 · 2031 ≈100억원 = 엔진 (화면: FPR ≈100억원, FPR ≈100억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] TS 끝값 2026 ≈360억원 · 2031 ≈450억원 = 엔진 (화면: TS ≈360억원, TS ≈450억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] RAW 끝값 2026 ≈260억원 · 2031 ≈340억원 = 엔진 (화면: RAW ≈260억원, RAW ≈340억원)"
+   },
+   {
+    "ok": true,
+    "msg": "[base/expansion] FPR 끝값 2026 ≈100억원 · 2031 ≈130억원 = 엔진 (화면: FPR ≈100억원, FPR ≈130억원)"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2028: 'Illustrative' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2031: '2031 전망' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "툴팁 2026: '2026 기준값' 포함"
+   },
+   {
+    "ok": true,
+    "msg": "끝점 클릭 → 근거 패널(FPR 2031 (BASE, BASE CASE))"
+   },
+   {
+    "ok": true,
+    "msg": "근거 패널에 산식 표시"
+   },
+   {
+    "ok": true,
+    "msg": "레이블 겹침 0건"
+   },
+   {
+    "ok": true,
+    "msg": "정의 상이 경고 칩"
+   },
+   {
+    "ok": true,
+    "msg": "CR·Target 미입력 상태 1회 표시(마커 없음)"
+   }
+  ],
+  "fail": 0,
+  "status": "CR: 사내 매출 미입력 · Target: 사내 목표 미입력 · 정의 상이 — 국내 인프라 지출·환산값 기준, 합계 제외",
+  "tooltip2028": "2028 · Illustrative Projection (예시 경로) TS ≈390억원 RAW ≈280억원 FPR ≈110억원 예시 경로(CAGR 보간) — 확정 계획 아님"
+ },
+ {
+  "id": "KA28",
+  "name": "코람코자산운용",
+  "profile": "DC 펀드 · 전 계열 RESEARCH GAP(빈 상태)",
+  "checks": [
+   {
+    "ok": true,
+    "msg": "차트 표시 여부 = 값 존재 여부 (빈 상태)"
+   },
+   {
+    "ok": true,
+    "msg": "빈 상태: RESEARCH GAP 사유 표시, 0 미대체"
+   }
+  ],
+  "fail": 0,
+  "status": "CR: 사내 매출 미입력 · Target: 사내 목표 미입력 · TS·RAW·FPR N/A — RESEARCH GAP"
+ }
+]

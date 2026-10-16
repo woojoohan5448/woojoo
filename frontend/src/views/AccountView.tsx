@@ -119,6 +119,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
               {(['TS', 'RAW', 'FPR'] as const).map(m => <span key={m} className="inline-flex items-center gap-1"><Swatch color={`var(--c-${m.toLowerCase()})`} /><TermTip code={m}>{m}</TermTip></span>)}
               <span className="inline-flex items-center gap-1"><span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: 'var(--c-rev)' }} /><TermTip code="CR">CR</TermTip></span>
               <span className="inline-flex items-center gap-1"><span className="inline-block h-2.5 w-2.5 rotate-45" style={{ background: 'var(--c-rev)' }} /><TermTip code="TARGET">Target</TermTip></span>
+              <span className="inline-flex items-center gap-1" data-testid="traj-encoding"><svg width="34" height="10" aria-hidden><circle cx="5" cy="5" r="4.5" fill="var(--ink-2)" /><line x1="11" y1="5" x2="34" y2="5" stroke="var(--ink-2)" strokeWidth="2" strokeDasharray="5 4" /></svg>● 원천 기반 끝점(2026·2031) · ┄ 추정 경로(2027~2030)</span>
               <label className="inline-flex items-center gap-1"><input type="checkbox" checked={showBand} onChange={e => setShowBand(e.target.checked)} />Low~High 범위</label>
               <label className="inline-flex items-center gap-1"><input type="checkbox" checked={log} onChange={e => setLog(e.target.checked)} />로그 축</label>
             </div>

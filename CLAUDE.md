@@ -22,7 +22,7 @@ python3 -m reports.phase1_reports            # Phase 1 게이트 보고서
 python3 -m reports.generate_reports          # 엔터티·품질·갭·전략 보고서
 python3 -m models.export_xlsx                # Excel 내보내기
 python3 -m models.internal.excel_io template|preview <xlsx>|approve <batch> --approver 이름|status
-python3 -m pytest -q                         # 40 tests (vNext 기준선 4 포함) (모델·API·Excel import·QA 결합 재검증 샌드박스·릴리스 가드)
+python3 -m pytest -q                         # 58 tests (vNext 기준선 4 + Phase 3A 계약 합성 검증 18 포함) (모델·API·Excel import·QA 결합 재검증 샌드박스·릴리스 가드)
 cd frontend && npx tsc --noEmit && npx vitest run && npm run build && npm run build:single
 uvicorn backend.app:app --port 8000 ; node tests/e2e/dashboard.e2e.mjs   # E2E 46 checks; 라벨 겹침: node tests/e2e/trajectory_overlap.mjs (API·정적 HTML 둘 다: node tests/e2e/dashboard.e2e.mjs file:///…/Key_Account_Dashboard.html)
 python3 tools/make_release.py && python3 tools/check_release.py   # 이관 패키지(사내 데이터·비밀·허용경로 밖 Excel 차단) + 내용 검사
@@ -44,6 +44,9 @@ python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최�
 - D1: 공식 Target = 경영진 승인(`target_source=MANAGEMENT_APPROVED`)만. 시나리오 목표는 토글 시 참고값, KPI·합계 제외.
 - 사업기회 근거 상태(`area_evidence.tier`)와 금액 산정 방식(`value_basis`)은 별개 필드. 전략 점수와 근거 수준을 섞지 않는다.
 - 회귀 가드: `tests/test_vnext_baseline.py`(Phase 1 착수 전 53개 수치 고정, 의도 변경은 화이트리스트).
+- **Phase 3A 준비(2026-10-16, 브랜치 `vnext-phase3a-prep`, push 안 함) — 판정 '조건부 가능', 사용자 승인 대기.** 문서 `docs/vnext/phase3a/`(SCREEN_VERIFICATION·DATA_CONTRACT·PHASE3A_READINESS). 성장 궤적은 경로 전체 점선 + 원천 기반 끝점만 채운 마커.
+- 사내–외부 대사 계약: `contracts/phase3a_data_contract.v0.json`(초안) + `tools/contract_validate.py`(읽기 전용, 엔진·Import 미변경). 사내 SAM/RAW는 비교 전용, 공식 슬롯(CR·Target·매출 계획)은 APPROVED만, 정의 미확정이면 판정 보류, Target Case 자동 승격 금지, 원본값 정확 보존. 합성 데이터만: `python3 -m tests.phase3a_synthetic`.
+- 화면 검증: `node tests/e2e/screen_verify.mjs [url] [outDir] [tag]`, 전략 근거 표시: `node tests/e2e/strategy_evidence_check.mjs`. 사내 연동 전 Blocker B1·B2·B3·B4·B6·B8(PHASE3A_READINESS §2).
 
 ## Git
 작업 브랜치 `phase1-4-na-recovery` (main=v1.0, 태그 `v1.0-checkpoint`). 원격: github.com/woojoohan5448/woojoo — push는 사용자 요청 시에만.

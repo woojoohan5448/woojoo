@@ -1,0 +1,1700 @@
+{
+ "synthetic": true,
+ "note": "TEST-ONLY — 모든 값은 합성",
+ "records": [
+  {
+   "record_id": "S-KA03-001",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_SAM",
+   "source": {
+    "source_id": "SYNTH-S-KA03-001",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R001",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "1,400",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "1400",
+   "definition_ref": "DEF_INT_SAM_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-002",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_SOURCE",
+   "source": {
+    "source_id": "SYNTH-S-KA03-002",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R002",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "900",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "900",
+   "definition_ref": "DEF_INT_RAW_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-003",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_ADJ",
+   "source": {
+    "source_id": "SYNTH-S-KA03-003",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R003",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "150",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "150",
+   "definition_ref": "DEF_INT_RAW_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ],
+   "adjustment_method": "SYNTH: 계획매출 ÷ 목표 SOW 역산",
+   "adjustment_reason": "SYNTH: 신규 회선 계약 반영"
+  },
+  {
+   "record_id": "S-KA03-004",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_ADJUSTED",
+   "source": {
+    "source_id": "SYNTH-S-KA03-004",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R004",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "1050",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "1050",
+   "definition_ref": "DEF_INT_RAW_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-005",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "CATEGORY",
+   "area_id": "CONNECTIVITY",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_ADJUSTED",
+   "source": {
+    "source_id": "SYNTH-S-KA03-005",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R005",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "280",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "280",
+   "definition_ref": "DEF_SYNTH_RAW_DIRECT",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-010",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FORECAST",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-S-KA03-010",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R010",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "12,000",
+    "unit": "백만원",
+    "formula": null
+   },
+   "value_eok": "120.00",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-011",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "ACTUAL_FULL_YEAR",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-S-KA03-011",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R011",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "118.5",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "118.5",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-020",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "TARGET_CASE_A",
+   "measure_id": "TARGET_CASE",
+   "source": {
+    "source_id": "SYNTH-S-KA03-020",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R020",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "200",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "200",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-021",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "TARGET_CASE_B",
+   "measure_id": "TARGET_CASE",
+   "source": {
+    "source_id": "SYNTH-S-KA03-021",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R021",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "260",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "260",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-022",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "APPROVED",
+   "measure_id": "APPROVED_TARGET",
+   "source": {
+    "source_id": "SYNTH-S-KA03-022",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R022",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "260",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "260",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "derived_from_case_id": "TARGET_CASE_B"
+  },
+  {
+   "record_id": "S-KA03-023",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "STRETCH",
+   "measure_id": "STRETCH",
+   "source": {
+    "source_id": "SYNTH-S-KA03-023",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R023",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "300",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "300",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-030",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2027,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "SALES_PLAN",
+   "source": {
+    "source_id": "SYNTH-S-KA03-030",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R030",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "140",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "140",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-031",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2028,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "SALES_PLAN",
+   "source": {
+    "source_id": "SYNTH-S-KA03-031",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R031",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "160",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "160",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-032",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2029,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "SALES_PLAN",
+   "source": {
+    "source_id": "SYNTH-S-KA03-032",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R032",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "185",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "185",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-033",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2030,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "SALES_PLAN",
+   "source": {
+    "source_id": "SYNTH-S-KA03-033",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R033",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "220",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "220",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA03-034",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "SALES_PLAN",
+   "source": {
+    "source_id": "SYNTH-S-KA03-034",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R034",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "255",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "255",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA29-001",
+   "synthetic": true,
+   "account_id": "KA29",
+   "account_name_src": "SYNTH-KA29",
+   "area_level": "CATEGORY",
+   "area_id": "CLOUD",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_ADJUSTED",
+   "source": {
+    "source_id": "SYNTH-S-KA29-001",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R001",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "5,000",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "5000",
+   "definition_ref": "DEF_SYNTH_RAW_DIRECT",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA29-002",
+   "synthetic": true,
+   "account_id": "KA29",
+   "account_name_src": "SYNTH-KA29",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "APPROVED",
+   "measure_id": "APPROVED_TARGET",
+   "source": {
+    "source_id": "SYNTH-S-KA29-002",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R002",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "0.6",
+    "unit": "조원",
+    "formula": null
+   },
+   "value_eok": "6000.0",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA29-003",
+   "synthetic": true,
+   "account_id": "KA29",
+   "account_name_src": "SYNTH-KA29",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FORECAST",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-S-KA29-003",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R003",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "900",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "900",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA14-001",
+   "synthetic": true,
+   "account_id": "KA14",
+   "account_name_src": "SYNTH-KA14",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_SOURCE",
+   "source": {
+    "source_id": "SYNTH-S-KA14-001",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R001",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "1000",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "1000",
+   "definition_ref": "DEF_INT_RAW_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA14-002",
+   "synthetic": true,
+   "account_id": "KA14",
+   "account_name_src": "SYNTH-KA14",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_ADJ",
+   "source": {
+    "source_id": "SYNTH-S-KA14-002",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R002",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "200",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "200",
+   "definition_ref": "DEF_INT_RAW_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ],
+   "adjustment_method": "SYNTH",
+   "adjustment_reason": "SYNTH"
+  },
+  {
+   "record_id": "S-KA14-003",
+   "synthetic": true,
+   "account_id": "KA14",
+   "account_name_src": "SYNTH-KA14",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_ADJUSTED",
+   "source": {
+    "source_id": "SYNTH-S-KA14-003",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R003",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "1250",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "1250",
+   "definition_ref": "DEF_INT_RAW_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA14-010",
+   "synthetic": true,
+   "account_id": "KA14",
+   "account_name_src": "SYNTH-KA14",
+   "area_level": "CATEGORY",
+   "area_id": "CONNECTIVITY",
+   "fiscal_year": 2026,
+   "period_type": "ACTUAL_FULL_YEAR",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-S-KA14-010",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R010",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "40",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "40",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA14-011",
+   "synthetic": true,
+   "account_id": "KA14",
+   "account_name_src": "SYNTH-KA14",
+   "area_level": "CATEGORY",
+   "area_id": "DC_COLO",
+   "fiscal_year": 2026,
+   "period_type": "ACTUAL_FULL_YEAR",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-S-KA14-011",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R011",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "15",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "15",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ]
+  },
+  {
+   "record_id": "S-KA14-020",
+   "synthetic": true,
+   "account_id": "KA14",
+   "account_name_src": "SYNTH-KA14",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "APPROVED",
+   "measure_id": "APPROVED_TARGET",
+   "source": {
+    "source_id": "SYNTH-S-KA14-020",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R020",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "999",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "999",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "REJECTED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "REJECTED",
+     "by": "synth.verifier",
+     "reason": "SYNTH: 근거 미첨부"
+    }
+   ]
+  }
+ ],
+ "evidence": {
+  "opportunities": [
+   {
+    "opportunity_id": "OPP-KA03-CONN-2031",
+    "account_id": "KA03",
+    "area_id": "Connectivity",
+    "fiscal_year": 2031,
+    "case_id": "BASE|BASE_CASE",
+    "presented_as": "CANDIDATE"
+   },
+   {
+    "opportunity_id": "OPP-KA03-SEC-2031",
+    "account_id": "KA03",
+    "area_id": "Security",
+    "fiscal_year": 2031,
+    "case_id": "BASE|BASE_CASE",
+    "presented_as": "CONFIRMED"
+   }
+  ],
+  "internal_evidence": [
+   {
+    "evidence_id": "SYNTH-PIPE-001",
+    "type": "INTERNAL_PIPELINE",
+    "account_id": "KA03",
+    "area_id": "Connectivity",
+    "synthetic": true
+   }
+  ],
+  "links": [
+   {
+    "link_id": "L1",
+    "opportunity_id": "OPP-KA03-CONN-2031",
+    "evidence_id": "KA03-C04",
+    "role": "CONTEXT"
+   },
+   {
+    "link_id": "L2",
+    "opportunity_id": "OPP-KA03-CONN-2031",
+    "evidence_id": "SYNTH-PIPE-001",
+    "role": "SUPPORTS"
+   },
+   {
+    "link_id": "L3",
+    "opportunity_id": "OPP-KA03-SEC-2031",
+    "evidence_id": "KA03-D01",
+    "role": "SUPPORTS"
+   }
+  ]
+ },
+ "definitions_extra": {
+  "DEF_SYNTH_RAW_DIRECT": {
+   "measure": "INT_RAW_*",
+   "text": "SYNTH: 정의 일치 가정(테스트 전용)",
+   "compare_to": "EXT_RAW",
+   "comparability": "DIRECT",
+   "synthetic": true
+  }
+ },
+ "negative_records": [
+  {
+   "record_id": "N-001",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FORECAST",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-N-001",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R001",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "123.456",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "123.46",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "expect": "C02_RAW_MUTATED"
+  },
+  {
+   "record_id": "N-002",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "APPROVED",
+   "measure_id": "APPROVED_TARGET",
+   "source": {
+    "source_id": "SYNTH-N-002",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R002",
+    "as_of": "2026-10-16",
+    "version": 2,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "100",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "100",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.uploader"
+    }
+   ],
+   "expect": "C04_SOD"
+  },
+  {
+   "record_id": "N-003",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2028,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "SALES_PLAN",
+   "source": {
+    "source_id": "SYNTH-N-003",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R003",
+    "as_of": "2026-10-16",
+    "version": 2,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "160",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "160",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "expect": "C04_BAD_TRANSITION"
+  },
+  {
+   "record_id": "N-004",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "CATEGORY",
+   "area_id": "MOBILE_B2B",
+   "fiscal_year": 2026,
+   "period_type": "FORECAST",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-N-004",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R004",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "5",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "5",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "expect": "C08_AREA_UNMAPPED"
+  },
+  {
+   "record_id": "N-005",
+   "synthetic": true,
+   "account_id": null,
+   "account_name_src": "SYNTH-None",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FORECAST",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-N-005",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R005",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "5",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "5",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "expect": "C08_ACCOUNT_UNMAPPED"
+  },
+  {
+   "record_id": "N-006",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2030,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "TARGET_CASE_C",
+   "measure_id": "TARGET_CASE",
+   "source": {
+    "source_id": "SYNTH-N-006",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R006",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "200",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "200",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ],
+   "expect": "C01_TIMING"
+  },
+  {
+   "record_id": "N-007",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "INT_RAW_ADJ",
+   "source": {
+    "source_id": "SYNTH-N-007",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R007",
+    "as_of": "2026-10-16",
+    "version": 3,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "10",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "10",
+   "definition_ref": "DEF_INT_RAW_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "VERIFIED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ],
+   "expect": "C05_ADJ_UNDOCUMENTED"
+  },
+  {
+   "record_id": "N-008",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "PLAN",
+   "measure_id": "EXT_RAW",
+   "source": {
+    "source_id": "SYNTH-N-008",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R008",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "987",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "987",
+   "definition_ref": "DEF_EXT_RAW_V1",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "expect": "C01_EXTERNAL_IMPORT"
+  },
+  {
+   "record_id": "N-009",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2031,
+   "period_type": "FY",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "APPROVED",
+   "measure_id": "APPROVED_TARGET",
+   "source": {
+    "source_id": "SYNTH-N-009",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R009",
+    "as_of": "2026-10-16",
+    "version": 4,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "250",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "250",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "derived_from_case_id": "TARGET_CASE_B",
+   "expect": "C07_TARGET_CASE_MISMATCH"
+  },
+  {
+   "record_id": "N-010",
+   "synthetic": true,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FORECAST",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-N-010",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R010",
+    "as_of": "2026-10-16",
+    "version": 1,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "1",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "1",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    }
+   ],
+   "expect": "C04_STATUS_MISMATCH"
+  },
+  {
+   "record_id": "N-011",
+   "synthetic": false,
+   "account_id": "KA03",
+   "account_name_src": "SYNTH-KA03",
+   "area_level": "ACCOUNT",
+   "area_id": "ALL",
+   "fiscal_year": 2026,
+   "period_type": "FORECAST",
+   "case_family": "INTERNAL_CASE",
+   "case_id": "ACTUAL",
+   "measure_id": "ACTUAL_REVENUE",
+   "source": {
+    "source_id": "SYNTH-N-011",
+    "layer": "INTERNAL_EXCEL",
+    "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sheet": "SYNTH",
+    "cell_ref": "R011",
+    "as_of": "2026-10-16",
+    "version": 5,
+    "uploaded_by": "synth.uploader"
+   },
+   "raw": {
+    "value": "1",
+    "unit": "억원",
+    "formula": null
+   },
+   "value_eok": "1",
+   "definition_ref": "DEF_INT_REVENUE_TBD",
+   "entity_scope": "UNKNOWN",
+   "vat_basis": "UNKNOWN",
+   "status": "APPROVED",
+   "history": [
+    {
+     "to": "VALIDATED",
+     "by": "contract_validate"
+    },
+    {
+     "to": "VERIFIED",
+     "by": "synth.verifier"
+    },
+    {
+     "to": "APPROVED",
+     "by": "synth.approver"
+    }
+   ],
+   "expect": "C10_REAL_IN_TEST"
+  }
+ ]
+}
