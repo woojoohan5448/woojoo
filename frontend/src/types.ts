@@ -104,6 +104,7 @@ export interface Recon {
   switch_requirements: string[]; n_internal_records: number; n_selections: number; n_switched: number; contains_synthetic: boolean
   selection_audit: { selection_id: string; account_id: string; slot_key: string; record_id: string; applied: boolean; unmet: string[]; synthetic: boolean }[]
   issues: { code: string; severity: string; message: string; record_id: string | null }[]; quarantined: string[]
+  official_internal?: { CR?: Record<string, { value_eok: string; period_type: string; records: string[] }>; TARGET?: Record<string, { value_eok: string; record: string; derived_from_case_id: string | null }>; REVENUE_PLAN?: Record<string, Record<string, string>> }
   accounts: Record<string, { engine_ref: string; source_hash: string | null; ledger: LedgerEntry[]; internal: InternalRec[]; recon_rows: ReconRow[] }>
 }
 

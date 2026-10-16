@@ -22,7 +22,7 @@ python3 -m reports.phase1_reports            # Phase 1 게이트 보고서
 python3 -m reports.generate_reports          # 엔터티·품질·갭·전략 보고서
 python3 -m models.export_xlsx                # Excel 내보내기
 python3 -m models.internal.excel_io template|preview <xlsx>|approve <batch> --approver 이름|status
-python3 -m pytest -q                         # 58 tests (vNext 기준선 4 + Phase 3A 계약 합성 검증 18 포함) (모델·API·Excel import·QA 결합 재검증 샌드박스·릴리스 가드)
+python3 -m pytest -q                         # 68 tests (vNext 기준선 4 + Phase 3A 계약 18·원장 6·전략과제 4 포함) (모델·API·Excel import·QA 결합 재검증 샌드박스·릴리스 가드)
 cd frontend && npx tsc --noEmit && npx vitest run && npm run build && npm run build:single
 uvicorn backend.app:app --port 8000 ; node tests/e2e/dashboard.e2e.mjs   # E2E 46 checks; 라벨 겹침: node tests/e2e/trajectory_overlap.mjs (API·정적 HTML 둘 다: node tests/e2e/dashboard.e2e.mjs file:///…/Key_Account_Dashboard.html)
 python3 tools/make_release.py && python3 tools/check_release.py   # 이관 패키지(사내 데이터·비밀·허용경로 밖 Excel 차단) + 내용 검사
@@ -54,3 +54,11 @@ python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최�
 ## 최종 QA (2026-10-16)
 - 브랜치 `qa-final-audit`, 안전 체크포인트 태그 `v2.0-phase1-4-checkpoint`. 결과·잔여 위험: `reports/final_qa/` 5종, 발견 목록 `data/qa/QA_FINDINGS.json`.
 - "VERIFIED"는 원천 재무 사실에만 쓴다. 계정의 TS 근거 유형은 `evidence_basis`(IT지출 공시값/재무항목 재구성/산업 평균/시나리오). IT 지출을 1차 원문에서 확인한 계정은 현재 0개.
+
+## Phase 3A (2026-10-16, 브랜치 `vnext-phase3a`, push 안 함 — 완료, 사용자 승인 대기)
+- 보고서 `docs/vnext/phase3a/PHASE3A_REPORT.md`. 보존 태그 `v2.2-pre-phase3a`.
+- 원장·공식 출처: `models/recon/ledger.py` + `config/official_source_policy.json`. 외부 모델 = 기본 출처(영구 공식값 아님). 전환은 레코드 APPROVED + 정의 DIRECT + 출처 선택 승인(직무 분리)일 때만, 자동 전환 금지. 원천 `INTERNAL_STORE_DIR/recon/records.json` 불변, 선택은 `selections.json` 별도.
+- 전략: `models/strategy_actions.py` — Market / Demand / Capture 3관점(기존 공급자 관찰·KISA 비율·감소 신호는 수요 아님), 과제 상태 분석 가설 / 검증 필요 / 추진 검토 후보, approval 항상 PROPOSED, 우선순위 점수 불변(민감도만 추가).
+- ② 통합 궤적 `frontend/src/lib/portfolioTrajectory.ts`(동일 고객 집합, n/53, 0 대체 금지), FPR 확대 보조 차트(별도 축), ① 대사 패널 `components/ReconPanel.tsx`.
+- 테스트: `node tests/e2e/phase3a.e2e.mjs [url] [out.json]`(6개사 × 1280/1440/1920), 합성 샌드박스 `python3 tools/phase3a_synthetic_sandbox.py <dir>` → `INTERNAL_STORE_DIR=<dir> KAI_DATA_OUT=<out> KAI_RECON_MODE=test` build + uvicorn :8001 + `SYNTH=1`.
+- 다음: 사내 Excel Import·Phase 3B는 Blocker B1·B2·B3·B4·B6·B8 해소 후 별도 승인.

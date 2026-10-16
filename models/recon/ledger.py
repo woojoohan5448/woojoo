@@ -141,7 +141,11 @@ def build_block(accounts: list[dict], data_version: str, mode: str | None = None
     """Additive dashboard block. With an empty internal store every slot keeps its default source."""
     mode = mode or os.environ.get("KAI_RECON_MODE", "production")
     policy, contract = load_policy(), C.load_contract()
-    records, selections, extra = load_internal()
+    store_error = None
+    try:
+        records, selections, extra = load_internal()
+    except Exception as e:  # corrupt store → never silently mix; defaults stay, error surfaced
+        records, selections, extra, store_error = [], [], {}, f"{type(e).__name__}: {e}"
     defs = {**contract["definitions"], **extra}
     # the validator needs the external model for reconciliation rows — pass a minimal dashboard view
     dash = {"accounts": [{"account_id": a["account_id"], "m": a["m"], "area_evidence": a.get("area_evidence")} for a in accounts]}
@@ -175,7 +179,7 @@ def build_block(accounts: list[dict], data_version: str, mode: str | None = None
         "contract_version": contract["version"], "policy_version": policy["version"], "mode": mode,
         "policy": {k: {kk: v.get(kk) for kk in ("default_source", "internal_candidates", "fallback", "pending")} for k, v in policy["slots"].items()},
         "switch_requirements": policy["switch_requirements"],
-        "n_internal_records": len(records), "n_selections": len(selections),
+        "store_error": store_error, "n_internal_records": len(records), "n_selections": len(selections),
         "n_switched": sum(1 for x in audit_all if x["applied"]), "selection_audit": audit_all,
         "contains_synthetic": any(r.get("synthetic") for r in records) or any(s.get("synthetic") for s in selections),
         "issues": res.get("issues", []), "quarantined": sorted(quarantined),

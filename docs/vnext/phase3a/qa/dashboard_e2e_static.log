@@ -1,0 +1,46 @@
+PASS vNext: onboarding shown on first visit
+PASS vNext: onboarding step 2 explains TS→RAW→FPR with original terms
+PASS vNext: onboarding closes with Esc
+PASS vNext-C: first screen is ① 고객별 사업기회 with purpose line
+PASS vNext-C: menu groups AS-IS (①②) and TO-BE (③④)
+PASS vNext-C: menu order ①고객별사업기회|②전사기회분석|③전략과제도출|④전략적시사점|⑤데이터·운영관리
+PASS vNext-B: evidence panel collapsed by default (chart gets full width)
+PASS default account KA03 inspector shows TS 2026 when opened
+PASS vNext-B: Growth Trajectory line chart is the main chart
+PASS vNext-B: old 2026 vs 2031 bar chart is not shown by default (secondary view only)
+PASS vNext-B: X axis shows 2026–2031
+PASS vNext-B: 2027–2030 marked as Illustrative Projection
+PASS vNext-B: TS/RAW/FPR endpoint labels on the chart
+PASS vNext-B: CR/Target missing shown once as short status (no markers)
+PASS vNext-B: illustrative-path disclaimer shown
+PASS selecting 2031 FPR (chart endpoint/summary) updates inspector to FPR 2031
+PASS inspector shows FPR 2031 formula
+PASS scenario switch keeps selection and updates label to high
+PASS scenario switch changes value (≈460억원 → ≈590억원)
+PASS vNext-B: scenario switch recomputes trajectory endpoints (FPR ≈250억원,FPR ≈460억원 → FPR ≈250억원,FPR ≈590억원)
+PASS vNext-B: evidence side panel collapses
+PASS vNext-B: evidence side panel re-opens
+PASS account switch keeps year/metric selection and syncs inspector
+PASS account header synced
+PASS QA: account header shows evidence basis (direct disclosure vs estimate)
+PASS QA: FPR 2031 growth split into customer spend vs U+ capability assumption
+PASS research-gap account shows RESEARCH GAP reason (no zero fill)
+PASS vNext-B: no trajectory drawn for an account without values (no 0-fill)
+PASS vNext D1: scenario target appears only after explicit toggle
+PASS tab renders: 전사 기회 분석
+PASS tab renders: 전략과제 도출
+PASS tab renders: 전략적 시사점
+PASS tab renders: 데이터·운영 관리
+PASS vNext-C: ③ shows Opportunity Pool → Demand Evidence → Capability Gap → Strategic Initiative
+PASS vNext-C: former Strategic Overview lives in ④ 전략적 시사점
+PASS vNext D1: Target KPI shows 사내 목표 미입력 without approved targets
+PASS vNext: analysed (53) vs valid-data accounts shown separately
+PASS vNext: business-area table shows evidence level separate from score
+PASS vNext-C: ④ lists management decisions required
+PASS vNext: glossary tooltip opens on keyboard focus
+PASS ops sub-menu renders: 데이터 신뢰도
+PASS ops sub-menu renders: 분석 기준·산식
+PASS ops sub-menu renders: 관리자 입력 · Excel Import
+PASS vNext: Methodology lists ①~⑧ framework terms from the central glossary
+PASS vNext: admin input & Excel Import preserved under 데이터·운영 관리
+PASS no page errors ()

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "20261016T204246Z",
-  "generated_at": "2026-10-16T20:42:46.989633+00:00",
+  "data_version": "20261016T205848Z",
+  "generated_at": "2026-10-16T20:58:49.162523+00:00",
   "unit": "억원",
   "currency": "KRW",
   "n_accounts": 53,
@@ -110695,6 +110695,7 @@
    "SCOPE_MATCH",
    "NOT_SYNTHETIC_IN_PRODUCTION"
   ],
+  "store_error": null,
   "n_internal_records": 0,
   "n_selections": 0,
   "n_switched": 0,
@@ -110705,7 +110706,7 @@
   "official_internal": {},
   "accounts": {
    "KA01": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA01",
+    "engine_ref": "ENGINE:20261016T205848Z:KA01",
     "source_hash": "a586685dce22e820",
     "ledger": [
      {
@@ -110991,7 +110992,7 @@
     "recon_rows": []
    },
    "KA02": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA02",
+    "engine_ref": "ENGINE:20261016T205848Z:KA02",
     "source_hash": "80a6dd43dd72725d",
     "ledger": [
      {
@@ -111277,7 +111278,7 @@
     "recon_rows": []
    },
    "KA03": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA03",
+    "engine_ref": "ENGINE:20261016T205848Z:KA03",
     "source_hash": "3e296b4d10c6ead1",
     "ledger": [
      {
@@ -111563,7 +111564,7 @@
     "recon_rows": []
    },
    "KA04": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA04",
+    "engine_ref": "ENGINE:20261016T205848Z:KA04",
     "source_hash": "fede3a709f1654c4",
     "ledger": [
      {
@@ -111849,7 +111850,7 @@
     "recon_rows": []
    },
    "KA05": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA05",
+    "engine_ref": "ENGINE:20261016T205848Z:KA05",
     "source_hash": "d255e8917fa7454d",
     "ledger": [
      {
@@ -112135,7 +112136,7 @@
     "recon_rows": []
    },
    "KA06": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA06",
+    "engine_ref": "ENGINE:20261016T205848Z:KA06",
     "source_hash": "fbd573fae33347a6",
     "ledger": [
      {
@@ -112484,7 +112485,7 @@
     "recon_rows": []
    },
    "KA07": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA07",
+    "engine_ref": "ENGINE:20261016T205848Z:KA07",
     "source_hash": "beee799319fdd962",
     "ledger": [
      {
@@ -112791,7 +112792,7 @@
     "recon_rows": []
    },
    "KA08": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA08",
+    "engine_ref": "ENGINE:20261016T205848Z:KA08",
     "source_hash": "8b645022ad0f4db9",
     "ledger": [
      {
@@ -113098,7 +113099,7 @@
     "recon_rows": []
    },
    "KA09": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA09",
+    "engine_ref": "ENGINE:20261016T205848Z:KA09",
     "source_hash": "786c5a1d85237cd6",
     "ledger": [
      {
@@ -113384,7 +113385,7 @@
     "recon_rows": []
    },
    "KA10": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA10",
+    "engine_ref": "ENGINE:20261016T205848Z:KA10",
     "source_hash": "4a1e09581180f69a",
     "ledger": [
      {
@@ -113670,7 +113671,7 @@
     "recon_rows": []
    },
    "KA11": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA11",
+    "engine_ref": "ENGINE:20261016T205848Z:KA11",
     "source_hash": "0350e3374b209d6f",
     "ledger": [
      {
@@ -113956,7 +113957,7 @@
     "recon_rows": []
    },
    "KA12": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA12",
+    "engine_ref": "ENGINE:20261016T205848Z:KA12",
     "source_hash": "0bcf3be23a847dc3",
     "ledger": [
      {
@@ -114242,7 +114243,7 @@
     "recon_rows": []
    },
    "KA13": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA13",
+    "engine_ref": "ENGINE:20261016T205848Z:KA13",
     "source_hash": "73ea16189a8221bd",
     "ledger": [
      {
@@ -114528,7 +114529,7 @@
     "recon_rows": []
    },
    "KA14": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA14",
+    "engine_ref": "ENGINE:20261016T205848Z:KA14",
     "source_hash": "38618421ec987e46",
     "ledger": [
      {
@@ -114841,7 +114842,7 @@
     "recon_rows": []
    },
    "KA15": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA15",
+    "engine_ref": "ENGINE:20261016T205848Z:KA15",
     "source_hash": "80280c86e3150b73",
     "ledger": [
      {
@@ -115127,7 +115128,7 @@
     "recon_rows": []
    },
    "KA16": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA16",
+    "engine_ref": "ENGINE:20261016T205848Z:KA16",
     "source_hash": "7650c3c7494fbcde",
     "ledger": [
      {
@@ -115413,7 +115414,7 @@
     "recon_rows": []
    },
    "KA17": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA17",
+    "engine_ref": "ENGINE:20261016T205848Z:KA17",
     "source_hash": "fec08230e17e1b80",
     "ledger": [
      {
@@ -115699,7 +115700,7 @@
     "recon_rows": []
    },
    "KA18": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA18",
+    "engine_ref": "ENGINE:20261016T205848Z:KA18",
     "source_hash": "22cbe6bca5b8eb73",
     "ledger": [
      {
@@ -115985,7 +115986,7 @@
     "recon_rows": []
    },
    "KA19": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA19",
+    "engine_ref": "ENGINE:20261016T205848Z:KA19",
     "source_hash": "fe67b2cd0ff3ebd3",
     "ledger": [
      {
@@ -116271,7 +116272,7 @@
     "recon_rows": []
    },
    "KA20": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA20",
+    "engine_ref": "ENGINE:20261016T205848Z:KA20",
     "source_hash": "9a4118ea5a508adc",
     "ledger": [
      {
@@ -116557,7 +116558,7 @@
     "recon_rows": []
    },
    "KA21": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA21",
+    "engine_ref": "ENGINE:20261016T205848Z:KA21",
     "source_hash": "5fac4dd79195a129",
     "ledger": [
      {
@@ -116843,7 +116844,7 @@
     "recon_rows": []
    },
    "KA22": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA22",
+    "engine_ref": "ENGINE:20261016T205848Z:KA22",
     "source_hash": "88d3d72f673c27a3",
     "ledger": [
      {
@@ -117129,7 +117130,7 @@
     "recon_rows": []
    },
    "KA23": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA23",
+    "engine_ref": "ENGINE:20261016T205848Z:KA23",
     "source_hash": "e5910a6c94a2032a",
     "ledger": [
      {
@@ -117415,7 +117416,7 @@
     "recon_rows": []
    },
    "KA24": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA24",
+    "engine_ref": "ENGINE:20261016T205848Z:KA24",
     "source_hash": "1989d25c641290b8",
     "ledger": [
      {
@@ -117701,7 +117702,7 @@
     "recon_rows": []
    },
    "KA25": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA25",
+    "engine_ref": "ENGINE:20261016T205848Z:KA25",
     "source_hash": "3e7b54351d502f20",
     "ledger": [
      {
@@ -117987,7 +117988,7 @@
     "recon_rows": []
    },
    "KA26": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA26",
+    "engine_ref": "ENGINE:20261016T205848Z:KA26",
     "source_hash": "37aab7e96d630b30",
     "ledger": [
      {
@@ -118273,7 +118274,7 @@
     "recon_rows": []
    },
    "KA27": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA27",
+    "engine_ref": "ENGINE:20261016T205848Z:KA27",
     "source_hash": "4bf6d66cabfe1325",
     "ledger": [
      {
@@ -118559,7 +118560,7 @@
     "recon_rows": []
    },
    "KA28": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA28",
+    "engine_ref": "ENGINE:20261016T205848Z:KA28",
     "source_hash": "e918a5b16a9068b6",
     "ledger": [
      {
@@ -118803,7 +118804,7 @@
     "recon_rows": []
    },
    "KA29": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA29",
+    "engine_ref": "ENGINE:20261016T205848Z:KA29",
     "source_hash": "dfabf614f2dbe855",
     "ledger": [
      {
@@ -119089,7 +119090,7 @@
     "recon_rows": []
    },
    "KA30": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA30",
+    "engine_ref": "ENGINE:20261016T205848Z:KA30",
     "source_hash": "20825cd25cf98d3d",
     "ledger": [
      {
@@ -119375,7 +119376,7 @@
     "recon_rows": []
    },
    "KA31": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA31",
+    "engine_ref": "ENGINE:20261016T205848Z:KA31",
     "source_hash": "f8a44190aa870599",
     "ledger": [
      {
@@ -119661,7 +119662,7 @@
     "recon_rows": []
    },
    "KA32": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA32",
+    "engine_ref": "ENGINE:20261016T205848Z:KA32",
     "source_hash": "1e8baa8d3ba1e879",
     "ledger": [
      {
@@ -119961,7 +119962,7 @@
     "recon_rows": []
    },
    "KA33": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA33",
+    "engine_ref": "ENGINE:20261016T205848Z:KA33",
     "source_hash": "bcf2949bde8c9002",
     "ledger": [
      {
@@ -120247,7 +120248,7 @@
     "recon_rows": []
    },
    "KA34": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA34",
+    "engine_ref": "ENGINE:20261016T205848Z:KA34",
     "source_hash": "3d6d48858dcdc788",
     "ledger": [
      {
@@ -120533,7 +120534,7 @@
     "recon_rows": []
    },
    "KA35": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA35",
+    "engine_ref": "ENGINE:20261016T205848Z:KA35",
     "source_hash": "cf53c4b9976d0a4f",
     "ledger": [
      {
@@ -120819,7 +120820,7 @@
     "recon_rows": []
    },
    "KA36": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA36",
+    "engine_ref": "ENGINE:20261016T205848Z:KA36",
     "source_hash": "a967e09c01cbfbce",
     "ledger": [
      {
@@ -121105,7 +121106,7 @@
     "recon_rows": []
    },
    "KA37": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA37",
+    "engine_ref": "ENGINE:20261016T205848Z:KA37",
     "source_hash": "fe19de06d762e90f",
     "ledger": [
      {
@@ -121412,7 +121413,7 @@
     "recon_rows": []
    },
    "KA38": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA38",
+    "engine_ref": "ENGINE:20261016T205848Z:KA38",
     "source_hash": "86712aa9d93f1150",
     "ledger": [
      {
@@ -121740,7 +121741,7 @@
     "recon_rows": []
    },
    "KA39": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA39",
+    "engine_ref": "ENGINE:20261016T205848Z:KA39",
     "source_hash": "261617473f93fc4a",
     "ledger": [
      {
@@ -122089,7 +122090,7 @@
     "recon_rows": []
    },
    "KA40": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA40",
+    "engine_ref": "ENGINE:20261016T205848Z:KA40",
     "source_hash": "61d215825d69ba8e",
     "ledger": [
      {
@@ -122375,7 +122376,7 @@
     "recon_rows": []
    },
    "KA41": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA41",
+    "engine_ref": "ENGINE:20261016T205848Z:KA41",
     "source_hash": "af4bad118dd632f8",
     "ledger": [
      {
@@ -122619,7 +122620,7 @@
     "recon_rows": []
    },
    "KA42": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA42",
+    "engine_ref": "ENGINE:20261016T205848Z:KA42",
     "source_hash": "94ae0d9a80c300c1",
     "ledger": [
      {
@@ -122863,7 +122864,7 @@
     "recon_rows": []
    },
    "KA43": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA43",
+    "engine_ref": "ENGINE:20261016T205848Z:KA43",
     "source_hash": "bda7d56677c7c32b",
     "ledger": [
      {
@@ -123107,7 +123108,7 @@
     "recon_rows": []
    },
    "KA44": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA44",
+    "engine_ref": "ENGINE:20261016T205848Z:KA44",
     "source_hash": "0f098d32f9e6c67b",
     "ledger": [
      {
@@ -123414,7 +123415,7 @@
     "recon_rows": []
    },
    "KA45": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA45",
+    "engine_ref": "ENGINE:20261016T205848Z:KA45",
     "source_hash": "823c21d8d5835777",
     "ledger": [
      {
@@ -123763,7 +123764,7 @@
     "recon_rows": []
    },
    "KA46": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA46",
+    "engine_ref": "ENGINE:20261016T205848Z:KA46",
     "source_hash": "04ba51f32ac76c75",
     "ledger": [
      {
@@ -124070,7 +124071,7 @@
     "recon_rows": []
    },
    "KA47": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA47",
+    "engine_ref": "ENGINE:20261016T205848Z:KA47",
     "source_hash": "c9c023949b85f78f",
     "ledger": [
      {
@@ -124356,7 +124357,7 @@
     "recon_rows": []
    },
    "KA48": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA48",
+    "engine_ref": "ENGINE:20261016T205848Z:KA48",
     "source_hash": "7b0dd6efc9fd40fc",
     "ledger": [
      {
@@ -124642,7 +124643,7 @@
     "recon_rows": []
    },
    "KA49": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA49",
+    "engine_ref": "ENGINE:20261016T205848Z:KA49",
     "source_hash": "87d3184260f2024a",
     "ledger": [
      {
@@ -124928,7 +124929,7 @@
     "recon_rows": []
    },
    "KA50": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA50",
+    "engine_ref": "ENGINE:20261016T205848Z:KA50",
     "source_hash": "c37c93ccde908863",
     "ledger": [
      {
@@ -125172,7 +125173,7 @@
     "recon_rows": []
    },
    "KA51": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA51",
+    "engine_ref": "ENGINE:20261016T205848Z:KA51",
     "source_hash": "8853c277e72aa861",
     "ledger": [
      {
@@ -125458,7 +125459,7 @@
     "recon_rows": []
    },
    "KA52": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA52",
+    "engine_ref": "ENGINE:20261016T205848Z:KA52",
     "source_hash": "64d73baafbe54977",
     "ledger": [
      {
@@ -125744,7 +125745,7 @@
     "recon_rows": []
    },
    "KA53": {
-    "engine_ref": "ENGINE:20261016T204246Z:KA53",
+    "engine_ref": "ENGINE:20261016T205848Z:KA53",
     "source_hash": "34f65bbd1955dcf0",
     "ledger": [
      {

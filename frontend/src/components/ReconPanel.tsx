@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { Account, AddrCase, Dashboard, InternalRec, LedgerEntry, Scenario, Selection } from '../types'
+import type { Account, AddrCase, Dashboard, InternalRec, LedgerEntry, ReconRow, Scenario, Selection } from '../types'
 import { Pill } from './badges'
 import { TermTip } from './Term'
 import { eok, pct } from '../lib/format'
@@ -77,11 +77,11 @@ export default function ReconPanel({ data, account: a, scen, addr, onInspect }: 
                   {ref?.value_eok != null && <div className="text-[10.5px] text-ink3">시나리오 참고 {eok(ref.value_eok, 'SCENARIO')}(공식 아님)</div>}
                   {e?.replaced_external_value != null && <div className="text-[10.5px] text-ink3">외부 모델 {eok(e.replaced_external_value, 'ESTIMATED')}</div>}</td>
                 <td className="whitespace-nowrap">{e?.official_source ? <Pill tone={e.official_source === 'INTERNAL_APPROVED' ? 'ok' : 'neutral'}>{SOURCE_LABEL[e.official_source]}</Pill> : <span className="text-ink3">—</span>}</td>
-                <td className="num whitespace-nowrap">{e?.base_year ? (r.metric === 'REV' ? `FY${e.base_year}` : `FY${e.base_year} 앵커 → FY${r.year}`) : '—'}</td>
+                <td className="num whitespace-nowrap">{e?.base_year ? (r.metric === 'REV' || e.official_source === 'INTERNAL_APPROVED' ? `FY${e.base_year}${e.official_source === 'INTERNAL_APPROVED' && r.metric !== 'REV' ? ' (사내)' : ''}` : `FY${e.base_year} 앵커 → FY${r.year}`) : '—'}</td>
                 <td className="whitespace-nowrap">{r.scen}</td>
                 <td>{e?.value_eok == null && r.metric === 'REV' ? '—' : (e?.data_status ?? '—')}</td>
                 <td className="whitespace-nowrap">{APPROVAL_LABEL[e?.approval_status ?? ''] ?? e?.approval_status ?? '—'}</td>
-                <td className="whitespace-nowrap">{e && e.evidence_ids.length ? <button className="underline text-left" onClick={() => onInspect({ year: r.year, metric: r.metric })} title="근거 패널 열기">{e.evidence_ids.slice(0, 3).join(', ')}{e.evidence_ids.length > 3 ? ` 외 ${e.evidence_ids.length - 3}` : ''}</button> : <span className="text-ink3">—</span>}</td>
+                <td className="whitespace-nowrap">{e && e.official_source === 'INTERNAL_APPROVED' && r.metric !== 'REV' ? <span title={`출처 선택 ${e.selection_id}`}>{e.evidence_ids.join(', ')} · {e.selection_id}</span> : e && e.evidence_ids.length ? <button className="underline text-left" onClick={() => onInspect({ year: r.year, metric: r.metric })} title="근거 패널 열기">{e.evidence_ids.slice(0, 3).join(', ')}{e.evidence_ids.length > 3 ? ` 외 ${e.evidence_ids.length - 3}` : ''}</button> : <span className="text-ink3">—</span>}</td>
                 <td className="text-[11px] text-ink3">{slotNote(r.metric)}</td>
               </tr>)
           })}</tbody>
@@ -90,23 +90,23 @@ export default function ReconPanel({ data, account: a, scen, addr, onInspect }: 
 
       <h4 className="mt-3 text-[13px] font-bold">사내 필드 비교 <span className="font-normal text-ink3 text-[11.5px]">(원천값 ≠ 검증값 ≠ 승인값 — 승인값만 공식 계산)</span></h4>
       <div className="mt-1 overflow-x-auto">
-        <table className="w-full min-w-[860px] text-[12px]" data-testid="internal-fields">
-          <thead><tr className="text-left text-ink3 [&_th]:whitespace-nowrap [&_th]:pr-2"><th className="py-1">사내 필드</th><th>외부 대응</th><th>레코드(원본값 · 상태)</th><th>외부 값</th><th>대사 판정</th><th>규칙</th></tr></thead>
+        <table className="w-full min-w-[760px] text-[12px]" data-testid="internal-fields">
+          <thead><tr className="text-left text-ink3 [&_th]:whitespace-nowrap [&_th]:pr-2"><th className="py-1">사내 필드</th><th>외부 대응</th><th>레코드(원본값 · 상태) · 외부 값 · 대사 판정</th><th>규칙</th></tr></thead>
           <tbody>{INTERNAL_FIELDS.map(f => {
             const rs = internal.filter(r => f.measures.includes(r.measure_id))
             return (
               <tr key={f.id} className="border-t border-line align-top [&_td]:pr-2" data-field={f.id}>
                 <td className="py-1 font-semibold">{f.label}</td>
                 <td className="whitespace-nowrap text-ink2">{f.ext}</td>
-                <td>{rs.length === 0 ? <span className="text-ink3">사내 입력 없음</span> : (showAll ? rs : rs.slice(0, 4)).map(r => <RecLine key={r.record_id} r={r} />)}
+                <td>{rs.length === 0 ? <span className="text-ink3">사내 입력 없음</span> : (showAll ? rs : rs.slice(0, 4)).map(r => <RecLine key={r.record_id} r={r} x={recon.get(r.record_id)} />)}
                   {!showAll && rs.length > 4 && <button className="text-[11px] underline" onClick={() => setShowAll(true)}>+{rs.length - 4}건 더 보기</button>}</td>
-                <td className="num">{rs.map(r => recon.get(r.record_id)).filter(Boolean).slice(0, showAll ? 99 : 4).map(x => <div key={x!.record_id}>{x!.external_eok == null ? '—' : eok(Number(x!.external_eok), 'ESTIMATED')} <span className="text-ink3 text-[10.5px]">{x!.external_measure}</span></div>)}</td>
-                <td>{rs.map(r => recon.get(r.record_id)).filter(Boolean).slice(0, showAll ? 99 : 4).map(x => <div key={x!.record_id}><Pill tone={JUDGE[x!.judgement]?.tone ?? 'neutral'}>{JUDGE[x!.judgement]?.l ?? x!.judgement}</Pill>{x!.diff_pct != null && <span className="num ml-1 text-ink3">{pct(Number(x!.diff_pct), 0)}</span>}</div>)}</td>
                 <td className="text-[11px] text-ink3">{f.note}</td>
               </tr>)
           })}</tbody>
         </table>
       </div>
+      {internal.length > 0 && (() => { const oi = R.official_internal ?? {}; const cr = oi.CR?.[a.account_id], tg = oi.TARGET?.[a.account_id], pl = oi.REVENUE_PLAN?.[a.account_id]
+        return <p className="mt-2 text-[12px]" data-testid="recon-official-internal"><b>계약 기준 승인값 해석</b>(공식 슬롯 후보): CR {cr ? `${cr.value_eok}억 (${cr.period_type}, ${cr.records.join('+')})` : '없음'} · Target {tg ? `${tg.value_eok}억${tg.derived_from_case_id ? ` (← ${tg.derived_from_case_id})` : ''}` : '없음'} · 매출 계획 {pl ? `${Object.keys(pl).length}개 연도` : '없음'} <span className="text-ink3">— 미승인·격리·비교 전용 레코드는 제외. 대시보드 KPI(CR·Target) 연결은 Phase 3B 승인 후.</span></p> })()}
       {internal.length === 0 && <p className="mt-2 text-[12px] text-ink3" data-testid="recon-empty">사내 데이터 미연동 — 실제 사내 Excel 연동(Phase 3B)은 Blocker B1(양식)·B2(SAM 정의)·B3(RAW 역산)·B4(Target Case)·B6(고객 매핑)·B8(보안 승인) 해소 후 별도 승인으로 진행합니다. 그 전까지 모든 공식 값은 외부 모델 기본값이며 CR·Target은 미입력(0 대체 없음)입니다.</p>}
       {(acc?.internal ?? []).some(r => r.quarantined) && <p className="mt-1 text-[12px]" style={{ color: 'var(--err)' }}>계약 위반으로 격리된 레코드는 공식·대사 계산에서 제외됩니다(원본은 보존).</p>}
       <p className="mt-1 text-[11px] text-ink3"><TermTip code="RAW">RAW</TermTip> 비교 쌍은 외부 RAW ↔ 사내 SAM/RAW, 매출 계열은 외부 FPR 상한 점검만 수행합니다(지출과 매출 직접 비교 금지). 계약 {R.contract_version} · 정책 {R.policy_version}</p>
@@ -125,7 +125,7 @@ export default function ReconPanel({ data, account: a, scen, addr, onInspect }: 
   )
 }
 
-function RecLine({ r }: { r: InternalRec }) {
+function RecLine({ r, x }: { r: InternalRec; x?: ReconRow }) {
   return (
     <div className="flex flex-wrap items-center gap-1" data-record={r.record_id}>
       <span className="num">{r.fiscal_year}</span>
@@ -133,6 +133,8 @@ function RecLine({ r }: { r: InternalRec }) {
       <span className="num font-semibold" title={`원본 셀 ${r.raw.value} ${r.raw.unit} · ${r.source_id}`}>{r.raw.value} {r.raw.unit}</span>
       <Pill tone={r.quarantined ? 'err' : r.status === 'APPROVED' ? 'ok' : r.status === 'VERIFIED' ? 'warn' : 'neutral'}>{r.quarantined ? '격리' : REC_STATUS[r.status] ?? r.status}</Pill>
       {r.synthetic && <Pill tone="err">합성</Pill>}
+      {x && <span className="inline-flex items-center gap-1 text-ink3">· 외부 <span className="num">{x.external_eok == null ? '—' : eok(Number(x.external_eok), 'ESTIMATED')}</span>
+        <Pill tone={JUDGE[x.judgement]?.tone ?? 'neutral'}>{JUDGE[x.judgement]?.l ?? x.judgement}</Pill>{x.diff_pct != null && x.judgement !== 'NOT_COMPARABLE' && <span className="num">{pct(Number(x.diff_pct), 0)}</span>}</span>}
     </div>
   )
 }

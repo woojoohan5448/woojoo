@@ -113,3 +113,10 @@ def test_internal_records_visible_with_status_and_quarantine(store):
     assert rows["S-KA03-010"]["raw"] == {"value": "12,000", "unit": "백만원", "formula": None}
     assert blk["contains_synthetic"]
     assert {r["judgement"] for r in blk["accounts"]["KA03"]["recon_rows"]} >= {"NOT_COMPARABLE", "REFERENCE_ONLY", "ALIGNED", "WITHIN_FPR"}
+
+
+def test_corrupt_store_keeps_defaults_and_reports(store):
+    (store / "records.json").write_text("{not json", encoding="utf-8")
+    blk = L.build_block(DASH["accounts"], "TEST", mode="production")
+    assert blk["store_error"] and blk["n_switched"] == 0 and blk["n_internal_records"] == 0
+    assert all(e["official_source"] == "EXTERNAL_MODEL" for e in blk["accounts"]["KA03"]["ledger"] if e["key"].startswith(("TS|", "RAW|", "FPR|")))

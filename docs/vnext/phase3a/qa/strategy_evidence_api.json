@@ -1,0 +1,244 @@
+{
+  "base": "http://127.0.0.1:8000/",
+  "width": 1600,
+  "fail": 0,
+  "n": 59,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "③ 도출 흐름 단계 '53 KA Opportunity'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 도출 흐름 단계 'Opportunity Pool'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 도출 흐름 단계 'Market / Demand Evidence'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 도출 흐름 단계 'Capability Gap'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 도출 흐름 단계 'Strategic Initiative'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 도출 흐름 단계 'Priority'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 도출 흐름 단계 'Next Action'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 흐름: 신규 전략과제 승인 0건"
+    },
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 매력도 점수 73.3 = 엔진 73.3(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 3관점 별도 열 근거 일부/수요 일부/확보 가능성 높음"
+    },
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 과제 상태 '검증 필요'"
+    },
+    {
+      "ok": true,
+      "msg": "③ Connectivity: 옵션 '확장 — 검토 옵션(검증 필요)' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 매력도 점수 63.4 = 엔진 63.4(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 3관점 별도 열 근거 일부/수요 확인/보통"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 과제 상태 '검증 필요'"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Infrastructure: 옵션 '제휴 — 검토 옵션(검증 필요)' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 매력도 점수 63.3 = 엔진 63.3(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 3관점 별도 열 근거 일부/수요 일부/확보 가능성 높음"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 과제 상태 '검증 필요'"
+    },
+    {
+      "ok": true,
+      "msg": "③ Data Center / IDC: 옵션 '투자 — 검토 옵션(검증 필요)' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 매력도 점수 47.2 = 엔진 47.2(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 3관점 별도 열 근거 일부/수요 일부/보통"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 과제 상태 '검증 필요'"
+    },
+    {
+      "ok": true,
+      "msg": "③ Cloud: 옵션 '제휴 — 검토 옵션(검증 필요)' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 매력도 점수 39.6 = 엔진 39.6(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 3관점 별도 열 근거 일부/수요 확인/낮음"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 과제 상태 '검증 필요'"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 옵션 '인수 검토 — 검토 옵션(검증 필요)' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 매력도 점수 24.9 = 엔진 24.9(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 3관점 별도 열 근거 부족/수요 일부/낮음"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 과제 상태 '검증 필요'"
+    },
+    {
+      "ok": true,
+      "msg": "③ AI Transformation / SI: 옵션 '제휴 — 검토 옵션(검증 필요)' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 매력도 점수 22.2 = 엔진 22.2(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 3관점 별도 열 근거 부족/수요 일부/낮음"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 과제 상태 '검증 필요'"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 옵션 '유지 — 검토 옵션(검증 필요)' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 매력도 점수 20.3 = 엔진 20.3(불변)"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 3관점 별도 열 근거 부족/수요 근거 없음/보통"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 과제 상태 '분석 가설'"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 옵션 '유지 — 분석 가설' — 확정 권고 표시 없음"
+    },
+    {
+      "ok": true,
+      "msg": "③ 기타: 수요 근거 없음 → 분석 가설"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: WHY/GAP/OPTION/PRIORITY/ACTION 블록"
+    },
+    {
+      "ok": true,
+      "msg": "③ Security: 승인 상태 = 제안"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: WHY/GAP/OPTION/PRIORITY/ACTION 블록"
+    },
+    {
+      "ok": true,
+      "msg": "③ SI / Managed Services: 승인 상태 = 제안"
+    },
+    {
+      "ok": true,
+      "msg": "③ 검증 사례 ① Security 성장 가정 의존도 60%"
+    },
+    {
+      "ok": true,
+      "msg": "③ 검증 사례 ② SI/MS 기존 공급자 관찰 의존"
+    },
+    {
+      "ok": true,
+      "msg": "③ 가중치 민감도 12개 시나리오(근거 미혼합)"
+    },
+    {
+      "ok": true,
+      "msg": "④ Connectivity: '확장 — 검토 옵션(검증 필요)' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ AI Infrastructure: '제휴 — 검토 옵션(검증 필요)' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ Data Center / IDC: '투자 — 검토 옵션(검증 필요)' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ Cloud: '제휴 — 검토 옵션(검증 필요)' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ Security: '인수 검토 — 검토 옵션(검증 필요)' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ AI Transformation / SI: '제휴 — 검토 옵션(검증 필요)' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ SI / Managed Services: '유지 — 검토 옵션(검증 필요)' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ 기타: '유지 — 분석 가설' (3관점 표시, 확정 권고 없음)"
+    },
+    {
+      "ok": true,
+      "msg": "④ 사업영역별 검증 과제 8행"
+    },
+    {
+      "ok": true,
+      "msg": "④ 확정 과제 아님 고지"
+    },
+    {
+      "ok": true,
+      "msg": "페이지 오류 없음 ()"
+    }
+  ]
+}

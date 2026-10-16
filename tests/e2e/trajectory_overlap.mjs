@@ -8,29 +8,31 @@ const p = await b.newPage()
 await p.goto(base, { waitUntil: 'networkidle' })
 const ids = await p.evaluate(async () => { try { const r = await fetch('/api/accounts'); return (await r.json()).map(a => a.account_id) } catch { return [] } })
 const accounts = ids.length ? ids : Array.from({ length: 53 }, (_, i) => `KA${String(i + 1).padStart(2, '0')}`)
-let checked = 0, noChart = 0; const problems = []
+let checked = 0, noChart = 0; const problems = []; const byKind = {}
 for (const [w, h] of [[1280, 800], [1440, 900], [1920, 1080]]) {
   await p.setViewportSize({ width: w, height: h })
   for (const id of accounts) {
     await p.evaluate((a) => { localStorage.setItem('onboarded', 'true'); localStorage.setItem('tab', JSON.stringify('account')); localStorage.setItem('acc', JSON.stringify(a)) }, id)
     await p.reload({ waitUntil: 'networkidle' }); await p.waitForTimeout(250)
-    const boxes = await p.evaluate(() => {
-      const svg = document.querySelector('[role=img][aria-label*="성장 궤적"] svg')
+    for (const [kind, sel] of [['main', '[role=img][aria-label*="성장 궤적"] svg'], ['fpr-aux', '[data-testid=fpr-aux] svg']]) {
+    const boxes = await p.evaluate((s) => {
+      const svg = document.querySelector(s)
       if (!svg) return null
       return [...svg.querySelectorAll('text')].map(t => { const r = t.getBoundingClientRect(); return { t: t.textContent || '', x: r.x, y: r.y, w: r.width, h: r.height } }).filter(r => r.w > 0)
-    })
-    if (!boxes) { noChart++; continue }
-    checked++
+    }, sel)
+    if (!boxes) { if (kind === 'main') noChart++; continue }
+    checked++; byKind[kind] = (byKind[kind] || 0) + 1
     const labels = boxes.filter(r => /^(TS|RAW|FPR|CR|Target)/.test(r.t))
     const axis = boxes.filter(r => /억$|조$|^20\d\d$/.test(r.t))
     const hit = (a, c) => a.x < c.x + c.w - 1 && c.x < a.x + a.w - 1 && a.y < c.y + c.h - 1 && c.y < a.y + a.h - 1
     for (let i = 0; i < labels.length; i++) {
       for (let j = i + 1; j < labels.length; j++) if (hit(labels[i], labels[j])) problems.push(`${w} ${id}: "${labels[i].t}" × "${labels[j].t}"`)
-      for (const ax of axis) if (hit(labels[i], ax)) problems.push(`${w} ${id}: "${labels[i].t}" × axis "${ax.t}"`)
+      for (const ax of axis) if (hit(labels[i], ax)) problems.push(`${w} ${id} ${kind}: "${labels[i].t}" × axis "${ax.t}"`)
+    }
     }
   }
 }
-console.log(JSON.stringify({ checked, noChart, problems: problems.length }))
+console.log(JSON.stringify({ accounts: accounts.length, resolutions: 3, checked, byKind, noChart, problems: problems.length }))
 problems.slice(0, 40).forEach(x => console.log('OVERLAP', x))
 await b.close()
 process.exitCode = problems.length ? 1 : 0

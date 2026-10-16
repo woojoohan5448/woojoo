@@ -50,3 +50,7 @@
   - 계약·대사 설계 `DATA_CONTRACT.md`, 판정·기능 분리·Blocker·계획 `PHASE3A_READINESS.md`. 계약 `contracts/phase3a_data_contract.v0.json`, 검증기 `tools/contract_validate.py`, 합성 `tests/phase3a_synthetic.py`·`tests/fixtures/phase3a_synthetic.json`, 테스트 `tests/test_phase3a_contract.py`(18).
   - 테스트: pytest 58 · vitest 13 · E2E 46 · 겹침 0/144.
   - 재개: PHASE3A_READINESS §4 승인 사항 확인 후 3A-1부터.
+- Phase 3A(2026-10-16): 브랜치 `vnext-phase3a`(push 금지 — 사용자 승인 대기). 결과 `docs/vnext/phase3a/PHASE3A_REPORT.md`, QA 원시 결과 `docs/vnext/phase3a/qa/`, 캡처 `docs/vnext/phase3a/screens/p3a_*.png`.
+  - 단계 커밋: 3A-1 원장·출처 정책 → 3A-2 대사 화면 → 3A-3/4 ② 통합 궤적·FPR 보조 차트 → 3A-5 ③ Opportunity-to-Action → 3A-6 ④ + QA.
+  - 테스트: pytest 68 · vitest 18 · E2E 46+46 · Phase 3A E2E 316+316(+합성 120) · 전략 근거 59+59 · 화면 검증 104 · 겹침 0/288 차트(53개사 × 3 해상도).
+  - 재개: PHASE3A_REPORT §4(잔여 리스크)·§5(연동 준비) 확인 → Blocker 해소 후 Phase 3B 승인 요청.
