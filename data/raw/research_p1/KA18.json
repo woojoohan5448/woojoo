@@ -1,0 +1,187 @@
+{
+  "account_id": "KA18",
+  "original_name": "신한은행",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA18.json",
+  "facts": [
+    {
+      "fact_id": "KA18-P1-F01",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 4634,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA18-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026년 공시=FY2025. 369.88/4634=7.98% ≈ 보도 7.96%(반올림) 일치"
+    },
+    {
+      "fact_id": "KA18-P1-F02",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 369.88,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA18-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA18-P1-F03",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 688.1,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA18-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산운용비. 용역비 2,841.7억 별도(IT 아웃소싱 포함 가능)"
+    },
+    {
+      "fact_id": "KA18-P1-F04",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 2469.34,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA18-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 3,466.62억"
+    },
+    {
+      "fact_id": "KA18-P1-F05",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 1262.31,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA18-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA18-P1-E01",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "은행 정보보호 공시 비교(비즈한국/한국보험신문, KISA 인용)",
+      "publisher": "비즈한국",
+      "source_url": "https://www.bizhankook.com/bk/article/30405",
+      "document_id": null,
+      "publication_date": "2026-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약/인용(본문 미확인)",
+      "quoted_statement": "지난해 신한은행이 정보기술부문 투자액으로 지출한 비용은 4634억원이다. 이 중 정보보호부문 투자액은 369억원으로 약 8%를 차지한다.",
+      "reported_value": "4634",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "KISA 공시 인용. 한국보험신문: 정보보호 369억8800만원, 비율 7.96% WebFetch DNS 차단으로 본문 미확인."
+    },
+    {
+      "evidence_id": "KA18-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "신한은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001285",
+      "document_id": "20260318001285",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 32. 일반관리비 (단위: 백만원) 기타일반관리비",
+      "quoted_statement": "| 용역비 | 284,170 | 277,646 | ... | 전산운용비 | 68,810 | 62,547 | ... | 무형자산상각비 | 159,471 | 127,687 | ... | 합 계 | 3,701,518 | 3,459,539 |",
+      "reported_value": "68,810",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA18-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "신한은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001285",
+      "document_id": "20260318001285",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 Ⅱ.투자활동 (단위 : 백만원)",
+      "quoted_statement": "| 9. 유형자산의 취득 | (126,231) | | (117,127) | ... | 11. 무형자산의 취득 | (246,934) | | (346,662) |",
+      "reported_value": "246,934",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "KISA FY2025 IT 투자액",
+      "target": "신한은행",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "OK",
+      "detail": "4,634억(2차)",
+      "retryable": false
+    },
+    {
+      "step": "판관비 주석",
+      "target": "rcept 20260318001285",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산운용비 688억, 용역비 2,842억, 무형취득 2,469억",
+      "retryable": false
+    }
+  ],
+  "open_questions": [],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA18-F17",
+      "existing_value": 4450.5,
+      "new_value": 4634,
+      "unit": "억원",
+      "explanation": "기존 2026 IT 예산 4,450.5억은 금감원 예산비중 역산(DERIVED). FY2025 KISA 실적 IT 투자 4,634억(직접 보도)이 존재 → 앵커로 우선. 정의 차(예산 vs 집행) 및 연도 차로 -4% 괴리; 2026 예산이 전년 실적보다 낮은 것은 정보보호예산 감액 보도와 방향 일치",
+      "evidence_ids": [
+        "KA18-P1-E01"
+      ]
+    },
+    {
+      "existing_fact_id": "KA18-F11",
+      "existing_value": 4288,
+      "new_value": 4634,
+      "unit": "억원",
+      "explanation": "FY2024 4,288억 → FY2025 4,634억(+8.1%); 기사 '올해 IT 부문 투자액 전년보다 늘었다'와 일치. 충돌 아님(추세 확인)",
+      "evidence_ids": [
+        "KA18-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": []
+}

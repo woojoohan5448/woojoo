@@ -1,0 +1,194 @@
+{
+  "account_id": "KA32",
+  "original_name": "주한미군",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-dc-defense",
+  "supplement_of": "data/raw/research/KA32.json",
+  "facts": [
+    {
+      "fact_id": "KA32-P1-F01",
+      "metric": "contract_value",
+      "fiscal_year": null,
+      "value": 7.5,
+      "unit": "USD_mn",
+      "scope": "W91QVN24R0121 Mobile Services for USFK Wide — 집계사이트 projected total value(솔리시테이션 추정, 낙찰액 아님); 다년 누적 base 1y + 4 option years",
+      "evidence_ids": [
+        "KA32-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2025-01-01 시작, 1+4년(2025-2029). 연환산 하지 않음(엔진 처리). 약 5,000 무선단말 대상"
+    },
+    {
+      "fact_id": "KA32-P1-F02",
+      "metric": "other",
+      "fiscal_year": null,
+      "value": 5000,
+      "unit": "대(무선단말)",
+      "scope": "W91QVN24R0121 요구 범위",
+      "evidence_ids": [
+        "KA32-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "W91QVN24R0121 낙찰자 미확인. LG U+·KT는 W91QVN25G0001/0002 BOA(leased telecom, 상한 각 14.57M USD, 2025-03) 보유 — 기존 파일과 동일. GICellphone Corp는 소액 단말 발주(W91QVN25FA192)만 확인, USFK Wide 수주 근거 없음",
+      "incumbent": null,
+      "lgu_relationship": "W91QVN25G0002 BOA obligated 59,351 USD(기존 KA32-F02와 동일)",
+      "evidence_ids": [
+        "KA32-P1-E01",
+        "KA32-P1-E02"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA32-P1-E01",
+      "tier": 2,
+      "source_type": "GOV_DATA",
+      "source_title": "Mobile Services for USFK Wide (W91QVN24R0121) — SAM.gov / HigherGov / Sweetspot listing (WebSearch 요약)",
+      "publisher": "SAM.gov / Sweetspot",
+      "source_url": "https://sam.gov/opp/ebc9d71cb1ab47a089d712a4fbd3718c/view",
+      "document_id": "W91QVN24R0121",
+      "publication_date": "2024-10-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025-FY2029",
+      "page_or_section": "솔리시테이션 요약",
+      "quoted_statement": "Korea Mobile Communication Services for USFK Wide ... contract set to begin on January 1, 2025, ... base period of one year with four optional years ... 5,000 wireless devices ... total contract value of approximately $7.5 million",
+      "reported_value": "7.5; 5000",
+      "reported_unit": "USD_mn; 대",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "Amendment 0001 2024-11-26. 411th CSB. 낙찰공고 미발견"
+    },
+    {
+      "evidence_id": "KA32-P1-E02",
+      "tier": 3,
+      "source_type": "GOV_DATA",
+      "source_title": "GICellphone Corp contractor profile (GovConInABox, WebSearch 요약)",
+      "publisher": "GovConInABox",
+      "source_url": "https://www.govconinabox.com/explore/contractors/profile/gicellphone-corp-usyaqk",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "요약",
+      "quoted_statement": "$2.24M Total Contract Value 322 awards ... W91QVN25FA192 ... CELLULAR PHONES",
+      "reported_value": "2.24",
+      "reported_unit": "USD_mn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "USFK Wide와 범위 상이"
+    },
+    {
+      "evidence_id": "KA32-P1-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "LG유플러스 주한미군 보조금 지적 (노컷뉴스, WebSearch 요약)",
+      "publisher": "노컷뉴스",
+      "source_url": "https://nocutnews.co.kr/news/4471456",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "요약",
+      "quoted_statement": "LG유플러스가 주한미군 고객에게 LG전자 볼트 구매 시 9개월 약정 보조금 23만 7000원을 지급",
+      "reported_value": "237000",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "구 기사(시점 미확인). 2026 가입자 수 아님"
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "usfk_mobile_contract_projected_total",
+      "value": 7.5,
+      "unit": "USD_mn",
+      "basis": "솔리시테이션 projected value, 1+4년",
+      "evidence_ids": [
+        "KA32-P1-E01"
+      ]
+    },
+    {
+      "name": "usfk_mobile_devices",
+      "value": 5000,
+      "unit": "대",
+      "basis": "솔리시테이션 범위",
+      "evidence_ids": [
+        "KA32-P1-E01"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "W91QVN24R0121 낙찰자·낙찰금액 미확인"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "found",
+      "detail": "솔리시테이션 추정 7.5M USD, 5,000 단말, 2025-01 시작 1+4년"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_found",
+      "detail": "LG U+ USFK 가입자 최근치 없음"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "낙찰 검색",
+      "target": "W91QVN24R0121",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "솔리시테이션만 확인, award notice 없음",
+      "retryable": false
+    },
+    {
+      "step": "낙찰 검색(통신3사)",
+      "target": "USFK mobile 2025 award",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "BOA G0001/G0002만",
+      "retryable": false
+    },
+    {
+      "step": "GICellphone 확인",
+      "target": "W91QVN25",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "OK",
+      "detail": "projected 7.5M; GICellphone은 무관 소액",
+      "retryable": false
+    },
+    {
+      "step": "LG U+ 미군 가입자",
+      "target": "2026",
+      "tool": "WebSearch",
+      "level": "L5",
+      "result": "NOT_FOUND",
+      "detail": "2026 가입자/전용요금제 근거 없음",
+      "retryable": false
+    },
+    {
+      "step": "USAspending/SAM 원문",
+      "target": "usaspending.gov",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "DNS 차단 — 미시도",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "W91QVN24R0121 실제 낙찰자·금액(USAspending PIID 조회 필요)",
+    "LG U+ 주한미군 가입자 수(최근 기존 7,200명 수치는 구 기사)",
+    "DISA/DITCO 한국 회선 연간 obligation"
+  ]
+}

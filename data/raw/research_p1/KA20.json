@@ -1,0 +1,199 @@
+{
+  "account_id": "KA20",
+  "original_name": "우리카드",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA20.json",
+  "facts": [
+    {
+      "fact_id": "KA20-P1-F01",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 323.04,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA20-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산업무비(일반관리비). FY2024 315.09억"
+    },
+    {
+      "fact_id": "KA20-P1-F02",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 37.31,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA20-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=통신비. 용역비 43.65억 별도"
+    },
+    {
+      "fact_id": "KA20-P1-F03",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 202.01,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA20-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 192.42억"
+    },
+    {
+      "fact_id": "KA20-P1-F04",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 212.01,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA20-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 97.38억"
+    },
+    {
+      "fact_id": "KA20-P1-F05",
+      "metric": "it_budget",
+      "fiscal_year": 2024,
+      "value": 960,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA20-P1-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2024 전사 IT 예산(금감원 자료). 2023 대비 -9.1% → 2023 ≈1,056억(DERIVED)"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA20-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "우리카드 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000533",
+      "document_id": "20260312000533",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 28. 일반관리비 및 기타영업손익 (1) (단위: 백만원)",
+      "quoted_statement": "| 전산업무비 | 32,304 | 31,509 | | 용역비 | 4,365 | 3,728 | | 통신비 | 3,731 | 3,927 | ... | 유형자산감가상각비 | 27,978 | 26,033 | | 무형자산상각비 | 26,855 | 25,814 |",
+      "reported_value": "32,304",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA20-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "우리카드 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000533",
+      "document_id": "20260312000533",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 II.투자활동 현금유출액 (단위: 백만원)",
+      "quoted_statement": "| 유형자산의 취득 | 21,201 | | 9,738 | | 무형자산의 취득 | 20,201 | | 19,242 |",
+      "reported_value": "20,201",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA20-P1-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "우리·하나카드 사고발생 많아",
+      "publisher": "아시아경제",
+      "source_url": "https://view.asiae.co.kr/article/2025092415195187198",
+      "document_id": null,
+      "publication_date": "2025-09-24",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024(예산)",
+      "page_or_section": "WebSearch 요약/인용(본문 미확인)",
+      "quoted_statement": "하나카드(841억원)와 우리카드(960억원)는 2023년보다 각각 10.8%, 9.1% 감소했다. ... 지난해 정보기술 예산 총액은 1조219억원",
+      "reported_value": "960",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "이헌승 의원실/금감원 자료 인용 8개 전업카드사 IT 예산 WebFetch DNS 차단으로 본문 미확인."
+    }
+  ],
+  "research_log": [
+    {
+      "step": "판관비 주석 IT 계정",
+      "target": "rcept 20260312000533",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산업무비·용역비·통신비·CF 취득 확보",
+      "retryable": false
+    },
+    {
+      "step": "IT 예산",
+      "target": "카드사 비교기사",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "OK",
+      "detail": "2024 IT 예산 960억(2차 출처)",
+      "retryable": false
+    },
+    {
+      "step": "KISA 공시",
+      "target": "우리카드",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "NOT_FOUND",
+      "detail": "KISA IT 투자액 미발견",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "우리카드 2025 IT 예산 절대액"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "TS model (SG&A×12.5%)",
+      "existing_value": 374.9,
+      "new_value": 960,
+      "unit": "억원",
+      "explanation": "금감원 IT 예산 2024=960억은 SG&A(2,999억)×12.5%=375억의 2.6배. IT 예산에 자본적지출·감가 포함 가능성. 직접 앵커로 TS 상향 검토 필요",
+      "evidence_ids": [
+        "KA20-P1-E03"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "L2 IT 비용 구성 합(FY2025, 비용 기준)",
+      "value": 952.33,
+      "unit": "억원",
+      "basis": "전산업무비 323.04+통신비 37.31+유형감가 279.78+무형상각 268.55+용역비 43.65 = 952.3억. 단 감가에는 비IT 포함 → 상한성. 투자기준(전산업무비+통신비+유무형취득)=774.6억",
+      "evidence_ids": [
+        "KA20-P1-E01",
+        "KA20-P1-E02"
+      ]
+    }
+  ]
+}

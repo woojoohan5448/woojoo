@@ -1,0 +1,450 @@
+{
+  "account_id": "KA24",
+  "original_name": "농협은행",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-ka24-35-52-38-41",
+  "entity": {
+    "legal_name_ko": "농협은행 주식회사",
+    "legal_name_en": "NongHyup Bank",
+    "corp_code": "00908757",
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "농협금융지주/농업협동조합중앙회",
+    "related_key_accounts": [
+      "KA39"
+    ],
+    "industry_detail": "특수은행",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "농협은행 별도(감사보고서 OFS)",
+    "exclusions": "농협중앙회 상호금융, 농협생명·손보·NH투자증권",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research/KA24.json 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA24-P1-F01",
+      "metric": "sga",
+      "fiscal_year": 2025,
+      "value": 4029356,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA24-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "은행 일반관리비(종업원 2,703,098 + 감가상각 507,006 + 기타판관비 819,252)"
+    },
+    {
+      "fact_id": "KA24-P1-F02",
+      "metric": "sga",
+      "fiscal_year": 2024,
+      "value": 3829845,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA24-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA24-P1-F03",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 7504445,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA24-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "'신용손실 및 일반관리비 반영전 영업이익'(총영업이익 성격). 순이자+순수수료=8,129,860백만원(DERIVED)"
+    },
+    {
+      "fact_id": "KA24-P1-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 3111787,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA24-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA24-P1-F05",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 507006,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA24-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "감가상각비 및 상각비(사용권자산 포함, IT 외 포함)"
+    },
+    {
+      "fact_id": "KA24-P1-F06",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 147234,
+      "unit": "백만원",
+      "scope": "법인 별도(캡티브 SI 지급분)",
+      "evidence_ids": [
+        "KA24-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "농협정보시스템에 대한 기타비용 = IT 위탁운영·개발 비용 프록시. 전기 124,746 대비 +18.0%"
+    },
+    {
+      "fact_id": "KA24-P1-F07",
+      "metric": "it_service_cost",
+      "fiscal_year": 2024,
+      "value": 124746,
+      "unit": "백만원",
+      "scope": "법인 별도(캡티브 SI 지급분)",
+      "evidence_ids": [
+        "KA24-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA24-P1-F08",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 397828,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA24-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "개발비 126,823 + 기타무형자산 271,005. 기타무형자산에 비IT 항목 혼재 가능"
+    },
+    {
+      "fact_id": "KA24-P1-F09",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2024,
+      "value": 170580,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA24-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA24-P1-F10",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 121995,
+      "unit": "백만원",
+      "scope": "법인 별도(업무용동산)",
+      "evidence_ids": [
+        "KA24-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "업무용동산=전산기기·집기 등. IT 비중 미공시"
+    },
+    {
+      "fact_id": "KA24-P1-F11",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 34740,
+      "unit": "백만원",
+      "scope": "법인 별도(농협정보시스템으로부터 무형자산 매입)",
+      "evidence_ids": [
+        "KA24-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "캡티브 SI 경유 SW 자본화 투자. 유형 4,282 별도"
+    },
+    {
+      "fact_id": "KA24-P1-F12",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 44282,
+      "unit": "백만원",
+      "scope": "법인 별도(통신운반비)",
+      "evidence_ids": [
+        "KA24-P1-E06"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "통신회선 비용 상한 프록시(우편·운반 포함)"
+    },
+    {
+      "fact_id": "KA24-P1-F13",
+      "metric": "it_opex",
+      "fiscal_year": 2025,
+      "value": 186256,
+      "unit": "백만원",
+      "scope": "법인 별도(캡티브 SI 경유분 하한)",
+      "evidence_ids": [
+        "KA24-P1-E02",
+        "KA24-P1-E03"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "147,234(농협정보시스템 비용)+34,740(무형 매입)+4,282(유형 매입). 외부 벤더 직접계약·통신·HW 직접구매 제외 → IT 지출 하한(LOWER BOUND)"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "캡티브 SI (주)농협정보시스템에 FY2025 1,472억원 비용 지급 + 무형자산 347억원 매입. (주)농협네트웍스(범농협 시설·인프라 계열)에도 기타비용 1,438억원·유형자산 1,182억원 매입(IT 비중 불명)",
+      "incumbent": "(주)농협정보시스템",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA24-P1-E02",
+        "KA24-P1-E03"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA24-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "농협은행 감사보고서 (2025.12) 포괄손익계산서",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003536",
+      "document_id": "20260331003536",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서 (단위: 백만원)",
+      "quoted_statement": "VII. 신용손실 및 일반관리비 반영전 영업이익 | 7,504,445 | 7,816,275 / X. 일반관리비(주석4) | 4,029,356 | 3,829,845 / 2. 감가상각비 및 상각비 | 507,006 | 473,034 / XI. 영업이익 | 3,111,787 | 3,014,741 / I. 순이자손익 7,351,069 / II. 순수수료손익 778,791",
+      "reported_value": "4029356",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA24-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "농협은행 감사보고서 (2025.12) 주석 37 특수관계자거래 (3) 주요 손익거래",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003536",
+      "document_id": "20260331003536",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 37 (3) 손익거래 <당기>/<전기>, 열: 이자수익|수수료수익|기타수익|손실충당금|이자비용|수수료비용|기타비용",
+      "quoted_statement": "당기: | (주)농협정보시스템 | - | - | 3,385 | - | 90 | - | 147,234 | / 전기: | (주)농협정보시스템 | - | - | 3,378 | - | 99 | - | 124,746 | / 당기: | (주)농협네트웍스 | 1,781 | 1 | - | (54) | 3 | - | 143,806 |",
+      "reported_value": "147234",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "농협정보시스템=범농협 캡티브 IT 자회사. 기타비용 열 = 은행이 지급한 비용"
+    },
+    {
+      "evidence_id": "KA24-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "농협은행 감사보고서 (2025.12) 주석 37 (6) 특수관계자 고정자산 거래",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003536",
+      "document_id": "20260331003536",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 37 (6) (단위: 백만원) 열: 당기 유형자산매입|무형자산매입|전기 유형자산매입|무형자산매입",
+      "quoted_statement": "| (주)농협정보시스템 | 4,282 | 34,740 | 1,988 | 24,363 | / | (주)농협네트웍스 | 118,222 | - | 74,216 | - |",
+      "reported_value": "34740",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA24-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "농협은행 감사보고서 (2025.12) 주석 14 무형자산",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003536",
+      "document_id": "20260331003536",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 14 (2) 무형자산 장부금액 변동",
+      "quoted_statement": "당기: 개발비 취득 126,823 / 기타무형자산 취득 271,005 / 합계 취득 397,828 / 상각 (227,803); 전기: 합계 취득 170,580 / 상각 (199,743)",
+      "reported_value": "397828",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA24-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "농협은행 감사보고서 (2025.12) 주석 12 유형자산",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003536",
+      "document_id": "20260331003536",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 12 (2) 유형자산 변동 (업무용동산, 내용연수 4년)",
+      "quoted_statement": "당기: | 업무용동산 | 221,419 | 121,995 | (4) | (98,255) | 7,797 | (1,241) | 251,711 | / 전기: | 업무용동산 | 212,516 | 105,136 | (206) | (96,984) | 983 | (26) | 221,419 |",
+      "reported_value": "121995",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA24-P1-E06",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "농협은행 감사보고서 (2025.12) 주석 32 기타판매비와관리비",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003536",
+      "document_id": "20260331003536",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 32 (단위: 백만원)",
+      "quoted_statement": "| 통신운반비 | 44,282 | 41,582 | / | 용역비 | 212,725 | 201,935 | / | 임차료 | 47,275 | 44,623 | / | 합 계 | 819,252 | 778,032 |",
+      "reported_value": "44282",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "전산비 독립 계정 없음(find '전산비'·'소프트웨어' 0건)"
+    },
+    {
+      "evidence_id": "KA24-P1-E07",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "The VC 기업정보 농협은행",
+      "publisher": "The VC",
+      "source_url": "https://thevc.kr/nonghyupbank",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-06",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "임직원 수를 16,656명으로 표시 (기준 2026년 6월)",
+      "reported_value": "16656",
+      "reported_unit": "명",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "민간 데이터 사이트, WebSearch 요약만 확인"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 rcept 검색",
+      "target": "농협은행 00908757",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "별도 20260331003536 / 연결 20260331003539",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 find 전산비·전산·통신비·소프트웨어",
+      "target": "20260331003536",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "NOT_FOUND",
+      "detail": "전산비·통신비·소프트웨어 계정 0건 — 일반관리비 3분류(종업원/감가상각/기타판관비)만 공시",
+      "retryable": false
+    },
+    {
+      "step": "손익계산서·주석 12/14/32/37",
+      "target": "20260331003536",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "일반관리비, 무형·유형 취득, 통신운반비·용역비, 농협정보시스템 특수관계자 거래 확보",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시 금액",
+      "target": "농협은행",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "'농협은행 정보보호 공시 정보기술부문 투자액' 검색 — 우리은행 444억(12.3%)·국민은행 7.5%만 확인, 농협은행 언급 없음",
+      "retryable": false
+    },
+    {
+      "step": "IT 예산 2026",
+      "target": "농협은행",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "2026 IT 예산 총액 보도 없음. 2023년 클라우드 전환 2년 938억원 보도(기간 불명확, 미반영)",
+      "retryable": false
+    },
+    {
+      "step": "임직원 수",
+      "target": "농협은행",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "OK",
+      "detail": "TheVC 16,656명(2026-06, Tier3). 감사보고서에는 인원 미기재",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시 참여 여부 및 금액(여전히 미확인)",
+    "농협정보시스템 지급액 중 은행 IT 외(공동 인프라 분담) 비중",
+    "외부 벤더 직접계약 IT 비용·통신비(통신운반비 내 회선비) 분리",
+    "공식 임직원 수(은행연합회 경영공시)"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "note": "KISA·IT예산 보도 없음"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "note": "캡티브 SI 비용 1,472억 + SW/HW 매입 → 하한 1,863억원(FY2025)"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_applicable",
+      "note": "KR-BID 대상 아님(민간 금융사)"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "found",
+      "note": "임직원 16,656명(Tier3)"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_found",
+      "note": "동일 문서 기준 비교치 미수집"
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "note": ""
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "employees",
+      "value": 16656,
+      "unit": "명",
+      "basis": "TheVC 2026-06 (Tier3)",
+      "evidence_ids": [
+        "KA24-P1-E07"
+      ]
+    },
+    {
+      "name": "captive_si_opex_growth",
+      "value": 18.0,
+      "unit": "%",
+      "basis": "147,234/124,746-1 (FY25/FY24)",
+      "evidence_ids": [
+        "KA24-P1-E02"
+      ]
+    }
+  ]
+}

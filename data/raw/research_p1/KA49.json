@@ -1,0 +1,310 @@
+{
+  "account_id": "KA49",
+  "original_name": "엔에이치엔클라우드(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-itsvc-cloud",
+  "supplement_to": "data/raw/research/KA49.json",
+  "entity": {
+    "legal_name_ko": "엔에이치엔클라우드 주식회사",
+    "legal_name_en": "NHN Cloud Corporation",
+    "corp_code": "01716375",
+    "stock_code": null,
+    "business_reg_no": "4248802352",
+    "parent_group": "NHN(주) 자회사(2022-04 물적분할 설립)",
+    "related_key_accounts": [],
+    "industry_detail": "클라우드(공공·민간)·데이터센터(판교 TCC, 광주 국가AI데이터센터 운영). 비상장",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "NHN클라우드 법인 별도. 고객 대상 클라우드 원가/광주 AI DC 위탁운영 원가는 자체 소비와 구분 필요",
+    "exclusions": "NHN(주) 및 기타 NHN 계열사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company '엔에이치엔클라우드' → 01716375, 설립 2022-04-01. 감사보고서(2024.12, 2025.12)만 존재 → 재무 API 013"
+  },
+  "evidence": [
+    {
+      "evidence_id": "KA49-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "엔에이치엔클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004327",
+      "document_id": "20260401004327",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서 (단위: 원)",
+      "quoted_statement": "I. 영업수익 | 23 | 215,775,763,302 | 196,547,705,323 / II. 영업비용 | 24 | 235,541,386,401 | 225,009,621,316 / III. 영업손실 | | (19,765,623,099) | (28,461,915,993)",
+      "reported_value": "215,775,763,302",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA49-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "엔에이치엔클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004327",
+      "document_id": "20260401004327",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 24. 영업비용 (단위: 천원)",
+      "quoted_statement": "급여 | 35,345,289 | 36,297,984 / 유형자산상각비 | 37,864,778 | 36,618,597 / 무형자산상각비 | 415,067 | 491,785 / 사용권자산상각비 | 7,433,122 | 9,782,808 / 통신비 | 5,980,307 | 5,618,099 / 수도광열비 | 6,341,544 | 6,266,113 / 지급수수료 | 124,912,921 | 112,845,730 / 합 계 | 235,541,386 | 225,009,621",
+      "reported_value": "235,541,386",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA49-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "엔에이치엔클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004327",
+      "document_id": "20260401004327",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 9. 유형자산 (3) 당기 변동 (단위: 천원)",
+      "quoted_statement": "취득금액 | 1,005,800 | 20,848,769 | 577,106 | 22,431,675 (구축물|기계장치|비품|합계)",
+      "reported_value": "22,431,675",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA49-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "엔에이치엔클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004327",
+      "document_id": "20260401004327",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 18. 우발채무 및 약정사항 (7)",
+      "quoted_statement": "회사는 AI컴퓨팅자원 활용기반 강화사업(GPU 확보ㆍ구축ㆍ운용지원) 과제를 추진하기 위하여 정보통신산업진흥원과 2025년 8월 1일부터 2030년 12월 31일까지의 협약을 체결하였으며, 총협약금액은 1,010,010백만원입니다.",
+      "reported_value": "1,010,010",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA49-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "엔에이치엔클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004327",
+      "document_id": "20260401004327",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 18. 우발채무 및 약정사항 (3)",
+      "quoted_statement": "현대해상화재보험㈜에 부보금액69,946백만원(전기말 : 139,208백만원)의 광주AI데이터센터의 건물 및 기반시설, IT전산장비 등에 대해 재산종합보험에 가입",
+      "reported_value": "69,946",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA49-P1-E06",
+      "tier": 3,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "딜사이트 NHN 정보보호 투자 보도(검색 요약)",
+      "publisher": "딜사이트",
+      "source_url": "https://dealsite.co.kr/articles/166418",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "UNKNOWN",
+      "page_or_section": "검색 요약",
+      "quoted_statement": "지난해 정보보호 투자액을 51억4684만원으로 집계 ... IT 투자 대비 정보보호 투자 비중은 7.8%",
+      "reported_value": "5146840000",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "'NHN'으로만 표기 — NHN(주) 본사 vs NHN클라우드 법인 불명, 연도 불명. fact로 사용하지 않음"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "KA49-P1-F01",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 215775763302,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 196,547,705,323원 → +9.8%"
+    },
+    {
+      "fact_id": "KA49-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 235541386401,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA49-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": -19765623099,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA49-P1-F04",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 37864778,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "유형자산상각비(클라우드·DC 장비). 고객 서비스 제공 인프라 = 자체 운영 IT 자산이자 서비스 원가"
+    },
+    {
+      "fact_id": "KA49-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 5980307,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "통신비 59.8억 — 회선/대역폭 구매(통신사 매출 풀). 고객 클라우드 서비스 제공용"
+    },
+    {
+      "fact_id": "KA49-P1-F06",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 124912921,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "지급수수료 1,249억 — 외주·위탁운영(광주 AI DC 운영 위탁 등)·재판매 원가 혼재, 미분해"
+    },
+    {
+      "fact_id": "KA49-P1-F07",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 22431675,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "기계장치 20,848,769천원(서버·GPU 등)"
+    },
+    {
+      "fact_id": "KA49-P1-F08",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 6341544,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA49-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "수도광열비 63.4억 — DC 전력비 프록시"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA49-P1-D01",
+      "type": "AI_INVESTMENT",
+      "description": "정보통신산업진흥원 AI컴퓨팅자원 활용기반 강화사업(GPU 확보·구축·운용지원) 협약, 총협약금액 1조 100억원",
+      "amount": 10100.1,
+      "unit": "억원",
+      "period": "2025-08-01~2030-12-31",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA49-P1-E04"
+      ]
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "광주AI DC 재산보험 부보금액",
+      "value": 69946,
+      "unit": "백만원",
+      "basis": "전기 139,208백만원에서 감소(감가 또는 범위 변경)",
+      "evidence_ids": [
+        "KA49-P1-E05"
+      ]
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "NHN클라우드 FY2024/25 KISA 금액 미발견(NHN 본사 혼동 보도만)"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "영업비용 주석·유형자산·약정"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "found",
+      "detail": "GPU 사업 협약 1,010,010백만원(다년 누적)"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서",
+      "target": "20260401004327",
+      "tool": "MyDART-download_document(find)",
+      "level": "L2",
+      "result": "OK",
+      "detail": "IS, 주석24 영업비용, 주석9 유형자산, 주석18 약정",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시",
+      "target": "WebSearch x3",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "NHN클라우드 법인 금액 없음; 딜사이트 'NHN' 51.5억/7.8%는 법인 불명으로 fact 미채택",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "GPU 협약 1조 100억 중 회사 자체 투자분 vs 정부 출연/임차 구조, 연도별 집행",
+    "KISA FY2024/FY2025 IT 투자액",
+    "지급수수료 1,249억 내역(위탁운영·재판매)"
+  ],
+  "competitive": [],
+  "conflicts": [],
+  "comparables": []
+}

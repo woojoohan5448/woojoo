@@ -1,0 +1,174 @@
+{
+  "account_id": "KA25",
+  "original_name": "미래에셋증권",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA25.json",
+  "facts": [
+    {
+      "fact_id": "KA25-P1-F01",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 982.64,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA25-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산운용비. FY2024 897.39억"
+    },
+    {
+      "fact_id": "KA25-P1-F02",
+      "metric": "it_capex",
+      "fiscal_year": 2025,
+      "value": 188.07,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA25-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산기기 취득(유형). FY2024 105.74억; 전산기기 감가 105.81억"
+    },
+    {
+      "fact_id": "KA25-P1-F03",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 65.96,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA25-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 49.27억"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA25-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "미래에셋증권 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001394",
+      "document_id": "20260316001394",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 39. 판매관리비 및 인건비 (1) (단위: 백만원)",
+      "quoted_statement": "| 전산운용비 | 98,264 | 89,739 | | 임차료 | 24,160 | 21,943 | | 지급수수료 | 67,037 | 46,374 | ... | 무형자산상각비 | 12,126 | 11,461 | ... | 합 계 | 499,784 | 449,804 |",
+      "reported_value": "98,264",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA25-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "미래에셋증권 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001394",
+      "document_id": "20260316001394",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 15. 유형자산 (4) 변동 <제57(당)기> (단위: 백만원)",
+      "quoted_statement": "| 전산기기 | 19,444 | 18,807 | - | (10,581) | 27,670 |",
+      "reported_value": "18,807",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA25-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "미래에셋증권 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001394",
+      "document_id": "20260316001394",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 II.투자활동 (단위: 백만원)",
+      "quoted_statement": "| 유형자산의 취득 | (22,826) | | (14,102) | | 무형자산의 취득 | (6,596) | | (4,927) |",
+      "reported_value": "6,596",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "판관비 주석",
+      "target": "rcept 20260316001394",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산운용비·전산기기 취득 확보",
+      "retryable": false
+    },
+    {
+      "step": "KISA/IT 예산",
+      "target": "미래에셋증권",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "NOT_FOUND",
+      "detail": "2회 검색, KISA IT 투자액·정보보호 절대액 미발견",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "미래에셋증권 KISA 정보보호 공시 IT 투자액(공시 여부)"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "TS model (SG&A×12.5%)",
+      "existing_value": 624.7,
+      "new_value": 1236.7,
+      "unit": "억원",
+      "explanation": "전산운용비 단독 982.6억 > TS 624.7억. 인건비(8,803.9억)가 판매관리비와 별도 계정이므로 SG&A×12.5% 방식이 증권사에서 과소추정",
+      "evidence_ids": [
+        "KA25-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [
+    {
+      "peer_account_or_company": "신한투자증권",
+      "metric": "kisa_it_investment",
+      "value": 1523,
+      "unit": "억원",
+      "why_comparable": "대형 증권사 FY2025 KISA IT 투자액(정보보호 171억, 11.2%; 뉴시스/디지털데일리 2026-07-09)",
+      "evidence_ids": []
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "L2 IT 구성(투자기준)",
+      "value": 1236.67,
+      "unit": "억원",
+      "basis": "전산운용비 982.64+전산기기취득 188.07+무형취득 65.96 = 1,236.7억 (IT 인건비 제외 → 하한). TS(4,997.8×12.5%=624.7억)는 전산운용비 단독보다 작음 → 과소",
+      "evidence_ids": [
+        "KA25-P1-E01",
+        "KA25-P1-E02",
+        "KA25-P1-E03"
+      ]
+    }
+  ]
+}

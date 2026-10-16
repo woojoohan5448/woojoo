@@ -1,0 +1,327 @@
+{
+  "account_id": "KA50",
+  "original_name": "키암코인천도화동데이터센터일반부동산사모투자회사",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-dc-defense",
+  "supplement_of": "data/raw/research/KA50.json",
+  "entity": {
+    "corp_code": "01953091",
+    "entity_status": "PROBABLE",
+    "entity_notes": "KIAMCO = KDB Infrastructure Asset Management(산은인프라자산운용) 영문 약칭(검색 요약 기준). 보도상 도화동 765-18 DC 사업 추진 주체가 산은인프라자산운용으로 확인되어 본 펀드와 동일 사업으로 판단(펀드 문서로 직접 확인은 못함)."
+  },
+  "facts": [
+    {
+      "fact_id": "KA50-P1-F01",
+      "metric": "dc_capacity_mw",
+      "fiscal_year": null,
+      "value": 80,
+      "unit": "MW",
+      "scope": "단일 사업장(인천 미추홀구 도화동 765-18 일대), 최대 수전/공급 전력 기준 — IT load 아님",
+      "evidence_ids": [
+        "KA50-P1-E02",
+        "KA50-P1-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "'최대 80MW 전력 공급' 표현 → 수전 용량 상한으로 해석. IT load는 통상 이보다 낮음(미확인)."
+    },
+    {
+      "fact_id": "KA50-P1-F02",
+      "metric": "other",
+      "fiscal_year": null,
+      "value": 58000,
+      "unit": "㎡(부지)",
+      "scope": "단일 사업장",
+      "evidence_ids": [
+        "KA50-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "부지 약 5만8000㎡, 지상 7층, 2023-04 건축허가"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA50-P1-D01",
+      "type": "DC_BUILD",
+      "description": "인천 도화동 최대 80MW 데이터센터 신축. 2023-04 건축허가, 2026-10 착공 예정 보도(2026-08 기사). 특고압선 약 4.7km 매설 예정. 주민 반대(전자파·소음)로 민관협의체 운영 중 — 착공 지연 리스크",
+      "amount": null,
+      "unit": null,
+      "period": "착공 2026-10(예정)~준공 미확인",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA50-P1-E02",
+        "KA50-P1-E03"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "임차인·운영사(통신사 위탁운영 여부) 공개 근거 없음. LG U+ 관여 보도 미발견",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA50-P1-E04"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA50-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "MyDART search_disclosures corp=01953091 (2024-01-01~2026-10-16, 전체 유형)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART)",
+      "source_url": "https://dart.fss.or.kr/",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024-FY2025",
+      "page_or_section": "공시 목록",
+      "quoted_statement": "total_available=0 (0 filings in window)",
+      "reported_value": "0",
+      "reported_unit": "건",
+      "verification_status": "VERIFIED",
+      "notes": "감사보고서 포함 공시 0건 → 펀드 재무(임대수익·투자부동산) DART로 확보 불가"
+    },
+    {
+      "evidence_id": "KA50-P1-E02",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "여기도, 저기도 민원…민선 9기 미추홀구, 민관협의로 푼다 / 기타 도화동 DC 보도(WebSearch 요약)",
+      "publisher": "twig24 등",
+      "source_url": "https://twig24.com/news/2026/08/26/20260826500171",
+      "document_id": null,
+      "publication_date": "2026-08-26",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(검색 요약)",
+      "quoted_statement": "도화동 765-18번지 일대 약 5만8000㎡ 부지에 최대 80㎿의 전력을 공급받는 지상 7층 규모 데이터센터 ... 2023년 4월 건축허가를 받았다",
+      "reported_value": "80; 58000",
+      "reported_unit": "MW; ㎡",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch DNS 차단으로 본문 미확인. 검색 요약 인용"
+    },
+    {
+      "evidence_id": "KA50-P1-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "Ⅰ. 수요 폭증하는 AIDC, 국내 현실은 (및 관련 보도, WebSearch 요약)",
+      "publisher": "아시아경제 외",
+      "source_url": "https://view.asiae.co.kr/article/2026081907142398428",
+      "document_id": null,
+      "publication_date": "2026-08-19",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(검색 요약)",
+      "quoted_statement": "산은인프라자산운용이 추진하며, 2023년 4월 미추홀구로부터 건축 인허가를 받고 2026년 10월 착공을 앞두고 ... 고압선이 ... 약 4.7km에 걸쳐 도화동 부지까지 매설될 예정",
+      "reported_value": "80; 4.7",
+      "reported_unit": "MW; km",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "영문판 기사는 시행사를 KB 계열로 표기했다는 요약 — 국문 원문(산은인프라)과 상충, 확인 필요"
+    },
+    {
+      "evidence_id": "KA50-P1-E04",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "WebSearch: 산은인프라자산운용 인천 데이터센터 펀드 임차 운영사",
+      "publisher": "(검색 결과 없음)",
+      "source_url": null,
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": null,
+      "quoted_statement": "임차인·운영사·사업비 관련 기사 미발견",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA50-P1-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "현대엔지니어링, 인천 원창동 50MW 데이터센터 수주…11월 착공 (WebSearch 요약)",
+      "publisher": "뉴스토마토",
+      "source_url": "https://newstomato.com/ReadNews.aspx?no=1315895",
+      "document_id": null,
+      "publication_date": "2026-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "제목/요약",
+      "quoted_statement": "인천 원창동 데이터센터 ... 총 사업규모 약 8700억원이며, 2029년 하반기 준공 예정으로 11월 착공",
+      "reported_value": "50; 8700",
+      "reported_unit": "MW; 억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "비교사례(L5)"
+    },
+    {
+      "evidence_id": "KA50-P1-E06",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "데이터센터 운용사 PDG, 1조 투자해 인천에 48MW 시설 구축 (ItNewsSearch 제목)",
+      "publisher": "AI타임스",
+      "source_url": "https://www.aitimes.com/news/articleView.html?idxno=204040",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "제목",
+      "quoted_statement": "데이터센터 운용사 PDG, 1조 투자해 인천에 48MW 시설 구축",
+      "reported_value": "1조; 48",
+      "reported_unit": "원; MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "date=null(Tier3 취급 원칙이나 언론사 제목). 비교사례"
+    }
+  ],
+  "comparables": [
+    {
+      "peer_account_or_company": "인천 원창동 DC(현대엔지니어링 시공)",
+      "metric": "사업비/MW",
+      "value": 8700,
+      "unit": "억원 per 50MW",
+      "why_comparable": "동일 인천권 2026 착공 신축 DC, 유사 규모",
+      "evidence_ids": [
+        "KA50-P1-E05"
+      ]
+    },
+    {
+      "peer_account_or_company": "Princeton Digital Group 인천",
+      "metric": "투자액/MW",
+      "value": 10000,
+      "unit": "억원 per 48MW",
+      "why_comparable": "인천권 신축 코로케이션 DC",
+      "evidence_ids": [
+        "KA50-P1-E06"
+      ]
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "dc_capacity_mw (최대 공급전력)",
+      "value": 80,
+      "unit": "MW",
+      "basis": "보도(최대 80MW 전력 공급)",
+      "evidence_ids": [
+        "KA50-P1-E02"
+      ]
+    },
+    {
+      "name": "capex_per_mw_benchmark",
+      "value": 174,
+      "unit": "억원/MW",
+      "basis": "DERIVED: 원창동 8700억/50MW=174; PDG 1조/48MW≈208 → 범위 174~208억/MW (사업비 정의 상이, 토지 포함 여부 미확인)",
+      "evidence_ids": [
+        "KA50-P1-E05",
+        "KA50-P1-E06"
+      ]
+    },
+    {
+      "name": "construction_start",
+      "value": "2026-10 (예정)",
+      "unit": "date",
+      "basis": "2026-08 보도; 주민 반대로 지연 가능",
+      "evidence_ids": [
+        "KA50-P1-E03"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": null,
+      "existing_value": "(기존 파일: 운용사 산은인프라 vs KIAMCO 브랜드 미확정)",
+      "new_value": "KIAMCO=산은인프라자산운용 영문약칭; 국문 기사 산은인프라가 도화동 DC 추진. 영문판은 KB 계열로 표기",
+      "unit": null,
+      "explanation": "영문 기사 오역 가능성. 국문 원문 우선",
+      "evidence_ids": [
+        "KA50-P1-E03"
+      ]
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "DART 공시 0건(감사보고서 없음): 임대수익·운용보수·투자부동산 미확보"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "not_found",
+      "detail": "재무 주석 없음"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "found",
+      "detail": "부지·허가·80MW·착공 예정 보도. 임차/운영 계약 미발견"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "found",
+      "detail": "인천 원창동 50MW 8700억, PDG 48MW 1조"
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": "엔진 처리"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "펀드 공시 검색",
+      "target": "corp 01953091",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "2024-01~2026-10 전체 0건",
+      "retryable": false
+    },
+    {
+      "step": "동명 법인 확인",
+      "target": "도화동데이터센터/키암코",
+      "tool": "MyDART-find_corp_code",
+      "level": "L1",
+      "result": "OK",
+      "detail": "01953091 단일; 키암코 계열 SPC 2건(항공·선박) 무관",
+      "retryable": false
+    },
+    {
+      "step": "IT뉴스 검색",
+      "target": "인천 도화동 데이터센터",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "null 결과",
+      "retryable": false
+    },
+    {
+      "step": "뉴스 검색 x5",
+      "target": "도화동 DC 용량·운영사·사업비",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "OK",
+      "detail": "80MW/부지/허가/착공예정 확보; 임차인·사업비·인수가 NOT_FOUND",
+      "retryable": false
+    },
+    {
+      "step": "본문 확인",
+      "target": "언론사",
+      "tool": "WebFetch",
+      "level": "L3",
+      "result": "BLOCKED",
+      "detail": "DNS 차단(프로토콜 §5) — 시도 안 함",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "임차인/운영사(LG U+ 위탁운영 여부) 및 임대차 조건(원/kW/월, 기간)",
+    "총사업비·PF 규모·토지 매입가",
+    "IT load(MW) vs 수전 80MW",
+    "실제 착공 여부(2026-10) 및 주민 반대 영향",
+    "펀드 감사보고서 미제출 사유(설립 2024-01, 외감 대상 여부)"
+  ]
+}

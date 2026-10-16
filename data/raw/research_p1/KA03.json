@@ -1,0 +1,121 @@
+{
+  "account_id": "KA03",
+  "original_name": "국민은행",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA03.json",
+  "facts": [
+    {
+      "fact_id": "KA03-P1-F01",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 2530.84,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산업무비. FY2024 2,350.46억"
+    },
+    {
+      "fact_id": "KA03-P1-F02",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 484.46,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA03-P1-F03",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 1258.18,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA03-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "국민은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001051",
+      "document_id": "20260313001051",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 30. 일반관리비 (1) (단위:백만원)",
+      "quoted_statement": "| 통신비 | 31,166 | 34,167 | ... | 지급수수료 | 133,832 | 137,422 | | 소모품비 | 13,328 | 13,914 | | 전산업무비 | 253,084 | 235,046 | ... | 합계 | 4,231,968 | 4,237,830 |",
+      "reported_value": "253,084",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA03-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "국민은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001051",
+      "document_id": "20260313001051",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 Ⅱ.투자활동 (단위 : 백만원)",
+      "quoted_statement": "| (9) 유형자산의 취득 | (125,818) | | (178,124) | ... | (11) 무형자산의 취득 | (48,446) | | (34,798) |",
+      "reported_value": "48,446",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "판관비 주석 IT 계정 대조",
+      "target": "rcept 20260313001051",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "KISA 값과 정합",
+      "retryable": false
+    }
+  ],
+  "open_questions": [],
+  "recovery_levels_tried": [
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA03-F11",
+      "existing_value": 5315,
+      "new_value": 2530.84,
+      "unit": "억원",
+      "explanation": "CONFIRM(반박 아님): 전산업무비 2,531억 = KISA IT 5,315억의 47.6%. 나머지는 IT 인건비(정보기술부문 인력 ≈1,885명)·감가/자본적지출로 설명 가능. 전산업무비+통신비+유무형취득 = 4,276억 < 5,315억 → KISA 값 정합",
+      "evidence_ids": [
+        "KA03-P1-E01",
+        "KA03-P1-E02"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": []
+}

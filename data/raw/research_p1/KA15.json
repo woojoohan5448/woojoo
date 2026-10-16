@@ -1,0 +1,235 @@
+{
+  "account_id": "KA15",
+  "original_name": "지에스네오텍(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-itsvc-cloud",
+  "supplement_to": "data/raw/research/KA15.json",
+  "entity": {
+    "legal_name_ko": "GS네오텍 주식회사",
+    "legal_name_en": "GS Neotek",
+    "corp_code": "00106030",
+    "stock_code": null,
+    "business_reg_no": "1138107384",
+    "parent_group": "GS 기업집단 계열(대규모기업집단현황공시 제출 확인)",
+    "related_key_accounts": [
+      "KA16"
+    ],
+    "industry_detail": "업종코드 42(전문직별 공사업) — 전기·통신공사 + IT 사업부(CDN·클라우드 MSP). 비상장",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "GS네오텍 법인 별도. CDN/클라우드 MSP 재판매 원가(AWS 재판매, 통신사 대역폭 구매)는 고객향 원가로 자체 IT 소비와 구분. 공사 부문 비IT",
+    "exclusions": "GS리테일(KA16) 등 GS 계열사. KA16이 GS네오텍 MSP/CDN 고객일 경우 공급자-구매자 중복 위험",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART 법인명 'GS네오텍 주식회사'(영문 GS Neotek). 감사보고서 법인으로 재무 API 미제공"
+  },
+  "evidence": [
+    {
+      "evidence_id": "KA15-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "GS네오텍(주) 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004517",
+      "document_id": "20260401004517",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "손익계산서 (단위: 원, K-GAAP)",
+      "quoted_statement": "Ⅰ. 매출액 | | 524,150,770,597 | | 496,775,564,553 / Ⅱ. 매출원가 | | 494,543,459,463 | | 475,332,020,199 / Ⅳ. 판매비와관리비 | | 21,700,711,185 | | 23,383,163,806 / Ⅴ. 영업이익(손실) | | 7,906,599,949 | | (1,939,619,452)",
+      "reported_value": "524,150,770,597",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA15-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "GS네오텍(주) 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004517",
+      "document_id": "20260401004517",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 16. 매출액 및 매출원가 (단위: 백만원; 당기 매출|원가, 전기 매출|원가)",
+      "quoted_statement": "공사수익 | 163,229 | 151,619 | 195,788 | 187,838 / 용역수익 | 360,286 | 342,924 | 300,395 | 287,494 / 임대수익 | 636 | - | 593 | - / 합 계 | 524,151 | 494,543 | 496,776 | 475,332",
+      "reported_value": "360,286",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA15-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "GS네오텍(주) 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004517",
+      "document_id": "20260401004517",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 17. 판매비와 관리비 (단위: 백만원)",
+      "quoted_statement": "통신비 | 48 | 47 / 감가상각비 | 513 | 528 / 지급수수료 | 2,914 | 3,210 / 합 계 | 21,701 | 23,382",
+      "reported_value": "48",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA15-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "GS네오텍(주) 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004517",
+      "document_id": "20260401004517",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 8. 유형자산 <당기> (단위: 백만원)",
+      "quoted_statement": "기계장치 | 7,375 | 6,044 | - | (4,127) | - | 9,292 / 집기비품 | 346 | 176 | - | (191) | - | 331 / 합계 | 30,538 | 6,220 | - | (4,760) | - | 31,998",
+      "reported_value": "6,220",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "KA15-P1-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 524150770597,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA15-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 496,775,564,553원 → +5.5%"
+    },
+    {
+      "fact_id": "KA15-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 516244170648,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA15-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "매출원가 494,543,459,463 + 판관비 21,700,711,185"
+    },
+    {
+      "fact_id": "KA15-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 7906599949,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA15-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA15-P1-F04",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 360286,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA15-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "용역수익(IT 인프라·CDN·클라우드 MSP 포함 추정, 원가 342,924백만원). 용역원가는 AWS 재판매·CDN 대역폭 등 고객향 원가로 자체 IT 소비 아님 — 세부 미공시"
+    },
+    {
+      "fact_id": "KA15-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 48,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA15-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "판관비 통신비 0.48억 — 본사 자체 통신 소비는 극소. 지급수수료 29.1억(전산 여부 미분해)"
+    },
+    {
+      "fact_id": "KA15-P1-F06",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 6220,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA15-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "이 중 기계장치 6,044백만원(CDN/IT 장비 추정, 미확인)"
+    },
+    {
+      "fact_id": "KA15-P1-F07",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 4760,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA15-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "KISA 공시 WebSearch 1회 — GS네오텍 수치 없음(ISO27001 취득 보도만)"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "IS, 부문별 매출·원가, 판관비, 유형자산"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 IT 비용 주석",
+      "target": "20260401004517",
+      "tool": "MyDART-download_document(find)",
+      "level": "L2",
+      "result": "OK",
+      "detail": "K-GAAP 감사보고서. '회선'·'전산' 비용 계정 없음; 매출원가 명세 미발췌",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시",
+      "target": "WebSearch 'GS네오텍 정보보호 공시'",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "수치 보도 없음",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "용역원가 3,429억 중 CDN 대역폭(통신사 구매)·AWS 재판매 원가 분해(매출원가명세서 미확보)",
+    "KISA 공시 의무 여부(ISMS/IDC 해당?)",
+    "기계장치 취득 60.4억의 성격"
+  ],
+  "drivers": [],
+  "competitive": [],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": []
+}

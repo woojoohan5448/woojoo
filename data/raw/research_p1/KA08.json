@@ -1,0 +1,241 @@
+{
+  "account_id": "KA08",
+  "original_name": "아마존",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-dc-defense",
+  "supplement_of": "data/raw/research/KA08.json",
+  "facts": [
+    {
+      "fact_id": "KA08-P1-F01",
+      "metric": "dc_investment",
+      "fiscal_year": null,
+      "value": 56000,
+      "unit": "억원",
+      "scope": "AWS 한국 누적 기집행 투자(AWS 발표 인용, 시점 2025-10 전후), 다년 누적",
+      "evidence_ids": [
+        "KA08-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "12.6조(누적 약속) 중 5.6조 집행 → 잔여 약 7조 = 2031년까지 추가 50억달러 약속과 정합"
+    },
+    {
+      "fact_id": "KA08-P1-F02",
+      "metric": "dc_capacity_mw",
+      "fiscal_year": 2027,
+      "value": 41,
+      "unit": "MW",
+      "scope": "울산 SK-AWS AI DC 1단계(2027-11)",
+      "evidence_ids": [
+        "KA08-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2029-02 103MW 확장(기존 KA08-F04와 일치), 장기 1GW 가능"
+    },
+    {
+      "fact_id": "KA08-P1-F03",
+      "metric": "korea_revenue",
+      "fiscal_year": null,
+      "value": null,
+      "unit": "억원",
+      "scope": "AWS Korea 법인",
+      "evidence_ids": [
+        "KA08-P1-E01",
+        "KA08-P1-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "NOT_FOUND: 유한책임회사로 감사보고서 공시 없음(DART 0건). 매출 대부분 해외법인 계상 보도. '7천억원' 루머는 2015~16년 전언으로 사용 불가"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA08-P1-D01",
+      "type": "DC_BUILD",
+      "description": "2026 신규 발표 미발견. 기존: 2031년까지 인천·경기 AIDC 50억달러+ 추가, 울산 40억달러(41MW 2027-11 → 103MW 2029-02), 누적 12.6조 약속 중 5.6조 기집행",
+      "amount": null,
+      "unit": null,
+      "period": "2025-2031",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA08-P1-E02"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "확인된 국내 파트너는 SK그룹(울산 건설·운영). 서울 리전 코로케이션 공급사 명시 보도 미발견",
+      "incumbent": "SK그룹(울산)",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA08-P1-E02",
+        "KA08-P1-E04"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA08-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "MyDART search_disclosures corp=01468283 (2015~2026)",
+      "publisher": "DART (PlayMCP MyDART)",
+      "source_url": "https://dart.fss.or.kr/",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2015-FY2025",
+      "page_or_section": "공시 목록",
+      "quoted_statement": "total_available=0",
+      "reported_value": "0",
+      "reported_unit": "건",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA08-P1-E02",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "AWS to invest $5bn in South Korea data centers / SK Group and AWS Ulsan (WebSearch 요약)",
+      "publisher": "DatacenterDynamics / Korea Herald",
+      "source_url": "https://www.datacenterdynamics.com/en/news/aws-to-invest-5bn-in-south-korea-data-centers/",
+      "document_id": null,
+      "publication_date": "2025-10-29",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "요약",
+      "quoted_statement": "first phase is slated for 41MW of data center capacity built by November 2027, expanding to 103MW by February 2029 ... 12.6 trillion won ... already invested 5.6 trillion won",
+      "reported_value": "41; 103; 12.6조; 5.6조",
+      "reported_unit": "MW; MW; 원; 원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "일부 페이지 2026-01 날짜 표기는 2025-10 APEC 발표 재게재"
+    },
+    {
+      "evidence_id": "KA08-P1-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "클라우드 국내 매출 비공개 관련 보도 (WebSearch 요약)",
+      "publisher": "디지털데일리 외",
+      "source_url": "https://www.ddaily.co.kr/page/view/2021041911524234087",
+      "document_id": null,
+      "publication_date": "2021-04-19",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "요약",
+      "quoted_statement": "AWS는 국내 매출 규모를 공개하지 않는다",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA08-P1-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "AWS 한국 데이터센터 투자 2026 (WebSearch 요약)",
+      "publisher": "뉴시스/한경",
+      "source_url": "https://www.newsis.com/view/NISX20251029_0003381896",
+      "document_id": null,
+      "publication_date": "2025-10-29",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "요약",
+      "quoted_statement": "인천, 경기 일대에 신규 AIDC 구축 등을 위해 2031년까지 총 50억달러가 넘는 투자 ... 울산 ... SK그룹이 건설",
+      "reported_value": "50억; 40억",
+      "reported_unit": "USD; USD",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "ulsan_mw_phase1_2027",
+      "value": 41,
+      "unit": "MW",
+      "basis": "보도",
+      "evidence_ids": [
+        "KA08-P1-E02"
+      ]
+    },
+    {
+      "name": "ulsan_mw_2029",
+      "value": 103,
+      "unit": "MW",
+      "basis": "보도",
+      "evidence_ids": [
+        "KA08-P1-E02"
+      ]
+    },
+    {
+      "name": "korea_cumulative_invested",
+      "value": 56000,
+      "unit": "억원",
+      "basis": "AWS 발표 인용(기집행)",
+      "evidence_ids": [
+        "KA08-P1-E02"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "AWS Korea 매출: DART 0건, 보도 비공개"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "found",
+      "detail": "투자 페이스(5.6조 기집행, 울산 41→103MW)"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_found",
+      "detail": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 공시",
+      "target": "01468283",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "0건(유한책임회사)",
+      "retryable": false
+    },
+    {
+      "step": "IT뉴스",
+      "target": "AWS 코리아 매출",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "null",
+      "retryable": false
+    },
+    {
+      "step": "매출 검색",
+      "target": "AWS코리아 매출 2025",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "공식 수치 없음",
+      "retryable": false
+    },
+    {
+      "step": "2026 투자 업데이트 x2",
+      "target": "AWS Korea DC 2026",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "OK",
+      "detail": "2026 신규 발표 없음; 5.6조 기집행·울산 일정 확보",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "AWS Korea 매출(국세청/신평사 DB 필요)",
+    "서울 리전 코로케이션 공급사(LG U+ 포함 여부)",
+    "인천 서구 자체 DC 가동 시점·MW",
+    "2026 신규 투자 발표 여부"
+  ]
+}

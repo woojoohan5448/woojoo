@@ -1,0 +1,223 @@
+{
+  "account_id": "KA04",
+  "original_name": "신한카드",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA04.json",
+  "facts": [
+    {
+      "fact_id": "KA04-P1-F01",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 289.91,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA04-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=통신비(일반관리비 주석). 28,991백만원. FY2024 331.14억. 일반관리비 주석에 '전산비/전산업무비' 계정 없음 → IT 운영비는 기타영업비용 등에 분산된 것으로 추정(미확인)"
+    },
+    {
+      "fact_id": "KA04-P1-F02",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 284.76,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA04-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 262.03억"
+    },
+    {
+      "fact_id": "KA04-P1-F03",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 179.99,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA04-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 318.53억. 전산기기 비중 미분리"
+    },
+    {
+      "fact_id": "KA04-P1-F04",
+      "metric": "security_budget",
+      "fiscal_year": 2025,
+      "value": 181,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA04-P1-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2025년 정보보호 예산(편성). KISA 실적 아님"
+    },
+    {
+      "fact_id": "KA04-P1-F05",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 8.2,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA04-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "KISA 공시 아님: 금감원 국감자료 IT예산 대비 정보보호예산 비중"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA04-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "신한카드 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001276",
+      "document_id": "20260318001276",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 36. 일반관리비 (단위: 백만원) 기타관리비",
+      "quoted_statement": "| 통신비 | 28,991 | 33,114 | ... | 감가상각비 소계 | 76,531 | 74,435 | ... | 합계 | 777,952 | 752,826 |",
+      "reported_value": "28,991",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA04-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "신한카드 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001276",
+      "document_id": "20260318001276",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 Ⅱ.투자활동 (단위: 백만원)",
+      "quoted_statement": "| 8. 유형자산의 취득 | (17,999) | | (31,853) | ... | 10. 무형자산의 취득 | (28,476) | | (26,203) |",
+      "reported_value": "28,476",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA04-P1-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "정보보호 예산 331억, 카드사 최대…KB국민카드 보안 강화 박차",
+      "publisher": "딜사이트",
+      "source_url": "https://dealsite.co.kr/articles/148998",
+      "document_id": null,
+      "publication_date": "2025-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025(예산)",
+      "page_or_section": "WebSearch 요약/인용(본문 미확인)",
+      "quoted_statement": "(검색요약) KB국민카드 331억원 ... 삼성카드(206억 원), 신한카드(181억 원)보다 높은 수준",
+      "reported_value": "181",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2025년 정보보호 예산 편성액(카드사 비교). WebFetch DNS 차단으로 본문 미확인."
+    },
+    {
+      "evidence_id": "KA04-P1-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "롯데카드 해킹 사태에 카드사 보안 관리 '비상'",
+      "publisher": "더구루",
+      "source_url": "https://www.theguru.co.kr/news/article.html?no=92314",
+      "document_id": null,
+      "publication_date": "2025-09",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024(예산)",
+      "page_or_section": "WebSearch 요약/인용(본문 미확인)",
+      "quoted_statement": "(검색요약) 신한카드의 지난해 정보보호 예산 비중은 8.2%로 전년보다 1.1%p 하락",
+      "reported_value": "8.2",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "IT 예산 대비 정보보호 예산 비중(금감원 국감자료 기반 추정). WebFetch DNS 차단으로 본문 미확인."
+    }
+  ],
+  "research_log": [
+    {
+      "step": "FY2025 사업보고서 판관비 주석 IT 계정",
+      "target": "rcept 20260318001276",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "일반관리비에 전산비 계정 없음; 통신비·감가상각·CF 유무형취득 확보. '용역비' 0건",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보기술부문 투자액",
+      "target": "카드사 비교기사",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "NOT_FOUND",
+      "detail": "신한카드 KISA 공시 수치 미발견(금융사 자율공시). 예산 기반 수치만 확보",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "신한카드 2024/2025 IT 예산 절대액(금감원 국감자료 원문)",
+    "기타영업비용 445,424백만원 내 전산 관련 비용 비중"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "found"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "TS model (SG&A×12.5%)",
+      "existing_value": 972.4,
+      "new_value": 2207,
+      "unit": "억원",
+      "explanation": "정보보호예산/비중 역산(연도 혼합) 기준 IT 예산이 SG&A 기반 TS의 약 2.3배. 참고로 동종 삼성카드 2024 IT 예산 1,685억(아시아경제). 저신뢰 역산이므로 확정 아님",
+      "evidence_ids": [
+        "KA04-P1-E03",
+        "KA04-P1-E04"
+      ]
+    }
+  ],
+  "comparables": [
+    {
+      "peer_account_or_company": "삼성카드",
+      "metric": "it_budget",
+      "value": 1685,
+      "unit": "억원",
+      "why_comparable": "동일 8개 전업카드사, 2024 IT 예산(금감원/이헌승 의원실, 아시아경제 2025-09-24)",
+      "evidence_ids": []
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "IT 예산 추정 교차(연도 불일치)",
+      "value": 2207,
+      "unit": "억원",
+      "basis": "2025 정보보호 예산 181억 / 2024 비중 8.2% ≈ 2,207억. 연도 혼합이므로 상한 검증용으로만 사용. 현행 TS(SG&A 7,779.5억×12.5%=972억)는 과소 가능성",
+      "evidence_ids": [
+        "KA04-P1-E03",
+        "KA04-P1-E04"
+      ]
+    }
+  ]
+}

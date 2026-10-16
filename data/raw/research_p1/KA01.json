@@ -1,0 +1,183 @@
+{
+  "account_id": "KA01",
+  "original_name": "LG CNS",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-recovery-ts",
+  "entity": {
+    "legal_name_ko": "(주)엘지씨엔에스",
+    "legal_name_en": "LG CNS Co., Ltd.",
+    "corp_code": "00139834",
+    "stock_code": "064400",
+    "business_reg_no": null,
+    "parent_group": "LG",
+    "related_key_accounts": [],
+    "industry_detail": "IT 서비스(SI)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "KISA 공시는 법인 별도",
+    "exclusions": null,
+    "entity_status": "CONFIRMED",
+    "entity_notes": "FY 확인 전용 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA01-P1-F01",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 469826210000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA01-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "4,698.26억은 302.44억(보안)과 동일 기사 세트(기존 KA01-E04)에서 쌍으로 보도되며 302.44억은 2026-07 기사에서 '올해(2026년 공시)' → FY2025 실적으로 판단. 기존 KA01-F09 연도(FY2025) 유지"
+    },
+    {
+      "fact_id": "KA01-P1-F02",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2024,
+      "value": 428498220000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA01-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "기존 KA01-E04 '4284억9822만원에서'의 전년값; 2025년 공시=FY2024"
+    },
+    {
+      "fact_id": "KA01-P1-F03",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 27366970000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA01-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "273.67억 = FY2024(2025 공시)"
+    },
+    {
+      "fact_id": "KA01-P1-F04",
+      "metric": "employees",
+      "fiscal_year": 2024,
+      "value": 6904.2,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA01-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "기존 E05의 '2025년 6904.2명'은 공시연도 라벨 → FY2024 실적으로 재분류"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA01-P1-E01",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "삼성SDS·LG CNS는 개별 공시...SK AX 사례로 본 정보보호 공개의 '한계'",
+      "publisher": "머니투데이방송(MTN)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026070114055297283",
+      "document_id": null,
+      "publication_date": "2026-07-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026년 공시 → FY2025",
+      "page_or_section": "본문(WebSearch 요약)",
+      "quoted_statement": "올해 투자액은 302억4400만원으로 전년보다 10.5% 늘었고, 전담 인력은 256명",
+      "reported_value": "302.44",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2026-07 발행 기사가 302.44억을 '올해'로 표기 = 2026년 공시분(FY2025 실적)"
+    },
+    {
+      "evidence_id": "KA01-P1-E02",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "[정보보호 공시] SKT·예스24 해킹사고 놀란 삼성전자 3561억 '통 큰 보험' 외 동사 관련 기사",
+      "publisher": "중앙이코노미뉴스(m-economynews)",
+      "source_url": "https://m-economynews.com/mobile/article.html?no=58358",
+      "document_id": null,
+      "publication_date": "2025-08 (검색 요약 기준)",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2025년 공시 → FY2024",
+      "page_or_section": "본문(WebSearch 요약)",
+      "quoted_statement": "LG전자, LG CNS, 현대오토에버 등 300억 육박 / 2024년 LG CNS의 총 임직원 수는 6713.3명 ... 2025년 ... 총 225.1명",
+      "reported_value": "~300",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2025년 발행 기사가 273.67억(≈300억 육박)을 보도 → 273.67억은 2025년 공시(FY2024). 기사들은 '공시연도'를 연도 라벨로 사용"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "KISA FY 확인",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "OK",
+      "detail": "2회 사용: MTN 2026-07-01 302.44억 '올해'; 2025년 기사 '300억 육박'",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 포털 원문으로 4,698.26억(FY2025) 최종 확인"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "FY 판별(SECONDARY)"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA01-F09",
+      "existing_value": 469826210000,
+      "new_value": 469826210000,
+      "unit": "원",
+      "explanation": "연도 불일치 없음: 4,698.26억은 FY2025(2026년 공시). 다만 기존 KA01-E05(MTN)는 공시연도를 FY처럼 표기해 231.8억=‘2024년’, 273.7억=‘2025년’이라 했음 → 실제 FY2023/FY2024. 엔진은 E05 연도 라벨을 -1년 보정해야 함",
+      "evidence_ids": [
+        "KA01-P1-E01",
+        "KA01-P1-E02"
+      ]
+    },
+    {
+      "existing_fact_id": "KA01-F14",
+      "existing_value": 6904.2,
+      "new_value": 6904.2,
+      "unit": "명",
+      "explanation": "기존 FY2025로 기록된 총 임직원 6,904.2명은 2025년 공시값(FY2024 실적)일 가능성 높음(같은 매체가 '2024년 6713.3명'을 그 전년 값으로 보도). fiscal_year 2025→2024 보정 권고",
+      "evidence_ids": [
+        "KA01-P1-E02"
+      ]
+    },
+    {
+      "existing_fact_id": "KA01-F10",
+      "existing_value": 30243970000,
+      "new_value": 30244000000,
+      "unit": "원",
+      "explanation": "MTN 2026-07-01도 302.44억을 '올해' 공시로 보도, 전담인력 256명(기존 E05의 225.1명은 전년 공시)",
+      "evidence_ids": [
+        "KA01-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "정보보호 전담인력(2026 공시, FY2025)",
+      "value": 256,
+      "unit": "명",
+      "basis": "MTN 2026-07-01",
+      "evidence_ids": [
+        "KA01-P1-E01"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "account_id": "KA43",
+  "original_name": "Valve Corporation",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-global-netco",
+  "supplement_of": "data/raw/research/KA43.json",
+  "facts": [],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA43-P1-E01",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "Steam CDN - South Korea",
+      "publisher": "Netify",
+      "source_url": "https://www.netify.ai/resources/cdn/steam-cdn/country/kr",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "Steam CDN points of presence in Seoul ... typically placed inside ISPs and internet exchanges ... runs on Valve's network plus ISP partner networks",
+      "reported_value": "~30",
+      "reported_unit": "IPs",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "기존 KA43-E(26 IPs)와 근사; 제3자 측정"
+    },
+    {
+      "evidence_id": "KA43-P1-E02",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "스팀 국내 사업자등록 없는 해외업체 보도 / 페이코-Degica 결제",
+      "publisher": "게임메카",
+      "source_url": "https://www.gamemeca.com/view.php?gid=532470",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "'스팀'은 글로벌 PC게임 유통 플랫폼으로, 국내 사업을 목적으로 사업자등록을 하지 않은 해외 업체",
+      "reported_value": "NOT_APPLICABLE",
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "한국 법인 부재 정황"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "ItNews",
+      "target": "스팀 캐시서버",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "null",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch",
+      "target": "Steam Korea ISP cache",
+      "tool": "WebSearch",
+      "level": "L2",
+      "result": "NOT_FOUND",
+      "detail": "Netify IP 수만",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch",
+      "target": "밸브 한국 법인",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "국내 사업자등록 없음 보도",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "Steam 서울 노드 호스팅 ISP/IDC",
+    "한국 Steam 트래픽 규모"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "한국 법인 없음, 비상장"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "not_found",
+      "detail": "한국 ISP 캐시/피어링 계약·트래픽 Gbps 공개 근거 없음"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "detail": ""
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": ""
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [],
+  "account_status_note": "KOREA 앵커 NOT_FOUND → INSUFFICIENT_EVIDENCE 유지"
+}

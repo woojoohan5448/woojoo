@@ -1,0 +1,549 @@
+{
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-korea-cloud-anchors",
+  "purpose": "용량 기반 TS 모델 입력(TS ≈ MW × 연간 MW당 비용)",
+  "items": [
+    {
+      "item_id": "DCB01",
+      "topic": "수도권 평균 상면(코로케이션) 임대료",
+      "metric": "colocation_price",
+      "value": 250000,
+      "unit": "원/kW (기간 미표기, 월 추정)",
+      "year": 2025,
+      "scope": "수도권 평균(CBRE코리아 인용)",
+      "evidence_ids": [
+        "DCB-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "업계 관행상 kW당 월 단가로 해석 시 25만원/kW/월 → 연 300만원/kW = 30억원/MW/년(전력비 별도 여부 불명). 2019년 14만원/kW."
+    },
+    {
+      "item_id": "DCB02",
+      "topic": "수도권 임대료 추가 상승",
+      "metric": "colocation_price_growth",
+      "value": "10-20",
+      "unit": "%",
+      "year": "2H2025-2026",
+      "scope": "Greater Seoul",
+      "evidence_ids": [
+        "DCB-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB03",
+      "topic": "서울 리테일 풀랙 가격(단일 사업자)",
+      "metric": "colocation_price",
+      "value": 550,
+      "unit": "USD/rack/month (10A 포함)",
+      "year": null,
+      "scope": "서울 리테일 — Tier3",
+      "evidence_ids": [
+        "DCB-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB04",
+      "topic": "Wholesale colocation USD/kW/month (서울)",
+      "metric": "colocation_price",
+      "value": null,
+      "unit": "USD/kW/month",
+      "year": 2025,
+      "scope": "서울",
+      "evidence_ids": [],
+      "verification_status": "NOT_FOUND",
+      "analyst_interpretation": "Structure Research·ResearchAndMarkets·Arizton 유료보고서에만 존재(유료벽) — 수치 미확보"
+    },
+    {
+      "item_id": "DCB05",
+      "topic": "한국 DC 개발비",
+      "metric": "dc_construction_cost_per_mw",
+      "value": 176,
+      "unit": "억원/MW",
+      "year": 2026,
+      "scope": "한국(아태 최고 수준)",
+      "evidence_ids": [
+        "DCB-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB06",
+      "topic": "현대건설 용인 죽전 하이퍼스케일 DC 사업비",
+      "metric": "dc_construction_cost_per_mw",
+      "value": 203,
+      "unit": "억원/MW(IT)",
+      "year": null,
+      "scope": "단일 프로젝트 — 1.3조원/IT 64MW (수전 100MW 기준 130억원/MW)",
+      "evidence_ids": [
+        "DCB-E05"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "13,000억원 ÷ 64MW = 203.1억원/MW. 토지비 포함 여부 불명"
+    },
+    {
+      "item_id": "DCB07",
+      "topic": "글로벌 MW당 구축비(참고)",
+      "metric": "dc_construction_cost_per_mw",
+      "value": 11.3,
+      "unit": "USD_mn/MW (AI 최적화 20)",
+      "year": null,
+      "scope": "글로벌 — Tier3",
+      "evidence_ids": [
+        "DCB-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB08",
+      "topic": "산업용 전력 판매단가 2025",
+      "metric": "industrial_power_tariff",
+      "value": 181.9,
+      "unit": "원/kWh",
+      "year": 2025,
+      "scope": "한국 산업용 평균",
+      "evidence_ids": [
+        "DCB-E07"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB09",
+      "topic": "산업용(을) 요금 2024-10 인상 후",
+      "metric": "industrial_power_tariff",
+      "value": 183,
+      "unit": "원/kWh",
+      "year": 2024,
+      "scope": "산업용(을)",
+      "evidence_ids": [
+        "DCB-E08"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026-03 계시별 개편은 24시간 균등부하 기준 약 -1원/kWh로 분석(증권사) — 사실상 동일 수준"
+    },
+    {
+      "item_id": "DCB10",
+      "topic": "PUE — 국내 평균(구 자료)",
+      "metric": "pue",
+      "value": 2.3,
+      "unit": "PUE",
+      "year": 2012,
+      "scope": "국내 평균(지경부, 구 자료)",
+      "evidence_ids": [
+        "DCB-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB11",
+      "topic": "PUE — 국내 신규 상업용 DC 설계/실적",
+      "metric": "pue",
+      "value": 1.4,
+      "unit": "PUE",
+      "year": 2014,
+      "scope": "LG U+ 도심 IDC 목표 ≤1.4, LG CNS 부산 1.39",
+      "evidence_ids": [
+        "DCB-E10"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB12",
+      "topic": "PUE — 글로벌 평균",
+      "metric": "pue",
+      "value": 1.58,
+      "unit": "PUE",
+      "year": 2026,
+      "scope": "글로벌",
+      "evidence_ids": [
+        "DCB-E11"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "item_id": "DCB13",
+      "topic": "PUE — 최근 국내 평균",
+      "metric": "pue",
+      "value": null,
+      "unit": "PUE",
+      "year": 2025,
+      "scope": "국내",
+      "evidence_ids": [],
+      "verification_status": "NOT_FOUND",
+      "analyst_interpretation": "2020년대 국내 평균 PUE 공식 통계 미발견"
+    },
+    {
+      "item_id": "DCB14",
+      "topic": "수도권 운영 DC 용량",
+      "metric": "dc_capacity_mw",
+      "value": 663,
+      "unit": "MW",
+      "year": "H1 2026",
+      "scope": "수도권(C&W)",
+      "evidence_ids": [
+        "DCB-E12"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "H1 2025 533MW(파이프라인 715MW). 코로 공실률 1.1%"
+    },
+    {
+      "item_id": "DCB15",
+      "topic": "수도권 DC 전력 최종 승인",
+      "metric": "dc_capacity_mw",
+      "value": 1010,
+      "unit": "MW",
+      "year": "2024.08-2026.03",
+      "scope": "수도권 신청 522건/33,592MW 중 승인 10건",
+      "evidence_ids": [
+        "DCB-E13"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "전력비(1MW IT, 100% 부하, PUE 1.4, 181.9원/kWh)",
+      "value": 22.31,
+      "unit": "억원/MW/년",
+      "basis": "1,000kW×1.4×8,760h×181.9원 = 2,230,821,600원 (DERIVED)",
+      "evidence_ids": [
+        "DCB-E07",
+        "DCB-E10"
+      ]
+    },
+    {
+      "name": "전력비(1MW IT, 100% 부하, PUE 1.5)",
+      "value": 23.9,
+      "unit": "억원/MW/년",
+      "basis": "1,000kW×1.5×8,760h×181.9원 = 2,390,166,000원 (DERIVED)",
+      "evidence_ids": [
+        "DCB-E07"
+      ]
+    },
+    {
+      "name": "코로케이션 임대료(25만원/kW/월 가정)",
+      "value": 30.0,
+      "unit": "억원/MW/년",
+      "basis": "250,000원×1,000kW×12 — 월 단위 해석 가정, 전력비 포함 여부 불명 (DERIVED)",
+      "evidence_ids": [
+        "DCB-E01"
+      ]
+    },
+    {
+      "name": "건설비 연환산(176억원/MW, 20년 정액)",
+      "value": 8.8,
+      "unit": "억원/MW/년",
+      "basis": "단순 정액 — 금융비용 제외 (DERIVED, 참고용)",
+      "evidence_ids": [
+        "DCB-E04"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "DCB-E01",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "수도권 데이터센터 공실률·임대료 (CBRE코리아 보고서 인용)",
+      "publisher": "세계일보",
+      "source_url": "https://www.segye.com/newsView/20260713507531",
+      "document_id": null,
+      "publication_date": "2026-07-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2019/2025",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "수도권 데이터센터 공실률은 5% 미만을 유지하고 있으며, 평균 상면 임대료도 2019년 약 14만원/킬로와트(kW)에서 2025년 약 25만원/kW로 70% 이상 올랐다.",
+      "reported_value": "250000",
+      "reported_unit": "원/kW (기간 단위 미표기)",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "월 단위 여부 원문 미확인. 같은 기사: CSP·대형 IT 기업이 임차 수요의 약 88%"
+    },
+    {
+      "evidence_id": "DCB-E02",
+      "tier": 2,
+      "source_type": "RESEARCH_REPORT",
+      "source_title": "CBRE 2026 Asia Pacific outlook (via Real Estate Asia)",
+      "publisher": "Real Estate Asia / CBRE",
+      "source_url": "https://realestateasia.com/indonesian/node/514607084",
+      "document_id": null,
+      "publication_date": "2026",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "Intensifying competition has pushed rents up by a further 10% to 20% since the second half of 2025, with some pre-leasing agreements previously secured at fixed rents now subject to annual rent escalations during lease terms.",
+      "reported_value": "10-20",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "Greater Seoul. 공실 5% 미만, 신규 10~20kW/rack 설계"
+    },
+    {
+      "evidence_id": "DCB-E03",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "Netrealty.kr Seoul retail colocation offer",
+      "publisher": "LowEndTalk",
+      "source_url": "https://lowendtalk.com/discussion/comment/4470325/",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "게시글(WebSearch 요약 인용)",
+      "quoted_statement": "Full Rack: $550/Month (includes 10A power supply)",
+      "reported_value": "550",
+      "reported_unit": "USD/rack/month (retail)",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "소형 사업자 리테일 프로모션, 날짜 불명 — wholesale 근거 불가"
+    },
+    {
+      "evidence_id": "DCB-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "수도권 데이터센터 개발비 MW당 약 176억원…아태 최고 수준",
+      "publisher": "파이낸셜뉴스/뉴시스",
+      "source_url": "https://www.fnnews.com/news/202607140530463480",
+      "document_id": null,
+      "publication_date": "2026-07-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "소제목(WebSearch 요약 인용)",
+      "quoted_statement": "개발비 MW당 약 176억원…아태 최고 수준",
+      "reported_value": "176",
+      "reported_unit": "억원/MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "'개발비'(토지 포함 여부 불명). URL은 검색결과 목록 기준 — 해당 소제목 게재 기사 URL 교차확인 필요"
+    },
+    {
+      "evidence_id": "DCB-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "현대건설, 국내 최대 하이퍼스케일 데이터센터 준공",
+      "publisher": "스마트투데이",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/94370",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "총 1조3000억 원 규모의 민간사업 ... IT Load 64MW와 수전 용량 100MW",
+      "reported_value": "1300000000000",
+      "reported_unit": "원 (IT 64MW)",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "용인 죽전 DC. 토지비 포함 여부 불명"
+    },
+    {
+      "evidence_id": "DCB-E06",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "데이터 센터 구축 및 운영 비용은 얼마일까?",
+      "publisher": "brunch(개인 블로그)",
+      "source_url": "https://brunch.co.kr/@grandmer/1006",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "MW당 구축 비용은 표준 데이터 센터는 약 $1,130만 (150억 원)이며 AI 최적화 데이터 센터의 경우는 $2천만 불로 약 270억 원이다.",
+      "reported_value": "11.3",
+      "reported_unit": "USD_mn/MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "글로벌 일반치 — 한국 한정 아님"
+    },
+    {
+      "evidence_id": "DCB-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "산업용 전기요금 판매단가 (2025년 기준)",
+      "publisher": "뉴데일리경제",
+      "source_url": "https://biz.newdaily.co.kr/site/data/html/2026/02/26/2026022600420.html",
+      "document_id": null,
+      "publication_date": "2026-02-26",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2025",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "지난해 기준 산업용 전기요금 판매단가는 kWh당 181.9원으로 주택용(159.0원)보다 비쌌다.",
+      "reported_value": "181.9",
+      "reported_unit": "원/kWh",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "한전 원자료(EPSIS) 교차확인 필요"
+    },
+    {
+      "evidence_id": "DCB-E08",
+      "tier": 2,
+      "source_type": "RESEARCH_REPORT",
+      "source_title": "한국전력 기업분석 (2024-10)",
+      "publisher": "증권사 리포트(alphasquare 게재)",
+      "source_url": "https://file.alphasquare.co.kr/media/pdfs/company-report/20241113111519091_0_ko.pdf",
+      "document_id": null,
+      "publication_date": "2024-11-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2024",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "산업용(을) 전기요금은 166→183원/kWh(+10.2%)",
+      "reported_value": "183",
+      "reported_unit": "원/kWh",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2024-10-24 인상 반영 산업용(을) 요금 수준"
+    },
+    {
+      "evidence_id": "DCB-E09",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "국내 데이터센터 PUE 평균 2.3 (지식경제부)",
+      "publisher": "재경일보",
+      "source_url": "https://news.jkn.co.kr/post/685231",
+      "document_id": null,
+      "publication_date": "2012",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "지식경제부는 국내 데이터센터의 PUE를 평균 2.3으로 보았고, 구글(1.1)과 페이스북(1.07)에 비해 격차가 크다(요약)",
+      "reported_value": "2.3",
+      "reported_unit": "PUE",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2012년 전후 자료 — 현재 평균으로 사용 불가"
+    },
+    {
+      "evidence_id": "DCB-E10",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "데이터센터 PUE 사례(LG U+ 도심 IDC 1.4 이하 목표, LG CNS 부산 1.39)",
+      "publisher": "뉴데일리/LG",
+      "source_url": "https://biz.newdaily.co.kr/site/data/html/2014/08/04/2014080410009.amp.html",
+      "document_id": null,
+      "publication_date": "2014-08-04",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "LG유플러스는 도심 상업용 IDC 가운데 처음으로 PUE 1.4 이하를 목표 / LG CNS 부산센터는 연평균 PUE 1.39(요약)",
+      "reported_value": "1.4",
+      "reported_unit": "PUE",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "신규 상업용 DC 설계 목표치 수준"
+    },
+    {
+      "evidence_id": "DCB-E11",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "데이터센터 전력수요 급증 전망에 기후장관 \"과잉된 면 있어\" [2026 국감]",
+      "publisher": "SBS Biz",
+      "source_url": "https://biz.sbs.co.kr/amp/article/20000338570",
+      "document_id": null,
+      "publication_date": "2026-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "세계 평균 데이터센터 PUE가 1.58(요약)",
+      "reported_value": "1.58",
+      "reported_unit": "PUE",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "글로벌 평균(Uptime 1.58과 동일)"
+    },
+    {
+      "evidence_id": "DCB-E12",
+      "tier": 2,
+      "source_type": "RESEARCH_REPORT",
+      "source_title": "APAC data centre development pipeline reaches record 26.5GW in H1 2026",
+      "publisher": "Cushman & Wakefield Korea",
+      "source_url": "https://www.cushmanwakefield.com/ko-kr/south-korea/news/2026/08/apac-data-centre-development-pipeline-reaches-record-26-5gw-in-h1-2026",
+      "document_id": null,
+      "publication_date": "2026-08",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "H1 2026",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "2026년 상반기 수도권 운영 용량은 10% 증가한 663MW를 기록했으며, 코로케이션 공실률은 2025년 하반기 6.9%에서 2026년 상반기 1.1%로 급격히 감소했다.",
+      "reported_value": "663",
+      "reported_unit": "MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "H1 2025: 운영 533MW, 파이프라인 715MW (w.media 인용 C&W)"
+    },
+    {
+      "evidence_id": "DCB-E13",
+      "tier": 2,
+      "source_type": "RESEARCH_REPORT",
+      "source_title": "국내 AI 데이터센터 프로젝트 4건의 가동 준비 현황과 손익분기 조건",
+      "publisher": "블록미디어",
+      "source_url": "https://www.blockmedia.co.kr/archives/1141412",
+      "document_id": null,
+      "publication_date": "2026",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "2024년 8월부터 2026년 3월까지 수도권 데이터센터 전력계통영향평가 1차 기술검토를 신청한 건수는 총 522건으로, 신청 용량은 3만 3,592메가와트(MW)에 달했다. 그러나 최종 공급 승인을 받은 사업은 10건(1,010MW)에 그쳤다.",
+      "reported_value": "1010",
+      "reported_unit": "MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "서울 wholesale USD/kW/월",
+      "target": "WebSearch(3회)",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "NOT_FOUND",
+      "detail": "유료 보고서(Structure Research, R&M, Arizton)에만 존재",
+      "retryable": false
+    },
+    {
+      "step": "수도권 상면 임대료 원/kW",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "OK",
+      "detail": "25만원/kW(2025, CBRE 인용) — 월 단위 표기 미확인",
+      "retryable": false
+    },
+    {
+      "step": "MW당 건설비",
+      "target": "WebSearch(2회)",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "OK",
+      "detail": "176억원/MW(개발비), 죽전 1.3조/64MW",
+      "retryable": false
+    },
+    {
+      "step": "산업용 전기요금",
+      "target": "WebSearch(2회)",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "OK",
+      "detail": "2025 산업용 판매단가 181.9원/kWh",
+      "retryable": false
+    },
+    {
+      "step": "PUE",
+      "target": "WebSearch(2회)",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "NOT_FOUND",
+      "detail": "최근 국내 평균 없음 — 구자료 2.3, 사례 1.39~1.4, 글로벌 1.58",
+      "retryable": false
+    },
+    {
+      "step": "ItNews 코로케이션 단가",
+      "target": "ItNewsSearch-News_Article",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L4",
+      "result": "NOT_FOUND",
+      "detail": "결과 null",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사 기사 본문",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "§5-1 및 지시에 따라 환경 전체 DNS 차단 — 시도 생략, WebSearch 요약으로 대체(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "25만원/kW의 기간 단위(월) 및 전력비 포함 여부 — CBRE코리아 원보고서 확인",
+    "하이퍼스케일 wholesale(대형 선임차) 단가는 평균보다 낮을 가능성",
+    "최근 국내 평균 PUE 공식 통계"
+  ]
+}

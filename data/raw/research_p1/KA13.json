@@ -1,0 +1,160 @@
+{
+  "account_id": "KA13",
+  "original_name": "롯데이노베이트",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-kospi-it",
+  "supplement_of": "data/raw/research/KA13.json",
+  "entity": {
+    "legal_name_ko": "롯데이노베이트(주)",
+    "corp_code": "01262032",
+    "stock_code": "286940",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research 파일 entity 그대로; 본 파일은 Phase1 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA13-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 2887,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA13-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "부문별 남녀 sm 합산"
+    },
+    {
+      "fact_id": "KA13-P1-F02",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 49714,
+      "unit": "백만원",
+      "scope": "연결(추정) 유형+무형 취득 합계",
+      "evidence_ids": [
+        "KA13-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DC 사업자이므로 자사 IT/DC capex 성격. 무형만 분리 불가"
+    },
+    {
+      "fact_id": "KA13-P1-F03",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2024,
+      "value": 86640,
+      "unit": "백만원",
+      "scope": "연결(추정) 유형+무형 취득 합계",
+      "evidence_ids": [
+        "KA13-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA13-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "FY2025 사업보고서 직원현황(OpenDART API)",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000002",
+      "document_id": "20260313000002",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "OpenDART get_employees 11011 FY2025 (SM/SI/기타 남녀)",
+      "quoted_statement": "sm: 688+388+1,196+351+127+137",
+      "reported_value": "2887",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA13-P1-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000002",
+      "document_id": "20260313000002",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "IV. 4. 유동성 및 자금조달과 지출 — 다. 주요지출 현황 (단위: 백만원)",
+      "quoted_statement": "| 유형자산 및 무형자산의 취득 | 49,714 | 86,640 | -36,926 | (제9기|제8기|증감)",
+      "reported_value": "49714",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "연결 기준으로 추정(경영진단 섹션); DC 설비 포함"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원수",
+      "target": "OpenDART",
+      "tool": "opendart-get_employees",
+      "level": "L2",
+      "result": "OK",
+      "detail": "2,887명",
+      "retryable": false
+    },
+    {
+      "step": "IT 비용 계정",
+      "target": "사업보고서 20260313000002",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "전산비·전산운영비·통신비 0건(통신비 계정 미공시); 유·무형 취득 합계만",
+      "retryable": false
+    },
+    {
+      "step": "KISA 공시",
+      "target": "WebSearch 2회",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "롯데 계열(롯데쇼핑·롯데케미칼)만 보도, 롯데이노베이트 수치 없음",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA FY2024/25 IT·정보보호 투자액",
+    "현금흐름표 무형자산 취득 단독 금액(MyDART sections로 후속)"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [
+    {
+      "peer_account_or_company": "신세계아이앤씨(KA11)",
+      "metric": "kisa_it_investment",
+      "value": 560.2916,
+      "unit": "억원",
+      "why_comparable": "그룹 캡티브 IT서비스·DC 운영사, FY2023",
+      "evidence_ids": [
+        "KA11-P1-E04"
+      ]
+    }
+  ],
+  "estimation_inputs": []
+}

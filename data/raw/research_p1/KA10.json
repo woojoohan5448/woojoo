@@ -1,0 +1,288 @@
+{
+  "account_id": "KA10",
+  "original_name": "네이버클라우드",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-itsvc-cloud",
+  "supplement_to": "data/raw/research/KA10.json",
+  "entity": {
+    "legal_name_ko": "네이버클라우드 주식회사",
+    "legal_name_en": "NAVER Cloud Corp.",
+    "corp_code": "00777272",
+    "stock_code": null,
+    "business_reg_no": "1298631394",
+    "parent_group": "NAVER(주) (corp_code 00266961) 자회사",
+    "related_key_accounts": [],
+    "industry_detail": "클라우드(IaaS/PaaS/SaaS)·데이터센터(각 춘천/세종) 운영·하이퍼클로바X 인프라. 비상장(corp_cls=E), 업종코드 6312",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "네이버클라우드 법인 별도. 모회사 NAVER 및 기타 계열사 제외. 고객 대상 클라우드 매출원가(재판매)는 자체 IT 소비 아님",
+    "exclusions": "NAVER(주), 네이버웹툰, 라인 등. NAVER 본사의 DC 자산 보유 여부(각 춘천/세종 소유 주체)는 미확인",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company '네이버클라우드' → 00777272, get_company_info 'NAVER Cloud Corp.'. 비상장 외감법인으로 재무 API(fnlttSinglAcnt) 미제공(013). FY2025 감사보고서 rcept 20260330001776 존재"
+  },
+  "evidence": [
+    {
+      "evidence_id": "KA10-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "네이버클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330001776",
+      "document_id": "20260330001776",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서 영업수익 행 / 주석 24 (단위: 원·천원)",
+      "quoted_statement": "I. 영업수익 | 24 | | 1,554,457,954,788 / 주석24: 기간에 걸쳐 인식 | 1,554,457,955 | 1,389,734,723 / 합 계 | 1,554,457,955 | 1,399,014,431",
+      "reported_value": "1,554,457,954,788",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA10-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "네이버클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330001776",
+      "document_id": "20260330001776",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 25. 영업비용 (단위: 천원)",
+      "quoted_statement": "급여 | 252,918,974 | 257,774,084 / 유형자산상각비 | 299,688,979 | 240,325,135 / 무형자산상각비 | 2,205,244 | 2,068,431 / 통신비 | 226,526,088 | 207,707,839 / 지급수수료 | 335,054,214 | 324,113,611 / 사용권자산상각비 | 151,019,242 | 156,815,701 / 합 계 | 1,395,235,631 | 1,291,674,487",
+      "reported_value": "1,395,235,631",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA10-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "네이버클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330001776",
+      "document_id": "20260330001776",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 투자활동 (단위: 원)",
+      "quoted_statement": "1. 유형자산의 취득 | | (620,374,203,157) | | (438,209,740,241) / 2. 유형자산의 처분 | | 917,310,976,545 | | 26,148,104,675 / 3. 무형자산의 취득 | | (1,005,453,482) | | (4,780,127,841)",
+      "reported_value": "620,374,203,157",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA10-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "네이버클라우드 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330001776",
+      "document_id": "20260330001776",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 24 (2)",
+      "quoted_statement": "회사의 영업수익 대부분은 지배기업인 네이버 주식회사와 관계기업 및 기타특수관계자에게 제공하는 IT인프라서비스 및 사내정보시스템 위탁 운영 서비스 등에서 발생하며, 주로 국내에서 발생하고 있습니다",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA10-P1-E05",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "기업데이터연구소 CEO스코어 정보보호 현황 분석(검색 요약)",
+      "publisher": "아시아경제",
+      "source_url": "https://view.asiae.co.kr/article/2025070915033542260",
+      "document_id": null,
+      "publication_date": "2025-07-09",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "검색 요약",
+      "quoted_statement": "네이버클라우드의 정보보호 투자액은 333억원 ... 국내 플랫폼 3사 네이버, 카카오, 네이버클라우드의 지난해 IT 투자액 대비 정보보호 투자 비중은 각각 3.5%, 4.5%, 5.1%",
+      "reported_value": "33300000000",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "기존 KA10-E03과 동일 수치 재확인. FY2025(2026 공시) 수치는 WebSearch 3회로 미발견"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "KA10-P1-F01",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 1554457954788,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 1,399,014,431천원 → +11.1%. 대부분 NAVER 및 계열 대상 매출(캡티브)"
+    },
+    {
+      "fact_id": "KA10-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 1395235631,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 1,291,674,487천원"
+    },
+    {
+      "fact_id": "KA10-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 159222324,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E01",
+        "KA10-P1-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "영업수익 1,554,457,955 - 영업비용 1,395,235,631 (천원). IS 영업이익 행은 직접 미열람"
+    },
+    {
+      "fact_id": "KA10-P1-F04",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 299688979,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "유형자산상각비 2,997억(FY2024 2,403억). 사용권 1,510억 별도"
+    },
+    {
+      "fact_id": "KA10-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 226526088,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "통신비 2,265억(FY2024 2,077억) — 회선·IDC 백본 구매. NAVER 그룹·외부 고객 서비스 제공 원가이지만 통신사 직접 매출 풀"
+    },
+    {
+      "fact_id": "KA10-P1-F06",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 335054214,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "지급수수료 3,351억 — 외주·SW 라이선스·재판매 원가 혼재, 미분해"
+    },
+    {
+      "fact_id": "KA10-P1-F07",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 620374203157,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 438,209,740,241원 → +41.6%. 동시에 유형자산 처분 917,310,976,545원(FY2025) — 대규모 자산 매각/세일앤리스백 가능성"
+    },
+    {
+      "fact_id": "KA10-P1-F08",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 1005453482,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA10-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA10-F06",
+      "existing_value": 652900000000,
+      "new_value": null,
+      "unit": "원",
+      "explanation": "직접 반박 근거 아님. 기존 FY2024 KISA IT 투자액 6,529억(DERIVED: 333억/5.1%)에 대해 FY2024 감사보고서 대비: 유형자산 취득 4,382억, 유형상각 2,403억+사용권 1,568억+통신비 2,077억+지급수수료 3,241억(합 9,289억). KISA 'IT투자'는 감가상각 기준(회사 설명: 내용연수 4→5년 변경으로 감소)이므로 6,529억은 opex(12,917억)의 약 51%로 정합적. FY2025 KISA 값 미확보 → 업데이트 불가",
+      "evidence_ids": [
+        "KA10-P1-E02",
+        "KA10-P1-E03",
+        "KA10-P1-E05"
+      ]
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "IT성 비용 합계(유형상각+사용권+통신비) FY2025",
+      "value": 677234309,
+      "unit": "천원",
+      "basis": "DERIVED 299,688,979+151,019,242+226,526,088. KISA IT 투자 FY2025 대체 프록시(대부분 고객 서비스 제공 인프라)",
+      "evidence_ids": [
+        "KA10-P1-E02"
+      ]
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "FY2025 KISA(2026 공시) WebSearch 3회 미발견; FY2024 333억/5.1% 재확인"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "감사보고서 영업비용·CF"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서",
+      "target": "20260330001776",
+      "tool": "MyDART-download_document(find)",
+      "level": "L2",
+      "result": "OK",
+      "detail": "주석25 영업비용, CF, 주석24 수익",
+      "retryable": false
+    },
+    {
+      "step": "KISA FY2025",
+      "target": "WebSearch x3",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "2026년 공시 보도 미발견",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "FY2025 KISA IT/정보보호 투자액",
+    "유형자산 처분 9,173억(FY2025)의 대상(DC/서버 매각·NAVER 이전·세일앤리스백?)",
+    "통신비 2,265억의 통신사별 구성"
+  ],
+  "drivers": [],
+  "competitive": [],
+  "comparables": []
+}

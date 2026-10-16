@@ -1,0 +1,200 @@
+{
+  "account_id": "KA19",
+  "original_name": "우리은행",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA19.json",
+  "facts": [
+    {
+      "fact_id": "KA19-P1-F01",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 4016.76,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA19-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "직접 보도값. 363.81/4016.76=9.06% → 9.1% 일치"
+    },
+    {
+      "fact_id": "KA19-P1-F02",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2024,
+      "value": 3595.67,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA19-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "기존 KA19-F15 3,596억과 일치"
+    },
+    {
+      "fact_id": "KA19-P1-F03",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 440.26,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA19-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "기존 444.02억과 상이(아래 conflicts)"
+    },
+    {
+      "fact_id": "KA19-P1-F04",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 1849.21,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA19-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산업무비. FY2024 1,686.20억. 통신비 474.72억, 용역비 2,392.68억 별도"
+    },
+    {
+      "fact_id": "KA19-P1-F05",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 1269.32,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA19-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA19-P1-F06",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 2582.76,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA19-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA19-P1-E01",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "우리은행 정보보호 공시(디지털데일리 등, 우리은행 공시 인용)",
+      "publisher": "디지털데일리",
+      "source_url": "https://m.ddaily.co.kr/page/view/2026070315315860244",
+      "document_id": null,
+      "publication_date": "2026-07-03",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약/인용(본문 미확인)",
+      "quoted_statement": "3일 우리은행 정보보호 공시에 따르면 지난해 정보보호 투자액은 363억8100만원으로 전년(440억2600만원)보다 76억4500만원(17.4%) 감소했다. ... 정보기술 투자액은 3595억6700만원에서 4016억7600만원으로 11.7% 증가했다.",
+      "reported_value": "4016.76",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "KISA 공시 인용. URL 귀속은 검색결과 기준(딜사이트 164593 가능성) WebFetch DNS 차단으로 본문 미확인."
+    },
+    {
+      "evidence_id": "KA19-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "우리은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+      "document_id": "20260313000815",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 40. 일반관리비 및 기타영업손익 (1) (단위:백만원)",
+      "quoted_statement": "| 용역비 | 239,268 | 226,428 | | 전산업무비 | 184,921 | 168,620 | | 통신비 | 47,472 | 45,041 | ... | 합 계 | 3,857,462 | 3,327,224 |",
+      "reported_value": "184,921",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA19-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "우리은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+      "document_id": "20260313000815",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 Ⅱ.투자활동 (단위:백만원)",
+      "quoted_statement": "| 유형자산의 취득 | (258,276) | | (166,448) | ... | 무형자산의 취득 | (126,932) | | (134,379) |",
+      "reported_value": "126,932",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "KISA FY2025 IT 투자액",
+      "target": "우리은행",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "OK",
+      "detail": "4,016.76억 직접 보도",
+      "retryable": false
+    },
+    {
+      "step": "판관비 주석",
+      "target": "rcept 20260313000815",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산업무비 1,849억; 전산업무비+통신비+무형취득=3,593억 < KISA 4,017억 정합",
+      "retryable": false
+    }
+  ],
+  "open_questions": [],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA19-F16",
+      "existing_value": 3998,
+      "new_value": 4016.76,
+      "unit": "억원",
+      "explanation": "기존 역산값(363.81/9.1%) 대비 +18.8억(+0.5%), 기존 ±22억 오차범위 내 → CONFIRM. 직접값 4,016.76억으로 교체 권고",
+      "evidence_ids": [
+        "KA19-P1-E01"
+      ]
+    },
+    {
+      "existing_fact_id": "KA19-F12",
+      "existing_value": 444.02,
+      "new_value": 440.26,
+      "unit": "억원",
+      "explanation": "FY2024 정보보호 투자액: 2025 CEO스코어 444억200만원 vs 2026 공시 기사 전년치 440억2600만원. 2026 공시에서 전년치 재작성 가능성. 440.26/3595.67=12.24%(보도 12.3%)·444.02/3595.67=12.35% 둘 다 근사",
+      "evidence_ids": [
+        "KA19-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": []
+}

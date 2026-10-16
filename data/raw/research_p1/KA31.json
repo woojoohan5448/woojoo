@@ -1,0 +1,385 @@
+{
+  "account_id": "KA31",
+  "original_name": "씨제이올리브네트웍스(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-itsvc-cloud",
+  "supplement_to": "data/raw/research/KA31.json",
+  "entity": {
+    "legal_name_ko": "씨제이올리브네트웍스(주)",
+    "legal_name_en": "CJ OliveNetworks Co., Ltd",
+    "corp_code": "00223799",
+    "stock_code": null,
+    "business_reg_no": "1048136565",
+    "parent_group": "CJ그룹(대규모기업집단 공시 제출 계열사)",
+    "related_key_accounts": [],
+    "industry_detail": "IT서비스(CJ그룹 SI/ITO, 클라우드). 비상장(corp_cls=E), DART 업종코드 6202",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "비상장 외부감사 대상 — OpenDART 재무 API 미제공. 감사보고서(2025.12) 원문만 존재",
+    "exclusions": "CJ 계열사 IT 지출 제외",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('씨제이올리브네트웍스') → 00223799, get_company_info '씨제이올리브네트웍스(주)', 용산구 한강대로 366 트윈시티남산, 설립 1995-03-15, corp_cls E"
+  },
+  "evidence": [
+    {
+      "evidence_id": "KA31-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "씨제이올리브네트웍스 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004681",
+      "document_id": "20260331004681",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서 (단위: 원)",
+      "quoted_statement": "매출액 | 32 | 794,774,692,581 | 727,741,341,964 / 매출원가 | 26 | (661,374,549,788) | (618,930,311,468) / 판매비와관리비 | 25,26 | (51,243,605,273) | (51,434,016,501) / 영업이익 | | 82,156,537,520 | 57,377,013,995",
+      "reported_value": "794,774,692,581",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA31-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "씨제이올리브네트웍스 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004681",
+      "document_id": "20260331004681",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 26. 비용의 성격별 분류 (단위: 천원)",
+      "quoted_statement": "종업원급여 | 139,066,412 | 134,342,187 / 지급수수료 | 425,005,114 | 383,600,399 / 감가상각 및 무형자산상각비 | 18,585,631 | 18,059,942 / 사용권자산상각비 | 6,372,173 | 6,032,657 / 통신비 | 52,570,079 | 57,451,190 / 매출원가 및 판매비와관리비 합계 | 712,618,155 | 670,364,328",
+      "reported_value": "52,570,079",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA31-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "씨제이올리브네트웍스 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004681",
+      "document_id": "20260331004681",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 25. 판매비와관리비 (단위: 천원)",
+      "quoted_statement": "지급수수료 | 9,999,935 | 11,463,088 / 지급임차료 | 3,011,202 | 2,826,684 / 유형자산감가상각비 | 150,755 | 167,472 / 무형자산상각비 | 452,951 | 444,285 / 합 계 | 51,243,605 | 51,434,018",
+      "reported_value": "9,999,935",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "판관비 표에 통신비 항목 없음 → 통신비 525.7억 전액이 매출원가(고객 대상 네트워크 서비스 원가)로 판단"
+    },
+    {
+      "evidence_id": "KA31-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "씨제이올리브네트웍스 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004681",
+      "document_id": "20260331004681",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 투자활동 (단위: 원)",
+      "quoted_statement": "유형자산의 취득 | | (11,825,921,309) | (7,454,481,590) / 무형자산의 취득 | | (6,875,458,402) | (7,039,996,301)",
+      "reported_value": "11,825,921,309",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA31-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "씨제이올리브네트웍스 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004681",
+      "document_id": "20260331004681",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 1. 회사의 개요",
+      "quoted_statement": "회사는 CJ그룹 등의 정보시스템 업무에 관한 종합관리용역 계약을 체결하여 전산화와 관련된 업무용역을 제공하고 있으며 공공기관 및 민간기업에 소프트웨어의 개발용역 및 인터넷솔루션 개발용역을 제공하고 있습니다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA31-P1-E06",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "87억 쏟고도 해킹…CJ올리브네트웍스, 투자 늘렸지만 통제 허술 [보안공시 해부]",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2025063016582846984",
+      "document_id": null,
+      "publication_date": "2025-06-30",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "2024년 IT 부문 투자액은 609억4167만8799원으로 2023년(558억2505만9934원)보다 9.2% 증가했다. 정보보호 부문 예산도 같은 기간 79억1852만1150원에서 87억2766만5574원으로 10.2% 늘었다. IT 투자액 대비 보안 투자 비율은 14.2%에서 14.3%로",
+      "reported_value": "60941678799",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch DNS 차단으로 본문 미확인. 2025년 공시 = FY2024"
+    },
+    {
+      "evidence_id": "KA31-P1-E07",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "[IT인베스트] IT서비스/식음료 관련 2024-07 보도(검색 요약)",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2024070313432598020",
+      "document_id": null,
+      "publication_date": "2024-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "검색 요약",
+      "quoted_statement": "CJ올리브네트웍스는 지난해 IT 부문에서 581억2274만원, 정보보호 부문에서 88억2560만원을 투자했다. ... IT 부문 가운데 정보보호 부문 투자액 비중은 15.2%다.",
+      "reported_value": "58122740000",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "정확한 기사 URL 불확실(검색 결과 중 IT서비스 기사로 추정). 2025년 보도의 FY2023 비교치(558.3억)와 불일치"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "KA31-P1-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 794774692581,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 727,741,341,964원 → +9.2%"
+    },
+    {
+      "fact_id": "KA31-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 712618155,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "매출원가+판관비 합계"
+    },
+    {
+      "fact_id": "KA31-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 82156537520,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA31-P1-F04",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 52570079,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E02",
+        "KA31-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "통신비 525.7억(전기 574.5억). 판관비에 통신비 없음 → 매출원가 = CJ 계열 등 고객 대상 네트워크/회선 서비스 원가(재판매). 통신사 직접 매출 풀로는 의미 있으나 자체 소비 아님"
+    },
+    {
+      "fact_id": "KA31-P1-F05",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 425005114,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "지급수수료(성격별) 4,250억 중 판관비 100억, 나머지 ~4,150억은 매출원가(외주·클라우드·SW 재판매 원가)"
+    },
+    {
+      "fact_id": "KA31-P1-F06",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 11825921309,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA31-P1-F07",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 6875458402,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA31-P1-F08",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 18585631,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "감가상각 및 무형자산상각비 합계; 사용권 6,372,173천원 별도"
+    },
+    {
+      "fact_id": "KA31-P1-F09",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2024,
+      "value": 60941678799,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2025년 공시(FY2024). FY2023 55,825,059,934원"
+    },
+    {
+      "fact_id": "KA31-P1-F10",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 8727665574,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA31-P1-F11",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 14.3,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "검산 87.28/609.42=14.32%"
+    },
+    {
+      "fact_id": "KA31-P1-F12",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2023,
+      "value": 55825059934,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA31-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2025년 보도의 전년 비교치. 2024-07 보도 581.2억과 상충 → conflicts 참조"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": null,
+      "existing_value": 58122740000,
+      "new_value": 55825059934,
+      "unit": "원",
+      "explanation": "FY2023 KISA IT 투자액이 2024-07 보도(581.2억, 보호 88.3억, 15.2%)와 2025-06 보도의 전년 비교치(558.3억, 보호 79.2억, 14.2%)로 상이 — 공시 정정 또는 산정기준 변경 추정. 후속 연도 보도치(558.3억) 우선 사용 권고",
+      "evidence_ids": [
+        "KA31-P1-E06",
+        "KA31-P1-E07"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "KISA IT투자/매출 비율 FY2024",
+      "value": 8.4,
+      "unit": "%",
+      "basis": "609.4억 / FY2024 매출 7,277.4억",
+      "evidence_ids": [
+        "KA31-P1-E06",
+        "KA31-P1-E01"
+      ]
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "KISA FY2024·FY2023 IT 투자액(언론 경유). FY2025(2026 공시) 미발견"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "감사보고서 성격별 비용·판관비·CF"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 IT 비용 주석",
+      "target": "20260331004681",
+      "tool": "MyDART-download_document(find)",
+      "level": "L2",
+      "result": "OK",
+      "detail": "IS, 주석25·26, CF 확보",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시 FY2024/FY2023",
+      "target": "WebSearch x3",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "OK",
+      "detail": "디지털데일리 2025-06-30 보도 요약. WebFetch 미시도(DNS 차단 규칙)",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시 FY2025(2026 공시)",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "2026 보도 미발견",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "FY2025 KISA IT 투자액(2026년 6월 공시)",
+    "FY2023 KISA 수치 상충(581.2억 vs 558.3억) 원문 확인",
+    "통신비 525.7억의 공급 통신사 구성 및 LG U+ 비중"
+  ],
+  "drivers": [],
+  "competitive": []
+}

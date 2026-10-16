@@ -1,0 +1,174 @@
+{
+  "account_id": "KA23",
+  "original_name": "SC제일은행",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA23.json",
+  "facts": [
+    {
+      "fact_id": "KA23-P1-F01",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 577.22,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA23-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산업무비. FY2024 443.53억(+30%)"
+    },
+    {
+      "fact_id": "KA23-P1-F02",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 1995.58,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA23-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=용역비(그룹 IT/글로벌 서비스 재청구 포함 가능; IT 비중 미분리)"
+    },
+    {
+      "fact_id": "KA23-P1-F03",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 65.46,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA23-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=통신비"
+    },
+    {
+      "fact_id": "KA23-P1-F04",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 699.47,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA23-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 236.01억(약 3배)"
+    },
+    {
+      "fact_id": "KA23-P1-F05",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 365.16,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA23-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "투자부동산 포함"
+    },
+    {
+      "fact_id": "KA23-P1-F06",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 361.7,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA23-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=무형자산상각비(FY2024 203.82억)"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA23-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국스탠다드차타드은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+      "document_id": "20260331004354",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 43. 판매비와 관리비 (단위 : 백만원) 경비",
+      "quoted_statement": "| 용역비 | 199,558 | 150,432 | ... | 전산업무비 | 57,722 | 44,353 | ... | 통신비 | 6,546 | 6,541 | ... | 무형자산 상각비 | 36,170 | 20,382 |",
+      "reported_value": "57,722",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA23-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국스탠다드차타드은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+      "document_id": "20260331004354",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 Ⅱ.투자활동 (단위 : 백만원)",
+      "quoted_statement": "| 유형자산 및 투자부동산의 취득 | (36,516) | | (15,808) | | 무형자산의 취득 | (69,947) | | (23,601) |",
+      "reported_value": "69,947",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "판관비 주석",
+      "target": "rcept 20260331004354",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산업무비·용역비·통신비·CF 확보",
+      "retryable": false
+    },
+    {
+      "step": "KISA 공시",
+      "target": "SC제일은행",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "NOT_FOUND",
+      "detail": "SC제일은행 정보보호 공시 보도 없음(자율공시 미참여 추정)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "용역비 1,995.6억 중 IT/그룹 서비스 비중"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "L2 IT 구성(투자기준, 용역비 제외)",
+      "value": 1342.15,
+      "unit": "억원",
+      "basis": "전산업무비 577.22+통신비 65.46+무형취득 699.47 = 1,342.2억(하한). 용역비 1,995.6억 중 IT분 추가 시 상향. TS(10,587.5×12.5%=1,323.4억)와 근접",
+      "evidence_ids": [
+        "KA23-P1-E01",
+        "KA23-P1-E02"
+      ]
+    }
+  ]
+}

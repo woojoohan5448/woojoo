@@ -114,5 +114,25 @@
       "MB29"
     ],
     "comment": "정보보호 투자액만 공시된 고객의 IT 투자액 역산 시 비율 우선순위: 동일연도 자사 비율 → 인접연도 자사 비율 → 산업군 실측 중앙값(n≥3) → KISA 전체 평균 6.28%."
+  },
+  "B-COMP": {
+    "basis": "EMPIRICAL_CALIBRATION",
+    "refs": [
+      "MB27",
+      "MB29"
+    ],
+    "comment": "IT 비용 항목 포괄률: 금융 전산업무비 0.468(국민·우리 실측), 클라우드 인프라 0.806(네이버클라우드 실측), 일반기업 0.6(가정)."
+  },
+  "B-EMP": {
+    "basis": "EMPIRICAL_CALIBRATION",
+    "refs": [],
+    "comment": "KISA IT 투자액과 직원 수(OpenDART 직원현황)가 모두 확인된 고객의 1인당 IT 지출 산업군 중앙값(n≥3일 때만 사용)."
+  },
+  "B-DCRENT": {
+    "basis": "BENCHMARK",
+    "refs": [
+      "DCB01"
+    ],
+    "comment": "수도권 평균 상면 임대료 약 25만원/kW(2025, CBRE 인용·기간 미표기→월 해석) → 30억원/MW/년. 원문 미열람."
   }
 }

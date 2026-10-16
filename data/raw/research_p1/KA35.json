@@ -1,0 +1,393 @@
+{
+  "account_id": "KA35",
+  "original_name": "(주)케이비손해보험",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-ka24-35-52-38-41",
+  "entity": {
+    "legal_name_ko": "주식회사 KB손해보험",
+    "legal_name_en": "KB Insurance Co., Ltd.",
+    "corp_code": "00120216",
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "KB금융지주",
+    "related_key_accounts": [
+      "KA03",
+      "KA21"
+    ],
+    "industry_detail": "손해보험",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "KB손해보험 별도(OFS), 연결 병기",
+    "exclusions": "KB손해사정·KB손보CNS·KB헬스케어 등 종속",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "사업보고서 rcept 20260331003209(정정본) 사용"
+  },
+  "facts": [
+    {
+      "fact_id": "KA35-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 2991,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "남 1,420 + 여 1,571"
+    },
+    {
+      "fact_id": "KA35-P1-F02",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 56970,
+      "unit": "백만원",
+      "scope": "법인 별도(사업비 중 계약유지비 내 전산비)",
+      "evidence_ids": [
+        "KA35-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 54,423 대비 +4.7%. 전사 IT비 일부(하한)"
+    },
+    {
+      "fact_id": "KA35-P1-F03",
+      "metric": "it_service_cost",
+      "fiscal_year": 2024,
+      "value": 54423,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA35-P1-F04",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 57208,
+      "unit": "백만원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA35-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA35-P1-F05",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 31460,
+      "unit": "백만원",
+      "scope": "법인 별도(KB데이타시스템 지급 기타비용)",
+      "evidence_ids": [
+        "KA35-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "캡티브 SI 지급 IT 용역비. 전기 24,579 대비 +28.0%. 전산비 56,970과 중복 가능성 있음 — 합산 금지"
+    },
+    {
+      "fact_id": "KA35-P1-F06",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 16265,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-P1-E04"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "SW 4,215+5,534 + 개발비 216+6,300 (타계정대체 = 건설중 자산 완료분)"
+    },
+    {
+      "fact_id": "KA35-P1-F07",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2024,
+      "value": 83152,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-P1-E04"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "SW 1,658+20,812 + 개발비 104+60,578 — FY2024 차세대/대형 개발 완료 반영 추정"
+    },
+    {
+      "fact_id": "KA35-P1-F08",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 33470,
+      "unit": "백만원",
+      "scope": "법인 별도(무형자산상각비)",
+      "evidence_ids": [
+        "KA35-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA35-P1-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 33147,
+      "unit": "억원",
+      "scope": "법인 별도(순사업비, 업무보고서 기준)",
+      "evidence_ids": [
+        "KA35-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "판관비 상당액 프록시"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA35-P1-D01",
+      "type": "OTHER",
+      "description": "2025년 이사회: KB데이타시스템 SM·IT통합유지보수·HR시스템·그룹 NPS 시스템 IT용역, 장기보상 DT 구축 추진 보고",
+      "amount": null,
+      "unit": null,
+      "period": "2025",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA35-P1-E06"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "그룹 캡티브 SI KB데이타시스템이 전산시스템 운영(SM)·IT통합유지보수 수행; FY2025 지급 314.6억원",
+      "incumbent": "㈜KB데이타시스템",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA35-P1-E03",
+        "KA35-P1-E06"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA35-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "OpenDART 직원현황 FY2025 사업보고서",
+      "publisher": "금융감독원 OpenDART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "get_employees 11011 (남/여)",
+      "quoted_statement": "sexdstn=남, sm=1,420 (정규 1,339, 계약 81); sexdstn=여, sm=1,571 (정규 1,494, 계약 77); fyer_salary_totamt 199,296,000,000 / 145,968,000,000",
+      "reported_value": "2991",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": "합계 2,991명은 단순 합산(DERIVED)"
+    },
+    {
+      "evidence_id": "KA35-P1-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "KB손해보험 사업보고서(2025.12) 재무제표 주석 36 사업비",
+      "publisher": "KB손해보험/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "별도 주석 36 사업비 구성내역 (단위: 백만원), 계약유지비",
+      "quoted_statement": "| 전산비 | 56,970 | 54,423 | (계약유지비 내) / 감가상각비 27,955 | 수수료 182,724 | 계약유지비 소계 638,484 | 674,415 |; 연결 주석 36: | 전산비 | 57,208 | 54,625 |",
+      "reported_value": "56970",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "전산비는 계약유지비 내 계정. 손해조사비·기타사업비 내 IT성 비용은 '기타/수수료'에 혼재"
+    },
+    {
+      "evidence_id": "KA35-P1-E03",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "KB손해보험 사업보고서(2025.12) 별도 주석 40 (3) 특수관계자 일반상거래",
+      "publisher": "KB손해보험/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "별도 주석 40 (3), 열: 보험관련수익|임대료수익|기타|보험관련비용|기타(비용)",
+      "quoted_statement": "당기: | ㈜KB데이타시스템 | 327 | 2 | - | - | 31,460 | / 전기: | ㈜KB데이타시스템 | 270 | 2 | - | - | 24,579 | / 당기: | ㈜국민은행 | 15,688 | 426 | 39,762 | 1,579 | 84,733 |",
+      "reported_value": "31460",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA35-P1-E04",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "KB손해보험 사업보고서(2025.12) 별도 주석 17 무형자산",
+      "publisher": "KB손해보험/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "별도 주석 17 (2) 증감 (단위:백만원)",
+      "quoted_statement": "당기: 소프트웨어 취득 4,215 / 타계정대체 5,534 / 상각 (13,551); 개발비 취득 216 / 타계정대체 6,300 / 상각 (19,919); 합계 상각비 (33,470). 전기: 소프트웨어 1,658/20,812, 개발비 104/60,578",
+      "reported_value": "16265",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "16,265 = SW·개발비 취득+타계정대체 합(DERIVED)"
+    },
+    {
+      "evidence_id": "KA35-P1-E05",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "KB손해보험 사업보고서(2025.12) II.2 보험종목별 순사업비",
+      "publisher": "KB손해보험/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "보유보험료·순사업비·사업비집행률 (단위: 억원, %)",
+      "quoted_statement": "| 합 계 | 130,415 | 33,147 | 25.4 | 121,819 | 32,291 | 26.5 |",
+      "reported_value": "33147",
+      "reported_unit": "억원",
+      "verification_status": "VERIFIED",
+      "notes": "업무보고서 사업실적표(IFRS4 기준)"
+    },
+    {
+      "evidence_id": "KA35-P1-E06",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "KB손해보험 사업보고서(2025.12) VI.1 이사회 중요의결사항",
+      "publisher": "KB손해보험/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "이사회 의결 안건",
+      "quoted_statement": "2025.02.03 'KB데이타시스템과의 전산시스템 운영(SM)'; 2025.05.28 'KB데이타시스템과 IT통합유지보수 계약'; 2025.07.18 'HR시스템 개선 프로젝트 수행을 위한 KB데이타시스템과의 IT용역 거래'; 2025.04.23 '장기보상 DT 구축 추진(안)'",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "금액 미기재"
+    },
+    {
+      "evidence_id": "KA35-P1-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "\"권고기준 넘겼지만, 예산 공개는 민감\" 보험사 '정보보안' 공시 온도차",
+      "publisher": "supple.kr",
+      "source_url": "https://supple.kr/news/cmrsvbuhj000x13muk7szrmv5",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "미상",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "메리츠화재와 KB손보 역시 그룹 통합 보고서에 활용 내역 등만 기술했을 뿐 구체적인 정보보호 예산 규모는 베일에 싸여 있다",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "KISA 금액 미공개 정황"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원현황 FY2025",
+      "target": "00120216",
+      "tool": "opendart-get_employees",
+      "level": "L4",
+      "result": "OK",
+      "detail": "2,991명",
+      "retryable": false
+    },
+    {
+      "step": "사업보고서 find 전산비·전산운영비·전산용역비·통신비·사업비",
+      "target": "20260331003209",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "전산비(계약유지비) 확보; 전산운영비·전산용역비·통신비 0건",
+      "retryable": false
+    },
+    {
+      "step": "무형자산·특수관계자 주석",
+      "target": "20260331003209",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "SW·개발비 취득, KB데이타시스템 거래 확보",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시 금액",
+      "target": "KB손해보험",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "2회 검색 — KB손보 금액 미공개(그룹 통합보고서만), KB금융지주 2026 상반기 자율공시 개시 보도(한국경제 2026-04-21, 개별 수치 미확인)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시(KB금융 그룹 자율공시에 KB손보 개별 수치 포함 여부)",
+    "전산비 56,970과 KB데이타시스템 31,460 간 중복 범위",
+    "손해조사비·기타사업비 내 IT성 수수료"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "note": "KISA·IT예산 금액 미공개"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "note": "전산비 570억 + SW/개발비 자본화 163억(FY25) + 캡티브 SI 315억(중복 가능)"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "note": "이사회 IT 거래 안건 있으나 금액 미기재"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "found",
+      "note": "임직원 2,991명"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "note": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "note": ""
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "employees",
+      "value": 2991,
+      "unit": "명",
+      "basis": "OpenDART FY2025",
+      "evidence_ids": [
+        "KA35-P1-E01"
+      ]
+    },
+    {
+      "name": "it_service_cost_growth",
+      "value": 4.7,
+      "unit": "%",
+      "basis": "56,970/54,423-1",
+      "evidence_ids": [
+        "KA35-P1-E02"
+      ]
+    }
+  ]
+}

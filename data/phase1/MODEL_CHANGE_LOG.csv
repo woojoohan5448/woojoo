@@ -1,0 +1,144 @@
+﻿account_id,original_name,year,metric,v1_baseline,current,delta,v1_method,current_method,change_type,current_formula
+KA04,신한카드(주),2026,TS,1021.25,1022.63,1.38,REVENUE_INTENSITY,REVENUE_INTENSITY,REVISED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA04,신한카드(주),2026,RAW,177.19,181.07,3.88,REVENUE_INTENSITY,REVENUE_INTENSITY,REVISED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA04,신한카드(주),2031,TS,1345.69,1347.5,1.81,REVENUE_INTENSITY,REVENUE_INTENSITY,REVISED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA04,신한카드(주),2031,FPR,82.85,83.61,0.76,REVENUE_INTENSITY,REVENUE_INTENSITY,REVISED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA06,구글클라우드,2026,TS,,1421.69,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)"
+KA06,구글클라우드,2026,RAW,,567.96,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)"
+KA06,구글클라우드,2026,FPR,,196.73,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)"
+KA06,구글클라우드,2031,TS,,3187.91,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)"
+KA06,구글클라우드,2031,FPR,,482.58,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)"
+KA07,마이크로소프트,2026,TS,,2550.0,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음"
+KA07,마이크로소프트,2026,RAW,,1018.73,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음"
+KA07,마이크로소프트,2026,FPR,,352.86,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음"
+KA07,마이크로소프트,2031,TS,,5717.97,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음"
+KA07,마이크로소프트,2031,FPR,,865.58,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음"
+KA11,(주)신세계아이앤씨,2026,TS,350.69,648.61,297.92,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2023 = KISA 정보보호 공시 정보기술부문 투자액
+KA11,(주)신세계아이앤씨,2026,RAW,85.57,160.68,75.11,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2023 = KISA 정보보호 공시 정보기술부문 투자액
+KA11,(주)신세계아이앤씨,2026,FPR,24.97,46.14,21.17,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2023 = KISA 정보보호 공시 정보기술부문 투자액
+KA11,(주)신세계아이앤씨,2031,TS,465.24,860.48,395.24,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2023 = KISA 정보보호 공시 정보기술부문 투자액
+KA11,(주)신세계아이앤씨,2031,FPR,40.83,75.71,34.88,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2023 = KISA 정보보호 공시 정보기술부문 투자액
+KA12,(주)에스원,2026,TS,353.46,607.69,254.23,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA12,(주)에스원,2026,RAW,100.2,174.74,74.54,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA12,(주)에스원,2026,FPR,27.37,46.9,19.53,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA12,(주)에스원,2031,TS,435.25,748.32,313.07,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA12,(주)에스원,2031,FPR,40.43,69.61,29.18,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA15,지에스네오텍(주),2026,TS,,166.45,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대"
+KA15,지에스네오텍(주),2026,RAW,,60.92,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대"
+KA15,지에스네오텍(주),2026,FPR,,19.19,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대"
+KA15,지에스네오텍(주),2031,TS,,332.99,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대"
+KA15,지에스네오텍(주),2031,FPR,,44.67,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대"
+KA16,지에스리테일,2026,TS,1508.92,1144.81,-364.11,KISA_SEC_SCALED,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 666.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA16,지에스리테일,2026,RAW,427.78,324.55,-103.23,KISA_SEC_SCALED,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 666.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA16,지에스리테일,2026,FPR,116.83,88.64,-28.19,KISA_SEC_SCALED,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 666.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA16,지에스리테일,2031,TS,1858.09,1409.73,-448.36,KISA_SEC_SCALED,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 666.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA16,지에스리테일,2031,FPR,172.6,130.95,-41.65,KISA_SEC_SCALED,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 666.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA17,현대엘리베이터,2026,TS,133.71,294.74,161.03,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 170.0억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA17,현대엘리베이터,2026,RAW,29.42,64.84,35.42,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 170.0억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA17,현대엘리베이터,2026,FPR,6.92,15.26,8.34,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 170.0억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA17,현대엘리베이터,2031,TS,168.38,371.16,202.78,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 170.0억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA17,현대엘리베이터,2031,FPR,11.51,25.37,13.86,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 170.0억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA18,(주)신한은행,2026,TS,4450.5,4865.7,415.2,DIRECT_IT_BUDGET,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA18,(주)신한은행,2026,RAW,793.71,858.4,64.69,DIRECT_IT_BUDGET,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA18,(주)신한은행,2026,FPR,197.76,215.42,17.66,DIRECT_IT_BUDGET,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA18,(주)신한은행,2031,TS,5864.36,6411.47,547.11,DIRECT_IT_BUDGET,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA18,(주)신한은행,2031,FPR,364.89,397.27,32.38,DIRECT_IT_BUDGET,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA19,(주)우리은행,2026,RAW,754.54,754.01,-0.53,KISA_IT_INVESTMENT,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA20,(주)우리카드,2026,TS,393.73,724.77,331.04,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA20,(주)우리카드,2026,RAW,68.31,125.75,57.44,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA20,(주)우리카드,2026,FPR,17.33,31.91,14.58,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA20,(주)우리카드,2031,TS,518.81,955.02,436.21,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA20,(주)우리카드,2031,FPR,31.94,58.8,26.86,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA21,(주)케이비국민카드,2026,TS,637.11,1640.85,1003.74,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 731.4억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA21,(주)케이비국민카드,2026,RAW,110.54,292.01,181.47,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 731.4억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA21,(주)케이비국민카드,2026,FPR,28.05,72.86,44.81,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 731.4억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA21,(주)케이비국민카드,2031,TS,839.51,2162.12,1322.61,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 731.4억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA21,(주)케이비국민카드,2031,FPR,51.69,134.42,82.73,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 731.4억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA22,(주)하나은행,2026,TS,4350.82,4327.05,-23.77,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA22,(주)하나은행,2026,RAW,780.74,776.82,-3.92,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA22,(주)하나은행,2026,FPR,193.74,192.71,-1.03,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA22,(주)하나은행,2031,TS,5733.02,5701.69,-31.33,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA22,(주)하나은행,2031,FPR,357.57,355.68,-1.89,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA23,(주)한국스탠다드차타드은행,2026,TS,1389.86,1295.04,-94.82,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 577.2억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA23,(주)한국스탠다드차타드은행,2026,RAW,282.84,263.54,-19.3,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 577.2억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA23,(주)한국스탠다드차타드은행,2026,FPR,65.36,60.9,-4.46,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 577.2억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA23,(주)한국스탠다드차타드은행,2031,TS,1831.4,1706.46,-124.94,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 577.2억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA23,(주)한국스탠다드차타드은행,2031,FPR,120.46,112.24,-8.22,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 577.2억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA24,농협은행,2026,TS,,5296.65,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA24,농협은행,2026,RAW,,918.97,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA24,농협은행,2026,FPR,,233.18,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA24,농협은행,2031,TS,,6979.32,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA24,농협은행,2031,FPR,,429.72,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)"
+KA25,미래에셋증권(주),2026,TS,1811.85,2204.64,392.79,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 982.6억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA25,미래에셋증권(주),2026,RAW,383.12,466.17,83.05,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 982.6억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA25,미래에셋증권(주),2026,FPR,86.4,105.13,18.73,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 982.6억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA25,미래에셋증권(주),2031,TS,2387.45,2905.03,517.58,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 982.6억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA25,미래에셋증권(주),2031,FPR,159.59,194.18,34.59,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 982.6억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA30,메르세데스벤츠코리아(주),2026,TS,514.87,868.23,353.36,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 500.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA30,메르세데스벤츠코리아(주),2026,RAW,113.27,191.01,77.74,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 500.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA30,메르세데스벤츠코리아(주),2026,FPR,26.66,44.95,18.29,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 500.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA30,메르세데스벤츠코리아(주),2031,TS,648.36,1093.34,444.98,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 500.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA30,메르세데스벤츠코리아(주),2031,FPR,44.32,74.74,30.42,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 500.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%]
+KA31,씨제이올리브네트웍스(주),2026,TS,,671.88,,UNKNOWN,KISA_IT_INVESTMENT,RECOVERED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA31,씨제이올리브네트웍스(주),2026,RAW,,176.19,,UNKNOWN,KISA_IT_INVESTMENT,RECOVERED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA31,씨제이올리브네트웍스(주),2026,FPR,,47.62,,UNKNOWN,KISA_IT_INVESTMENT,RECOVERED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA31,씨제이올리브네트웍스(주),2031,TS,,891.35,,UNKNOWN,KISA_IT_INVESTMENT,RECOVERED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA31,씨제이올리브네트웍스(주),2031,FPR,,79.22,,UNKNOWN,KISA_IT_INVESTMENT,RECOVERED,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액
+KA32,주한미군,2026,RAW,136.0,157.0,21.0,UNKNOWN,UNKNOWN,REVISED,근거 부족 — 추정 불가
+KA32,주한미군,2026,FPR,68.0,78.5,10.5,UNKNOWN,UNKNOWN,REVISED,근거 부족 — 추정 불가
+KA32,주한미군,2031,FPR,75.08,86.67,11.59,UNKNOWN,UNKNOWN,REVISED,근거 부족 — 추정 불가
+KA34,(주)아이비케이시스템,2026,TS,,48.68,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가"
+KA34,(주)아이비케이시스템,2026,RAW,,11.88,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가"
+KA34,(주)아이비케이시스템,2026,FPR,,3.47,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가"
+KA34,(주)아이비케이시스템,2031,TS,,64.58,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가"
+KA34,(주)아이비케이시스템,2031,FPR,,5.67,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가"
+KA35,(주)케이비손해보험,2026,TS,,1278.17,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA35,(주)케이비손해보험,2026,RAW,,221.76,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA35,(주)케이비손해보험,2026,FPR,,56.27,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA35,(주)케이비손해보험,2031,TS,,1684.23,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA35,(주)케이비손해보험,2031,FPR,,103.7,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA36,(주)코스콤,2026,TS,,250.39,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)"
+KA36,(주)코스콤,2026,RAW,,61.1,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)"
+KA36,(주)코스콤,2026,FPR,,17.83,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)"
+KA36,(주)코스콤,2031,TS,,332.19,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)"
+KA36,(주)코스콤,2031,FPR,,29.15,,UNKNOWN,REVENUE_INTENSITY,RECOVERED,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)"
+KA38,새마을금고중앙회,2026,TS,,1561.0,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인"
+KA38,새마을금고중앙회,2026,RAW,,317.66,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인"
+KA38,새마을금고중앙회,2026,FPR,,73.41,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인"
+KA38,새마을금고중앙회,2031,TS,,2056.91,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인"
+KA38,새마을금고중앙회,2031,FPR,,135.29,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인"
+KA44,차이나유니콤,2026,TS,,109.6,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)"
+KA44,차이나유니콤,2026,RAW,,78.91,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)"
+KA44,차이나유니콤,2026,FPR,,31.1,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)"
+KA44,차이나유니콤,2031,TS,,136.19,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)"
+KA44,차이나유니콤,2031,FPR,,38.75,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)"
+KA46,한국오라클,2026,TS,,847.36,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰"
+KA46,한국오라클,2026,RAW,,338.52,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰"
+KA46,한국오라클,2026,FPR,,117.25,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰"
+KA46,한국오라클,2031,TS,,1900.07,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰"
+KA46,한국오라클,2031,FPR,,287.63,,UNKNOWN,ACCOUNT_SPECIFIC,RECOVERED,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰"
+KA47,(주)가비아,2026,TS,298.89,227.1,-71.79,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 163.4억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA47,(주)가비아,2026,RAW,109.39,83.12,-26.27,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 163.4억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA47,(주)가비아,2026,FPR,34.46,26.19,-8.27,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 163.4억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA47,(주)가비아,2031,TS,597.93,454.33,-143.6,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 163.4억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA47,(주)가비아,2031,FPR,80.22,60.95,-19.27,REVENUE_INTENSITY,AUDIT_IT_COMPONENTS,REVISED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 163.4억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA48,(주)카카오페이,2026,TS,1130.58,1260.6,130.02,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA48,(주)카카오페이,2026,RAW,265.12,305.45,40.33,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA48,(주)카카오페이,2026,FPR,68.88,77.1,8.22,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA48,(주)카카오페이,2031,TS,1830.78,2041.32,210.54,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA48,(주)카카오페이,2031,FPR,141.32,159.12,17.8,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA49,엔에이치엔클라우드(주),2026,TS,,609.26,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA49,엔에이치엔클라우드(주),2026,RAW,,224.12,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA49,엔에이치엔클라우드(주),2026,FPR,,69.6,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA49,엔에이치엔클라우드(주),2031,TS,,1218.83,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA49,엔에이치엔클라우드(주),2031,FPR,,162.74,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]"
+KA52,토스증권,2026,TS,,724.76,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA52,토스증권,2026,RAW,,156.33,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA52,토스증권,2026,FPR,,34.82,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA52,토스증권,2031,TS,,955.01,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA52,토스증권,2031,FPR,,64.38,,UNKNOWN,AUDIT_IT_COMPONENTS,RECOVERED,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]"
+KA53,토스페이먼츠,2026,TS,1526.42,452.1,-1074.32,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA53,토스페이먼츠,2026,RAW,362.28,107.95,-254.33,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA53,토스페이먼츠,2026,FPR,93.13,27.6,-65.53,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA53,토스페이먼츠,2031,TS,2471.77,732.1,-1739.67,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액
+KA53,토스페이먼츠,2031,FPR,191.48,56.82,-134.66,REVENUE_INTENSITY,KISA_IT_INVESTMENT,REVISED,TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액

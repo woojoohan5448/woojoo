@@ -1,0 +1,375 @@
+﻿account_id,kind,level,tool,step,target,result,detail,retryable
+KA01,ATTEMPT,L1_DIRECT,WebSearch,KISA FY 확인,WebSearch,OK,2회 사용: MTN 2026-07-01 302.44억 '올해'; 2025년 기사 '300억 육박',False
+KA01,LEVEL,L1_DIRECT,,,,found,FY 판별(SECONDARY),
+KA02,ATTEMPT,L1_DIRECT,MyDART-download_document,감사보고서 키워드 발췌,DART 20260710000186,OK,매출액·판관비·통신비·지급수수료·무형자산 확인; 전산·소프트웨어·영업비용 계정 없음,False
+KA02,ATTEMPT,L1_DIRECT,none,KISA 정보보호 공시,KISA,NOT_FOUND,의무공시 대상 여부 불명; 검색 예산 배정 없음,False
+KA02,LEVEL,L1_DIRECT,,,,not_found,KISA/IT예산 공시 없음,
+KA02,LEVEL,L2_COMPONENTS,,,,found,통신비·지급수수료·유지관리비·무형자산 취득,
+KA03,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석 IT 계정 대조,rcept 20260313001051,OK,KISA 값과 정합,False
+KA03,LEVEL,L2_COMPONENTS,,,,found,,
+KA04,ATTEMPT,L2_COMPONENTS,MyDART download_document,FY2025 사업보고서 판관비 주석 IT 계정,rcept 20260318001276,OK,일반관리비에 전산비 계정 없음; 통신비·감가상각·CF 유무형취득 확보. '용역비' 0건,False
+KA04,ATTEMPT,L1_DIRECT,WebSearch,KISA 정보기술부문 투자액,카드사 비교기사,NOT_FOUND,신한카드 KISA 공시 수치 미발견(금융사 자율공시). 예산 기반 수치만 확보,False
+KA04,LEVEL,L1_DIRECT,,,,not_found,,
+KA04,LEVEL,L2_COMPONENTS,,,,found,,
+KA04,LEVEL,L5_COMPARABLE,,,,found,,
+KA05,ATTEMPT,L2,opendart-get_employees,직원수,OpenDART get_employees 2025/11011,OK,"22,875명",False
+KA05,ATTEMPT,L2,MyDART-download_document,IT 비용 계정 발췌,사업보고서 20260317000686,OK,전산비·전산운영비·정보화 0건; 통신비·소프트웨어·무형자산 취득만 확인,False
+KA05,ATTEMPT,L3,krbid-search_awards,KR-BID 낙찰 이력,instt=한국전력공사 / 한국전력 (limit 50),NOT_FOUND,두 질의 모두 0건. 한전은 자체 전자조달(SRM) 사용으로 나라장터 수요기관 이력이 없는 것으로 판단(해석),False
+KA05,ATTEMPT,L1,WebSearch,KISA 정보보호 공시,WebSearch '한국전력공사 정보보호 공시 정보기술부문 투자액' 외 1,NOT_FOUND,보도 기사에서 한전 수치 미발견(전기·전력 3사 기사는 LS일렉·HD현대일렉·효성중공업만),True
+KA05,ATTEMPT,L3,WebSearch,정보화 예산/KDN 위탁,"WebSearch '한전KDN 수의계약 정보화 위탁', '한전 정보보호 예산 국정감사'",NOT_FOUND,"KDN 매출 4,200억(연도 불명) 외 위탁 규모 미확인",True
+KA05,ATTEMPT,L1,WebFetch,WebFetch 기사 본문 확인,언론사 사이트,BLOCKED,"오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",False
+KA05,LEVEL,L1_DIRECT,,,,not_found,,
+KA05,LEVEL,L2_COMPONENTS,,,,found,,
+KA05,LEVEL,L3_CONTRACT,,,,not_found,,
+KA06,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 검색,구글클라우드코리아 01476954,OK,"FY2025 rcept 20260414001545, FY2024 20250411002761",False
+KA06,ATTEMPT,L1/L2,MyDART-download_document,감사보고서 키워드 발췌,20260414001545,OK,"매출액·매출원가·임차료 키워드 0건(계정명 '영업수익'·'설비관련비용' 사용). 주석 1,7,9,12,13,22,24 확보",False
+KA06,ATTEMPT,L3,WebSearch,서울 리전 MW·LG U+ 계약규모,뉴스,NOT_FOUND,"임대 계약 사실·IDC 위치만 보도, MW·금액 미공개",False
+KA06,ATTEMPT,L3,ItNewsSearch-News_Article,ItNews 검색,구글 클라우드 서울 리전 데이터센터,NOT_FOUND,결과 null,False
+KA06,ATTEMPT,L1,WebFetch,WebFetch 본문 확인,언론사 기사 본문,BLOCKED,"§5-1 및 지시에 따라 환경 전체 DNS 차단 — 시도 생략, WebSearch 요약으로 대체(SECONDARY_UNCONFIRMED)",False
+KA06,LEVEL,L1_DIRECT,,,,found,FY2025 감사보고서 매출·영업비용·유형자산·리스 원문 확인,
+KA06,LEVEL,L2_COMPONENTS,,,,found,설비관련비용·감가상각·사용권자산상각·네트워크장비 취득,
+KA06,LEVEL,L3_CONTRACT,,,,not_found,LG U+ IDC 임대 계약 금액·MW 미공개,
+KA06,LEVEL,L4_BENCHMARK,,,,found,_DC_PRICE_BENCHMARKS.json 참조,
+KA06,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA06,LEVEL,L6_SCENARIO,,,,not_applicable,엔진에서 처리,
+KA07,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 검색,한국마이크로소프트 00192790,OK,"FY2026 20261014000067, FY2025 20251002000144",False
+KA07,ATTEMPT,L1/L2,MyDART-download_document,감사보고서 키워드 발췌,20261014000067,OK,손익·판관비·리스·특수관계자 확보,False
+KA07,ATTEMPT,L1,MyDART-find_corp_code,Microsoft 5673 Korea 법인 조회,"MyDART find_corp_code('마이크로소프트','Microsoft')",NOT_FOUND,DART에는 한국마이크로소프트 1건만 존재,False
+KA07,ATTEMPT,L3,WebSearch,Microsoft 5673 Korea 웹검색,WebSearch,NOT_FOUND,해당 명칭 언급 자료 없음. MS fact sheet(부산권 DC) 확인,False
+KA07,ATTEMPT,L3,WebSearch,MS 한국 DC 투자·MW,WebSearch,OK,부산 125MW 착공·기존 85MW(Tier3 뉴스레터)만 확인,False
+KA07,ATTEMPT,L1,WebFetch,WebFetch 본문 확인,언론사 기사 본문,BLOCKED,"§5-1 및 지시에 따라 환경 전체 DNS 차단 — 시도 생략, WebSearch 요약으로 대체(SECONDARY_UNCONFIRMED)",False
+KA07,LEVEL,L1_DIRECT,,,,found,FY2026 감사보고서 매출·원가·판관비 원문,
+KA07,LEVEL,L2_COMPONENTS,,,,found,통신비·임차료·유형자산 취득 — DC 관련 비용은 국내 법인에 없음,
+KA07,LEVEL,L3_CONTRACT,,,,not_found,부산 DC 부지·전력·코로케이션 계약 금액 미확인,
+KA07,LEVEL,L4_BENCHMARK,,,,found,_DC_PRICE_BENCHMARKS.json,
+KA07,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA07,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA08,ATTEMPT,L1,MyDART-search_disclosures,DART 공시,01468283,NOT_FOUND,0건(유한책임회사),False
+KA08,ATTEMPT,L1,ItNewsSearch-News_Article,IT뉴스,AWS 코리아 매출,NOT_FOUND,null,False
+KA08,ATTEMPT,L1,WebSearch,매출 검색,AWS코리아 매출 2025,NOT_FOUND,공식 수치 없음,False
+KA08,ATTEMPT,L3,WebSearch,2026 투자 업데이트 x2,AWS Korea DC 2026,OK,2026 신규 발표 없음; 5.6조 기집행·울산 일정 확보,False
+KA08,LEVEL,L1_DIRECT,,,,not_found,"AWS Korea 매출: DART 0건, 보도 비공개",
+KA08,LEVEL,L3_CONTRACT,,,,found,"투자 페이스(5.6조 기집행, 울산 41→103MW)",
+KA08,LEVEL,L5_COMPARABLE,,,,not_found,,
+KA10,ATTEMPT,L2,MyDART-download_document(find),감사보고서,20260330001776,OK,"주석25 영업비용, CF, 주석24 수익",False
+KA10,ATTEMPT,L1,WebSearch,KISA FY2025,WebSearch x3,NOT_FOUND,2026년 공시 보도 미발견,True
+KA10,LEVEL,L1_DIRECT,,,,not_found,FY2025 KISA(2026 공시) WebSearch 3회 미발견; FY2024 333억/5.1% 재확인,
+KA10,LEVEL,L2_COMPONENTS,,,,found,감사보고서 영업비용·CF,
+KA11,ATTEMPT,L2,opendart-get_employees,직원수,OpenDART,OK,"1,323명",False
+KA11,ATTEMPT,L2,MyDART-download_document,IT 비용 계정,사업보고서 20260316001238,OK,전산비·전산운영비 0건; IT서비스 기업이라 원가에 IT 비용 혼재 — 판관비 통신비만 분리,False
+KA11,ATTEMPT,L1,WebSearch,KISA 공시 FY2024/25,WebSearch 3회,NOT_FOUND,FY2023 값만 확보; 2025·2026 공시 기사 미발견,True
+KA11,ATTEMPT,L1,WebFetch,WebFetch 기사 본문 확인,언론사 사이트,BLOCKED,"오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",False
+KA11,LEVEL,L1_DIRECT,,,,found,,
+KA11,LEVEL,L2_COMPONENTS,,,,found,,
+KA12,ATTEMPT,L2,opendart-get_employees,직원수,OpenDART,OK,"7,044명",False
+KA12,ATTEMPT,L2,MyDART-download_document,IT 비용 계정,사업보고서 20260311004583,OK,전산비·전산운영비·정보화 0건; 통신비용·무형자산 취득 확인,False
+KA12,ATTEMPT,L1,WebSearch,KISA 공시 FY2025,WebSearch 2회,NOT_FOUND,"FY2023/FY2024만 확보(보도), 2026년 공시(FY2025) 미발견",True
+KA12,ATTEMPT,L1,WebFetch,WebFetch 기사 본문 확인,언론사 사이트,BLOCKED,"오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",False
+KA12,LEVEL,L1_DIRECT,,,,found,,
+KA12,LEVEL,L2_COMPONENTS,,,,found,,
+KA13,ATTEMPT,L2,opendart-get_employees,직원수,OpenDART,OK,"2,887명",False
+KA13,ATTEMPT,L2,MyDART-download_document,IT 비용 계정,사업보고서 20260313000002,OK,전산비·전산운영비·통신비 0건(통신비 계정 미공시); 유·무형 취득 합계만,False
+KA13,ATTEMPT,L1,WebSearch,KISA 공시,WebSearch 2회,NOT_FOUND,"롯데 계열(롯데쇼핑·롯데케미칼)만 보도, 롯데이노베이트 수치 없음",True
+KA13,ATTEMPT,L1,WebFetch,WebFetch 기사 본문 확인,언론사 사이트,BLOCKED,"오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",False
+KA13,LEVEL,L1_DIRECT,,,,not_found,,
+KA13,LEVEL,L2_COMPONENTS,,,,found,,
+KA15,ATTEMPT,L2,MyDART-download_document(find),감사보고서 IT 비용 주석,20260401004517,OK,K-GAAP 감사보고서. '회선'·'전산' 비용 계정 없음; 매출원가 명세 미발췌,False
+KA15,ATTEMPT,L1,WebSearch,KISA 정보보호 공시,WebSearch 'GS네오텍 정보보호 공시',NOT_FOUND,수치 보도 없음,True
+KA15,LEVEL,L1_DIRECT,,,,not_found,KISA 공시 WebSearch 1회 — GS네오텍 수치 없음(ISO27001 취득 보도만),
+KA15,LEVEL,L2_COMPONENTS,,,,found,"IS, 부문별 매출·원가, 판관비, 유형자산",
+KA16,ATTEMPT,L2,opendart-get_employees,직원수,OpenDART,OK,"7,304명",False
+KA16,ATTEMPT,L2,MyDART-download_document,IT 비용 계정,사업보고서 20260311004487,OK,'전산수수료' 계정 667억 확인(전산비 아님),False
+KA16,ATTEMPT,L1,WebSearch,KISA IT 투자액,WebSearch 4회(바이라인 2025-07-13 포함),NOT_FOUND,"정보보호 92억(FY25)만 재확인; 바이라인은 FY2024 IT투자 '50% 가까이' 증가 언급, 금액 미노출",True
+KA16,ATTEMPT,L1,WebFetch,WebFetch 기사 본문 확인,언론사 사이트,BLOCKED,"오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",False
+KA16,LEVEL,L1_DIRECT,,,,not_found,,
+KA16,LEVEL,L2_COMPONENTS,,,,found,,
+KA16,LEVEL,L5_COMPARABLE,,,,found,,
+KA17,ATTEMPT,L2,opendart-get_employees,직원수,OpenDART,OK,"2,867명",False
+KA17,ATTEMPT,L2,MyDART-download_document,IT 비용 계정,사업보고서 20260318001372,OK,"별도 판관비 전산비 170억, 연결 42억",False
+KA17,ATTEMPT,L1,WebSearch,KISA 공시,WebSearch 1회,NOT_FOUND,보도 없음,True
+KA17,ATTEMPT,L1,WebFetch,WebFetch 기사 본문 확인,언론사 사이트,BLOCKED,"오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",False
+KA17,LEVEL,L1_DIRECT,,,,not_found,,
+KA17,LEVEL,L2_COMPONENTS,,,,found,,
+KA18,ATTEMPT,L1_DIRECT,WebSearch,KISA FY2025 IT 투자액,신한은행,OK,"4,634억(2차)",False
+KA18,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석,rcept 20260318001285,OK,"전산운용비 688억, 용역비 2,842억, 무형취득 2,469억",False
+KA18,LEVEL,L1_DIRECT,,,,found,,
+KA18,LEVEL,L2_COMPONENTS,,,,found,,
+KA19,ATTEMPT,L1_DIRECT,WebSearch,KISA FY2025 IT 투자액,우리은행,OK,"4,016.76억 직접 보도",False
+KA19,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석,rcept 20260313000815,OK,"전산업무비 1,849억; 전산업무비+통신비+무형취득=3,593억 < KISA 4,017억 정합",False
+KA19,LEVEL,L1_DIRECT,,,,found,,
+KA19,LEVEL,L2_COMPONENTS,,,,found,,
+KA20,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석 IT 계정,rcept 20260312000533,OK,전산업무비·용역비·통신비·CF 취득 확보,False
+KA20,ATTEMPT,L1_DIRECT,WebSearch,IT 예산,카드사 비교기사,OK,2024 IT 예산 960억(2차 출처),False
+KA20,ATTEMPT,L1_DIRECT,WebSearch,KISA 공시,우리카드,NOT_FOUND,KISA IT 투자액 미발견,False
+KA20,LEVEL,L1_DIRECT,,,,found,,
+KA20,LEVEL,L2_COMPONENTS,,,,found,,
+KA21,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석 IT 계정,rcept 20260313000876,OK,전산업무비 731억 확보,False
+KA21,ATTEMPT,L1_DIRECT,WebSearch,KISA/IT 예산,카드사 비교기사,NOT_FOUND,"IT 예산 절대액 미발견, 정보보호 예산·비중만 확보",False
+KA21,LEVEL,L1_DIRECT,,,,not_found,,
+KA21,LEVEL,L2_COMPONENTS,,,,found,,
+KA22,ATTEMPT,L1_DIRECT,WebSearch,KISA IT 투자액,하나은행,OK,"IT 4,121억/정보보호 372억(2차)",False
+KA22,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석,rcept 20260316000962,OK,전산/통신비 계정 없음; CF 취득·상각만,False
+KA22,LEVEL,L1_DIRECT,,,,found,,
+KA22,LEVEL,L2_COMPONENTS,,,,found,,
+KA23,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석,rcept 20260331004354,OK,전산업무비·용역비·통신비·CF 확보,False
+KA23,ATTEMPT,L1_DIRECT,WebSearch,KISA 공시,SC제일은행,NOT_FOUND,SC제일은행 정보보호 공시 보도 없음(자율공시 미참여 추정),False
+KA23,LEVEL,L1_DIRECT,,,,not_found,,
+KA23,LEVEL,L2_COMPONENTS,,,,found,,
+KA24,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 rcept 검색,농협은행 00908757,OK,별도 20260331003536 / 연결 20260331003539,False
+KA24,ATTEMPT,L2,MyDART-download_document,감사보고서 find 전산비·전산·통신비·소프트웨어,20260331003536,NOT_FOUND,전산비·통신비·소프트웨어 계정 0건 — 일반관리비 3분류(종업원/감가상각/기타판관비)만 공시,False
+KA24,ATTEMPT,L2,MyDART-download_document,손익계산서·주석 12/14/32/37,20260331003536,OK,"일반관리비, 무형·유형 취득, 통신운반비·용역비, 농협정보시스템 특수관계자 거래 확보",False
+KA24,ATTEMPT,L1,WebSearch,KISA 정보보호 공시 금액,농협은행,NOT_FOUND,"'농협은행 정보보호 공시 정보기술부문 투자액' 검색 — 우리은행 444억(12.3%)·국민은행 7.5%만 확인, 농협은행 언급 없음",False
+KA24,ATTEMPT,L1,WebSearch,IT 예산 2026,농협은행,NOT_FOUND,"2026 IT 예산 총액 보도 없음. 2023년 클라우드 전환 2년 938억원 보도(기간 불명확, 미반영)",False
+KA24,ATTEMPT,L4,WebSearch,임직원 수,농협은행,OK,"TheVC 16,656명(2026-06, Tier3). 감사보고서에는 인원 미기재",False
+KA24,LEVEL,L1_DIRECT,,,,not_found,KISA·IT예산 보도 없음,
+KA24,LEVEL,L2_COMPONENTS,,,,found,"캡티브 SI 비용 1,472억 + SW/HW 매입 → 하한 1,863억원(FY2025)",
+KA24,LEVEL,L3_CONTRACT,,,,not_applicable,KR-BID 대상 아님(민간 금융사),
+KA24,LEVEL,L4_BENCHMARK,,,,found,"임직원 16,656명(Tier3)",
+KA24,LEVEL,L5_COMPARABLE,,,,not_found,동일 문서 기준 비교치 미수집,
+KA24,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA25,ATTEMPT,L2_COMPONENTS,MyDART download_document,판관비 주석,rcept 20260316001394,OK,전산운용비·전산기기 취득 확보,False
+KA25,ATTEMPT,L1_DIRECT,WebSearch,KISA/IT 예산,미래에셋증권,NOT_FOUND,"2회 검색, KISA IT 투자액·정보보호 절대액 미발견",False
+KA25,LEVEL,L1_DIRECT,,,,not_found,,
+KA25,LEVEL,L2_COMPONENTS,,,,found,,
+KA28,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 목록,00802213,OK,"20260331000506(FY2025), 20250331003055(FY2024)",False
+KA28,ATTEMPT,L2,MyDART-download_document,감사보고서 키워드 발췌,20260331000506,OK,"영업수익/운용보수/일반관리비/CF/DC PFV; 통신비 0건, 전산 = 감사인력 표만",False
+KA28,ATTEMPT,L3,ItNewsSearch-News_Article,IT뉴스,코람코 데이터센터,NOT_FOUND,null,False
+KA28,ATTEMPT,L3,WebSearch,뉴스 검색 x2(+KA50 공유1),코람코 DC 용량·운영사,OK,"1GW/10조, 가산 26MW LG U+ 운영, 시화 40MW, 의정부 100MW",False
+KA28,LEVEL,L1_DIRECT,,,,found,FY2025 감사보고서 영업수익·영업비용,
+KA28,LEVEL,L2_COMPONENTS,,,,found,"일반관리비 내역(전산·통신비 계정 없음), CF 유/무형 취득",
+KA28,LEVEL,L3_CONTRACT,,,,found,가산 DC LG U+ 운영(보도),
+KA28,LEVEL,L4_BENCHMARK,,,,not_applicable,,
+KA28,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA28,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA30,ATTEMPT,L2_COMPONENTS,MyDART-download_document,감사보고서 키워드 발췌,DART 20260413003033,OK,전산비 계정(판관비·성격별) 확인,False
+KA30,LEVEL,L1_DIRECT,,,,not_found,KISA 공시 미검색(예산 미배정),
+KA30,LEVEL,L2_COMPONENTS,,,,found,"전산비 500.9억(FY2025), 425.1억(FY2024)",
+KA31,ATTEMPT,L2,MyDART-download_document(find),감사보고서 IT 비용 주석,20260331004681,OK,"IS, 주석25·26, CF 확보",False
+KA31,ATTEMPT,L1,WebSearch,KISA 정보보호 공시 FY2024/FY2023,WebSearch x3,OK,디지털데일리 2025-06-30 보도 요약. WebFetch 미시도(DNS 차단 규칙),False
+KA31,ATTEMPT,L1,WebSearch,KISA 정보보호 공시 FY2025(2026 공시),WebSearch,NOT_FOUND,2026 보도 미발견,True
+KA31,LEVEL,L1_DIRECT,,,,found,KISA FY2024·FY2023 IT 투자액(언론 경유). FY2025(2026 공시) 미발견,
+KA31,LEVEL,L2_COMPONENTS,,,,found,감사보고서 성격별 비용·판관비·CF,
+KA32,ATTEMPT,L1,WebSearch,낙찰 검색,W91QVN24R0121,NOT_FOUND,"솔리시테이션만 확인, award notice 없음",False
+KA32,ATTEMPT,L3,WebSearch,낙찰 검색(통신3사),USFK mobile 2025 award,NOT_FOUND,BOA G0001/G0002만,False
+KA32,ATTEMPT,L3,WebSearch,GICellphone 확인,W91QVN25,OK,projected 7.5M; GICellphone은 무관 소액,False
+KA32,ATTEMPT,L5,WebSearch,LG U+ 미군 가입자,2026,NOT_FOUND,2026 가입자/전용요금제 근거 없음,False
+KA32,ATTEMPT,L1,WebFetch,USAspending/SAM 원문,usaspending.gov,BLOCKED,DNS 차단 — 미시도,True
+KA32,LEVEL,L1_DIRECT,,,,not_found,W91QVN24R0121 낙찰자·낙찰금액 미확인,
+KA32,LEVEL,L3_CONTRACT,,,,found,"솔리시테이션 추정 7.5M USD, 5,000 단말, 2025-01 시작 1+4년",
+KA32,LEVEL,L5_COMPARABLE,,,,not_found,LG U+ USFK 가입자 최근치 없음,
+KA34,ATTEMPT,L2,MyDART-download_document(find),감사보고서 IT 비용 주석,20260330000475,OK,"'영업비용'·'통신비'·'전산비' 계정 없음. 성격별 분류에 통신비 항목 없음(기타 1,896,291천원에 포함 추정)",False
+KA34,ATTEMPT,L1,WebSearch,KISA 정보보호 공시,WebSearch '보안공시 해부 2026 IT서비스 ... 아이비케이시스템',NOT_FOUND,아이비케이시스템 관련 보도 없음,True
+KA34,LEVEL,L1_DIRECT,,,,not_found,"KISA 공시 보도 미발견(WebSearch 1회, CJ ON과 공동 질의)",
+KA34,LEVEL,L2_COMPONENTS,,,,found,IS·매출원가·성격별 비용·특수관계자 주석,
+KA35,ATTEMPT,L4,opendart-get_employees,직원현황 FY2025,00120216,OK,"2,991명",False
+KA35,ATTEMPT,L2,MyDART-download_document,사업보고서 find 전산비·전산운영비·전산용역비·통신비·사업비,20260331003209,OK,전산비(계약유지비) 확보; 전산운영비·전산용역비·통신비 0건,False
+KA35,ATTEMPT,L2,MyDART-download_document,무형자산·특수관계자 주석,20260331003209,OK,"SW·개발비 취득, KB데이타시스템 거래 확보",False
+KA35,ATTEMPT,L1,WebSearch,KISA 정보보호 공시 금액,KB손해보험,NOT_FOUND,"2회 검색 — KB손보 금액 미공개(그룹 통합보고서만), KB금융지주 2026 상반기 자율공시 개시 보도(한국경제 2026-04-21, 개별 수치 미확인)",False
+KA35,LEVEL,L1_DIRECT,,,,not_found,KISA·IT예산 금액 미공개,
+KA35,LEVEL,L2_COMPONENTS,,,,found,전산비 570억 + SW/개발비 자본화 163억(FY25) + 캡티브 SI 315억(중복 가능),
+KA35,LEVEL,L3_CONTRACT,,,,not_found,이사회 IT 거래 안건 있으나 금액 미기재,
+KA35,LEVEL,L4_BENCHMARK,,,,found,"임직원 2,991명",
+KA35,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA35,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA36,ATTEMPT,L2,MyDART-download_document(find),감사보고서 IT 비용 주석,20260330000337,OK,"주석29 영업비/일반관리비, 주석18 무형자산, CF, IS 확보. '통신비' 계정 없음(회선사용료로 표시)",False
+KA36,ATTEMPT,L1,WebSearch,KISA 정보보호 공시,WebSearch x2,NOT_FOUND,코스콤 IT/정보보호 투자액 보도 없음. 공공기관·금융회사 공시 제외 여부 불명,True
+KA36,LEVEL,L1_DIRECT,,,,not_found,KISA 정보보호 공시 보도 WebSearch 2회 — 코스콤 수치 없음,
+KA36,LEVEL,L2_COMPONENTS,,,,found,"감사보고서 주석29 영업비·일반관리비, CF 유·무형 취득",
+KA38,ATTEMPT,L1,MyDART-search_disclosures,DART 공시 검색,00391090,NOT_FOUND,730일간 공시 0건 — 감사보고서 미제출,False
+KA38,ATTEMPT,L3,krbid-search_awards,KR-BID 낙찰 이력,새마을금고중앙회,NOT_FOUND,instt 기준 0건,False
+KA38,ATTEMPT,L3,"krbid-search, krbid-fetch",KR-BID 공고 검색·첨부,계정계 최신화 / 생성형 AI 인프라,OK,공고문 원문에서 사업예산·계약기간 확인,False
+KA38,ATTEMPT,L1,WebSearch,IT 예산·전산운영비,새마을금고중앙회,NOT_FOUND,연간 IT 예산·전산운영비 총액 보도 없음,False
+KA38,ATTEMPT,L4,WebSearch,금고 수·회원 수,새마을금고,OK,"금고 1,251개·총자산 286.7조(회원 수 미확인)",False
+KA38,LEVEL,L1_DIRECT,,,,not_found,연간 IT 예산 미공개,
+KA38,LEVEL,L2_COMPONENTS,,,,not_found,감사보고서 DART 미제출,
+KA38,LEVEL,L3_CONTRACT,,,,found,"계정계 3,370억(28개월), AI 인프라 250억(11개월) 공고 원문",
+KA38,LEVEL,L4_BENCHMARK,,,,found,"금고 1,251개",
+KA38,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA38,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA40,ATTEMPT,L2,opendart-get_employees,직원수,OpenDART,OK,"4,855명",False
+KA40,ATTEMPT,L2,MyDART-download_document,IT 비용 계정,사업보고서 20260513000644,OK,전산비·통신비·정보화(계정) 0건; 무형자산 취득만. ZIP에 감사보고서 미포함(doc_count=1),False
+KA40,ATTEMPT,L1,WebSearch,KISA 단독 투자액,WebSearch 3회,NOT_FOUND,3사 합산·인력만 확보,True
+KA40,ATTEMPT,L1,WebFetch,WebFetch 기사 본문 확인,언론사 사이트,BLOCKED,"오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",False
+KA40,LEVEL,L1_DIRECT,,,,not_found,,
+KA40,LEVEL,L2_COMPONENTS,,,,found,,
+KA40,LEVEL,L5_COMPARABLE,,,,found,,
+KA41,ATTEMPT,L1,MyDART-search_disclosures,DART 공시 검색,00298827,NOT_FOUND,730일간 공시 0건,False
+KA41,ATTEMPT,L1,MyDART-find_corp_code,MyDART 법인 검색 '신협',신협,NOT_FOUND,신협전자·한진정보통신신협만,False
+KA41,ATTEMPT,L3,"krbid-search_awards, krbid-search",KR-BID 낙찰/공고,신용협동조합중앙회 / 신협중앙회 차세대,NOT_FOUND,0건 — 차세대 발주 전,False
+KA41,ATTEMPT,L3,WebSearch,차세대 금액·기간,신협중앙회,OK,"3500억원대, 2027-2029",False
+KA41,ATTEMPT,L4,WebSearch,조합 수·조합원 수,신협,OK,"864곳(2026-03 보도), 조합원 673만(FY2022, 구 자료)",False
+KA41,LEVEL,L1_DIRECT,,,,not_found,연간 IT 예산 미공개,
+KA41,LEVEL,L2_COMPONENTS,,,,not_found,DART 미제출,
+KA41,LEVEL,L3_CONTRACT,,,,found,"차세대 3500억원대 계획(보도, 2027-2029)",
+KA41,LEVEL,L4_BENCHMARK,,,,found,"조합 864곳, 조합원 673만(FY2022)",
+KA41,LEVEL,L5_COMPARABLE,,,,found,"새마을금고 계정계 3,370억/28개월, 저축은행중앙회 1,700억",
+KA41,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA42,ATTEMPT,L3,ItNewsSearch-News_Article,ItNews,Fastly 서울,NOT_FOUND,null,False
+KA42,ATTEMPT,L2,WebSearch,WebSearch,Fastly Seoul POP facility,NOT_FOUND,"네트워크맵만, 시설 미기재",False
+KA42,ATTEMPT,L4,WebSearch,WebSearch,Fastly 10-K APAC,OK,"10-K Note 3 미확인, 3rd party TTM APAC 6.2%",False
+KA42,ATTEMPT,L2,WebFetch,PeeringDB AS54113,peeringdb.com,BLOCKED,WebFetch DNS 차단,True
+KA42,LEVEL,L1_DIRECT,,,,not_found,"한국 지출·매출 공시 없음, DART 법인 없음",
+KA42,LEVEL,L2_COMPONENTS,,,,not_found,서울 POP IDC/트랜짓 공급사 공개 근거 없음,
+KA42,LEVEL,L3_CONTRACT,,,,not_found,,
+KA42,LEVEL,L4_BENCHMARK,,,,not_applicable,,
+KA42,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA42,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA43,ATTEMPT,L3,ItNewsSearch-News_Article,ItNews,스팀 캐시서버,NOT_FOUND,null,False
+KA43,ATTEMPT,L2,WebSearch,WebSearch,Steam Korea ISP cache,NOT_FOUND,Netify IP 수만,False
+KA43,ATTEMPT,L1,WebSearch,WebSearch,밸브 한국 법인,NOT_FOUND,국내 사업자등록 없음 보도,False
+KA43,LEVEL,L1_DIRECT,,,,not_found,"한국 법인 없음, 비상장",
+KA43,LEVEL,L2_COMPONENTS,,,,not_found,한국 ISP 캐시/피어링 계약·트래픽 Gbps 공개 근거 없음,
+KA43,LEVEL,L3_CONTRACT,,,,not_found,,
+KA43,LEVEL,L4_BENCHMARK,,,,not_applicable,,
+KA43,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA43,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA44,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 검색,01785898,OK,FY2025 rcept 20260410001257,False
+KA44,ATTEMPT,L2,MyDART-download_document,감사보고서 발췌,20260410001257,OK,"회선 0건, 매출원가 세부 주석 없음",False
+KA44,ATTEMPT,L3,ItNewsSearch-News_Article,ItNews,차이나유니콤 LG유플러스,NOT_FOUND,null,False
+KA44,ATTEMPT,L3,WebSearch,WebSearch x2,China Unicom–KR carriers / 한국 PoP,NOT_FOUND,SKT 2015 MOU만; PoP·LG U+ 무관,False
+KA44,LEVEL,L1_DIRECT,,,,not_found,국내 통신사 지급액 계정 직접 공시 없음,
+KA44,LEVEL,L2_COMPONENTS,,,,found,"매출원가 12.28bn, 비인건 잔여 10.44bn(DERIVED), 통신비 19.95m",
+KA44,LEVEL,L3_CONTRACT,,,,not_found,KR 통신사와 회선/IDC 계약 보도 없음,
+KA44,LEVEL,L4_BENCHMARK,,,,not_applicable,,
+KA44,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA44,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA45,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 검색,페이스북코리아 01469635,OK,FY2025 rcept 20260402001603,False
+KA45,ATTEMPT,L2,MyDART-download_document,감사보고서 키워드 발췌,20260402001603,OK,"매출액 0건(영업수익 사용), 임차료 0건",False
+KA45,ATTEMPT,L3,ItNewsSearch-News_Article,ItNews 검색,메타 망 사용료,NOT_FOUND,결과 null,False
+KA45,ATTEMPT,L3,WebSearch,WebSearch x2,메타 망 이용대가/LG U+ 캐시서버,NOT_FOUND,2017~2019 기사만; 금액·LG U+ 계약 미확인,False
+KA45,ATTEMPT,L3,WebFetch,WebFetch,news sites,BLOCKED,프로토콜상 DNS 차단 — 미시도,False
+KA45,LEVEL,L1_DIRECT,,,,not_found,국내 법인 감사보고서에 망 이용대가/IDC/회선 계정 없음; 망 계약은 해외 Meta 법인 주체,
+KA45,LEVEL,L2_COMPONENTS,,,,found,"통신비 219,499천원·지급수수료 3,519,371천원(FY2025) — 사무용, 망 수요 대리지표 부적합",
+KA45,LEVEL,L3_CONTRACT,,,,not_found,SKB 2019 망 사용료 합의 존재하나 금액 비공개; LG U+ 계약 미확인,
+KA45,LEVEL,L4_BENCHMARK,,,,not_applicable,,
+KA45,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA45,LEVEL,L6_SCENARIO,,,,not_applicable,근거 없음,
+KA46,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 검색,한국오라클 00203519,OK,"FY2026 기재정정 20260914000078(원본 20260901000021), FY2025 20250902000011",False
+KA46,ATTEMPT,L1/L2,MyDART-download_document,감사보고서 키워드 발췌,20260914000078,OK,손익·매출구분·유형자산·리스·판관비·특수관계자 확보. 일반기업회계기준이라 사용권자산 없음,False
+KA46,ATTEMPT,L3,WebSearch,OCI 리전 IDC·투자 검색,WebSearch,NOT_FOUND,2019~2020 개소 기사만. 호스팅 사업자·MW·2026 증설 발표 없음,False
+KA46,ATTEMPT,L1,WebFetch,WebFetch 본문 확인,언론사 기사 본문,BLOCKED,"§5-1 및 지시에 따라 환경 전체 DNS 차단 — 시도 생략, WebSearch 요약으로 대체(SECONDARY_UNCONFIRMED)",False
+KA46,LEVEL,L1_DIRECT,,,,found,FY2026 감사보고서(기재정정) 원문,
+KA46,LEVEL,L2_COMPONENTS,,,,found,호스팅서비스비용·통신비·지급임차료·컴퓨터장치 취득·운용리스,
+KA46,LEVEL,L3_CONTRACT,,,,not_found,DC 임대인·MW·리전 증설 발표 미확인,
+KA46,LEVEL,L4_BENCHMARK,,,,found,_DC_PRICE_BENCHMARKS.json,
+KA46,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA46,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA47,ATTEMPT,L2_COMPONENTS,MyDART-download_document,사업보고서 키워드 발췌,DART 20260318001522,OK,성격별 비용·전산장비 확인; 전산비·통신비·회선사용료 계정 없음,False
+KA47,ATTEMPT,L2_COMPONENTS,opendart-get_employees,직원현황,OpenDART,OK,423명,False
+KA47,ATTEMPT,L1_DIRECT,WebSearch,KISA 금액 검색,WebSearch,NOT_FOUND,"2회 검색, 가비아/KINX 공시 보도 없음",False
+KA47,LEVEL,L1_DIRECT,,,,not_found,KISA 보도 미발견,
+KA47,LEVEL,L2_COMPONENTS,,,,found,성격별 비용·전산장비,
+KA48,ATTEMPT,L2_COMPONENTS,MyDART-download_document,사업보고서 키워드 발췌,DART 20260312001366,OK,전산·통신비 계정 없음; IT 설비투자 계획 확인,False
+KA48,ATTEMPT,L2_COMPONENTS,opendart-get_employees,직원현황,OpenDART,OK,"1,282명",False
+KA48,ATTEMPT,L1_DIRECT,WebSearch,KISA 금액 검색,WebSearch,OK,"딜사이트 140.9억/12.3% (3회 사용, 연도 미확정)",False
+KA48,LEVEL,L1_DIRECT,,,,found,KISA 보도(SECONDARY) + 2026 IT 설비투자 계획(VERIFIED),
+KA48,LEVEL,L2_COMPONENTS,,,,found,인원·상각비,
+KA49,ATTEMPT,L2,MyDART-download_document(find),감사보고서,20260401004327,OK,"IS, 주석24 영업비용, 주석9 유형자산, 주석18 약정",False
+KA49,ATTEMPT,L1,WebSearch,KISA 정보보호 공시,WebSearch x3,NOT_FOUND,NHN클라우드 법인 금액 없음; 딜사이트 'NHN' 51.5억/7.8%는 법인 불명으로 fact 미채택,True
+KA49,LEVEL,L1_DIRECT,,,,not_found,NHN클라우드 FY2024/25 KISA 금액 미발견(NHN 본사 혼동 보도만),
+KA49,LEVEL,L2_COMPONENTS,,,,found,영업비용 주석·유형자산·약정,
+KA49,LEVEL,L3_CONTRACT,,,,found,"GPU 사업 협약 1,010,010백만원(다년 누적)",
+KA50,ATTEMPT,L1,MyDART-search_disclosures,펀드 공시 검색,corp 01953091,NOT_FOUND,2024-01~2026-10 전체 0건,False
+KA50,ATTEMPT,L1,MyDART-find_corp_code,동명 법인 확인,도화동데이터센터/키암코,OK,01953091 단일; 키암코 계열 SPC 2건(항공·선박) 무관,False
+KA50,ATTEMPT,L3,ItNewsSearch-News_Article,IT뉴스 검색,인천 도화동 데이터센터,NOT_FOUND,null 결과,False
+KA50,ATTEMPT,L3,WebSearch,뉴스 검색 x5,도화동 DC 용량·운영사·사업비,OK,80MW/부지/허가/착공예정 확보; 임차인·사업비·인수가 NOT_FOUND,False
+KA50,ATTEMPT,L3,WebFetch,본문 확인,언론사,BLOCKED,DNS 차단(프로토콜 §5) — 시도 안 함,True
+KA50,LEVEL,L1_DIRECT,,,,not_found,DART 공시 0건(감사보고서 없음): 임대수익·운용보수·투자부동산 미확보,
+KA50,LEVEL,L2_COMPONENTS,,,,not_found,재무 주석 없음,
+KA50,LEVEL,L3_CONTRACT,,,,found,부지·허가·80MW·착공 예정 보도. 임차/운영 계약 미발견,
+KA50,LEVEL,L4_BENCHMARK,,,,not_applicable,,
+KA50,LEVEL,L5_COMPARABLE,,,,found,"인천 원창동 50MW 8700억, PDG 48MW 1조",
+KA50,LEVEL,L6_SCENARIO,,,,not_applicable,엔진 처리,
+KA52,ATTEMPT,L1,MyDART-search_disclosures,감사보고서 rcept,01527984,OK,별도 20260401004239 / 연결 20260401004244,False
+KA52,ATTEMPT,L2,MyDART-download_document,감사보고서 find 전산·통신비·소프트웨어·지급수수료·영업수익·판관비,20260401004239,OK,"전산운용비 323억, 판관비, 무형자산 확보; 통신비 계정 0건",False
+KA52,ATTEMPT,L2,MyDART-download_document,유형자산 주석,20260401004239,OK,시설장치 취득 215억,False
+KA52,ATTEMPT,L1,WebSearch,KISA FY2025 금액(KA27 기록 915억/82.9억 확인),토스증권,NOT_FOUND,"3회 검색 — FY2024 비율 11.6%만 재확인, 금액·FY2025 미확인",False
+KA52,LEVEL,L1_DIRECT,,,,not_found,KISA 금액 미확인(비율 11.6% FY24만),
+KA52,LEVEL,L2_COMPONENTS,,,,found,전산운용비 323억 + 유·무형 취득 259억 = 582억(FY25 하한),
+KA52,LEVEL,L3_CONTRACT,,,,not_applicable,,
+KA52,LEVEL,L4_BENCHMARK,,,,not_found,임직원 수 미확보,
+KA52,LEVEL,L5_COMPARABLE,,,,not_applicable,,
+KA52,LEVEL,L6_SCENARIO,,,,not_applicable,,
+KA53,ATTEMPT,L2_COMPONENTS,MyDART-download_document,감사보고서 키워드 발췌,DART 20260331000296,OK,영업수익·영업비용 주석 확인; 전산비 계정 없음,False
+KA53,ATTEMPT,L1_DIRECT,WebSearch,KISA 금액 검색,WebSearch,OK,딜사이트 44.4억/10.8% (2회 사용),False
+KA53,ATTEMPT,L1_DIRECT,WebFetch,기사 본문 확인,dealsite.co.kr,BLOCKED,프로토콜상 DNS 차단 — 시도 생략,False
+KA53,LEVEL,L1_DIRECT,,,,found,KISA 보도 44.4억/10.8%(SECONDARY),
+KA53,LEVEL,L2_COMPONENTS,,,,found,통신비·SW취득·감가상각,
+KA06,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 TS,,ESTIMATED_MEDIUM,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
+KA06,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
+KA06,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
+KA06,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
+KA06,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
+KA06,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
+KA07,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 TS,,ESTIMATED_LOW,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
+KA07,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 RAW,,ESTIMATED_LOW,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
+KA07,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 FPR,,ESTIMATED_LOW,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
+KA07,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 TS,,ESTIMATED_LOW,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
+KA07,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 RAW,,ESTIMATED_LOW,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
+KA07,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 FPR,,ESTIMATED_LOW,"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
+KA15,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 TS,,ESTIMATED_LOW,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
+KA15,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
+KA15,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
+KA15,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
+KA15,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
+KA15,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
+KA24,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2026 TS,,ESTIMATED_LOW,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)",
+KA24,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)",
+KA24,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)",
+KA24,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)",
+KA24,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)",
+KA24,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3)",
+KA31,FIELD_RECOVERED,KISA_IT_INVESTMENT,models.build,2026 TS,,ESTIMATED_HIGH,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액,
+KA31,FIELD_RECOVERED,KISA_IT_INVESTMENT,models.build,2026 RAW,,ESTIMATED_MEDIUM,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액,
+KA31,FIELD_RECOVERED,KISA_IT_INVESTMENT,models.build,2026 FPR,,ESTIMATED_MEDIUM,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액,
+KA31,FIELD_RECOVERED,KISA_IT_INVESTMENT,models.build,2031 TS,,ESTIMATED_MEDIUM,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액,
+KA31,FIELD_RECOVERED,KISA_IT_INVESTMENT,models.build,2031 RAW,,ESTIMATED_LOW,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액,
+KA31,FIELD_RECOVERED,KISA_IT_INVESTMENT,models.build,2031 FPR,,ESTIMATED_LOW,TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액,
+KA34,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 TS,,ESTIMATED_LOW,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
+KA34,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
+KA34,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
+KA34,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
+KA34,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
+KA34,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
+KA35,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 TS,,ESTIMATED_MEDIUM,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA35,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA35,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA35,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA35,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA35,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA36,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2026 TS,,ESTIMATED_LOW,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)",
+KA36,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)",
+KA36,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)",
+KA36,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)",
+KA36,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)",
+KA36,FIELD_RECOVERED,REVENUE_INTENSITY,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3)",
+KA38,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 TS,,ESTIMATED_LOW,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
+KA38,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 RAW,,ESTIMATED_LOW,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
+KA38,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 FPR,,ESTIMATED_LOW,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
+KA38,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 TS,,ESTIMATED_LOW,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
+KA38,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 RAW,,ESTIMATED_LOW,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
+KA38,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 FPR,,ESTIMATED_LOW,"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
+KA44,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 TS,,ESTIMATED_MEDIUM,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
+KA44,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
+KA44,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
+KA44,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
+KA44,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
+KA44,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
+KA46,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 TS,,ESTIMATED_LOW,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
+KA46,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
+KA46,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
+KA46,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
+KA46,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
+KA46,FIELD_RECOVERED,ACCOUNT_SPECIFIC,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
+KA49,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 TS,,ESTIMATED_MEDIUM,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]",
+KA49,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]",
+KA49,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]",
+KA49,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]",
+KA49,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]",
+KA49,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%]",
+KA52,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 TS,,ESTIMATED_MEDIUM,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA52,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 RAW,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA52,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2026 FPR,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA52,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 TS,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA52,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 RAW,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",
+KA52,FIELD_RECOVERED,AUDIT_IT_COMPONENTS,models.build,2031 FPR,,ESTIMATED_LOW,"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%]",

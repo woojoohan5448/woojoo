@@ -1,0 +1,387 @@
+{
+  "account_id": "KA46",
+  "original_name": "한국오라클",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-korea-cloud-anchors",
+  "supplement_of": "data/raw/research/KA46.json",
+  "entity": {
+    "legal_name_ko": "한국오라클 유한회사",
+    "legal_name_en": "Oracle Systems Korea",
+    "corp_code": "00203519",
+    "stock_code": null,
+    "business_reg_no": "1168127389",
+    "parent_group": "Oracle Corporation (미국)",
+    "related_key_accounts": [],
+    "industry_detail": "DB·애플리케이션 SW 및 OCI 클라우드 한국 판매 법인. DART 업종 58221, 설립 1989-11-01, 5월 결산",
+    "is_korean_entity": true,
+    "fiscal_year_end": "05",
+    "dart_available": true,
+    "economic_scope": "한국오라클 법인 + OCI 한국 리전(서울·춘천으로 알려짐, 본 조사에서 원문 미확인) 인프라. Oracle 글로벌은 context only",
+    "exclusions": "오라클랜드·오라클엔터테인먼트(무관), Oracle 글로벌",
+    "entity_status": "PROBABLE",
+    "entity_notes": "DART 감사보고서 FY2023.05~FY2026.05 공시(최신 2026-09-14 기재정정). 재무 API status 013. OCI 리전 DC 임차 계약 주체는 해외 Oracle 인프라 법인일 가능성."
+  },
+  "facts": [
+    {
+      "fact_id": "KA46-P1-F01",
+      "metric": "korea_revenue",
+      "fiscal_year": 2026,
+      "value": 1105756951345,
+      "unit": "원",
+      "scope": "법인 별도(한국오라클), FY2026=2025.06~2026.05",
+      "evidence_ids": [
+        "KA46-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA46-P1-F02",
+      "metric": "cloud_spend",
+      "fiscal_year": 2026,
+      "value": 96958409,
+      "unit": "천원",
+      "scope": "법인 별도 — 클라우드매출액(한국 OCI/SaaS 판매, 고객측 지출)",
+      "evidence_ids": [
+        "KA46-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 64,806,367천원 대비 +49.6%. 메트릭은 매출이나 cloud 판매 규모 표시용"
+    },
+    {
+      "fact_id": "KA46-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2026,
+      "value": 2799731,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA46-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA46-P1-F04",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2026,
+      "value": 67637392387,
+      "unit": "원",
+      "scope": "법인 별도(현금흐름표)",
+      "evidence_ids": [
+        "KA46-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 28,365,699,354원. 컴퓨터장치 66,340,741천원 — OCI 리전 장비 투자 프록시"
+    },
+    {
+      "fact_id": "KA46-P1-F05",
+      "metric": "depreciation",
+      "fiscal_year": 2026,
+      "value": 42066356,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA46-P1-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA46-P1-F06",
+      "metric": "it_service_cost",
+      "fiscal_year": 2026,
+      "value": 18395116,
+      "unit": "천원",
+      "scope": "법인 별도 — 호스팅서비스비용",
+      "evidence_ids": [
+        "KA46-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DC 상면/호스팅 비용 후보. 전기 21,914,575천원"
+    },
+    {
+      "fact_id": "KA46-P1-F07",
+      "metric": "it_service_cost",
+      "fiscal_year": 2026,
+      "value": 16248163,
+      "unit": "천원",
+      "scope": "법인 별도 — 통신비",
+      "evidence_ids": [
+        "KA46-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 24,274,685천원"
+    },
+    {
+      "fact_id": "KA46-P1-F08",
+      "metric": "other",
+      "fiscal_year": 2026,
+      "value": 15993141,
+      "unit": "천원",
+      "scope": "법인 별도 — DC·사무실 운용리스 최소리스료 총액(다년 누적)",
+      "evidence_ids": [
+        "KA46-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "1년 이내 8,704,056천원"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA46-P1-D01",
+      "type": "DC_BUILD",
+      "description": "한국오라클 유형자산(컴퓨터장치) 취득 FY2026 663억원으로 전기 269억원 대비 약 2.5배 — OCI 한국 리전 장비 증설 신호(공식 발표 미확인)",
+      "amount": 66340741,
+      "unit": "천원",
+      "period": "FY2026",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA46-P1-E03"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "국내 법인이 '데이터센터 및 사무실'을 (주)코엑스 외 5개사와 운용리스. OCI 서울·춘천 리전 호스팅 IDC 사업자명은 미공시",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA46-P1-E04",
+        "KA46-P1-E07"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA46-P1-E01",
+      "tier": "일반기업회계기준(운용리스 비용처리, 사용권자산 없음)",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "[기재정정]한국오라클 유한회사 감사보고서 (2026.05)",
+      "publisher": "우리회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000078",
+      "document_id": "20260914000078",
+      "publication_date": "2026-09-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026(2025.06~2026.05)",
+      "page_or_section": "손익계산서",
+      "quoted_statement": "I. 매출액<주석 21,22> | | 1,105,756,951,345 | | 1,051,426,325,436 / II. 매출원가 | | 868,723,540,916 | | 803,926,708,809 / Ⅴ. 영업이익 | | 2,799,731,179 | | 22,279,657,040",
+      "reported_value": "1,105,756,951,345",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA46-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "[기재정정]한국오라클 유한회사 감사보고서 (2026.05)",
+      "publisher": "우리회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000078",
+      "document_id": "20260914000078",
+      "publication_date": "2026-09-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 22. 매출액",
+      "quoted_statement": "라이센스매출액 | 777,005,986 | 765,796,520 / 클라우드매출액 | 96,958,409 | 64,806,367 / 서비스매출액 | 51,456,027 | 53,114,240 / 시스템매출액 | 180,336,529 | 167,709,198 / 합 계 | 1,105,756,951 | 1,051,426,325",
+      "reported_value": "96,958,409",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA46-P1-E03",
+      "tier": "현금흐름표 유형자산의 취득 67,637,392,387원(전기 28,365,699,354원)",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "[기재정정]한국오라클 유한회사 감사보고서 (2026.05)",
+      "publisher": "우리회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000078",
+      "document_id": "20260914000078",
+      "publication_date": "2026-09-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 8. 유형자산(당기)",
+      "quoted_statement": "컴퓨터장치 | 119,608,529 | 66,340,741 | (718,734) | (40,634,221) | 144,596,315 / 합 계 | 126,378,541 | 67,637,392 | (718,734) | (42,066,356) | 151,230,843 (기초|취득|처분|감가상각비|기말)",
+      "reported_value": "66,340,741",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA46-P1-E04",
+      "tier": "DC 임대인 명칭(코엑스 외 5개사)·DC/사무실 구분 금액 미공시",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "[기재정정]한국오라클 유한회사 감사보고서 (2026.05)",
+      "publisher": "우리회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000078",
+      "document_id": "20260914000078",
+      "publication_date": "2026-09-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 27. 리스",
+      "quoted_statement": "당사는 당기말 현재 데이터센터 및 사무실 임대차계약에 대하여 (주)코엑스 외 5개 회사와 운용리스계약을 체결하여 사용하고 있는 바 ... 1년 이내 | 8,704,056 / 1년 초과 5년 이내 | 7,138,668 / 5년 초과 | 150,417 / 합 계 | 15,993,141",
+      "reported_value": "15,993,141",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA46-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "[기재정정]한국오라클 유한회사 감사보고서 (2026.05)",
+      "publisher": "우리회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000078",
+      "document_id": "20260914000078",
+      "publication_date": "2026-09-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 24. 판매비와관리비",
+      "quoted_statement": "통신비 | 16,248,163 | 24,274,685 / 지급임차료 | 1,978,941 | 5,255,237 / 감가상각비 | 42,066,356 | 36,878,758 / 호스팅서비스비용 | 18,395,116 | 21,914,575 / 외주용역비 | 15,467,740 | 18,719,239 / 합 계 | 234,233,679 | 225,219,960",
+      "reported_value": "18,395,116",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA46-P1-E06",
+      "tier": "OCI 장비(컴퓨터장치)를 관계사로부터 취득, 매출원가 거의 전액이 Oracle CAPAC 지급",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "[기재정정]한국오라클 유한회사 감사보고서 (2026.05)",
+      "publisher": "우리회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000078",
+      "document_id": "20260914000078",
+      "publication_date": "2026-09-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 21. 특수관계자 (2) 당기",
+      "quoted_statement": "Oracle CAPAC Services UC | 18,261 | (867,457,915) | (1,983) | - | (9,033,317) | (66,243,526) (열: 매출|매출원가|판매비와관리비|이자수익|이자비용|유형자산취득)",
+      "reported_value": "66,243,526",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA46-P1-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "오라클, 내년 춘천에 두번째 데이터센터 짓는다",
+      "publisher": "아이뉴스24",
+      "source_url": "https://www.inews24.com/view/1208726",
+      "document_id": null,
+      "publication_date": "2019",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "2019년 서울 리전 개소, 강원도 춘천에 두 번째 클라우드 데이터센터 구축 발표(요약)",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "요약 인용 — 원문 문장 아님. 호스팅 IDC 사업자 미확인"
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "FY2026 감사보고서(기재정정) 원문"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "호스팅서비스비용·통신비·지급임차료·컴퓨터장치 취득·운용리스"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "detail": "DC 임대인·MW·리전 증설 발표 미확인"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "found",
+      "detail": "_DC_PRICE_BENCHMARKS.json"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA46-F01",
+      "existing_value": 17190,
+      "new_value": 11057.57,
+      "unit": "USD_mn vs 억원",
+      "explanation": "기존 F01은 Oracle Corp. 글로벌 단일분기(USD_mn) — 한국 TS에 사용 불가. 한국오라클 FY2026 매출 1,105,756,951,345원(≈11,058억원)로 대체",
+      "evidence_ids": [
+        "KA46-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "DC 관련 연간 운영비 후보(호스팅서비스비용+지급임차료)",
+      "value": 20374057,
+      "unit": "천원",
+      "basis": "주석24 18,395,116+1,978,941 (DERIVED, 구성 미공시)",
+      "evidence_ids": [
+        "KA46-P1-E05"
+      ]
+    },
+    {
+      "name": "OCI 한국 리전 MW",
+      "value": null,
+      "unit": "MW",
+      "basis": "NOT_FOUND",
+      "evidence_ids": []
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 검색",
+      "target": "한국오라클 00203519",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "FY2026 기재정정 20260914000078(원본 20260901000021), FY2025 20250902000011",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 키워드 발췌",
+      "target": "20260914000078",
+      "tool": "MyDART-download_document",
+      "level": "L1/L2",
+      "result": "OK",
+      "detail": "손익·매출구분·유형자산·리스·판관비·특수관계자 확보. 일반기업회계기준이라 사용권자산 없음",
+      "retryable": false
+    },
+    {
+      "step": "OCI 리전 IDC·투자 검색",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "2019~2020 개소 기사만. 호스팅 사업자·MW·2026 증설 발표 없음",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사 기사 본문",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "§5-1 및 지시에 따라 환경 전체 DNS 차단 — 시도 생략, WebSearch 요약으로 대체(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "운용리스 임대인 '(주)코엑스 외 5개사' 중 DC 사업자 명단과 DC분 리스료",
+    "OCI 서울·춘천 리전 호스팅 IDC 및 MW",
+    "FY2026 컴퓨터장치 취득 급증(663억원)의 리전 증설 여부"
+  ]
+}

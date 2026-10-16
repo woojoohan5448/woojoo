@@ -1,0 +1,420 @@
+{
+  "account_id": "KA07",
+  "original_name": "마이크로소프트",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-korea-cloud-anchors",
+  "supplement_of": "data/raw/research/KA07.json",
+  "entity": {
+    "legal_name_ko": "한국마이크로소프트 유한회사",
+    "legal_name_en": "Microsoft Korea, Inc.",
+    "corp_code": "00192790",
+    "stock_code": null,
+    "business_reg_no": "1208105948",
+    "parent_group": "Microsoft Corporation (미국)",
+    "related_key_accounts": [],
+    "industry_detail": "소프트웨어·클라우드(Azure/M365) 한국 판매 법인. DART 업종 62021, 설립 1988-09-16, 6월 결산",
+    "is_korean_entity": true,
+    "fiscal_year_end": "06",
+    "dart_available": true,
+    "economic_scope": "한국MS 법인 + Azure Korea Central(서울)/Korea South(부산) 리전 인프라. MS 글로벌 capex는 context only",
+    "exclusions": "Microsoft 글로벌, LinkedIn/GitHub 등 별도 법인, KT의 MS 협력 투자액",
+    "entity_status": "PROBABLE",
+    "entity_notes": "DART 감사보고서 FY2023.06~FY2026.06 공시 확인(최신 2026-10-14 제출). OpenDART 재무 API는 status 013 → 원문 매출 미확인. Azure 리전 DC 소유/임차 주체(해외 MS 인프라 법인 가능)·위치 비공개."
+  },
+  "facts": [
+    {
+      "fact_id": "KA07-P1-F01",
+      "metric": "korea_revenue",
+      "fiscal_year": 2026,
+      "value": 2093504246,
+      "unit": "천원",
+      "scope": "법인 별도(한국MS), FY2026=2025.07~2026.06",
+      "evidence_ids": [
+        "KA07-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기(FY2025) 1,729,046,777천원 대비 +21.1%"
+    },
+    {
+      "fact_id": "KA07-P1-F02",
+      "metric": "revenue",
+      "fiscal_year": 2026,
+      "value": 1515029333,
+      "unit": "천원",
+      "scope": "법인 별도 — 서비스 등 기타매출(클라우드 구독 포함 추정)",
+      "evidence_ids": [
+        "KA07-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA07-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2026,
+      "value": 97271987,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA07-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA07-P1-F04",
+      "metric": "other",
+      "fiscal_year": 2026,
+      "value": 1724060201,
+      "unit": "천원",
+      "scope": "법인 별도 — MOL Corporation 기술사용료(매출원가)",
+      "evidence_ids": [
+        "KA07-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "국내 법인은 판매법인 구조: DC·인프라 원가는 해외 관계사에 귀속, 국내 법인 비용에 코로케이션/전력비 없음"
+    },
+    {
+      "fact_id": "KA07-P1-F05",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2026,
+      "value": 1896639,
+      "unit": "천원",
+      "scope": "법인 별도(현금흐름표)",
+      "evidence_ids": [
+        "KA07-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "사무용 수준 — DC capex 아님"
+    },
+    {
+      "fact_id": "KA07-P1-F06",
+      "metric": "it_service_cost",
+      "fiscal_year": 2026,
+      "value": 756237,
+      "unit": "천원",
+      "scope": "법인 별도 — 판관비 통신비",
+      "evidence_ids": [
+        "KA07-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA07-P1-F07",
+      "metric": "dc_capacity_mw",
+      "fiscal_year": 2026,
+      "value": 85,
+      "unit": "MW",
+      "scope": "한국 MS 부산 기존 1·2호기 합산(보도)",
+      "evidence_ids": [
+        "KA07-P1-E08"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "Tier3 단독 — 확정 근거 불가"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA07-P1-D01",
+      "type": "DC_BUILD",
+      "description": "MS 부산 125MW 데이터센터 2026-10 착공 예정, 400MW 클러스터 구상(뉴스레터 보도)",
+      "amount": 125,
+      "unit": "MW",
+      "period": "2026-",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA07-P1-E08"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "MS 공식 fact sheet상 한국 DC는 부산권 운영(직원 약 50명, 증발식 냉각). 국내 판매법인 재무에 DC 리스·설비 없음 → DC 계약 주체는 해외 MS 인프라 법인 또는 'Microsoft 5673 Korea'(DART 미등록 관계사) 가능성",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA07-P1-E07",
+        "KA07-P1-E05",
+        "KA07-P1-E06"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA07-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국마이크로소프트 유한회사 감사보고서 (2026.06)",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000067",
+      "document_id": "20261014000067",
+      "publication_date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026(2025.07~2026.06)",
+      "page_or_section": "포괄손익계산서",
+      "quoted_statement": "I. 고객과의 계약에서 생기는 수익 | 16 | | 2,093,504,246 | | 1,729,046,777 / II. 매출원가 | 17 | | 1,759,689,935 | | 1,439,005,608 / V. 영업이익 | | | 97,271,987 | | 80,474,275",
+      "reported_value": "2,093,504,246",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국마이크로소프트 유한회사 감사보고서 (2026.06)",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000067",
+      "document_id": "20261014000067",
+      "publication_date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 16.1 항목별 수익 구분",
+      "quoted_statement": "상품의 판매 | 561,196,134 | 546,489,557 / 서비스 등 기타매출 | 1,515,029,333 | 1,162,989,980 / 관계사 수입수수료 | 17,278,779 | 19,567,240 / 합 계 | 2,093,504,246 | 1,729,046,777",
+      "reported_value": "1,515,029,333",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-P1-E03",
+      "tier": "Azure·M365 등 서비스 원가가 해외 관계사(MOL Corporation) 기술사용료로 일괄 지급됨 → 국내 법인에 DC 비용 미계상",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국마이크로소프트 유한회사 감사보고서 (2026.06)",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000067",
+      "document_id": "20261014000067",
+      "publication_date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 17.2 비용의 성격별 분류 / 주석 21 특수관계자",
+      "quoted_statement": "기술사용료 | 1,724,060,201 | 1,397,572,301 / MOL Corporation | ... | 1,724,060,201 | 1,397,572,301 (기술사용료)",
+      "reported_value": "1,724,060,201",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국마이크로소프트 유한회사 감사보고서 (2026.06)",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000067",
+      "document_id": "20261014000067",
+      "publication_date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 17.1 판매비와 관리비",
+      "quoted_statement": "임차료 | 436,684 | 413,312 / 시설관리비 | 2,282,998 | 2,279,648 / 지급수수료 | 641,442 | 702,577 / 통신비 | 756,237 | 879,448 / 용역비 | 43,856,971 | 34,795,188 / 합 계 | 236,542,324 | 209,566,894",
+      "reported_value": "236,542,324",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-P1-E05",
+      "tier": "사용권자산 기말 21,397,493천원(재무상태표 발췌 미리보기). 사무실·차량 리스 — DC 리스 아님",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국마이크로소프트 유한회사 감사보고서 (2026.06)",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000067",
+      "document_id": "20261014000067",
+      "publication_date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "현금흐름표 / 주석 10 사용권자산 및 리스부채",
+      "quoted_statement": "1. 유형자산의 취득 | | (1,896,639) | | (1,518,104) / 리스계약과 관련된 현금유출 | 3,638,148 | 3,534,398 / 당사는 영업에 사용되는 건물, 차량운반구 등 다양한 항목의 리스 계약을 체결하고 있습니다. 건물의 리스기간은 평균적으로 10년",
+      "reported_value": "1,896,639",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-P1-E06",
+      "tier": "DART 미등록 국내 관계사. 성격(인프라/DC 법인 여부) 미확인",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "한국마이크로소프트 유한회사 감사보고서 (2026.06)",
+      "publisher": "안진회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000067",
+      "document_id": "20261014000067",
+      "publication_date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "주석 21 특수관계자 (1),(2),(4)",
+      "quoted_statement": "기타 특수관계자 ... Microsoft 5673 Korea ... / Microsoft 5673 Korea | 1,138,509 | 837,760 (수익) / Microsoft 5673 Korea | 단기대여금 | - | 69,539,288 | (69,802,473) | 263,185 | -",
+      "reported_value": "1,138,509",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-P1-E07",
+      "tier": 1,
+      "source_type": "COMPANY_IR",
+      "source_title": "Microsoft datacenters in Korea (fact sheet)",
+      "publisher": "Microsoft",
+      "source_url": "https://local.microsoft.com/wp-content/uploads/2025/10/Microsoft-datacenters-in-Korea.pdf",
+      "document_id": null,
+      "publication_date": "2025-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "operates datacenters in the greater Busan area, which employ an estimated 50 people ... direct evaporative cooling and indirect evaporative cooling with fluid coolers",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "MW 미기재"
+    },
+    {
+      "evidence_id": "KA07-P1-E08",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "2026년 6월 첫째 주 News Update",
+      "publisher": "datacenternews(maily.so 뉴스레터)",
+      "source_url": "https://maily.so/datacenternews/posts/mjz6kjwnrwk",
+      "document_id": null,
+      "publication_date": "2026-06",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "마이크로소프트(MS)의 부산 125MW 착공:올 10월 착공 예정인 부산 데이터센터는 기존 1·2호기 합산 용량(85MW)을 단숨에 뛰어넘는 하이퍼스케일급입니다.",
+      "reported_value": "125",
+      "reported_unit": "MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "단일 뉴스레터. 400MW 클러스터 구상 언급. 원문 기사 교차확인 필요"
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "FY2026 감사보고서 매출·원가·판관비 원문"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "통신비·임차료·유형자산 취득 — DC 관련 비용은 국내 법인에 없음"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "detail": "부산 DC 부지·전력·코로케이션 계약 금액 미확인"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "found",
+      "detail": "_DC_PRICE_BENCHMARKS.json"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA07-F01",
+      "existing_value": 17290,
+      "new_value": 17290.47,
+      "unit": "억원",
+      "explanation": "충돌 아님 — 기존 Tier3 값이 FY2025(2025.06) 감사보고서 전기 수익 1,729,046,777천원과 일치하여 VERIFIED로 격상 가능. 최신 FY2026은 2,093,504,246천원",
+      "evidence_ids": [
+        "KA07-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "한국 MS 부산 DC 기존 용량",
+      "value": 85,
+      "unit": "MW",
+      "basis": "뉴스레터(Tier3) — 1·2호기 합산",
+      "evidence_ids": [
+        "KA07-P1-E08"
+      ]
+    },
+    {
+      "name": "한국 MS 부산 신규 DC(착공 예정)",
+      "value": 125,
+      "unit": "MW",
+      "basis": "뉴스레터(Tier3)",
+      "evidence_ids": [
+        "KA07-P1-E08"
+      ]
+    },
+    {
+      "name": "서울(Korea Central) 리전 용량",
+      "value": null,
+      "unit": "MW",
+      "basis": "NOT_FOUND",
+      "evidence_ids": []
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 검색",
+      "target": "한국마이크로소프트 00192790",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "FY2026 20261014000067, FY2025 20251002000144",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 키워드 발췌",
+      "target": "20261014000067",
+      "tool": "MyDART-download_document",
+      "level": "L1/L2",
+      "result": "OK",
+      "detail": "손익·판관비·리스·특수관계자 확보",
+      "retryable": false
+    },
+    {
+      "step": "Microsoft 5673 Korea 법인 조회",
+      "target": "MyDART find_corp_code('마이크로소프트','Microsoft')",
+      "tool": "MyDART-find_corp_code",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "DART에는 한국마이크로소프트 1건만 존재",
+      "retryable": false
+    },
+    {
+      "step": "Microsoft 5673 Korea 웹검색",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "해당 명칭 언급 자료 없음. MS fact sheet(부산권 DC) 확인",
+      "retryable": false
+    },
+    {
+      "step": "MS 한국 DC 투자·MW",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "OK",
+      "detail": "부산 125MW 착공·기존 85MW(Tier3 뉴스레터)만 확인",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사 기사 본문",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "§5-1 및 지시에 따라 환경 전체 DNS 차단 — 시도 생략, WebSearch 요약으로 대체(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "'Microsoft 5673 Korea'의 실체(DC 보유/운영 법인 여부), 사업자번호",
+    "부산 125MW·기존 85MW 수치의 원문 기사·부산시 보도자료 확인",
+    "Azure Korea Central(서울) 리전의 코로케이션 공급사·MW"
+  ]
+}

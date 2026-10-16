@@ -49,7 +49,7 @@
     "CARD": "FIN",
     "SECURITIES": "FIN",
     "INSURANCE": "FIN",
-    "FIN_INFRA": "FIN",
+    "FIN_INFRA": "ITS",
     "FIN_COOP": "FIN",
     "FINTECH": "FINTECH",
     "IT_SERVICE": "ITS",
@@ -826,7 +826,9 @@
     "REVENUE_INTENSITY": 0.4,
     "ACCOUNT_SPECIFIC": 0.4,
     "KISA_DERIVED": 0.15,
-    "KISA_SEC_SCALED": 0.25
+    "KISA_SEC_SCALED": 0.25,
+    "AUDIT_IT_COMPONENTS": 0.3,
+    "EMPLOYEE_COMPARABLE": 0.4
   },
   "fx_usd_krw": 1400,
   "_fx_note": "B-FX: 외화 환산 단일 가정(USD/KRW 1,400). 확정 환율로 교체 필요.",
@@ -841,5 +843,131 @@
     "evidence_ids": [
       "MB-E12"
     ]
-  }
+  },
+  "component_model": {
+    "_id": "B-COMP",
+    "_note": "L2: 감사/사업보고서 주석의 IT 비용 구성항목(전산비·전산운영비·통신비·IT 지급수수료·SW 상각 등) 합계를 TS로 환산. 식별 항목은 IT 인건비·일부 감가상각을 포함하지 않으므로 포괄률(coverage)로 나눈다. coverage=[low, base, high] → TS 범위는 합계/low ~ 합계/high. 분석가 가정(내부 IT 원가 구조로 교체 필요).",
+    "metrics": [
+      "it_service_cost",
+      "it_depreciation",
+      "it_maintenance",
+      "telecom_cost",
+      "software_amortization"
+    ],
+    "coverage": {
+      "FIN_전산업무비": {
+        "values": [
+          0.56,
+          0.468,
+          0.38
+        ],
+        "basis": "실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%"
+      },
+      "CLOUD_INFRA": {
+        "values": [
+          0.95,
+          0.806,
+          0.65
+        ],
+        "basis": "실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%"
+      },
+      "CORP_전산비": {
+        "values": [
+          0.8,
+          0.6,
+          0.45
+        ],
+        "basis": "분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%"
+      },
+      "_default": {
+        "values": [
+          0.8,
+          0.6,
+          0.45
+        ],
+        "basis": "분석가 가정"
+      }
+    },
+    "accounts": {
+      "KA20": {
+        "fact_ids": [
+          "KA20-P1-F01"
+        ],
+        "coverage": "FIN_전산업무비",
+        "note": "우리카드 전산업무비. 금감원 자료 인용 2024 IT 예산 960억(예산 기준·CAPEX 포함 가능)과 정의 차이 → 교차검증값"
+      },
+      "KA21": {
+        "fact_ids": [
+          "KA21-P1-F01"
+        ],
+        "coverage": "FIN_전산업무비",
+        "note": "KB국민카드 전산업무비"
+      },
+      "KA23": {
+        "fact_ids": [
+          "KA23-P1-F01"
+        ],
+        "coverage": "FIN_전산업무비",
+        "note": "SC제일은행 전산업무비"
+      },
+      "KA25": {
+        "fact_ids": [
+          "KA25-P1-F01"
+        ],
+        "coverage": "FIN_전산업무비",
+        "note": "미래에셋증권 전산운용비 — 은행 '전산업무비'와 계정 정의가 다를 수 있음(신한은행 전산운용비/KISA=0.15 사례) → 불확실성 큼"
+      },
+      "KA35": {
+        "fact_ids": [
+          "KA35-P1-F02"
+        ],
+        "coverage": "FIN_전산업무비",
+        "note": "KB손해보험 전산비(KB데이타시스템 지급 314.6억과 중복 가능 → 미합산)"
+      },
+      "KA52": {
+        "fact_ids": [
+          "KA52-P1-F05"
+        ],
+        "coverage": "FIN_전산업무비",
+        "note": "토스증권 전산운용비(온라인 증권사로 판관비 집약도 방식은 과소)"
+      },
+      "KA16": {
+        "fact_ids": [
+          "KA16-P1-F02"
+        ],
+        "coverage": "CORP_전산비",
+        "note": "GS리테일 판관비 전산수수료(별도). 통신비 33.8억 별도"
+      },
+      "KA17": {
+        "fact_ids": [
+          "KA17-P1-F02"
+        ],
+        "coverage": "CORP_전산비",
+        "note": "현대엘리베이터 판관비 전산비(별도)"
+      },
+      "KA30": {
+        "fact_ids": [
+          "KA30-P1-F06"
+        ],
+        "coverage": "CORP_전산비",
+        "note": "벤츠코리아 성격별 전산비(전사)"
+      },
+      "KA49": {
+        "fact_ids": [
+          "KA49-P1-F04",
+          "KA49-P1-F05"
+        ],
+        "coverage": "CLOUD_INFRA",
+        "note": "NHN클라우드 유형상각+통신비(클라우드 사업자는 서비스 인프라가 곧 자체 IT 소비)"
+      },
+      "KA47": {
+        "fact_ids": [
+          "KA47-P1-F03"
+        ],
+        "coverage": "CLOUD_INFRA",
+        "note": "가비아 감가+무형상각(별도). 통신비 미포함 → 과소 가능"
+      }
+    }
+  },
+  "_segment_family_note": "FIN_INFRA(코스콤)는 매출이 자본시장 IT 서비스(전용망·시스템 운영)에서 발생하므로 ITS 산업군(매출 기준 IT 집약도)으로 분류 — Phase1 재분류(2026-10-16)"
 }

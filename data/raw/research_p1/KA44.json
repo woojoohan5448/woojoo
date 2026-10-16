@@ -1,0 +1,268 @@
+{
+  "account_id": "KA44",
+  "original_name": "차이나유니콤",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-global-netco",
+  "supplement_of": "data/raw/research/KA44.json",
+  "facts": [
+    {
+      "fact_id": "KA44-P1-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 29937580422,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA44-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA44-P1-F02",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 12284866805,
+      "unit": "원",
+      "scope": "법인 별도 용역매출원가",
+      "evidence_ids": [
+        "KA44-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "매출원가 세부(회선/접속료) 주석 미공시"
+    },
+    {
+      "fact_id": "KA44-P1-F03",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 10437910008,
+      "unit": "원",
+      "scope": "법인 별도 — 매출원가 중 인건비·임차·감가상각 외 잔여(회선·망 조달 추정)",
+      "evidence_ids": [
+        "KA44-P1-E01",
+        "KA44-P1-E03"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "12,284,866,805 − 1,846,956,797 = 10,437,910,008. 잔여에는 그룹사 지급수수료 1,952,202,016 일부가 포함될 수 있어 국내 통신사 회선·IDC 조달 상한 근사치. 국내 공급사 구성 미공시"
+    },
+    {
+      "fact_id": "KA44-P1-F04",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 19950357,
+      "unit": "원",
+      "scope": "법인 별도 판관비 통신비",
+      "evidence_ids": [
+        "KA44-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA44-P1-F05",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 16412219183,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA44-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA44-P1-F06",
+      "metric": "korea_revenue",
+      "fiscal_year": 2025,
+      "value": 13280703974,
+      "unit": "원",
+      "scope": "법인 별도 — 그룹 외 매출",
+      "evidence_ids": [
+        "KA44-P1-E01",
+        "KA44-P1-E04"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "29,937,580,422 − 16,656,876,448"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "국내 회선 공급사 공개 근거 없음. SKT–China Unicom 2015 MOU(5G·로밍, 모바일) 존재. KT/LG U+ 대역폭 MOU 미확인",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA44-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "차이나유니콤오퍼레이션스코리아 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410001257",
+      "document_id": "20260410001257",
+      "publication_date": "2026-04-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "손익계산서",
+      "quoted_statement": "Ⅰ. 매출액 | | 29,937,580,422 | | 21,775,326,801 / Ⅱ. 매출원가 | | 12,284,866,805 | | 7,407,310,201 / Ⅳ. 판매비와관리비 1,240,494,434 | 997,635,786 / Ⅴ. 영업이익 16,412,219,183 | 13,370,380,814",
+      "reported_value": "29937580422 / 12284866805",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA44-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "차이나유니콤오퍼레이션스코리아 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410001257",
+      "document_id": "20260410001257",
+      "publication_date": "2026-04-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "손익계산서 판매비와관리비",
+      "quoted_statement": "통신비 | 19,950,357 | | 19,577,514 ; 지급수수료 | 87,061,767 | | 121,595,752 ; 임차료<주석 11> | 249,741,014 | | 87,424,508",
+      "reported_value": "19950357",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA44-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "차이나유니콤오퍼레이션스코리아 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410001257",
+      "document_id": "20260410001257",
+      "publication_date": "2026-04-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 11 부가가치 계산 항목(매출원가 열)",
+      "quoted_statement": "급여 | 1,414,847,126 ; 퇴직급여 | 316,975,986 ; 복리후생비 | 89,169,270 ; 임차료 | 7,653,729 ; 감가상각비 | 18,310,686 ; 합 계 | 1,846,956,797 (매출원가, 당기)",
+      "reported_value": "1846956797",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA44-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "차이나유니콤오퍼레이션스코리아 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410001257",
+      "document_id": "20260410001257",
+      "publication_date": "2026-04-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 15 특수관계자 거래",
+      "quoted_statement": "China United Network Communications Co., Ltd. | 11,849,035,110 | 1,211,223,937 ... 합계 | 16,656,876,448 | 1,952,202,016 (매출 | 지급수수료, 당기)",
+      "reported_value": "16656876448 / 1952202016",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "매출 29.9bn 중 16.7bn이 그룹사향 → 나머지 약 13.3bn이 한국 제3자 고객 매출(DERIVED)"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 검색",
+      "target": "01785898",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "FY2025 rcept 20260410001257",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 발췌",
+      "target": "20260410001257",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "회선 0건, 매출원가 세부 주석 없음",
+      "retryable": false
+    },
+    {
+      "step": "ItNews",
+      "target": "차이나유니콤 LG유플러스",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "null",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch x2",
+      "target": "China Unicom–KR carriers / 한국 PoP",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "SKT 2015 MOU만; PoP·LG U+ 무관",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "매출원가 10.4bn 잔여 중 국내 통신사(LG U+ 포함) 회선·IDC 비중",
+    "China Unicom 서울 PoP 위치"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "국내 통신사 지급액 계정 직접 공시 없음"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "매출원가 12.28bn, 비인건 잔여 10.44bn(DERIVED), 통신비 19.95m"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "detail": "KR 통신사와 회선/IDC 계약 보도 없음"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": ""
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "KR법인 매출원가 비인건 잔여(FY2025)",
+      "value": 10437910008,
+      "unit": "원",
+      "basis": "매출원가−주석11 원가항목 합계; 국내 회선/IDC 조달 상한 근사",
+      "evidence_ids": [
+        "KA44-P1-E01",
+        "KA44-P1-E03"
+      ]
+    },
+    {
+      "name": "매출원가 성장(FY24→FY25)",
+      "value": 65.8,
+      "unit": "%",
+      "basis": "12,284,866,805/7,407,310,201−1",
+      "evidence_ids": [
+        "KA44-P1-E01"
+      ]
+    }
+  ],
+  "account_status_note": "KR 법인 원가 기반 L2 앵커 존재(DERIVED 상한). LG U+ 몫 미확인"
+}

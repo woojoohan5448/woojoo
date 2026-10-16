@@ -1,0 +1,281 @@
+{
+  "account_id": "KA30",
+  "original_name": "메르세데스벤츠코리아",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-recovery-ts",
+  "entity": {
+    "legal_name_ko": "메르세데스벤츠코리아 주식회사",
+    "legal_name_en": "Mercedes-Benz Korea Ltd.",
+    "corp_code": "00454159",
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "Mercedes-Benz Group AG",
+    "related_key_accounts": [],
+    "industry_detail": "수입차 판매(도매)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "법인 별도(외감, K-IFRS). 제24기 FY2025",
+    "exclusions": "독립 딜러사, 벤츠파이낸셜",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "감사보고서 20260413003033"
+  },
+  "facts": [
+    {
+      "fact_id": "KA30-P1-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 6188322495473,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "기존 KA30-F01(61883억, SECONDARY) 일치 → VERIFIED"
+    },
+    {
+      "fact_id": "KA30-P1-F02",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 5688266807075,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA30-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 205020070987,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA30-P1-F04",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 5983302424000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "성격별 비용 합계=매출원가+판관비"
+    },
+    {
+      "fact_id": "KA30-P1-F05",
+      "metric": "sga",
+      "fiscal_year": 2025,
+      "value": 253437442858,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA30-P1-F06",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 50090279000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "성격별 전산비(전사). 판관비분 34,923,841천원 + 매출원가 배부분. FY2024 42,507,851천원 → +17.8%"
+    },
+    {
+      "fact_id": "KA30-P1-F07",
+      "metric": "it_service_cost",
+      "fiscal_year": 2024,
+      "value": 42507851000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA30-P1-F08",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 254734000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "통신비(판관비)"
+    },
+    {
+      "fact_id": "KA30-P1-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 14444252000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "지급수수료(성격별) — 전산 여부 미구분, IT 합산 금지"
+    },
+    {
+      "fact_id": "KA30-P1-F10",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 4962000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "소프트웨어 취득"
+    },
+    {
+      "fact_id": "KA30-P1-F11",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 36146947000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA30-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "종업원급여 총액. 종업원 수 미공시"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA30-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "감사보고서 (2025.12) 포괄손익계산서",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413003033",
+      "document_id": "20260413003033",
+      "publication_date": "2026-04-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서",
+      "quoted_statement": "| Ⅰ. 매출액 | 22,33 | 6,188,322,495,473 | 5,688,266,807,075 | / 판매비와관리비 | 23,27 | 253,437,442,858 | / | Ⅳ. 영업이익 |  | 205,020,070,987 | 157,514,296,665 |",
+      "reported_value": "6,188,322,495,473",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA30-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "감사보고서 주석 23. 판매비와관리비",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413003033",
+      "document_id": "20260413003033",
+      "publication_date": "2026-04-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 23 (단위:천원)",
+      "quoted_statement": "| 통신비 | 254,734 | 269,272 | / | 지급수수료 | 7,123,048 | 3,442,351 | / | 전산비 | 34,923,841 | 28,884,131 |",
+      "reported_value": "34,923,841",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA30-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "감사보고서 주석 27. 성격별 비용",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413003033",
+      "document_id": "20260413003033",
+      "publication_date": "2026-04-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 27 (단위:천원)",
+      "quoted_statement": "| 종업원급여 | 36,146,947 | 37,232,618 | / | 전산비 | 50,090,279 | 42,507,851 | / | 지급수수료 | 14,444,252 | 9,539,907 | / | 합 계(*) | 5,983,302,424 | 5,530,752,510 |",
+      "reported_value": "50,090,279",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "(*) 매출원가+판관비 합계. 전산비 성격별 합계(매출원가 배부분 포함)"
+    },
+    {
+      "evidence_id": "KA30-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "감사보고서 주석 11. 무형자산",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413003033",
+      "document_id": "20260413003033",
+      "publication_date": "2026-04-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 11(2) (단위:천원)",
+      "quoted_statement": "| 소프트웨어 | 11,756 | 4,962 | - | (7,267) | 9,451 |",
+      "reported_value": "4,962",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "SW 자본화 미미 → IT는 대부분 비용(전산비) 처리"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 키워드 발췌",
+      "target": "DART 20260413003033",
+      "tool": "MyDART-download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산비 계정(판관비·성격별) 확인",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "전산비 중 독일 본사 IT recharge(특수관계자) 비중 — 주석 33 확인 필요",
+    "종업원 수"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "KISA 공시 미검색(예산 미배정)"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "전산비 500.9억(FY2025), 425.1억(FY2024)"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "전산비/매출",
+      "value": 0.81,
+      "unit": "%",
+      "basis": "50,090,279천원 / 6,188,322,495천원",
+      "evidence_ids": [
+        "KA30-P1-E01",
+        "KA30-P1-E03"
+      ]
+    }
+  ]
+}

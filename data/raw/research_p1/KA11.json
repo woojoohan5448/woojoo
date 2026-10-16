@@ -1,0 +1,220 @@
+{
+  "account_id": "KA11",
+  "original_name": "신세계아이앤씨",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-kospi-it",
+  "supplement_of": "data/raw/research/KA11.json",
+  "entity": {
+    "legal_name_ko": "(주)신세계아이앤씨",
+    "corp_code": "00219486",
+    "stock_code": "035510",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research 파일 entity 그대로; 본 파일은 Phase1 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA11-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 1323,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "사업부문별 남녀 sm 합산"
+    },
+    {
+      "fact_id": "KA11-P1-F02",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2023,
+      "value": 560.2916,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA11-P1-F03",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2023,
+      "value": 43.167,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA11-P1-F04",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2023,
+      "value": 7.7,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-P1-E04"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "43.1670/560.2916"
+    },
+    {
+      "fact_id": "KA11-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 207568,
+      "unit": "천원",
+      "scope": "법인 별도 (판관비 통신비만; 원가 내 통신비 미분리)",
+      "evidence_ids": [
+        "KA11-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA11-P1-F06",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 80757052,
+      "unit": "천원",
+      "scope": "법인 별도 (컴퓨터소프트웨어 총장부금액)",
+      "evidence_ids": [
+        "KA11-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA11-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "FY2025 사업보고서 직원현황(OpenDART API)",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001238",
+      "document_id": "20260316001238",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "OpenDART get_employees 11011 FY2025 (IT서비스/IT유통/IT정보서비스/지원담당 남녀)",
+      "quoted_statement": "sm: 793+313+43+8+32+31+62+41",
+      "reported_value": "1323",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA11-P1-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001238",
+      "document_id": "20260316001238",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 27. 판매비와관리비 (별도, 단위: 천원) 당기",
+      "quoted_statement": "| 통신비, 판관비 | 207,568 | (전기 146,696); | 지급수수료, 판관비 | 12,604,835 |",
+      "reported_value": "207568",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA11-P1-E03",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001238",
+      "document_id": "20260316001238",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 14. 무형자산 (별도, 단위: 천원) 당기",
+      "quoted_statement": "| 컴퓨터소프트웨어 | 80,757,052 | (43,910,394) | 36,846,658 | (총장부금액|상각누계액|장부금액)",
+      "reported_value": "80757052",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA11-P1-E04",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "[IT인베스트] IT서비스 기업 '정보보호 투자' 1등은 삼성SDS…가장 많이 늘린 곳은?",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2024070313432598020",
+      "document_id": null,
+      "publication_date": "2024-07-03",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "검색 요약 인용",
+      "quoted_statement": "신세계I&C는 지난해 IT 및 정보보호 부문에 각각 560억2916만원과 43억1670만원을 투자했다",
+      "reported_value": "560.2916",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2024년 공시=FY2023"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원수",
+      "target": "OpenDART",
+      "tool": "opendart-get_employees",
+      "level": "L2",
+      "result": "OK",
+      "detail": "1,323명",
+      "retryable": false
+    },
+    {
+      "step": "IT 비용 계정",
+      "target": "사업보고서 20260316001238",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "전산비·전산운영비 0건; IT서비스 기업이라 원가에 IT 비용 혼재 — 판관비 통신비만 분리",
+      "retryable": false
+    },
+    {
+      "step": "KISA 공시 FY2024/25",
+      "target": "WebSearch 3회",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "FY2023 값만 확보; 2025·2026 공시 기사 미발견",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA FY2024/FY2025 IT·정보보호 투자액 (IT서비스 기업은 고객 사업 IT 비용 포함 가능성)"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": []
+}

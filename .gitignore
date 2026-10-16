@@ -8,3 +8,8 @@ data/internal_inputs/*.csv
 !data/internal_inputs/management_inputs.csv
 data/raw/dart/
 lgu_key_account_intel.zip
+# --- internal (사내) data: never commit ---
+data/internal_store/
+data/internal_inputs/uploads/
+data/internal_inputs/*.xlsx
+!data/internal_inputs/templates/

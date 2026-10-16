@@ -1,0 +1,495 @@
+{
+  "account_id": "KA06",
+  "original_name": "구글클라우드",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-korea-cloud-anchors",
+  "supplement_of": "data/raw/research/KA06.json",
+  "entity": {
+    "legal_name_ko": "구글클라우드코리아 유한회사",
+    "legal_name_en": "Google Cloud Korea LLC (DART 영문 표기 'Goolge Cloud Korea LLC')",
+    "corp_code": "01476954",
+    "stock_code": null,
+    "business_reg_no": "1038601049",
+    "parent_group": "Alphabet Inc. / Google LLC (미국)",
+    "related_key_accounts": [],
+    "industry_detail": "Google Cloud(GCP/Workspace) 한국 판매·지원 법인. DART 업종코드 63, 설립 2018-02-05, 강남파이낸스센터 22층",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "구글클라우드코리아 법인 + Google Cloud 서울 리전(asia-northeast3) 인프라(LG U+ IDC 임차). Alphabet 글로벌 capex는 context only(scope=글로벌)",
+    "exclusions": "구글코리아 유한회사(01473717, 광고·검색 영업), 구글페이먼트코리아(01476866, 결제), YouTube 등",
+    "entity_status": "PROBABLE",
+    "entity_notes": "DART 외부감사 감사보고서 FY2022~FY2025 공시 확인(외감 대상). 그러나 OpenDART get_financial_account는 감사보고서 제출사 재무를 제공하지 않아(status 013) 매출 원문 미확인. LG U+ IDC 임차 계약의 실제 계약 주체는 Google LLC 또는 해외 인프라 법인일 가능성 — 국내 법인 매출에 클라우드 인프라 비용이 반영되지 않을 수 있음. [P1] FY2025 감사보고서 원문 확인: 주된 영업은 '컴퓨팅 서비스의 재판매 및 마케팅, 데이터 처리 및 저장을 위한 인프라 관련 사업지원 서비스'. 지배기업 Google APAC Technology Pte. Ltd.(싱가포르). 네트워크장비 등 유형자산을 국내 법인이 직접 보유."
+  },
+  "facts": [
+    {
+      "fact_id": "KA06-P1-F01",
+      "metric": "korea_revenue",
+      "fiscal_year": 2025,
+      "value": 205227134,
+      "unit": "천원",
+      "scope": "법인 별도(구글클라우드코리아)",
+      "evidence_ids": [
+        "KA06-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "영업수익 2,052억원(전기 1,778억원, +15.4%). 매출 전액 Google Asia Pacific로부터 수취 → 한국 고객 GCP 총매출(대부분 GAP 직접 계약)이 아님"
+    },
+    {
+      "fact_id": "KA06-P1-F02",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 114260578,
+      "unit": "천원",
+      "scope": "법인 별도 — 인프라 관련 사업지원 서비스 수익",
+      "evidence_ids": [
+        "KA06-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "서울 리전 인프라 운영지원 대가(원가가산 추정). 전기 104,131,547천원"
+    },
+    {
+      "fact_id": "KA06-P1-F03",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 82691408,
+      "unit": "천원",
+      "scope": "법인 별도 — 구글 클라우드 리셀러 수익",
+      "evidence_ids": [
+        "KA06-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA06-P1-F04",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 182864965,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA06-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA06-P1-F05",
+      "metric": "it_opex",
+      "fiscal_year": 2025,
+      "value": 35275014,
+      "unit": "천원",
+      "scope": "법인 별도 — 영업비용 중 설비관련비용",
+      "evidence_ids": [
+        "KA06-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "설비관련비용(전기 30,812,528천원)은 IDC 상면·전력 등 인프라 운영비 후보이나 구성 미공시"
+    },
+    {
+      "fact_id": "KA06-P1-F06",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 41558879,
+      "unit": "천원",
+      "scope": "법인 별도 — 유형자산 감가상각비(사용권자산 제외)",
+      "evidence_ids": [
+        "KA06-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA06-P1-F07",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 31573517441,
+      "unit": "원",
+      "scope": "법인 별도(현금흐름표)",
+      "evidence_ids": [
+        "KA06-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 64,650,430,790원"
+    },
+    {
+      "fact_id": "KA06-P1-F08",
+      "metric": "it_capex",
+      "fiscal_year": 2025,
+      "value": 42099308,
+      "unit": "천원",
+      "scope": "법인 별도 — 네트워크장비 취득(주석7)",
+      "evidence_ids": [
+        "KA06-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "네트워크장비 취득원가 누계 280,873,762천원"
+    },
+    {
+      "fact_id": "KA06-P1-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 46251318,
+      "unit": "천원",
+      "scope": "법인 별도 — 리스 총 현금유출",
+      "evidence_ids": [
+        "KA06-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "광섬유 케이블·창고 등 리스. IDC 임차 포함 여부 미공시. 변동리스료 14,048,233천원·단기리스료 2,822,287천원 포함"
+    },
+    {
+      "fact_id": "KA06-P1-F10",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 26440499,
+      "unit": "천원",
+      "scope": "법인 별도 — 사용권자산 기말",
+      "evidence_ids": [
+        "KA06-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "리스부채 기말 37,461,960천원"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA06-P1-D01",
+      "type": "DC_BUILD",
+      "description": "구글–LG U+ 한국 전용 DC(DBO 방식) 검토설(2026-03 보도). LG U+는 구체 논의 부인. 금액·MW 미공개",
+      "amount": null,
+      "unit": null,
+      "period": "2026-",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA06-P1-E10"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "구글 클라우드 서울 리전은 LG U+ IDC(평촌 메가센터·가산·논현 등) 임차 운영으로 보도. 국내 법인 리스 주석에는 광섬유 케이블·창고만 명시되어 IDC 임차 계약 주체는 해외 관계사 가능성",
+      "incumbent": "LG유플러스",
+      "lgu_relationship": "2018년 IDC 임대 계약 보도(머니투데이)",
+      "evidence_ids": [
+        "KA06-P1-E08",
+        "KA06-P1-E09",
+        "KA06-P1-E05"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA06-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "구글클라우드코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 12. 영업수익",
+      "quoted_statement": "마케팅 용역 수익 | 8,275,148 | 6,978,875 / 구글 클라우드 리셀러 수익 | 82,691,408 | 66,655,501 / 인프라 관련 사업지원 서비스 수익 | 114,260,578 | 104,131,547 / 합 계 | 205,227,134 | 177,765,923",
+      "reported_value": "205,227,134",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "구글클라우드코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 13. 영업비용",
+      "quoted_statement": "종업원급여 | 60,839,474 | 54,935,281 / 감가상각비 | 41,558,879 | 31,748,530 / 사용권자산상각비 | 23,196,003 | 26,933,235 / 설비관련비용 | 35,275,014 | 30,812,528 / 지급수수료 | 5,448,988 | 839,921 / 기타 | 16,546,607 | 13,356,264 / 합 계 | 182,864,965 | 158,625,759",
+      "reported_value": "182,864,965",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "구글클라우드코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 II. 투자활동",
+      "quoted_statement": "유형자산의 취득 | (31,573,517,441) | (64,650,430,790)",
+      "reported_value": "31,573,517,441",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-P1-E04",
+      "tier": "네트워크장비 취득(전기 88,233,814천원). 주석 취득액(48,061백만)과 CF 현금지출(31,574백만) 차이는 미지급 등 비현금 요인으로 추정",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "구글클라우드코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 7. 유형자산(당기)",
+      "quoted_statement": "구 분 | 집기비품 | 네트워크장비 | 임차시설물 | 건설중인자산 | 합 계 / 취득 | 1,122,279 | 42,099,308 | 404,477 | 4,435,087 | 48,061,151 / 기말(취득원가) | 2,252,770 | 280,873,762 | 33,269,046 | 15,909,119 | 332,304,697",
+      "reported_value": "42,099,308",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-P1-E05",
+      "tier": "리스 대상 중 IDC(코로케이션) 포함 여부는 주석에 명시되지 않음",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "구글클라우드코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 9. 리스 (9.1~9.4)",
+      "quoted_statement": "리스부채 기말 37,461,960 / 사용권자산 기말 26,440,499 / 리스부채 측정치에 포함되지 않은 변동리스료 14,048,233 / 단기리스료 2,822,287 / 당기 중 리스의 총 현금유출은 46,251,318천원 (전기: 31,134,870천원) / 당사는 당기 광섬유 케이블 및 창고 임대차에 관련하여 3~5년의 신규 리스 계약을 맺었습니다.",
+      "reported_value": "46,251,318",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-P1-E06",
+      "tier": "영업수익 전액이 Google Asia Pacific Pte. Ltd.로부터의 수익(원가가산형 용역·리셀러 구조). 유형자산(장비)을 관계사로부터 매입",
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "구글클라우드코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 22. 중요한 특수관계자 거래 (1) 당기",
+      "quoted_statement": "Google LLC. | 813,030 | 415,191 | 35,332,482 | 629,988 / Google Asia Pacific Pte. Ltd. | 205,227,134 | 26,569,239 | 1,782,525 | 37,572 / Eclipse Holdings B.V. | - | - | 14,387,569 | 3,878,577 / 합 계 | 206,864,078 | 29,412,676 | 51,681,169 | 4,560,436 (열: 매출 등 | 매입 등 | 유형자산의 매입 | 유형자산의 처분)",
+      "reported_value": "51,681,169",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-P1-E07",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "구글클라우드코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 1. 일반 사항 / 주석 24. 약정사항",
+      "quoted_statement": "컴퓨팅 서비스의 재판매 및 마케팅, 데이터 처리 및 저장을 위한 인프라 관련 사업지원 서비스를 주된 영업으로 하고 있습니다 / 당사는 Google Asia Pacific Pte. Ltd과의 인프라 서비스 계약에 따라, 클라우드 사업을 지원하고 제공하는 사업지원 서비스 약정을 체결하고 있습니다",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-P1-E08",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "[단독]구글, 韓 데이터센터 둔다…LGU+와 계약",
+      "publisher": "머니투데이",
+      "source_url": "https://www.mt.co.kr/tech/2018/11/01/2018110107383217485",
+      "document_id": null,
+      "publication_date": "2018-11-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2018",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "구글은 LG유플러스와 최근 IDC(인터넷데이터센터) 임대 계약을 체결했다. LG유플러스의 평촌 메가센터, 가산디지털센터, LG유플러스가 협력하고 있는 중소 IDC 1곳 등 3곳의 IDC를 활용해 구글의 '서울 리전(Region)'을 운영한다는 계약이다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "MW·계약금액 미기재"
+    },
+    {
+      "evidence_id": "KA06-P1-E09",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "구글클라우드 \"제미나이 2.5 플래시 ML처리, 서울리전서 합니다\"",
+      "publisher": "뉴스1",
+      "source_url": "https://www.news1.kr/it-science/general-it/5839089",
+      "document_id": null,
+      "publication_date": "2025-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "구글 클라우드 서울 리전은 구글이 직접 구축한 데이터센터가 아닌 LG유플러스의 데이터센터(평촌 메가센터·가산디지털센터·논현데이터센터 등)를 임차한 방식으로 운영되고 있다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "발행일은 검색결과상 2025-07 추정"
+    },
+    {
+      "evidence_id": "KA06-P1-E10",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "구글, 韓 데이터센터 구축 검토설…'이번엔 다를까' 업계 '촉각'",
+      "publisher": "MTN",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026031411080769817",
+      "document_id": null,
+      "publication_date": "2026-03-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "LG유플러스가 구글의 사양에 맞춰 시설을 건설하면, 구글이 계약에 따라 해당 시설을 사용하는 구조 ... LG유플러스는 아직 구체적인 논의가 이뤄지지 않았다며 말을 아끼는 모습",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "검토설 단계. 구글은 한국 자체 DC 미보유로 보도"
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "FY2025 감사보고서 매출·영업비용·유형자산·리스 원문 확인"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "설비관련비용·감가상각·사용권자산상각·네트워크장비 취득"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "detail": "LG U+ IDC 임대 계약 금액·MW 미공개"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "found",
+      "detail": "_DC_PRICE_BENCHMARKS.json 참조"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": "엔진에서 처리"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA06-F01",
+      "existing_value": 6831,
+      "new_value": 2052.27,
+      "unit": "억원",
+      "explanation": "기존 F01은 구글 한국 3사 합산(그룹) 매출로 추정된 값. 구글클라우드코리아 단독 FY2025 영업수익은 205,227,134천원(≈2,052억원). TS 산정 시 그룹 합산치를 클라우드 법인 수치로 쓰지 말 것",
+      "evidence_ids": [
+        "KA06-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "서울 리전 인프라 사업지원 수익(국내 인프라 운영원가 프록시, 원가가산)",
+      "value": 114260578,
+      "unit": "천원",
+      "basis": "FY2025 감사보고서 주석12",
+      "evidence_ids": [
+        "KA06-P1-E01"
+      ]
+    },
+    {
+      "name": "설비관련비용",
+      "value": 35275014,
+      "unit": "천원",
+      "basis": "FY2025 주석13",
+      "evidence_ids": [
+        "KA06-P1-E02"
+      ]
+    },
+    {
+      "name": "리스 총 현금유출",
+      "value": 46251318,
+      "unit": "천원",
+      "basis": "FY2025 주석9.3",
+      "evidence_ids": [
+        "KA06-P1-E05"
+      ]
+    },
+    {
+      "name": "서울 리전 DC 용량(MW)",
+      "value": null,
+      "unit": "MW",
+      "basis": "NOT_FOUND — 공개 보도·공시 없음",
+      "evidence_ids": []
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 검색",
+      "target": "구글클라우드코리아 01476954",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "FY2025 rcept 20260414001545, FY2024 20250411002761",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 키워드 발췌",
+      "target": "20260414001545",
+      "tool": "MyDART-download_document",
+      "level": "L1/L2",
+      "result": "OK",
+      "detail": "매출액·매출원가·임차료 키워드 0건(계정명 '영업수익'·'설비관련비용' 사용). 주석 1,7,9,12,13,22,24 확보",
+      "retryable": false
+    },
+    {
+      "step": "서울 리전 MW·LG U+ 계약규모",
+      "target": "뉴스",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "임대 계약 사실·IDC 위치만 보도, MW·금액 미공개",
+      "retryable": false
+    },
+    {
+      "step": "ItNews 검색",
+      "target": "구글 클라우드 서울 리전 데이터센터",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "결과 null",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사 기사 본문",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "§5-1 및 지시에 따라 환경 전체 DNS 차단 — 시도 생략, WebSearch 요약으로 대체(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "LG U+ IDC 임대 계약 주체(국내 법인 vs Google LLC/해외 인프라 법인)와 MW — 국내 법인 리스 주석에는 IDC 미명시",
+    "설비관련비용 35,275백만원의 구성(상면·전력 포함 여부)",
+    "구글–LG U+ 전용 DC(DBO) 검토설 진척 여부"
+  ]
+}

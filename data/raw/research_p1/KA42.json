@@ -1,0 +1,150 @@
+{
+  "account_id": "KA42",
+  "original_name": "Fastly, Inc.",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-global-netco",
+  "supplement_of": "data/raw/research/KA42.json",
+  "facts": [
+    {
+      "fact_id": "KA42-P1-F01",
+      "metric": "other",
+      "fiscal_year": 2026,
+      "value": 37.89,
+      "unit": "USD_mn",
+      "scope": "APAC 매출(TTM, 3rd party) — 글로벌 context, 한국 아님",
+      "evidence_ids": [
+        "KA42-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA42-P1-E01",
+      "tier": 1,
+      "source_type": "COMPANY_IR",
+      "source_title": "Fastly network map (Seoul POP listed)",
+      "publisher": "Fastly",
+      "source_url": "https://www.fastly.com/jp/network-map",
+      "document_id": null,
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "Seoul listed as POP; peers under AS 54113; 578 Tbps connected global capacity (map updated 2026-03-31)",
+      "reported_value": "578",
+      "reported_unit": "Tbps",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "서울 POP 시설·IDC 사업자 미기재. 기존 KA42-F03(622 Tbps)과 상이 — 시점 차이"
+    },
+    {
+      "evidence_id": "KA42-P1-E02",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "How Fastly (FSLY) Makes Money",
+      "publisher": "tickerleague.com",
+      "source_url": "https://tickerleague.com/companies/FSLY/how-it-makes-money",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "TTM Q1 2026",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "Asia Pacific (6.2%) of revenue ... $37.89M out of $607.93M total",
+      "reported_value": "37.89",
+      "reported_unit": "USD_mn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "SEC 10-K Note 3 미확인. APAC(글로벌 context), 한국 아님"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "ItNews",
+      "target": "Fastly 서울",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "null",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch",
+      "target": "Fastly Seoul POP facility",
+      "tool": "WebSearch",
+      "level": "L2",
+      "result": "NOT_FOUND",
+      "detail": "네트워크맵만, 시설 미기재",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch",
+      "target": "Fastly 10-K APAC",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "OK",
+      "detail": "10-K Note 3 미확인, 3rd party TTM APAC 6.2%",
+      "retryable": false
+    },
+    {
+      "step": "PeeringDB AS54113",
+      "target": "peeringdb.com",
+      "tool": "WebFetch",
+      "level": "L2",
+      "result": "BLOCKED",
+      "detail": "WebFetch DNS 차단",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "PeeringDB AS54113 서울 시설·IX",
+    "10-K Note 3 APAC 원문"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "한국 지출·매출 공시 없음, DART 법인 없음"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "not_found",
+      "detail": "서울 POP IDC/트랜짓 공급사 공개 근거 없음"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "detail": ""
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA42-F03",
+      "existing_value": 622,
+      "new_value": 578,
+      "unit": "Tbps",
+      "explanation": "Fastly 네트워크 맵(2026-03-31 갱신)은 578 Tbps 표시; 기존 값은 다른 시점/출처로 추정",
+      "evidence_ids": [
+        "KA42-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [],
+  "account_status_note": "KOREA 앵커 NOT_FOUND → INSUFFICIENT_EVIDENCE 유지"
+}

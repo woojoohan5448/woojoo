@@ -64,7 +64,7 @@ def test_cagr_matches_definition():
         for s, b in a["m"]["2031"].items():
             t1, c = b["TS"]["value"], b["TS_CAGR"]["value"]
             if t0 and t1:
-                assert abs((t1 / t0) ** 0.2 - 1 - c) < 1e-4
+                assert abs((t1 / t0) ** 0.2 - 1 - c) < 1e-3  # JSON values rounded to 0.01억; engine checks exact Decimal
 
 
 def test_lineage_every_estimate_has_formula_and_source_or_assumption():

@@ -34,6 +34,10 @@ def load_inputs():
     strategy = load_json(CONFIG / "strategy_capabilities.json", {"areas": {}})
     pev = load_json(CONFIG / "parameter_evidence.json", {})
     market = load_json(RAW_RESEARCH / "_MARKET_BENCHMARKS.json", {"items": [], "evidence": []})
+    dcb = load_json(RAW_RESEARCH.parent / "research_p1" / "_DC_PRICE_BENCHMARKS.json", None)
+    if dcb:  # Phase 1 DC price benchmarks (DCBxx) join the market evidence pool
+        market["items"] = market["items"] + [dict(i, topic=i.get("topic") or i.get("metric")) for i in dcb.get("items", [])]
+        market["evidence"] = market["evidence"] + dcb.get("evidence", [])
     mgmt = {r["account_id"]: r for r in load_csv(INTERNAL / "management_inputs.csv")}
     return params, seed, overrides, corrections, overlap, strategy, pev, market, mgmt
 
@@ -44,6 +48,19 @@ def load_research(aid: str, corrections: list[dict], issues: list[dict]) -> dict
         return None
     r = json.loads(p.read_text(encoding="utf-8"))
     r["_source_hash"] = hashlib.sha256(p.read_bytes()).hexdigest()[:16]
+    sp = RAW_RESEARCH.parent / "research_p1" / f"{aid}.json"
+    if sp.exists():  # Phase 1 supplement (raw file stays immutable)
+        sup = json.loads(sp.read_text(encoding="utf-8"))
+        for k in ("facts", "evidence", "drivers", "competitive", "research_log", "open_questions"):
+            r.setdefault(k, [])
+            r[k] = r[k] + [dict(x, _phase="P1") if isinstance(x, dict) else x for x in sup.get(k, [])]
+        for k in ("conflicts", "comparables", "estimation_inputs", "recovery_levels_tried"):
+            r[k] = sup.get(k, [])
+        if sup.get("entity"):
+            for ek, ev in sup["entity"].items():
+                if ev not in (None, "", []) and not r["entity"].get(ek):
+                    r["entity"][ek] = ev
+        r["_supplement_hash"] = hashlib.sha256(sp.read_bytes()).hexdigest()[:16]
     for c in corrections:
         if c["account_id"] != aid:
             continue
@@ -146,6 +163,29 @@ def calibrate_intensity(seed, researches, params, fxr):
         else:
             table[family] = {"basis": "PRIOR", "n": len(o), "low": prior[0], "base": prior[1], "high": prior[2],
                              "prior": prior, "observations": o, "denominator": basis.get(family, "revenue")}
+    # L5: IT spend per employee (KISA IT ÷ employees, same FY ±1) by family, n≥3
+    emp_obs = {}
+    for row in seed:
+        r = researches.get(row["account_id"])
+        if not r:
+            continue
+        its = [f for f in latest_fact(r, "kisa_it_investment") if f.get("verification_status") != "DERIVED"]
+        emps = latest_fact(r, "employees")
+        for it in its:
+            e = next((x for x in emps if abs(int(x.get("fiscal_year") or 0) - int(it.get("fiscal_year") or 0)) <= 1), None)
+            if e:
+                iv = to_eok(it["value"], it["unit"], fxr)
+                n = D(str(e["value"]).replace(",", ""))
+                if iv and n > 0:
+                    emp_obs.setdefault(fam[row["segment"]], []).append({"account_id": row["account_id"], "per_emp": float(iv / n)})
+                break
+    newp["_it_per_employee"] = {}
+    for family, o in emp_obs.items():
+        if len(o) >= 3:
+            v = sorted(x["per_emp"] for x in o)
+            newp["_it_per_employee"][family] = {"low": v[0], "base": statistics.median(v), "high": v[-1], "n": len(v),
+                                                "peers": [x["account_id"] for x in o]}
+    table["_it_per_employee"] = {k: {"n": len(v), "obs": v} for k, v in emp_obs.items()}
     newp["_security_ratio_fallback"] = {}
     for family, vals in sec_obs.items():
         if len(vals) >= 3:
@@ -163,11 +203,16 @@ def conf_anchor(anchor, entity_status, consistency) -> tuple[int, dict]:
     offic = 30 if (st == "VERIFIED" and tier == 1) else 18 if tier in (1, 2) else 8
     ent = {"CONFIRMED": 15, "PROBABLE": 10}.get(entity_status, 4)
     direct = {"DIRECT_IT_BUDGET": 20, "KISA_IT_INVESTMENT": 20, "KISA_DERIVED": 15, "KISA_SEC_SCALED": 10,
+              "AUDIT_IT_COMPONENTS": 12, "EMPLOYEE_COMPARABLE": 6, "CAPACITY_MODEL": 8,
               "ACCOUNT_SPECIFIC": 8, "REVENUE_INTENSITY": 5}[m]
     rec = 15 if (fy or 0) >= 2025 else 10 if (fy or 0) == 2024 else 5
     cons = consistency if m.startswith("KISA") else 5
     parts = {"officiality": offic, "entity_match": ent, "directness": direct, "recency": rec, "consistency": cons}
     score = sum(parts.values())
+    if m == "EMPLOYEE_COMPARABLE":
+        score = min(score, 40)
+    if m == "AUDIT_IT_COMPONENTS":
+        score = min(score, 62)
     if m == "REVENUE_INTENSITY":
         score = min(score, 35)
     if st == "SECONDARY_UNCONFIRMED":
@@ -192,7 +237,7 @@ def scale(v, ratio):
 def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
     aid, family = row["account_id"], params["segment_family"][row["segment"]]
     ent = (research or {}).get("entity", {})
-    anchor = select_anchor(research or {}, override, family, params, fxr)
+    anchor = select_anchor(research or {}, override, family, params, fxr, aid)
 
     # Cross-check a direct budget against the KISA anchor (pilot lesson COR-001)
     if anchor["method"] == "DIRECT_IT_BUDGET":
@@ -205,7 +250,7 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
                                "metric": "TS", "year": 2026, "scenario": None})
                 r2 = copy.deepcopy(research)
                 r2["facts"] = [f for f in r2["facts"] if f.get("metric") != "it_budget"]
-                anchor = select_anchor(r2, override, family, params, fxr)
+                anchor = select_anchor(r2, override, family, params, fxr, aid)
 
     cons, cons_notes = kisa_consistency(research or {}, fxr)
     for n in cons_notes:
@@ -365,6 +410,51 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
     return {"anchor": anchor, "conf_parts": conf_parts, "mix": mix, "rates_2026": a26, "caps_2026": c26,
             "sec_ratio": sec_ratio, "m": {"2026": m26, "2031": m31, "target": tg}, "family": family,
             "infra_drivers": infra_inputs}
+
+
+# --------------------------------------------------------------------------- grading (Phase 1 taxonomy)
+GRADES = ["ESTIMATED_LOW", "ESTIMATED_MEDIUM", "ESTIMATED_HIGH"]
+
+
+def _down(g, n=1):
+    if g not in GRADES:
+        return g
+    return GRADES[max(0, GRADES.index(g) - n)]
+
+
+def ts_grade(acc, ov) -> str:
+    a = acc["anchor"]
+    m = a["method"]
+    conf = acc["m"]["2026"]["TS"]["confidence"]
+    if m in ("KISA_IT_INVESTMENT", "DIRECT_IT_BUDGET", "KISA_DERIVED"):
+        # HIGH only for a directly reported (not back-solved) figure for FY2024+; stale or derived → MEDIUM
+        direct = a.get("fact_status") not in ("DERIVED",) and m != "KISA_DERIVED"
+        return "ESTIMATED_HIGH" if (conf >= 55 and direct and (a.get("fiscal_year") or 0) >= 2024) else "ESTIMATED_MEDIUM"
+    if m == "KISA_SEC_SCALED":
+        return "ESTIMATED_MEDIUM" if "자사" in a.get("formula", "") else "ESTIMATED_LOW"
+    if m == "AUDIT_IT_COMPONENTS":
+        return "ESTIMATED_MEDIUM"
+    if m in ("ACCOUNT_SPECIFIC", "CAPACITY_MODEL"):
+        return ((ov or {}).get("ts_anchor") or {}).get("grade", "ESTIMATED_LOW")
+    return "ESTIMATED_LOW"
+
+
+def assign_grades(acc, ov):
+    """Explicit grade per metric: TS from anchor quality; RAW/FPR one notch lower (Layer C assumptions);
+    2031 one further notch (forecast). VERIFIED/DERIVED records keep their status."""
+    m26 = acc["m"]["2026"]
+    base = ts_grade(acc, ov) if m26["TS"]["value"] is not None else None
+    if base:
+        m26["TS"]["grade"] = base
+        m26["RAW"]["grade"] = _down(base)
+        m26["FPR"]["grade"] = _down(base)
+    elif m26["RAW"]["value"] is not None:  # contract-vehicle / special RAW without TS
+        m26["RAW"]["grade"] = m26["FPR"]["grade"] = "ESTIMATED_LOW"
+    for s_, blk in acc["m"]["2031"].items():
+        for k in ("TS", "RAW_base", "RAW_expansion", "FPR_base", "FPR_expansion"):
+            if blk[k]["value"] is not None:
+                g = m26["TS" if k == "TS" else k.split("_")[0]].get("grade") or "ESTIMATED_LOW"
+                blk[k]["grade"] = _down(g) if (s_ == "base" and k in ("TS", "RAW_base", "FPR_base")) else "ESTIMATED_LOW"
 
 
 # --------------------------------------------------------------------------- status & narrative
@@ -747,6 +837,14 @@ def main():
         acc["competitive"] = acc["_competitive"]
         acc["open_questions"] = (research or {}).get("open_questions", [])
         acc["override_notes"] = (ov or {}).get("notes", [])
+        assign_grades(acc, ov)
+        acc["conflicts"] = (research or {}).get("conflicts", [])
+        acc["comparables"] = (research or {}).get("comparables", [])
+        acc["estimation_inputs"] = (research or {}).get("estimation_inputs", [])
+        acc["recovery_levels_tried"] = (research or {}).get("recovery_levels_tried", [])
+        from models.audit import EXTERNAL_FIELDS, INTERNAL_FIELDS, classify, load_na_cfg
+        acc["na_class"] = {f"{y}|{mt}": dict(zip(("class", "reason"), classify(jsonable(acc), y, mt, load_na_cfg())))
+                           for (y, mt) in EXTERNAL_FIELDS + INTERNAL_FIELDS}
         issues += acc_issues
         evidence += acc["evidence"]
         accounts.append(acc)

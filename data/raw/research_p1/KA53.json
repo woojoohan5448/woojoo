@@ -1,0 +1,299 @@
+{
+  "account_id": "KA53",
+  "original_name": "토스페이먼츠",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-recovery-ts",
+  "entity": {
+    "legal_name_ko": "토스페이먼츠 주식회사",
+    "legal_name_en": "Toss Payments Co., Ltd.",
+    "corp_code": "01492697",
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "비바리퍼블리카(토스)",
+    "related_key_accounts": [
+      "KA27"
+    ],
+    "industry_detail": "PG(전자지급결제대행)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "법인 별도(외감, K-IFRS). 제6기 FY2025",
+    "exclusions": "비바리퍼블리카 등 계열사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "2026-07 비바리퍼블리카 흡수합병 발표(기존 KA53-E04)"
+  },
+  "facts": [
+    {
+      "fact_id": "KA53-P1-F01",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 925113921197,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "기존 KA53-F01(9251억, SECONDARY) 일치 → VERIFIED"
+    },
+    {
+      "fact_id": "KA53-P1-F02",
+      "metric": "operating_revenue",
+      "fiscal_year": 2024,
+      "value": 819678045176,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA53-P1-F03",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 926427926044,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA53-P1-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": -1314004847,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA53-P1-F05",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 409953000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "통신비"
+    },
+    {
+      "fact_id": "KA53-P1-F06",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 811598547000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "지급수수료(PG 결제원가 중심, IT 아님)"
+    },
+    {
+      "fact_id": "KA53-P1-F07",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 3387290000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "소프트웨어 취득"
+    },
+    {
+      "fact_id": "KA53-P1-F08",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 4440000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "'지난해' 기준; 연도 미확정(FY2024 또는 FY2025)"
+    },
+    {
+      "fact_id": "KA53-P1-F09",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2025,
+      "value": 10.8,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA53-P1-F10",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 41100000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA53-P1-E04"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "44.4억 / 10.8% ≈ 411억(반올림 영향 ±2억). 연도 미확정"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA53-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "감사보고서 (2025.12) 포괄손익계산서",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000296",
+      "document_id": "20260331000296",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서",
+      "quoted_statement": "| Ⅰ. 영업수익 | 18,27 |  | 925,113,921,197 |  | 819,678,045,176 | / | Ⅱ. 영업비용 | 19,27 |  | 926,427,926,044 |  | 842,349,948,978 | / | Ⅲ. 영업손실 |  |  | 1,314,004,847 |",
+      "reported_value": "925,113,921,197",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA53-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "감사보고서 주석 19. 영업비용",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000296",
+      "document_id": "20260331000296",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 19 (단위: 천원)",
+      "quoted_statement": "| 급여 등 | 42,525,625 | 32,621,589 | / | 통신비 | 409,953 | 434,995 | / | 감가상각비 | 5,790,238 | 6,806,769 | / | 지급수수료 | 811,598,547 | 740,819,968 | / | 무형자산상각비 | 9,583,262 | 9,906,725 |",
+      "reported_value": "811,598,547",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "전산비 계정 없음. 지급수수료는 PG 원가(카드사 수수료 등) 중심 → IT 비용으로 보지 말 것"
+    },
+    {
+      "evidence_id": "KA53-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "감사보고서 주석 6. 무형자산",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000296",
+      "document_id": "20260331000296",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 6(2) 당기 (단위: 천원)",
+      "quoted_statement": "| 소프트웨어 | 2,532,400 | 3,387,290 | 70,000 | (1,713,262) | 4,276,428 |",
+      "reported_value": "3,387,290",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA53-P1-E04",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "카카오페이 vs 토스페이먼츠 정보보호 투자 비교",
+      "publisher": "딜사이트",
+      "source_url": "https://dealsite.co.kr/articles/169916",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "'지난해'(FY 미확정, FY2025 추정)",
+      "page_or_section": "본문(WebSearch 요약)",
+      "quoted_statement": "지난해 정보보호 투자액은 카카오페이가 140억9000만원, 토스페이먼츠가 44억4000만원으로 카카오페이가 약 3.2배 많았다. (비중: 카카오페이 12.3%, 토스페이먼츠 10.8%)",
+      "reported_value": "44.4",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 차단, 발행일 미확인. 비중 수치는 검색 요약에서 재구성된 문장"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 키워드 발췌",
+      "target": "DART 20260331000296",
+      "tool": "MyDART-download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "영업수익·영업비용 주석 확인; 전산비 계정 없음",
+      "retryable": false
+    },
+    {
+      "step": "KISA 금액 검색",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "OK",
+      "detail": "딜사이트 44.4억/10.8% (2회 사용)",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "dealsite.co.kr",
+      "tool": "WebFetch",
+      "level": "L1_DIRECT",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 DNS 차단 — 시도 생략",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "딜사이트 169916 발행일 및 대상 FY 확인",
+    "IT 인프라가 모회사 비바리퍼블리카와 공유되는지(특수관계자 영업비용 49.4억)",
+    "합병 후 KA27로 통합 처리 여부"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "KISA 보도 44.4억/10.8%(SECONDARY)"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "통신비·SW취득·감가상각"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA53-F03",
+      "existing_value": 10.2,
+      "new_value": 10.8,
+      "unit": "%",
+      "explanation": "기존 10.2%는 2025-06 보도 '지난해'(FY2024) 기준. 딜사이트 10.8%는 다른 연도(FY2025 추정)일 가능성; 동일 연도면 상충",
+      "evidence_ids": [
+        "KA53-P1-E04"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "급여 등",
+      "value": 42525625000,
+      "unit": "원",
+      "basis": "주석 19",
+      "evidence_ids": [
+        "KA53-P1-E02"
+      ]
+    }
+  ]
+}

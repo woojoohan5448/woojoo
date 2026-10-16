@@ -1,0 +1,300 @@
+{
+  "account_id": "KA34",
+  "original_name": "(주)아이비케이시스템",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-itsvc-cloud",
+  "supplement_to": "data/raw/research/KA34.json",
+  "entity": {
+    "legal_name_ko": "주식회사 아이비케이시스템",
+    "legal_name_en": "IBK System Co., Ltd",
+    "corp_code": "00499161",
+    "stock_code": null,
+    "business_reg_no": "1018126317",
+    "parent_group": "IBK기업은행(계열 IT자회사로 알려짐, 지분 미검증)",
+    "related_key_accounts": [],
+    "industry_detail": "IBK 캡티브 SI (업종코드 58221 소프트웨어 개발·공급)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "아이비케이시스템 별도(외감법인, 사업보고서 미제출). 매출의 상당부분이 IBK기업은행 대상 SI/운영 서비스로 추정 → IT 소비 규모는 자체 IT 인프라 지출로 한정해야 함",
+    "exclusions": "IBK기업은행 및 IBK 계열사의 IT 지출(동 회사 매출로 인식되는 부분)",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('아이비케이시스템') 00499161 1건. get_company_info: 주식회사 아이비케이시스템, 대표 현권익, 중구 퇴계로 141-7, 설립 1991-03-22, 비상장(E). DART 제출은 감사보고서뿐(2025.12: 20260330000475, 2024.12: 20250328000834, 삼일)"
+  },
+  "evidence": [
+    {
+      "evidence_id": "KA34-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000475",
+      "document_id": "20260330000475",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서 (단위: 원)",
+      "quoted_statement": "Ⅰ. 매출액 | 19 | 398,693,745,081 | 350,959,545,636 / Ⅱ. 매출원가 | 20,28 | 392,777,783,621 | 339,587,788,585 / Ⅳ. 판매비와관리비 | 26,28 | 12,441,259,734 | 9,310,358,341 / Ⅴ. 영업이익(손실) | | (6,525,298,274) | 2,061,398,710",
+      "reported_value": "398,693,745,081",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA34-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000475",
+      "document_id": "20260330000475",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 28. 비용의 성격별 분류 <당기> (단위: 천원, 매출원가|판관비|합계)",
+      "quoted_statement": "단기종업원급여 | 65,617,849 | 6,813,235 | 72,431,084 / 감가상각비 | 1,052,415 | 763,668 | 1,816,083 / 무형자산상각비 | 406,440 | 95,537 | 501,977 / 수행비 | 2,938,905 | - | 2,938,905 / 용역비 | 31,819 | 964,822 | 996,641 / 합 계 | 82,128,772 | 12,441,260 | 94,570,032",
+      "reported_value": "94,570,032",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "성격별 합계 94,570,032천원은 매출원가+판관비(405,219,044천원)보다 작음 — 상품·외주 원가는 표에 미포함"
+    },
+    {
+      "evidence_id": "KA34-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000475",
+      "document_id": "20260330000475",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 20(매출원가 내역) (단위: 천원)",
+      "quoted_statement": "상품매출원가 | 85,406,553 | 104,672,028 / 용역매출원가 | 247,474,823 | 178,170,626 / 유지보수매출원가 | 59,896,408 | 56,745,134 / 합 계 | 392,777,784 | 339,587,788",
+      "reported_value": "392,777,784",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA34-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000475",
+      "document_id": "20260330000475",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 31. 특수관계자와의 거래 (2) (단위: 천원)",
+      "quoted_statement": "중소기업은행 | 매출액 | 328,645,674 | 278,759,170 / ... 합 계 | 350,183,756 | 319,352,032 / (*) 중소기업은행과 체결한 전산센터 리스 계약에 따라 인식한 건물관리비 64,880천원과 사용권자산에 대한 감가상각비 48,410천원이 제품매출원가 안에 포함",
+      "reported_value": "328,645,674",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA34-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000475",
+      "document_id": "20260330000475",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 14. 무형자산 (2) <당기> (단위: 천원)",
+      "quoted_statement": "취득 | - | - | 515 | - | 48,315 | 48,830 (소프트웨어 취득 '-') / 상각 | (496,212) | ... | (501,977)",
+      "reported_value": "48,830",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA34-P1-E06",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000475",
+      "document_id": "20260330000475",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 21. 종업원급여 (단위: 천원)",
+      "quoted_statement": "단기종업원급여 | 72,431,084 | 54,231,634 / 퇴직급여 | 6,706,407 | 3,423,759 / 합 계 | 79,137,491 | 57,655,393",
+      "reported_value": "79,137,491",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "KA34-P1-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 398693745081,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA34-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 350,959,545,636원 → +13.6%"
+    },
+    {
+      "fact_id": "KA34-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 405219043355,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA34-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "매출원가 392,777,783,621 + 판관비 12,441,259,734"
+    },
+    {
+      "fact_id": "KA34-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": -6525298274,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA34-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA34-P1-F04",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 328645674,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA34-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "IBK기업은행 대상 매출(82.4%). 특수관계자 합계 350,183,756천원(87.8%) — 매출원가 대부분은 IBK 그룹 IT 지출의 이전(재판매·용역) 원가로, 이 회사 자체 IT 소비가 아님"
+    },
+    {
+      "fact_id": "KA34-P1-F05",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 1816083,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA34-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "유형 감가상각 전체(매출원가 1,052,415 + 판관비 763,668). 자체 IT 인프라 규모가 매우 작음을 시사"
+    },
+    {
+      "fact_id": "KA34-P1-F06",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 48830,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA34-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "소프트웨어 취득 0; 상표권 515·회원권 48,315"
+    },
+    {
+      "fact_id": "KA34-P1-F07",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 79137491,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA34-P1-E06"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "종업원급여 합계(인력 프록시)"
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "자체 IT 소비 프록시(감가+무형상각)",
+      "value": 2318060,
+      "unit": "천원",
+      "basis": "1,816,083 + 501,977 (FY2025). 통신비·전산비 계정 별도 미공시",
+      "evidence_ids": [
+        "KA34-P1-E02"
+      ]
+    },
+    {
+      "name": "상품·외주 원가(성격별 표 미포함분)",
+      "value": 310649012,
+      "unit": "천원",
+      "basis": "DERIVED: 405,219,044 - 94,570,032. 고객(IBK) 대상 HW/SW 상품·외주 원가로 해석 — 고객 IT 지출의 통과분",
+      "evidence_ids": [
+        "KA34-P1-E01",
+        "KA34-P1-E02"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "SI_BUILD",
+      "observation": "매출 82.4%가 IBK기업은행(지배기업). 상품매출원가 854억·용역 2,475억·유지보수 599억 — IBK의 IT 지출이 이 회사를 통과. IBK 전산센터는 IBK로부터 리스",
+      "incumbent": "아이비케이시스템",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA34-P1-E03",
+        "KA34-P1-E04"
+      ]
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "KISA 공시 보도 미발견(WebSearch 1회, CJ ON과 공동 질의)"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "IS·매출원가·성격별 비용·특수관계자 주석"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 IT 비용 주석",
+      "target": "20260330000475",
+      "tool": "MyDART-download_document(find)",
+      "level": "L2",
+      "result": "OK",
+      "detail": "'영업비용'·'통신비'·'전산비' 계정 없음. 성격별 분류에 통신비 항목 없음(기타 1,896,291천원에 포함 추정)",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시",
+      "target": "WebSearch '보안공시 해부 2026 IT서비스 ... 아이비케이시스템'",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "아이비케이시스템 관련 보도 없음",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "IBK기업은행이 53개 Key Account에 포함되면 이 계정 매출원가(3,928억)는 IBK IT 지출과 중복 — 이 계정은 자체 소비(수십억 규모)로 한정 권고",
+    "통신비/회선 비용 내역(기타 항목에 포함) 미공시",
+    "KISA 정보보호 공시 의무 여부"
+  ],
+  "drivers": [],
+  "conflicts": [],
+  "comparables": []
+}

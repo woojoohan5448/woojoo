@@ -1,0 +1,305 @@
+{
+  "account_id": "KA12",
+  "original_name": "에스원",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-kospi-it",
+  "supplement_of": "data/raw/research/KA12.json",
+  "entity": {
+    "legal_name_ko": "(주)에스원",
+    "corp_code": "00158501",
+    "stock_code": "012750",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research 파일 entity 그대로; 본 파일은 Phase1 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA12-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 7044,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "성별합계 행 남 6,563 + 여 481"
+    },
+    {
+      "fact_id": "KA12-P1-F02",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2024,
+      "value": 572.8069,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2025년 공시(FY2024)로 해석"
+    },
+    {
+      "fact_id": "KA12-P1-F03",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2023,
+      "value": 550.8968,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA12-P1-F04",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 41.8915,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA12-P1-F05",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2023,
+      "value": 40.1453,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA12-P1-F06",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 7.3,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA12-P1-F07",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 24709143144,
+      "unit": "원",
+      "scope": "법인 별도 (통신비용)",
+      "evidence_ids": [
+        "KA12-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA12-P1-F08",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 25719984099,
+      "unit": "원",
+      "scope": "연결 (통신비용)",
+      "evidence_ids": [
+        "KA12-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA12-P1-F09",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 4024870560,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA12-P1-F10",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 4026870560,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA12-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA12-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "FY2025 사업보고서 직원현황(OpenDART API)",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004583",
+      "document_id": "20260311004583",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "OpenDART get_employees 11011 FY2025 (fo_bbm=성별합계)",
+      "quoted_statement": "남 성별합계 sm=6,563; 여 성별합계 sm=481",
+      "reported_value": "7044",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA12-P1-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004583",
+      "document_id": "20260311004583",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 24. 비용의 성격별 분류 (별도, 단위: 원) 당기",
+      "quoted_statement": "| 통신비용 | 24,709,143,144 | (전기 24,967,467,574)",
+      "reported_value": "24709143144",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA12-P1-E03",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004583",
+      "document_id": "20260311004583",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 23. 비용의 성격별 분류 (연결) 당기",
+      "quoted_statement": "| 통신비용 | 25,719,984,099 | (전기 25,923,805,348)",
+      "reported_value": "25719984099",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA12-P1-E04",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004583",
+      "document_id": "20260311004583",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 4-5. 현금흐름표(별도) / 2-5 연결 현금흐름표",
+      "quoted_statement": "무형자산의 취득 | (4,024,870,560) | (2,71…) [별도]; 무형자산의 취득 | (4,026,870,560) [연결]",
+      "reported_value": "4024870560",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA12-P1-E05",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004583",
+      "document_id": "20260311004583",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 24. 비용의 성격별 분류 (별도)",
+      "quoted_statement": "| 지급수수료 및 기술사용료 | 78,463,241,075 | (전기 73,962,599,173)",
+      "reported_value": "78463241075",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전산 분리 불가"
+    },
+    {
+      "evidence_id": "KA12-P1-E06",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "보안기업 '자율공시' 행렬…지니언스·이니텍·로그프레소 명단에 [보안공시 해부]",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2025063018014915024",
+      "document_id": null,
+      "publication_date": "2025-06-30",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023-FY2024",
+      "page_or_section": "검색 요약 인용",
+      "quoted_statement": "같은 기간 에스원은 IT부문 투자가 550억8968만원에서 572억8069만원으로 늘었다. 정보보호 투자액은 40억1453만원에서 41억8915만원으로 증가했다. IT부문 대비 정보보호 투자 비중은 7.3% 수준을 유지했다.",
+      "reported_value": "572.8069",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 요약에서 인용; 출처 URL은 검색 결과 상위 기사로 추정(본문 미확인). 2025년 공시=FY2024"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원수",
+      "target": "OpenDART",
+      "tool": "opendart-get_employees",
+      "level": "L2",
+      "result": "OK",
+      "detail": "7,044명",
+      "retryable": false
+    },
+    {
+      "step": "IT 비용 계정",
+      "target": "사업보고서 20260311004583",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "전산비·전산운영비·정보화 0건; 통신비용·무형자산 취득 확인",
+      "retryable": false
+    },
+    {
+      "step": "KISA 공시 FY2025",
+      "target": "WebSearch 2회",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "FY2023/FY2024만 확보(보도), 2026년 공시(FY2025) 미발견",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 2026년 공시(FY2025) IT/정보보호 투자액",
+    "E06 기사 원문 URL 확인"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": []
+}

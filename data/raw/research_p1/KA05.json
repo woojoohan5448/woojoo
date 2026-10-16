@@ -1,0 +1,355 @@
+{
+  "account_id": "KA05",
+  "original_name": "한국전력공사",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-kospi-it",
+  "supplement_of": "data/raw/research/KA05.json",
+  "entity": {
+    "legal_name_ko": "한국전력공사",
+    "corp_code": "00159193",
+    "stock_code": "015760",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research 파일 entity 그대로; 본 파일은 Phase1 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA05-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 22875,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "남 17,478 + 여 5,397 (DART API 행 합산)"
+    },
+    {
+      "fact_id": "KA05-P1-F02",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 2431,
+      "unit": "백만원",
+      "scope": "법인 별도 (판관비 통신비)",
+      "evidence_ids": [
+        "KA05-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "통신비만; 전산비·전산운영비·정보화 계정은 사업보고서 검색 0건"
+    },
+    {
+      "fact_id": "KA05-P1-F03",
+      "metric": "it_service_cost",
+      "fiscal_year": 2024,
+      "value": 2601,
+      "unit": "백만원",
+      "scope": "법인 별도 (판관비 통신비)",
+      "evidence_ids": [
+        "KA05-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-P1-F04",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 4856,
+      "unit": "백만원",
+      "scope": "법인 별도 (비용성격별 통신비 전체)",
+      "evidence_ids": [
+        "KA05-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 19879,
+      "unit": "백만원",
+      "scope": "연결 (비용성격별 통신비)",
+      "evidence_ids": [
+        "KA05-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-P1-F06",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 18341,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-P1-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "무형자산 취득/자본적지출 합계(개발중인무형자산 18,301 포함). 전기 23,782"
+    },
+    {
+      "fact_id": "KA05-P1-F07",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2024,
+      "value": 23782,
+      "unit": "백만원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-P1-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-P1-F08",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 35980,
+      "unit": "백만원",
+      "scope": "법인 별도 (컴퓨터소프트웨어 상각)",
+      "evidence_ids": [
+        "KA05-P1-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-P1-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 462753,
+      "unit": "백만원",
+      "scope": "법인 별도 (컴퓨터소프트웨어 취득원가 누계)",
+      "evidence_ids": [
+        "KA05-P1-E06"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "한전 전산 운영은 자회사 한전KDN 위탁 구조(기존 파일 참조); 본 조사에서 위탁 규모 수치 미확보. 한전 IT 비용이 별도 '전산비' 계정으로 공시되지 않아 지급수수료(7,540억)/수선비에 흡수된 것으로 추정",
+      "incumbent": "한전KDN",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA05-P1-E07"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA05-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "FY2025 사업보고서 직원현황(OpenDART API)",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "OpenDART get_employees 11011 FY2025 (fo_bbm=전력사업, 남/여)",
+      "quoted_statement": "남: sm=17,478 (정규 17,371, 계약 107); 여: sm=5,397 (정규 5,299, 계약 98)",
+      "reported_value": "22875",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 주석 33. 판매비와 관리비 (단위: 백만원)",
+      "quoted_statement": "| 통신비 | 2,431 | 2,601 | (제65(당)기 | 제64(전)기)",
+      "reported_value": "2431",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 주석 40. 비용의 성격별 분류",
+      "quoted_statement": "| 통신비 | 2,431 | 2,425 | 4,856 |",
+      "reported_value": "4856",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "판관비 2,431 + 기타(영업비용) 2,425 = 4,856 백만원으로 해석"
+    },
+    {
+      "evidence_id": "KA05-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결감사보고서 주석 43. 비용의 성격별 분류",
+      "quoted_statement": "| 통신비 | 9,673 | 10,206 | 19,879 |",
+      "reported_value": "19879",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 주석 20. 무형자산 (2) 장부금액 변동내역 제65(당)기",
+      "quoted_statement": "| 합 계 | 188,838 | 18,341 | (37) | (59,905) | 28,721 | 175,958 | (기초|취득/자본적지출|처분|상각|기타증감|기말); 컴퓨터소프트웨어 상각 (35,980); 개발중인무형자산 취득 18,301",
+      "reported_value": "18341",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-P1-E06",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 주석 20. 무형자산 (1) 제65(당)기말",
+      "quoted_statement": "| 컴퓨터소프트웨어 | 462,753 | (768) | (408,129) | - | 53,856 | (취득원가|정부보조금|상각누계액|손상|장부금액)",
+      "reported_value": "462753",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-P1-E07",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 주석 33. 판매비와 관리비",
+      "quoted_statement": "| 지급수수료 | 754,049 | 739,850 |",
+      "reported_value": "754049",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "전산 지급수수료 분리 공시 없음 — IT 비용으로 쓰지 말 것"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원수",
+      "target": "OpenDART get_employees 2025/11011",
+      "tool": "opendart-get_employees",
+      "level": "L2",
+      "result": "OK",
+      "detail": "22,875명",
+      "retryable": false
+    },
+    {
+      "step": "IT 비용 계정 발췌",
+      "target": "사업보고서 20260317000686",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "전산비·전산운영비·정보화 0건; 통신비·소프트웨어·무형자산 취득만 확인",
+      "retryable": false
+    },
+    {
+      "step": "KR-BID 낙찰 이력",
+      "target": "instt=한국전력공사 / 한국전력 (limit 50)",
+      "tool": "krbid-search_awards",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "두 질의 모두 0건. 한전은 자체 전자조달(SRM) 사용으로 나라장터 수요기관 이력이 없는 것으로 판단(해석)",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시",
+      "target": "WebSearch '한국전력공사 정보보호 공시 정보기술부문 투자액' 외 1",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "보도 기사에서 한전 수치 미발견(전기·전력 3사 기사는 LS일렉·HD현대일렉·효성중공업만)",
+      "retryable": true
+    },
+    {
+      "step": "정보화 예산/KDN 위탁",
+      "target": "WebSearch '한전KDN 수의계약 정보화 위탁', '한전 정보보호 예산 국정감사'",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "KDN 매출 4,200억(연도 불명) 외 위탁 규모 미확인",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시(한전) FY2024/25 원문 — isds.kisa.or.kr 차단",
+    "ALIO 경영공시 정보화 예산",
+    "한전KDN 감사보고서 특수관계자 주석(한전 매출액)으로 위탁 규모 역산 — MyDART audit_report로 후속 가능"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "employees_FY2025",
+      "value": 22875,
+      "unit": "명",
+      "basis": "OpenDART 직원현황 합계",
+      "evidence_ids": [
+        "KA05-P1-E01"
+      ]
+    }
+  ]
+}

@@ -155,3 +155,19 @@ F. **중복 위험**: 같은 그룹 내 다른 53개 고객과의 관계(지주�
 - **검색 예산**: WebSearch는 세션 턴당 200회를 모든 에이전트가 공유한다. **배정된 횟수를 넘기지 말 것.** 한 검색으로 여러 고객을 커버하는 비교 기사(예: "정보보호 공시 2026 카드사")를 우선 사용.
 - **DART 우선**: 상장사는 `opendart-get_employees`(FY2025 11011), `get_full_financial_statement`(CF의 유형·무형자산 취득, IS의 전산비 계정)를 우선 수집 — 검색 예산을 쓰지 않는다. 출력이 크면 필요한 계정만 기록.
 - 구할 수 없으면 `research_log`에 레벨별 NOT_FOUND 사유를 남긴다. **숫자를 만들지 않는다.**
+
+## 7. MCP 우선 조사 가이드 (v2.1 — 2026-10-16 진단: 8개 PlayMCP 서버 모두 정상, docs/MCP_SOURCE_REGISTRY.md)
+도구 스키마는 ToolSearch `select:<이름>`으로 로드한다. **MCP 호출은 WebSearch 예산을 소모하지 않으므로 먼저 사용한다.**
+1. **MyDART (최우선, 비상장·외감 법인 재무)**
+   - `MyDART-find_corp_code(query)` → corp_code
+   - `MyDART-get_financials(corp, year=2025)` → 상장사 요약 재무. 비상장은 `no_data` + `next_step`에 감사보고서 rcept_no 제공
+   - `MyDART-search_disclosures(corp, preset="audit_report")` → 감사보고서 rcept_no
+   - `MyDART-download_document(rcept_no, find=["전산","통신비","지급수수료","소프트웨어","무형자산","감가상각","매출액","영업비용"], find_max_bytes=15000)` → **키워드가 든 표만 발췌**(전문을 읽지 말 것). 필요 시 `sections=[]`로 목차 → 특정 주석만.
+   - LEVEL 2 재구성: 판관비/영업비용 주석의 `전산비·전산운영비·통신비·지급수수료(전산)`, 무형자산(소프트웨어) 취득, 유형자산 중 전산기구 취득/감가상각. 중복(예: 감가상각 vs 취득) 합산 금지 — 비용 기준이면 감가상각, 투자 기준이면 취득.
+   - source_type `DART_AUDIT_REPORT`, document_id=rcept_no, page_or_section=주석 번호·표 제목, quoted_statement=표의 행 원문. 원문 직접 확인값이므로 **VERIFIED** 가능.
+2. **OpenDART (`opendart-*`)**: 상장사 `get_employees`(FY2025, 11011), `get_full_financial_statement`(CF 유형/무형자산 취득).
+3. **KR-BID**: `krbid-search_awards(by="instt", value="<수요기관명>")` 공공·금융 IT 낙찰 이력(LEVEL 3), `krbid-award_stats`. 업체 이력은 10자리 사업자번호 필요. 수주 기업의 계약 매출을 그 기업의 IT 지출로 오인하지 말 것.
+4. **IT 뉴스 (`ItNewsSearch-News_Article`)**: 제목·URL만, **date=null** → 발행일 미확인 시 Tier 3, 다른 근거로 교차확인.
+5. **KOSIS (`koreaStat-*`)**: 100대 지표(물가·고용) — 거시 보정용.
+6. **WebSearch**: MCP로 못 찾는 KISA 정보보호 공시 보도·투자 발표에만 사용. 배정 예산 엄수.
+- 각 시도는 `research_log`에 `{"step","target","tool","level":"L1~L6","result","detail","retryable"}`로 기록.

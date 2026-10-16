@@ -1,0 +1,300 @@
+{
+  "account_id": "KA38",
+  "original_name": "새마을금고중앙회",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-ka24-35-52-38-41",
+  "entity": {
+    "legal_name_ko": "새마을금고중앙회",
+    "legal_name_en": "Korean Federation of Community Credit Cooperatives",
+    "corp_code": "00391090",
+    "stock_code": null,
+    "business_reg_no": "109-82-04731",
+    "parent_group": null,
+    "related_key_accounts": [],
+    "industry_detail": "상호금융 중앙회",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": false,
+    "economic_scope": "중앙회 IT(전국 금고 공동 전산 발주 주체)",
+    "exclusions": "개별 금고 자체 지출",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "사업자번호는 입찰공고문 기재값. DART 공시 0건(2024-10~2026-10)"
+  },
+  "facts": [
+    {
+      "fact_id": "KA38-P1-F01",
+      "metric": "contract_value",
+      "fiscal_year": 2026,
+      "value": 337000000000,
+      "unit": "원",
+      "scope": "중앙회 발주(전국 금고 공동 계정계), 다년 누적, period 2026-2029(28개월)",
+      "evidence_ids": [
+        "KA38-P1-E01",
+        "KA38-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "사업예산(VAT포함). 계약 시작 2026-09경 가정 시 종료 ~2029-01. 연환산은 엔진 처리"
+    },
+    {
+      "fact_id": "KA38-P1-F02",
+      "metric": "ai_investment",
+      "fiscal_year": 2026,
+      "value": 25000000000,
+      "unit": "원",
+      "scope": "중앙회 발주, 다년 누적, period 2026-2027(11개월)",
+      "evidence_ids": [
+        "KA38-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "온프레미스 생성형 AI 인프라·클라우드 네이티브·AX 컨설팅"
+    },
+    {
+      "fact_id": "KA38-P1-F03",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 1251,
+      "unit": "개",
+      "scope": "전국 새마을금고 수(2025말 잠정)",
+      "evidence_ids": [
+        "KA38-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "총자산 286.7조원(전 금고 합산)"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA38-P1-D01",
+      "type": "NEXT_GEN_CORE",
+      "description": "계정계·통합단말·대내외 인터페이스·DR 인프라 최신화(Java 전환) — 사업예산 3,370억원(VAT포함), 28개월",
+      "amount": 3370,
+      "unit": "억원",
+      "period": "2026-2029",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA38-P1-E01"
+      ]
+    },
+    {
+      "driver_id": "KA38-P1-D02",
+      "type": "AI_INVESTMENT",
+      "description": "온프레미스 생성형 AI 인프라·클라우드 네이티브 환경 구축 — 250억원(VAT포함), 11개월",
+      "amount": 250,
+      "unit": "억원",
+      "period": "2026-2027",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA38-P1-E02"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "SI_BUILD",
+      "observation": "계정계 최신화는 단독 주사업자(공동수급 불가), 금융기관 시스템 구축 실적 3,000억 이상 요구 → 대형 SI(LG CNS·삼성SDS·SK AX 등) 한정. 낙찰자 미확인",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA38-P1-E01"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA38-P1-E01",
+      "tier": 1,
+      "source_type": "GOV_DATA",
+      "source_title": "새마을금고중앙회 제2026-32호 입찰공고 — 새마을금고 계정계 최신화 구축",
+      "publisher": "새마을금고중앙회 (나라장터 R26BK01589082, KR-BID 첨부 90206)",
+      "source_url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01589082&bidPbancOrd=000",
+      "document_id": "R26BK01589082",
+      "publication_date": "2026-06-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-2029",
+      "page_or_section": "입찰공고문 1.사업내용·계약기간, 5.사업예산",
+      "quoted_statement": "ㅇ계약기간 - 계약 시작일로부터 28개월(안정화 기간 4개월 포함) / 5. 본건 입찰의 사업예산은 337,000,000,000원(부가가치세포함)입니다. / 사업내용: 계정계, 통합단말, 대내외 인터페이스 최신화 구축 … 계정계 및 재해복구센터(DR) 인프라 최신화 구축",
+      "reported_value": "337000000000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "KR-BID 메타 추정가격 306,363,636,364원(VAT 제외). 협상에의한계약, 공동수급 불가. 마감 2026-08-07; 낙찰자 미확인"
+    },
+    {
+      "evidence_id": "KA38-P1-E02",
+      "tier": 1,
+      "source_type": "GOV_DATA",
+      "source_title": "새마을금고중앙회 제2026-36호 입찰공고(재공고) — 온프레미스 생성형 AI 인프라 운영 환경 구축",
+      "publisher": "새마을금고중앙회 (나라장터 R26BK01628181, KR-BID 첨부 122908)",
+      "source_url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01628181&bidPbancOrd=000",
+      "document_id": "R26BK01628181",
+      "publication_date": "2026-07-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-2027",
+      "page_or_section": "입찰공고문 1.계약기간, 5.사업예산",
+      "quoted_statement": "1) 온프레미스 생성형 AI 인프라 운영 장비 도입 2) 클라우드 네이티브 기반 환경 구축 3) AX 컨설팅 … 계약시작일로부터 11개월(안정화기간 포함) / 5. 본건 입찰의 사업예산은 25,000,000,000원(부가가치세포함)입니다.",
+      "reported_value": "25000000000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA38-P1-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "새마을금고, 3370억 규모 차세대시스템 추진…코어뱅킹·온프레미스 AI 인프라 재구축",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2026062413092743585",
+      "document_id": null,
+      "publication_date": "2026-06-24",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-2029",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "전국 1200여개 금고가 공유하는 계정계를 자바 기반으로 전환; 28개월 이내 완료",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "E01 원문과 일치"
+    },
+    {
+      "evidence_id": "KA38-P1-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "새마을금고 2025년 영업실적(잠정) — 행정안전부 발표 인용 보도",
+      "publisher": "다음뉴스(언론사 미확인)",
+      "source_url": "https://v.daum.net/v/20260320100133528",
+      "document_id": null,
+      "publication_date": "2026-03-20",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "행정안전부는 20일 1251개 새마을금고의 2025년 영업실적(잠정)을 발표했다. 총자산은 286조 7000억 원으로 2024년 말 대비 1조 9000억 원(0.7%) 감소했다.",
+      "reported_value": "1251",
+      "reported_unit": "개",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "회원 수 미확인"
+    },
+    {
+      "evidence_id": "KA38-P1-E05",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "sankun 입찰기관 페이지(새마을금고중앙회)",
+      "publisher": "sankun.com",
+      "source_url": "https://www.sankun.com/bid-institution/lrgq4tEbGRj31EhAxlIOgHidSdzkCXeaYJSFxwkxE7E",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "신용평가시스템(CSS) 재구축 1,122,727,273원; 디지털전담반 IT도급 4,500,000,000원; 바이오 통합 분산관리 시스템 구축 2,354,545,455원 (추정가격)",
+      "reported_value": "4500000000",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "추정가격, 낙찰가 아님"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 공시 검색",
+      "target": "00391090",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "730일간 공시 0건 — 감사보고서 미제출",
+      "retryable": false
+    },
+    {
+      "step": "KR-BID 낙찰 이력",
+      "target": "새마을금고중앙회",
+      "tool": "krbid-search_awards",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "instt 기준 0건",
+      "retryable": false
+    },
+    {
+      "step": "KR-BID 공고 검색·첨부",
+      "target": "계정계 최신화 / 생성형 AI 인프라",
+      "tool": "krbid-search, krbid-fetch",
+      "level": "L3",
+      "result": "OK",
+      "detail": "공고문 원문에서 사업예산·계약기간 확인",
+      "retryable": false
+    },
+    {
+      "step": "IT 예산·전산운영비",
+      "target": "새마을금고중앙회",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "연간 IT 예산·전산운영비 총액 보도 없음",
+      "retryable": false
+    },
+    {
+      "step": "금고 수·회원 수",
+      "target": "새마을금고",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "OK",
+      "detail": "금고 1,251개·총자산 286.7조(회원 수 미확인)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "계정계 최신화 낙찰자·계약금액·계약일",
+    "중앙회 연간 전산 운영비(경영공시)",
+    "회원 수(거래자 수)"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "note": "연간 IT 예산 미공개"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "not_found",
+      "note": "감사보고서 DART 미제출"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "found",
+      "note": "계정계 3,370억(28개월), AI 인프라 250억(11개월) 공고 원문"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "found",
+      "note": "금고 1,251개"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "note": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "note": ""
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "core_banking_budget",
+      "value": 337000000000,
+      "unit": "원",
+      "basis": "공고 사업예산 VAT포함, 28개월",
+      "evidence_ids": [
+        "KA38-P1-E01"
+      ]
+    },
+    {
+      "name": "member_cooperatives",
+      "value": 1251,
+      "unit": "개",
+      "basis": "2025말 잠정",
+      "evidence_ids": [
+        "KA38-P1-E04"
+      ]
+    }
+  ]
+}

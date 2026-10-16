@@ -1,0 +1,246 @@
+{
+  "account_id": "KA40",
+  "original_name": "한화시스템",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-kospi-it",
+  "supplement_of": "data/raw/research/KA40.json",
+  "entity": {
+    "legal_name_ko": "한화시스템(주)",
+    "corp_code": "00339391",
+    "stock_code": "272210",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research 파일 entity 그대로; 본 파일은 Phase1 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA40-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 4855,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA40-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "부문별 남녀 sm 합산(ICT 1,601명)"
+    },
+    {
+      "fact_id": "KA40-P1-F02",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 19366646848,
+      "unit": "원",
+      "scope": "법인 별도/연결 동일",
+      "evidence_ids": [
+        "KA40-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA40-P1-F03",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 15656506,
+      "unit": "천원",
+      "scope": "법인 별도 (컴퓨터소프트웨어 취득)",
+      "evidence_ids": [
+        "KA40-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA40-P1-F04",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2024,
+      "value": 15158380,
+      "unit": "천원",
+      "scope": "법인 별도 (컴퓨터소프트웨어 취득)",
+      "evidence_ids": [
+        "KA40-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA40-P1-F05",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 12616867,
+      "unit": "천원",
+      "scope": "법인 별도 (컴퓨터소프트웨어 상각)",
+      "evidence_ids": [
+        "KA40-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA40-P1-F06",
+      "metric": "it_employees",
+      "fiscal_year": 2025,
+      "value": 515.5,
+      "unit": "명",
+      "scope": "법인 별도 (KISA 정보기술부문 인력)",
+      "evidence_ids": [
+        "KA40-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA40-P1-F07",
+      "metric": "kisa_it_staff",
+      "fiscal_year": 2024,
+      "value": 400.9,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA40-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA40-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "FY2025 사업보고서 직원현황(OpenDART API)",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000644",
+      "document_id": "20260513000644",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "OpenDART get_employees 11011 FY2025 (방산/ICT 남녀)",
+      "quoted_statement": "방산 2,866+388; ICT 1,211+390",
+      "reported_value": "4855",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA40-P1-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000644",
+      "document_id": "20260513000644",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 4-4 현금흐름표 / 2-4 연결 현금흐름표",
+      "quoted_statement": "무형자산의 취득 | (19,366,646,848) | (33,…",
+      "reported_value": "19366646848",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA40-P1-E03",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000644",
+      "document_id": "20260513000644",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 16. 무형자산 - 별도 변동내역 (천원) 당기",
+      "quoted_statement": "| 컴퓨터소프트웨어 | 39,557,056 | 17,550 | 15,656,506 | (88,494) | (12,616,867) | 0 | 1,572,486 | 44,098,237 | (전기 취득 15,158,380)",
+      "reported_value": "15656506",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA40-P1-E04",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "수출 늘자 보안도 키운다…방산4사, IT·정보보호 투자 일제히 확대",
+      "publisher": "디지털데일리",
+      "source_url": "https://m.ddaily.co.kr/page/view/2026070216301826231",
+      "document_id": null,
+      "publication_date": "2026-07-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "검색 요약 인용",
+      "quoted_statement": "한화 방산 3사 정보보호 투자 327억2381만원(전년 230억351만원, +42.3%); IT 투자 2175억8249만원에서 2920억8605만원으로 34.2% 증가; 한화시스템 정보보호 전담인력 40.2명→44.8명, IT 인력 400.9명→515.5명",
+      "reported_value": "2920.8605",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "3사 합산(한화에어로·한화시스템·한화오션) — 한화시스템 단독 투자액은 요약에 없음"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원수",
+      "target": "OpenDART",
+      "tool": "opendart-get_employees",
+      "level": "L2",
+      "result": "OK",
+      "detail": "4,855명",
+      "retryable": false
+    },
+    {
+      "step": "IT 비용 계정",
+      "target": "사업보고서 20260513000644",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "전산비·통신비·정보화(계정) 0건; 무형자산 취득만. ZIP에 감사보고서 미포함(doc_count=1)",
+      "retryable": false
+    },
+    {
+      "step": "KISA 단독 투자액",
+      "target": "WebSearch 3회",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "3사 합산·인력만 확보",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "한화시스템 단독 KISA IT/정보보호 투자액 FY2024/25"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [
+    {
+      "peer_account_or_company": "한화 방산 3사 합산(한화에어로스페이스·한화시스템·한화오션)",
+      "metric": "kisa_it_investment",
+      "value": 2920.8605,
+      "unit": "억원",
+      "why_comparable": "그룹 합산 FY2025; 정보보호 327.2381억(비중≈11.2% DERIVED). 한화시스템 단독값 아님",
+      "evidence_ids": [
+        "KA40-P1-E04"
+      ]
+    }
+  ],
+  "estimation_inputs": []
+}

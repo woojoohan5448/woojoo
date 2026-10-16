@@ -1,0 +1,299 @@
+{
+  "account_id": "KA41",
+  "original_name": "신용협동조합",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-ka24-35-52-38-41",
+  "entity": {
+    "legal_name_ko": "신용협동조합중앙회",
+    "legal_name_en": "National Credit Union Federation of Korea",
+    "corp_code": "00298827",
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": null,
+    "related_key_accounts": [],
+    "industry_detail": "상호금융 중앙회",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": false,
+    "economic_scope": "중앙회 IT(전국 조합 공동 전산)",
+    "exclusions": "개별 조합 자체 지출",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "DART 공시 0건; MyDART '신협' 검색 시 무관 법인만"
+  },
+  "facts": [
+    {
+      "fact_id": "KA41-P1-F01",
+      "metric": "contract_value",
+      "fiscal_year": 2027,
+      "value": 3500,
+      "unit": "억원",
+      "scope": "중앙회 차세대 정보시스템, 다년 누적, period 2027-2029(하반기 오픈)",
+      "evidence_ids": [
+        "KA41-P1-E01",
+        "KA41-P1-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "'3500억원대' 계획 규모(예산 확정·발주 전). 연환산은 엔진 처리"
+    },
+    {
+      "fact_id": "KA41-P1-F02",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 864,
+      "unit": "개",
+      "scope": "전국 신협 개별조합 수",
+      "evidence_ids": [
+        "KA41-P1-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA41-P1-F03",
+      "metric": "other",
+      "fiscal_year": 2022,
+      "value": 6730000,
+      "unit": "명",
+      "scope": "전국 신협 조합원 수(FY2022)",
+      "evidence_ids": [
+        "KA41-P1-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "총자산 143.4조원(FY2022)"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA41-P1-D01",
+      "type": "NEXT_GEN_CORE",
+      "description": "차세대 정보시스템 개편(3500억원대), 2026-06 추진단 출범, 2027 착수·2029 하반기 오픈",
+      "amount": 3500,
+      "unit": "억원",
+      "period": "2027-2029",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA41-P1-E01",
+        "KA41-P1-E02"
+      ]
+    }
+  ],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA41-P1-E01",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "신협중앙회 차세대 추진단 출범, 3500억 규모 정보시스템 개편 준비",
+      "publisher": "더밸류뉴스",
+      "source_url": "https://thevaluenews.co.kr/news/199266",
+      "document_id": null,
+      "publication_date": "2026-06-09",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2027-2029",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "신협중앙회가 3500억원 규모 정보시스템 개편을 준비하는 추진단을 출범 … 2027년부터 본격 추진, 2029년 하반기 오픈 목표",
+      "reported_value": "3500",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA41-P1-E02",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "신협중앙회 3500억원대 차세대 정보시스템 구축 시동",
+      "publisher": "한국보험신문(dazabi)",
+      "source_url": "https://dazabi.com/insurance_magazine/article.php?id=24811",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2027-2029",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "신협중앙회가 3500억원대 차세대 정보시스템 구축에 본격 시동 … 2027년부터 시작돼 2029년 하반기 오픈을 목표로 하는 중장기 로드맵",
+      "reported_value": "3500",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "회장명 표기(고영철/김윤식) 기사간 불일치"
+    },
+    {
+      "evidence_id": "KA41-P1-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "[단독] 신협 건전성 '빨간불'…2030년 순자본비율 4% 강화에 100곳 '미달'",
+      "publisher": "헤럴드경제",
+      "source_url": "https://www.heraldk.com/article/2026030715000029497",
+      "document_id": null,
+      "publication_date": "2026-03",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "신협 개별조합(864곳) 공시를 분석",
+      "reported_value": "864",
+      "reported_unit": "개",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA41-P1-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "신협 2022년 경영실적",
+      "publisher": "쿠키뉴스",
+      "source_url": "https://www.kukinews.com/article/view/kuk202302230026",
+      "document_id": null,
+      "publication_date": "2023-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2022",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "전국 870개 신협의 총자산 약 143조4000억원 … 조합원은 673만 명, 이용자는 1597만 명",
+      "reported_value": "6730000",
+      "reported_unit": "명",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "구 자료(FY2022)"
+    },
+    {
+      "evidence_id": "KA41-P1-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "1700억 저축은행중앙회 차세대 사업, SK AX 우선협상대상자 선정",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2026071016101223634",
+      "document_id": null,
+      "publication_date": "2026-07-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "1700억 저축은행중앙회 차세대 사업, SK AX 우선협상대상자 선정",
+      "reported_value": "1700",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "비교 대상(L5)"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 공시 검색",
+      "target": "00298827",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "730일간 공시 0건",
+      "retryable": false
+    },
+    {
+      "step": "MyDART 법인 검색 '신협'",
+      "target": "신협",
+      "tool": "MyDART-find_corp_code",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "신협전자·한진정보통신신협만",
+      "retryable": false
+    },
+    {
+      "step": "KR-BID 낙찰/공고",
+      "target": "신용협동조합중앙회 / 신협중앙회 차세대",
+      "tool": "krbid-search_awards, krbid-search",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "0건 — 차세대 발주 전",
+      "retryable": false
+    },
+    {
+      "step": "차세대 금액·기간",
+      "target": "신협중앙회",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "OK",
+      "detail": "3500억원대, 2027-2029",
+      "retryable": false
+    },
+    {
+      "step": "조합 수·조합원 수",
+      "target": "신협",
+      "tool": "WebSearch",
+      "level": "L4",
+      "result": "OK",
+      "detail": "864곳(2026-03 보도), 조합원 673만(FY2022, 구 자료)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "차세대 RFP 발주 시점·사업예산(VAT포함 여부)·주사업자",
+    "중앙회 연간 전산 운영비",
+    "FY2025 조합원 수·총자산"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "note": "연간 IT 예산 미공개"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "not_found",
+      "note": "DART 미제출"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "found",
+      "note": "차세대 3500억원대 계획(보도, 2027-2029)"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "found",
+      "note": "조합 864곳, 조합원 673만(FY2022)"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "found",
+      "note": "새마을금고 계정계 3,370억/28개월, 저축은행중앙회 1,700억"
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "note": ""
+    }
+  ],
+  "conflicts": [],
+  "comparables": [
+    {
+      "peer_account_or_company": "KA38 새마을금고중앙회",
+      "metric": "contract_value",
+      "value": 337000000000,
+      "unit": "원",
+      "why_comparable": "상호금융 중앙회 공동 계정계 재구축, 동시기(2026 발주, 28개월)",
+      "evidence_ids": [
+        "KA38-P1-E01"
+      ]
+    },
+    {
+      "peer_account_or_company": "저축은행중앙회",
+      "metric": "contract_value",
+      "value": 1700,
+      "unit": "억원",
+      "why_comparable": "서민금융 중앙회 차세대(2026)",
+      "evidence_ids": [
+        "KA41-P1-E05"
+      ]
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "next_gen_budget",
+      "value": 3500,
+      "unit": "억원",
+      "basis": "보도 '3500억원대', 2027-2029",
+      "evidence_ids": [
+        "KA41-P1-E01"
+      ]
+    },
+    {
+      "name": "member_unions",
+      "value": 864,
+      "unit": "개",
+      "basis": "2026-03 보도",
+      "evidence_ids": [
+        "KA41-P1-E03"
+      ]
+    }
+  ]
+}

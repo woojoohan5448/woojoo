@@ -34,15 +34,18 @@ def _fact_to_eok(f: dict, fx) -> Decimal | None:
         return None
 
 
-def select_anchor(research: dict, override: dict, family: str, params: dict, fx: Decimal) -> dict:
+def select_anchor(research: dict, override: dict, family: str, params: dict, fx: Decimal, aid: str = "") -> dict:
     """Return the FY anchor for TS with full lineage. Values in 억원."""
     ov = override.get("ts_anchor") if override else None
     if ov and ov.get("force"):
         return _override_anchor(ov)
 
     cands = []
-    # 1. direct budget for FY2026
+    # 1. direct budget for FY2026 (a DERIVED budget yields to a reported KISA IT figure)
+    has_kisa = bool(_facts(research, "kisa_it_investment"))
     for f in _facts(research, "it_budget"):
+        if f.get("verification_status") == "DERIVED" and has_kisa:
+            continue
         if int(f.get("fiscal_year") or 0) == 2026 and f.get("scope", "").find("그룹") < 0:
             v = _fact_to_eok(f, fx)
             if v is not None:
@@ -96,6 +99,13 @@ def select_anchor(research: dict, override: dict, family: str, params: dict, fx:
                                   "evidence_ids": r_ev, **({"assumption_id": r_assump} if r_assump else {})}]})
         break
 
+    comp = component_anchor(research, aid, family, params, fx) if aid else None
+    if cands and comp:
+        strong = [c for c in cands if c["method"] in ("KISA_IT_INVESTMENT", "KISA_DERIVED") or
+                  (c["method"] == "KISA_SEC_SCALED" and "자사" in c["formula"])]
+        if not strong:  # only an industry-ratio security scale-up → definition-consistent VERIFIED components win
+            comp["alternatives"] = [{"method": c["method"], "fiscal_year": c["fiscal_year"], "value": str(c["value"])} for c in cands]
+            return comp
     if cands:
         # prefer most recent FY; tie → direct KISA IT figure
         order = {"KISA_IT_INVESTMENT": 0, "KISA_DERIVED": 1, "KISA_SEC_SCALED": 2}
@@ -108,6 +118,27 @@ def select_anchor(research: dict, override: dict, family: str, params: dict, fx:
     # 4. account-specific analyst model
     if ov:
         return _override_anchor(ov)
+
+    # 4b. L2 — whitelisted IT cost components
+    if comp:
+        return comp
+
+    # 4c. L5 — comparable-company estimate via employees × IT spend per employee (empirically calibrated)
+    emp_par = params.get("_it_per_employee", {}).get(family)
+    if emp_par:
+        for f in _facts(research, "employees"):
+            if int(f.get("fiscal_year") or 0) >= 2024 and "별도" in (f.get("scope") or "별도"):
+                n = D(str(f["value"]).replace(",", ""))
+                if n > 0:
+                    per = D(str(emp_par["base"]))
+                    return {"method": "EMPLOYEE_COMPARABLE", "fiscal_year": int(f["fiscal_year"]), "value": n * per,
+                            "fact_status": "ESTIMATED", "evidence_ids": f.get("evidence_ids", []), "tier": 3,
+                            "per_employee": [str(emp_par["low"]), str(emp_par["base"]), str(emp_par["high"])], "employees": str(n),
+                            "formula": f"TS_FY{f['fiscal_year']} = 직원 수 {int(n):,}명 × 동종 비교기업 1인당 IT 지출 {float(per):.3f}억 (n={emp_par['n']}, B-EMP)",
+                            "inputs": [{"name": "직원 수", "value": str(n), "unit": "명", "fiscal_year": f.get("fiscal_year"),
+                                        "evidence_ids": f.get("evidence_ids", []), "fact_status": f.get("verification_status")},
+                                       {"name": "1인당 IT 지출(비교기업 중앙값)", "value": str(per), "unit": "억원/명", "assumption_id": "B-EMP",
+                                        "peers": emp_par.get("peers")}]}
 
     # 5. intensity fallback (revenue, or SG&A for financial firms whose 영업수익 includes gross trading/interest flows)
     inten = params["it_intensity_fallback"].get(family)
@@ -130,6 +161,33 @@ def select_anchor(research: dict, override: dict, family: str, params: dict, fx:
                                                           "assumption_id": "B-INT"}]}
     return {"method": "UNKNOWN", "fiscal_year": None, "value": None, "fact_status": "UNKNOWN",
             "evidence_ids": [], "tier": None, "formula": "근거 부족 — 추정 불가", "inputs": []}
+
+
+def component_anchor(research: dict, aid: str, family: str, params: dict, fx: Decimal) -> dict | None:
+    """L2 — IT cost components from audit/annual-report notes (MyDART). Analyst whitelist only
+    (config: component_model.accounts) to avoid 연결/별도 duplicates and customer-delivery costs."""
+    comp = params.get("component_model") or {}
+    spec = comp.get("accounts", {}).get(aid)
+    if not spec:
+        return None
+    facts = {f.get("fact_id"): f for f in research.get("facts", [])}
+    lines = [(facts[i], _fact_to_eok(facts[i], fx)) for i in spec["fact_ids"] if i in facts]
+    lines = [(f, v) for f, v in lines if v and v > 0]
+    if not lines:
+        return None
+    total = sum(v for _, v in lines)
+    cov_spec = comp["coverage"][spec["coverage"]]
+    cov = [D(x) for x in cov_spec["values"]]
+    fy = max(int(f.get("fiscal_year") or 0) for f, _ in lines)
+    return {"method": "AUDIT_IT_COMPONENTS", "fiscal_year": fy, "value": total / cov[1],
+            "fact_status": "VERIFIED" if all(f.get("verification_status") == "VERIFIED" for f, _ in lines) else "SECONDARY_UNCONFIRMED",
+            "evidence_ids": [e for f, _ in lines for e in f.get("evidence_ids", [])],
+            "tier": min(_evidence_tier(research, f.get("evidence_ids", [])) for f, _ in lines),
+            "component_total": total, "coverage": [str(c) for c in cov], "coverage_basis": cov_spec["basis"],
+            "formula": f"TS_FY{fy} = 감사·사업보고서 IT 비용 항목 합계 {float(total):,.1f}억 ÷ 포괄률 {float(cov[1]):.3f} [{spec['coverage']}: {cov_spec['basis']}]",
+            "inputs": [_inp(f"IT 비용 항목: {(f.get('analyst_interpretation') or f.get('metric'))[:50]}", v, f) for f, v in lines]
+            + [{"name": f"IT 비용 포괄률(base) — {cov_spec['basis']}", "value": str(cov[1]), "unit": "ratio", "assumption_id": "B-COMP"}],
+            "note": spec.get("note")}
 
 
 def _override_anchor(ov: dict) -> dict:
@@ -159,6 +217,14 @@ def ts_2026(anchor: dict, family: str, params: dict) -> dict:
     base = v * (1 + D(g[1])) ** years
     low = v * (1 + D(g[0])) ** years * (1 - width)
     high = v * (1 + D(g[2])) ** years * (1 + width)
+    if anchor["method"] == "AUDIT_IT_COMPONENTS":
+        cov = [D(x) for x in anchor["coverage"]]
+        low = anchor["component_total"] / cov[0] * (1 + D(g[0])) ** years
+        high = anchor["component_total"] / cov[2] * (1 + D(g[2])) ** years
+    if anchor["method"] == "EMPLOYEE_COMPARABLE":
+        per = [D(x) for x in anchor["per_employee"]]
+        n = D(anchor["employees"])
+        low, high = n * per[0] * (1 + D(g[0])) ** years, n * per[2] * (1 + D(g[2])) ** years
     if anchor["method"] == "REVENUE_INTENSITY":
         it = [D(x) for x in anchor["intensity"]]
         rev = v / it[1]

@@ -69,9 +69,14 @@ def classify(a: dict, year: str, metric: str, na_cfg: dict) -> tuple[str, str]:
     return grade(rec), f"{a['anchor']['method']} · conf {rec.get('confidence')}"
 
 
+def load_na_cfg() -> dict:
+    p = ROOT / "config" / "not_applicable.json"
+    cfg = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    return {k: v for k, v in cfg.items() if not k.startswith("_")}
+
+
 def audit(dash: dict, label: str) -> list[dict]:
-    na_cfg = json.loads((ROOT / "config" / "not_applicable.json").read_text(encoding="utf-8")) if (ROOT / "config" / "not_applicable.json").exists() else {}
-    na_cfg = {k: v for k, v in na_cfg.items() if not k.startswith("_")}
+    na_cfg = load_na_cfg()
     rows = []
     for a in dash["accounts"]:
         for (y, m) in EXTERNAL_FIELDS + INTERNAL_FIELDS:

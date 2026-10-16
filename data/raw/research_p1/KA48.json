@@ -1,0 +1,269 @@
+{
+  "account_id": "KA48",
+  "original_name": "카카오페이",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-recovery-ts",
+  "entity": {
+    "legal_name_ko": "(주)카카오페이",
+    "legal_name_en": "Kakao Pay Corp.",
+    "corp_code": "01244601",
+    "stock_code": "377300",
+    "business_reg_no": null,
+    "parent_group": "카카오",
+    "related_key_accounts": [],
+    "industry_detail": "간편결제/핀테크",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "법인 별도 우선",
+    "exclusions": "카카오페이증권, 카카오페이손해보험",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "사업보고서 20260312001366"
+  },
+  "facts": [
+    {
+      "fact_id": "KA48-P1-F01",
+      "metric": "it_capex",
+      "fiscal_year": 2026,
+      "value": 18940872000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "2026년 IT 설비투자 '계획'(정보처리 183.9억+정보보호 5.5억). 실적 아님"
+    },
+    {
+      "fact_id": "KA48-P1-F02",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 1282,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "정규 1,190 + 계약 92"
+    },
+    {
+      "fact_id": "KA48-P1-F03",
+      "metric": "it_employees",
+      "fiscal_year": 2025,
+      "value": 641,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-P1-E03",
+        "KA48-P1-E04"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "1,282 × 약 50%(개발인력 비중, 사업보고서 서술)"
+    },
+    {
+      "fact_id": "KA48-P1-F04",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 21794434000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "감가상각비 20,056,112 + 무형자산상각비 1,738,322 (천원)"
+    },
+    {
+      "fact_id": "KA48-P1-F05",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 14090000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-P1-E05"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "'지난해' 기준, 연도 미확정"
+    },
+    {
+      "fact_id": "KA48-P1-F06",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2025,
+      "value": 12.3,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-P1-E05"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA48-P1-F07",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 114600000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-P1-E05"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "140.9억 / 12.3% ≈ 1,146억. 연도 미확정; 반올림 오차 ±5억"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA48-P1-E01",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "사업보고서 (2025.12) II-3 설비의 신설 매입계획",
+      "publisher": "카카오페이/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": "2026-03-12",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026 계획",
+      "page_or_section": "II. 사업의 내용 3. 원재료 및 생산설비 (2) 설비의 신설 매입계획 (단위: 천원)",
+      "quoted_statement": "| 정보처리시스템 (서버, 솔루션 등) | 18,386,592 | / | 정보보호시스템 (서버, 솔루션 등) | 554,280 | / | 합계 | 18,940,872 |",
+      "reported_value": "18,940,872",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA48-P1-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "사업보고서 III 주석 28. 영업비용(별도)",
+      "publisher": "카카오페이/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": "2026-03-12",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 재무에 관한 사항 28. 영업비용 당기 (단위: 천원)",
+      "quoted_statement": "| 급여 | 123,006,309 | / | 감가상각비 | 20,056,112 | / | 지급수수료 | 354,300,855 | / | 합계 | 628,771,825 |",
+      "reported_value": "354,300,855",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "전산비·통신비 계정 없음(find 0건). 지급수수료는 결제원가 중심"
+    },
+    {
+      "evidence_id": "KA48-P1-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "직원 현황(사업보고서 11011)",
+      "publisher": "OpenDART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": "2026-03-12",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "직원 현황 남/여 sm",
+      "quoted_statement": "sexdstn=남, sm=715 / sexdstn=여, sm=567 (stlm_dt=2025-12-31)",
+      "reported_value": "1282",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA48-P1-E04",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "사업보고서 II-1 사업의 개요",
+      "publisher": "카카오페이/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": "2026-03-12",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "II.1 3) 플랫폼 개발 기술력",
+      "quoted_statement": "당사는 전체 임직원의 약 50%를 개발인력으로 구성하여 기술 확보에 매진하고 있습니다.",
+      "reported_value": "50",
+      "reported_unit": "%",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA48-P1-E05",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "카카오페이 vs 토스페이먼츠 정보보호 투자 비교",
+      "publisher": "딜사이트",
+      "source_url": "https://dealsite.co.kr/articles/169916",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "'지난해'(FY 미확정, FY2025 추정)",
+      "page_or_section": "본문(WebSearch 요약)",
+      "quoted_statement": "카카오페이의 정보보호 투자액은 2021년 34억5000만원에서 지난해 140억9000만원으로 약 4.1배 늘었다. (IT 투자 대비 정보보호 비중 12.3%)",
+      "reported_value": "140.9",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "발행일 미확인"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "사업보고서 키워드 발췌",
+      "target": "DART 20260312001366",
+      "tool": "MyDART-download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산·통신비 계정 없음; IT 설비투자 계획 확인",
+      "retryable": false
+    },
+    {
+      "step": "직원현황",
+      "target": "OpenDART",
+      "tool": "opendart-get_employees",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "1,282명",
+      "retryable": false
+    },
+    {
+      "step": "KISA 금액 검색",
+      "target": "WebSearch",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "OK",
+      "detail": "딜사이트 140.9억/12.3% (3회 사용, 연도 미확정)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 140.9억/12.3%의 대상 FY 및 FY2024 값",
+    "KISA 정보기술부문 투자액 절대값(원문)",
+    "클라우드(카카오엔터프라이즈/외부 CSP) 비용이 지급수수료에 포함된 금액"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "KISA 보도(SECONDARY) + 2026 IT 설비투자 계획(VERIFIED)"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "인원·상각비"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "임직원 급여총액",
+      "value": 110013000000,
+      "unit": "원",
+      "basis": "남 70,849백만 + 여 39,164백만",
+      "evidence_ids": [
+        "KA48-P1-E03"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "account_id": "KA28",
+  "original_name": "코람코자산운용",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-dc-defense",
+  "supplement_of": "data/raw/research/KA28.json",
+  "entity": {
+    "corp_code": "00802213",
+    "entity_status": "CONFIRMED",
+    "parent_group": "(주)코람코자산신탁 100% → 최상위 지배기업 (주)LF(코람코자산신탁 지분 67.08%)",
+    "entity_notes": "감사보고서 주석29 특수관계자에서 확인"
+  },
+  "facts": [
+    {
+      "fact_id": "KA28-P1-F01",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 46748134071,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA28-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 33560229808,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA28-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 13187904263,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA28-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F04",
+      "metric": "sga",
+      "fiscal_year": 2025,
+      "value": 28912299298,
+      "unit": "원",
+      "scope": "법인 별도(일반관리비)",
+      "evidence_ids": [
+        "KA28-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F05",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 2483107501,
+      "unit": "원",
+      "scope": "법인 별도(일반관리비 중 지급수수료; 전산 구분 없음)",
+      "evidence_ids": [
+        "KA28-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산비·통신비 별도 계정 없음(통신비 0 hits). 지급수수료 일부가 IT 서비스 비용일 가능성 — 상한 프록시"
+    },
+    {
+      "fact_id": "KA28-P1-F06",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 384800019,
+      "unit": "원",
+      "scope": "법인 별도(CF)",
+      "evidence_ids": [
+        "KA28-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F07",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 394400000,
+      "unit": "원",
+      "scope": "법인 별도(CF)",
+      "evidence_ids": [
+        "KA28-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F08",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 27983005216,
+      "unit": "원",
+      "scope": "법인 별도(집합투자기구운용보수)",
+      "evidence_ids": [
+        "KA28-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 8232874065086,
+      "unit": "원",
+      "scope": "운용 집합투자재산 순자산가액(부동산투자, 고유재산 외)",
+      "evidence_ids": [
+        "KA28-P1-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA28-P1-F10",
+      "metric": "dc_capacity_mw",
+      "fiscal_year": null,
+      "value": 26,
+      "unit": "MW",
+      "scope": "케이스퀘어데이터센터 가산(IT load); 전력용량 40MW 별도 보도",
+      "evidence_ids": [
+        "KA28-P1-E07"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA28-P1-F11",
+      "metric": "dc_capacity_mw",
+      "fiscal_year": null,
+      "value": 40,
+      "unit": "MW",
+      "scope": "코람코시화데이터센터(안산, DCI 공동)",
+      "evidence_ids": [
+        "KA28-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA28-P1-F12",
+      "metric": "dc_capacity_mw",
+      "fiscal_year": null,
+      "value": 100,
+      "unit": "MW",
+      "scope": "케이스퀘어데이터센터 의정부(수전용량), 2030년부터 단계 준공",
+      "evidence_ids": [
+        "KA28-P1-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA28-P1-F13",
+      "metric": "dc_investment",
+      "fiscal_year": 2032,
+      "value": 100000,
+      "unit": "억원",
+      "scope": "다년 누적(~2032), 코람코 DC 플랫폼 목표",
+      "evidence_ids": [
+        "KA28-P1-E06",
+        "KA28-P1-E08"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "약 10조원 투자, 수전 1.4GW / IT 1GW 목표; 2028년까지 약 5조원 펀딩"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA28-P1-D01",
+      "type": "DC_BUILD",
+      "description": "2032년까지 약 10조원 투자, 수전 약 1.4GW·IT 1GW DC 운영 목표. 2026-02 IDC 2본부 신설. 파이프라인: 가산(26MW IT, 가동), 시화 40MW(DCI·현대건설), 의정부 100MW(2030~), 부산 장림, 구로(마누스), 안산 성곡",
+      "amount": 100000,
+      "unit": "억원",
+      "period": "~2032 (다년 누적)",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA28-P1-E06",
+        "KA28-P1-E08"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "케이스퀘어데이터센터 가산(금천구 가산동 319-19): 운영 LG유플러스, 시공 현대건설, 서버랙 2,446개. PFV 지분 매각 입찰 진행 보도",
+      "incumbent": "LG유플러스(운영)",
+      "lgu_relationship": "LG U+가 코람코 개발 가산 DC 운영 담당(보도)",
+      "evidence_ids": [
+        "KA28-P1-E07"
+      ]
+    },
+    {
+      "category": "DC_COLO",
+      "observation": "시화 40MW는 브룩필드 계열 DCI가 설계·구축·운영 담당 → 통신사 운영 위탁 아님",
+      "incumbent": "DCI(Data Center Infrastructure, Brookfield)",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA28-P1-E06"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA28-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "코람코자산운용 감사보고서 (2025.12)",
+      "publisher": "한영회계법인 / DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000506",
+      "document_id": "20260331000506",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서 제17기",
+      "quoted_statement": "Ⅰ. 영업수익 46,748,134,071 / Ⅱ. 영업비용 33,560,229,808 / Ⅲ. 영업이익 13,187,904,263",
+      "reported_value": "46748134071; 33560229808; 13187904263",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA28-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "코람코자산운용 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000506",
+      "document_id": "20260331000506",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 21 일반관리비",
+      "quoted_statement": "지급수수료 2,483,107,501 / 감가상각비 2,756,448,393 / 무형자산상각비 562,708,090 / 합 계 28,912,299,298",
+      "reported_value": "2483107501; 28912299298",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "종업원급여 19,922,250,500; 임차료 67,640,000"
+    },
+    {
+      "evidence_id": "KA28-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "코람코자산운용 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000506",
+      "document_id": "20260331000506",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 투자활동",
+      "quoted_statement": "3. 유형자산의 취득 (384,800,019) / 4. 무형자산의 취득 (394,400,000)",
+      "reported_value": "384800019; 394400000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA28-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "코람코자산운용 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000506",
+      "document_id": "20260331000506",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 18 수수료수익",
+      "quoted_statement": "집합투자기구운용보수 27,983,005,216 | 리츠자산관리보수 4,049,315,068 | 부수업무용역수수료 11,798,342,700 | 합 계 43,897,264,834",
+      "reported_value": "27983005216",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA28-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "코람코자산운용 감사보고서 (2025.12)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000506",
+      "document_id": "20260331000506",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 27 집합투자재산 / 주석 8 FVPL 금융자산",
+      "quoted_statement": "부동산투자 설정원본 8,118,564,382,425 순자산가액 8,232,874,065,086; 채무증권: 케이스퀘어데이터센터피에프브이 4,841,680,863, 케이스퀘어마누스데이터센터구로피에프브이 2,500,000,000, 케이스퀘어부산장림데이터센터피에프브이 500,000,000, 코람코시화데이터센터피에프브이 356,232,000",
+      "reported_value": "8232874065086",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "DC PFV 4개 보유 확인"
+    },
+    {
+      "evidence_id": "KA28-P1-E06",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "코람코운용, IDC 2본부 신설…\"데이터센터 주도권 강화\" / 한경 의정부·시화 DC 기사 (WebSearch 요약)",
+      "publisher": "뉴시스/한국경제",
+      "source_url": "https://www.newsis.com/view/NISX20260223_0003521952",
+      "document_id": null,
+      "publication_date": "2026-02-23",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(검색 요약)",
+      "quoted_statement": "2032년까지 약 10조원을 투자해 수전 용량 기준 약 1.4GW, IT 부하 기준 1GW 규모 ... 시화 40MW ... 케이스퀘어데이터센터 의정부 ... 수전 용량은 100MW",
+      "reported_value": "100000; 1.4; 1; 40; 100",
+      "reported_unit": "억원; GW; GW; MW; MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA28-P1-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "케이스퀘어데이터센터 가산 가동 / PFV 지분 매각 (WebSearch 요약)",
+      "publisher": "fnnews / seoulpi",
+      "source_url": "https://www.fnnews.com/news/202506101333468643",
+      "document_id": null,
+      "publication_date": "2025-06-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(검색 요약)",
+      "quoted_statement": "총 2,446개의 서버랙 ... IT Load는 26MW ... 전력용량 40메가와트(MW) ... 데이터센터 운영은 ... LG유플러스가 담당하며, 시공은 현대건설",
+      "reported_value": "26; 40; 2446",
+      "reported_unit": "MW; MW; 랙",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA28-P1-E08",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "South Korea's Koramco targets 1GW data center capacity by 2032",
+      "publisher": "DatacenterDynamics",
+      "source_url": "https://www.datacenterdynamics.com/en/news/south-koreas-koramco-targets-1gw-data-center-capacity-by-2032/",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "제목/요약",
+      "quoted_statement": "Koramco targets 1GW data center capacity by 2032 (10조원)",
+      "reported_value": "1; 10조",
+      "reported_unit": "GW; 원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "manager_opex_total_FY2025",
+      "value": 33560229808,
+      "unit": "원",
+      "basis": "감사보고서 영업비용",
+      "evidence_ids": [
+        "KA28-P1-E01"
+      ]
+    },
+    {
+      "name": "manager_it_proxy_upper(지급수수료)",
+      "value": 2483107501,
+      "unit": "원",
+      "basis": "일반관리비 지급수수료(전산 미구분, 상한)",
+      "evidence_ids": [
+        "KA28-P1-E02"
+      ]
+    },
+    {
+      "name": "dc_pipeline_mw_known",
+      "value": 166,
+      "unit": "MW",
+      "basis": "DERIVED: 가산 26(IT) + 시화 40 + 의정부 100(수전) — 기준 혼재, 장림·구로 미포함",
+      "evidence_ids": [
+        "KA28-P1-E06",
+        "KA28-P1-E07"
+      ]
+    },
+    {
+      "name": "dc_target_it_mw_2032",
+      "value": 1000,
+      "unit": "MW",
+      "basis": "코람코 목표",
+      "evidence_ids": [
+        "KA28-P1-E06"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found",
+      "detail": "FY2025 감사보고서 영업수익·영업비용"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "일반관리비 내역(전산·통신비 계정 없음), CF 유/무형 취득"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "found",
+      "detail": "가산 DC LG U+ 운영(보도)"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 목록",
+      "target": "00802213",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "20260331000506(FY2025), 20250331003055(FY2024)",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 키워드 발췌",
+      "target": "20260331000506",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "영업수익/운용보수/일반관리비/CF/DC PFV; 통신비 0건, 전산 = 감사인력 표만",
+      "retryable": false
+    },
+    {
+      "step": "IT뉴스",
+      "target": "코람코 데이터센터",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "null",
+      "retryable": false
+    },
+    {
+      "step": "뉴스 검색 x2(+KA50 공유1)",
+      "target": "코람코 DC 용량·운영사",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "OK",
+      "detail": "1GW/10조, 가산 26MW LG U+ 운영, 시화 40MW, 의정부 100MW",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "가산 DC 임차인(코로 고객)·LG U+ 운영계약 조건 및 PFV 매각 결과(매수자)",
+    "구로(마누스)·부산 장림 MW",
+    "운용사 본체 전산비(지급수수료 내 IT 비중)",
+    "코람코 운용 DC 펀드에서 LG U+ 회선·운영 매출이 운용사가 아닌 PFV/펀드에 귀속되는 점 — 계정 매핑"
+  ]
+}

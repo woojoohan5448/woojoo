@@ -1,0 +1,232 @@
+{
+  "account_id": "KA17",
+  "original_name": "현대엘리베이터",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-kospi-it",
+  "supplement_of": "data/raw/research/KA17.json",
+  "entity": {
+    "legal_name_ko": "현대엘리베이터 주식회사",
+    "corp_code": "00164724",
+    "stock_code": "017800",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research 파일 entity 그대로; 본 파일은 Phase1 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA17-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 2867,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "남 2,594 + 여 273"
+    },
+    {
+      "fact_id": "KA17-P1-F02",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 17004157,
+      "unit": "천원",
+      "scope": "법인 별도 (판관비 전산비)",
+      "evidence_ids": [
+        "KA17-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-P1-F03",
+      "metric": "it_service_cost",
+      "fiscal_year": 2024,
+      "value": 16296379,
+      "unit": "천원",
+      "scope": "법인 별도 (판관비 전산비)",
+      "evidence_ids": [
+        "KA17-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-P1-F04",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 4247860,
+      "unit": "천원",
+      "scope": "연결 (판관비 전산비)",
+      "evidence_ids": [
+        "KA17-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결<별도: 계열 IT 자회사(현대무벡스 등) 지급분이 연결 제거된 것으로 해석"
+    },
+    {
+      "fact_id": "KA17-P1-F05",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 4447025651,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-P1-F06",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 5402841008,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "별도 전산비(170억)가 연결(42억)보다 큼 → 상당부분이 연결 종속 IT 계열사 내부거래로 추정",
+      "incumbent": "현대무벡스(추정, 미검증)",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA17-P1-E02",
+        "KA17-P1-E03"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA17-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "FY2025 사업보고서 직원현황(OpenDART API)",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "OpenDART get_employees 11011 FY2025",
+      "quoted_statement": "남 sm=2,594; 여 sm=273",
+      "reported_value": "2867",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-P1-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 29. 판매비와관리비 (별도, 단위: 천원)",
+      "quoted_statement": "| 전산비, 판관비 | 17,004,157 | (전기 16,296,379)",
+      "reported_value": "17004157",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-P1-E03",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "III. 30. 판매비와관리비 (연결, 단위: 천원)",
+      "quoted_statement": "| 전산비, 판관비 | 4,247,860 | (전기 4,250,649)",
+      "reported_value": "4247860",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 현금흐름표 제42기",
+      "quoted_statement": "| 무형자산의 취득 | | (4,447,025,651) | (2,902,674,015) |; 연결: (5,402,841,008)",
+      "reported_value": "4447025651",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원수",
+      "target": "OpenDART",
+      "tool": "opendart-get_employees",
+      "level": "L2",
+      "result": "OK",
+      "detail": "2,867명",
+      "retryable": false
+    },
+    {
+      "step": "IT 비용 계정",
+      "target": "사업보고서 20260318001372",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "별도 판관비 전산비 170억, 연결 42억",
+      "retryable": false
+    },
+    {
+      "step": "KISA 공시",
+      "target": "WebSearch 1회",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "보도 없음",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA IT/정보보호 투자액",
+    "전산비 수취 계열사 확인(특수관계자 주석)"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": []
+}

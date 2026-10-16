@@ -1,0 +1,277 @@
+{
+  "account_id": "KA45",
+  "original_name": "페이스북",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-global-netco",
+  "supplement_of": "data/raw/research/KA45.json",
+  "facts": [
+    {
+      "fact_id": "KA45-P1-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 71963690720,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA45-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "영업수익(순액). 광고 총판매액은 1,075,222,280천원(E03)"
+    },
+    {
+      "fact_id": "KA45-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 50677581852,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA45-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA45-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 21286108868,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA45-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA45-P1-F04",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 219499,
+      "unit": "천원",
+      "scope": "법인 별도(통신비 계정만)",
+      "evidence_ids": [
+        "KA45-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "국내 법인 사무용 통신비. 망 이용대가/캐시서버 비용 아님 → LG U+ 망·IDC 수요 앵커로 부적합"
+    },
+    {
+      "fact_id": "KA45-P1-F05",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 3519371,
+      "unit": "천원",
+      "scope": "법인 별도(지급수수료 전체, 전산 비중 미상)",
+      "evidence_ids": [
+        "KA45-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전산 수수료 분리 불가"
+    },
+    {
+      "fact_id": "KA45-P1-F06",
+      "metric": "korea_revenue",
+      "fiscal_year": 2025,
+      "value": 1075222280,
+      "unit": "천원",
+      "scope": "법인 별도 광고 총판매액(한국 광고매출 일부, 해외 직판 제외)",
+      "evidence_ids": [
+        "KA45-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "Meta 국내 캐시서버는 2017~18년 KT IDC 운영, 2019년 SK브로드밴드와 망 사용료 합의(금액 비공개). LG U+ 계약은 공개 보도 미확인",
+      "incumbent": "KT, SK브로드밴드",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA45-P1-E04",
+        "KA45-P1-E05"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA45-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "페이스북코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260402001603",
+      "document_id": "20260402001603",
+      "publication_date": "2026-04-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서",
+      "quoted_statement": "영업수익 | 18 | | 71,963,690,720 | | 73,796,346,446 / 영업비용 | 19 | | 50,677,581,852 | | 51,535,561,730 / 영업이익 21,286,108,868 | 22,260,784,716",
+      "reported_value": "71963690720 / 50677581852 / 21286108868",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA45-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "페이스북코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260402001603",
+      "document_id": "20260402001603",
+      "publication_date": "2026-04-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 19. 영업비용 (단위: 천원)",
+      "quoted_statement": "통신비 | 219,499 | 284,339 ; 지급수수료 | 3,519,371 | 3,376,625 ; 감가상각비 | 3,680,912 | 4,750,350 ; 사용권자산상각비 | 5,905,513 | 5,766,708 ; 합계 | 50,677,582 | 51,535,562",
+      "reported_value": "219499 / 3519371",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "임차료 계정 없음(리스는 사용권자산상각비로 인식). 지급수수료의 전산 비중 미공시."
+    },
+    {
+      "evidence_id": "KA45-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "페이스북코리아 유한회사 감사보고서 (2025.12)",
+      "publisher": "한영회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260402001603",
+      "document_id": "20260402001603",
+      "publication_date": "2026-04-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 18 영업수익 / 주석 24 특수관계자",
+      "quoted_statement": "당 사의 매출은 전액 한국에서 발생하는 용역수익이며 기간에 걸쳐 인식됩니다. 당사의 매출유형은 광고재판매 및 마케팅용역지원으로 구성 ... 광고 총판매액 | 1,075,222,280 | 954,525,137 (천원); Meta Platforms Ireland Limited 매입 1,028,457,527 (당기)",
+      "reported_value": "1075222280",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "국내 법인은 Meta Platforms Ireland 대상 cost+8% 서비스·광고 리셀러. 망·캐시서버 비용 계정 없음 → 망 계약 주체는 해외 Meta 법인으로 판단."
+    },
+    {
+      "evidence_id": "KA45-P1-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "페이스북, SK브로드밴드에 망 사용료 지급 합의 (2년 계약 후 자동 연장)",
+      "publisher": "한국경제",
+      "source_url": "https://www.hankyung.com/amp/201901274609Y",
+      "document_id": null,
+      "publication_date": "2019-01-27",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "페이스북이 SK브로드밴드에 망 사용료를 지급하는 것은 2010년 국내 시장에 본격 진출한 이후 처음이다 ... SK브로드밴드는 계약 비밀 유지 조항을 이유로 \"확인해줄 수 없다\"",
+      "reported_value": "NOT_DISCLOSED",
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "금액 비공개. WebFetch DNS 차단으로 본문 미확인."
+    },
+    {
+      "evidence_id": "KA45-P1-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "페이스북 캐시서버 KT 운영·망 비용 지급 관련 보도(2017~2018)",
+      "publisher": "byline.network / 국민일보 등",
+      "source_url": "https://byline.network/2018/07/4-19/",
+      "document_id": null,
+      "publication_date": "2018-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "페이스북은 KT와 협의해 KT의 데이터센터에 캐시서버를 운영하고 있으며 SK브로드밴드와 LG유플러스는 이 망을 통해 페이스북 서비스를 제공 받았다 / 페이스북은 캐시서버를 이미 설치한 KT에는 망 비용을 지불하고 있다",
+      "reported_value": "NOT_DISCLOSED",
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 검색",
+      "target": "페이스북코리아 01469635",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "FY2025 rcept 20260402001603",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 키워드 발췌",
+      "target": "20260402001603",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "매출액 0건(영업수익 사용), 임차료 0건",
+      "retryable": false
+    },
+    {
+      "step": "ItNews 검색",
+      "target": "메타 망 사용료",
+      "tool": "ItNewsSearch-News_Article",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "결과 null",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch x2",
+      "target": "메타 망 이용대가/LG U+ 캐시서버",
+      "tool": "WebSearch",
+      "level": "L3",
+      "result": "NOT_FOUND",
+      "detail": "2017~2019 기사만; 금액·LG U+ 계약 미확인",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch",
+      "target": "news sites",
+      "tool": "WebFetch",
+      "level": "L3",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 DNS 차단 — 미시도",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "Meta(해외법인)의 한국 ISP 망 이용대가 금액(비공개)",
+    "LG U+ IDC 내 Meta 캐시서버(FNA) 존재 여부",
+    "SKB 계약 2021 이후 갱신 여부"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "국내 법인 감사보고서에 망 이용대가/IDC/회선 계정 없음; 망 계약은 해외 Meta 법인 주체"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "통신비 219,499천원·지급수수료 3,519,371천원(FY2025) — 사무용, 망 수요 대리지표 부적합"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_found",
+      "detail": "SKB 2019 망 사용료 합의 존재하나 금액 비공개; LG U+ 계약 미확인"
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "detail": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "detail": "근거 없음"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [],
+  "estimation_inputs": [],
+  "account_status_note": "KOREA 망/IDC 지출 정량 앵커 NOT_FOUND → INSUFFICIENT_EVIDENCE 유지"
+}

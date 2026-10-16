@@ -1,0 +1,429 @@
+{
+  "account_id": "KA52",
+  "original_name": "토스증권",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-ka24-35-52-38-41",
+  "entity": {
+    "legal_name_ko": "토스증권 주식회사",
+    "legal_name_en": "Toss Securities Co., Ltd.",
+    "corp_code": "01527984",
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "비바리퍼블리카(토스)",
+    "related_key_accounts": [
+      "KA27"
+    ],
+    "industry_detail": "온라인 증권",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "토스증권 별도(감사보고서 20260401004239)",
+    "exclusions": "Toss Securities Holdings US 등 해외 종속",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "KA27 비바리퍼블리카 연결 대상 — 이중계산 주의"
+  },
+  "facts": [
+    {
+      "fact_id": "KA52-P1-F01",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 882953772660,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 426,587,225,737 대비 +107%"
+    },
+    {
+      "fact_id": "KA52-P1-F02",
+      "metric": "operating_revenue",
+      "fiscal_year": 2024,
+      "value": 426587225737,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA52-P1-F03",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 430889830905,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA52-P1-F04",
+      "metric": "sga",
+      "fiscal_year": 2025,
+      "value": 199831584205,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA52-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 32303645,
+      "unit": "천원",
+      "scope": "법인 별도(전산운용비)",
+      "evidence_ids": [
+        "KA52-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 22,121,298 대비 +46.0%"
+    },
+    {
+      "fact_id": "KA52-P1-F06",
+      "metric": "it_service_cost",
+      "fiscal_year": 2024,
+      "value": 22121298,
+      "unit": "천원",
+      "scope": "법인 별도(전산운용비)",
+      "evidence_ids": [
+        "KA52-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA52-P1-F07",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 24135417,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "시설장치 21,505,143 — 지점 없는 온라인 증권사로 서버·네트워크 등 전산설비 비중이 클 것으로 판단(해석)"
+    },
+    {
+      "fact_id": "KA52-P1-F08",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2024,
+      "value": 18685709,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA52-P1-F09",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 1808170,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA52-P1-F10",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 21351450,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-P1-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "감가상각비 19,398,087 + 무형자산상각비 1,953,363"
+    },
+    {
+      "fact_id": "KA52-P1-F11",
+      "metric": "it_opex",
+      "fiscal_year": 2025,
+      "value": 58247232,
+      "unit": "천원",
+      "scope": "법인 별도(전산운용비+유형·무형 취득)",
+      "evidence_ids": [
+        "KA52-P1-E02",
+        "KA52-P1-E03",
+        "KA52-P1-E04"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "32,303,645+24,135,417+1,808,170. IT 인건비·지급수수료(IT분)·모회사 플랫폼비 제외 → 하한. 임차시설물·비품 포함 소폭 과대"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA52-P1-D01",
+      "type": "OTHER",
+      "description": "2026 Q1 전산장애 5회·사고금액 72억원 이상 → 전산 인프라 투자 확대 입장",
+      "amount": 72,
+      "unit": "억원",
+      "period": "2026",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA52-P1-E06"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "모회사 비바리퍼블리카에 판관비 168억원(FY2025) 지급 — 그룹 공용 플랫폼/IT 서비스 가능성(성격 미공시)",
+      "incumbent": "비바리퍼블리카",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA52-P1-E05"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA52-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "토스증권 감사보고서(2025.12) 포괄손익계산서",
+      "publisher": "삼일회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004239",
+      "document_id": "20260401004239",
+      "publication_date": "2026-04-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "포괄손익계산서 (단위: 원)",
+      "quoted_statement": "Ⅰ. 영업수익 | 882,953,772,660 | 426,587,225,737 / Ⅱ. 영업비용 | 430,889,830,905 | 277,338,591,473 / 6. 판매비와관리비 | 199,831,584,205 | 160,941,232,815 / Ⅲ. 영업이익 | 452,063,941,755 | 149,248,634,264",
+      "reported_value": "882953772660",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA52-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "토스증권 감사보고서(2025.12) 주석 29 판매비와관리비",
+      "publisher": "삼일회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004239",
+      "document_id": "20260401004239",
+      "publication_date": "2026-04-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 29 (단위: 천원)",
+      "quoted_statement": "| 전산운용비 | 32,303,645 | 22,121,298 | / | 지급수수료 | 28,580,739 | 23,194,080 | / | 감가상각비 | 19,398,087 | 15,002,988 | / | 무형자산상각비 | 1,953,363 | 3,290,928 | / | 급여 | 74,175,013 | 61,287,542 |",
+      "reported_value": "32303645",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA52-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "토스증권 감사보고서(2025.12) 주석 11 유형자산",
+      "publisher": "삼일회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004239",
+      "document_id": "20260401004239",
+      "publication_date": "2026-04-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 11 (2) 변동 (단위: 천원)",
+      "quoted_statement": "당기 취득: 비품 1,586,979 | 시설장치 21,505,143 | 임차시설물 663,296 | 건설중 380,000 | 합계 24,135,417; 전기 취득: 비품 529,640 | 시설장치 17,288,338 | 임차시설물 867,730 | 합계 18,685,709",
+      "reported_value": "24135417",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA52-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "토스증권 감사보고서(2025.12) 주석 13 무형자산",
+      "publisher": "삼일회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004239",
+      "document_id": "20260401004239",
+      "publication_date": "2026-04-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 13 (2) 변동 (단위: 천원)",
+      "quoted_statement": "당기 취득: 소프트웨어 763,170 | 건설중인무형자산 1,045,000 | 합계 1,808,170; 전기 취득: 소프트웨어 2,504,217",
+      "reported_value": "1808170",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA52-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "토스증권 감사보고서(2025.12) 주석 30 특수관계자거래",
+      "publisher": "삼일회계법인/DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004239",
+      "document_id": "20260401004239",
+      "publication_date": "2026-04-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025/FY2024",
+      "page_or_section": "주석 30 (2) (단위: 천원)",
+      "quoted_statement": "지배기업 주식회사 비바리퍼블리카 | 판매비와관리비 | 16,803,211 | 11,234,672 | / 토스씨엑스㈜ | 판매비와관리비 | 1,991,215 | 1,500,616",
+      "reported_value": "16803211",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": "비바리퍼블리카 지급 판관비의 성격(플랫폼·공용 IT 등) 미기재"
+    },
+    {
+      "evidence_id": "KA52-P1-E06",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "[단독] \"툭하면 먹통\" 토스증권, 72억 사고 내고 보상은 고작 2만원",
+      "publisher": "데일리안",
+      "source_url": "https://www.dailian.co.kr/news/view/1645869/",
+      "document_id": null,
+      "publication_date": "2026-05",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026 Q1",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "토스증권의 전산장애는 1분기에만 다섯 차례 발생했고 사고금액은 72억 원을 넘었다; 회사 측은 전산 인프라 투자를 확대하는 방식으로 대응하겠다는 입장",
+      "reported_value": "72",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA52-P1-E07",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "잇따른 해킹 사고…증권사 정보보호 투자는 한투·토스 순",
+      "publisher": "뉴스토마토",
+      "source_url": "https://www.newstomato.com/ReadNews.aspx?no=1275684",
+      "document_id": null,
+      "publication_date": "2025-09",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "정보기술 부문 투자액 가운데 정보보호 부문 투자액 비율이 가장 높은 증권사는 한국투자증권(13.2%), 토스증권이 11.6%로 2위; 정보보호 내부 인력 최다는 토스증권",
+      "reported_value": "11.6",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "기존 KA52-F01과 동일 근거 재확인. 금액 미기재"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 rcept",
+      "target": "01527984",
+      "tool": "MyDART-search_disclosures",
+      "level": "L1",
+      "result": "OK",
+      "detail": "별도 20260401004239 / 연결 20260401004244",
+      "retryable": false
+    },
+    {
+      "step": "감사보고서 find 전산·통신비·소프트웨어·지급수수료·영업수익·판관비",
+      "target": "20260401004239",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "전산운용비 323억, 판관비, 무형자산 확보; 통신비 계정 0건",
+      "retryable": false
+    },
+    {
+      "step": "유형자산 주석",
+      "target": "20260401004239",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "시설장치 취득 215억",
+      "retryable": false
+    },
+    {
+      "step": "KISA FY2025 금액(KA27 기록 915억/82.9억 확인)",
+      "target": "토스증권",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "3회 검색 — FY2024 비율 11.6%만 재확인, 금액·FY2025 미확인",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA FY2025 정보기술부문 투자액 915.2억·정보보호 82.9억(KA27-E13 기록) 원문 확인 — 확인 시 L1 anchor",
+    "비바리퍼블리카 지급 판관비 168억 성격",
+    "전산 인력 수 및 인건비"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "note": "KISA 금액 미확인(비율 11.6% FY24만)"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "note": "전산운용비 323억 + 유·무형 취득 259억 = 582억(FY25 하한)"
+    },
+    {
+      "level": "L3_CONTRACT",
+      "result": "not_applicable",
+      "note": ""
+    },
+    {
+      "level": "L4_BENCHMARK",
+      "result": "not_found",
+      "note": "임직원 수 미확보"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "not_applicable",
+      "note": ""
+    },
+    {
+      "level": "L6_SCENARIO",
+      "result": "not_applicable",
+      "note": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "KA27-E13 (KA52 open_questions)",
+      "existing_value": 915.2461,
+      "new_value": 582.47,
+      "unit": "억원",
+      "explanation": "KA27 기록 KISA IT투자 915억(FY2025 추정)은 본 L2 하한 582억(전산운용비+유무형취득)보다 큼. KISA IT투자는 IT 인건비·외주용역 포함이므로 모순은 아니나 미검증 — 915억 채택 시 SECONDARY",
+      "evidence_ids": [
+        "KA52-P1-E02",
+        "KA52-P1-E03",
+        "KA52-P1-E04"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": [
+    {
+      "name": "it_service_cost_growth",
+      "value": 46.0,
+      "unit": "%",
+      "basis": "32,303,645/22,121,298-1",
+      "evidence_ids": [
+        "KA52-P1-E02"
+      ]
+    },
+    {
+      "name": "kisa_security_ratio_fy2024",
+      "value": 11.6,
+      "unit": "%",
+      "basis": "뉴스토마토(KISA 인용)",
+      "evidence_ids": [
+        "KA52-P1-E07"
+      ]
+    }
+  ]
+}

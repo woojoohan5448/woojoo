@@ -1,0 +1,374 @@
+{
+  "account_id": "KA36",
+  "original_name": "(주)코스콤",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-itsvc-cloud",
+  "supplement_to": "data/raw/research/KA36.json",
+  "entity": {
+    "legal_name_ko": "(주)코스콤",
+    "legal_name_en": "KOSCOM CORPORATION",
+    "corp_code": "00159661",
+    "stock_code": null,
+    "business_reg_no": "1168102919",
+    "parent_group": "한국거래소(최대주주로 알려짐, 미검증)",
+    "related_key_accounts": [],
+    "industry_detail": "자본시장 IT 인프라·시스템 SI (업종코드 62010)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "코스콤 별도 기준(외감법인, 사업보고서 미제출)",
+    "exclusions": "한국거래소 등 주주사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('코스콤') 00159661 1건. get_company_info: (주)코스콤, 대표 윤창현, 영등포구 여의나루로4길 21, 설립 1977-09-20, 비상장(E). DART 제출은 감사보고서뿐(2025.12: 20260330000337 삼일, 2024.12: 20250331000062 한영)"
+  },
+  "evidence": [
+    {
+      "evidence_id": "KA36-P1-E01",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "(주)코스콤 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "포괄손익계산서 영업수익·영업비용·영업이익 행 (단위: 원)",
+      "quoted_statement": "영업수익 | 28 | | 476,940,397,116 | | 430,040,305,805 / 영업비용 | 29 | | 422,244,184,761 | | 386,327,782,959 / 영업이익 | | | 54,696,212,355 | | 43,712,522,846",
+      "reported_value": "476,940,397,116",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA36-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "(주)코스콤 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 29. 영업비용 (1) 1) 영업비 (단위: 천원, 당기|전기)",
+      "quoted_statement": "기기사용료 | 16,454,171 | 13,257,001 / 회선사용료 | 20,869,307 | 19,943,034 / 기기매입비 | 17,700,228 | 12,032,473 / 외주용역비 | 61,843,522 | 59,712,132 / 정보이용료 | 62,505,634 | 60,021,565 / 기기보수유지비 | 21,425,024 | 20,341,212 / 전산소모품비 | 1,617,439 | 203,038 / 감가상각비 | 8,365,963 | 9,655,330 / 사용권자산상각비 | 3,154,239 | 2,541,019 / 무형자산상각비 | 3,644,539 | 3,400,005 / 전력료 | 4,868,193 | 4,753,335 / 합 계 | 225,884,611 | 208,040,810",
+      "reported_value": "225,884,611",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA36-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "(주)코스콤 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 29. 영업비용 3) 일반관리비 (단위: 천원)",
+      "quoted_statement": "용역비 | 4,849,333 | 4,511,173 / 지급수수료 | 1,111,977 | 1,242,730 / 임차료 | 6,614,606 | 6,792,168 / 감가상각비 | 2,573,327 | 2,079,063 / 합 계 | 57,696,776 | 52,951,974",
+      "reported_value": "57,696,776",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA36-P1-E04",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "(주)코스콤 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 투자활동 현금유출 (단위: 원)",
+      "quoted_statement": "유형자산의 취득 | 16 | 51,430,051,508 | | 18,648,668,975 / 무형자산의 취득 | 18 | 5,094,304,883 | | 3,949,715,988",
+      "reported_value": "51,430,051,508",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA36-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "(주)코스콤 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 18. 무형자산 (2) 당기 변동 (단위: 천원)",
+      "quoted_statement": "소프트웨어 | 6,829,406 | 2,414,232 | - | (3,644,539) | 720,909 | 6,320,008",
+      "reported_value": "2,414,232",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA36-P1-E06",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "(주)코스콤 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 28. 영업수익 (7) 주요 고객",
+      "quoted_statement": "당사의 매출의 10%이상을 차지하는 단일 고객은 한국거래소이며, 당기 및 전기 중 한국거래소에 대한 매출액은 각각 76,601,135천원 및 64,358,998천원입니다.",
+      "reported_value": "76,601,135",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA36-P1-E07",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "(주)코스콤 감사보고서 (2025.12)",
+      "publisher": "금융감독원 DART (PlayMCP MyDART download_document)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 37. 현금흐름표 (1) 조정사항 (단위: 천원)",
+      "quoted_statement": "감가상각비 | 10,863,322 | 11,657,870 / 사용권자산 감가상각비 | 3,870,252 | 3,499,642 / 무형자산상각비 | 3,644,539 | 3,400,005",
+      "reported_value": "10,863,322",
+      "reported_unit": "천원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA36-P1-E08",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "WebSearch: 코스콤 정보보호 공시 (2회)",
+      "publisher": "WebSearch",
+      "source_url": "https://www.fnnews.com/news/202606301401277765",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "검색 요약",
+      "quoted_statement": "코스콤의 공시 자료(정보보호 투자액, IT 투자액, 전담인력)는 이번 검색에서 찾지 못했습니다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "NOT_FOUND 근거 기록용. 수치 없음"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "KA36-P1-F01",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 476940397116,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 430,040,305,805원 → +10.9%"
+    },
+    {
+      "fact_id": "KA36-P1-F02",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 422244184761,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA36-P1-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 54696212355,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA36-P1-F04",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 225884611,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "영업비(서비스 제공 원가 성격) 합계. 대부분 고객(증권사·한국거래소) 대상 IT 서비스 제공 원가 = 재판매/서비스 원가이며 순수 자체 IT 소비가 아님"
+    },
+    {
+      "fact_id": "KA36-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 20869307,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "회선사용료. 금융투자 전용망·회선 서비스 제공용 통신 회선 구매비로 추정 → LG U+ 등 통신사의 직접 매출 풀(Connectivity wallet). 고객 재판매 원가 성격 포함"
+    },
+    {
+      "fact_id": "KA36-P1-F06",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 37879195,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "기기사용료 16,454,171 + 기기보수유지비 21,425,024 (천원). IT 장비 임차·유지보수 — 서비스 제공 인프라(자체 운영 인프라이자 고객 서비스 원가 혼재)"
+    },
+    {
+      "fact_id": "KA36-P1-F07",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 51430051508,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 18,648,668,975원 대비 2.8배. 내역(전산장비/건물) 미분해"
+    },
+    {
+      "fact_id": "KA36-P1-F08",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 5094304883,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "이 중 소프트웨어 취득 2,414,232천원(주석18); 나머지 회원권 1,434,163천원·건설중인자산 1,245,909천원"
+    },
+    {
+      "fact_id": "KA36-P1-F09",
+      "metric": "depreciation",
+      "fiscal_year": 2025,
+      "value": 10863322,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E07"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "유형 감가상각비(현금흐름 조정). 사용권 3,870,252·무형 3,644,539 별도"
+    },
+    {
+      "fact_id": "KA36-P1-F10",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 61843522,
+      "unit": "천원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA36-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "외주용역비(영업비). IT 서비스 제공용 외주 — 고객 서비스 원가 성격"
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "한국거래소 매출 비중",
+      "value": 16.1,
+      "unit": "%",
+      "basis": "76,601,135천원 / 영업수익 476,940,397천원",
+      "evidence_ids": [
+        "KA36-P1-E06",
+        "KA36-P1-E01"
+      ]
+    },
+    {
+      "name": "전력료(자체 DC 전력비 프록시)",
+      "value": 4868193,
+      "unit": "천원",
+      "basis": "주석29 영업비 전력료 FY2025",
+      "evidence_ids": [
+        "KA36-P1-E02"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "영업비 중 회선사용료 208.7억원(FY2025, 전기 199.4억). 코스콤이 통신사로부터 구매하는 회선 비용 — 공급사별 내역 미공시",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA36-P1-E02"
+      ]
+    }
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found",
+      "detail": "KISA 정보보호 공시 보도 WebSearch 2회 — 코스콤 수치 없음"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found",
+      "detail": "감사보고서 주석29 영업비·일반관리비, CF 유·무형 취득"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "감사보고서 IT 비용 주석",
+      "target": "20260330000337",
+      "tool": "MyDART-download_document(find)",
+      "level": "L2",
+      "result": "OK",
+      "detail": "주석29 영업비/일반관리비, 주석18 무형자산, CF, IS 확보. '통신비' 계정 없음(회선사용료로 표시)",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시",
+      "target": "WebSearch x2",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "코스콤 IT/정보보호 투자액 보도 없음. 공공기관·금융회사 공시 제외 여부 불명",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "코스콤의 KISA 정보보호 공시 의무 여부(금융회사·공공성 법인 제외 가능성) 및 수치",
+    "영업비 2,258.8억원(225,884,611천원) 중 자체 IT 소비 vs 고객 서비스 원가 분리 불가 — 회선사용료 공급사 구성",
+    "유형자산 취득 514억(FY2025) 급증 원인(DC/차세대 장비?)"
+  ],
+  "drivers": [],
+  "conflicts": [],
+  "comparables": []
+}

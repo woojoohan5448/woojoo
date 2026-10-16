@@ -1,0 +1,179 @@
+{
+  "account_id": "KA22",
+  "original_name": "하나은행",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-fin-it-anchor",
+  "supplement_of": "data/raw/research/KA22.json",
+  "facts": [
+    {
+      "fact_id": "KA22-P1-F01",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 4121,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA22-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026년 7월 공시=FY2025. 교차검증 372/4121=9.03% → 기존 9.0% 일치"
+    },
+    {
+      "fact_id": "KA22-P1-F02",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 372,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA22-P1-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "비즈한국 등 371억 표기(반올림 차)"
+    },
+    {
+      "fact_id": "KA22-P1-F03",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 2512.56,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA22-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 2,295.90억"
+    },
+    {
+      "fact_id": "KA22-P1-F04",
+      "metric": "tangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 2278.43,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA22-P1-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 1,992.54억"
+    },
+    {
+      "fact_id": "KA22-P1-F05",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 1251.7,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA22-P1-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=무형자산상각비. 일반관리비 주석에 전산비 계정 없음(기타 3,828.9억에 포함 추정)"
+    }
+  ],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA22-P1-E01",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "하나은행 정보보호 공시(딜사이트, KISA 인용)",
+      "publisher": "딜사이트",
+      "source_url": "https://dealsite.co.kr/articles/164593",
+      "document_id": null,
+      "publication_date": "2026-07-03",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약/인용(본문 미확인)",
+      "quoted_statement": "3일 한국인터넷진흥원(KISA) 정보보호 공시에 따르면 하나은행은 지난해 IT 투자액 4121억원 가운데 372억원을 정보보호에 투자했다.",
+      "reported_value": "4121",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "KISA 공시 인용. 정확한 기사 URL은 딜사이트 164593/164690/165316 중 하나(검색결과 귀속 불확실). 타 기사(비즈한국)는 371억으로 표기 WebFetch DNS 차단으로 본문 미확인."
+    },
+    {
+      "evidence_id": "KA22-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "하나은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+      "document_id": "20260316000962",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "주석 41. 일반관리비 (단위: 백만원)",
+      "quoted_statement": "| 감가상각비 | 388,167 | 371,022 | | 무형자산상각비 | 125,070 | 115,300 | ... | 기타 | 382,890 | 411,354 | | 합 계 | 3,314,292 | 3,181,753 |",
+      "reported_value": "3,314,292",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    },
+    {
+      "evidence_id": "KA22-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "하나은행 사업보고서(2025.12) 첨부 감사보고서(별도)",
+      "publisher": "DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+      "document_id": "20260316000962",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "현금흐름표 ll.투자활동 (단위: 백만원)",
+      "quoted_statement": "| 10. 유형자산의 취득 | (227,843) | | (199,254) | ... | 13. 무형자산의 취득 | (251,256) | | (229,590) |",
+      "reported_value": "251,256",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": "PlayMCP MyDART download_document(role=separate_audit, find) 표 행 원문"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "KISA IT 투자액",
+      "target": "하나은행",
+      "tool": "WebSearch",
+      "level": "L1_DIRECT",
+      "result": "OK",
+      "detail": "IT 4,121억/정보보호 372억(2차)",
+      "retryable": false
+    },
+    {
+      "step": "판관비 주석",
+      "target": "rcept 20260316000962",
+      "tool": "MyDART download_document",
+      "level": "L2_COMPONENTS",
+      "result": "OK",
+      "detail": "전산/통신비 계정 없음; CF 취득·상각만",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "하나은행 KISA 정보보호 372억 vs 371억 원문 확인"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    }
+  ],
+  "conflicts": [
+    {
+      "existing_fact_id": "TS model (SG&A×12.5%)",
+      "existing_value": 4142.9,
+      "new_value": 4121,
+      "unit": "억원",
+      "explanation": "KISA FY2025 IT 투자 4,121억 vs SG&A 33,142.9억×12.5%=4,142.9억 → 차이 -0.5%. TS는 사실상 확인됨; 앵커를 KISA 4,121억으로 교체 권고",
+      "evidence_ids": [
+        "KA22-P1-E01"
+      ]
+    }
+  ],
+  "comparables": [],
+  "estimation_inputs": []
+}

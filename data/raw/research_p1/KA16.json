@@ -1,0 +1,295 @@
+{
+  "account_id": "KA16",
+  "original_name": "GS리테일",
+  "research_date": "2026-10-16",
+  "researcher": "agent:p1-kospi-it",
+  "supplement_of": "data/raw/research/KA16.json",
+  "entity": {
+    "legal_name_ko": "주식회사 지에스리테일",
+    "corp_code": "00140177",
+    "stock_code": "007070",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "기존 research 파일 entity 그대로; 본 파일은 Phase1 보충"
+  },
+  "facts": [
+    {
+      "fact_id": "KA16-P1-F01",
+      "metric": "employees",
+      "fiscal_year": 2025,
+      "value": 7304,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-P1-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "부문별 남녀 sm 합산"
+    },
+    {
+      "fact_id": "KA16-P1-F02",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 66688,
+      "unit": "백만원",
+      "scope": "법인 별도 (판관비 전산수수료)",
+      "evidence_ids": [
+        "KA16-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-P1-F03",
+      "metric": "it_service_cost",
+      "fiscal_year": 2024,
+      "value": 63448,
+      "unit": "백만원",
+      "scope": "법인 별도 (판관비 전산수수료)",
+      "evidence_ids": [
+        "KA16-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-P1-F04",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 3376,
+      "unit": "백만원",
+      "scope": "법인 별도 (판관비 통신비)",
+      "evidence_ids": [
+        "KA16-P1-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-P1-F05",
+      "metric": "it_service_cost",
+      "fiscal_year": 2025,
+      "value": 4882,
+      "unit": "백만원",
+      "scope": "연결 (판관비 통신비)",
+      "evidence_ids": [
+        "KA16-P1-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-P1-F06",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 3408115228,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-P1-F07",
+      "metric": "intangible_asset_acquisition",
+      "fiscal_year": 2025,
+      "value": 3832882056,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-P1-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-P1-F08",
+      "metric": "contract_value",
+      "fiscal_year": 2025,
+      "value": 1967,
+      "unit": "백만원",
+      "scope": "법인 별도 (KT 통신라인 장기용역, 연간 통신비 영향액)",
+      "evidence_ids": [
+        "KA16-P1-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "period: 계약 만기 2032-12-31로 갱신(전기 만기 2025-12-31)"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "KT 통신라인 장기용역계약 2032-12-31까지 갱신(연 통신비 영향 19.67억)",
+      "incumbent": "KT",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA16-P1-E04"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA16-P1-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "FY2025 사업보고서 직원현황(OpenDART API)",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "OpenDART get_employees 11011 FY2025 (편의점/수퍼/홈쇼핑/개발사업/공통 남녀)",
+      "quoted_statement": "sm: 1,849+676+1,151+1,747+407+400+40+19+645+370",
+      "reported_value": "7304",
+      "reported_unit": "명",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-P1-E02",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 주석 28. 판매비와관리비 (단위: 백만원)",
+      "quoted_statement": "| 전산수수료 | 66,688 | (제54(전)기 63,448); | 통신비 | 3,376 | (전기 3,734)",
+      "reported_value": "66688",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-P1-E03",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "별도감사보고서 현금흐름표 제55(당)기",
+      "quoted_statement": "| (7) 무형자산의 취득 | | 3,408,115,228 | 3,420,533,309 |; 연결 3,832,882,056",
+      "reported_value": "3408115228",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-P1-E04",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "XI.2 우발부채 등 / 연결주석 36 (8) 기타 약정사항 (단위: 백만원)",
+      "quoted_statement": "거래상대방 (주)케이티 | 당기말 현재 당사는 2032년 12월 31일까지 (주)케이티의 통신라인을 사용하기로 하는 장기용역공급계약을 체결 | 관련한 재무제표의 영향 통신비 | 금액 1,967 (전기 1,947, 만기 2025-12-31)",
+      "reported_value": "1967",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-P1-E05",
+      "tier": 1,
+      "source_type": "DART_AUDIT_REPORT",
+      "source_title": "FY2025 사업보고서",
+      "publisher": "금융감독원 DART",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결감사보고서 주석 28. 판매비와관리비",
+      "quoted_statement": "| 통신비 | 4,882 |",
+      "reported_value": "4882",
+      "reported_unit": "백만원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "직원수",
+      "target": "OpenDART",
+      "tool": "opendart-get_employees",
+      "level": "L2",
+      "result": "OK",
+      "detail": "7,304명",
+      "retryable": false
+    },
+    {
+      "step": "IT 비용 계정",
+      "target": "사업보고서 20260311004487",
+      "tool": "MyDART-download_document",
+      "level": "L2",
+      "result": "OK",
+      "detail": "'전산수수료' 계정 667억 확인(전산비 아님)",
+      "retryable": false
+    },
+    {
+      "step": "KISA IT 투자액",
+      "target": "WebSearch 4회(바이라인 2025-07-13 포함)",
+      "tool": "WebSearch",
+      "level": "L1",
+      "result": "NOT_FOUND",
+      "detail": "정보보호 92억(FY25)만 재확인; 바이라인은 FY2024 IT투자 '50% 가까이' 증가 언급, 금액 미노출",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "tool": "WebFetch",
+      "level": "L1",
+      "result": "BLOCKED",
+      "detail": "오케스트레이터 지시: WebFetch DNS 차단 → 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 정보기술부문 투자액 FY2024/25 원값 (byline.network/2025/07/13_2918723-2 본문)"
+  ],
+  "recovery_levels_tried": [
+    {
+      "level": "L1_DIRECT",
+      "result": "not_found"
+    },
+    {
+      "level": "L2_COMPONENTS",
+      "result": "found"
+    },
+    {
+      "level": "L5_COMPARABLE",
+      "result": "found"
+    }
+  ],
+  "conflicts": [],
+  "comparables": [
+    {
+      "peer_account_or_company": "이마트",
+      "metric": "kisa_it_investment",
+      "value": 888.3478,
+      "unit": "억원",
+      "why_comparable": "대형 유통사 KISA IT 투자(FY2024, 보도 요약; SECONDARY_UNCONFIRMED, 원문 미확인)",
+      "evidence_ids": []
+    }
+  ],
+  "estimation_inputs": [
+    {
+      "name": "it_opex_floor_FY2025",
+      "value": 70064,
+      "unit": "백만원",
+      "basis": "전산수수료 66,688 + 통신비 3,376 (별도 판관비) — IT 비용 하한, 감가·인건비 제외",
+      "evidence_ids": [
+        "KA16-P1-E02"
+      ]
+    }
+  ]
+}
