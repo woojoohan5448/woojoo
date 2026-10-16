@@ -37,6 +37,9 @@ python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최�
 ## 파일 지도
 `config/` 가정·보정 · `models/` 엔진(spending·addressability·capture·forecasting·validation·internal·audit·priority·build) · `backend/` FastAPI · `frontend/` React · `data/phase1/` Phase 1 산출물 · `docs/` 문서 · `reports/` 보고서 · `tools/` 패키저 · `tests/`
 
+## vNext
+- Phase 0 설계: `docs/vnext/PHASE0_ASIS_TOBE.md`. 사용자 승인 전 UI·로직 변경 금지. 데이터 키·API 키는 표기 변경으로 바꾸지 않는다.
+
 ## Git
 작업 브랜치 `phase1-4-na-recovery` (main=v1.0, 태그 `v1.0-checkpoint`). 원격: github.com/woojoohan5448/woojoo — push는 사용자 요청 시에만.
 

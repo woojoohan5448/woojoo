@@ -30,3 +30,8 @@
 - `pkill -f uvicorn` 금지(자기 셸 종료) → `pgrep -f "[u]vicorn backend"`로 PID 확인 후 kill.
 - 사내 데이터 테스트는 반드시 `INTERNAL_STORE_DIR`·`KAI_DATA_OUT` 샌드박스.
 - 필요한 키: `DART_API_KEY`(환경변수, 선택 — PlayMCP 경유 시 불필요). 사내 데이터는 Excel 업로드로만.
+
+## 5. vNext (Strategic Intelligence Dashboard) — 진행 상태
+- 마스터 기준: 사용자 [MASTER PROMPT] vNext(①~⑧ 판서자 프레임워크, Opportunity-to-Action). **Phase 0(분석·설계) 완료, Phase 1 이상은 사용자 승인 대기.**
+- 산출물: `docs/vnext/PHASE0_ASIS_TOBE.md` (AS-IS·①~⑧ 검증·엔진 진단·Gap·TO-BE IA·데이터 구조·Phase 계획·결정 D1~D5).
+- 브랜치 `vnext-phase0`, 복구 태그 `v2.1-pre-vnext`(로컬; 태그 push는 프록시 403으로 불가).
