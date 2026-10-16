@@ -1,0 +1,265 @@
+{
+ "account_id": "KA51",
+ "original_name": "토스뱅크",
+ "research_date": "2026-10-16",
+ "researcher": "agent:bank-batch2",
+ "entity": {
+  "legal_name_ko": "토스뱅크 주식회사",
+  "legal_name_en": "Toss Bank",
+  "corp_code": "01529195",
+  "stock_code": null,
+  "business_reg_no": "4628601671",
+  "parent_group": "비바리퍼블리카(토스)",
+  "related_key_accounts": [
+   "KA27"
+  ],
+  "industry_detail": "은행 (업종코드 64121)",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "토스뱅크 별도. 비바리퍼블리카(KA27)·토스증권·토스페이먼츠 제외",
+  "exclusions": "비바리퍼블리카(KA27), 토스증권, 토스페이먼츠 등 계열사",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "find_company 단일 결과. 대표 이은미, 본점 강남구 테헤란로 131, 설립 2020-01-31. 사업보고서 미제출 — 2026년 접수 공시는 감사보고서(2025.12) rcept 20260406004419(삼일회계법인) 등. OpenDART 재무 API status 013."
+ },
+ "facts": [
+  {
+   "fact_id": "KA51-F01",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2024,
+   "value": 967,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA51-E01"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "2025년 공시=FY2024. 교차검증 95/967=9.82% → 보도 9.8% 일치"
+  },
+  {
+   "fact_id": "KA51-F02",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2024,
+   "value": 95,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA51-E01"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED"
+  },
+  {
+   "fact_id": "KA51-F03",
+   "metric": "kisa_security_ratio",
+   "fiscal_year": 2024,
+   "value": 9.8,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA51-E01"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED"
+  },
+  {
+   "fact_id": "KA51-F04",
+   "metric": "kisa_security_ratio",
+   "fiscal_year": 2025,
+   "value": 11.9,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA51-E02"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "2026년 6월 공시=FY2025. 별도 검색에서 11.9% 재확인 실패. 투자 절대액 NOT_FOUND"
+  },
+  {
+   "fact_id": "KA51-F05",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2022,
+   "value": 674,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA51-E03"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "2023년 공시=FY2022(출범 2021-10)"
+  },
+  {
+   "fact_id": "KA51-F06",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2022,
+   "value": 66,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA51-E03"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "'약 66억원'"
+  }
+ ],
+ "drivers": [
+  {
+   "driver_id": "KA51-D01",
+   "type": "OTHER",
+   "description": "KISA 정보기술부문 투자액 FY2022 674억 → FY2024 967억(+43%, 2년). 출범 초기 성장형 IT 지출. FY2023·FY2025 절대액 미확인.",
+   "amount": 293,
+   "unit": "억원",
+   "period": "2022-2024",
+   "direction": "UP",
+   "evidence_ids": [
+    "KA51-E03",
+    "KA51-E01"
+   ]
+  }
+ ],
+ "competitive": [
+  {
+   "category": "CLOUD",
+   "observation": "토스 계열 인프라 공유 여부·클라우드 공급사 미확인 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  },
+  {
+   "category": "CONNECTIVITY",
+   "observation": "LG U+ 공개 거래 미확인 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA51-E01",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "우리은행, 지난 3년간 정보보호 투자액 지속 증가",
+   "publisher": "CEO스코어데일리",
+   "source_url": "https://www.ceoscoredaily.com/page/view/2025071116162385773",
+   "document_id": null,
+   "publication_date": "2025-07-11",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2024",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "제1금융권에서 2024년(2025년 공시) 정보기술 투자액 대비 정보보호 투자액 비중이 10%가 넘은 곳은 우리은행(12.3%)과 제주은행(10.8%) 두 곳에 그쳤다. 그 뒤를 토스뱅크 9.8%, 신한은행 8.6%, 국민은행 7.5% 순으로 이었다. / 우리은행은 지난해 정보기술 투자액 3596억 원 중 444억 원을 정보보호에 투입해 금액 기준으로도 1위에 올랐다. 그 뒤를 국민은행(5673억 원 중 425억 원), 신한은행(4288억 원 중 370억 원) 순으로 이었다. 토스뱅크는 967억 원 중 95억 원을",
+   "reported_value": "967",
+   "reported_unit": "억원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. 금액 문장은 WebSearch 요약이 '2025년 공시 기준 자료'로 제시 — CEO스코어 기사 문장으로 추정되나 출처 특정 미확정. 비율 문장은 KA03-E14와 동일 인용. 300자 제한으로 말미 생략."
+  },
+  {
+   "evidence_id": "KA51-E02",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "보안 경계심 높아지면서 은행들도 자율 공시 동참 / 인터넷은행 투자·인력 비중 전산업 최상위권 수준",
+   "publisher": "뉴데일리 경제",
+   "source_url": "https://biz.newdaily.co.kr/site/data/html/2026/06/30/2026063000075.html",
+   "document_id": null,
+   "publication_date": "2026-06-30",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "정보기술부문(IT) 투자액 대비 정보보호부문 투자액 비율은 카카오뱅크(12.4%)와 토스뱅크(11.9%)가 시중은행(하나 9.0%, 국민 8.15%, 신한 7.96%)을 제치고 나란히 1, 2위를 차지했다. / 정보보호산업법 시행령 개정에 따라 금융권에서도 오는 2027년부터 의무 공시 대상에 포함된다는 점도 영향을 미쳤다.",
+   "reported_value": "11.9",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. WebSearch 요약이 해당 인용을 2026년 6월 보도로 제시; 링크 목록상 뉴데일리 기사로 추정(출처 기사 특정 미확정). 요약에 '하나은행과 카카오뱅크가 처음으로 자율 공시에 참여' 언급 — 별도 검색에서는 '첫 참여' 미확인."
+  },
+  {
+   "evidence_id": "KA51-E03",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "토스뱅크, 정보보호 관리체계 인증 획득...정보보호 투자 확대",
+   "publisher": "스마트투데이",
+   "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/33174",
+   "document_id": null,
+   "publication_date": "2023",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2022",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "2022년 말 기준 정보보호 부문 투자액은 약 66억원으로 전년도 20억원 대비 3.3배 증가했다. 정보기술부문 투자액 역시 674억원으로, 전년도 대비 3.2배가량 늘어났다.",
+   "reported_value": "674",
+   "reported_unit": "억원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. 두 번째 문장은 WebSearch 요약 표현('같은 기사에 따르면')으로 원문 문장과 다를 수 있음. 게재일 미확인(2023년 기사로 요약)."
+  },
+  {
+   "evidence_id": "KA51-E04",
+   "tier": 1,
+   "source_type": "DART_FILING",
+   "source_title": "토스뱅크 감사보고서 (2025.12)",
+   "publisher": "금융감독원 DART (OpenDART search_disclosures via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406004419",
+   "document_id": "20260406004419",
+   "publication_date": "2026-04-06",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "공시 목록(본문 미열람)",
+   "quoted_statement": "report_nm=감사보고서 (2025.12), flr_nm=삼일회계법인, rcept_dt=20260406",
+   "reported_value": null,
+   "reported_unit": null,
+   "verification_status": "VERIFIED",
+   "notes": "재무 수치 미추출: OpenDART 재무 API 013. dart.fss.or.kr 직접 접속 차단"
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별",
+   "target": "OpenDART find_company/get_company_info",
+   "result": "OK",
+   "detail": "corp_code 01529195",
+   "retryable": false
+  },
+  {
+   "step": "재무 FY2025",
+   "target": "OpenDART get_financial_account / get_full_financial_statement 01529195 2025 OFS",
+   "result": "NOT_FOUND",
+   "detail": "둘 다 status 013. 사업보고서 미제출(감사보고서만)",
+   "retryable": false
+  },
+  {
+   "step": "재무 보도",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "검색 한도 소진으로 영업수익·판관비·자산총계 보도 검색 미수행",
+   "retryable": true
+  },
+  {
+   "step": "KISA FY2023·FY2025 금액",
+   "target": "WebSearch",
+   "result": "NOT_FOUND",
+   "detail": "FY2025 비율 11.9%, FY2024·FY2022 금액만 확인",
+   "retryable": true
+  },
+  {
+   "step": "WebFetch 기사 본문",
+   "target": "언론사 사이트",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5.1(전 언론사 DNS 실패)에 따라 미시도. 모든 뉴스 근거 SECONDARY_UNCONFIRMED",
+   "retryable": true
+  },
+  {
+   "step": "KISA 공시 원문",
+   "target": "isds.kisa.or.kr",
+   "result": "BLOCKED",
+   "detail": "프로토콜상 차단 호스트; 미시도",
+   "retryable": false
+  },
+  {
+   "step": "추가 WebSearch(IT예산 총액·차세대·클라우드·AI·DC·캡티브 SI·LG U+)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회/turn) 소진. 6개 은행 공통 비교 검색 6회만 수행 후 차단 — 우회 검색 미시도",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "FY2025 재무(영업수익, 판관비, 자산총계) — 감사보고서 원문/IR 필요",
+  "FY2023·FY2025 KISA 정보기술·정보보호 투자 절대액",
+  "클라우드·IDC 공급 구조 및 LG U+ 거래 — 검색 한도 소진으로 미조사",
+  "그룹 중복: 비바리퍼블리카(KA27)와 IT 인프라·인력 공유 여부"
+ ]
+}

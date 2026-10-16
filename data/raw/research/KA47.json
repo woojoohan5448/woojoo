@@ -1,0 +1,296 @@
+{
+ "account_id": "KA47",
+ "original_name": "(주)가비아",
+ "research_date": "2026-10-16",
+ "researcher": "agent:platform-cloud-batch",
+ "entity": {
+  "legal_name_ko": "주식회사 가비아",
+  "legal_name_en": "GABIA,Inc.",
+  "corp_code": "00506294",
+  "stock_code": "079940",
+  "business_reg_no": "2148639239",
+  "parent_group": "독립(가비아 계열; 자회사 가비아씨엔에스 01536982 등)",
+  "related_key_accounts": [],
+  "industry_detail": "도메인·호스팅·클라우드·IDC. 코스닥(corp_cls=K), 업종코드 58221. 본사 경기 과천",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "가비아 별도(OFS) 기준 주, 연결 병기. 매출원가 중 회선·IDC 임차·클라우드 재판매 원가는 고객향 원가로 자체 IT 소비와 구분 필요",
+  "exclusions": "연결 자회사(IDC 자회사 포함 가능성) — 연결 사용 시 해당 자회사 별도 계정과 중복 주의",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "find_company '가비아' → 00506294(079940). 2025 사업보고서 rcept 20260318001522. 연결 매출이 별도의 3.1배로 대형 자회사 존재(명칭 미확인)"
+ },
+ "facts": [
+  {
+   "fact_id": "KA47-F01",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 106746872443,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA47-E02"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "FY2024 92,117,897,229원, FY2023 86,333,064,898원"
+  },
+  {
+   "fact_id": "KA47-F02",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 10792221179,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA47-E02"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "FY2024 7,814,539,494원"
+  },
+  {
+   "fact_id": "KA47-F03",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 217812433246,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA47-E02"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": ""
+  },
+  {
+   "fact_id": "KA47-F04",
+   "metric": "operating_expense",
+   "fiscal_year": 2025,
+   "value": 95954651264,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA47-E04"
+   ],
+   "verification_status": "DERIVED",
+   "analyst_interpretation": "매출원가 60,872,070,822 + 판관비 35,082,580,442 = 95,954,651,264 (= 매출 106,746,872,443 − 영업이익 10,792,221,179 일치)"
+  },
+  {
+   "fact_id": "KA47-F05",
+   "metric": "it_capex",
+   "fiscal_year": 2025,
+   "value": 18684539208,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA47-E04"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "유형자산의 취득(IDC·서버 설비 비중 미공개). FY2024 55,610,093,626원"
+  },
+  {
+   "fact_id": "KA47-F06",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 335681176239,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA47-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "FY2024 282,417,869,366원 (+18.9%)"
+  },
+  {
+   "fact_id": "KA47-F07",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 40485754868,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA47-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": ""
+  },
+  {
+   "fact_id": "KA47-F08",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 627658835726,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA47-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": ""
+  },
+  {
+   "fact_id": "KA47-F09",
+   "metric": "operating_expense",
+   "fiscal_year": 2025,
+   "value": 295195421371,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA47-E03"
+   ],
+   "verification_status": "DERIVED",
+   "analyst_interpretation": "매출원가 196,623,979,117 + 판관비 98,571,442,254 = 295,195,421,371 (= 매출 − 영업이익 일치)"
+  },
+  {
+   "fact_id": "KA47-F10",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 45808864035,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA47-E03"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "연결 유형자산의 취득. FY2024 210,426,002,886원(급증) — 연결 자회사 IDC 신축 투자로 추정(근거 미확보, 자회사명 미확인)"
+  }
+ ],
+ "drivers": [
+  {
+   "driver_id": "KA47-D01",
+   "type": "DC_BUILD",
+   "description": "연결 유형자산 취득 FY2024 2,104억 → FY2025 458억: 대형 설비(IDC 등) 투자가 FY2024에 집중된 것으로 보임. 별도 556억 → 187억. 구체 프로젝트 미확인",
+   "amount": null,
+   "unit": null,
+   "period": "2024-2025",
+   "direction": "DOWN",
+   "evidence_ids": [
+    "KA47-E03",
+    "KA47-E04"
+   ]
+  }
+ ],
+ "competitive": [
+  {
+   "category": "DC_COLO",
+   "observation": "호스팅·IDC·클라우드 공급자로서 회선(통신사) 구매자. 회선 공급사·LG U+ 관계 미확인",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA47-E01",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "가비아 2025 사업보고서 주요계정(연결)",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001522",
+   "document_id": "20260318001522",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "연결재무제표 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=매출액, thstrm_amount=335,681,176,239 / account_nm=영업이익, thstrm_amount=40,485,754,868 / account_nm=자산총계, thstrm_amount=627,658,835,726 (원)",
+   "reported_value": "335,681,176,239",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "CFS. 전기 매출 282,417,869,366, 전전기 261,590,696,584"
+  },
+  {
+   "evidence_id": "KA47-E02",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "가비아 2025 사업보고서 주요계정(별도)",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001522",
+   "document_id": "20260318001522",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=매출액, thstrm_amount=106,746,872,443 / account_nm=영업이익, thstrm_amount=10,792,221,179 / account_nm=자산총계, thstrm_amount=217,812,433,246 (원)",
+   "reported_value": "106,746,872,443",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "OFS. 전기 매출 92,117,897,229"
+  },
+  {
+   "evidence_id": "KA47-E03",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "가비아 2025 사업보고서 전체재무제표(연결)",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001522",
+   "document_id": "20260318001522",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "연결 포괄손익계산서 매출원가/판관비, 현금흐름표 유형자산의 취득",
+   "quoted_statement": "매출원가 196623979117 (전기 158692257419) / 판매비와관리비 98571442254 / 유형자산의 취득 thstrm=45808864035, frmtrm=210426002886 / 영업권 이외의 무형자산의 취득 411916389",
+   "reported_value": "45808864035",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "CFS"
+  },
+  {
+   "evidence_id": "KA47-E04",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "가비아 2025 사업보고서 전체재무제표(별도)",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001522",
+   "document_id": "20260318001522",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "포괄손익계산서 매출원가/판관비, 현금흐름표 유형자산의 취득",
+   "quoted_statement": "매출원가 60872070822 / 판매비와관리비 35082580442 / 유형자산의 취득 thstrm=18684539208, frmtrm=55610093626 / 무형자산의 취득 322114331",
+   "reported_value": "18684539208",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "OFS"
+  }
+ ],
+ "research_log": [
+  {
+   "step": "재무",
+   "target": "OpenDART get_financial_account/get_full_financial_statement CFS·OFS",
+   "result": "OK",
+   "detail": "rcept 20260318001522",
+   "retryable": false
+  },
+  {
+   "step": "KISA 공시",
+   "target": "WebSearch 1회",
+   "result": "NOT_FOUND",
+   "detail": "가비아 정보보호 공시 수치 보도 없음",
+   "retryable": true
+  },
+  {
+   "step": "IDC 용량·회선 공급",
+   "target": "WebSearch",
+   "result": "NOT_FOUND",
+   "detail": "검색 한도 소진",
+   "retryable": true
+  },
+  {
+   "step": "기사 본문 확인",
+   "target": "WebFetch(언론사)",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5-1 및 지시에 따라 WebFetch DNS 차단 환경 — 시도 생략, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+   "retryable": true
+  },
+  {
+   "step": "추가 WebSearch(DC/AI 투자·CAPEX·LG U+ 관계)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회) 소진으로 검색 불가. 후속 세션에서 재시도 필요",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "KISA 정보보호 공시 의무 대상 여부 및 FY2023~FY2025 수치",
+  "연결 자회사 구성(IDC 운영 자회사)과 FY2024 유형자산 2,104억 투자 내역",
+  "IDC 용량(MW)·회선 공급 통신사·LG U+ 관계",
+  "매출원가 중 회선료/클라우드 재판매 원가 금액(주석)"
+ ]
+}

@@ -1,0 +1,241 @@
+{
+  "account_id": "KA02",
+  "original_name": "한국토요타자동차",
+  "research_date": "2026-10-16",
+  "researcher": "agent:KA02",
+  "entity": {
+    "legal_name_ko": "한국토요타자동차주식회사",
+    "legal_name_en": "TOYOTA MOTOR KOREA CO.,LTD",
+    "corp_code": "00336561",
+    "stock_code": null,
+    "business_reg_no": "1208600915",
+    "parent_group": "Toyota Motor Corporation (일본) — 지분구조 본 조사에서 미확인",
+    "related_key_accounts": [],
+    "industry_detail": "수입차 판매(토요타·렉서스 브랜드 임포터), 딜러망 통한 판매·AS",
+    "is_korean_entity": true,
+    "fiscal_year_end": "03",
+    "dart_available": true,
+    "economic_scope": "한국토요타자동차 법인(외감 감사보고서, 별도). 3월 결산: FY2025 = 2025.04~2026.03",
+    "exclusions": "토요타/렉서스 딜러 법인(독립 딜러사), 토요타파이낸셜서비스코리아, 일본 본사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "DART corp_cls=E(비상장 외감), 대표 콘야마 마나부, 업종 45110(자동차 판매), 설립 2000-03-06. 감사보고서 매년 7월 제출(삼일회계법인)."
+  },
+  "facts": [
+    {
+      "fact_id": "KA02-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 15103,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA02-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "3월 결산: FY2025=2025.04~2026.03. 헤드라인 1조5013억 vs 본문 1조5103억 불일치 — 본문값 채택, 감사보고서 원문 검증 필요."
+    },
+    {
+      "fact_id": "KA02-F02",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 888,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA02-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "FY2025=2025.04~2026.03"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA02-D01",
+      "type": "OTHER",
+      "description": "토요타 커넥트(U+드라이브 기반) 적용 차종 확대: 2023 RAV4 PHEV → 2026-06 올 뉴 RAV4(HEV/PHEV 4종), 이후 모델 확대 계획. 차량당 커넥티드 회선·콘텐츠 수요 증가 요인.",
+      "amount": null,
+      "unit": null,
+      "period": "2023-",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA02-E04",
+        "KA02-E05"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "토요타·렉서스 국내 인포테인먼트/커넥티드 플랫폼 '토요타 커넥트'를 LG유플러스가 공동 개발·공급(U+드라이브 기반). 기존 LG U+ 고객 → 신규 매출 아닌 기존 거래 확대 영역.",
+      "incumbent": "LG유플러스",
+      "lgu_relationship": "토요타 커넥트 공동개발·탑재(2023 RAV4 PHEV, 2022 렉서스 NX 인포테인먼트, 2026-06 올 뉴 RAV4)",
+      "evidence_ids": [
+        "KA02-E04",
+        "KA02-E05"
+      ]
+    },
+    {
+      "category": "IT_OPS",
+      "observation": "[미확인] 딜러망 IT(DMS·CRM)·본사 IT 운영 주체 및 일본 본사 글로벌 시스템 의존도 미확인.",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA02-E01",
+      "tier": 2,
+      "source_type": "NEWS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 인용 문장. 모바일판 헤드라인은 '매출 1조5013억'으로 표기 — 본문 1조5103억과 불일치(헤드라인 오기 추정). 원천은 금감원 감사보고서(rcept 20260710000186). 본문 직접 열람 불가(WebFetch 차단).",
+      "source_title": "\"日혼다·닛산 떠났지만\"…토요타, 韓서 작년 영업익 888억 2%↑ '선방'",
+      "publisher": "뉴시스",
+      "source_url": "https://www.newsis.com/view/NISX20260714_0003708175",
+      "publication_date": "2026-07-14",
+      "fiscal_period": "FY2025 (2025.04~2026.03)",
+      "page_or_section": "본문 (WebSearch 인용)",
+      "quoted_statement": "토요타자동차의 한국 법인 한국토요타자동차는 2025회계연도인 지난해 4월부터 올해 3월까지 매출 1조5103억원, 영업이익 888억원을 기록했다. 전년 회계연도와 비교해 매출은 5.3%, 영업이익은 1.9% 증가했다.",
+      "reported_value": "15103 ; 888",
+      "reported_unit": "억원"
+    },
+    {
+      "evidence_id": "KA02-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "한국토요타자동차 감사보고서 (2026.03)",
+      "publisher": "금융감독원 OpenDART (PlayMCP search_disclosures)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000186",
+      "document_id": "20260710000186",
+      "publication_date": "2026-07-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025 (2025.04~2026.03)",
+      "page_or_section": "공시 목록",
+      "quoted_statement": "report_nm=감사보고서 (2026.03), rcept_no=20260710000186, flr_nm=삼일회계법인, rcept_dt=20260710",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "감사보고서 존재만 확인. 외감법인이라 get_financial_account(정기보고서 전용) 미지원 → 재무 수치 API 미확보. 이전: 2025.03(20250711000245), 2024.03(20240712000216)."
+    },
+    {
+      "evidence_id": "KA02-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국토요타자동차 기업개황",
+      "publisher": "금융감독원 OpenDART (PlayMCP get_company_info)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000186",
+      "document_id": "00336561",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=한국토요타자동차주식회사, corp_name_eng=TOYOTA MOTOR KOREA CO.,LTD, corp_cls=E, bizr_no=1208600915, induty_code=45110, est_dt=20000306, acc_mt=03",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "source_url은 기업개황 API 직접 URL이 없어 최신 감사보고서 링크로 대체"
+    },
+    {
+      "evidence_id": "KA02-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 결과 요약/인용으로만 확인. 본문 직접 열람 안 함(WebFetch DNS 차단 — 프로토콜 5.1).",
+      "source_title": "'U+드라이브' 토요타 커넥트, 올 뉴 RAV4 탑재",
+      "publisher": "헤럴드경제",
+      "source_url": "https://www.heraldk.com/article/2026061518310075898",
+      "publication_date": "2026-06-15",
+      "fiscal_period": null,
+      "page_or_section": "본문 (WebSearch 요약)",
+      "quoted_statement": "LG유플러스는 한국토요타자동차와 협력해 개발한 토요타 커넥트를 고도화하고, 이를 토요타 올 뉴 RAV4에 도입한다고 밝혔다. ... '올 뉴 RAV4' 이후 모델에도 토요타 커넥트가 적용될 수 있도록 한국토요타자동차와 협력을 이어갈 계획",
+      "reported_value": null,
+      "reported_unit": null
+    },
+    {
+      "evidence_id": "KA02-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 결과 요약/인용으로만 확인. 본문 직접 열람 안 함(WebFetch DNS 차단 — 프로토콜 5.1).",
+      "source_title": "LG유플러스, 토요타 'RAV4 PHEV'에 통합 인포테인먼트 플랫폼 탑재",
+      "publisher": "스마트투데이",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/27211",
+      "publication_date": null,
+      "fiscal_period": null,
+      "page_or_section": "본문 (WebSearch 요약)",
+      "quoted_statement": "[WebSearch 요약, 원문 아님] 2023년 LG유플러스가 한국 시장에 출시되는 토요타 'RAV4 PHEV'에 U+드라이브 기반 '토요타 커넥트' 탑재 발표. 2022년 렉서스 NX 450h+/NX 350h부터 토요타·렉서스 차량에 인포테인먼트 플랫폼 적용.",
+      "reported_value": null,
+      "reported_unit": null
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "corp_code 00336561, 3월 결산, 비상장(E)",
+      "retryable": false
+    },
+    {
+      "step": "재무 API",
+      "target": "OpenDART get_financial_account",
+      "result": "NOT_FOUND",
+      "detail": "외감법인 감사보고서는 정기보고서 API 범위 밖(벤츠코리아 동일 확인 status 013). search_disclosures로 감사보고서 rcept_no만 확보",
+      "retryable": false
+    },
+    {
+      "step": "재무 보도 검색",
+      "target": "WebSearch",
+      "result": "OK",
+      "detail": "뉴시스 2026-07-14: 매출 1조5103억/영업익 888억 (헤드라인 1조5013억 불일치). 자산총계·FY2023/24 원값 미확보",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 검색",
+      "target": "WebSearch '한국토요타자동차 정보보호 공시 투자액'",
+      "result": "NOT_FOUND",
+      "detail": "관련 보도 없음. 의무공시 대상 여부 불명",
+      "retryable": true
+    },
+    {
+      "step": "KISA 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": true
+    },
+    {
+      "step": "딜러 IT/DMS 검색",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "한국토요타 DMS·DX 투자 보도 없음",
+      "retryable": true
+    },
+    {
+      "step": "커넥티드카 통신사",
+      "target": "WebSearch",
+      "result": "OK",
+      "detail": "LG유플러스 U+드라이브 기반 토요타 커넥트 확인",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch (언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1에 따라 WebFetch DNS 차단 환경 — 시도 생략, WebSearch 요약으로 진행",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "감사보고서(20260710000186) 원문으로 매출(1조5103억 vs 1조5013억)·영업이익·자산총계 검증",
+    "KISA 정보보호 공시 대상 여부 및 IT/정보보호 투자액",
+    "토요타 커넥트 회선 수(가입 차량 수) 및 회선 제공 통신사가 LG U+ 단독인지",
+    "딜러망(독립 딜러사) IT·네트워크 조달 주체 — 한국토요타 본사 vs 딜러 개별"
+  ]
+}

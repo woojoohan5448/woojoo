@@ -1,0 +1,115 @@
+{
+  "account_id": "KA34",
+  "original_name": "(주)아이비케이시스템",
+  "research_date": "2026-10-16",
+  "researcher": "agent:batch-card-ins-infra",
+  "entity": {
+    "legal_name_ko": "주식회사 아이비케이시스템",
+    "legal_name_en": "IBK System Co., Ltd",
+    "corp_code": "00499161",
+    "stock_code": null,
+    "business_reg_no": "1018126317",
+    "parent_group": "IBK기업은행(계열 IT자회사로 알려짐, 지분 미검증)",
+    "related_key_accounts": [],
+    "industry_detail": "IBK 캡티브 SI (업종코드 58221 소프트웨어 개발·공급)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "아이비케이시스템 별도(외감법인, 사업보고서 미제출). 매출의 상당부분이 IBK기업은행 대상 SI/운영 서비스로 추정 → IT 소비 규모는 자체 IT 인프라 지출로 한정해야 함",
+    "exclusions": "IBK기업은행 및 IBK 계열사의 IT 지출(동 회사 매출로 인식되는 부분)",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('아이비케이시스템') 00499161 1건. get_company_info: 주식회사 아이비케이시스템, 대표 현권익, 중구 퇴계로 141-7, 설립 1991-03-22, 비상장(E). DART 제출은 감사보고서뿐(2025.12: 20260330000475, 2024.12: 20250328000834, 삼일)"
+  },
+  "facts": [],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "SI_BUILD",
+      "observation": "IBK기업은행의 캡티브 SI. IBK가 구매하는 IT 서비스는 이 회사 매출로 잡히므로 IBK 고객 IT 지출과 이중계상 위험. 이 계정의 IT 소비는 자체 운영 인프라(사무·개발환경·회선)로 한정 권고(분석가 해석)",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA34-E01",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2025.12) — OpenDART search_disclosures 목록",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000475",
+      "document_id": "20260330000475",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "공시목록",
+      "quoted_statement": "report_nm=감사보고서 (2025.12), rcept_no=20260330000475",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "본문 미열람(dart.fss.or.kr 직접 접속 차단). 법인·감사보고서 존재 근거로만 사용"
+    },
+    {
+      "evidence_id": "KA34-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "주식회사 아이비케이시스템 감사보고서 (2024.12) — OpenDART search_disclosures 목록",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328000834",
+      "document_id": "20250328000834",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "공시목록",
+      "quoted_statement": "report_nm=감사보고서 (2024.12), rcept_no=20250328000834",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "본문 미열람(dart.fss.or.kr 직접 접속 차단). 법인·감사보고서 존재 근거로만 사용"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "단일 corp_code 반환, 확정",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025/FY2024",
+      "target": "OpenDART get_financial_account",
+      "result": "NOT_FOUND",
+      "detail": "사업보고서 미제출 외감법인 → get_financial_account 2025 status 013. 감사보고서 본문 미열람",
+      "retryable": true
+    },
+    {
+      "step": "매출·IT 투자 웹 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 회사 대상 검색 미실행",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "result": "BLOCKED",
+      "detail": "사전 지시에 따라 WebFetch 미시도(환경 DNS 차단, 파일럿 교훈 §5-1)",
+      "retryable": true
+    },
+    {
+      "step": "KISA 포털 직접 조회",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 §1상 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "FY2025 매출·영업비용·자산총계: 감사보고서(20260330000475) 본문 열람 필요",
+    "매출 중 IBK기업은행·계열사 비중(특수관계자 거래 주석)",
+    "IBK기업은행이 53개 Key Account에 포함되는지(중복 위험)",
+    "LG U+ 공개 거래 미조사"
+  ]
+}

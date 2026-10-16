@@ -1,0 +1,215 @@
+{
+  "account_id": "KA11",
+  "original_name": "(주)신세계아이앤씨",
+  "research_date": "2026-10-16",
+  "researcher": "agent:it-service-KA11",
+  "entity": {
+    "legal_name_ko": "(주)신세계아이앤씨",
+    "legal_name_en": "SHINSEGAE INFORMATION & COMMUNICATION Inc.",
+    "corp_code": "00219486",
+    "stock_code": "035510",
+    "business_reg_no": "2018120549",
+    "parent_group": "신세계그룹(이마트 계열로 알려짐 — 이 세션에서 지분 미확인)",
+    "related_key_accounts": [],
+    "industry_detail": "IT서비스(유통 특화 SI/ITO, 클라우드, 리테일테크). DART 업종코드 62021, 코스피(corp_cls=Y)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "재무: 연결(CFS)·별도(OFS) 병기(차이 작음). KISA 공시는 법인 단위. 고객사향 매출원가는 자체 IT 소비 아님",
+    "exclusions": "이마트·신세계 등 계열사 IT 지출 제외",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('신세계아이앤씨') not_found, '신세계I&C' → 00219486. get_company_info corp_name '(주)신세계아이앤씨', 강남구 테헤란로 231 센터필드, 설립 1997-04-29, 결산월 12. 53개 KA 중 신세계 계열 여부 미확인"
+  },
+  "facts": [
+    {
+      "fact_id": "KA11-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 687200163879,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA11-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 625,716,262,145원, FY2023 618,922,936,014원"
+    },
+    {
+      "fact_id": "KA11-F02",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 667979284523,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 613,726,978,386원, FY2023 603,889,516,054원"
+    },
+    {
+      "fact_id": "KA11-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 49113030897,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA11-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 36,953,168,486원"
+    },
+    {
+      "fact_id": "KA11-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 49196501066,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 37,676,004,527원"
+    },
+    {
+      "fact_id": "KA11-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 576387357994,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA11-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA11-F06",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 571586397492,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA11-F07",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 618782783457,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA11-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "별도 매출 667,979,284,523 - 영업이익 49,196,501,066. 고객 제공 원가(외주·HW/SW 재판매 등) 포함 — 자체 IT 소비로 합산 금지"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "SI_BUILD",
+      "observation": "신세계그룹 캡티브 IT서비스로 알려짐(그룹 유통 계열사 SI/ITO). 내부거래 비중 수치는 이 세션에서 미확보 — 그룹 계열 고객의 IT 지출과 이중계상 위험",
+      "incumbent": "신세계아이앤씨",
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA11-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "신세계아이앤씨 2025 사업보고서 주요계정(연결)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001238",
+      "document_id": "20260316001238",
+      "publication_date": "2026-03-16",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=687,200,163,879 / account_nm=영업이익, thstrm_amount=49,113,030,897 / account_nm=자산총계, thstrm_amount=576,387,357,994 (원)",
+      "reported_value": "687,200,163,879",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 625,716,262,145, 전전기 618,922,936,014; 전기 영업이익 36,953,168,486. FY2025 비유동부채 34,441,423,632원(전기 6,849,017,159)·비유동자산 335.5억→ 증가: 설비투자/리스 증가 가능성(미검증)"
+    },
+    {
+      "evidence_id": "KA11-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "신세계아이앤씨 2025 사업보고서 주요계정(별도)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001238",
+      "document_id": "20260316001238",
+      "publication_date": "2026-03-16",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=667,979,284,523 / account_nm=영업이익, thstrm_amount=49,196,501,066 / account_nm=자산총계, thstrm_amount=571,586,397,492 (원)",
+      "reported_value": "667,979,284,523",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 613,726,978,386, 전전기 603,889,516,054; 전기 영업이익 37,676,004,527. "
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "'신세계아이앤씨'·'신세계아이' not_found, '신세계I&C' → 00219486",
+      "retryable": false
+    },
+    {
+      "step": "기본 재무 FY2025",
+      "target": "OpenDART get_financial_account 11011",
+      "result": "OK",
+      "detail": "rcept_no 20260316001238. CFS/OFS 매출·영업이익·자산 확보. 매출원가·CAPEX·부문정보 미조회",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 직접 접속 차단(환경 점검 결과)",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch(언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1: 이 환경에서 WebFetch 전 언론사 DNS 실패 — 재시도 금지 지시에 따라 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch(KISA 공시·DC/AI 투자·캡티브 비중·LG U+ 관계)",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회/턴) 소진으로 검색 미수행 — 우회 금지 지시에 따라 미시도. 후속 세션에서 재조사 필요",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 FY2023-2025",
+      "target": "WebSearch / isds.kisa.or.kr",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진 및 포털 차단으로 정보기술부문·정보보호부문 투자액 미확보(의무공시 대상으로 알려져 있으나 이 세션에서 미확인)",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시 정보기술부문/정보보호부문 투자액·인력 FY2023-FY2025 (2024~2026 공시)",
+    "자체 DC/클라우드/AI 인프라 투자 발표(금액·MW·기간)",
+    "캡티브(계열사) 매출 비중 — 사업보고서 특수관계자 주석 또는 공정위 내부거래 보도",
+    "공개된 LG U+ 거래(IDC·회선·제휴) 보도",
+    "FY2025 비유동자산·비유동부채 급증(비유동부채 68억→344억) 원인: DC/설비 투자 또는 리스 여부"
+  ]
+}

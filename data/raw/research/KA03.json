@@ -1,0 +1,856 @@
+{
+  "account_id": "KA03",
+  "original_name": "국민은행",
+  "research_date": "2026-10-16",
+  "researcher": "agent:pilot-bank",
+  "entity": {
+    "legal_name_ko": "주식회사 국민은행",
+    "legal_name_en": "KOOKMIN BANK",
+    "corp_code": "00386937",
+    "stock_code": "060000",
+    "business_reg_no": "2018168693",
+    "parent_group": "KB금융지주",
+    "related_key_accounts": [],
+    "industry_detail": "시중은행 (업종코드 64121 은행)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "국민은행 별도(OFS) 기준. 지주 및 계열사 제외",
+    "exclusions": "KB금융지주, KB국민카드, KB증권, KB손해보험, KB라이프, KB데이타시스템 등 계열사; 연결 종속회사(해외법인 등)",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('국민은행')가 3개 corp_code 반환(00104467, 00104476, 00386937). 00386937만 현 대표(이환주)·현 본점(영등포구 국제금융로8길 26) 일치하여 현 법인으로 확정. stock_code 060000은 2008년 KB금융지주 편입 전 상장 코드이며 현재 비상장(corp_cls=E). related_key_accounts는 53개 고객 목록 미보유로 공란(KB 계열사 포함 여부 확인 필요)."
+  },
+  "facts": [
+    {
+      "fact_id": "KA03-F01",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 5635925.53,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 원 단위 563,592,553,000,000원을 억원 환산"
+    },
+    {
+      "fact_id": "KA03-F02",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 5435963.83,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "전기 금액 543,596,383,000,000원 환산"
+    },
+    {
+      "fact_id": "KA03-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 57010.14,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "5,701,014,000,000원"
+    },
+    {
+      "fact_id": "KA03-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 52538.74,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA03-F05",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 98297.3,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순이자손익. API는 매출액·영업수익·판관비를 반환하지 않음. 순영업수익 proxy=순이자손익+순수수료손익(=110,560억원, DERIVED, 기타손익 제외)"
+    },
+    {
+      "fact_id": "KA03-F06",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 12262.77,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순수수료손익"
+    },
+    {
+      "fact_id": "KA03-F07",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 5849349.67,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA03-E06"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결 참고치"
+    },
+    {
+      "fact_id": "KA03-F08",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 433,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E10",
+        "KA03-E11",
+        "KA03-E12"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "블로터 433억2011만원. 2026년 6월 공시=FY2025"
+    },
+    {
+      "fact_id": "KA03-F09",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 425,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E10",
+        "KA03-E12"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA03-F10",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2023,
+      "value": 421,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E10",
+        "KA03-E13"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "블로터 420억7666만원"
+    },
+    {
+      "fact_id": "KA03-F11",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 5315,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E12"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "교차검증: 433/5315=8.15% → 보도 비율 8.2%(8.15%)와 일치"
+    },
+    {
+      "fact_id": "KA03-F12",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2024,
+      "value": 5673,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E12"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "교차검증: 425/5673=7.49% → 보도 7.5%와 일치"
+    },
+    {
+      "fact_id": "KA03-F13",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2023,
+      "value": 5685.8,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E13"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "5685억8112만원. 420.8/5685.8=7.40% 일치. 단 CEO스코어(2024-07)는 FY2023 비율 8.9% 보도(E15) — 불일치"
+    },
+    {
+      "fact_id": "KA03-F14",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2025,
+      "value": 8.2,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E10",
+        "KA03-E12"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "8.15%로 표기한 기사도 있음"
+    },
+    {
+      "fact_id": "KA03-F15",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 7.5,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E14",
+        "KA03-E10"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA03-F16",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2023,
+      "value": 7.4,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E13"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "대안값 8.9%(E15, 2024년 공시 당시 보도)"
+    },
+    {
+      "fact_id": "KA03-F17",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 96.7,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E12",
+        "KA03-E16"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "metric=정보보호 전담인력(내부 63.4+외주 33.3). IT 대비 보안인력 비중 5.1%(5.13%) → 정보기술부문 인력 ≈ 96.7/0.0513 ≈ 1,885명 (DERIVED, 미확인)"
+    },
+    {
+      "fact_id": "KA03-F18",
+      "metric": "it_budget",
+      "fiscal_year": 2026,
+      "value": 860.75,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA03-E17"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026년 정보보호 예산 편성액(계획). KISA 실적과 정의 다름. 2027년 1000억원 이상 계획"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA03-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026년 정보보호 예산 편성 860억7500만원, 2027년 1000억원 이상으로 증액 계획(그룹 정보보호 관리체계 재정립). 단 2026 상반기 집행률 27%로 저조, 3년간 집행률 60% 미만.",
+      "amount": 1000,
+      "unit": "억원",
+      "period": "2027",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA03-E17",
+        "KA03-E18"
+      ]
+    },
+    {
+      "driver_id": "KA03-D02",
+      "type": "NEXT_GEN_CORE",
+      "description": "코어뱅킹 현대화(계정계 클라우드·탈메인프레임) — 5년 4단계 사업. 2단계 총 2704억원 규모 공고(AI 기반 코볼→자바 변환, AI로 인력 투입 감소 시 사업비 변경 조항).",
+      "amount": 2704,
+      "unit": "억원",
+      "period": "2026-(기간 미확인)",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA03-E19",
+        "KA03-E20"
+      ]
+    },
+    {
+      "driver_id": "KA03-D03",
+      "type": "EFFICIENCY",
+      "description": "KISA 공시 정보기술부문 투자액 FY2024 5673억원→FY2025 5315억원(-6.3%). AI 활용 개발 인력 축소 방향(E19)은 단가 하방 요인.",
+      "amount": -358,
+      "unit": "억원",
+      "period": "2024-2025",
+      "direction": "DOWN",
+      "evidence_ids": [
+        "KA03-E12",
+        "KA03-E19"
+      ]
+    },
+    {
+      "driver_id": "KA03-D04",
+      "type": "DC_BUILD",
+      "description": "KB 통합IT센터(김포 한강신도시) 2019년 7월 준공, 연면적 40,236㎡, 그룹 계열사 IT 인프라 통합. 신규 DC 계획은 미발견. 총투자액 미확인(2016년 계획 공사비 1800여억원).",
+      "amount": null,
+      "unit": null,
+      "period": "2019(완료)",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA03-E21"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "KB금융 캡티브 IT자회사 KB데이타시스템이 그룹 시스템 구축·운영 담당. 2026 상반기 매출 1566억원(+11.7%), 그룹 AI·클라우드 전환 물량 운영 이관 보도.",
+      "incumbent": "KB데이타시스템",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA03-E22"
+      ]
+    },
+    {
+      "category": "SI_BUILD",
+      "observation": "코어뱅킹 현대화 2단계(2704억원) 외부 SI 경쟁입찰.",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA03-E19"
+      ]
+    },
+    {
+      "category": "DC_COLO",
+      "observation": "자체 KB 통합IT센터(김포) 운영 — 코로케이션 수요 제한적으로 추정.",
+      "incumbent": "자체(KB금융)",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA03-E21"
+      ]
+    },
+    {
+      "category": "CONNECTIVITY",
+      "observation": "국민은행 알뜰폰 리브엠(Liiv M, 현 KB리브모바일)이 LG U+ 망 도매로 출시(2019~), 2022-07 KT망 추가. 2025-11 LG U+와 보이스피싱 예방 MOU(익시오 활용). 전용회선·IDC 거래 보도는 미발견.",
+      "incumbent": null,
+      "lgu_relationship": "리브엠 MVNO 망 도매 제공(2019~), 보이스피싱 예방 MOU(2025-11). 전용회선/IDC 공개 거래 NOT_FOUND",
+      "evidence_ids": [
+        "KA03-E23",
+        "KA03-E24"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA03-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=563,592,553,000,000 (원)",
+      "reported_value": "563,592,553,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 543,596,383,000,000 / 전전기(FY2023) 512,372,841,000,000"
+    },
+    {
+      "evidence_id": "KA03-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 영업이익(손실) 당기",
+      "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=5,701,014,000,000 (원)",
+      "reported_value": "5,701,014,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 5,253,874,000,000 / 전전기 4,428,486,000,000"
+    },
+    {
+      "evidence_id": "KA03-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 순이자손익 당기",
+      "quoted_statement": "account_nm=순이자손익, thstrm_amount=9,829,730,000,000 (원)",
+      "reported_value": "9,829,730,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 9,589,760,000,000 / 전전기 9,308,305,000,000. API 응답에 매출액·영업수익·판관비 계정 없음"
+    },
+    {
+      "evidence_id": "KA03-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 순수수료손익 당기",
+      "quoted_statement": "account_nm=순수수료손익, thstrm_amount=1,226,277,000,000 (원)",
+      "reported_value": "1,226,277,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 1,119,480,000,000 / 전전기 1,181,398,000,000"
+    },
+    {
+      "evidence_id": "KA03-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 당기순이익(손실) 당기",
+      "quoted_statement": "account_nm=당기순이익(손실), thstrm_amount=4,224,016,000,000 (원)",
+      "reported_value": "4,224,016,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 3,073,596,000,000 / 전전기 3,001,157,000,000"
+    },
+    {
+      "evidence_id": "KA03-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=584,934,967,000,000 (원)",
+      "reported_value": "584,934,967,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "연결. 전기 562,887,180,000,000"
+    },
+    {
+      "evidence_id": "KA03-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 손익계산서 영업이익(손실) 당기",
+      "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=5,720,776,000,000 (원)",
+      "reported_value": "5,720,776,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "연결. 전기 5,398,865,000,000"
+    },
+    {
+      "evidence_id": "KA03-E08",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)국민은행 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002787",
+      "document_id": "20260814002787",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 이자수익 당기",
+      "quoted_statement": "account_nm=이자수익, thstrm_amount=20,187,292,000,000 (원)",
+      "reported_value": "20,187,292,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 21,646,983,000,000 / 전전기 20,874,693,000,000"
+    },
+    {
+      "evidence_id": "KA03-E09",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "OpenDART get_company_info corp_code=00386937",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/",
+      "document_id": "00386937",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=(주)국민은행, corp_name_eng=KOOKMIN BANK, stock_code=060000, ceo_nm=이환주, corp_cls=E, jurir_no=1101112365321, bizr_no=2018168693, induty_code=64121, est_dt=20011101, acc_mt=12",
+      "reported_value": "00386937",
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "find_company('국민은행')는 00104467(구 국민은행, 대표 김정태), 00104476(구 국민은행, 설립 1962), 00386937 세 건 반환. 현 대표(이환주)·현 본점 주소로 00386937을 현 법인으로 판단"
+    },
+    {
+      "evidence_id": "KA03-E10",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "[은행 정보보호 경쟁력] IT 예산 줄여도 보안 늘렸다…정보보호에 공들이는 KB국민은행",
+      "publisher": "딜사이트",
+      "source_url": "https://dealsite.co.kr/articles/164593",
+      "document_id": null,
+      "publication_date": "2026-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2022-FY2025",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "정보보호 투자액은 2022년 542억원에서 2023년 421억원으로 감소한 뒤 2024년 425억원, 지난해 433억원으로 다시 증가했다. ... IT 투자 대비 정보보호 투자 비중은 7.5%에서 8.2%로 확대됐다. 전체 IT 예산은 줄었지만 정보보호 투자는 늘리며 투자 규모와 투자 비중 모두 상위권을 유지한 셈이다.",
+      "reported_value": "433",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 기사 2026-07 게재로 '지난해'=FY2025(2026년 공시)로 해석. 검색 요약상 IT 투자액 2024년 5673억원→2025년 5315억원(-6.3%) 언급 있으나 출처 기사 특정 불가."
+    },
+    {
+      "evidence_id": "KA03-E11",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "KB국민 433억·신한은행 70% 집행에도…해킹 방어력 '기대 이하'",
+      "publisher": "블로터",
+      "source_url": "https://www.bloter.net/news/articleView.html?idxno=675276",
+      "document_id": null,
+      "publication_date": "2026",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "KB국민은행은 지난해 정보보호 부문에 433억2011만원을 투자했습니다.",
+      "reported_value": "433억2011만",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 인용문은 WebSearch 요약의 표현이며 원문 문장과 다를 수 있음."
+    },
+    {
+      "evidence_id": "KA03-E12",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "4대 은행 보안 투자액 보니…KB국민은행 1위",
+      "publisher": "ZDNet Korea",
+      "source_url": "https://zdnet.co.kr/view/?no=20260716174253",
+      "document_id": null,
+      "publication_date": "2026-07-16",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "전체 IT 투자액은 2024년 5673억원에서 2025년 5315억원으로 6.3% 감소했지만, 비중은 7.5%에서 8.2%로 확대됐습니다. / 정보보호 전담 인력(96.7명) 및 IT 대비 보안인력 비중(5.1%)도 3위",
+      "reported_value": "5315",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. WebSearch 요약이 ZDNet/딜사이트/블로터 결과를 종합한 문장으로, 정확한 출처 기사(ZDNet 여부) 특정 불가. 다른 기사 비율 8.15% 표기."
+    },
+    {
+      "evidence_id": "KA03-E13",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "[은행보안 리빌딩]① KB국민, 1인당 4.5억 투자…핵심은 '통합 루프'",
+      "publisher": "블로터",
+      "source_url": "https://www.bloter.net/news/articleView.html?idxno=667017",
+      "document_id": null,
+      "publication_date": "2026",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "2023년 420억7666만원 / 2023년 5685억8112만원 / 2023년 7.40%",
+      "reported_value": "5685억8112만",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 정보기술부문 투자액 FY2023 5685억8112만원, 정보보호 420억7666만원, 비율 7.40%. 출처가 블로터 리빌딩 시리즈(①KB 또는 ②신한 기사) 중 어느 것인지 요약상 불명확."
+    },
+    {
+      "evidence_id": "KA03-E14",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "우리은행, 지난 3년간 정보보호 투자액 지속 증가",
+      "publisher": "CEO스코어데일리",
+      "source_url": "https://www.ceoscoredaily.com/page/view/2025071116162385773",
+      "document_id": null,
+      "publication_date": "2025-07-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "제1금융권에서 2024년(2025년 공시) 정보기술 투자액 대비 정보보호 투자액 비중이 10%가 넘은 곳은 우리은행(12.3%)과 제주은행(10.8%) 두 곳에 그쳤다. 그 뒤를 토스뱅크 9.8%, 신한은행 8.6%, 국민은행 7.5% 순으로 이었다. / 금융사는 의무 대상에 해당하지 않는다. 최근 3년간(2023~2025년) 자율 공시한 금융사를 살핀 결과 5대 시중은행 중에서는 국민은행, 우리은행, 신한은행(2024년부터 참여)만 정보보호 현황을 공시했다.",
+      "reported_value": "7.5",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인."
+    },
+    {
+      "evidence_id": "KA03-E15",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "우리은행, 올해 정보보호 투자 428억원 '1위'…4대銀 외 제주·토스뱅크만 자율공시",
+      "publisher": "CEO스코어데일리",
+      "source_url": "https://m.ceoscoredaily.com/page/view/2024070414431314255",
+      "document_id": null,
+      "publication_date": "2024-07-04",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "(국민은행) 2023년 8.9%",
+      "reported_value": "8.9",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 2024년 공시 기준 FY2023 비율로 보도된 값. 블로터(E13)의 FY2023 7.40%와 불일치 — 정정공시 또는 기준 차이 가능성, 미확인."
+    },
+    {
+      "evidence_id": "KA03-E16",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "KB국민·신한·우리銀 보안 외부인력 19%↑…내부인력 증가율의 2배",
+      "publisher": "아이뉴스24",
+      "source_url": "https://inews24.com/view/2013203",
+      "document_id": null,
+      "publication_date": "2026",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024-FY2025",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "KB국민은행은 31.4명에서 33.3명으로 6.1% 늘었다. / 국민은행은 65.7명에서 63.4명으로",
+      "reported_value": "63.4",
+      "reported_unit": "명",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 외주 정보보호 전담인력 FY2024 31.4명→FY2025 33.3명, 내부 65.7명→63.4명. 합계 96.7명(E12와 일치)."
+    },
+    {
+      "evidence_id": "KA03-E17",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "은행권 'AI 방어' 투자 확대…보안 예산 증액하고 전문 인력 늘리고",
+      "publisher": "SBS Biz",
+      "source_url": "https://biz.sbs.co.kr/amp/article/20000339192",
+      "document_id": null,
+      "publication_date": "2026-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026-FY2027",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "KB국민은행은 내년 정보보호 예산을 1000억원 이상으로 대폭 늘리고, 그룹 차원의 정보보호 관리체계를 재정립할 계획이다. 올해 정보보호 예산 편성액은 860억7500만원으로 알려졌다.",
+      "reported_value": "860억7500만",
+      "reported_unit": "원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 예산 편성액(계획)으로 KISA 공시 실적과 정의 상이."
+    },
+    {
+      "evidence_id": "KA03-E18",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "[단독]겉으로만 \"보안 강화\"… 은행권, 보안 교육·컨설팅 예산 '싹둑'",
+      "publisher": "MTN",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026100616222142638",
+      "document_id": null,
+      "publication_date": "2026-10-06",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026 상반기",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "KB국민은행 역시 올해 상반기 27%로 시중은행 중 최하위를 보였고, 최근 3년간 집행률은 60%를 밑돌았습니다.",
+      "reported_value": "27",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인."
+    },
+    {
+      "evidence_id": "KA03-E19",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "KB국민은행 \"AI로 인력 투입 줄면 사업비 변경\"…IT서비스 AI發 대격변 예고",
+      "publisher": "아이뉴스24(다음 경유)",
+      "source_url": "https://v.daum.net/v/WtXyBItWXc",
+      "document_id": null,
+      "publication_date": "2026",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "총 2704억원 규모 '코어뱅킹 현대화 2단계' 사업을 공고 (AI 기반 코볼-자바 변환 성능에 따라 개발 인력 투입이 줄 수 있다는 내용)",
+      "reported_value": "2704",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 인용은 WebSearch 요약 표현. 공고일·사업기간 미확인."
+    },
+    {
+      "evidence_id": "KA03-E20",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "오라클 없는 KB국민은행의 '코어뱅킹 현대화', 실 상품에 적용",
+      "publisher": "바이라인네트워크",
+      "source_url": "https://byline.network/2023/06/15-273/",
+      "document_id": null,
+      "publication_date": "2023-06",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2023-2027",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "이번 프로젝트는 5년에 걸쳐 총 4단계로 진행된다. 또한 이번 2단계 사업은 실제 판매되는 금융상품을 클라우드로 이전한다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인."
+    },
+    {
+      "evidence_id": "KA03-E21",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "KB금융, 은행·증권·보험·카드 '통합IT센터' 준공",
+      "publisher": "시사경제(sateconomy)",
+      "source_url": "https://www.sateconomy.co.kr/news/view/179589818069259",
+      "document_id": null,
+      "publication_date": "2019-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2019",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "KB국민은행이 지난 19일 김포 한강신도시에 KB금융그룹 미래 성장동력의 기반이 될 KB 통합IT센터를 준공했다고 21일 밝혔다 / 2개동에 총 연면적 1만 2171평(4만 236㎡)",
+      "reported_value": "40236",
+      "reported_unit": "㎡",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 총투자액 미확인. 2016년 계획 단계 디지털데일리 보도는 '공사비만 1800여억원'(계획치)."
+    },
+    {
+      "evidence_id": "KA03-E22",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "\"매출 늘어도 수익은 줄었다\"…금융지주 IT 자회사 4곳 상반기 성적표",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2026081621071155864",
+      "document_id": null,
+      "publication_date": "2026-08-16",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026 상반기",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "KB데이타시스템의 매출이 1,566억원으로 11.7% 늘었지만, 영업이익(46억원)과 순이익은 각각 25% 안팎 줄었다",
+      "reported_value": "1566",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. 그룹 AI·클라우드 전환 물량이 시스템 운영 사업으로 이전된 결과라고 보도. 국민은행 대상 매출 비중은 미확인."
+    },
+    {
+      "evidence_id": "KA03-E23",
+      "tier": 1,
+      "source_type": "PRESS_RELEASE",
+      "source_title": "LG유플러스 보도자료(리브엠 관련)",
+      "publisher": "LG유플러스",
+      "source_url": "https://lg.co.kr/media/release/21506",
+      "document_id": null,
+      "publication_date": "2020-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2020",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "LG유플러스 통신 설비를 활용하는 MVNO 브랜드 리브엠은 KB국민은행이 금융권 처음으로 선보인 이동통신 서비스이다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. URL과 문장 매칭은 WebSearch 요약 기준. 2022-07부터 KT망 추가(뉴스토마토)."
+    },
+    {
+      "evidence_id": "KA03-E24",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "KB국민은행, LG유플러스와 보이스피싱 예방 맞손",
+      "publisher": "스마트투데이",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/97414",
+      "document_id": null,
+      "publication_date": "2025-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2025",
+      "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+      "quoted_statement": "KB국민은행은 지난 26일 LG유플러스와 보이스피싱 피해 예방을 위한 업무협약(MOU)을 체결했습니다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebFetch 실패(getaddrinfo ENOTFOUND / 프록시 CONNECT 403). WebSearch 요약에 인용된 문장만 확인. LG U+ AI 통화앱 익시오(ixi-O) 활용. 인용은 요약 표현."
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "3개 corp_code 중 00386937 확정",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account 00386937 2025 11011",
+      "result": "OK",
+      "detail": "CFS·OFS 반환. 매출액·영업수익·영업비용·판관비 계정 없음(은행 주요계정 미제공). rcept_no 20260814002787 그대로 기록",
+      "retryable": false
+    },
+    {
+      "step": "영업수익·판관비",
+      "target": "OpenDART",
+      "result": "NOT_FOUND",
+      "detail": "get_full_financial_statement 미시도; 주요계정 API는 미제공",
+      "retryable": true
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "dealsite.co.kr, biz.newdaily.co.kr, ceoscoredaily.com, bizhankook.com, m.boannews.com, ddaily.co.kr",
+      "result": "BLOCKED",
+      "detail": "WebFetch getaddrinfo ENOTFOUND; curl 프록시 CONNECT 403. 모든 뉴스 근거는 WebSearch 요약만 확인 → SECONDARY_UNCONFIRMED",
+      "retryable": true
+    },
+    {
+      "step": "KISA 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 차단 호스트; 미시도",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보기술부문 인력(명)",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "정보보호 전담인력 96.7명과 비중 5.1%만 확인. IT 인력 직접 수치 미발견",
+      "retryable": true
+    },
+    {
+      "step": "2026 IT 예산 총액",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "정보보호 예산(860.75억)만 확인",
+      "retryable": true
+    },
+    {
+      "step": "LG U+ 전용회선/IDC",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "MVNO 망 도매 및 MOU만 발견",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "FY2023 정보보호 비율: 7.40%(블로터) vs 8.9%(CEO스코어 2024-07) 불일치 — KISA 원문/정정공시 확인 필요",
+    "FY2024·FY2025 정보기술부문 투자액(5673억/5315억) 출처 기사 특정 및 본문 확인",
+    "정보기술부문 인력(명) 직접 수치",
+    "영업수익·판관비(전산비 포함) — get_full_financial_statement 또는 경영공시로 확인",
+    "코어뱅킹 현대화 2단계 사업기간·수주사",
+    "KB데이타시스템 매출 중 국민은행 비중; 회선·IDC 공급사",
+    "53개 고객 중 KB 계열(지주·카드·증권 등) 포함 여부(중복 위험)"
+  ]
+}

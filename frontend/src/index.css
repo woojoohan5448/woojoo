@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Metric colours validated with dataviz validate_palette.js (light: all pass, contrast WARN → direct labels + table;
+   dark: CVD 7.4 WARN → direct labels on every bar). Colour = metric identity, constant across the app. */
+:root {
+  color-scheme: light;
+  --surface-0: #f4f4f2;
+  --surface-1: #fcfcfb;
+  --surface-2: #ecebe7;
+  --line: #dddcd6;
+  --ink-1: #16161a;
+  --ink-2: #4a4a50;
+  --ink-3: #7b7b82;
+  --brand: #c4006f;
+  --c-ts: #2a78d6;
+  --c-raw: #1baf7a;
+  --c-fpr: #c4006f;
+  --c-rev: #eb6834;
+  --ok: #0f7b3e; --warn: #9a6200; --err: #b42318;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface-0: #121212; --surface-1: #1a1a19; --surface-2: #242423; --line: #34342f;
+    --ink-1: #f0efec; --ink-2: #c3c2b7; --ink-3: #8d8c84;
+    --brand: #e0368f; --c-ts: #3987e5; --c-raw: #199e70; --c-fpr: #c41a7a; --c-rev: #d95926;
+    --ok: #4cc27a; --warn: #e0a33a; --err: #f07167;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-0: #121212; --surface-1: #1a1a19; --surface-2: #242423; --line: #34342f;
+  --ink-1: #f0efec; --ink-2: #c3c2b7; --ink-3: #8d8c84;
+  --brand: #e0368f; --c-ts: #3987e5; --c-raw: #199e70; --c-fpr: #c41a7a; --c-rev: #d95926;
+  --ok: #4cc27a; --warn: #e0a33a; --err: #f07167;
+}
+html, body, #root { height: 100%; }
+body { background: var(--surface-0); color: var(--ink-1); font-feature-settings: "tnum" 1; -webkit-font-smoothing: antialiased; }
+.num { font-variant-numeric: tabular-nums; }
+.card { background: var(--surface-1); border: 1px solid var(--line); border-radius: 10px; }
+.kicker { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
+.scroll-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+a { color: var(--c-ts); }

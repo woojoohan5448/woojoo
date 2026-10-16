@@ -1,0 +1,253 @@
+{
+  "account_id": "KA44",
+  "original_name": "차이나유니콤",
+  "research_date": "2026-10-16",
+  "researcher": "agent:carrier-KA44",
+  "entity": {
+    "legal_name_ko": "차이나유니콤오퍼레이션스코리아 주식회사",
+    "legal_name_en": "China Unicom Operations Korea Co.,Ltd.",
+    "corp_code": "01785898",
+    "stock_code": null,
+    "business_reg_no": "1848100990",
+    "parent_group": "China United Network Communications Group (중국联通) / China Unicom Global",
+    "related_key_accounts": [],
+    "industry_detail": "기간통신 국제회선·데이터 서비스 한국 법인. DART 업종 61291, 설립 2017-11-22, 종로 센트로폴리스",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "China Unicom 한국 법인 + 본사(China Unicom Global)의 대 LG U+ 캐리어 간 도매(국제회선·로밍·해저케이블 상호접속). 글로벌 재무는 context only",
+    "exclusions": "국내 '유니콤'(00248886), 한국유니콤밸브 등 무관 법인",
+    "entity_status": "PROBABLE",
+    "entity_notes": "DART 감사보고서 FY2023~FY2025 공시(외감) 확인, 재무 API 미제공. 로밍·해저케이블 정산은 본사(China Unicom/China Unicom Global HK) 직접 계약일 가능성 — 한국 법인은 기업 고객 국제전용회선 판매 위주로 추정."
+  },
+  "facts": [
+    {
+      "fact_id": "KA44-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 392220,
+      "unit": "CNY_mn",
+      "scope": "글로벌(China Unicom 상장사 연결)",
+      "evidence_ids": [
+        "KA44-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "context only. 한국 법인 매출 아님"
+    },
+    {
+      "fact_id": "KA44-F02",
+      "metric": "it_capex",
+      "fiscal_year": 2025,
+      "value": 54150,
+      "unit": "CNY_mn",
+      "scope": "글로벌",
+      "evidence_ids": [
+        "KA44-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "전년 대비 -16.3%. context only"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "APG 해저케이블 컨소시엄에 China Unicom·LG U+·KT·China Telecom 공동 참여",
+      "incumbent": null,
+      "lgu_relationship": "APG 공동 컨소시엄 멤버(Tier3)",
+      "evidence_ids": [
+        "KA44-E04"
+      ]
+    },
+    {
+      "category": "CONNECTIVITY",
+      "observation": "LG U+–China Unicom 5G 로밍 협력 보도(제목만, 날짜 미확인). SKT–China Unicom 2015 MOU(로밍 포함)도 존재",
+      "incumbent": "SK텔레콤(2015 MOU)",
+      "lgu_relationship": "5G 로밍 협력 보도(미확인)",
+      "evidence_ids": [
+        "KA44-E05"
+      ]
+    },
+    {
+      "category": "CONNECTIVITY",
+      "observation": "China Unicom Global 60+ 해저케이블, 340 PoP 보유. 한국 법인은 국내 기업 대상 중국 연결 회선 영업",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA44-E06",
+        "KA44-E07"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA44-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "OpenDART company.json 기업개황",
+      "publisher": "금융감독원 OpenDART (PlayMCP 경유)",
+      "source_url": "https://opendart.fss.or.kr/api/company.json?corp_code=01785898",
+      "document_id": "01785898",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=차이나유니콤오퍼레이션스코리아 주식회사, corp_name_eng=China Unicom Operations Korea Co.,Ltd., ceo_nm=SONG XUAN(송슈안), corp_cls=E, bizr_no=1848100990, induty_code=61291, est_dt=20171122, acc_mt=12, adres=서울특별시 종로구 우정국로 26 (센트로폴리스) 9층",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA44-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "차이나유니콤오퍼레이션스코리아 감사보고서 (FY2025) — 공시검색 결과",
+      "publisher": "금융감독원 DART (PlayMCP search_disclosures)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410001257",
+      "document_id": "20260410001257",
+      "publication_date": "2026-04-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "공시목록",
+      "quoted_statement": "감사보고서 (2025.12) rcept_no=20260410001257 (회계법인이상, 2026-04-10); (2024.12) 20250411002617; (2023.12) 20240402002000",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "감사보고서 존재만 확인. 본문(손익계산서)은 dart.fss.or.kr 직접 접속 차단 및 get_financial_account status 013으로 미확인"
+    },
+    {
+      "evidence_id": "KA44-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "China Unicom Free Cash Flow Up by Nearly 30%",
+      "publisher": "AAP (Cision 보도자료)",
+      "source_url": "https://www.aap.com.au/aapreleases/cision20260319ae14392",
+      "document_id": null,
+      "publication_date": "2026-03-19",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "operating revenue grew 0.7% year-on-year to RMB392.22 billion, with service revenue up 0.5% to RMB347.74 billion … capital expenditure at RMB 54.15 billion",
+      "reported_value": "392.22",
+      "reported_unit": "RMB bn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA44-E04",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "Asia Pacific Gateway",
+      "publisher": "Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Asia_Pacific_Gateway",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "The APG cable consortium includes China Unicom, LG Uplus, KT Corporation, and China Telecom, among others.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA44-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "LG Uplus, China Unicom team on 5G roaming",
+      "publisher": "Mobile World Live",
+      "source_url": "https://www.mobileworldlive.com/asia-pacific/lg-uplus-china-unicom-team-on-5g-roaming/",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 결과 제목만",
+      "quoted_statement": "LG Uplus, China Unicom team on 5G roaming",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "제목만 확인, 날짜·본문 미확인"
+    },
+    {
+      "evidence_id": "KA44-E06",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "China Unicom Global exhibitor profile",
+      "publisher": "Terrapinn (Telecoms World Asia)",
+      "source_url": "https://www.terrapinn.com/conference/telecoms-world-asia/exhibitor-china-unicom-global.stm",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "invested in over 60 international submarine cable systems and 340 Points-of-Presence",
+      "reported_value": "340",
+      "reported_unit": "PoPs",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA44-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "[인터뷰] 매력적이지만 만만치 않다… 차이나유니콤",
+      "publisher": "CIO Korea",
+      "source_url": "https://www.cio.com/article/3505431/",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "중국 정부 산하 중국 2대 통신사 … 작년부터 한국 시장 진출에 본격적으로 나섰다",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "게재일 미확인. 국내 기업의 중국 네트워크 연결 수요 대상"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 법인 검색 '차이나유니콤'",
+      "target": "opendart-find_company",
+      "result": "OK",
+      "detail": "1회 Too Many Requests 후 재시도 성공: 01785898",
+      "retryable": false
+    },
+    {
+      "step": "DART 공시검색",
+      "target": "01785898",
+      "result": "OK",
+      "detail": "감사보고서 3건(FY2023~FY2025)",
+      "retryable": false
+    },
+    {
+      "step": "한국 법인 매출 보도·Seoul PoP·LG U+ 로밍 상세 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "WebSearch 한도 소진으로 미실행",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 조회",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공용 WebSearch 한도(200회) 소진으로 이후 검색 불가",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사/공식 사이트",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5-1: 이 환경 WebFetch 전 언론사 DNS 실패 → 시도 생략, WebSearch 요약으로 진행(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "차이나유니콤오퍼레이션스코리아 FY2025 매출(감사보고서 원문)",
+    "LG U+–China Unicom 국제회선/IP 트랜짓/로밍 정산 규모와 계약 주체",
+    "China Unicom 서울 PoP 위치(LG U+ IDC 여부)",
+    "5G 로밍 협력 보도 날짜·내용"
+  ]
+}

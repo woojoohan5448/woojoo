@@ -1,0 +1,170 @@
+{
+  "account_id": "KA42",
+  "original_name": "Fastly, Inc.",
+  "research_date": "2026-10-16",
+  "researcher": "agent:cdn-KA42",
+  "entity": {
+    "legal_name_ko": null,
+    "legal_name_en": "Fastly, Inc.",
+    "corp_code": null,
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "Fastly, Inc. (NYSE: FSLY, 미국)",
+    "related_key_accounts": [],
+    "industry_detail": "CDN·엣지클라우드·보안. 서울 POP 운영",
+    "is_korean_entity": false,
+    "fiscal_year_end": "12",
+    "dart_available": false,
+    "economic_scope": "Fastly 서울 POP(코로케이션·트랜짓·피어링) 수요. 재무는 글로벌만 존재",
+    "exclusions": "국내 동명 기업(패스트비코리아, 패스트뷰 등) 무관",
+    "entity_status": "UNCERTAIN",
+    "entity_notes": "DART '패스틀리' not_found, 웹검색상 한국 법인·지사 미확인 → LG U+ 계약 주체는 Fastly, Inc.(미국) 또는 아태 법인으로 추정. 서울 POP의 IDC·트랜짓 공급사 미확인."
+  },
+  "facts": [
+    {
+      "fact_id": "KA42-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 624.0,
+      "unit": "USD_mn",
+      "scope": "글로벌(연결)",
+      "evidence_ids": [
+        "KA42-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "Fastly Inc. 글로벌 매출. 한국 매출 비공개"
+    },
+    {
+      "fact_id": "KA42-F02",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": -119.0,
+      "unit": "USD_mn",
+      "scope": "글로벌(연결, GAAP)",
+      "evidence_ids": [
+        "KA42-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA42-F03",
+      "metric": "other",
+      "fiscal_year": 2026,
+      "value": 622,
+      "unit": "Tbps",
+      "scope": "글로벌 네트워크 연결 용량",
+      "evidence_ids": [
+        "KA42-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026-06-30 갱신 기준"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "Fastly 네트워크맵 아시아 목록에 Seoul POP 등재(단일 POP 표시). 호스팅 IDC 미공개",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA42-E02"
+      ]
+    },
+    {
+      "category": "CONNECTIVITY",
+      "observation": "KINX(AS9957) 등 국내 IX 피어링 여부 확인 실패(PeeringDB 검색 결과에 Fastly 미표시)",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA42-E01",
+      "tier": 1,
+      "source_type": "PRESS_RELEASE",
+      "source_title": "Fastly Announces Both Record Fourth Quarter and Full Year 2025 Financial Results",
+      "publisher": "Business Wire (Fastly IR)",
+      "source_url": "https://www.businesswire.com/news/home/20260211703867/en/Fastly-Announces-Both-Record-Fourth-Quarter-and-Full-Year-2025-Financial-Results",
+      "document_id": null,
+      "publication_date": "2026-02-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "Total revenue of $624.0 million, up 15% from 2024. Network services revenue of $477.8 million … Security revenue of $125.1 million … GAAP net loss of $121.7 million",
+      "reported_value": "624.0",
+      "reported_unit": "USD million",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "Q4 revenue $172.6M(+23%), RPO $353.8M(+55%), GAAP operating loss $119.0M. 10-K 원문 미확인(EDGAR 미접속)"
+    },
+    {
+      "evidence_id": "KA42-E02",
+      "tier": 1,
+      "source_type": "COMPANY_IR",
+      "source_title": "Piattaforma edge cloud di Fastly — Network map",
+      "publisher": "Fastly",
+      "source_url": "https://www.fastly.com/it/network-map",
+      "document_id": null,
+      "publication_date": "2026-06-30",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약(Asia 섹션)",
+      "quoted_statement": "Asia: … Osaka, Seoul, Singapore*, Tokyo* … (622 Tbps connected global capacity)",
+      "reported_value": "622",
+      "reported_unit": "Tbps",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "es/fr/de 페이지(2026-03-31 갱신)도 Seoul 포함, 578 Tbps. 영어 페이지 스니펫은 잘림. Seoul POP 시설(IDC)·통신사 미확인"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 법인 검색 '패스틀리'",
+      "target": "opendart-find_company",
+      "result": "NOT_FOUND",
+      "detail": "not_found",
+      "retryable": false
+    },
+    {
+      "step": "Fastly 한국 지사 웹검색",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "국내 법인·지사 보도 없음",
+      "retryable": false
+    },
+    {
+      "step": "Fastly FY2025 실적",
+      "target": "WebSearch",
+      "result": "OK",
+      "detail": "Business Wire 2026-02-11 보도자료 요약",
+      "retryable": false
+    },
+    {
+      "step": "Fastly Seoul POP / LG U+",
+      "target": "WebSearch(2회)",
+      "result": "OK",
+      "detail": "네트워크맵에 Seoul 확인; LG U+ 연관 근거 없음",
+      "retryable": false
+    },
+    {
+      "step": "PeeringDB Fastly KINX",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "Fastly 국내 IX 멤버십 미확인",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사/공식 사이트",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5-1: 이 환경 WebFetch 전 언론사 DNS 실패 → 시도 생략, WebSearch 요약으로 진행(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "Fastly 서울 POP 호스팅 IDC(LG U+/KT/KINX/에퀴닉스 등)와 트랜짓 공급사",
+    "Fastly 한국 매출 또는 한국 고객 수",
+    "PeeringDB 상 Fastly(AS54113) 서울 시설·IX 등록 여부"
+  ]
+}

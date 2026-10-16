@@ -1,0 +1,325 @@
+{
+  "account_id": "KA48",
+  "original_name": "(주)카카오페이",
+  "research_date": "2026-10-16",
+  "researcher": "agent:fintech-refund-batch",
+  "entity": {
+    "legal_name_ko": "(주)카카오페이",
+    "legal_name_en": "Kakaopay Corp.",
+    "corp_code": "01244601",
+    "stock_code": "377300",
+    "business_reg_no": null,
+    "parent_group": "카카오(최대주주 ㈜카카오 46.14%)",
+    "related_key_accounts": [
+      "KA09"
+    ],
+    "industry_detail": "간편결제·전자금융업(유가증권시장 상장)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "카카오페이 법인 별도(OFS) 기준. 카카오페이증권·카카오페이손해보험 제외",
+    "exclusions": "카카오페이증권(00762146), 카카오페이손해보험(01603877), 기타 종속회사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company 결과 3건 중 상장사 01244601(377300)이 본체. 카카오(KA09)가 최대주주로 연결 대상 → KA09 연결 수치 사용 시 KA48과 중복. 카카오가 그룹 IDC(안산 데이터센터 등)를 보유하므로 인프라 일부는 그룹 내부 공급 가능성(미검증 추정)."
+  },
+  "facts": [
+    {
+      "fact_id": "KA48-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 6852.0,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "685,200,436,685원"
+    },
+    {
+      "fact_id": "KA48-F02",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 6188.55,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA48-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 564.29,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA48-F04",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 6287.72,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA48-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 34559.59,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA48-F06",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 9583.71,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA48-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결(카카오페이증권·카카오페이손해보험 등 포함) 참고치"
+    },
+    {
+      "fact_id": "KA48-F07",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 503.67,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA48-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA48-F08",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 53395.81,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA48-E06"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA48-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 46.14,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA48-E07"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=카카오(KA09) 보유 지분율 → 카카오 연결 종속회사. KA09 연결 IT지출과 중복"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "카카오 그룹 계열사로 그룹 인프라 의존 가능성(미검증). 공급사 공개정보 미확인",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA48-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)카카오페이 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 매출액 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=685,200,436,685 (원)",
+      "reported_value": "685,200,436,685",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 618,855,436,828 / 전전기 555,634,950,638"
+    },
+    {
+      "evidence_id": "KA48-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)카카오페이 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 영업이익 당기",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=56,428,612,113 (원)",
+      "reported_value": "56,428,612,113",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 12,202,062,049 / 전전기 32,828,133,824"
+    },
+    {
+      "evidence_id": "KA48-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)카카오페이 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 영업비용 당기",
+      "quoted_statement": "account_nm=영업비용, thstrm_amount=628,771,824,572 (원)",
+      "reported_value": "628,771,824,572",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 606,653,374,779"
+    },
+    {
+      "evidence_id": "KA48-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)카카오페이 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=3,455,959,227,580 (원)",
+      "reported_value": "3,455,959,227,580",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 3,360,852,690,170"
+    },
+    {
+      "evidence_id": "KA48-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)카카오페이 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 손익계산서 매출액 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=958,371,073,361 (원)",
+      "reported_value": "958,371,073,361",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 766,235,159,395; CFS 영업이익 50,366,676,830(전기 -57,486,477,377); CFS 영업비용 908,004,396,531"
+    },
+    {
+      "evidence_id": "KA48-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)카카오페이 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=5,339,580,904,646 (원)",
+      "reported_value": "5,339,580,904,646",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA48-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "카카오페이 최대주주 현황 (OpenDART get_largest_shareholders 2025 11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001366",
+      "document_id": "20260312001366",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "최대주주 현황 기말",
+      "quoted_statement": "nm=㈜카카오, relate=최대주주, trmend_posesn_stock_qota_rt=46.14",
+      "reported_value": "46.14",
+      "reported_unit": "%",
+      "verification_status": "VERIFIED",
+      "notes": "특수관계인 포함 계 46.18%"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company",
+      "result": "OK",
+      "detail": "01244601",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account 01244601 2025 11011",
+      "result": "OK",
+      "detail": "CFS·OFS 반환, rcept_no 20260312001366",
+      "retryable": false
+    },
+    {
+      "step": "최대주주",
+      "target": "OpenDART get_largest_shareholders",
+      "result": "OK",
+      "detail": "㈜카카오 46.14%",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시(FY2023~2025)",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진으로 미검색 — 최우선 재시도 항목",
+      "retryable": true
+    },
+    {
+      "step": "IT 계획·LG U+ 거래",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 WebSearch 한도(턴당 200회, 전체 에이전트 공유) 소진으로 추가 검색 불가. 후속 세션에서 재시도 필요",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시 정보기술부문 투자액 FY2023~FY2025(카카오페이 별도)",
+    "IDC/클라우드 공급 구조(카카오 그룹 데이터센터 사용 여부)",
+    "LG U+ 공개 거래"
+  ]
+}

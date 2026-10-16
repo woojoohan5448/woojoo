@@ -1,0 +1,643 @@
+{
+  "account_id": "KA26",
+  "original_name": "한국투자증권(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:securities-batch",
+  "entity": {
+    "legal_name_ko": "한국투자증권(주)",
+    "legal_name_en": null,
+    "corp_code": "00160144",
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "한국금융지주(한국투자금융그룹)",
+    "related_key_accounts": [],
+    "industry_detail": "증권업(비상장, 지주 100% 자회사로 알려짐 — 미검증)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "한국투자증권 법인 별도(OFS) 기준. 연결(CFS) 참고치 별도 표기",
+    "exclusions": "한국금융지주, 한국투자저축은행·한국투자캐피탈·카카오뱅크 지분 등 그룹 계열사; 해외 현지법인",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('한국투자증권') 단일 결과 00160144. 사업보고서 rcept_no 20260515000880. get_company_info 미호출(API 호출 제한 회피)로 영문명·사업자번호 공란. 한국금융지주(지주)는 별도 법인으로 53개 목록 포함 여부 미확인"
+  },
+  "facts": [
+    {
+      "fact_id": "KA26-F01",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 21191.57,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 2,119,157,070,607원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F02",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 15396.41,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 1,539,641,133,868원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 23080.2,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 2,308,019,897,180원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F04",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 1081440.89,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 108,144,088,692,327원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 853698.08,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 85,369,808,103,262원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F06",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 757096.2,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 75,709,619,872,853원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F07",
+      "metric": "sga",
+      "fiscal_year": 2025,
+      "value": 11889.46,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "CIS 원문 부호 음수(-1,188,946,476,115) — 비용 절대값 기록; DART 1,188,946,476,115원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F08",
+      "metric": "sga",
+      "fiscal_year": 2024,
+      "value": 10000.04,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "CIS 원문 부호 음수(-1,188,946,476,115) — 비용 절대값 기록; DART 1,000,003,583,525원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 7988.94,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순이자손익; DART 798,893,853,030원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F10",
+      "metric": "other",
+      "fiscal_year": 2024,
+      "value": 5303.9,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순이자손익; DART 530,389,953,020원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F11",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 12597.18,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순수수료손익; DART 1,259,717,991,784원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F12",
+      "metric": "other",
+      "fiscal_year": 2024,
+      "value": 9760.34,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순수수료손익; DART 976,034,118,899원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F13",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 33081.04,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E03",
+        "KA26-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "순영업수익 proxy = 영업이익 21,191.57 + 판매비와관리비 11,889.46 = 33,081.04억원(신용손실충당금 전입 1,028억 포함 순액 기준). 손익계산서가 순액 표시로 '영업수익' 총액 계정 없음"
+    },
+    {
+      "fact_id": "KA26-F14",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 1165641.81,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA26-E06"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결 참고치; DART 116,564,180,737,951원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F15",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 23426.92,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA26-E07"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결 참고치; DART 2,342,692,188,164원 억원 환산"
+    },
+    {
+      "fact_id": "KA26-F16",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2024,
+      "value": 1261,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E08",
+        "KA26-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2025년 공시=FY2024. 일부 기사 1271억 표기 있으나 다수 매체 1261억"
+    },
+    {
+      "fact_id": "KA26-F17",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 167,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E08"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "뉴스토마토는 166억. 167/1261=13.24% → 보도 13.2% 일치"
+    },
+    {
+      "fact_id": "KA26-F18",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 13.2,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E08",
+        "KA26-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA26-F19",
+      "metric": "kisa_it_staff",
+      "fiscal_year": 2024,
+      "value": 423,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E08"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "정보보호 전담 42명"
+    },
+    {
+      "fact_id": "KA26-F20",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 187.6,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E10",
+        "KA26-E11"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "187억6050만원. FY2024 167억 대비 +12%"
+    },
+    {
+      "fact_id": "KA26-F21",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2025,
+      "value": 10.6,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E10"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA26-F22",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2025,
+      "value": 1770,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA26-E10"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "187.605/0.106=1,769.9억원(비율 반올림으로 1,761~1,778억 범위). IT 투자 원값 미확인 — FY2024 1,261억 대비 약 +40% 증가 시사"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA26-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "정보보호 투자 FY2024 167억→FY2025 187.6억; IT 투자(파생) 1,261억→약 1,770억. 클라우드 보호 플랫폼·클라우드 기반 사외접속 보안 투자 언급",
+      "amount": 187.6,
+      "unit": "억원",
+      "period": "2025",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA26-E10",
+        "KA26-E09"
+      ]
+    },
+    {
+      "driver_id": "KA26-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구(12개 항목)",
+      "amount": null,
+      "unit": null,
+      "period": "2026-2027",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA26-E12"
+      ]
+    },
+    {
+      "driver_id": "KA26-D03",
+      "type": "CLOUD_MIGRATION",
+      "description": "정보보호 투자 항목에 클라우드 보호 플랫폼·클라우드 기반 사외 접속 보안 포함 → 클라우드 사용 확대 시사(금액 미분리)",
+      "amount": null,
+      "unit": null,
+      "period": "2024",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA26-E09"
+      ]
+    }
+  ],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA26-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국투자증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000880",
+      "document_id": "20260515000880",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 영업이익(손실) 당기",
+      "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=2,119,157,070,607 (원)",
+      "reported_value": "2,119,157,070,607",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 1,539,641,133,868 / 전전기(FY2023) 2,308,019,897,180"
+    },
+    {
+      "evidence_id": "KA26-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국투자증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000880",
+      "document_id": "20260515000880",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=108,144,088,692,327 (원)",
+      "reported_value": "108,144,088,692,327",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 85,369,808,103,262 / 전전기(FY2023) 75,709,619,872,853"
+    },
+    {
+      "evidence_id": "KA26-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국투자증권(주) 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000880",
+      "document_id": "20260515000880",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 판매비와관리비 당기",
+      "quoted_statement": "account_nm=판매비와관리비, thstrm_amount=1,188,946,476,115 (원)",
+      "reported_value": "1,188,946,476,115",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 1,000,003,583,525"
+    },
+    {
+      "evidence_id": "KA26-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국투자증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000880",
+      "document_id": "20260515000880",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 순이자손익 당기",
+      "quoted_statement": "account_nm=순이자손익, thstrm_amount=798,893,853,030 (원)",
+      "reported_value": "798,893,853,030",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 530,389,953,020 / 전전기(FY2023) 363,825,006,534"
+    },
+    {
+      "evidence_id": "KA26-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국투자증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000880",
+      "document_id": "20260515000880",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 순수수료손익 당기",
+      "quoted_statement": "account_nm=순수수료손익, thstrm_amount=1,259,717,991,784 (원)",
+      "reported_value": "1,259,717,991,784",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 976,034,118,899 / 전전기(FY2023) 844,386,154,380"
+    },
+    {
+      "evidence_id": "KA26-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국투자증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=CFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000880",
+      "document_id": "20260515000880",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=116,564,180,737,951 (원)",
+      "reported_value": "116,564,180,737,951",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 90,721,389,489,598 / 전전기(FY2023) 79,906,601,505,449"
+    },
+    {
+      "evidence_id": "KA26-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국투자증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=CFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000880",
+      "document_id": "20260515000880",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 손익계산서 영업이익(손실) 당기",
+      "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=2,342,692,188,164 (원)",
+      "reported_value": "2,342,692,188,164",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 1,283,664,315,801 / 전전기(FY2023) 663,970,603,545"
+    },
+    {
+      "evidence_id": "KA26-E08",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "한투증권, 작년 정보보호에 167억원 투입…IT 투자액 중 13%",
+      "publisher": "네이트 뉴스(전재)",
+      "source_url": "https://news.nate.com/view/20250627n07186",
+      "document_id": null,
+      "publication_date": "2025-06-27",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "2024년 기준 IT 부문에 총 1261억원을 투자하고 이 가운데 167억 원(13.2%) / 전사 인력 중 IT 담당자는 423명이며, 이 가운데 42명이 정보보호 전담 인력으로 운영되고 있다.",
+      "reported_value": "1261 / 167 / 13.2",
+      "reported_unit": "억원 / 억원 / %",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "동일 내용: 아시아경제 core.asiae.co.kr/article/2025062710184121309, 청년일보 youthdaily no=188363, 서울경제 sedaily 14084478. 2025년 공시(첫 자율공시) = FY2024"
+    },
+    {
+      "evidence_id": "KA26-E09",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "잇따른 해킹 사고…증권사 정보보호 투자는 한투·토스 순",
+      "publisher": "뉴스토마토",
+      "source_url": "https://www.newstomato.com/ReadNews.aspx?no=1275684",
+      "document_id": null,
+      "publication_date": "2025-09-22",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "정보기술 부문에 총 1261억원을 투자했으며 이 가운데 클라우드 보호 플랫폼과 클라우드 기반 사외 접속 보안 강화 등 정보보호 부문에 166억원을 투자했습니다",
+      "reported_value": "1261 / 166",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "정보보호 166억(뉴스토마토) vs 167억(타 매체) 반올림 차이 추정. 비율 13.2% 업계 1위"
+    },
+    {
+      "evidence_id": "KA26-E10",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "한투증권, 정보보호 투자 188억원…대형 증권사 4곳은 미공시 (알파경제 전재)",
+      "publisher": "알파경제(네이트 뉴스)",
+      "source_url": "https://m.news.nate.com/view/20260715n30712",
+      "document_id": null,
+      "publication_date": "2026-07-15",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "지난해 정보보호 투자액은 한국투자증권이 약 188억원으로 가장 많았다. 신한투자증권 171억원, NH투자증권 124억원, KB증권 122억원, 하나증권 100억원, 대신증권 56억원 순이었다. / 이는 전체 정보기술(IT) 투자액의 10.6%에 해당한다.",
+      "reported_value": "188 (187억6050만) / 10.6",
+      "reported_unit": "억원 / %",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "다른 보도 187억6050만원 표기. 2026년 공시=FY2025. 아시아투데이 2026-10-12 기사도 순위 인용"
+    },
+    {
+      "evidence_id": "KA26-E11",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "주요 증권사 정보보안에 550억원…해킹 '선제 차단' 강화",
+      "publisher": "아시아투데이",
+      "source_url": "https://www.asiatoday.co.kr/kn/view.php?key=20261012010003371",
+      "document_id": null,
+      "publication_date": "2026-10-12",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "(제목) 주요 증권사 정보보안에 550억원…해킹 '선제 차단' 강화",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "제목만 확인, 개별 수치 본문 미확인"
+    },
+    {
+      "evidence_id": "KA26-E12",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "금감원, 증권사에 \"IT 보안 체계 전면 재점검\" 주문",
+      "publisher": "머니투데이방송(MTN)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026100715100449066",
+      "document_id": null,
+      "publication_date": "2026-10-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "점검 대상에는 공격 IP 차단 및 피해 조사 여부를 비롯해 외부에 노출된 정보기술(IT) 자산과 서비스를 파악하고 보안을 강화했는지 여부 등 12개 항목이 포함됐다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "증권업 전반 규제 이벤트"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company",
+      "result": "OK",
+      "detail": "00160144 단일",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account OFS/CFS",
+      "result": "OK",
+      "detail": "매출액·영업수익 계정 미제공(순액 표시)",
+      "retryable": false
+    },
+    {
+      "step": "판관비",
+      "target": "OpenDART get_full_financial_statement OFS",
+      "result": "OK",
+      "detail": "판매비와관리비 확인. 영업수익 총액 계정 없음",
+      "retryable": false
+    },
+    {
+      "step": "KISA FY2023",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "2025년이 첫 자율공시로 보도 → FY2023 공시 없음 추정",
+      "retryable": false
+    },
+    {
+      "step": "KISA FY2025 IT 투자액 원값",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "정보보호 187.6억·비율 10.6%만 확인, IT 투자 원값 미확인",
+      "retryable": true
+    },
+    {
+      "step": "IT 계획·캡티브·LG U+",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진으로 미조사",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트 전체",
+      "result": "BLOCKED",
+      "detail": "프로토콜 v1.1 및 지시에 따라 DNS 차단 환경으로 시도하지 않음; 모든 기사 근거는 WebSearch 요약 기반 SECONDARY_UNCONFIRMED",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 조사",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 이후 검색 불가. IT 계획(차세대·클라우드·AI·DC)·캡티브 SI·LG U+ 거래 검색은 미실시/미완료",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "FY2025 정보기술부문 투자액 원값(파생 약 1,770억) KISA 원문 확인",
+    "FY2024 IT 투자 1261억 vs 1271억 표기 차이 확인",
+    "한국금융지주·계열사(한국투자저축은행 등) 53개 목록 포함 여부 및 그룹 IT 조직(자체 vs 계열 SI) 확인",
+    "차세대·클라우드·AI·DC·해외 IT 투자 계획 및 LG U+ 공개 거래 미조사",
+    "get_company_info 미호출로 영문명·사업자번호 공란"
+  ]
+}

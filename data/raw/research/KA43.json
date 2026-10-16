@@ -1,0 +1,173 @@
+{
+  "account_id": "KA43",
+  "original_name": "Valve Corporation",
+  "research_date": "2026-10-16",
+  "researcher": "agent:cdn-KA43",
+  "entity": {
+    "legal_name_ko": null,
+    "legal_name_en": "Valve Corporation",
+    "corp_code": null,
+    "stock_code": null,
+    "business_reg_no": null,
+    "parent_group": "Valve Corporation (미국, 비상장)",
+    "related_key_accounts": [],
+    "industry_detail": "PC 게임 플랫폼(Steam)·게임 개발. 한국 트래픽용 CDN/캐시",
+    "is_korean_entity": false,
+    "fiscal_year_end": null,
+    "dart_available": false,
+    "economic_scope": "Steam의 한국 콘텐츠 전송(서울 CDN 노드, ISP 내 캐시)·트랜짓 수요",
+    "exclusions": "넥슨(2000년대 Steam 한국 서비스 파트너), 국내 '밸브' 제조사",
+    "entity_status": "UNCERTAIN",
+    "entity_notes": "DART '밸브코퍼레이션' not_found, 한국 법인 미확인. 비상장으로 공식 재무 없음. 한국 CDN 노드 일부는 StackPath 등 제3자 CDN 위에 운영(Netify) → LG U+ 실거래 상대가 Valve인지 CDN 사업자인지 불확실."
+  },
+  "facts": [
+    {
+      "fact_id": "KA43-F01",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 16200,
+      "unit": "USD_mn",
+      "scope": "글로벌(Steam 총 게임판매액 추정, Valve 매출 아님)",
+      "evidence_ids": [
+        "KA43-E01"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "Tier3 추정. Valve 수수료 수익 >$4B 추정. 단독 확정 근거 불가"
+    },
+    {
+      "fact_id": "KA43-F02",
+      "metric": "other",
+      "fiscal_year": 2026,
+      "value": 26,
+      "unit": "IPs",
+      "scope": "한국(서울) Steam CDN 탐지 IP 수",
+      "evidence_ids": [
+        "KA43-E02"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "StackPath 14 + Valve 12. 서울 단일 도시. Tier3"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "Steam CDN 한국 노드는 서울 단일 도시, StackPath·Valve 자체 IP 혼재(Netify). LG U+ 망 대역 내 Steam 관련 IP 관측",
+      "incumbent": "StackPath(CDN)",
+      "lgu_relationship": "LG U+ 망 내 Steam 관련 IP 관측(Tier3) — 공식 캐시/협약 보도 없음",
+      "evidence_ids": [
+        "KA43-E02",
+        "KA43-E03"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA43-E01",
+      "tier": 3,
+      "source_type": "RESEARCH_REPORT",
+      "source_title": "Valve posts USD 16.2 billion Steam revenue with only 350 employees",
+      "publisher": "Guru3D (Alinea Analytics 추정 인용)",
+      "source_url": "https://www.guru3d.com/story/valve-posts-usd-162-billion-steam-revenue-with-only-350-employees",
+      "document_id": null,
+      "publication_date": "2025",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "total game sales on Steam in 2025 exceed $16.2 billion, with over $4 billion of that flowing directly to Valve as platform commission",
+      "reported_value": "16.2",
+      "reported_unit": "USD bn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "제3자 추정(Valve 비공개). 일부 출처 'over $17 billion' 전망, 2024 기준선 $10.8B 등 불일치"
+    },
+    {
+      "evidence_id": "KA43-E02",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "Steam CDN - South Korea",
+      "publisher": "Netify",
+      "source_url": "https://www.netify.ai/resources/edge/steam-cdn/country/kr",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "South Korea … Seoul … 26 IPs … StackPath (14 IPs) and Valve (12 IPs)",
+      "reported_value": "26",
+      "reported_unit": "IPs",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "다른 Netify 페이지(cdn/steam-cdn/country/kr)는 Seoul 30 IPs로 상이. 탐지 기반, 최대 1개월 지연"
+    },
+    {
+      "evidence_id": "KA43-E03",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "Netify IP 110.45.201.89",
+      "publisher": "Netify",
+      "source_url": "https://www.netify.ai/resources/ips/110.45.201.89",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "110.45.201.89 … Steam … LG Uplus가 이 인터넷 대역의 기반 네트워크를 관리",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "플랫폼 표기 Akamai로 오분류 가능. LG U+ 망 내 Steam 관련 IP 정황(공식 협약 근거 아님)"
+    },
+    {
+      "evidence_id": "KA43-E04",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "Steam's peak concurrent users have surpassed 41.81 million",
+      "publisher": "youxichaguan",
+      "source_url": "https://youxichaguan.com/en/archives/195245",
+      "document_id": null,
+      "publication_date": "2026-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "2026년 1월 4일 기준 스팀 동시접속자 수는 4,181만 명",
+      "reported_value": "41.81",
+      "reported_unit": "백만명",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "글로벌. 한국 국가별 수치 미확인"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 법인 검색 '밸브'/'밸브코퍼레이션'",
+      "target": "opendart-find_company",
+      "result": "NOT_FOUND",
+      "detail": "국내 밸브 제조사만 검색, Valve 한국 법인 없음",
+      "retryable": false
+    },
+    {
+      "step": "Steam 한국 캐시서버·LG U+ 협약",
+      "target": "WebSearch(3회)",
+      "result": "NOT_FOUND",
+      "detail": "Netify 탐지 정황만",
+      "retryable": false
+    },
+    {
+      "step": "Steam 한국 트래픽·이용자",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "국가별 한국 수치 미확인",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사/공식 사이트",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5-1: 이 환경 WebFetch 전 언론사 DNS 실패 → 시도 생략, WebSearch 요약으로 진행(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "Steam 한국 콘텐츠 서버 호스팅 IDC·트랜짓 공급사",
+    "LG U+ 망 내 Steam 캐시가 Valve 직접 배치인지 제3자 CDN 경유인지",
+    "한국 Steam 트래픽 규모(Gbps)"
+  ]
+}

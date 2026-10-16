@@ -1,0 +1,278 @@
+{
+ "account_id": "KA29",
+ "original_name": "쿠팡(주)",
+ "research_date": "2026-10-16",
+ "researcher": "agent:platform-cloud-batch",
+ "entity": {
+  "legal_name_ko": "쿠팡 주식회사",
+  "legal_name_en": "Coupang Corp.",
+  "corp_code": "01019166",
+  "stock_code": null,
+  "business_reg_no": "1208800767",
+  "parent_group": "Coupang, Inc.(NYSE: CPNG, 미국 델라웨어) 100% 한국 자회사. 쿠팡 기업집단 대표회사",
+  "related_key_accounts": [],
+  "industry_detail": "이커머스(업종코드 4791 통신판매업). 비상장(corp_cls=E)",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "쿠팡(주) 한국 법인. KISA 정보보호 공시 주체로 추정(원문 미확인). Coupang Inc.(글로벌 연결, 대만·파페치 등) 수치는 사용 금지",
+  "exclusions": "Coupang Inc. 글로벌, 쿠팡풀필먼트서비스(01474789), 쿠팡로지스틱스서비스(01558902), 쿠팡이츠서비스, 쿠팡페이(01561252), 쿠팡파이낸셜 등 별도 법인",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "find_company '쿠팡' 8개 법인 중 '쿠팡'(01019166) = 쿠팡 주식회사/Coupang Corp. 비상장 외감 → 재무 API 013. 감사보고서 수치는 미확보"
+ },
+ "facts": [
+  {
+   "fact_id": "KA29-F01",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2025,
+   "value": 2572500000000,
+   "unit": "원",
+   "scope": "법인 별도(KISA 공시 주체 추정: 쿠팡(주))",
+   "evidence_ids": [
+    "KA29-E02"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "2조5725억원. 2026년 공시=FY2025. 보도상 전년 1조9171억원은 2025 공시값 1조8830억(E03)과 341억 차이 — 정정/재작성 가능성"
+  },
+  {
+   "fact_id": "KA29-F02",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2024,
+   "value": 1883071546914,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA29-E03",
+    "KA29-E04"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "1조8830억7154만6914원(2025 공시). 2026 공시 비교값은 1조9171억 — 사용자가 언급한 '~1.9조'는 이 FY2024 값"
+  },
+  {
+   "fact_id": "KA29-F03",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2023,
+   "value": 1178180311803,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA29-E03",
+    "KA29-E04"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "1조1781억8031만1803원(2024 공시). FY2022 9287억651만3359원"
+  },
+  {
+   "fact_id": "KA29-F04",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2025,
+   "value": 134936720000,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA29-E02"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "1349억3672만원, 외주용역 536억·내부인건비 396억"
+  },
+  {
+   "fact_id": "KA29-F05",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2024,
+   "value": 88979770000,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA29-E02"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "889억7977만원. CEO스코어(2025.7)는 861억으로 보도 — 정정 가능성"
+  },
+  {
+   "fact_id": "KA29-F06",
+   "metric": "kisa_security_ratio",
+   "fiscal_year": 2025,
+   "value": 5.2,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA29-E02"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "FY2024 4.6%, FY2023 5.6%, FY2022 6.9%(E03). 검산 1349.37/25725=5.25%"
+  },
+  {
+   "fact_id": "KA29-F07",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 370.1,
+   "unit": "명",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA29-E02"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "정보보호 전담 인력(FY2024 211.6명)"
+  }
+ ],
+ "drivers": [
+  {
+   "driver_id": "KA29-D01",
+   "type": "OTHER",
+   "description": "KISA 정보기술부문 투자 FY2022 9,287억 → FY2023 1조1,782억 → FY2024 1조8,831억 → FY2025 2조5,725억(연평균 +40% 내외). 내역(클라우드 이용료·인건비·HW 등) 미공개",
+   "amount": 25725,
+   "unit": "억원",
+   "period": "2025",
+   "direction": "UP",
+   "evidence_ids": [
+    "KA29-E02",
+    "KA29-E03"
+   ]
+  },
+  {
+   "driver_id": "KA29-D02",
+   "type": "REGULATORY_SECURITY",
+   "description": "2025년 말 개인정보 유출 사고 이후 보안 투자 확대 압력(FY2025 공시는 사고 이전 투자분)",
+   "amount": null,
+   "unit": null,
+   "period": "2026-",
+   "direction": "UP",
+   "evidence_ids": [
+    "KA29-E02"
+   ]
+  }
+ ],
+ "competitive": [
+  {
+   "category": "CLOUD",
+   "observation": "AWS 등 퍼블릭 클라우드 사용 및 규모 — 이번 세션에서 근거 미확보(검색 한도 소진)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA29-E01",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "쿠팡 주식회사 기업개황",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001317",
+   "document_id": "20260831001317",
+   "publication_date": "2026-08-31",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "company.json / list.json",
+   "quoted_statement": "corp_name=쿠팡 주식회사, corp_name_eng=Coupang Corp., corp_cls=E, induty_code=4791, est_dt=20130215 / report_nm=대규모기업집단현황공시[분기별공시(대표회사용)] rcept_no=20260831001317",
+   "reported_value": null,
+   "reported_unit": null,
+   "verification_status": "VERIFIED",
+   "notes": "get_financial_account 2025 → 013(데이터 없음)"
+  },
+  {
+   "evidence_id": "KA29-E02",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "쿠팡 지난해 정보보호 투자 1349억원…전년比 51% 증가",
+   "publisher": "헤럴드경제 / SBS Biz / 파이낸셜뉴스 등",
+   "source_url": "https://biz.sbs.co.kr/amp/article/20000319749",
+   "document_id": null,
+   "publication_date": "2026-06-29",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "2024년 889억7977만원 대비 51.6% 증가 / IT 투자액은 2조5725억원으로 전년(1조9171억원) 대비 34.2% 늘어났다 / 비중 5.2%(전년 4.6%) / 외주 용역비 536억원 39.7% / 전담 인력은 370.1명으로 전년(211.6명)보다 약 75% 늘었다",
+   "reported_value": "1349억3672만",
+   "reported_unit": "원(억·만 표기)",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "복수 매체 동일 수치. 지난해 말 개인정보 유출 사고 이전 투자 내역"
+  },
+  {
+   "evidence_id": "KA29-E03",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "[보안공시 해부] 쿠팡, 정보기술 투자액만 '1.9조'…정보보호 부문은 속도 조절 중",
+   "publisher": "디지털데일리",
+   "source_url": "https://www.ddaily.co.kr/page/view/2025070211071357174",
+   "document_id": null,
+   "publication_date": "2025-07-02",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2022-FY2024",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "정보기술부문 투자액은 공시일 기준 2023년 9287억651만3359원, 2024년 1조1781억8031만1803원, 2025년 1조8830억7154만6914원으로 꾸준히 증가 / 2023년 6.9%에서 2024년 5.6%, 2025년 4.6%",
+   "reported_value": "1조8830억7154만6914",
+   "reported_unit": "원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "'공시일 기준' 연도 → 2025 공시=FY2024. '1.9조'는 FY2024 값"
+  },
+  {
+   "evidence_id": "KA29-E04",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "쿠팡 IT투자 관련(byline.network)",
+   "publisher": "바이라인네트워크",
+   "source_url": "https://byline.network/2025/07/13_2918723-2/",
+   "document_id": null,
+   "publication_date": "2025-07-13",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2023-FY2024",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "2023년에는 IT 부문에 약 1조1781억원을 썼는데, 2024년에는 약 59% 증가한 1조8830억원을 IT에 투자",
+   "reported_value": "1조8830억",
+   "reported_unit": "억원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "회계연도 기준 표기 — E03 해석(2025 공시=FY2024)과 정합"
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별",
+   "target": "OpenDART find_company/get_company_info",
+   "result": "OK",
+   "detail": "01019166 쿠팡 주식회사",
+   "retryable": false
+  },
+  {
+   "step": "FY2025 재무",
+   "target": "OpenDART get_financial_account",
+   "result": "NOT_FOUND",
+   "detail": "status 013(비상장 감사보고서 법인)",
+   "retryable": false
+  },
+  {
+   "step": "KISA 공시",
+   "target": "WebSearch 2회",
+   "result": "OK",
+   "detail": "FY2022~FY2025 IT·보안 투자 확보. FY2024 IT 1조8830억 vs 1조9171억 불일치",
+   "retryable": true
+  },
+  {
+   "step": "AWS 사용·DC 구성",
+   "target": "WebSearch",
+   "result": "NOT_FOUND",
+   "detail": "검색 한도 소진",
+   "retryable": true
+  },
+  {
+   "step": "기사 본문 확인",
+   "target": "WebFetch(언론사)",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5-1 및 지시에 따라 WebFetch DNS 차단 환경 — 시도 생략, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+   "retryable": true
+  },
+  {
+   "step": "추가 WebSearch(DC/AI 투자·CAPEX·LG U+ 관계)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회) 소진으로 검색 불가. 후속 세션에서 재시도 필요",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "FY2024 IT 투자 1조8830억(2025 공시) vs 1조9171억(2026 공시 비교값) 차이 원인",
+  "KISA 공시 주체가 쿠팡(주) 단독인지 확인",
+  "쿠팡(주) FY2025 매출·영업이익·자산(감사보고서) 미확보 — API 미제공",
+  "AWS 사용 규모·자체 DC/코로케이션 여부·회선 공급사, LG U+ 거래 미확인"
+ ]
+}

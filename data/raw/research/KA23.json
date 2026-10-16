@@ -1,0 +1,359 @@
+{
+ "account_id": "KA23",
+ "original_name": "(주)한국스탠다드차타드은행",
+ "research_date": "2026-10-16",
+ "researcher": "agent:bank-batch2",
+ "entity": {
+  "legal_name_ko": "주식회사 한국스탠다드차타드은행",
+  "legal_name_en": "Standard Chartered Bank Korea Ltd",
+  "corp_code": "00148504",
+  "stock_code": "000110",
+  "business_reg_no": "1028121843",
+  "parent_group": "Standard Chartered PLC (영국) — 한국 법인은 SC그룹 100% 자회사로 알려짐(미검증)",
+  "related_key_accounts": [],
+  "industry_detail": "은행 (업종코드 64121)",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "한국스탠다드차타드은행 별도(OFS). 글로벌 SC그룹 및 국내 관계사 제외",
+  "exclusions": "Standard Chartered PLC 및 해외 계열, SC그룹 글로벌 IT 허브(오프쇼어) 비용",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "find_company 단일 결과. 대표 이광희, 본점 종로구 종로 47. stock_code 000110은 과거 제일은행 상장코드, 현재 비상장(corp_cls=E). 글로벌 SC그룹 IT 오프쇼어링 구조는 브리프 기준(미검증)."
+ },
+ "facts": [
+  {
+   "fact_id": "KA23-F01",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 924303.39,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "DART 원 단위 92,430,339,000,000원 억원 환산"
+  },
+  {
+   "fact_id": "KA23-F02",
+   "metric": "total_assets",
+   "fiscal_year": 2024,
+   "value": 860851.36,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "전기 금액 환산"
+  },
+  {
+   "fact_id": "KA23-F03",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 3383.6,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E02"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA23-F04",
+   "metric": "operating_income",
+   "fiscal_year": 2024,
+   "value": 5289.81,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E02"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA23-F05",
+   "metric": "sga",
+   "fiscal_year": 2025,
+   "value": 10587.46,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E05"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "계정명 '판매비와관리비'"
+  },
+  {
+   "fact_id": "KA23-F06",
+   "metric": "sga",
+   "fiscal_year": 2024,
+   "value": 8883.36,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E05"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA23-F07",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 11979.52,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E03"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "metric=순이자손익"
+  },
+  {
+   "fact_id": "KA23-F08",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 2286.63,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E04"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "metric=순수수료손익"
+  },
+  {
+   "fact_id": "KA23-F09",
+   "metric": "operating_revenue",
+   "fiscal_year": 2025,
+   "value": 14266.15,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA23-E03",
+    "KA23-E04"
+   ],
+   "verification_status": "DERIVED",
+   "analyst_interpretation": "순영업수익 proxy = 순이자손익+순수수료손익(기타영업손익·유가증권손익 제외). 손익계산서에 '영업수익' 계정 없음. FY2024 동일 산식 14519.48억원"
+  },
+  {
+   "fact_id": "KA23-F10",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 922780.56,
+   "unit": "억원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA23-E06"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "연결 참고치"
+  }
+ ],
+ "drivers": [
+  {
+   "driver_id": "KA23-D01",
+   "type": "RESTRUCTURING",
+   "description": "FY2025 판매비와관리비 10,587억(전년 8,883억, +19%) 급증, 영업이익 3,384억(전년 5,290억, -36%). 비용 증가 원인(희망퇴직 등)은 미확인 — DART 수치만.",
+   "amount": 1704,
+   "unit": "억원",
+   "period": "2024-2025",
+   "direction": "UP",
+   "evidence_ids": [
+    "KA23-E05",
+    "KA23-E02"
+   ]
+  }
+ ],
+ "competitive": [
+  {
+   "category": "IT_OPS",
+   "observation": "글로벌 SC그룹 IT 오프쇼어링(해외 허브)로 국내 IT 지출 일부가 그룹으로 이전되는 구조로 알려짐 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": "Standard Chartered 그룹 IT",
+   "lgu_relationship": null,
+   "evidence_ids": []
+  },
+  {
+   "category": "CONNECTIVITY",
+   "observation": "LG U+ 공개 거래 미확인 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA23-E01",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)한국스탠다드차타드은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+   "document_id": "20260331004354",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=자산총계, thstrm_amount=92,430,339,000,000 (원)",
+   "reported_value": "92,430,339,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기(FY2024) 86,085,136,000,000"
+  },
+  {
+   "evidence_id": "KA23-E02",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)한국스탠다드차타드은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+   "document_id": "20260331004354",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 영업이익(손실) 당기",
+   "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=338,360,000,000 (원)",
+   "reported_value": "338,360,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 528,981,000,000"
+  },
+  {
+   "evidence_id": "KA23-E03",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)한국스탠다드차타드은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+   "document_id": "20260331004354",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 순이자손익 당기",
+   "quoted_statement": "account_nm=순이자손익, thstrm_amount=1,197,952,000,000 (원)",
+   "reported_value": "1,197,952,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 1,220,857,000,000. 전체 재무제표(CIS) 계정명 '순이자손익'"
+  },
+  {
+   "evidence_id": "KA23-E04",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)한국스탠다드차타드은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+   "document_id": "20260331004354",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 순수수료손익 당기",
+   "quoted_statement": "account_nm=순수수료손익, thstrm_amount=228,663,000,000 (원)",
+   "reported_value": "228,663,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 231,091,000,000. 전체 재무제표(CIS) 계정명 '순수수료손익'"
+  },
+  {
+   "evidence_id": "KA23-E05",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)한국스탠다드차타드은행 2025 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+   "document_id": "20260331004354",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 포괄손익계산서(CIS) 판매비와관리비 당기",
+   "quoted_statement": "account_nm=판매비와관리비, thstrm_amount=1,058,746,000,000 (원)",
+   "reported_value": "1,058,746,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 888,336,000,000. 전체 재무제표에 '영업수익' 계정 없음"
+  },
+  {
+   "evidence_id": "KA23-E06",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)한국스탠다드차타드은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, CFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004354",
+   "document_id": "20260331004354",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=자산총계, thstrm_amount=92,278,056,000,000 (원)",
+   "reported_value": "92,278,056,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "연결 참고치"
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별",
+   "target": "OpenDART find_company/get_company_info",
+   "result": "OK",
+   "detail": "corp_code 00148504 확정",
+   "retryable": false
+  },
+  {
+   "step": "재무 FY2025",
+   "target": "OpenDART get_financial_account 00148504 2025 11011 OFS",
+   "result": "OK",
+   "detail": "OFS·CFS 반환, rcept_no 20260331004354. 영업수익·판관비 미제공",
+   "retryable": false
+  },
+  {
+   "step": "영업수익·판관비",
+   "target": "OpenDART get_full_financial_statement OFS 2025",
+   "result": "OK",
+   "detail": "일반관리비(판관비) 확인. '영업수익' 계정 부재 → 순영업수익 proxy DERIVED",
+   "retryable": false
+  },
+  {
+   "step": "KISA 정보보호 공시",
+   "target": "WebSearch(은행권 비교 검색 결과)",
+   "result": "NOT_FOUND",
+   "detail": "2024~2026 은행권 자율공시 보도에 SC제일은행 언급 없음 → 미공시로 추정",
+   "retryable": true
+  },
+  {
+   "step": "SC 전용 검색",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "검색 한도 소진으로 SC제일은행 전용 검색 미수행",
+   "retryable": true
+  },
+  {
+   "step": "WebFetch 기사 본문",
+   "target": "언론사 사이트",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5.1(전 언론사 DNS 실패)에 따라 미시도. 모든 뉴스 근거 SECONDARY_UNCONFIRMED",
+   "retryable": true
+  },
+  {
+   "step": "KISA 공시 원문",
+   "target": "isds.kisa.or.kr",
+   "result": "BLOCKED",
+   "detail": "프로토콜상 차단 호스트; 미시도",
+   "retryable": false
+  },
+  {
+   "step": "추가 WebSearch(IT예산 총액·차세대·클라우드·AI·DC·캡티브 SI·LG U+)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회/turn) 소진. 6개 은행 공통 비교 검색 6회만 수행 후 차단 — 우회 검색 미시도",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "KISA 정보보호 공시 참여 여부(미참여로 추정)",
+  "국내 IT 예산·전산비 및 글로벌 SC 오프쇼어링 비중",
+  "FY2025 판관비 급증 원인",
+  "LG U+ 거래",
+  "최대주주(SC 100%) DART 확인"
+ ]
+}

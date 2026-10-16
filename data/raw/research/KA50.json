@@ -1,0 +1,81 @@
+{
+  "account_id": "KA50",
+  "original_name": "키암코인천도화동데이터센터일반부동산사모투자회사",
+  "research_date": "2026-10-16",
+  "researcher": "agent:fintech-refund-batch",
+  "entity": {
+    "legal_name_ko": "키암코인천도화동데이터센터일반부동산사모투자회사",
+    "legal_name_en": "KIAMCO Incheon Dowha Data Center Real Estate General Private Placement Investment Company",
+    "corp_code": "01953091",
+    "stock_code": null,
+    "business_reg_no": "2608803121",
+    "parent_group": "DART 기업개황상 대표(법인이사/집합투자업자) 산은인프라자산운용주식회사",
+    "related_key_accounts": [],
+    "industry_detail": "부동산 사모투자회사(투자회사형 PEF/REF), 업종코드 68222, 설립 2024-01-25",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "펀드 법인(인천 도화동 데이터센터 보유 목적). IT/ICT 지출=DC 시설 운영·연결성으로 해석",
+    "exclusions": "집합투자업자(운용사) 본체",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('키암코')→01953091 정확 일치. get_company_info: ceo_nm='산은인프라자산운용주식회사', 주소 영등포구 여의대로 24 FKI타워 37층. 'KIAMCO' 접두어는 과거 운용사 브랜드로 보이며 키움투자자산운용(00120191)과의 관계는 근거 없음 — 현재 DART상 업무집행 법인은 산은인프라자산운용(운용사 변경 가능성, 미검증). 2024~2026 OpenDART 공시 0건. DC 용량(MW)·임차인·사업비·일정 미확인."
+  },
+  "facts": [],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA50-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "키암코인천도화동데이터센터일반부동산사모투자회사 기업개황 (OpenDART get_company_info)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://opendart.fss.or.kr/api/company.json?corp_code=01953091",
+      "document_id": "01953091",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name_eng=KIAMCO Incheon Dowha Data Center Real Estate General Private Placement Investment Company, ceo_nm=산은인프라자산운용주식회사, adres=서울특별시 영등포구 여의대로 24 (여의도동, 에프케이아이타워) 37층, induty_code=68222, est_dt=20240125",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company('키암코')/get_company_info",
+      "result": "OK",
+      "detail": "01953091, 대표 산은인프라자산운용",
+      "retryable": false
+    },
+    {
+      "step": "공시/재무",
+      "target": "OpenDART search_disclosures 2024-01~2026-10",
+      "result": "NOT_FOUND",
+      "detail": "공시 0건",
+      "retryable": false
+    },
+    {
+      "step": "DC 용량·임차인·사업비·일정·LG U+ 관계",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진으로 미검색",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 WebSearch 한도(턴당 200회, 전체 에이전트 공유) 소진으로 추가 검색 불가. 후속 세션에서 재시도 필요",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "운용사 확인(산은인프라자산운용 vs KIAMCO 브랜드 원 운용사)",
+    "인천 도화동 DC 용량(MW)·임차인/운영사(LG U+ 여부)·매입/개발비·준공 시점",
+    "펀드 FY2025 감사보고서 존재 여부"
+  ]
+}

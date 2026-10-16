@@ -1,0 +1,226 @@
+{
+  "account_id": "KA12",
+  "original_name": "(주)에스원",
+  "research_date": "2026-10-16",
+  "researcher": "agent:security-KA12",
+  "entity": {
+    "legal_name_ko": "(주)에스원",
+    "legal_name_en": "S-1 CORPORATION",
+    "corp_code": "00158501",
+    "stock_code": "012750",
+    "business_reg_no": "2088113302",
+    "parent_group": "삼성그룹 계열(일본 SECOM 주요주주로 알려짐 — 이 세션에서 지분 미확인). 대표 공동(정해린, 하나오카 타쿠로)",
+    "related_key_accounts": [
+      "KA14"
+    ],
+    "industry_detail": "SECURITY_SERVICES: 물리보안(무인경비·CCTV·출입통제), 정보보안, 건물관리, IDC 운영. DART 업종코드 75320, 코스피",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "재무: 연결·별도 병기(차이 작음). 관제 회선(통신비)은 서비스 원가 투입이나 통신 수요로 유의. KISA 공시는 법인 단위",
+    "exclusions": "삼성 계열사(삼성SDS 등) IT 지출 제외",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('에스원') 20건 중 상장사 00158501(stock 012750) 선택, get_company_info '(주)에스원', 서울 중구 순화동, 설립 1977-11-28, 결산월 12"
+  },
+  "facts": [
+    {
+      "fact_id": "KA12-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 2889412422255,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA12-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 2,804,739,466,536원, FY2023 2,620,810,541,515원"
+    },
+    {
+      "fact_id": "KA12-F02",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 2859677002384,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 2,770,433,834,517원, FY2023 2,577,731,932,791원"
+    },
+    {
+      "fact_id": "KA12-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 234566491629,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA12-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 209,247,073,877원"
+    },
+    {
+      "fact_id": "KA12-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 227464267698,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 199,145,523,485원"
+    },
+    {
+      "fact_id": "KA12-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 2431985312121,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA12-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA12-F06",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 2340236682634,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA12-F07",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 2632212734686,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA12-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "별도 매출 2,859,677,002,384 - 영업이익 227,464,267,698. 고객 제공 원가(외주·HW/SW 재판매 등) 포함 — 자체 IT 소비로 합산 금지"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "무인경비·CCTV 관제 회선이 대규모 통신 투입으로 예상(가입자 회선 수 및 공급 통신사 미확인)",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    },
+    {
+      "category": "SI_BUILD",
+      "observation": "삼성 계열 — 삼성SDS(KA14)로부터 IT 서비스 구매 가능성 및 IDC 운영 관계로 공급자-구매자 이중계상 위험(거래액 미확인)",
+      "incumbent": "삼성SDS(추정)",
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA12-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "에스원 2025 사업보고서 주요계정(연결)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004583",
+      "document_id": "20260311004583",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=2,889,412,422,255 / account_nm=영업이익, thstrm_amount=234,566,491,629 / account_nm=자산총계, thstrm_amount=2,431,985,312,121 (원)",
+      "reported_value": "2,889,412,422,255",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 2,804,739,466,536, 전전기 2,620,810,541,515; 전기 영업이익 209,247,073,877. FY2023 연결 영업이익 212,609,320,684"
+    },
+    {
+      "evidence_id": "KA12-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "에스원 2025 사업보고서 주요계정(별도)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004583",
+      "document_id": "20260311004583",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=2,859,677,002,384 / account_nm=영업이익, thstrm_amount=227,464,267,698 / account_nm=자산총계, thstrm_amount=2,340,236,682,634 (원)",
+      "reported_value": "2,859,677,002,384",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 2,770,433,834,517, 전전기 2,577,731,932,791; 전기 영업이익 199,145,523,485. "
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "'에스원' 20건 중 상장 00158501",
+      "retryable": false
+    },
+    {
+      "step": "기본 재무 FY2025",
+      "target": "OpenDART get_financial_account 11011",
+      "result": "OK",
+      "detail": "rcept_no 20260311004583. CFS/OFS 매출·영업이익·자산 확보. 매출원가·CAPEX·부문정보 미조회",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 직접 접속 차단(환경 점검 결과)",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch(언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1: 이 환경에서 WebFetch 전 언론사 DNS 실패 — 재시도 금지 지시에 따라 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch(KISA 공시·DC/AI 투자·캡티브 비중·LG U+ 관계)",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회/턴) 소진으로 검색 미수행 — 우회 금지 지시에 따라 미시도. 후속 세션에서 재조사 필요",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 FY2023-2025",
+      "target": "WebSearch / isds.kisa.or.kr",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진 및 포털 차단으로 정보기술부문·정보보호부문 투자액 미확보(의무공시 대상으로 알려져 있으나 이 세션에서 미확인)",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시 정보기술부문/정보보호부문 투자액·인력 FY2023-FY2025 (2024~2026 공시)",
+    "자체 DC/클라우드/AI 인프라 투자 발표(금액·MW·기간)",
+    "캡티브(계열사) 매출 비중 — 사업보고서 특수관계자 주석 또는 공정위 내부거래 보도",
+    "공개된 LG U+ 거래(IDC·회선·제휴) 보도",
+    "관제 회선 공급 통신사 및 통신비 규모(사업보고서 비용성격별 분류)",
+    "IDC 운영 사업 범위(삼성 계열 IDC 위탁 여부)",
+    "삼성SDS와의 특수관계자 거래액"
+  ]
+}

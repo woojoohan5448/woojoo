@@ -1,0 +1,562 @@
+{
+  "account_id": "KA37",
+  "original_name": "대신증권(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:securities-batch",
+  "entity": {
+    "legal_name_ko": "대신증권(주)",
+    "legal_name_en": null,
+    "corp_code": "00110893",
+    "stock_code": "003540",
+    "business_reg_no": null,
+    "parent_group": "대신금융그룹",
+    "related_key_accounts": [],
+    "industry_detail": "증권업, 유가증권시장 상장",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "대신증권 법인 별도(OFS). 연결(CFS)은 대신F&I·대신자산운용 등 포함 참고치",
+    "exclusions": "대신F&I, 대신자산운용, 대신저축은행 등 연결 종속회사(연결 범위는 분석가 일반지식, 미검증)",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('대신증권') → 00110893(stock 003540) 및 SPAC(00804114) 반환. 00110893 확정. get_company_info 미호출."
+  },
+  "facts": [
+    {
+      "fact_id": "KA37-F01",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 44605.17,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "CIS account_nm=영업수익(ifrs-full_Revenue) 동일 금액, 총액 기준; DART 4,460,517,372,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F02",
+      "metric": "operating_revenue",
+      "fiscal_year": 2024,
+      "value": 34084.92,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "CIS account_nm=영업수익(ifrs-full_Revenue) 동일 금액, 총액 기준; DART 3,408,492,432,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F03",
+      "metric": "operating_revenue",
+      "fiscal_year": 2023,
+      "value": 35909.48,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "CIS account_nm=영업수익(ifrs-full_Revenue) 동일 금액, 총액 기준; DART 3,590,947,758,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F04",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 40449.93,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 4,044,992,917,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F05",
+      "metric": "operating_expense",
+      "fiscal_year": 2024,
+      "value": 32711.06,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 3,271,106,153,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F06",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 4155.24,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 415,524,455,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F07",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 1373.86,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 137,386,279,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F08",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 6821.77,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 682,176,970,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F09",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 287972.24,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 28,797,223,959,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F10",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 173152.31,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 17,315,231,110,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F11",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 151237.88,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 15,123,788,321,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F12",
+      "metric": "sga",
+      "fiscal_year": 2025,
+      "value": 1247.39,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "CIS 계정 '기타판매비와관리비'(ifrs-full_SellingGeneralAndAdministrativeExpense)만. 인건비·감가상각비 별도 계정; DART 124,739,477,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F13",
+      "metric": "sga",
+      "fiscal_year": 2024,
+      "value": 1366.68,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "CIS 계정 '기타판매비와관리비'(ifrs-full_SellingGeneralAndAdministrativeExpense)만. 인건비·감가상각비 별도 계정; DART 136,667,997,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F14",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 2365.63,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E06"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=인건비; DART 236,562,562,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F15",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 352.32,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E07"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=감가상각비 및 상각비. 광의 판관비(인건비+감가상각+기타판관비)=3,965.3억원(FY2025, DERIVED); DART 35,231,964,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F16",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 391288.64,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA37-E08"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결 참고치; DART 39,128,864,373,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F17",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 50638.9,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA37-E09"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결 참고치; DART 5,063,889,973,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA37-F18",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 8.2,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E10"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2025-09 보도, 2025년 공시=FY2024"
+    },
+    {
+      "fact_id": "KA37-F19",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 56,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA37-E11"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026년 공시=FY2025. '지난해' 표현"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA37-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구(12개 항목)",
+      "amount": null,
+      "unit": null,
+      "period": "2026-2027",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA37-E12"
+      ]
+    }
+  ],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA37-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 매출액(영업수익) 당기",
+      "quoted_statement": "account_nm=매출액(영업수익), thstrm_amount=4,460,517,372,000 (원)",
+      "reported_value": "4,460,517,372,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 3,408,492,432,000 / 전전기(FY2023) 3,590,947,758,000"
+    },
+    {
+      "evidence_id": "KA37-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 영업비용 당기",
+      "quoted_statement": "account_nm=영업비용, thstrm_amount=4,044,992,917,000 (원)",
+      "reported_value": "4,044,992,917,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 3,271,106,153,000 / 전전기(FY2023) 2,908,770,788,000"
+    },
+    {
+      "evidence_id": "KA37-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 영업이익(손실) 당기",
+      "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=415,524,455,000 (원)",
+      "reported_value": "415,524,455,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 137,386,279,000 / 전전기(FY2023) 682,176,970,000"
+    },
+    {
+      "evidence_id": "KA37-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=28,797,223,959,000 (원)",
+      "reported_value": "28,797,223,959,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 17,315,231,110,000 / 전전기(FY2023) 15,123,788,321,000"
+    },
+    {
+      "evidence_id": "KA37-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 기타판매비와관리비 당기",
+      "quoted_statement": "account_nm=기타판매비와관리비, thstrm_amount=124,739,477,000 (원)",
+      "reported_value": "124,739,477,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 136,667,997,000"
+    },
+    {
+      "evidence_id": "KA37-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 인건비 당기",
+      "quoted_statement": "account_nm=인건비, thstrm_amount=236,562,562,000 (원)",
+      "reported_value": "236,562,562,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 213,341,045,000"
+    },
+    {
+      "evidence_id": "KA37-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 감가상각비 및 상각비 당기",
+      "quoted_statement": "account_nm=감가상각비 및 상각비, thstrm_amount=35,231,964,000 (원)",
+      "reported_value": "35,231,964,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 31,148,415,000"
+    },
+    {
+      "evidence_id": "KA37-E08",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=CFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=39,128,864,373,000 (원)",
+      "reported_value": "39,128,864,373,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 26,396,108,665,000 / 전전기(FY2023) 22,643,488,792,000"
+    },
+    {
+      "evidence_id": "KA37-E09",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "대신증권(주) 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=CFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "document_id": "20260319000718",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 손익계산서 매출액 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=5,063,889,973,000 (원)",
+      "reported_value": "5,063,889,973,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 4,093,862,748,000 / 전전기(FY2023) 3,854,590,575,000"
+    },
+    {
+      "evidence_id": "KA37-E10",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "잇따른 해킹 사고…증권사 정보보호 투자는 한투·토스 순",
+      "publisher": "뉴스토마토",
+      "source_url": "https://www.newstomato.com/ReadNews.aspx?no=1275684",
+      "document_id": null,
+      "publication_date": "2025-09-22",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "한국투자증권(13.2%), 토스증권(11.6%), 신한투자증권(9.2%), SK증권(8.8%), 대신증권(8.2%), NH투자증권(7.6%) 순",
+      "reported_value": "8.2",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 요약의 순위 나열. 2025년 공시=FY2024"
+    },
+    {
+      "evidence_id": "KA37-E11",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "한투증권, 정보보호 투자 188억원…대형 증권사 4곳은 미공시 (알파경제 전재)",
+      "publisher": "알파경제(네이트 뉴스)",
+      "source_url": "https://m.news.nate.com/view/20260715n30712",
+      "document_id": null,
+      "publication_date": "2026-07-15",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "지난해 정보보호 투자액은 한국투자증권이 약 188억원으로 가장 많았다. 신한투자증권 171억원, NH투자증권 124억원, KB증권 122억원, 하나증권 100억원, 대신증권 56억원 순이었다.",
+      "reported_value": "56",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA37-E12",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "금감원, 증권사에 \"IT 보안 체계 전면 재점검\" 주문",
+      "publisher": "머니투데이방송(MTN)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026100715100449066",
+      "document_id": null,
+      "publication_date": "2026-10-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "점검 대상에는 공격 IP 차단 및 피해 조사 여부를 비롯해 외부에 노출된 정보기술(IT) 자산과 서비스를 파악하고 보안을 강화했는지 여부 등 12개 항목이 포함됐다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company",
+      "result": "OK",
+      "detail": "00110893",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account / get_full_financial_statement OFS",
+      "result": "OK",
+      "detail": "rcept 20260319000718",
+      "retryable": false
+    },
+    {
+      "step": "KISA FY2023·FY2024 금액, FY2025 IT 투자액·비율",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "FY2024 비율 8.2%, FY2025 정보보호 56억만 확인. 정보기술부문 투자액(A) 미확인",
+      "retryable": true
+    },
+    {
+      "step": "IT 계획·캡티브·LG U+",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진으로 미조사",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트 전체",
+      "result": "BLOCKED",
+      "detail": "프로토콜 v1.1 및 지시에 따라 DNS 차단 환경으로 시도하지 않음; 모든 기사 근거는 WebSearch 요약 기반 SECONDARY_UNCONFIRMED",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 조사",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 이후 검색 불가. IT 계획(차세대·클라우드·AI·DC)·캡티브 SI·LG U+ 거래 검색은 미실시/미완료",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "FY2025 정보기술부문 투자액·비율, FY2024 투자 금액 KISA 원문 확인",
+    "FY2024 비율 8.2%는 순위 나열 요약 기반 — 본문 확인 필요",
+    "차세대·클라우드·AI 계획, 코스콤 원장 의존 여부, 그룹 IT(대신 계열) 구조, LG U+ 거래 미조사",
+    "FY2025 별도 자산 급증(17.3조→28.8조원) 원인 확인"
+  ]
+}

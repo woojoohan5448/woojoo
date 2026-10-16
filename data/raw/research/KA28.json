@@ -1,0 +1,99 @@
+{
+  "account_id": "KA28",
+  "original_name": "코람코자산운용",
+  "research_date": "2026-10-16",
+  "researcher": "agent:fintech-refund-batch",
+  "entity": {
+    "legal_name_ko": "주식회사 코람코자산운용",
+    "legal_name_en": "Koramco Asset Management Co., Ltd.",
+    "corp_code": "00802213",
+    "stock_code": null,
+    "business_reg_no": "2208793462",
+    "parent_group": "코람코(코람코자산신탁 계열, 관계 미검증)",
+    "related_key_accounts": [],
+    "industry_detail": "부동산 집합투자업자(업종코드 64201), 설립 2010-01-20",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "운용사 법인 자체(운용 펀드 자산 제외). 데이터센터 펀드 보유 자산은 별도 판단 필요",
+    "exclusions": "코람코자산신탁(00453673), 코람코 리츠(코람코더원리츠·코람코라이프인프라리츠 등)",
+    "entity_status": "PROBABLE",
+    "entity_notes": "'코람코자산운용' 정확 일치 00802213(대표 박형석, 강남구 삼성로 511). 단 LG U+ B2B 관계가 운용사 본체인지 데이터센터 펀드/리츠인지 불명 → PROBABLE. 데이터센터 펀드·LG U+ IDC 관련 사실은 검색 한도 소진으로 미확인."
+  },
+  "facts": [],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA28-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "코람코자산운용 기업개황 (OpenDART get_company_info)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://opendart.fss.or.kr/api/company.json?corp_code=00802213",
+      "document_id": "00802213",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=주식회사 코람코 자산운용, ceo_nm=박형석, induty_code=64201, est_dt=20100120",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA28-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "코람코자산운용 감사보고서 (2025.12)",
+      "publisher": "한영회계법인 (OpenDART search_disclosures)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000506",
+      "document_id": "20260331000506",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "공시 목록",
+      "quoted_statement": "report_nm=감사보고서 (2025.12), flr_nm=한영회계법인",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "주요계정 API 미제공(013). 원문 미열람"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company('코람코자산')",
+      "result": "OK",
+      "detail": "00802213",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account OFS",
+      "result": "NOT_FOUND",
+      "detail": "status 013(감사보고서 제출회사)",
+      "retryable": true
+    },
+    {
+      "step": "데이터센터 펀드/LG U+ IDC 관련 거래, AUM",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진으로 미검색",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 WebSearch 한도(턴당 200회, 전체 에이전트 공유) 소진으로 추가 검색 불가. 후속 세션에서 재시도 필요",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "코람코 운용 데이터센터 펀드/리츠(자산명·MW·임차인) 및 LG U+ IDC 매입·세일앤리스백 여부",
+    "운용사 FY2025 영업수익·AUM",
+    "LG U+ 관계가 운용사 본체인지 개별 펀드인지"
+  ]
+}

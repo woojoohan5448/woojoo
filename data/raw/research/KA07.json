@@ -1,0 +1,311 @@
+{
+  "account_id": "KA07",
+  "original_name": "마이크로소프트",
+  "research_date": "2026-10-16",
+  "researcher": "agent:hyperscaler-KA07",
+  "entity": {
+    "legal_name_ko": "한국마이크로소프트 유한회사",
+    "legal_name_en": "Microsoft Korea, Inc.",
+    "corp_code": "00192790",
+    "stock_code": null,
+    "business_reg_no": "1208105948",
+    "parent_group": "Microsoft Corporation (미국)",
+    "related_key_accounts": [],
+    "industry_detail": "소프트웨어·클라우드(Azure/M365) 한국 판매 법인. DART 업종 62021, 설립 1988-09-16, 6월 결산",
+    "is_korean_entity": true,
+    "fiscal_year_end": "06",
+    "dart_available": true,
+    "economic_scope": "한국MS 법인 + Azure Korea Central(서울)/Korea South(부산) 리전 인프라. MS 글로벌 capex는 context only",
+    "exclusions": "Microsoft 글로벌, LinkedIn/GitHub 등 별도 법인, KT의 MS 협력 투자액",
+    "entity_status": "PROBABLE",
+    "entity_notes": "DART 감사보고서 FY2023.06~FY2026.06 공시 확인(최신 2026-10-14 제출). OpenDART 재무 API는 status 013 → 원문 매출 미확인. Azure 리전 DC 소유/임차 주체(해외 MS 인프라 법인 가능)·위치 비공개."
+  },
+  "facts": [
+    {
+      "fact_id": "KA07-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 17290,
+      "unit": "억원",
+      "scope": "법인 별도(한국마이크로소프트, 출처 Tier3)",
+      "evidence_ids": [
+        "KA07-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "채용 플랫폼 게시 수치로 감사보고서 미대조. FY 정의(6월 결산) 불명. 클라우드 매출의 해외 법인(MS Ireland 등) 귀속 여부 불명. 단독 확정 근거 불가"
+    },
+    {
+      "fact_id": "KA07-F02",
+      "metric": "other",
+      "fiscal_year": 2024,
+      "value": 24000,
+      "unit": "억원",
+      "scope": "KT–MS 5년 공동투자(다년 누적, 2024-2029) — KT 측 발표, MS 한국 DC 투자 아님",
+      "evidence_ids": [
+        "KA07-E05"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "경쟁 통신사(KT)와 MS 협력 규모. MS 한국 인프라 capex로 해석 금지"
+    },
+    {
+      "fact_id": "KA07-F03",
+      "metric": "it_capex",
+      "fiscal_year": 2025,
+      "value": 80000,
+      "unit": "USD_mn",
+      "scope": "글로벌",
+      "evidence_ids": [
+        "KA07-E08"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "MS FY2025 AI DC 투자 계획. context only"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA07-D01",
+      "type": "AI_INVESTMENT",
+      "description": "KT–MS 5년 AI·클라우드 공동투자(공공·금융 클라우드 2025Q1 상용화 계획) — MS Azure 수요의 KT 경유 확대",
+      "amount": 24000,
+      "unit": "억원",
+      "period": "2024-2029",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA07-E05"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "Azure 서울·부산 리전(2017-02 가동) 데이터센터 위치 비공개. 국내 통신사 IDC 임차 보도 있으나 공급사명 미확인; 부산 자체 DC 부지 매입 보도(과거)",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA07-E04"
+      ]
+    },
+    {
+      "category": "CLOUD",
+      "observation": "KT가 MS 핵심 국내 파트너(5년 2.4조원, GPT-4o 기반 한국형 모델, 소버린 클라우드)",
+      "incumbent": "KT",
+      "lgu_relationship": "LG U+는 MS와 동급 신규 협력 미확인",
+      "evidence_ids": [
+        "KA07-E05",
+        "KA07-E06"
+      ]
+    },
+    {
+      "category": "CLOUD",
+      "observation": "LG U+–한국MS 2016-03 클라우드 전략적 제휴 MOU(구)",
+      "incumbent": null,
+      "lgu_relationship": "2016 MOU(클라우드 플랫폼·스카이프·빅데이터). 최근 AI/소버린 협력 미확인",
+      "evidence_ids": [
+        "KA07-E07"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA07-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "OpenDART company.json 기업개황",
+      "publisher": "금융감독원 OpenDART (PlayMCP 경유)",
+      "source_url": "https://opendart.fss.or.kr/api/company.json?corp_code=00192790",
+      "document_id": "00192790",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=한국마이크로소프트 유한회사, corp_name_eng=Microsoft Korea, Inc., ceo_nm=조원우, corp_cls=E, bizr_no=1208105948, induty_code=62021, est_dt=19880916, acc_mt=06, adres=서울특별시 종로구 종로1길 50 (더케이트윈타워) A동 15층",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "한국마이크로소프트 감사보고서 (FY2026(2025.07~2026.06)) — 공시검색 결과",
+      "publisher": "금융감독원 DART (PlayMCP search_disclosures)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000067",
+      "document_id": "20261014000067",
+      "publication_date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "공시목록",
+      "quoted_statement": "감사보고서 (2026.06) rcept_no=20261014000067 (안진회계법인, 2026-10-14); (2025.06) 20251002000144; (2024.06) 20241008000170; (2023.06) 20231010000189",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "감사보고서 존재만 확인. 본문(손익계산서)은 dart.fss.or.kr 직접 접속 차단 및 get_financial_account status 013으로 미확인"
+    },
+    {
+      "evidence_id": "KA07-E03",
+      "tier": 3,
+      "source_type": "BENCHMARK",
+      "source_title": "한국마이크로소프트 기업정보(채용 플랫폼)",
+      "publisher": "캐치(catch.co.kr)",
+      "source_url": "https://www.catch.co.kr/Comp/RecruitInfo/600946",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025(추정)",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "2025년 기준 매출액은 1조 7,290억 원을 기록하며 전년 대비 약 16% 성장",
+      "reported_value": "17290",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "Tier 3 채용 사이트. 감사보고서 원문 아님. '2025년'이 FY2025(2025-06 결산)인지 불명"
+    },
+    {
+      "evidence_id": "KA07-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "MS, 국내서 클라우드 데이터센터 리전 2개 가동",
+      "publisher": "바이라인네트워크",
+      "source_url": "https://byline.network/2017/02/1-584/",
+      "document_id": null,
+      "publication_date": "2017-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "한국마이크로소프트는 21일 데이터센터 한국리전 2개(서울, 부산)를 본격 가동한다고 밝혔다. … 서울과 부산 리전의 데이터센터 위치는 클라우드 컴퓨팅 서비스 보안 정책을 이유로 공개하지 않았다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "같은 검색 요약(기사 귀속 불명확): '한국MS는 이와 별개로 부산시에 추가적인 데이터센터 건립을 고려한 부지를 매입… 서울과 부산 리전이 국내 이동통신사 등의 데이터센터 공간을 임차해 쓰는 것과 달리 직접 새로운 데이터센터를 구축할 가능성'"
+    },
+    {
+      "evidence_id": "KA07-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "KT, MS와 2.4조원 공동투자...한국형 AI·클라우드 판 키운다",
+      "publisher": "전자신문",
+      "source_url": "https://www.etnews.com/20241010000287",
+      "document_id": null,
+      "publication_date": "2024-10-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "KT가 마이크로소프트와 5년간 약 2조4000억원을 국내 인공지능(AI)·클라우드 시장에 공동 투자한다.",
+      "reported_value": "24000",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "AX 부문 5년 최대 4조6000억원 누적 매출 목표(KT). 딜사이트 등은 가시 성과 제한적(대법원 145억, 경기도 131억) 보도"
+    },
+    {
+      "evidence_id": "KA07-E06",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "MS 호주 투자 관련 기사(한국 투자 미가시화 언급)",
+      "publisher": "뉴시스",
+      "source_url": "https://www.newsis.com/view/NISX20260427_0003608261",
+      "document_id": null,
+      "publication_date": "2026-04-27",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "한국에서는 KT, LG전자 등 주요 기업과의 협력이 활발하게 진행 중이지만, 일본·호주처럼 정부 정책과 직접 연동된 MS의 자본 투자는 아직 가시화되지 않고 있다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA07-E07",
+      "tier": 1,
+      "source_type": "PRESS_RELEASE",
+      "source_title": "한국마이크로소프트-LG유플러스 클라우드 기반 신성장 사업 공동추진을 위한 전략적 제휴",
+      "publisher": "Microsoft 뉴스센터 코리아",
+      "source_url": "https://news.microsoft.com/ko-kr/2016/03/07/lguplus_mou/",
+      "document_id": null,
+      "publication_date": "2016-03-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "클라우드 기반 신성장 사업 공동추진을 위한 전략적 제휴 업무협약(MOU)",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "클라우드 플랫폼, U+ Biz 스카이프, 빅데이터. 2024~2026 LG U+–MS 신규 AI/소버린 협력 발표는 검색에서 미확인"
+    },
+    {
+      "evidence_id": "KA07-E08",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "MS, 올해 AI 데이터센터에 800억 달러 투자 계획",
+      "publisher": "이투데이",
+      "source_url": "https://www.etoday.co.kr/news/view/2434879",
+      "document_id": null,
+      "publication_date": "2025-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "MS는 회계연도 기준 AI 데이터센터에 약 800억 달러를 투자할 계획 … 전체 투자의 절반 이상이 미국",
+      "reported_value": "80000",
+      "reported_unit": "USD_mn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 법인 검색 '마이크로소프트'",
+      "target": "opendart-find_company",
+      "result": "OK",
+      "detail": "00192790 한국마이크로소프트 1건",
+      "retryable": false
+    },
+    {
+      "step": "DART 공시검색 2023-01~2026-10",
+      "target": "00192790",
+      "result": "OK",
+      "detail": "감사보고서 4건(안진회계법인)",
+      "retryable": false
+    },
+    {
+      "step": "DART 재무계정 FY2025",
+      "target": "00192790",
+      "result": "NOT_FOUND",
+      "detail": "status 013",
+      "retryable": false
+    },
+    {
+      "step": "한국MS 감사보고서 매출 보도 검색",
+      "target": "WebSearch(3회)",
+      "result": "NOT_FOUND",
+      "detail": "언론 보도 미확인, 채용사이트(Tier3) 1조7290억만 확인",
+      "retryable": false
+    },
+    {
+      "step": "LG U+–MS AI/소버린 클라우드 협력 검색",
+      "target": "WebSearch(2회)",
+      "result": "NOT_FOUND",
+      "detail": "2016 MOU만 확인; 2025 기사에서 'LGU+는 구글, KT는 MS' 구도",
+      "retryable": false
+    },
+    {
+      "step": "MS 한국 DC 투자 발표",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "2026-04 뉴시스: 한국 자본투자 미가시화",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사/공식 사이트",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5-1: 이 환경 WebFetch 전 언론사 DNS 실패 → 시도 생략, WebSearch 요약으로 진행(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "한국MS FY2025/FY2026 감사보고서 매출·영업이익(원문)",
+    "Azure 서울/부산 리전 코로케이션 공급사(KT/LG U+/SK 등) 및 자체 DC 여부",
+    "LG U+–MS 2024 이후 AI·소버린 클라우드 협력 실재 여부(요청서상 언급 근거 미발견)",
+    "MS 한국 신규 AI DC 투자 계획"
+  ]
+}

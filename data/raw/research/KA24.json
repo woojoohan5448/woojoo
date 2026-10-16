@@ -1,0 +1,153 @@
+{
+ "account_id": "KA24",
+ "original_name": "농협은행",
+ "research_date": "2026-10-16",
+ "researcher": "agent:bank-batch2",
+ "entity": {
+  "legal_name_ko": "농협은행 주식회사",
+  "legal_name_en": "NongHyup Bank",
+  "corp_code": "00908757",
+  "stock_code": null,
+  "business_reg_no": "1048639742",
+  "parent_group": "NH농협금융지주(농협중앙회)",
+  "related_key_accounts": [
+   "KA39"
+  ],
+  "industry_detail": "은행 (업종코드 64121)",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "농협은행 별도. 농협금융지주·NH투자증권(KA39) 등 계열사 제외",
+  "exclusions": "농협금융지주, NH투자증권(KA39), NH농협생명·손보, 농협정보시스템, 농협중앙회",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "find_company 단일 결과. 대표 강태영, 본점 중구 통일로 120, 설립 2012-03-02(신경분리). 사업보고서 미제출 — 2026년 접수 공시는 감사보고서(2025.12) rcept 20260331003536, 연결감사보고서 20260331003539, 대규모기업집단현황공시 등뿐. OpenDART 재무 API는 status 013."
+ },
+ "facts": [
+  {
+   "fact_id": "KA24-F01",
+   "metric": "other",
+   "fiscal_year": 2026,
+   "value": 10.5,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA24-E01"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "metric=2026 IT 예산 대비 정보보호 예산 비중(금감원 예산 자료). 금액 미확보"
+  }
+ ],
+ "drivers": [],
+ "competitive": [
+  {
+   "category": "IT_OPS",
+   "observation": "농협 캡티브 IT자회사 농협정보시스템이 시스템 구축·운영 담당 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": "농협정보시스템",
+   "lgu_relationship": null,
+   "evidence_ids": []
+  },
+  {
+   "category": "CONNECTIVITY",
+   "observation": "LG U+ 공개 거래 미확인 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA24-E01",
+   "tier": 2,
+   "source_type": "NEWS",
+   "source_title": "KB국민은행 860억 vs 신한은행 405억… 신한·우리, 보안 예산 줄였다",
+   "publisher": "세계일보",
+   "source_url": "https://www.segye.com/newsView/20261016504447",
+   "document_id": null,
+   "publication_date": "2026-10-16",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2026 budget",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "올해 5대 시중은행의 정보보호 예산은 총 3320억원 수준이다. ... 전체 정보기술(IT) 예산에서 정보보호 예산이 차지하는 비중은 하나은행이 12.2%로 가장 높았다. 농협은행은 10.5%, 국민은행과 우리은행은 각각 9.9%, 신한은행은 9.1%였다.",
+   "reported_value": "10.5",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. 이 세션에서 직접 검색하지 않음 — data/raw/research/_MARKET_BENCHMARKS.json MB-E13(동일 환경 선행 조사)의 인용을 재사용. 금감원 자료(박대출 의원실). 예산(계획) 기준으로 KISA 실적 투자액과 정의 다름. 은행별 예산 금액은 제목의 국민 860억·신한 405억만 확인."
+  },
+  {
+   "evidence_id": "KA24-E02",
+   "tier": 1,
+   "source_type": "DART_FILING",
+   "source_title": "농협은행 감사보고서 (2025.12)",
+   "publisher": "금융감독원 DART (OpenDART search_disclosures via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003536",
+   "document_id": "20260331003536",
+   "publication_date": "2026-03-31",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "공시 목록(본문 미열람)",
+   "quoted_statement": "report_nm=감사보고서 (2025.12), flr_nm=안진회계법인, rcept_dt=20260331",
+   "reported_value": null,
+   "reported_unit": null,
+   "verification_status": "VERIFIED",
+   "notes": "재무 수치 미추출: get_financial_account·get_full_financial_statement가 감사보고서 미지원(013). dart.fss.or.kr 직접 접속 차단"
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별",
+   "target": "OpenDART find_company/get_company_info",
+   "result": "OK",
+   "detail": "corp_code 00908757",
+   "retryable": false
+  },
+  {
+   "step": "재무 FY2025",
+   "target": "OpenDART get_financial_account 00908757 2025 11011 OFS",
+   "result": "NOT_FOUND",
+   "detail": "status 013. 사업보고서 미제출(감사보고서만) — API 재무 미제공",
+   "retryable": false
+  },
+  {
+   "step": "재무 보도",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "검색 한도 소진으로 영업수익·판관비·자산총계 보도 검색 미수행",
+   "retryable": true
+  },
+  {
+   "step": "KISA 정보보호 공시",
+   "target": "WebSearch(은행권 비교 검색 결과)",
+   "result": "NOT_FOUND",
+   "detail": "2024~2026 자율공시 보도에 농협은행 언급 없음 → 미공시로 추정",
+   "retryable": true
+  },
+  {
+   "step": "WebFetch 기사 본문",
+   "target": "언론사 사이트",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5.1(전 언론사 DNS 실패)에 따라 미시도. 모든 뉴스 근거 SECONDARY_UNCONFIRMED",
+   "retryable": true
+  },
+  {
+   "step": "KISA 공시 원문",
+   "target": "isds.kisa.or.kr",
+   "result": "BLOCKED",
+   "detail": "프로토콜상 차단 호스트; 미시도",
+   "retryable": false
+  },
+  {
+   "step": "추가 WebSearch(IT예산 총액·차세대·클라우드·AI·DC·캡티브 SI·LG U+)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회/turn) 소진. 6개 은행 공통 비교 검색 6회만 수행 후 차단 — 우회 검색 미시도",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "FY2025 재무(영업수익/순영업수익, 판관비, 자산총계) — 감사보고서 원문 또는 농협금융 IR로 확보 필요",
+  "KISA 정보보호 공시 참여 여부",
+  "2026 IT 예산·정보보호 예산 금액(비중 10.5%만 확보)",
+  "농협정보시스템 위탁 범위, 차세대·클라우드·AI·DC 계획, LG U+ 거래 — 검색 한도 소진으로 미조사",
+  "그룹 중복: NH투자증권(KA39)과 공동 인프라·농협중앙회 IT 분담 구조"
+ ]
+}

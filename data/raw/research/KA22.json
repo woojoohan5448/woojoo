@@ -1,0 +1,464 @@
+{
+ "account_id": "KA22",
+ "original_name": "(주)하나은행",
+ "research_date": "2026-10-16",
+ "researcher": "agent:bank-batch2",
+ "entity": {
+  "legal_name_ko": "주식회사 하나은행",
+  "legal_name_en": "KEB Hana Bank",
+  "corp_code": "00158909",
+  "stock_code": "004940",
+  "business_reg_no": "2028114695",
+  "parent_group": "하나금융지주",
+  "related_key_accounts": [],
+  "industry_detail": "은행 (업종코드 64121)",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "하나은행 별도(OFS). 지주 및 계열사 제외",
+  "exclusions": "하나금융지주, 하나카드, 하나증권, 하나INS 등 계열사; 연결 종속법인",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "find_company('하나은행')가 00130897(대표 김병호, 구 하나은행), 00158909(대표 이호성, 을지로 35 — 구 외환은행 법인이 2015 합병 존속법인), 00156017(대표 김승유, 과거 법인) 반환. 현 대표·본점 일치하는 00158909로 확정. stock_code 004940은 구 외환은행 상장코드, 현재 비상장(corp_cls=E)."
+ },
+ "facts": [
+  {
+   "fact_id": "KA22-F01",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 5331012.21,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "DART 원 단위 533,101,221,000,000원 억원 환산"
+  },
+  {
+   "fact_id": "KA22-F02",
+   "metric": "total_assets",
+   "fiscal_year": 2024,
+   "value": 5099230.75,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "전기 금액 환산"
+  },
+  {
+   "fact_id": "KA22-F03",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 49166.38,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E02"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA22-F04",
+   "metric": "operating_income",
+   "fiscal_year": 2024,
+   "value": 44189.33,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E02"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA22-F05",
+   "metric": "sga",
+   "fiscal_year": 2025,
+   "value": 33142.92,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E05"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "계정명 '일반관리비'"
+  },
+  {
+   "fact_id": "KA22-F06",
+   "metric": "sga",
+   "fiscal_year": 2024,
+   "value": 31817.53,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E05"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA22-F07",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 75993.34,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E03"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "metric=순이자손익"
+  },
+  {
+   "fact_id": "KA22-F08",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 7846.1,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E04"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "metric=순수수료손익"
+  },
+  {
+   "fact_id": "KA22-F09",
+   "metric": "operating_revenue",
+   "fiscal_year": 2025,
+   "value": 83839.44,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E03",
+    "KA22-E04"
+   ],
+   "verification_status": "DERIVED",
+   "analyst_interpretation": "순영업수익 proxy = 순이자손익+순수수료손익(기타영업손익·유가증권손익 제외). 손익계산서에 '영업수익' 계정 없음. FY2024 동일 산식 79614.99억원"
+  },
+  {
+   "fact_id": "KA22-F10",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 5570344.82,
+   "unit": "억원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA22-E06"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "연결 참고치"
+  },
+  {
+   "fact_id": "KA22-F11",
+   "metric": "kisa_security_ratio",
+   "fiscal_year": 2025,
+   "value": 9.0,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E07",
+    "KA22-E08"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "2026년 공시=FY2025. 투자 절대액 NOT_FOUND"
+  },
+  {
+   "fact_id": "KA22-F12",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 7.4,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E09"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "metric=IT 인력 대비 정보보호 전담인력 비중"
+  },
+  {
+   "fact_id": "KA22-F13",
+   "metric": "other",
+   "fiscal_year": 2026,
+   "value": 12.2,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA22-E10"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "metric=2026 IT 예산 대비 정보보호 예산 비중(5대 은행 중 최고; 금감원 예산 자료). 금액 미확보"
+  }
+ ],
+ "drivers": [
+  {
+   "driver_id": "KA22-D01",
+   "type": "REGULATORY_SECURITY",
+   "description": "2026년 KISA 정보보호 자율공시 첫 참여 보도(미확정), 2027년 금융권 의무공시 예정. 2026 IT 예산 대비 정보보호 예산 비중 12.2%로 5대 은행 최고.",
+   "amount": null,
+   "unit": null,
+   "period": "2026-2027",
+   "direction": "UP",
+   "evidence_ids": [
+    "KA22-E07",
+    "KA22-E10"
+   ]
+  }
+ ],
+ "competitive": [
+  {
+   "category": "IT_OPS",
+   "observation": "하나금융 캡티브 IT자회사 하나INS가 그룹 시스템 구축·운영 담당 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": "하나INS",
+   "lgu_relationship": null,
+   "evidence_ids": []
+  },
+  {
+   "category": "CONNECTIVITY",
+   "observation": "LG U+ 전용회선·IDC·클라우드 공개 거래 미확인 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA22-E01",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)하나은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+   "document_id": "20260316000962",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=자산총계, thstrm_amount=533,101,221,000,000 (원)",
+   "reported_value": "533,101,221,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기(FY2024) 509,923,075,000,000"
+  },
+  {
+   "evidence_id": "KA22-E02",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)하나은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+   "document_id": "20260316000962",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 영업이익(손실) 당기",
+   "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=4,916,638,000,000 (원)",
+   "reported_value": "4,916,638,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 4,418,933,000,000"
+  },
+  {
+   "evidence_id": "KA22-E03",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)하나은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+   "document_id": "20260316000962",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 순이자손익 당기",
+   "quoted_statement": "account_nm=순이자손익, thstrm_amount=7,599,334,000,000 (원)",
+   "reported_value": "7,599,334,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 7,208,809,000,000. 전체 재무제표(CIS) 계정명 '순이자이익'"
+  },
+  {
+   "evidence_id": "KA22-E04",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)하나은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+   "document_id": "20260316000962",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 순수수료손익 당기",
+   "quoted_statement": "account_nm=순수수료손익, thstrm_amount=784,610,000,000 (원)",
+   "reported_value": "784,610,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 752,690,000,000. 전체 재무제표(CIS) 계정명 '순수수료이익'"
+  },
+  {
+   "evidence_id": "KA22-E05",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)하나은행 2025 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+   "document_id": "20260316000962",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 포괄손익계산서(CIS) 일반관리비 당기",
+   "quoted_statement": "account_nm=일반관리비, thstrm_amount=3,314,292,000,000 (원)",
+   "reported_value": "3,314,292,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 3,181,753,000,000. 전체 재무제표에 '영업수익' 계정 없음"
+  },
+  {
+   "evidence_id": "KA22-E06",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)하나은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, CFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000962",
+   "document_id": "20260316000962",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=자산총계, thstrm_amount=557,034,482,000,000 (원)",
+   "reported_value": "557,034,482,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "연결 참고치"
+  },
+  {
+   "evidence_id": "KA22-E07",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "보안 경계심 높아지면서 은행들도 자율 공시 동참 / 인터넷은행 투자·인력 비중 전산업 최상위권 수준",
+   "publisher": "뉴데일리 경제",
+   "source_url": "https://biz.newdaily.co.kr/site/data/html/2026/06/30/2026063000075.html",
+   "document_id": null,
+   "publication_date": "2026-06-30",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "정보기술부문(IT) 투자액 대비 정보보호부문 투자액 비율은 카카오뱅크(12.4%)와 토스뱅크(11.9%)가 시중은행(하나 9.0%, 국민 8.15%, 신한 7.96%)을 제치고 나란히 1, 2위를 차지했다. / 정보보호산업법 시행령 개정에 따라 금융권에서도 오는 2027년부터 의무 공시 대상에 포함된다는 점도 영향을 미쳤다.",
+   "reported_value": "9.0",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. WebSearch 요약이 해당 인용을 2026년 6월 보도로 제시; 링크 목록상 뉴데일리 기사로 추정(출처 기사 특정 미확정). 요약에 '하나은행과 카카오뱅크가 처음으로 자율 공시에 참여' 언급 — 별도 검색에서는 '첫 참여' 미확인."
+  },
+  {
+   "evidence_id": "KA22-E08",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "[은행 정보보호 경쟁력] 우리은행 — IT 예산의 9.1% 보안에 투자…AI·클라우드 환경 대응 강화",
+   "publisher": "딜사이트",
+   "source_url": "https://dealsite.co.kr/articles/165158",
+   "document_id": null,
+   "publication_date": "2026-07",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "지난해 우리은행의 정보보호 투자액은 363억8143만원으로 정보기술(IT) 투자액의 9.1%를 차지했다. KB국민은행(8.2%), 신한은행(8.0%), 하나은행(9.0%)보다 높은 수준이다.",
+   "reported_value": "9.0",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. WebSearch 요약상 출처가 딜사이트(165158) 또는 디지털데일리(m.ddaily.co.kr/page/view/2026070315315860244) 중 하나로 특정 불가. 제목은 요약에 인용된 부제 표현. 2026-07 게재로 '지난해'=FY2025(2026년 공시)로 해석."
+  },
+  {
+   "evidence_id": "KA22-E09",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "[은행 정보보호 경쟁력] 카카오뱅크 편 (정보보호 전담인력 비중 비교)",
+   "publisher": "딜사이트",
+   "source_url": "https://dealsite.co.kr/articles/164416",
+   "document_id": null,
+   "publication_date": "2026-07",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "신한은행(7.5%), 하나은행(7.4%), KB국민은행(5.13%) 등보다 높은 수준이다.",
+   "reported_value": "7.4",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. IT 인력 대비 정보보호 전담인력 비중(카카오뱅크 대비 비교 문장). 기사 제목은 요약 기반 표기."
+  },
+  {
+   "evidence_id": "KA22-E10",
+   "tier": 2,
+   "source_type": "NEWS",
+   "source_title": "KB국민은행 860억 vs 신한은행 405억… 신한·우리, 보안 예산 줄였다",
+   "publisher": "세계일보",
+   "source_url": "https://www.segye.com/newsView/20261016504447",
+   "document_id": null,
+   "publication_date": "2026-10-16",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2026 budget",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "올해 5대 시중은행의 정보보호 예산은 총 3320억원 수준이다. ... 전체 정보기술(IT) 예산에서 정보보호 예산이 차지하는 비중은 하나은행이 12.2%로 가장 높았다. 농협은행은 10.5%, 국민은행과 우리은행은 각각 9.9%, 신한은행은 9.1%였다.",
+   "reported_value": "12.2",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. 이 세션에서 직접 검색하지 않음 — data/raw/research/_MARKET_BENCHMARKS.json MB-E13(동일 환경 선행 조사)의 인용을 재사용. 금감원 자료(박대출 의원실). 예산(계획) 기준으로 KISA 실적 투자액과 정의 다름. 은행별 예산 금액은 제목의 국민 860억·신한 405억만 확인."
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별",
+   "target": "OpenDART find_company/get_company_info",
+   "result": "OK",
+   "detail": "corp_code 00158909 확정",
+   "retryable": false
+  },
+  {
+   "step": "재무 FY2025",
+   "target": "OpenDART get_financial_account 00158909 2025 11011 OFS",
+   "result": "OK",
+   "detail": "OFS·CFS 반환, rcept_no 20260316000962. 영업수익·판관비 미제공",
+   "retryable": false
+  },
+  {
+   "step": "영업수익·판관비",
+   "target": "OpenDART get_full_financial_statement OFS 2025",
+   "result": "OK",
+   "detail": "일반관리비(판관비) 확인. '영업수익' 계정 부재 → 순영업수익 proxy DERIVED",
+   "retryable": false
+  },
+  {
+   "step": "KISA FY2023-2025 금액",
+   "target": "WebSearch '하나은행 정보보호 공시 첫 참여 정보기술 투자액'",
+   "result": "NOT_FOUND",
+   "detail": "FY2025 비율 9.0%만 확인. FY2023·FY2024는 미공시로 추정(2025년 공시 자율공시 시중은행은 국민·우리·신한뿐 — KA03-E14)",
+   "retryable": true
+  },
+  {
+   "step": "WebFetch 기사 본문",
+   "target": "언론사 사이트",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5.1(전 언론사 DNS 실패)에 따라 미시도. 모든 뉴스 근거 SECONDARY_UNCONFIRMED",
+   "retryable": true
+  },
+  {
+   "step": "KISA 공시 원문",
+   "target": "isds.kisa.or.kr",
+   "result": "BLOCKED",
+   "detail": "프로토콜상 차단 호스트; 미시도",
+   "retryable": false
+  },
+  {
+   "step": "추가 WebSearch(IT예산 총액·차세대·클라우드·AI·DC·캡티브 SI·LG U+)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회/turn) 소진. 6개 은행 공통 비교 검색 6회만 수행 후 차단 — 우회 검색 미시도",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "FY2025 KISA 정보기술부문·정보보호부문 투자액 절대값",
+  "하나은행의 2026년 '첫 자율공시' 여부 확인",
+  "2026 IT 예산·정보보호 예산 금액",
+  "하나INS 위탁 범위, 차세대·클라우드·AI·DC 계획, LG U+ 거래 — 검색 한도 소진으로 미조사",
+  "그룹 중복: 53개 고객 중 하나금융 계열사 포함 여부 미확인(브리프상 관련 KA 없음)"
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "account_id": "KA15",
+ "original_name": "지에스네오텍(주)",
+ "research_date": "2026-10-16",
+ "researcher": "agent:platform-cloud-batch",
+ "entity": {
+  "legal_name_ko": "GS네오텍 주식회사",
+  "legal_name_en": "GS Neotek",
+  "corp_code": "00106030",
+  "stock_code": null,
+  "business_reg_no": "1138107384",
+  "parent_group": "GS 기업집단 계열(대규모기업집단현황공시 제출 확인)",
+  "related_key_accounts": [
+   "KA16"
+  ],
+  "industry_detail": "업종코드 42(전문직별 공사업) — 전기·통신공사 + IT 사업부(CDN·클라우드 MSP). 비상장",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "GS네오텍 법인 별도. CDN/클라우드 MSP 재판매 원가(AWS 재판매, 통신사 대역폭 구매)는 고객향 원가로 자체 IT 소비와 구분. 공사 부문 비IT",
+  "exclusions": "GS리테일(KA16) 등 GS 계열사. KA16이 GS네오텍 MSP/CDN 고객일 경우 공급자-구매자 중복 위험",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "OpenDART 법인명 'GS네오텍 주식회사'(영문 GS Neotek). 감사보고서 법인으로 재무 API 미제공"
+ },
+ "facts": [],
+ "drivers": [],
+ "competitive": [
+  {
+   "category": "CLOUD",
+   "observation": "CDN·AWS MSP 사업(지시사항 기재) — 이번 세션에서 출처 미확보. CDN 대역폭 구매 통신사·AWS 재판매 규모 미확인",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA15-E01",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "GS네오텍 기업개황 및 공시목록",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004517",
+   "document_id": "20260401004517",
+   "publication_date": "2026-04-01",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "company.json / list.json",
+   "quoted_statement": "corp_name=GS네오텍 주식회사, corp_name_eng=GS Neotek, corp_cls=E, induty_code=42, est_dt=19740702, adres=서울특별시 구로구 경인로 576 / report_nm=감사보고서 (2025.12), rcept_no=20260401004517, flr_nm=신한회계법인 / 대규모기업집단현황공시 제출",
+   "reported_value": null,
+   "reported_unit": null,
+   "verification_status": "VERIFIED",
+   "notes": "'지에스네오텍' 검색 not_found, 'GS네오텍' → 00106030. get_financial_account 2025 → 013"
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별",
+   "target": "OpenDART find_company",
+   "result": "OK",
+   "detail": "'지에스네오텍' not_found → 'GS네오텍' 00106030",
+   "retryable": false
+  },
+  {
+   "step": "FY2025 재무",
+   "target": "OpenDART get_financial_account",
+   "result": "NOT_FOUND",
+   "detail": "013 (감사보고서 법인)",
+   "retryable": false
+  },
+  {
+   "step": "KISA 공시·CDN/MSP 사업 규모",
+   "target": "WebSearch",
+   "result": "NOT_FOUND",
+   "detail": "검색 한도 소진으로 미수행",
+   "retryable": true
+  },
+  {
+   "step": "기사 본문 확인",
+   "target": "WebFetch(언론사)",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5-1 및 지시에 따라 WebFetch DNS 차단 환경 — 시도 생략, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+   "retryable": true
+  },
+  {
+   "step": "추가 WebSearch(DC/AI 투자·CAPEX·LG U+ 관계)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회) 소진으로 검색 불가. 후속 세션에서 재시도 필요",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "FY2025 매출·영업이익·자산(감사보고서 rcept 20260401004517)",
+  "IT(CDN/MSP) 부문 매출 비중",
+  "KISA 정보보호 공시 의무 대상 여부 및 수치",
+  "CDN 대역폭·IDC 구매처(통신 3사) 및 LG U+ 관계",
+  "GS리테일(KA16) 대상 매출 여부"
+ ]
+}

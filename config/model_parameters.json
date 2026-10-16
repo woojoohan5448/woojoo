@@ -1,0 +1,845 @@
+{
+  "version": "1.0.0",
+  "unit": "억원 (KRW 100,000,000)",
+  "layer_note": "모든 값은 Layer C(경쟁·접근성 가정) 또는 Layer B(추정 모델 파라미터)이다. 사실(Layer A)이 아니다.",
+  "categories": {
+    "CONNECTIVITY": {
+      "label": "Connectivity / Network",
+      "biz_area": "Connectivity"
+    },
+    "DC_COLO": {
+      "label": "Data Center / Colocation / Hosting",
+      "biz_area": "Data Center / IDC"
+    },
+    "CLOUD": {
+      "label": "Cloud (IaaS/PaaS/MSP)",
+      "biz_area": "Cloud"
+    },
+    "AI_INFRA": {
+      "label": "AI Infrastructure (GPUaaS/AIDC)",
+      "biz_area": "AI Infrastructure"
+    },
+    "SECURITY": {
+      "label": "Security",
+      "biz_area": "Security"
+    },
+    "SI_BUILD": {
+      "label": "SI / 시스템 구축 / AX 프로젝트",
+      "biz_area": "AI Transformation / SI"
+    },
+    "IT_OPS": {
+      "label": "IT 운영·유지보수 아웃소싱",
+      "biz_area": "SI / Managed Services"
+    },
+    "SW_LICENSE": {
+      "label": "Software / License / SaaS",
+      "biz_area": "기타"
+    },
+    "HW_DEVICE": {
+      "label": "Hardware / Devices / Servers",
+      "biz_area": "기타"
+    },
+    "INTERNAL_LABOR": {
+      "label": "내부 IT 인건비",
+      "biz_area": "접근 불가"
+    }
+  },
+  "segment_family": {
+    "BANK": "FIN",
+    "CARD": "FIN",
+    "SECURITIES": "FIN",
+    "INSURANCE": "FIN",
+    "FIN_INFRA": "FIN",
+    "FIN_COOP": "FIN",
+    "FINTECH": "FINTECH",
+    "IT_SERVICE": "ITS",
+    "DEFENSE_ICT": "ITS",
+    "INTERNET_PLATFORM": "PLATFORM",
+    "CLOUD_DOMESTIC": "CLOUD_DC",
+    "HYPERSCALER": "HYPERSCALER",
+    "GLOBAL_TECH": "GLOBAL_NET",
+    "GLOBAL_CARRIER": "GLOBAL_NET",
+    "MANUFACTURING": "INDUSTRY",
+    "AUTO_IMPORT": "INDUSTRY",
+    "RETAIL": "RETAIL_SVC",
+    "SECURITY_SERVICES": "RETAIL_SVC",
+    "PUBLIC_UTILITY": "PUBLIC",
+    "DEFENSE_SPECIAL": "DEFENSE",
+    "RE_FUND": "DC_FUND"
+  },
+  "category_mix": {
+    "_id": "A-MIX",
+    "_note": "TS 내 카테고리 구성비 사전값(Tier 3 분석 가정). 계정별 검증 자료(예: KISA 정보보호 비율)가 있으면 해당 카테고리를 덮어쓰고 나머지를 비례 재조정한다.",
+    "FIN": {
+      "INTERNAL_LABOR": 0.3,
+      "IT_OPS": 0.18,
+      "SI_BUILD": 0.12,
+      "SW_LICENSE": 0.12,
+      "HW_DEVICE": 0.08,
+      "CONNECTIVITY": 0.05,
+      "DC_COLO": 0.03,
+      "CLOUD": 0.04,
+      "SECURITY": 0.07,
+      "AI_INFRA": 0.01
+    },
+    "FINTECH": {
+      "INTERNAL_LABOR": 0.4,
+      "IT_OPS": 0.06,
+      "SI_BUILD": 0.04,
+      "SW_LICENSE": 0.1,
+      "HW_DEVICE": 0.08,
+      "CONNECTIVITY": 0.05,
+      "DC_COLO": 0.07,
+      "CLOUD": 0.1,
+      "SECURITY": 0.09,
+      "AI_INFRA": 0.01
+    },
+    "ITS": {
+      "INTERNAL_LABOR": 0.4,
+      "IT_OPS": 0.05,
+      "SI_BUILD": 0.03,
+      "SW_LICENSE": 0.12,
+      "HW_DEVICE": 0.1,
+      "CONNECTIVITY": 0.06,
+      "DC_COLO": 0.1,
+      "CLOUD": 0.06,
+      "SECURITY": 0.06,
+      "AI_INFRA": 0.02
+    },
+    "PLATFORM": {
+      "INTERNAL_LABOR": 0.2,
+      "IT_OPS": 0.04,
+      "SI_BUILD": 0.02,
+      "SW_LICENSE": 0.08,
+      "HW_DEVICE": 0.2,
+      "CONNECTIVITY": 0.08,
+      "DC_COLO": 0.12,
+      "CLOUD": 0.12,
+      "SECURITY": 0.06,
+      "AI_INFRA": 0.08
+    },
+    "CLOUD_DC": {
+      "INTERNAL_LABOR": 0.18,
+      "IT_OPS": 0.02,
+      "SI_BUILD": 0.0,
+      "SW_LICENSE": 0.1,
+      "HW_DEVICE": 0.25,
+      "CONNECTIVITY": 0.1,
+      "DC_COLO": 0.15,
+      "CLOUD": 0.03,
+      "SECURITY": 0.05,
+      "AI_INFRA": 0.12
+    },
+    "HYPERSCALER": {
+      "INTERNAL_LABOR": 0.15,
+      "IT_OPS": 0.05,
+      "SI_BUILD": 0.0,
+      "SW_LICENSE": 0.02,
+      "HW_DEVICE": 0.3,
+      "CONNECTIVITY": 0.1,
+      "DC_COLO": 0.25,
+      "CLOUD": 0.0,
+      "SECURITY": 0.03,
+      "AI_INFRA": 0.1
+    },
+    "GLOBAL_NET": {
+      "INTERNAL_LABOR": 0.05,
+      "IT_OPS": 0.05,
+      "SI_BUILD": 0.0,
+      "SW_LICENSE": 0.0,
+      "HW_DEVICE": 0.15,
+      "CONNECTIVITY": 0.4,
+      "DC_COLO": 0.35,
+      "CLOUD": 0.0,
+      "SECURITY": 0.0,
+      "AI_INFRA": 0.0
+    },
+    "INDUSTRY": {
+      "INTERNAL_LABOR": 0.2,
+      "IT_OPS": 0.15,
+      "SI_BUILD": 0.18,
+      "SW_LICENSE": 0.15,
+      "HW_DEVICE": 0.12,
+      "CONNECTIVITY": 0.06,
+      "DC_COLO": 0.03,
+      "CLOUD": 0.05,
+      "SECURITY": 0.05,
+      "AI_INFRA": 0.01
+    },
+    "RETAIL_SVC": {
+      "INTERNAL_LABOR": 0.18,
+      "IT_OPS": 0.12,
+      "SI_BUILD": 0.15,
+      "SW_LICENSE": 0.1,
+      "HW_DEVICE": 0.15,
+      "CONNECTIVITY": 0.1,
+      "DC_COLO": 0.05,
+      "CLOUD": 0.08,
+      "SECURITY": 0.05,
+      "AI_INFRA": 0.02
+    },
+    "PUBLIC": {
+      "INTERNAL_LABOR": 0.2,
+      "IT_OPS": 0.15,
+      "SI_BUILD": 0.2,
+      "SW_LICENSE": 0.1,
+      "HW_DEVICE": 0.12,
+      "CONNECTIVITY": 0.08,
+      "DC_COLO": 0.04,
+      "CLOUD": 0.03,
+      "SECURITY": 0.07,
+      "AI_INFRA": 0.01
+    },
+    "DEFENSE": {
+      "INTERNAL_LABOR": 0.0,
+      "IT_OPS": 0.2,
+      "SI_BUILD": 0.1,
+      "SW_LICENSE": 0.05,
+      "HW_DEVICE": 0.15,
+      "CONNECTIVITY": 0.35,
+      "DC_COLO": 0.05,
+      "CLOUD": 0.0,
+      "SECURITY": 0.1,
+      "AI_INFRA": 0.0
+    },
+    "DC_FUND": {
+      "INTERNAL_LABOR": 0.0,
+      "IT_OPS": 0.1,
+      "SI_BUILD": 0.0,
+      "SW_LICENSE": 0.0,
+      "HW_DEVICE": 0.0,
+      "CONNECTIVITY": 0.25,
+      "DC_COLO": 0.6,
+      "CLOUD": 0.0,
+      "SECURITY": 0.05,
+      "AI_INFRA": 0.0
+    }
+  },
+  "addressability": {
+    "_id": "C-ADDR",
+    "_note": "LG U+가 현재/합리적 미래 역량으로 공략 가능한 비율. 2031_base=현 사업 포트폴리오의 자연 확장, 2031_expansion=M&A·신규 투자 전제(Strategic Expansion Case).",
+    "2026": {
+      "CONNECTIVITY": 0.95,
+      "DC_COLO": 0.9,
+      "CLOUD": 0.45,
+      "AI_INFRA": 0.55,
+      "SECURITY": 0.45,
+      "SI_BUILD": 0.2,
+      "IT_OPS": 0.2,
+      "SW_LICENSE": 0.05,
+      "HW_DEVICE": 0.1,
+      "INTERNAL_LABOR": 0.0
+    },
+    "2031_base": {
+      "CONNECTIVITY": 0.95,
+      "DC_COLO": 0.9,
+      "CLOUD": 0.5,
+      "AI_INFRA": 0.7,
+      "SECURITY": 0.5,
+      "SI_BUILD": 0.25,
+      "IT_OPS": 0.25,
+      "SW_LICENSE": 0.05,
+      "HW_DEVICE": 0.1,
+      "INTERNAL_LABOR": 0.0
+    },
+    "2031_expansion": {
+      "CONNECTIVITY": 0.95,
+      "DC_COLO": 0.95,
+      "CLOUD": 0.6,
+      "AI_INFRA": 0.8,
+      "SECURITY": 0.75,
+      "SI_BUILD": 0.35,
+      "IT_OPS": 0.35,
+      "SW_LICENSE": 0.1,
+      "HW_DEVICE": 0.15,
+      "INTERNAL_LABOR": 0.0
+    }
+  },
+  "capture_ceiling": {
+    "_id": "C-CAP",
+    "_note": "RAW 중 LG U+가 경쟁·계약 구조상 현실적으로 확보 가능한 최대 비율(상한). 이중망 정책(통신 2사 이상), 멀티벤더, 하이퍼스케일러·SI 경쟁을 반영한 기본값.",
+    "2026": {
+      "CONNECTIVITY": 0.45,
+      "DC_COLO": 0.35,
+      "CLOUD": 0.15,
+      "AI_INFRA": 0.25,
+      "SECURITY": 0.15,
+      "SI_BUILD": 0.1,
+      "IT_OPS": 0.1,
+      "SW_LICENSE": 0.1,
+      "HW_DEVICE": 0.1,
+      "INTERNAL_LABOR": 0.0
+    },
+    "2031": {
+      "CONNECTIVITY": 0.45,
+      "DC_COLO": 0.35,
+      "CLOUD": 0.18,
+      "AI_INFRA": 0.3,
+      "SECURITY": 0.18,
+      "SI_BUILD": 0.12,
+      "IT_OPS": 0.12,
+      "SW_LICENSE": 0.1,
+      "HW_DEVICE": 0.1,
+      "INTERNAL_LABOR": 0.0
+    }
+  },
+  "it_intensity_fallback": {
+    "_id": "B-INT",
+    "_note": "직접 IT 지출 근거가 없을 때만 사용하는 매출 대비 IT 지출 비율 (low/base/high). Tier 3 근거. 결과 상태는 ESTIMATED, 신뢰도 상한 35. FIN은 판관비 대비. v1.1 사전값 조정: 파일럿 KG모빌리티 실측 0.57%(사전 1.5% 과대) → INDUSTRY 하향, LG CNS 실측 8.6% → ITS 상향, PUBLIC은 전력 판매수익의 원가 통과 특성 반영 하향(분석가 판단).",
+    "FIN": [
+      0.08,
+      0.11,
+      0.14
+    ],
+    "FINTECH": [
+      0.1,
+      0.15,
+      0.2
+    ],
+    "ITS": [
+      0.03,
+      0.05,
+      0.09
+    ],
+    "PLATFORM": [
+      0.06,
+      0.09,
+      0.12
+    ],
+    "CLOUD_DC": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "INDUSTRY": [
+      0.004,
+      0.008,
+      0.015
+    ],
+    "RETAIL_SVC": [
+      0.008,
+      0.012,
+      0.02
+    ],
+    "PUBLIC": [
+      0.003,
+      0.006,
+      0.01
+    ]
+  },
+  "near_term_growth_2026": {
+    "_id": "B-G26",
+    "_note": "FY2025 실적 앵커 → FY2026 연간 예상치 환산 성장률 (low/base/high).",
+    "FIN": [
+      0.02,
+      0.05,
+      0.08
+    ],
+    "FINTECH": [
+      0.05,
+      0.1,
+      0.15
+    ],
+    "ITS": [
+      0.02,
+      0.05,
+      0.08
+    ],
+    "PLATFORM": [
+      0.03,
+      0.07,
+      0.12
+    ],
+    "CLOUD_DC": [
+      0.05,
+      0.12,
+      0.2
+    ],
+    "HYPERSCALER": [
+      0.05,
+      0.15,
+      0.25
+    ],
+    "GLOBAL_NET": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "INDUSTRY": [
+      0.0,
+      0.04,
+      0.07
+    ],
+    "RETAIL_SVC": [
+      0.0,
+      0.03,
+      0.06
+    ],
+    "PUBLIC": [
+      0.0,
+      0.03,
+      0.06
+    ],
+    "DEFENSE": [
+      0.0,
+      0.03,
+      0.05
+    ],
+    "DC_FUND": [
+      0.0,
+      0.03,
+      0.06
+    ]
+  },
+  "forecast_bridge": {
+    "_id": "B-BRIDGE",
+    "_note": "TS_2031 = TS_2026 + Organic + Digital/Cloud + AI + Infra(계정별) + Regulatory − Efficiency − Substitution. 비율은 TS_2026 대비 5년 누적치. Organic은 연 성장률(복리).",
+    "FIN": {
+      "organic_cagr": [
+        0.02,
+        0.035,
+        0.05
+      ],
+      "cloud": [
+        0.03,
+        0.06,
+        0.1
+      ],
+      "ai": [
+        0.04,
+        0.1,
+        0.18
+      ],
+      "regulatory": [
+        0.02,
+        0.04,
+        0.06
+      ],
+      "efficiency": [
+        0.08,
+        0.05,
+        0.03
+      ],
+      "substitution": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    },
+    "FINTECH": {
+      "organic_cagr": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "cloud": [
+        0.03,
+        0.06,
+        0.1
+      ],
+      "ai": [
+        0.05,
+        0.12,
+        0.2
+      ],
+      "regulatory": [
+        0.02,
+        0.04,
+        0.06
+      ],
+      "efficiency": [
+        0.08,
+        0.05,
+        0.03
+      ],
+      "substitution": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    },
+    "ITS": {
+      "organic_cagr": [
+        0.02,
+        0.04,
+        0.06
+      ],
+      "cloud": [
+        0.02,
+        0.05,
+        0.08
+      ],
+      "ai": [
+        0.05,
+        0.12,
+        0.2
+      ],
+      "regulatory": [
+        0.01,
+        0.02,
+        0.03
+      ],
+      "efficiency": [
+        0.08,
+        0.06,
+        0.04
+      ],
+      "substitution": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    },
+    "PLATFORM": {
+      "organic_cagr": [
+        0.03,
+        0.06,
+        0.09
+      ],
+      "cloud": [
+        0.02,
+        0.04,
+        0.06
+      ],
+      "ai": [
+        0.1,
+        0.25,
+        0.45
+      ],
+      "regulatory": [
+        0.01,
+        0.02,
+        0.03
+      ],
+      "efficiency": [
+        0.06,
+        0.04,
+        0.02
+      ],
+      "substitution": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    },
+    "CLOUD_DC": {
+      "organic_cagr": [
+        0.05,
+        0.1,
+        0.15
+      ],
+      "cloud": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ai": [
+        0.15,
+        0.4,
+        0.8
+      ],
+      "regulatory": [
+        0.01,
+        0.02,
+        0.03
+      ],
+      "efficiency": [
+        0.05,
+        0.03,
+        0.02
+      ],
+      "substitution": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "HYPERSCALER": {
+      "organic_cagr": [
+        0.05,
+        0.12,
+        0.2
+      ],
+      "cloud": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ai": [
+        0.2,
+        0.5,
+        1.0
+      ],
+      "regulatory": [
+        0.0,
+        0.01,
+        0.02
+      ],
+      "efficiency": [
+        0.05,
+        0.03,
+        0.02
+      ],
+      "substitution": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "GLOBAL_NET": {
+      "organic_cagr": [
+        0.0,
+        0.04,
+        0.08
+      ],
+      "cloud": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ai": [
+        0.0,
+        0.05,
+        0.1
+      ],
+      "regulatory": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "efficiency": [
+        0.05,
+        0.03,
+        0.02
+      ],
+      "substitution": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "INDUSTRY": {
+      "organic_cagr": [
+        0.01,
+        0.03,
+        0.05
+      ],
+      "cloud": [
+        0.03,
+        0.06,
+        0.1
+      ],
+      "ai": [
+        0.03,
+        0.08,
+        0.15
+      ],
+      "regulatory": [
+        0.01,
+        0.02,
+        0.03
+      ],
+      "efficiency": [
+        0.06,
+        0.04,
+        0.02
+      ],
+      "substitution": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    },
+    "RETAIL_SVC": {
+      "organic_cagr": [
+        0.0,
+        0.025,
+        0.04
+      ],
+      "cloud": [
+        0.03,
+        0.06,
+        0.1
+      ],
+      "ai": [
+        0.03,
+        0.08,
+        0.15
+      ],
+      "regulatory": [
+        0.01,
+        0.02,
+        0.03
+      ],
+      "efficiency": [
+        0.06,
+        0.04,
+        0.02
+      ],
+      "substitution": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    },
+    "PUBLIC": {
+      "organic_cagr": [
+        0.0,
+        0.025,
+        0.04
+      ],
+      "cloud": [
+        0.03,
+        0.06,
+        0.1
+      ],
+      "ai": [
+        0.02,
+        0.06,
+        0.12
+      ],
+      "regulatory": [
+        0.02,
+        0.04,
+        0.06
+      ],
+      "efficiency": [
+        0.05,
+        0.03,
+        0.02
+      ],
+      "substitution": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    },
+    "DEFENSE": {
+      "organic_cagr": [
+        0.0,
+        0.02,
+        0.04
+      ],
+      "cloud": [
+        0.0,
+        0.02,
+        0.04
+      ],
+      "ai": [
+        0.0,
+        0.03,
+        0.06
+      ],
+      "regulatory": [
+        0.01,
+        0.02,
+        0.04
+      ],
+      "efficiency": [
+        0.03,
+        0.02,
+        0.01
+      ],
+      "substitution": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "DC_FUND": {
+      "organic_cagr": [
+        0.0,
+        0.03,
+        0.06
+      ],
+      "cloud": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ai": [
+        0.0,
+        0.05,
+        0.15
+      ],
+      "regulatory": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "efficiency": [
+        0.02,
+        0.01,
+        0.0
+      ],
+      "substitution": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "increment_allocation": {
+    "_id": "B-ALLOC",
+    "_note": "브리지 증감분을 카테고리에 배분하는 규칙.",
+    "cloud": {
+      "CLOUD": 0.8,
+      "SECURITY": 0.1,
+      "CONNECTIVITY": 0.1
+    },
+    "ai": {
+      "AI_INFRA": 0.5,
+      "CLOUD": 0.2,
+      "SI_BUILD": 0.2,
+      "DC_COLO": 0.1
+    },
+    "regulatory": {
+      "SECURITY": 0.8,
+      "IT_OPS": 0.2
+    },
+    "efficiency": {
+      "INTERNAL_LABOR": 0.5,
+      "IT_OPS": 0.3,
+      "SW_LICENSE": 0.2
+    },
+    "substitution": {
+      "HW_DEVICE": 0.6,
+      "DC_COLO": 0.4
+    },
+    "infra": {
+      "DC_COLO": 0.5,
+      "AI_INFRA": 0.3,
+      "CONNECTIVITY": 0.2
+    }
+  },
+  "target_rule": {
+    "_id": "D-TGT",
+    "_note": "경영진 입력이 없을 때만 사용하는 SCENARIO 목표(=FPR_2031 × 달성률). 확정 목표가 아니며 '경영진 의사결정 필요'로 표시.",
+    "attainment_of_fpr_2031": 0.5
+  },
+  "range_width": {
+    "_id": "B-RANGE",
+    "_note": "앵커 방법별 TS 불확실성 범위(±).",
+    "KISA_IT_INVESTMENT": 0.1,
+    "DIRECT_IT_BUDGET": 0.1,
+    "FIN_STATEMENT_COMPONENTS": 0.25,
+    "REVENUE_INTENSITY": 0.4,
+    "ACCOUNT_SPECIFIC": 0.4,
+    "KISA_DERIVED": 0.15,
+    "KISA_SEC_SCALED": 0.25
+  },
+  "fx_usd_krw": 1400,
+  "_fx_note": "B-FX: 외화 환산 단일 가정(USD/KRW 1,400). 확정 환율로 교체 필요.",
+  "intensity_basis": {
+    "_note": "금융사는 영업수익에 트레이딩·이자 총액이 포함되어 왜곡 → 판관비(sga) 기준. 파일럿/전수 검토 교훈.",
+    "FIN": "sga"
+  },
+  "security_ratio_fallback": {
+    "_id": "B-SECR",
+    "value": 0.0628,
+    "basis": "KISA 공시기업 전체 평균 정보보호/IT 비율 6.28%(2025 공시, MB29)",
+    "evidence_ids": [
+      "MB-E12"
+    ]
+  }
+}

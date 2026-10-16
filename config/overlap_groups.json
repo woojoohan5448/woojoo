@@ -1,0 +1,15 @@
+{
+  "_note": "중복집계 위험 그룹. TS는 법인 별도(KISA 공시 단위) 기준이므로 계열사 간 연결 중복은 원칙적으로 없으나, 공급자-구매자 거래·연결재무 혼용·글로벌/국내 혼용 위험을 표시한다.",
+  "groups": [
+    {"group_id": "G-KB", "name": "KB금융그룹", "members": ["KA03", "KA21", "KA35"], "risk": "LOW", "type": "AFFILIATE", "note": "법인 별도 KISA 기준 합산 가능. 그룹 공동 IT(KB데이타시스템) 비용이 각 사 IT비에 배분되는지 확인 필요."},
+    {"group_id": "G-SHINHAN", "name": "신한금융그룹", "members": ["KA04", "KA18"], "risk": "LOW", "type": "AFFILIATE", "note": "신한DS 공동 비용 배분 확인."},
+    {"group_id": "G-WOORI", "name": "우리금융그룹", "members": ["KA19", "KA20"], "risk": "LOW", "type": "AFFILIATE", "note": "우리FIS 공동 비용 배분 확인."},
+    {"group_id": "G-NH", "name": "NH농협금융", "members": ["KA24", "KA39"], "risk": "LOW", "type": "AFFILIATE", "note": "농협정보시스템 공동 비용."},
+    {"group_id": "G-TOSS", "name": "비바리퍼블리카(토스) 계열", "members": ["KA27", "KA51", "KA52", "KA53"], "risk": "HIGH", "type": "CONSOLIDATION", "note": "비바리퍼블리카 연결재무에 토스증권·토스페이먼츠 포함. 반드시 별도 기준 사용."},
+    {"group_id": "G-KAKAO", "name": "카카오 계열", "members": ["KA09", "KA48"], "risk": "HIGH", "type": "CONSOLIDATION", "note": "카카오 연결재무에 카카오페이 포함. 별도 기준 사용."},
+    {"group_id": "G-GS", "name": "GS그룹", "members": ["KA15", "KA16"], "risk": "MEDIUM", "type": "SUPPLIER_BUYER", "note": "GS네오텍이 GS리테일에 클라우드/CDN 공급 시 공급자 원가와 구매자 IT비 중복 가능."},
+    {"group_id": "G-HYPERSCALER-MSP", "name": "하이퍼스케일러-MSP/SI 재판매", "members": ["KA06", "KA07", "KA08", "KA46", "KA01", "KA14", "KA15", "KA31", "KA11", "KA13"], "risk": "MEDIUM", "type": "SUPPLIER_BUYER", "note": "SI/MSP의 클라우드 재판매 원가는 TS에서 제외(자체 소비만). 하이퍼스케일러 TS는 국내 인프라 투자 기준이라 정의 상이."},
+    {"group_id": "G-DC-FUND", "name": "데이터센터 펀드-임차인", "members": ["KA28", "KA50"], "risk": "MEDIUM", "type": "SUPPLIER_BUYER", "note": "DC 펀드 운영비와 임차인(하이퍼스케일러/통신사) 지출 중복 가능."},
+    {"group_id": "G-FIN-INFRA", "name": "금융 IT 인프라 공급", "members": ["KA36", "KA34"], "risk": "MEDIUM", "type": "SUPPLIER_BUYER", "note": "코스콤·IBK시스템의 서비스 원가가 고객사 IT비와 중복될 수 있음(자체 소비만 TS)."}
+  ]
+}

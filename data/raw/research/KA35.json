@@ -1,0 +1,368 @@
+{
+  "account_id": "KA35",
+  "original_name": "(주)케이비손해보험",
+  "research_date": "2026-10-16",
+  "researcher": "agent:batch-card-ins-infra",
+  "entity": {
+    "legal_name_ko": "(주)KB손해보험",
+    "legal_name_en": "KB Insurance Co., Ltd",
+    "corp_code": "00120216",
+    "stock_code": "002550",
+    "business_reg_no": "2028148370",
+    "parent_group": "KB금융지주",
+    "related_key_accounts": [
+      "KA03",
+      "KA21"
+    ],
+    "industry_detail": "손해보험업 (업종코드 65121)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "KB손해보험 별도(OFS) 기준",
+    "exclusions": "KB금융지주, 국민은행(KA03), KB국민카드(KA21), KB데이타시스템, KB손보 자회사(KB손해사정·KB헬스케어 등 연결대상)",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('케이비손해보험') not_found → 'KB손해보험'으로 00120216 1건. get_company_info: (주)KB손해보험, 대표 구본욱, 강남구 테헤란로 117, 설립 1958-12-16(구 LIG손해보험). stock_code 002550은 과거 상장코드, 현재 corp_cls=E"
+  },
+  "facts": [
+    {
+      "fact_id": "KA35-F01",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 448919.97,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "44,891,997,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F02",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 407108.44,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "40,710,844,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F03",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 376480.92,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "37,648,092,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F04",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 136948.78,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E02",
+        "KA35-E03"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "영업수익 합계 계정 없음. 보험영업수익+투자영업수익 = 13,694,878,000,000원"
+    },
+    {
+      "fact_id": "KA35-F05",
+      "metric": "operating_revenue",
+      "fiscal_year": 2024,
+      "value": 127376.42,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E02",
+        "KA35-E03"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "FY2024 동일 산식 = 12,737,642,000,000원"
+    },
+    {
+      "fact_id": "KA35-F06",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 106109.98,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=보험수익(IFRS17). 10,610,998,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F07",
+      "metric": "other",
+      "fiscal_year": 2024,
+      "value": 100072.69,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=보험수익(IFRS17). 10,007,269,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F08",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 11549.76,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "1,154,976,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F09",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 11555.7,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "1,155,570,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F10",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 9896.97,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "989,697,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F11",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 3882.89,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E06"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=기타사업비용(판관비 아님, 참고). 388,289,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA35-F12",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 1098.63,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA35-E07"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=무형자산. 109,863,000,000원 억원 환산"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "KB금융 캡티브 IT자회사 KB데이타시스템이 그룹 시스템 구축·운영 담당(KA03-E22 참조). KB손보 위탁 범위 미확인",
+      "incumbent": "KB데이타시스템",
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA35-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)KB손해보험 사업보고서 전체재무제표 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=44,891,997,000,000 (원)",
+      "reported_value": "44,891,997,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 40,710,844,000,000 / 전전기(FY2023) 37,648,092,000,000"
+    },
+    {
+      "evidence_id": "KA35-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)KB손해보험 사업보고서 전체재무제표 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 보험영업수익 당기",
+      "quoted_statement": "account_nm=보험영업수익, thstrm_amount=11,334,108,000,000 (원)",
+      "reported_value": "11,334,108,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 10,406,503,000,000 / 전전기(FY2023) 9,964,496,000,000"
+    },
+    {
+      "evidence_id": "KA35-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)KB손해보험 사업보고서 전체재무제표 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 투자영업수익 당기",
+      "quoted_statement": "account_nm=투자영업수익, thstrm_amount=2,360,770,000,000 (원)",
+      "reported_value": "2,360,770,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 2,331,139,000,000 / 전전기(FY2023) 1,772,607,000,000"
+    },
+    {
+      "evidence_id": "KA35-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)KB손해보험 사업보고서 전체재무제표 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 보험수익 당기",
+      "quoted_statement": "account_nm=보험수익, thstrm_amount=10,610,998,000,000 (원)",
+      "reported_value": "10,610,998,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 10,007,269,000,000 / 전전기(FY2023) 9,361,924,000,000"
+    },
+    {
+      "evidence_id": "KA35-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)KB손해보험 사업보고서 전체재무제표 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 영업이익 당기",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=1,154,976,000,000 (원)",
+      "reported_value": "1,154,976,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 1,155,570,000,000 / 전전기(FY2023) 989,697,000,000"
+    },
+    {
+      "evidence_id": "KA35-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)KB손해보험 사업보고서 전체재무제표 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 기타사업비용 당기",
+      "quoted_statement": "account_nm=기타사업비용, thstrm_amount=388,289,000,000 (원)",
+      "reported_value": "388,289,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 380,949,000,000 / 전전기(FY2023) 390,033,000,000"
+    },
+    {
+      "evidence_id": "KA35-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)KB손해보험 사업보고서 전체재무제표 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003209",
+      "document_id": "20260331003209",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 재무상태표 무형자산 당기",
+      "quoted_statement": "account_nm=무형자산, thstrm_amount=109,863,000,000 (원)",
+      "reported_value": "109,863,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 126,529,000,000 / 전전기(FY2023) 68,950,000,000"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company",
+      "result": "OK",
+      "detail": "'케이비손해보험' not_found, 'KB손해보험'으로 00120216 확정",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_full_financial_statement OFS",
+      "result": "OK",
+      "detail": "rcept_no 20260331003209. IFRS17 보험사로 판관비 계정 없음(사업비가 보험서비스비용에 배분) → sga NOT_FOUND",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 KB손보 대상 검색 미실행",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "result": "BLOCKED",
+      "detail": "사전 지시에 따라 WebFetch 미시도(환경 DNS 차단, 파일럿 교훈 §5-1)",
+      "retryable": true
+    },
+    {
+      "step": "KISA 포털 직접 조회",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 §1상 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시 FY2023~2025(KB손보는 매출 기준 의무공시 대상 가능성 높음) 미확보",
+    "IT 예산·차세대·클라우드·AI 계획 미확보",
+    "판관비 상당액: IFRS17 사업비 주석에서 확인 필요",
+    "KA03/KA21과 KB데이타시스템 경유 그룹 IT 중복",
+    "LG U+ 공개 거래 미조사"
+  ]
+}

@@ -1,0 +1,9 @@
+.env
+node_modules/
+frontend/dist/
+frontend/dist-single/
+__pycache__/
+.pytest_cache/
+data/internal_inputs/*.csv
+!data/internal_inputs/management_inputs.csv
+data/raw/dart/

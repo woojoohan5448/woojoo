@@ -1,0 +1,705 @@
+{
+  "account_id": "KA16",
+  "original_name": "지에스리테일",
+  "research_date": "2026-10-16",
+  "researcher": "agent:KA16",
+  "entity": {
+    "legal_name_ko": "주식회사 지에스리테일",
+    "legal_name_en": "GS Retail Co., Ltd.",
+    "corp_code": "00140177",
+    "stock_code": "007070",
+    "business_reg_no": null,
+    "parent_group": "GS그룹 (최대주주 ㈜GS — 본 조사에서 지분 미확인)",
+    "related_key_accounts": [
+      "KA15"
+    ],
+    "industry_detail": "편의점(GS25), 슈퍼(GS더프레시), 홈쇼핑(GS샵), 퀵커머스",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "GS리테일 별도(OFS) 및 연결(CFS) 병기. FY2023→FY2024 자산 감소는 호텔 부문 분할 영향 추정(미확인)",
+    "exclusions": "GS파크24, 후레쉬서브, 분할된 호텔 법인, GS네오텍(KA15), GS ITM 등 그룹 계열",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "DART 정식명 '지에스리테일', 종목 GS리테일 007070, 코스피. GS25 점포수(~18,000)는 본 조사에서 근거 미확보. GS네오텍(KA15)과의 그룹·거래 관계 미확인."
+  },
+  "facts": [
+    {
+      "fact_id": "KA16-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 11957421688837,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F02",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 11579429708038,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F03",
+      "metric": "revenue",
+      "fiscal_year": 2023,
+      "value": 11080326094672,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 292119604403,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F05",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 256126253194,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F06",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 314455845115,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E06"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F07",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 7483097413933,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E07"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F08",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 7581643378910,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E08"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F09",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 10042015942614,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA16-E09"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F10",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 11774643877003,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E10"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F11",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 11378032037656,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E11"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F12",
+      "metric": "revenue",
+      "fiscal_year": 2023,
+      "value": 10886894680059,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E12"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F13",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 289896719474,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E13"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F14",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 252635886479,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E14"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F15",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 314982006729,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E15"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F16",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 7121336855838,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E16"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F17",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 7155550486165,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E17"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F18",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 8218723236460,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E18"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA16-F19",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 92,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA16-E30"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026-07 보도 → FY2025 실적 판단. FY2024 원값 미확보."
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA16-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "정보보호 투자 FY2025 92억(전년 대비 10%+ 증가, 보도). 보안 투자 상향 추세",
+      "amount": 92,
+      "unit": "억원",
+      "period": "2025",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA16-E30"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "[미확인] GS25 등 대규모 점포 매장망(인터넷·POS·결제 회선) 공급사 구조 미확인. LG U+ 매장망 계약 보도는 WebSearch 한도 소진으로 검색 못함.",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    },
+    {
+      "category": "IT_OPS",
+      "observation": "[미확인] 그룹 IT 계열(GS ITM) 및 GS네오텍(KA15) 역할 미확인 — KA15와 중복 위험 점검 필요.",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA16-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액 thstrm_amount",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=11,957,421,688,837 (원)",
+      "reported_value": "11,957,421,688,837",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 손익계산서 매출액 frmtrm_amount",
+      "quoted_statement": "account_nm=매출액, frmtrm_amount=11,579,429,708,038 (원)",
+      "reported_value": "11,579,429,708,038",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 손익계산서 매출액 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=매출액, bfefrmtrm_amount=11,080,326,094,672 (원)",
+      "reported_value": "11,080,326,094,672",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 thstrm_amount",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=292,119,604,403 (원)",
+      "reported_value": "292,119,604,403",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 frmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, frmtrm_amount=256,126,253,194 (원)",
+      "reported_value": "256,126,253,194",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, bfefrmtrm_amount=314,455,845,115 (원)",
+      "reported_value": "314,455,845,115",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 thstrm_amount",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=7,483,097,413,933 (원)",
+      "reported_value": "7,483,097,413,933",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-E08",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 frmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, frmtrm_amount=7,581,643,378,910 (원)",
+      "reported_value": "7,581,643,378,910",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E09",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, bfefrmtrm_amount=10,042,015,942,614 (원)",
+      "reported_value": "10,042,015,942,614",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E10",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 손익계산서 매출액 thstrm_amount",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=11,774,643,877,003 (원)",
+      "reported_value": "11,774,643,877,003",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-E11",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 손익계산서 매출액 frmtrm_amount",
+      "quoted_statement": "account_nm=매출액, frmtrm_amount=11,378,032,037,656 (원)",
+      "reported_value": "11,378,032,037,656",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E12",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 손익계산서 매출액 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=매출액, bfefrmtrm_amount=10,886,894,680,059 (원)",
+      "reported_value": "10,886,894,680,059",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E13",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 손익계산서 영업이익 thstrm_amount",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=289,896,719,474 (원)",
+      "reported_value": "289,896,719,474",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-E14",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 손익계산서 영업이익 frmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, frmtrm_amount=252,635,886,479 (원)",
+      "reported_value": "252,635,886,479",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E15",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 손익계산서 영업이익 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, bfefrmtrm_amount=314,982,006,729 (원)",
+      "reported_value": "314,982,006,729",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E16",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 재무상태표 자산총계 thstrm_amount",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=7,121,336,855,838 (원)",
+      "reported_value": "7,121,336,855,838",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA16-E17",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 재무상태표 자산총계 frmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, frmtrm_amount=7,155,550,486,165 (원)",
+      "reported_value": "7,155,550,486,165",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E18",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "GS리테일 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "document_id": "20260311004487",
+      "publication_date": "2026-03-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 재무상태표 자산총계 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, bfefrmtrm_amount=8,218,723,236,460 (원)",
+      "reported_value": "8,218,723,236,460",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA16-E30",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 인용 문장. 기사 게재 2026-07-01 → 2026년 공시 = FY2025 실적으로 판단(프로토콜 5.3). 기준연도 원문 미확인.",
+      "source_title": "유통업계 정보보호 투자 (KISA 정보보호 공시 인용)",
+      "publisher": "koreadaily.com (검색결과 표기 '한국일보')",
+      "source_url": "https://www.koreadaily.com/article/20260701234224814",
+      "publication_date": "2026-07-01",
+      "fiscal_period": "FY2025 (추정)",
+      "page_or_section": "본문 (WebSearch 인용)",
+      "quoted_statement": "같은 기간 GS리테일과 CJ올리브영도 각각 92억원, 54억원으로 전년 대비 10% 이상 정보보호 투자 규모를 키웠다.",
+      "reported_value": "92",
+      "reported_unit": "억원"
+    },
+    {
+      "evidence_id": "KA16-E31",
+      "tier": 2,
+      "source_type": "NEWS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "금액 미확보 — fact로 사용하지 않음.",
+      "source_title": "유통업계 IT투자 (byline.network, 2025-07)",
+      "publisher": "바이라인네트워크",
+      "source_url": "https://byline.network/2025/07/13_2918723-2/",
+      "publication_date": "2025-07-13",
+      "fiscal_period": "FY2024",
+      "page_or_section": "본문 (WebSearch 요약)",
+      "quoted_statement": "[WebSearch 요약, 원문 아님] GS리테일 IT 투자가 50% 가까이 늘어난 것으로 언급(2024년 기준 자료로 추정).",
+      "reported_value": null,
+      "reported_unit": null
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company 'GS리테일'",
+      "result": "OK",
+      "detail": "00140177 / 007070",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2023-2025",
+      "target": "OpenDART get_financial_account 2025 11011",
+      "result": "OK",
+      "detail": "rcept 20260311004487. CFS·OFS",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보보호 공시 검색",
+      "target": "WebSearch 2회",
+      "result": "OK",
+      "detail": "정보보호 투자 92억(FY2025 추정)만 확보. 정보기술부문 투자액·비율·인력 NOT_FOUND",
+      "retryable": true
+    },
+    {
+      "step": "KISA 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": true
+    },
+    {
+      "step": "매장망/POS/AI·LG U+ 관계·GS25 점포수",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "WebSearch 한도 소진으로 미검색",
+      "retryable": true
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch (언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1에 따라 WebFetch DNS 차단 환경 — 시도 생략, WebSearch 요약으로 진행",
+      "retryable": true
+    },
+    {
+      "step": "추가 WebSearch",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 WebSearch 호출 한도(200회, 전체 에이전트 공유) 소진으로 추가 검색 불가",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 공시 정보기술부문 투자액 FY2023-2025 및 정보보호 FY2023/24 원값",
+    "GS25 점포 수 및 매장망(인터넷·POS) 회선 공급사, LG U+ 매장망 거래 여부",
+    "GS ITM·GS네오텍(KA15)과의 IT 조달 관계(중복 위험)",
+    "AI·클라우드·차세대 시스템 투자 계획 금액"
+  ]
+}

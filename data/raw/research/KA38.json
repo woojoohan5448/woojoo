@@ -1,0 +1,111 @@
+{
+  "account_id": "KA38",
+  "original_name": "새마을금고중앙회",
+  "research_date": "2026-10-16",
+  "researcher": "agent:securities-batch",
+  "entity": {
+    "legal_name_ko": "새마을금고중앙회",
+    "legal_name_en": "Korean Federation of Community Credit Cooperatives (DART 영문 'kfcc')",
+    "corp_code": "00391090",
+    "stock_code": null,
+    "business_reg_no": "1098204731",
+    "parent_group": "새마을금고(MG) — 행정안전부 감독 상호금융",
+    "related_key_accounts": [],
+    "industry_detail": "상호금융 중앙회(업종코드 64131), FIN_COOP",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": false,
+    "economic_scope": "중앙회 단일 법인(공제·신용·전산 등 사업). 회원 금고(약 1,200여개, 각 개별 법인) 합산 수치와 구분 필요",
+    "exclusions": "개별 회원 새마을금고(DART에 다수 개별 corp_code 존재, 예: 강남새마을금고 01878064), MG손해보험 등",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('새마을금고중앙회') 단일 00391090; get_company_info: 대표 김인, 설립 1973-05-17, 강남구 봉은사로114길 20, 법인등록번호 1011440001879. OpenDART 공시(2025-01~2026-10) 및 FY2025 재무 데이터 없음(013) → DART 재무 비제출, 경영공시(kfcc.co.kr) 필요. 회원 금고 수 '1,200여개'는 일반지식(미검증)."
+  },
+  "facts": [],
+  "drivers": [],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA38-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "새마을금고중앙회 기업개황 (OpenDART get_company_info)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/corp/searchCorpL.ax?corp_code=00391090",
+      "document_id": "00391090",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=새마을금고중앙회, ceo_nm=김인, corp_cls=E, induty_code=64131, est_dt=19730517, acc_mt=12",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "source_url은 corp_code 기반 참조 경로(직접 접속 차단으로 미검증)"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "00391090",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account 00391090 2025",
+      "result": "NOT_FOUND",
+      "detail": "status 013",
+      "retryable": false
+    },
+    {
+      "step": "공시 검색",
+      "target": "OpenDART search_disclosures 2025-01-01~2026-10-16",
+      "result": "NOT_FOUND",
+      "detail": "status 013 — DART 정기공시 없음",
+      "retryable": false
+    },
+    {
+      "step": "경영공시(중앙회 재무)",
+      "target": "kfcc.co.kr",
+      "result": "NOT_FOUND",
+      "detail": "WebFetch 차단·검색 한도 소진으로 미시도",
+      "retryable": true
+    },
+    {
+      "step": "MG IT 차세대·전산센터·정보보호",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진으로 미실시",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트 전체",
+      "result": "BLOCKED",
+      "detail": "프로토콜 v1.1 및 지시에 따라 DNS 차단 환경으로 시도하지 않음; 모든 기사 근거는 WebSearch 요약 기반 SECONDARY_UNCONFIRMED",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 조사",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 이후 검색 불가. IT 계획(차세대·클라우드·AI·DC)·캡티브 SI·LG U+ 거래 검색은 미실시/미완료",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "중앙회 FY2025 경영공시(총자산·영업수익·판관비/전산비) 확보 — 중앙회 단독 vs 회원금고 합산 구분",
+    "MG 차세대 시스템(사업 기간·금액·주사업자), 전산센터(주/백업 DC 위치·이전 계획) 보도 확인",
+    "KISA 정보보호 공시 대상 여부 및 정보보호 투자액",
+    "중앙회 IT 운영 구조(자체 IT본부 vs 외주) 및 통신·IDC 공급사, LG U+ 공개 거래",
+    "행안부 감독 하 상호금융 규제(전산 보안·망분리) 관련 투자 드라이버"
+  ]
+}

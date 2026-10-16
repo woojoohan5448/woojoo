@@ -1,0 +1,570 @@
+{
+  "account_id": "KA14",
+  "original_name": "삼성에스디에스(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:it-service-KA14",
+  "entity": {
+    "legal_name_ko": "삼성에스디에스(주)",
+    "legal_name_en": "SAMSUNG SDS CO., LTD.",
+    "corp_code": "00126186",
+    "stock_code": "018260",
+    "business_reg_no": "1108128774",
+    "parent_group": "삼성그룹 (최대주주 삼성전자 등 특수관계인)",
+    "related_key_accounts": [
+      "KA12"
+    ],
+    "industry_detail": "IT서비스(클라우드/데이터센터/GPUaaS, SI·ITO, 솔루션) + 물류(첼로스퀘어). DART 업종코드 62021, 코스피(corp_cls=Y)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "재무: 연결(CFS, 물류·해외법인 포함) 및 별도(OFS) 병기. KISA 정보보호 공시는 법인(별도) 단위. 고객사향 매출원가(클라우드·GPU 재판매, 외주, 물류 운송비 포함)는 자체 IT 소비가 아님",
+    "exclusions": "삼성전자 등 삼성 계열사 IT 지출 제외. 물류(연결 매출 상당 부분)는 IT 지출과 무관. 해외 법인은 OFS 기준에서 제외",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('삼성에스디에스') → corp_code 00126186, get_company_info corp_name '삼성에스디에스(주)', 영문 SAMSUNG SDS CO., LTD., 송파구 올림픽로35길 125, 설립 1985-05-01, 결산월 12. 주의: PlayMCP 도구 설명에는 00126186이 '포스코홀딩스'로 적혀 있으나 실제 API 응답은 삼성에스디에스 — API 응답을 우선함. 53개 KA 중 삼성 계열은 KA12 에스원(삼성생명 등 삼성 계열 지분)"
+  },
+  "facts": [
+    {
+      "fact_id": "KA14-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 13929868497711,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA14-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "약 13조9,299억원. FY2024 13,828,232,033,800원, FY2023 13,276,844,204,872원. 연결에는 물류(첼로스퀘어) 매출 포함 — 부문별 분해는 미조회"
+    },
+    {
+      "fact_id": "KA14-F02",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 5464637894164,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 5,447,352,234,920원, FY2023 5,166,838,958,290원"
+    },
+    {
+      "fact_id": "KA14-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 957102744609,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA14-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 911,096,907,001원, FY2023 808,230,946,594원"
+    },
+    {
+      "fact_id": "KA14-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 520433363884,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 507,423,177,759원"
+    },
+    {
+      "fact_id": "KA14-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 13453704199195,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA14-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA14-F06",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 8476487490158,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA14-F07",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 12972765753102,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA14-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "매출 13,929,868,497,711 - 영업이익 957,102,744,609 = 12,972,765,753,102원. 대부분 고객 제공 원가(물류 운송비, 클라우드/HW 재판매, 외주) — 자체 IT 소비로 합산 금지"
+    },
+    {
+      "fact_id": "KA14-F08",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2023,
+      "value": 538360460000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "5383억6046만원 환산. 2024년 7월 보도 '지난해' → FY2023(2024 공시). FY2024·FY2025 정보기술부문 투자액은 NOT_FOUND"
+    },
+    {
+      "fact_id": "KA14-F09",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2023,
+      "value": 63205800000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "632억580만원 환산"
+    },
+    {
+      "fact_id": "KA14-F10",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2023,
+      "value": 11.7,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "검산 632.06/5383.60=11.74%로 일관"
+    },
+    {
+      "fact_id": "KA14-F11",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 651,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E05"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "보도별 651억/652억. 2025 공시 = FY2024로 판단"
+    },
+    {
+      "fact_id": "KA14-F12",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 66742000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "667억4200만원 환산. 2026-07 보도 '올해 정보보호 투자액' → 2026 공시 = FY2025로 판단. +2.4%는 FY2024 651~652억과 정합(동일 요약의 '159억원 증가'는 불일치)"
+    },
+    {
+      "fact_id": "KA14-F13",
+      "metric": "kisa_it_staff",
+      "fiscal_year": 2023,
+      "value": 2622,
+      "unit": "명",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "IT 부문 전담인력 2622명(정보보호 331.6명). 대상연도 FY2023 추정이나 요약상 연도 해석 주의 표기"
+    },
+    {
+      "fact_id": "KA14-F14",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 84.17,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA14-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "계열사(내부거래) 매출 비중: 별도 매출 5조4,646억 중 계열사 4조5,997억(전년 82.77%). 삼성전자 단일 2조3,368억(매출의 42.8%). 국내 계열사 기준 68.72%. 대외 매출은 약 15.8%(DERIVED, 100-84.17)"
+    },
+    {
+      "fact_id": "KA14-F15",
+      "metric": "dc_investment",
+      "fiscal_year": 2026,
+      "value": 50000,
+      "unit": "억원",
+      "scope": "연결, 다년 누적(2026-2031)",
+      "evidence_ids": [
+        "KA14-E08"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2031년까지 AI 인프라 5조원(총 10조원 중). 다년 누적 계획액 — 연간 환산 금지. 고객향 GPUaaS/DC 자산이며 자체 사내 IT 소비와 구분 필요"
+    },
+    {
+      "fact_id": "KA14-F16",
+      "metric": "other",
+      "fiscal_year": 2026,
+      "value": 110,
+      "unit": "MW",
+      "scope": "연결(AI 인프라 용량)",
+      "evidence_ids": [
+        "KA14-E07"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "현재 AI 인프라 110MW → 2029년 230MW → 2031년 800MW 이상 목표"
+    },
+    {
+      "fact_id": "KA14-F17",
+      "metric": "other",
+      "fiscal_year": 2029,
+      "value": 60,
+      "unit": "MW",
+      "scope": "구미 AI 데이터센터(CAPEX형, 자체 소유)",
+      "evidence_ids": [
+        "KA14-E07"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2029년 3월 가동 목표"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA14-D01",
+      "type": "AI_INVESTMENT",
+      "description": "2031년까지 총 10조원 투자(AI 인프라 5조, M&A 4조, AX·AI 서비스/플랫폼 1조). KKR 유치금 약 1.2조원 활용",
+      "amount": 100000,
+      "unit": "억원",
+      "period": "2026-2031",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA14-E08"
+      ]
+    },
+    {
+      "driver_id": "KA14-D02",
+      "type": "DC_BUILD",
+      "description": "AI 인프라 110MW→230MW(2029)→800MW 이상(2031). 구미 AI DC 60MW 2029-03 가동(CAPEX형), 동탄 DC 서관 GPU 전 층 2027 가동 예정",
+      "amount": null,
+      "unit": null,
+      "period": "2026-2031",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA14-E07",
+        "KA14-E10"
+      ]
+    },
+    {
+      "driver_id": "KA14-D03",
+      "type": "DC_BUILD",
+      "description": "해남 국가AI컴퓨팅센터(삼성SDS 컨소시엄, 출자 4000억원: 공공 1160억/민간 2840억, GPU 1만5000장, 2028 가동). 지분투자형",
+      "amount": 4000,
+      "unit": "억원",
+      "period": "2026-2028",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA14-E09"
+      ]
+    },
+    {
+      "driver_id": "KA14-D04",
+      "type": "OTHER",
+      "description": "캡티브 비중 상승(별도 내부거래 82.77%→84.17%) — 대외 확장보다 삼성 계열 의존 심화",
+      "amount": null,
+      "unit": null,
+      "period": "2024-2025",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA14-E06"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "SI_BUILD",
+      "observation": "삼성그룹 캡티브 IT서비스(별도 매출 84% 계열사, 삼성전자 42.8%). 삼성 계열사 IT 아웃소싱의 주 수급자이므로 삼성 계열 고객(KA12 에스원 등)의 IT 지출과 공급자-구매자 이중계상 위험",
+      "incumbent": "삼성SDS",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA14-E06"
+      ]
+    },
+    {
+      "category": "AI_INFRA",
+      "observation": "GPUaaS(H100/B300) 공급자 겸 국가 AI 인프라 사업자. DC 자산 보유(동탄 HPC DC, 구미 신규, 대구 공공) — LG U+ IDC/AIDC의 직접 경쟁자이자 회선 수요처",
+      "incumbent": "삼성SDS(자체)",
+      "lgu_relationship": "국가AI컴퓨팅센터 컨소시엄에 LG유플러스 불참(KT 참여) 보도. 삼성SDS–LG U+ 간 IDC·회선 계약 공개 보도는 검색 범위에서 확인 못함",
+      "evidence_ids": [
+        "KA14-E09",
+        "KA14-E10"
+      ]
+    },
+    {
+      "category": "CONNECTIVITY",
+      "observation": "해남 국가AI컴퓨팅센터 통신 파트너로 KT 참여 — 해당 사업의 회선/네트워크 인컴번트는 KT 가능성",
+      "incumbent": "KT",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA14-E09"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA14-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "삼성에스디에스 2025 사업보고서 주요계정(연결)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002989",
+      "document_id": "20260310002989",
+      "publication_date": "2026-03-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=13,929,868,497,711 / account_nm=영업이익, thstrm_amount=957,102,744,609 / account_nm=자산총계, thstrm_amount=13,453,704,199,195 (원)",
+      "reported_value": "13,929,868,497,711",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 13,828,232,033,800, 전전기 13,276,844,204,872; 전기 영업이익 911,096,907,001, 전전기 808,230,946,594"
+    },
+    {
+      "evidence_id": "KA14-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "삼성에스디에스 2025 사업보고서 주요계정(별도)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002989",
+      "document_id": "20260310002989",
+      "publication_date": "2026-03-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=5,464,637,894,164 / account_nm=영업이익, thstrm_amount=520,433,363,884 / account_nm=자산총계, thstrm_amount=8,476,487,490,158 (원)",
+      "reported_value": "5,464,637,894,164",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 5,447,352,234,920, 전전기 5,166,838,958,290; 전기 영업이익 507,423,177,759"
+    },
+    {
+      "evidence_id": "KA14-E03",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "[IT인베스트] IT서비스 기업 '정보보호 투자' 1등은 삼성SDS…가장 많이 늘린 곳은?",
+      "publisher": "디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2024070313432598020",
+      "document_id": null,
+      "publication_date": "2024-07-03",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "삼성SDS는 지난해 IT 부문에서 5383억6046만원, 정보보호 부문에서 632억580만원을 투자했다 ... IT 부문 투자액 대비 정보보호 부문 투자액은 11.7% 비중",
+      "reported_value": "5383억6046만원 / 632억580만원 / 11.7%",
+      "reported_unit": "억원/%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2024년 7월 보도 '지난해' → 2024 공시 = FY2023으로 판단. 같은 요약상 IT 전담인력 2622명, 정보보호 전담 331.6명(연도 해석 주의 언급 있음)"
+    },
+    {
+      "evidence_id": "KA14-E04",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "삼성SDS·LG CNS는 개별 공시...SK AX 사례로 본 정보보호 공개의 '한계'",
+      "publisher": "MTN 머니투데이방송",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026070114055297283",
+      "document_id": null,
+      "publication_date": "2026-07-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "KISA 정보보호 공시에 따르면 삼성SDS의 올해 정보보호 투자액은 667억4200만원으로 지난해보다 2.4%(159억원) 증가했다. 전담 인력은 391명",
+      "reported_value": "667억4200만원",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "증가율 2.4%와 증가액 159억원이 서로 불일치(요약 단계 오류 가능). 2.4% 기준 전년 약 651.8억 → 별도 보도의 2025 공시 651~652억과 정합. 같은 기사 LG CNS 302억4400만원(KA01과 일치)"
+    },
+    {
+      "evidence_id": "KA14-E05",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "[정보보호 공시] SKT·예스24 해킹사고 놀란 삼성전자 3561억 '통 큰 보험' 등 2025 공시 보도",
+      "publisher": "이코노미뉴스 외(검색 요약)",
+      "source_url": "https://m-economynews.com/mobile/article.html?no=58358",
+      "document_id": null,
+      "publication_date": "2025-08",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "2025년 8월 보도에서는 삼성SDS가 651억 투자 ... 정보보호부문 전담인력은 내부 302.9명, 외주 77.2명 등 총 380.1명; 총 임직원 수 1만 1443.3명",
+      "reported_value": "651",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "다른 검색 요약은 '2025년 7월 보도 삼성SDS(652억)'. 651~652억 범위. 2025 공시 = FY2024. 따옴표 문장은 검색 요약 문장이며 기사 원문 그대로인지 미확인"
+    },
+    {
+      "evidence_id": "KA14-E06",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "삼성SDS 내부거래 비중 84.17%…LG CNS는 57.34%",
+      "publisher": "CEO스코어데일리",
+      "source_url": "https://ceoscoredaily.com/page/view/2026062316245296286",
+      "document_id": null,
+      "publication_date": "2026-06-23",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "삼성SDS는 2024년 총 매출액 5조4474억원중에 계열사 매출액이 4조5090억원을 차지한데 이어... 내부거래 비중은 82.77%에서 84.17%로 1.40%p 상승했다. / 2025년 삼성전자와의 거래액은 2조3368억원으로, 삼성SDS 전체 내부거래의 50.8%를 차지했다. 삼성SDS 전체 매출에서 삼성전자가 차지하는 비중도 42.8%",
+      "reported_value": "84.17",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "요약상 2025 별도 매출 5조4646억 중 계열사 4조5997억. 국내 계열사 기준 68.72%(전년 66.19%). 별도 매출 5조4646억은 DART OFS 5,464,637,894,164원과 일치"
+    },
+    {
+      "evidence_id": "KA14-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "삼성SDS, \"AI 인프라 800MW 확대…두나무와 디지털 금융 협력\" [컨콜] / 삼성SDS \"2031년까지 AI인프라 800㎿로 7배 키운다\"",
+      "publisher": "MTN / 다음뉴스(언론사 재게재)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026073016125869134",
+      "document_id": null,
+      "publication_date": "2026-07-30",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-2031 계획",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "현재 110메가와트(㎿) 규모인 인공지능(AI) 인프라를 2029년 230㎿, 2031년 800㎿ 이상으로 확대한다. ... 2028년 해남 국가AI컴퓨팅센터(총사업비 2조9000억원), 2029년 3월 60㎿ 규모 구미 AI데이터센터를 차례로 가동한다.",
+      "reported_value": "110→230→800",
+      "reported_unit": "MW",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2026년 2Q 실적 컨퍼런스콜. 회사 보도자료 samsungsds.com/kr/news/ss-260730.html 존재(검색 결과 링크, 본문 미확인). CAPEX형/지분투자형/DBO형 병행, B300 GPU 90% 이상 서비스 투입"
+    },
+    {
+      "evidence_id": "KA14-E08",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "\"신사업·M&A에 10조 투자\" 삼성SDS, 경쟁력 강화 총력 (2026 1Q 실적 발표)",
+      "publisher": "헤럴드경제 / 비즈워치 / 증권사 리포트(검색 요약)",
+      "source_url": "https://www.heraldk.com/article/2026042218323453130",
+      "document_id": null,
+      "publication_date": "2026-04-22",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026-2031 계획",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "AI 인프라 부문에 5조원, 신사업(M&A) 부문에 4조원, AX·AI 서비스 및 AI 플랫폼·솔루션 분야에 1조원 등 총 10조원을 2031년까지 투자할 예정",
+      "reported_value": "10조원(AI 인프라 5조원)",
+      "reported_unit": "조원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "배분 문장은 증권사 자료 인용 요약. 재원: KKR 유치금(약 1.2조원, 매체별 상이), 보유현금, 영업현금흐름. 1Q26 일시 비용으로 영업이익 급감 보도(헤럴드경제 20260422171247)"
+    },
+    {
+      "evidence_id": "KA14-E09",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "국가 AI 컴퓨팅 센터 구축사업 '삼성SDS' 최종 선정 / 삼성SDS, 해남에 '국가 AI컴퓨팅센터' 신청",
+      "publisher": "데일리안 / 서울신문 / 바이라인네트워크(검색 요약)",
+      "source_url": "https://byline.network/2025/10/21-521/",
+      "document_id": null,
+      "publication_date": "2025-10-21",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2025-2028",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "컨소시엄에는 네이버클라우드, 삼성물산, 카카오, 삼성전자, KT, 서남해안기업도시개발, 전라남도 등이 참여 ... SK텔레콤과 LG유플러스 등은 이번 사업에 불참 ... 총 출자액은 공공 1160억원, 민간 2840억 원 등 총 4000억원 ... 2028년까지 1만5000장 규모의 AI 컴퓨팅 자원",
+      "reported_value": "4000",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "SPC '코아크(KOACC)' 2026-06-10 설립·8월 착공은 블로그 단일 출처(미반영). 총사업비는 매체별 2.5조/2.9조원 표기 상이"
+    },
+    {
+      "evidence_id": "KA14-E10",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "삼성SDS, 국가 AI 인프라 사업 잇단 선점... 연구용 GPU 자원 공급 / kharn 2026-08-14",
+      "publisher": "MTN / 한국원자력산업신문 외(검색 요약)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026081108563068126",
+      "document_id": null,
+      "publication_date": "2026-08-11",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "2026",
+      "page_or_section": "검색 요약 인용(본문 미확인)",
+      "quoted_statement": "동탄 데이터센터 서관 한 층은 이미 GPU 워크로드를 중심으로 가동 중이며, 나머지 3개 층도 국가 GPU 사업으로 예약돼 내년 중 전 층이 가동될 예정 ... 구미 AI데이터센터가 대표적인 CAPEX형 사업",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "과기정통부·IITP '2026년 AI 연구용 컴퓨팅 지원 프로젝트' GPU 공급사 선정(H100·B300). 대구 DC(공공 클라우드) 언급. 춘천·수원·상암 DC는 검색에서 확인 못함"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "'삼성에스디에스' → 00126186 (도구 설명의 포스코홀딩스 표기와 불일치, API 응답 우선)",
+      "retryable": false
+    },
+    {
+      "step": "기본 재무 FY2025",
+      "target": "OpenDART get_financial_account 11011",
+      "result": "OK",
+      "detail": "rcept_no 20260310002989. CFS/OFS 매출·영업이익·자산 확보. 부문별(IT서비스/물류) 매출, 매출원가·CAPEX 미조회",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 직접 접속 차단(환경 점검 결과)",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch(언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1: 이 환경에서 WebFetch 전 언론사 DNS 실패 — 재시도 금지 지시에 따라 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    },
+    {
+      "step": "KISA 정보기술부문 투자액 FY2024·FY2025",
+      "target": "WebSearch 3회",
+      "result": "NOT_FOUND",
+      "detail": "정보보호 투자액(651~652억, 667.42억)만 확인. IT부문 투자액 최신값은 검색 요약에 없음",
+      "retryable": true
+    },
+    {
+      "step": "LG U+ 거래 검색",
+      "target": "WebSearch '삼성SDS LG유플러스 협력 데이터센터 네트워크'",
+      "result": "NOT_FOUND",
+      "detail": "직접 거래 보도 없음. 국가AI컴퓨팅센터 LG U+ 불참만 확인",
+      "retryable": true
+    },
+    {
+      "step": "DC 위치(춘천·수원·상암)",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "동탄·구미·대구만 확인",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 정보기술부문 투자액 FY2024·FY2025(2025·2026 공시) 절대값",
+    "FY2025 정보보호 667.42억의 전년 대비 증가액 보도 불일치(2.4% vs 159억원)",
+    "연결 매출 중 IT서비스 vs 물류 부문 분해(사업보고서 부문정보)",
+    "2026 CAPEX 가이던스 및 동탄·구미 DC 회선 공급 통신사",
+    "삼성SDS–에스원(KA12) 간 특수관계자 거래액(공급자-구매자 중복)",
+    "춘천·수원·상암 DC 현황"
+  ]
+}

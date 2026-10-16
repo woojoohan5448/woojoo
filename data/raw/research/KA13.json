@@ -1,0 +1,237 @@
+{
+  "account_id": "KA13",
+  "original_name": "롯데이노베이트(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:it-service-KA13",
+  "entity": {
+    "legal_name_ko": "롯데이노베이트(주)",
+    "legal_name_en": "LOTTE INNOVATE Co.,Ltd",
+    "corp_code": "01262032",
+    "stock_code": "286940",
+    "business_reg_no": "6878100785",
+    "parent_group": "롯데그룹 (지주: 롯데지주로 알려짐 — 이 세션에서 지분 미확인)",
+    "related_key_accounts": [],
+    "industry_detail": "IT서비스(SI/SM, 데이터센터, 클라우드) + EV 충전(자회사 이비시스 연결). 구 롯데정보통신. DART 업종코드 62021, 코스피",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "재무: 연결(CFS, EV충전 자회사 등 포함)·별도(OFS) 병기. KISA 공시는 법인 단위",
+    "exclusions": "롯데 계열사 IT 지출 제외. EV 충전 자회사는 OFS에서 제외",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('롯데이노베이트') → 01262032, get_company_info '롯데이노베이트(주)', 금천구 가산디지털2로 179 롯데센터, 설립 2017-11-02(롯데지주 분할 신설법인 시점과 일치), 결산월 12"
+  },
+  "facts": [
+    {
+      "fact_id": "KA13-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 1169825277118,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA13-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 1,180,372,382,864원, FY2023 1,196,722,467,905원"
+    },
+    {
+      "fact_id": "KA13-F02",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 1036373498497,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA13-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 1,054,700,926,464원, FY2023 1,099,994,320,811원"
+    },
+    {
+      "fact_id": "KA13-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 31393431992,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA13-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 25,724,113,399원"
+    },
+    {
+      "fact_id": "KA13-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 58118961480,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA13-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 52,695,494,321원"
+    },
+    {
+      "fact_id": "KA13-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 922026345115,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA13-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA13-F06",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 808747501452,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA13-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA13-F07",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 978254537017,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA13-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "별도 매출 1,036,373,498,497 - 영업이익(손실) 58,118,961,480. 고객 제공 원가(외주·HW/SW 재판매 등) 포함 — 자체 IT 소비로 합산 금지"
+    },
+    {
+      "fact_id": "KA13-F08",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 26725529488,
+      "unit": "원",
+      "scope": "연결-별도 차이",
+      "evidence_ids": [
+        "KA13-E01",
+        "KA13-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "별도 영업이익 58,118,961,480 - 연결 31,393,431,992 = 26,725,529,488원. 연결조정 포함이므로 자회사 손실과 정확히 같지 않음. EV충전 자회사 적자 가능성(미검증)"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "롯데그룹 캡티브 SI 겸 자체 데이터센터 운영사로 알려짐(가산·용인 등 — 이 세션에서 미확인). LG U+ IDC의 경쟁자이자 회선 수요처 가능",
+      "incumbent": "롯데이노베이트(자체)",
+      "lgu_relationship": null,
+      "evidence_ids": []
+    },
+    {
+      "category": "SI_BUILD",
+      "observation": "롯데 계열 캡티브 — 계열 고객 IT 지출과 공급자-구매자 이중계상 위험. 비중 미확보",
+      "incumbent": "롯데이노베이트",
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA13-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "롯데이노베이트 2025 사업보고서 주요계정(연결)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000002",
+      "document_id": "20260313000002",
+      "publication_date": "2026-03-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=1,169,825,277,118 / account_nm=영업이익, thstrm_amount=31,393,431,992 / account_nm=자산총계, thstrm_amount=922,026,345,115 (원)",
+      "reported_value": "1,169,825,277,118",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 1,180,372,382,864, 전전기 1,196,722,467,905; 전기 영업이익 25,724,113,399. FY2023 연결 영업이익 56,946,199,405. 연결 영업이익(313.9억)이 별도(581.2억)보다 작음 → 연결 자회사(EV충전 등) 영업손실 약 267억 추정(DERIVED, 미검증)"
+    },
+    {
+      "evidence_id": "KA13-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "롯데이노베이트 2025 사업보고서 주요계정(별도)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000002",
+      "document_id": "20260313000002",
+      "publication_date": "2026-03-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=1,036,373,498,497 / account_nm=영업이익(손실), thstrm_amount=58,118,961,480 / account_nm=자산총계, thstrm_amount=808,747,501,452 (원)",
+      "reported_value": "1,036,373,498,497",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 1,054,700,926,464, 전전기 1,099,994,320,811; 전기 영업이익 52,695,494,321. 별도 IS 계정명 '영업이익(손실)'"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "'롯데이노베이트' → 01262032",
+      "retryable": false
+    },
+    {
+      "step": "기본 재무 FY2025",
+      "target": "OpenDART get_financial_account 11011",
+      "result": "OK",
+      "detail": "rcept_no 20260313000002. CFS/OFS 매출·영업이익·자산 확보. 매출원가·CAPEX·부문정보 미조회",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 직접 접속 차단(환경 점검 결과)",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch(언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1: 이 환경에서 WebFetch 전 언론사 DNS 실패 — 재시도 금지 지시에 따라 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch(KISA 공시·DC/AI 투자·캡티브 비중·LG U+ 관계)",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회/턴) 소진으로 검색 미수행 — 우회 금지 지시에 따라 미시도. 후속 세션에서 재조사 필요",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 FY2023-2025",
+      "target": "WebSearch / isds.kisa.or.kr",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진 및 포털 차단으로 정보기술부문·정보보호부문 투자액 미확보(의무공시 대상으로 알려져 있으나 이 세션에서 미확인)",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시 정보기술부문/정보보호부문 투자액·인력 FY2023-FY2025 (2024~2026 공시)",
+    "자체 DC/클라우드/AI 인프라 투자 발표(금액·MW·기간)",
+    "캡티브(계열사) 매출 비중 — 사업보고서 특수관계자 주석 또는 공정위 내부거래 보도",
+    "공개된 LG U+ 거래(IDC·회선·제휴) 보도",
+    "자체 DC 위치·용량(MW)·증설 계획",
+    "EV 충전(이비시스) 부문 매출·손익"
+  ]
+}

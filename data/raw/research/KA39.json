@@ -1,0 +1,579 @@
+{
+  "account_id": "KA39",
+  "original_name": "엔에이치투자증권(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:securities-batch",
+  "entity": {
+    "legal_name_ko": "NH투자증권(주) (DART 등록명 'NH투자증권')",
+    "legal_name_en": null,
+    "corp_code": "00120182",
+    "stock_code": "005940",
+    "business_reg_no": null,
+    "parent_group": "NH농협금융지주(농협금융)",
+    "related_key_accounts": [
+      "KA24"
+    ],
+    "industry_detail": "증권업, 유가증권시장 상장",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "NH투자증권 법인 별도(OFS). 연결(CFS) 참고치 별도",
+    "exclusions": "NH농협금융지주 및 농협은행·NH농협생명 등 계열사, NH선물 등 연결 종속회사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('엔에이치투자증권') not_found → 'NH투자증권' 검색 시 00120182(stock 005940) 단일. 원명 '엔에이치투자증권(주)'은 한글 표기 법인명으로 동일 법인 판단. KA24(NH농협금융 관련)와 그룹 중복 — 지주 연결 IT 수치와 이중계산 주의"
+  },
+  "facts": [
+    {
+      "fact_id": "KA39-F01",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 12742.17,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 1,274,217,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F02",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 8791.6,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 879,160,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 6899.33,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 689,933,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F04",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 798198.43,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 79,819,843,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 592814.76,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 59,281,476,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F06",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 534539.43,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 53,453,943,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F07",
+      "metric": "sga",
+      "fiscal_year": 2025,
+      "value": 11665.05,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 1,166,505,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F08",
+      "metric": "sga",
+      "fiscal_year": 2024,
+      "value": 10238.33,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E03"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "DART 1,023,833,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F09",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 8425.59,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순이자손익; DART 842,559,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F10",
+      "metric": "other",
+      "fiscal_year": 2024,
+      "value": 6802.61,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E04"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순이자손익; DART 680,261,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F11",
+      "metric": "other",
+      "fiscal_year": 2025,
+      "value": 11603.46,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순수수료손익; DART 1,160,346,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F12",
+      "metric": "other",
+      "fiscal_year": 2024,
+      "value": 9513.51,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E05"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "metric=순수수료손익; DART 951,351,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F13",
+      "metric": "operating_revenue",
+      "fiscal_year": 2025,
+      "value": 24407.22,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E03",
+        "KA39-E01"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "순영업수익 proxy = 영업이익 12,742.17 + 판매비와관리비 11,665.05 = 24,407.22억원. 손익계산서 순액 표시로 영업수익 총액 계정 없음"
+    },
+    {
+      "fact_id": "KA39-F14",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 833853.98,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA39-E06"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결 참고치; DART 83,385,398,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F15",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 14205.8,
+      "unit": "억원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA39-E07"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "연결 참고치; DART 1,420,580,000,000원 억원 환산"
+    },
+    {
+      "fact_id": "KA39-F16",
+      "metric": "kisa_it_investment",
+      "fiscal_year": 2024,
+      "value": 1321,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "100/1321=7.57% → 뉴스토마토 7.6% 일치. 출처 기사 특정 불가"
+    },
+    {
+      "fact_id": "KA39-F17",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2024,
+      "value": 100,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "'약 100억원'"
+    },
+    {
+      "fact_id": "KA39-F18",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 7.6,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E08",
+        "KA39-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+      "fact_id": "KA39-F19",
+      "metric": "kisa_security_investment",
+      "fiscal_year": 2025,
+      "value": 124,
+      "unit": "억원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA39-E10",
+        "KA39-E11"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026년 공시=FY2025. FY2024 약 100억 대비 +24%"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA39-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "정보보호 투자 FY2024 약 100억 → FY2025 124억(대폭 증액 보도)",
+      "amount": 124,
+      "unit": "억원",
+      "period": "2025",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA39-E10",
+        "KA39-E11"
+      ]
+    },
+    {
+      "driver_id": "KA39-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구",
+      "amount": null,
+      "unit": null,
+      "period": "2026-2027",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA39-E12"
+      ]
+    }
+  ],
+  "competitive": [],
+  "evidence": [
+    {
+      "evidence_id": "KA39-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "NH투자증권 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000771",
+      "document_id": "20260313000771",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 영업이익(손실) 당기",
+      "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=1,274,217,000,000 (원)",
+      "reported_value": "1,274,217,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 879,160,000,000 / 전전기(FY2023) 689,933,000,000"
+    },
+    {
+      "evidence_id": "KA39-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "NH투자증권 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000771",
+      "document_id": "20260313000771",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=79,819,843,000,000 (원)",
+      "reported_value": "79,819,843,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 59,281,476,000,000 / 전전기(FY2023) 53,453,943,000,000"
+    },
+    {
+      "evidence_id": "KA39-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "NH투자증권 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000771",
+      "document_id": "20260313000771",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 포괄손익계산서 판매비와관리비 당기",
+      "quoted_statement": "account_nm=판매비와관리비, thstrm_amount=1,166,505,000,000 (원)",
+      "reported_value": "1,166,505,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 1,023,833,000,000"
+    },
+    {
+      "evidence_id": "KA39-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "NH투자증권 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000771",
+      "document_id": "20260313000771",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 순이자손익 당기",
+      "quoted_statement": "account_nm=순이자손익, thstrm_amount=842,559,000,000 (원)",
+      "reported_value": "842,559,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 680,261,000,000 / 전전기(FY2023) 679,191,000,000"
+    },
+    {
+      "evidence_id": "KA39-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "NH투자증권 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=OFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000771",
+      "document_id": "20260313000771",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 순수수료손익 당기",
+      "quoted_statement": "account_nm=순수수료손익, thstrm_amount=1,160,346,000,000 (원)",
+      "reported_value": "1,160,346,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 951,351,000,000 / 전전기(FY2023) 789,204,000,000"
+    },
+    {
+      "evidence_id": "KA39-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "NH투자증권 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=CFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000771",
+      "document_id": "20260313000771",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=83,385,398,000,000 (원)",
+      "reported_value": "83,385,398,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 62,427,065,000,000 / 전전기(FY2023) 56,697,893,000,000"
+    },
+    {
+      "evidence_id": "KA39-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "NH투자증권 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, fs_div=CFS)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000771",
+      "document_id": "20260313000771",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표(CFS) 손익계산서 영업이익(손실) 당기",
+      "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=1,420,580,000,000 (원)",
+      "reported_value": "1,420,580,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기(FY2024) 901,069,000,000 / 전전기(FY2023) 725,757,000,000"
+    },
+    {
+      "evidence_id": "KA39-E08",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "잇따른 해킹 사고…증권사 정보보호 투자는 한투·토스 순",
+      "publisher": "뉴스토마토",
+      "source_url": "https://www.newstomato.com/ReadNews.aspx?no=1275684",
+      "document_id": null,
+      "publication_date": "2025-09-22",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "한국투자증권(13.2%), 토스증권(11.6%), 신한투자증권(9.2%), SK증권(8.8%), 대신증권(8.2%), NH투자증권(7.6%) 순",
+      "reported_value": "7.6",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA39-E09",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "(검색 요약 인용 — 출처 기사 특정 불가) 증권사 정보보호 투자 비교",
+      "publisher": "미상(후보: 시대경제 2025-12-05 / CEO스코어데일리 2025-07-11)",
+      "source_url": "https://www.sidae.com/article/2025120515465462727",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "WebSearch 요약 인용",
+      "quoted_statement": "지난해 말 기준 NH투자증권의 전체 IT 투자액(1321억원) 가운데 정보보호 관련 투자액은 약 100억원으로 7.6%를 차지했으며",
+      "reported_value": "1321 / 100 / 7.6",
+      "reported_unit": "억원 / 억원 / %",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 요약에 인용됐으나 문장의 출처 URL이 명시되지 않음. source_url은 후보 중 하나(https://www.ceoscoredaily.com/page/view/2025071114540686660 도 후보). 뉴스토마토 7.6%와 일치하여 FY2024로 판단"
+    },
+    {
+      "evidence_id": "KA39-E10",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "한투증권, 정보보호 투자 188억원…대형 증권사 4곳은 미공시 (알파경제 전재)",
+      "publisher": "알파경제(네이트 뉴스)",
+      "source_url": "https://m.news.nate.com/view/20260715n30712",
+      "document_id": null,
+      "publication_date": "2026-07-15",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "지난해 정보보호 투자액은 한국투자증권이 약 188억원으로 가장 많았다. 신한투자증권 171억원, NH투자증권 124억원, KB증권 122억원, 하나증권 100억원, 대신증권 56억원 순이었다.",
+      "reported_value": "124",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA39-E11",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "AI 해킹 현실화에 신한·NH투자증권, 정보보호 투자 대폭 늘렸다",
+      "publisher": "인사이트코리아",
+      "source_url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=256293",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "제목만 확인",
+      "quoted_statement": "AI 해킹 현실화에 신한·NH투자증권, 정보보호 투자 대폭 늘렸다",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA39-E12",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "금감원, 증권사에 \"IT 보안 체계 전면 재점검\" 주문",
+      "publisher": "머니투데이방송(MTN)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026100715100449066",
+      "document_id": null,
+      "publication_date": "2026-10-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "점검 대상에는 공격 IP 차단 및 피해 조사 여부를 비롯해 외부에 노출된 정보기술(IT) 자산과 서비스를 파악하고 보안을 강화했는지 여부 등 12개 항목이 포함됐다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company('엔에이치투자증권')",
+      "result": "NOT_FOUND",
+      "detail": "한글 표기명 미등록 → 'NH투자증권'으로 재검색 OK(00120182)",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account / get_full_financial_statement OFS",
+      "result": "OK",
+      "detail": "영업수익 총액 계정 없음(순액 표시)",
+      "retryable": false
+    },
+    {
+      "step": "KISA FY2025 IT 투자액·비율, FY2023",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "FY2025 정보보호 124억만 확인",
+      "retryable": true
+    },
+    {
+      "step": "IT 계획·캡티브 SI·LG U+",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진으로 미조사(농협 계열 IT 자회사 관여 여부 미확인)",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트 전체",
+      "result": "BLOCKED",
+      "detail": "프로토콜 v1.1 및 지시에 따라 DNS 차단 환경으로 시도하지 않음; 모든 기사 근거는 WebSearch 요약 기반 SECONDARY_UNCONFIRMED",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 조사",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 이후 검색 불가. IT 계획(차세대·클라우드·AI·DC)·캡티브 SI·LG U+ 거래 검색은 미실시/미완료",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "FY2025 정보기술부문 투자액·비율 KISA 원문 확인",
+    "FY2024 IT 1321억 문장 출처 기사 특정",
+    "농협 계열 IT(농협정보시스템 등) 관여 여부 및 KA24와 IT 지출 중복 범위 — 미검증 가설",
+    "차세대·클라우드·AI·DC 계획, LG U+ 거래 미조사"
+  ]
+}

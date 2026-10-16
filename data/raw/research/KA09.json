@@ -1,0 +1,485 @@
+{
+ "account_id": "KA09",
+ "original_name": "(주)카카오",
+ "research_date": "2026-10-16",
+ "researcher": "agent:platform-cloud-batch",
+ "entity": {
+  "legal_name_ko": "주식회사 카카오",
+  "legal_name_en": "Kakao Corp.",
+  "corp_code": "00258801",
+  "stock_code": "035720",
+  "business_reg_no": null,
+  "parent_group": "카카오 기업집단 (동일인 김범수)",
+  "related_key_accounts": [
+   "KA48"
+  ],
+  "industry_detail": "인터넷 플랫폼(카카오톡·광고·커머스), 자체 데이터센터 운영. 코스피",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "자체 IT 소비는 카카오 법인 별도(OFS) 기준. 연결은 참고용",
+  "exclusions": "카카오페이(KA48), 카카오뱅크, 카카오엔터테인먼트, 카카오게임즈, 카카오모빌리티 등 연결 자회사. 연결 수치 사용 시 KA48과 중복",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "corp_code 00258801(지시 및 OpenDART 도구 기본값), 2025 사업보고서 rcept_no 20260318001423 OFS/CFS 조회 성공"
+ },
+ "facts": [
+  {
+   "fact_id": "KA09-F01",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 2680861279732,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "FY2024 2,595,101,463,079원, FY2023 2,499,599,504,613원"
+  },
+  {
+   "fact_id": "KA09-F02",
+   "metric": "operating_expense",
+   "fiscal_year": 2025,
+   "value": 2240618814381,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "FY2024 2,103,131,505,031원"
+  },
+  {
+   "fact_id": "KA09-F03",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 440242465351,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "FY2024 491,969,958,048원"
+  },
+  {
+   "fact_id": "KA09-F04",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 11590369398820,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": ""
+  },
+  {
+   "fact_id": "KA09-F05",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 8099147815086,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA09-E02"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "연결에는 카카오페이(KA48)·카카오뱅크 등 포함 — 이중계상 주의"
+  },
+  {
+   "fact_id": "KA09-F06",
+   "metric": "operating_expense",
+   "fiscal_year": 2025,
+   "value": 7367111279707,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA09-E02"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": ""
+  },
+  {
+   "fact_id": "KA09-F07",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 732036535379,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA09-E02"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": ""
+  },
+  {
+   "fact_id": "KA09-F08",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 27783524545811,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA09-E02"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": ""
+  },
+  {
+   "fact_id": "KA09-F09",
+   "metric": "it_capex",
+   "fiscal_year": 2025,
+   "value": 220434252497,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E03"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "현금흐름표 유형자산의 취득(서버·DC 설비 비중 미공개; 토지·건물 포함 가능). FY2024 197,686,308,808원. 무형자산 취득 17,938,601,194원 별도"
+  },
+  {
+   "fact_id": "KA09-F10",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 479169184734,
+   "unit": "원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA09-E04"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "연결 유형자산의 취득(계열사 포함, KA48 등과 중복). FY2024 379,616,319,229원"
+  },
+  {
+   "fact_id": "KA09-F11",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2025,
+   "value": 34043390000,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E05"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "340억4339만원. 2026년 6월 보도 '지난해' → FY2025. 전년(FY2024) 313억2705만원"
+  },
+  {
+   "fact_id": "KA09-F12",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2024,
+   "value": 31327050000,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E05",
+    "KA09-E06"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "313억2705만원. 2025년 6월 보도(E07)의 246억5600만원과 충돌 — 기재정정 가능성. open_questions 참조"
+  },
+  {
+   "fact_id": "KA09-F13",
+   "metric": "kisa_security_ratio",
+   "fiscal_year": 2025,
+   "value": 4.1,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E05"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "전년 대비 0.2%p 하락 보도 → FY2024 4.3%(E06). CEO스코어(E09)는 FY2024 4.5%로 상이"
+  },
+  {
+   "fact_id": "KA09-F14",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2025,
+   "value": 830327800000,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E05"
+   ],
+   "verification_status": "DERIVED",
+   "analyst_interpretation": "340억4339만 / 4.1% = 약 8,303억원. 비율 반올림 오차로 ±1% 이상 불확실(4.05~4.15% 범위면 8,203~8,406억). 절대값 원문 미확인"
+  },
+  {
+   "fact_id": "KA09-F15",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2024,
+   "value": 707800000000,
+   "unit": "원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E08"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "검색 요약상 '2024년에는 7078억원 투입' — 정보기술부문 투자액으로 해석. 313.27/0.043=7,285억, 246.56/0.035=7,045억과 대략 정합. 확인 필요"
+  },
+  {
+   "fact_id": "KA09-F16",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 92.2,
+   "unit": "명",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA09-E05"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "정보보호 전담 인력(KISA 공시)"
+  }
+ ],
+ "drivers": [
+  {
+   "driver_id": "KA09-D01",
+   "type": "AI_INVESTMENT",
+   "description": "별도 유형자산 취득 FY2024 1,977억 → FY2025 2,204억(+11.5%), 연결 3,796억 → 4,792억(+26.2%). AI/GPU·DC 투자 구체 계획(안산 DC 증설, AI DC)은 이번 세션 검색 한도로 미확인",
+   "amount": null,
+   "unit": null,
+   "period": "2024-2025",
+   "direction": "UP",
+   "evidence_ids": [
+    "KA09-E03",
+    "KA09-E04"
+   ]
+  }
+ ],
+ "competitive": [
+  {
+   "category": "DC_COLO",
+   "observation": "자체 데이터센터 보유 여부·규모(MW)·코로케이션 병행 여부 근거 미확보(검색 한도 소진)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  },
+  {
+   "category": "SECURITY",
+   "observation": "IT 대비 정보보호 비중 4.1~4.5%로 공시기업 평균(6.2~6.5%) 하회 보도",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": [
+    "KA09-E05",
+    "KA09-E09"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA09-E01",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "카카오 2025 사업보고서 주요계정(별도)",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001423",
+   "document_id": "20260318001423",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표 손익계산서 매출액/영업비용/영업이익 당기, 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=매출액, thstrm_amount=2,680,861,279,732 / account_nm=영업비용, thstrm_amount=2,240,618,814,381 / account_nm=영업이익, thstrm_amount=440,242,465,351 / account_nm=자산총계, thstrm_amount=11,590,369,398,820 (원)",
+   "reported_value": "2,680,861,279,732",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "OFS. 전기 매출 2,595,101,463,079, 전전기 2,499,599,504,613"
+  },
+  {
+   "evidence_id": "KA09-E02",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "카카오 2025 사업보고서 주요계정(연결)",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001423",
+   "document_id": "20260318001423",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "연결재무제표 손익계산서 매출액/영업비용/영업이익 당기, 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=매출액, thstrm_amount=8,099,147,815,086 / account_nm=영업비용, thstrm_amount=7,367,111,279,707 / account_nm=영업이익, thstrm_amount=732,036,535,379 / account_nm=자산총계, thstrm_amount=27,783,524,545,811 (원)",
+   "reported_value": "8,099,147,815,086",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "CFS. 전기 매출 7,864,033,326,475"
+  },
+  {
+   "evidence_id": "KA09-E03",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "카카오 2025 사업보고서 전체재무제표(별도) 현금흐름표",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001423",
+   "document_id": "20260318001423",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표 현금흐름표 유형자산의 취득/무형자산의 취득 당기·전기",
+   "quoted_statement": "account_nm=유형자산의 취득, thstrm_amount=220434252497, frmtrm_amount=197686308808 / account_nm=무형자산의 취득, thstrm_amount=17938601194, frmtrm_amount=17626830324",
+   "reported_value": "220434252497",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "OFS"
+  },
+  {
+   "evidence_id": "KA09-E04",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "카카오 2025 사업보고서 전체재무제표(연결) 현금흐름표",
+   "publisher": "금융감독원 OpenDART (PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001423",
+   "document_id": "20260318001423",
+   "publication_date": "2026-03-18",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "연결재무제표 현금흐름표 유형자산의 취득/무형자산의 취득 당기·전기",
+   "quoted_statement": "account_nm=유형자산의 취득, thstrm_amount=479169184734, frmtrm_amount=379616319229 / account_nm=무형자산의 취득, thstrm_amount=135204140062, frmtrm_amount=126310990038",
+   "reported_value": "479169184734",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "CFS"
+  },
+  {
+   "evidence_id": "KA09-E05",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "보안 투자 평균 못 미치는 네카오…정보보호 뒷걸음질 우려",
+   "publisher": "뉴스토마토",
+   "source_url": "https://newstomato.com/ReadNews.aspx?no=1305704",
+   "document_id": null,
+   "publication_date": "2026-06",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "카카오가 지난해 정보보호 투자액을 전년 313억2705만원에서 8.7% 늘린 340억4339만원으로 확대 / 지난해 네이버와 카카오의 전체 정보기술(IT) 투자액 중 정보보호 투자가 차지하는 비중은 각각 4.5%, 4.1% / 정보보호 전담 인력은 지난해 92.2명",
+   "reported_value": "340억4339만",
+   "reported_unit": "원(억·만 표기)",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebSearch 요약. 발행일 일자 미확인(2026년 6월)"
+  },
+  {
+   "evidence_id": "KA09-E06",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "카카오 정보보호 투자 관련 보도(2025년 12월, 뉴스토마토 추정)",
+   "publisher": "뉴스토마토",
+   "source_url": "https://newstomato.com/ReadNews.aspx?no=1283877",
+   "document_id": null,
+   "publication_date": "2025-12",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2024(추정)",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "카카오는 313억3000만원으로 집계됐습니다. 전년 대비 22.2%가 증가 ... 정보기술 부문 투자액 대비 정보보호 부문 투자 비중은 ... 카카오는 4.3%",
+   "reported_value": "313억3000만",
+   "reported_unit": "원(억·만 표기)",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "검색 요약은 '2025년'으로 표기했으나 2026년 6월 기사가 동일 금액을 '전년'으로 사용 → 2025 공시(FY2024)로 판단. 기사 URL 매핑 불확실"
+  },
+  {
+   "evidence_id": "KA09-E07",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "같은 IT기업인데 정보보호 투자 천차만별…3.5% vs. 11.8%",
+   "publisher": "다음(연합 등 재전송)",
+   "source_url": "https://v.daum.net/v/20250630164200826",
+   "document_id": null,
+   "publication_date": "2025-06-30",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2024(보도 기준)",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "카카오는 지난해 정보보호부문에 246억5600만원을 투자했다고 공시 ... 회사 전체 IT 투자액의 3.5%, 매출 7조8천738억원의 0.31% 수준",
+   "reported_value": "246억5600만",
+   "reported_unit": "원(억·만 표기)",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "E06/E05의 FY2024 313억과 충돌. 매출 7조8738억은 연결 수치로 정보보호공시 대상과 범위 불일치 가능 — 기재정정('정보보호 공시 무더기 퇴짜' SBS Biz 보도) 가능성"
+  },
+  {
+   "evidence_id": "KA09-E08",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "국민메신저 카카오, 정보보호 투자는 '감소세'",
+   "publisher": "뉴스토마토",
+   "source_url": "https://newstomato.com/ReadNews.aspx?no=1266175",
+   "document_id": null,
+   "publication_date": "2025",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2024(보도 기준)",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "2024년에는 7078억원을 투입했습니다",
+   "reported_value": "7078억",
+   "reported_unit": "억원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "정보기술부문 투자 규모로 요약됨. 다른 검색에서는 7078억 미확인 — 낮은 신뢰"
+  },
+  {
+   "evidence_id": "KA09-E09",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "국내기업 정보보호 투자, 매출의 0.1%…(CEO스코어)",
+   "publisher": "SBS Biz / 아시아경제(CEO스코어)",
+   "source_url": "https://view.asiae.co.kr/article/2025070915033542260",
+   "document_id": null,
+   "publication_date": "2025-07-09",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2024",
+   "page_or_section": "본문(검색 요약 인용)",
+   "quoted_statement": "국내 플랫폼 3사 네이버, 카카오, 네이버클라우드의 지난해 IT 투자액 대비 정보보호 투자 비중은 각각 3.5%, 4.5%, 5.1%로 일반 기업 평균(6.2%)에 못 미쳤다",
+   "reported_value": "4.5",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": ""
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별/재무",
+   "target": "OpenDART get_financial_account 2025 11011",
+   "result": "OK",
+   "detail": "OFS·CFS 동시 반환, rcept 20260318001423",
+   "retryable": false
+  },
+  {
+   "step": "CAPEX",
+   "target": "OpenDART get_full_financial_statement OFS/CFS",
+   "result": "OK",
+   "detail": "현금흐름표 유형·무형자산 취득 추출",
+   "retryable": false
+  },
+  {
+   "step": "KISA 정보보호 공시",
+   "target": "WebSearch 4회",
+   "result": "OK",
+   "detail": "보안투자액·비율 확보, IT투자 절대값(FY2025) 미보도 → DERIVED. FY2024 값 보도 간 충돌",
+   "retryable": true
+  },
+  {
+   "step": "DC/AI DC 계획(안산·남양주·AI DC)",
+   "target": "WebSearch",
+   "result": "NOT_FOUND",
+   "detail": "검색 한도 소진 전 미수행",
+   "retryable": true
+  },
+  {
+   "step": "기사 본문 확인",
+   "target": "WebFetch(언론사)",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5-1 및 지시에 따라 WebFetch DNS 차단 환경 — 시도 생략, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+   "retryable": true
+  },
+  {
+   "step": "추가 WebSearch(DC/AI 투자·CAPEX·LG U+ 관계)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회) 소진으로 검색 불가. 후속 세션에서 재시도 필요",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "FY2025 정보기술부문 투자액 절대값(KISA 원문) — 현재 비율로 역산 약 8,303억",
+  "FY2024 정보보호 투자액 246.56억(2025.6 보도, 3.5%) vs 313.27억(2026.6 보도 '전년') 충돌 — 기재정정 여부",
+  "FY2023 KISA 수치 미확보",
+  "안산 데이터센터 용량(MW)·남양주/AI 데이터센터 계획·GPU 투자액 미확인",
+  "통신/회선 공급사, LG U+ 공개 거래 미확인"
+ ]
+}

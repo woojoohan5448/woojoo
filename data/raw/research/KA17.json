@@ -1,0 +1,777 @@
+{
+  "account_id": "KA17",
+  "original_name": "현대엘리베이터",
+  "research_date": "2026-10-16",
+  "researcher": "agent:KA17",
+  "entity": {
+    "legal_name_ko": "현대엘리베이터 주식회사",
+    "legal_name_en": "Hyundai Elevator Co., Ltd.",
+    "corp_code": "00164724",
+    "stock_code": "017800",
+    "business_reg_no": null,
+    "parent_group": "현대그룹(현정은 회장) — 현대엘리베이터가 사실상 지주회사 역할",
+    "related_key_accounts": [],
+    "industry_detail": "승강기 제조·설치·유지보수(원격관제 MIRI), 충주 스마트캠퍼스",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "현대엘리베이터 별도(OFS) 및 연결(CFS) 병기. 연결에는 현대무벡스 등 자회사 포함 가능",
+    "exclusions": "현대엘리베이터서비스(corp 01556481, 별도 법인), 현대무벡스, 현대아산 등 그룹 계열",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "DART find_company: 현대엘리베이터 00164724(017800), 현대엘리베이터서비스 01556481 별도 존재. FY2025 연결 매출이 FY2024 대비 감소(2.89조→2.47조) — 연결범위 변경/중단영업 재분류 가능성, 원인 미확인."
+  },
+  "facts": [
+    {
+      "fact_id": "KA17-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 2467378018763,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F02",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 2885296849309,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F03",
+      "metric": "revenue",
+      "fiscal_year": 2023,
+      "value": 2602099211882,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 209221822358,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F05",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 225738463277,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F06",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 82620342529,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E06"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F07",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 3723057252310,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E07"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F08",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 3573751146561,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E08"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F09",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 3535433379184,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA17-E09"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F10",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 1607100236100,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E10"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F11",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 1989103761388,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E11"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F12",
+      "metric": "revenue",
+      "fiscal_year": 2023,
+      "value": 1882524849559,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E12"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F13",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 150832136401,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E13"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F14",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 167742437134,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E14"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F15",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": 101128286687,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E15"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F16",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 2762804710956,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E16"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F17",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 2607542423369,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E17"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F18",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 2566964506404,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA17-E18"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA17-F19",
+      "metric": "other",
+      "fiscal_year": 2019,
+      "value": 2500,
+      "unit": "억원",
+      "scope": "법인 별도 (다년 누적, 충주 스마트캠퍼스 투자협약)",
+      "evidence_ids": [
+        "KA17-E33"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "투자협약 총액(공장·물류센터 포함, IT 비중 미상). IT 지출로 직접 사용 금지."
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA17-D01",
+      "type": "OTHER",
+      "description": "원격관제 MIRI–승강기 구간에 LG U+ M2M 회선 적용(2026-09 MOU) + AI 비상통화 실증 + 보안관제/SASE 검토 — IoT 회선 수가 관리 승강기 대수에 비례해 증가",
+      "amount": null,
+      "unit": null,
+      "period": "2026-",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA17-E30",
+        "KA17-E31"
+      ]
+    },
+    {
+      "driver_id": "KA17-D02",
+      "type": "OTHER",
+      "description": "충주 스마트캠퍼스(스마트팩토리·물류센터) 2,500억 투자협약(2019) — 공장 내 IoT·AI Vision·로봇. IT 비중 미상",
+      "amount": 2500,
+      "unit": "억원",
+      "period": "2019-(종료연도 미확인)",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA17-E33"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "승강기 원격관제(MIRI) M2M 회선에 LG U+ 적용 MOU(2026-09). MOU 이전 회선 공급사는 미확인 — 전환/신규 여부 불명.",
+      "incumbent": "LG유플러스 (2026-09 MOU 이후)",
+      "lgu_relationship": "2026-09-15 원격관제 M2M·AI 비상통화·보안 MOU; 2023 MIRI View(AI CCTV) 공동개발; 2022 IoT 안전장구 공동개발",
+      "evidence_ids": [
+        "KA17-E30",
+        "KA17-E31",
+        "KA17-E32"
+      ]
+    },
+    {
+      "category": "IT_OPS",
+      "observation": "그룹 IT 계열 현대유엔아이(2017 현대엘리베이터 2대주주 27.4%)·현대무벡스 존재. 현행 IT 운영 위탁 여부·금액 미확인.",
+      "incumbent": "현대유엔아이/현대무벡스 (미확정)",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA17-E34"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA17-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액 thstrm_amount",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=2,467,378,018,763 (원)",
+      "reported_value": "2,467,378,018,763",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 손익계산서 매출액 frmtrm_amount",
+      "quoted_statement": "account_nm=매출액, frmtrm_amount=2,885,296,849,309 (원)",
+      "reported_value": "2,885,296,849,309",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 손익계산서 매출액 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=매출액, bfefrmtrm_amount=2,602,099,211,882 (원)",
+      "reported_value": "2,602,099,211,882",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 thstrm_amount",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=209,221,822,358 (원)",
+      "reported_value": "209,221,822,358",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 frmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, frmtrm_amount=225,738,463,277 (원)",
+      "reported_value": "225,738,463,277",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, bfefrmtrm_amount=82,620,342,529 (원)",
+      "reported_value": "82,620,342,529",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 thstrm_amount",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=3,723,057,252,310 (원)",
+      "reported_value": "3,723,057,252,310",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-E08",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 frmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, frmtrm_amount=3,573,751,146,561 (원)",
+      "reported_value": "3,573,751,146,561",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E09",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, bfefrmtrm_amount=3,535,433,379,184 (원)",
+      "reported_value": "3,535,433,379,184",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E10",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 손익계산서 매출액 thstrm_amount",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=1,607,100,236,100 (원)",
+      "reported_value": "1,607,100,236,100",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-E11",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 손익계산서 매출액 frmtrm_amount",
+      "quoted_statement": "account_nm=매출액, frmtrm_amount=1,989,103,761,388 (원)",
+      "reported_value": "1,989,103,761,388",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E12",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 손익계산서 매출액 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=매출액, bfefrmtrm_amount=1,882,524,849,559 (원)",
+      "reported_value": "1,882,524,849,559",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E13",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 손익계산서 영업이익 thstrm_amount",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=150,832,136,401 (원)",
+      "reported_value": "150,832,136,401",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-E14",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 손익계산서 영업이익 frmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, frmtrm_amount=167,742,437,134 (원)",
+      "reported_value": "167,742,437,134",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E15",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 손익계산서 영업이익 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, bfefrmtrm_amount=101,128,286,687 (원)",
+      "reported_value": "101,128,286,687",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E16",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 재무상태표 자산총계 thstrm_amount",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=2,762,804,710,956 (원)",
+      "reported_value": "2,762,804,710,956",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA17-E17",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 재무상태표 자산총계 frmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, frmtrm_amount=2,607,542,423,369 (원)",
+      "reported_value": "2,607,542,423,369",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E18",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "현대엘리베이터 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "document_id": "20260318001372",
+      "publication_date": "2026-03-18",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 재무상태표 자산총계 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, bfefrmtrm_amount=2,566,964,506,404 (원)",
+      "reported_value": "2,566,964,506,404",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA17-E30",
+      "tier": 1,
+      "source_type": "PRESS_RELEASE",
+      "source_title": "LG U+, 현대엘리베이터와 AI 기반 원격관제 시스템 고도화 (LG 보도자료)",
+      "publisher": "LG",
+      "source_url": "https://www.lg.co.kr/media/release/30576",
+      "document_id": null,
+      "publication_date": "2026-09-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문 (WebSearch 요약)",
+      "quoted_statement": "[WebSearch 요약, 원문 아님] 9월 15일 서울 종로구 현대그룹빌딩에서 업무협약(MOU) 체결. LG유플러스의 사물지능통신(M2M) 서비스를 원격관제 플랫폼 MIRI와 승강기 사이 통신 구간에 적용해 원격관제의 안정성을 높인다. 승강기 비상통화장치 AI 음성인식 실증, 보안관제·U+SASE 등 MIRI 적용 검토.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 요약. 적용 승강기 대수·계약 금액 미공개(검색 범위 내)."
+    },
+    {
+      "evidence_id": "KA17-E31",
+      "tier": 2,
+      "source_type": "NEWS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 결과 요약/인용으로만 확인. 본문 직접 열람 안 함(WebFetch DNS 차단 — 프로토콜 5.1).",
+      "source_title": "LGU+, 승강기 비상통화에 AI 적용…긴급상황 선별한다",
+      "publisher": "MTN",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026091709040657863",
+      "publication_date": "2026-09-17",
+      "fiscal_period": null,
+      "page_or_section": "본문 (WebSearch 요약)",
+      "quoted_statement": "[WebSearch 요약, 원문 아님] M2M은 사람이 개입하지 않고도 기계와 기계가 무선 네트워크로 실시간 데이터를 주고받는 통신 기술. AI가 1차적으로 통화 내용을 분석하도록 할 계획.",
+      "reported_value": null,
+      "reported_unit": null
+    },
+    {
+      "evidence_id": "KA17-E32",
+      "tier": 1,
+      "source_type": "PRESS_RELEASE",
+      "source_title": "'미리뷰'로 현대엘리베이터 승객 안전 지킨다 (LG 보도자료)",
+      "publisher": "LG",
+      "source_url": "https://www.lg.co.kr/media/release/26381",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문 (WebSearch 요약)",
+      "quoted_statement": "공동개발한 인공지능 기반 승객 안전보호시스템 '미리뷰(MIRI View)'를 출시한다고 12일 밝혔다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "WebSearch 인용 조각. 검색 요약상 2023년 출시. 2022년 IoT 안전장구(안전모·안전고리·안전벨트 센서) 공동개발도 별도 보도(bizwatch 2022-10-18)."
+    },
+    {
+      "evidence_id": "KA17-E33",
+      "tier": 2,
+      "source_type": "NEWS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "충주 스마트캠퍼스(스마트팩토리·물류센터) 이전 투자. 검색 요약: 약 80% 자동화율, AI Vision·로봇·IoT 적용. 투자 기간·집행액 미확인.",
+      "source_title": "현대엘리베이터, 충북·충주시와 2500억 투자협약",
+      "publisher": "메트로서울",
+      "source_url": "https://www.metroseoul.co.kr/article/2019070300176",
+      "publication_date": "2019-07-03",
+      "fiscal_period": null,
+      "page_or_section": "본문 (WebSearch 인용)",
+      "quoted_statement": "현대엘리베이터는 3일 충청북도·충주시와 2500억원 규모의 투자협약을 체결했다고 밝혔다.",
+      "reported_value": "2500",
+      "reported_unit": "억원"
+    },
+    {
+      "evidence_id": "KA17-E34",
+      "tier": 2,
+      "source_type": "NEWS",
+      "document_id": null,
+      "accessed_at": "2026-10-16",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2017년 보도 기준. 현대유엔아이(그룹 IT서비스)·현대무벡스 설립 관계. 현재 그룹 IT 운영 주체는 미확인.",
+      "source_title": "현대엘리베이터 현대유엔아이 지분 취득 (2017)",
+      "publisher": "sateconomy 등",
+      "source_url": "https://www.sateconomy.co.kr/news/view/179588324897596",
+      "publication_date": null,
+      "fiscal_period": null,
+      "page_or_section": "본문 (WebSearch 요약)",
+      "quoted_statement": "이번 지분 이동으로 현대엘리베이터는 현정은 회장(64.20%)에 이어 현대유엔아이의 2대주주(지분율 27.4%)에 올랐다.",
+      "reported_value": "27.4",
+      "reported_unit": "%"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company",
+      "result": "OK",
+      "detail": "00164724 / 017800",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2023-2025",
+      "target": "OpenDART get_financial_account 2025 11011 (CFS+OFS)",
+      "result": "OK",
+      "detail": "rcept 20260318001372. FY2024/23은 당기 보고서 비교수치. 영업비용·판관비 미수집",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 검색",
+      "target": "WebSearch 3회 (정보보호 공시/투자 2025/IT 투자 인력)",
+      "result": "NOT_FOUND",
+      "detail": "관련 보도 없음(타사 기사만 반환)",
+      "retryable": true
+    },
+    {
+      "step": "KISA 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": true
+    },
+    {
+      "step": "IoT/LG U+ 관계",
+      "target": "WebSearch",
+      "result": "OK",
+      "detail": "2026-09 M2M MOU 확인. 원격관리 승강기 대수 미확인(유지보수 20만대 언급은 기업분석 사이트로 미채택)",
+      "retryable": true
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch (언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1에 따라 WebFetch DNS 차단 환경 — 시도 생략, WebSearch 요약으로 진행",
+      "retryable": true
+    },
+    {
+      "step": "추가 WebSearch",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 WebSearch 호출 한도(200회, 전체 에이전트 공유) 소진으로 추가 검색 불가",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시(정보기술부문/정보보호부문 투자액 FY2023-2025) — 공시 원문 또는 보도 필요",
+    "MIRI 원격관제 연결 승강기 대수(=M2M 회선 잠재 수) 및 MOU 이전 회선 공급사",
+    "FY2025 연결 매출 감소(2.89조→2.47조) 원인: 연결범위 변경/중단영업 여부",
+    "그룹 IT 운영 주체(현대무벡스/현대유엔아이) 및 위탁 규모",
+    "충주 스마트캠퍼스 투자 집행액·IT 비중"
+  ]
+}

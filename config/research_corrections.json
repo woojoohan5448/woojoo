@@ -1,0 +1,30 @@
+{
+  "_note": "원천 조사파일(data/raw/research)은 불변으로 유지하고, 분석자 검토로 발견된 메트릭 오분류·단위 오류 등을 여기서 보정한다. 모든 보정은 data_quality_issues에 기록된다.",
+  "corrections": [
+    {
+      "correction_id": "COR-001",
+      "account_id": "KA03",
+      "match": {
+        "metric": "it_budget",
+        "fiscal_year": 2026
+      },
+      "set": {
+        "metric": "security_budget"
+      },
+      "reason": "파일럿 검토: 860.75억원은 2026년 '정보보호' 예산으로 보도된 수치이며 전체 IT 예산이 아님(KISA 정보기술부문 투자액 FY2025 5,315억원과 비교 시 16% 수준). 그대로 쓰면 TS가 과소 추정됨."
+    },
+    {
+      "correction_id": "COR-002",
+      "account_id": "KA25",
+      "match": {
+        "metric": "sga",
+        "fiscal_year": 2025
+      },
+      "set": {
+        "value": 13802.0,
+        "analyst_interpretation": "판관비 4,998억 + 별도 계상 인건비 8,804억 = 13,802억(조사 파일 기재 수치 합산)"
+      },
+      "reason": "미래에셋증권 DART 손익계산서는 인건비를 판관비와 별도 계정으로 표시. 타 금융사 판관비(인건비 포함)와 정의를 맞추기 위해 합산. 원값 4,998억은 보정 이력에 보존."
+    }
+  ]
+}

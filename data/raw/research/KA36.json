@@ -1,0 +1,116 @@
+{
+  "account_id": "KA36",
+  "original_name": "(주)코스콤",
+  "research_date": "2026-10-16",
+  "researcher": "agent:batch-card-ins-infra",
+  "entity": {
+    "legal_name_ko": "(주)코스콤",
+    "legal_name_en": "KOSCOM CORPORATION",
+    "corp_code": "00159661",
+    "stock_code": null,
+    "business_reg_no": "1168102919",
+    "parent_group": "한국거래소(최대주주로 알려짐, 미검증)",
+    "related_key_accounts": [],
+    "industry_detail": "자본시장 IT 인프라·시스템 SI (업종코드 62010)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "코스콤 별도 기준(외감법인, 사업보고서 미제출)",
+    "exclusions": "한국거래소 등 주주사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "find_company('코스콤') 00159661 1건. get_company_info: (주)코스콤, 대표 윤창현, 영등포구 여의나루로4길 21, 설립 1977-09-20, 비상장(E). DART 제출은 감사보고서뿐(2025.12: 20260330000337 삼일, 2024.12: 20250331000062 한영)"
+  },
+  "facts": [],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "코스콤은 증권사 대상 금융투자 전용망·IDC·클라우드를 공급하는 사업자로 알려져 있어 LG U+의 파트너(회선 재판매·백본)이자 경쟁자(금융 전용망·IDC) 양면 관계 가능(분석가 사전지식, 출처 미확인)",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA36-E01",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "(주)코스콤 감사보고서 (2025.12) — OpenDART search_disclosures 목록",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000337",
+      "document_id": "20260330000337",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "공시목록",
+      "quoted_statement": "report_nm=감사보고서 (2025.12), rcept_no=20260330000337",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "본문 미열람(dart.fss.or.kr 직접 접속 차단). 법인·감사보고서 존재 근거로만 사용"
+    },
+    {
+      "evidence_id": "KA36-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "(주)코스콤 감사보고서 (2024.12) — OpenDART search_disclosures 목록",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250331000062",
+      "document_id": "20250331000062",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "공시목록",
+      "quoted_statement": "report_nm=감사보고서 (2024.12), rcept_no=20250331000062",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "본문 미열람(dart.fss.or.kr 직접 접속 차단). 법인·감사보고서 존재 근거로만 사용"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "단일 corp_code 반환, 확정",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025/FY2024",
+      "target": "OpenDART get_financial_account",
+      "result": "NOT_FOUND",
+      "detail": "사업보고서 미제출 외감법인 → 2025(OFS)·2024 모두 status 013 '조회된 데이타가 없습니다'. 감사보고서 본문은 dart.fss.or.kr 차단으로 미열람",
+      "retryable": true
+    },
+    {
+      "step": "매출·IT 투자 웹 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 회사 대상 검색 미실행",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트",
+      "result": "BLOCKED",
+      "detail": "사전 지시에 따라 WebFetch 미시도(환경 DNS 차단, 파일럿 교훈 §5-1)",
+      "retryable": true
+    },
+    {
+      "step": "KISA 포털 직접 조회",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 §1상 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "FY2025 매출·영업비용·자산총계: 감사보고서(20260330000337) 본문 열람 필요",
+    "KISA 정보보호 공시 의무대상 여부 및 FY2023~2025 투자액",
+    "자체 IT 소비(내부 인프라) vs 고객 판매 서비스(매출원가) 구분 필요",
+    "LG U+와의 공개 제휴·회선 거래 및 경쟁 관계(금융 클라우드·IDC) 확인",
+    "차세대 시스템·DC·클라우드 투자 계획 금액"
+  ]
+}

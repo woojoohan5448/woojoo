@@ -1,0 +1,584 @@
+{
+ "account_id": "KA19",
+ "original_name": "(주)우리은행",
+ "research_date": "2026-10-16",
+ "researcher": "agent:bank-batch2",
+ "entity": {
+  "legal_name_ko": "주식회사 우리은행",
+  "legal_name_en": "Woori Bank",
+  "corp_code": "00254045",
+  "stock_code": "000030",
+  "business_reg_no": "2018102819",
+  "parent_group": "우리금융지주",
+  "related_key_accounts": [
+   "KA20"
+  ],
+  "industry_detail": "은행 (업종코드 64121)",
+  "is_korean_entity": true,
+  "fiscal_year_end": "12",
+  "dart_available": true,
+  "economic_scope": "우리은행 별도(OFS). 지주 및 계열사 제외",
+  "exclusions": "우리금융지주, 우리카드(KA20), 우리FIS 등 계열사; 연결 종속법인",
+  "entity_status": "CONFIRMED",
+  "entity_notes": "find_company('우리은행') 단일 결과. 대표 정진완, 본점 중구 소공로 51. stock_code 000030은 과거 상장코드, 현재 비상장(corp_cls=E)."
+ },
+ "facts": [
+  {
+   "fact_id": "KA19-F01",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 4794487.38,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "DART 원 단위 479,448,738,000,000원 억원 환산"
+  },
+  {
+   "fact_id": "KA19-F02",
+   "metric": "total_assets",
+   "fiscal_year": 2024,
+   "value": 4612248.23,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "전기 금액 환산"
+  },
+  {
+   "fact_id": "KA19-F03",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 34395.35,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E02"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA19-F04",
+   "metric": "operating_income",
+   "fiscal_year": 2024,
+   "value": 36937.65,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E02"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA19-F05",
+   "metric": "sga",
+   "fiscal_year": 2025,
+   "value": 38574.62,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E05"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "계정명 '일반관리비'"
+  },
+  {
+   "fact_id": "KA19-F06",
+   "metric": "sga",
+   "fiscal_year": 2024,
+   "value": 33272.24,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E05"
+   ],
+   "verification_status": "VERIFIED"
+  },
+  {
+   "fact_id": "KA19-F07",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 69545.21,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E03"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "metric=순이자손익"
+  },
+  {
+   "fact_id": "KA19-F08",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": 9637.76,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E04"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "metric=순수수료손익"
+  },
+  {
+   "fact_id": "KA19-F09",
+   "metric": "operating_revenue",
+   "fiscal_year": 2025,
+   "value": 79182.97,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E03",
+    "KA19-E04"
+   ],
+   "verification_status": "DERIVED",
+   "analyst_interpretation": "순영업수익 proxy = 순이자손익+순수수료손익(기타영업손익·유가증권손익 제외). 손익계산서에 '영업수익' 계정 없음. FY2024 동일 산식 77149.46억원"
+  },
+  {
+   "fact_id": "KA19-F10",
+   "metric": "total_assets",
+   "fiscal_year": 2025,
+   "value": 5028461.96,
+   "unit": "억원",
+   "scope": "연결",
+   "evidence_ids": [
+    "KA19-E06"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "연결 참고치"
+  },
+  {
+   "fact_id": "KA19-F11",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2025,
+   "value": 363.81,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E09"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "363억8143만원. 2026년 공시=FY2025"
+  },
+  {
+   "fact_id": "KA19-F12",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2024,
+   "value": 444.02,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E08",
+    "KA19-E07"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "444억200만원"
+  },
+  {
+   "fact_id": "KA19-F13",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2023,
+   "value": 427.62,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E08",
+    "KA19-E11"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "427억6200만원(2024년 기사 제목 428억원과 일치)"
+  },
+  {
+   "fact_id": "KA19-F14",
+   "metric": "kisa_security_investment",
+   "fiscal_year": 2022,
+   "value": 412.16,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E08"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "412억1600만원"
+  },
+  {
+   "fact_id": "KA19-F15",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2024,
+   "value": 3596,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E07"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "교차검증 444/3596=12.35% → 보도 12.3% 일치"
+  },
+  {
+   "fact_id": "KA19-F16",
+   "metric": "kisa_it_investment",
+   "fiscal_year": 2025,
+   "value": 3998,
+   "unit": "억원",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E09"
+   ],
+   "verification_status": "DERIVED",
+   "analyst_interpretation": "산식: 정보보호 363.81억 / 9.1% ≈ 3,998억원(비율 반올림으로 약 ±22억 오차). 직접 보도값 미확인"
+  },
+  {
+   "fact_id": "KA19-F17",
+   "metric": "kisa_security_ratio",
+   "fiscal_year": 2025,
+   "value": 9.1,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E09"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED"
+  },
+  {
+   "fact_id": "KA19-F18",
+   "metric": "kisa_security_ratio",
+   "fiscal_year": 2024,
+   "value": 12.3,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E07",
+    "KA19-E08"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "12.30%"
+  },
+  {
+   "fact_id": "KA19-F19",
+   "metric": "other",
+   "fiscal_year": 2026,
+   "value": 9.9,
+   "unit": "%",
+   "scope": "법인 별도",
+   "evidence_ids": [
+    "KA19-E10"
+   ],
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "analyst_interpretation": "metric=2026 IT 예산 대비 정보보호 예산 비중(금감원 예산 자료; KISA 실적과 별개). 우리은행 정보보호 예산 금액은 미확보"
+  }
+ ],
+ "drivers": [
+  {
+   "driver_id": "KA19-D01",
+   "type": "OTHER",
+   "description": "KISA 정보기술부문 투자액 FY2024 3,596억 → FY2025 약 3,998억(DERIVED, +11%). 정보보호 투자는 444억→364억(-18%)으로 감소, 비중 12.3%→9.1%.",
+   "amount": 402,
+   "unit": "억원",
+   "period": "2024-2025",
+   "direction": "UP",
+   "evidence_ids": [
+    "KA19-E07",
+    "KA19-E09"
+   ]
+  },
+  {
+   "driver_id": "KA19-D02",
+   "type": "REGULATORY_SECURITY",
+   "description": "2026 정보보호 예산 감액 보도('신한·우리, 보안 예산 줄였다'), IT 예산 대비 9.9%. 기사 부제상 AI·클라우드 환경 대응 강화 언급(세부 금액 미확인).",
+   "amount": null,
+   "unit": null,
+   "period": "2026",
+   "direction": "DOWN",
+   "evidence_ids": [
+    "KA19-E10",
+    "KA19-E09"
+   ]
+  }
+ ],
+ "competitive": [
+  {
+   "category": "IT_OPS",
+   "observation": "우리금융 캡티브 IT자회사 우리FIS가 그룹 시스템 구축·운영 담당 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": "우리FIS",
+   "lgu_relationship": null,
+   "evidence_ids": []
+  },
+  {
+   "category": "CONNECTIVITY",
+   "observation": "LG U+ 전용회선·IDC·클라우드 공개 거래 미확인 (공개 근거 미수집: WebSearch 한도 소진. 캡티브 관계는 의뢰 브리프 기준이며 미검증)",
+   "incumbent": null,
+   "lgu_relationship": null,
+   "evidence_ids": []
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA19-E01",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)우리은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+   "document_id": "20260313000815",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=자산총계, thstrm_amount=479,448,738,000,000 (원)",
+   "reported_value": "479,448,738,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기(FY2024) 461,224,823,000,000"
+  },
+  {
+   "evidence_id": "KA19-E02",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)우리은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+   "document_id": "20260313000815",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 영업이익(손실) 당기",
+   "quoted_statement": "account_nm=영업이익(손실), thstrm_amount=3,439,535,000,000 (원)",
+   "reported_value": "3,439,535,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 3,693,765,000,000"
+  },
+  {
+   "evidence_id": "KA19-E03",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)우리은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+   "document_id": "20260313000815",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 순이자손익 당기",
+   "quoted_statement": "account_nm=순이자손익, thstrm_amount=6,954,521,000,000 (원)",
+   "reported_value": "6,954,521,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 6,741,783,000,000. 전체 재무제표(CIS) 계정명 '순이자이익'"
+  },
+  {
+   "evidence_id": "KA19-E04",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)우리은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+   "document_id": "20260313000815",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 손익계산서 순수수료손익 당기",
+   "quoted_statement": "account_nm=순수수료손익, thstrm_amount=963,776,000,000 (원)",
+   "reported_value": "963,776,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 973,163,000,000. 전체 재무제표(CIS) 계정명 '순수수료이익'"
+  },
+  {
+   "evidence_id": "KA19-E05",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)우리은행 2025 사업보고서 재무 (OpenDART get_full_financial_statement, bsns_year=2025, reprt_code=11011, OFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+   "document_id": "20260313000815",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "재무제표(OFS) 포괄손익계산서(CIS) 일반관리비 당기",
+   "quoted_statement": "account_nm=일반관리비, thstrm_amount=3,857,462,000,000 (원)",
+   "reported_value": "3,857,462,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "전기 3,327,224,000,000. 전체 재무제표에 '영업수익' 계정 없음"
+  },
+  {
+   "evidence_id": "KA19-E06",
+   "tier": 1,
+   "source_type": "DART_API",
+   "source_title": "(주)우리은행 2025 사업보고서 재무 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011, CFS)",
+   "publisher": "금융감독원 OpenDART (via PlayMCP)",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000815",
+   "document_id": "20260313000815",
+   "publication_date": null,
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "연결재무제표(CFS) 재무상태표 자산총계 당기",
+   "quoted_statement": "account_nm=자산총계, thstrm_amount=502,846,196,000,000 (원)",
+   "reported_value": "502,846,196,000,000",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "연결 참고치"
+  },
+  {
+   "evidence_id": "KA19-E07",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "우리은행, 지난 3년간 정보보호 투자액 지속 증가",
+   "publisher": "CEO스코어데일리",
+   "source_url": "https://www.ceoscoredaily.com/page/view/2025071116162385773",
+   "document_id": null,
+   "publication_date": "2025-07-11",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2024",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "제1금융권에서 2024년(2025년 공시) 정보기술 투자액 대비 정보보호 투자액 비중이 10%가 넘은 곳은 우리은행(12.3%)과 제주은행(10.8%) 두 곳에 그쳤다. 그 뒤를 토스뱅크 9.8%, 신한은행 8.6%, 국민은행 7.5% 순으로 이었다. / 우리은행은 지난해 정보기술 투자액 3596억 원 중 444억 원을 정보보호에 투입해 금액 기준으로도 1위에 올랐다. 그 뒤를 국민은행(5673억 원 중 425억 원), 신한은행(4288억 원 중 370억 원) 순으로 이었다. 토스뱅크는 967억 원 중 95억 원을",
+   "reported_value": "3596",
+   "reported_unit": "억원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. 금액 문장은 WebSearch 요약이 '2025년 공시 기준 자료'로 제시 — CEO스코어 기사 문장으로 추정되나 출처 특정 미확정. 비율 문장은 KA03-E14와 동일 인용. 300자 제한으로 말미 생략."
+  },
+  {
+   "evidence_id": "KA19-E08",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "우리은행, 지난 3년간 정보보호 투자액 지속 증가",
+   "publisher": "CEO스코어데일리",
+   "source_url": "https://www.ceoscoredaily.com/page/view/2025071116162385773",
+   "document_id": null,
+   "publication_date": "2025-07-11",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2024",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "지난 2022년 412억1600만원 수준이던 투자액은 2023년 427억6200만원으로 늘더니, 지난해에는 444억200만원까지 늘어난 것으로 나타났다. / 우리은행의 정보기술 투자 대비 정보보호 투자 비중은 12.30%에 달하는 것으로 집계됐다.",
+   "reported_value": "444억200만",
+   "reported_unit": "원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. WebSearch 요약상 '한 보도'로 인용 — 기사 제목과 내용이 일치해 CEO스코어(2025-07-11)로 추정."
+  },
+  {
+   "evidence_id": "KA19-E09",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "[은행 정보보호 경쟁력] 우리은행 — IT 예산의 9.1% 보안에 투자…AI·클라우드 환경 대응 강화",
+   "publisher": "딜사이트",
+   "source_url": "https://dealsite.co.kr/articles/165158",
+   "document_id": null,
+   "publication_date": "2026-07",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "지난해 우리은행의 정보보호 투자액은 363억8143만원으로 정보기술(IT) 투자액의 9.1%를 차지했다. KB국민은행(8.2%), 신한은행(8.0%), 하나은행(9.0%)보다 높은 수준이다.",
+   "reported_value": "363억8143만",
+   "reported_unit": "원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. WebSearch 요약상 출처가 딜사이트(165158) 또는 디지털데일리(m.ddaily.co.kr/page/view/2026070315315860244) 중 하나로 특정 불가. 제목은 요약에 인용된 부제 표현. 2026-07 게재로 '지난해'=FY2025(2026년 공시)로 해석."
+  },
+  {
+   "evidence_id": "KA19-E10",
+   "tier": 2,
+   "source_type": "NEWS",
+   "source_title": "KB국민은행 860억 vs 신한은행 405억… 신한·우리, 보안 예산 줄였다",
+   "publisher": "세계일보",
+   "source_url": "https://www.segye.com/newsView/20261016504447",
+   "document_id": null,
+   "publication_date": "2026-10-16",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2026 budget",
+   "page_or_section": "WebSearch 결과 발췌(본문 미확인)",
+   "quoted_statement": "올해 5대 시중은행의 정보보호 예산은 총 3320억원 수준이다. ... 전체 정보기술(IT) 예산에서 정보보호 예산이 차지하는 비중은 하나은행이 12.2%로 가장 높았다. 농협은행은 10.5%, 국민은행과 우리은행은 각각 9.9%, 신한은행은 9.1%였다.",
+   "reported_value": "9.9",
+   "reported_unit": "%",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "WebFetch는 프로토콜 5.1에 따라 미시도(전 언론사 DNS 실패 확인됨). WebSearch 요약에 인용된 문장만 확인. 이 세션에서 직접 검색하지 않음 — data/raw/research/_MARKET_BENCHMARKS.json MB-E13(동일 환경 선행 조사)의 인용을 재사용. 금감원 자료(박대출 의원실). 예산(계획) 기준으로 KISA 실적 투자액과 정의 다름. 은행별 예산 금액은 제목의 국민 860억·신한 405억만 확인."
+  },
+  {
+   "evidence_id": "KA19-E11",
+   "tier": 2,
+   "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+   "source_title": "우리은행, 올해 정보보호 투자 428억원 '1위'…4대銀 외 제주·토스뱅크만 자율공시",
+   "publisher": "CEO스코어데일리",
+   "source_url": "https://m.ceoscoredaily.com/page/view/2024070414431314255",
+   "document_id": null,
+   "publication_date": "2024-07-04",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2023",
+   "page_or_section": "기사 제목(KA03-E15에서 재사용)",
+   "quoted_statement": "우리은행, 올해 정보보호 투자 428억원 '1위'…4대銀 외 제주·토스뱅크만 자율공시",
+   "reported_value": "428",
+   "reported_unit": "억원",
+   "verification_status": "SECONDARY_UNCONFIRMED",
+   "notes": "KA03 파일 E15에 기록된 기사 제목 재사용. 2024년 공시=FY2023. E08의 2023년 427억6200만원과 일치."
+  }
+ ],
+ "research_log": [
+  {
+   "step": "법인 식별",
+   "target": "OpenDART find_company/get_company_info",
+   "result": "OK",
+   "detail": "corp_code 00254045 확정",
+   "retryable": false
+  },
+  {
+   "step": "재무 FY2025",
+   "target": "OpenDART get_financial_account 00254045 2025 11011 OFS",
+   "result": "OK",
+   "detail": "OFS·CFS 반환, rcept_no 20260313000815. 영업수익·판관비 미제공",
+   "retryable": false
+  },
+  {
+   "step": "영업수익·판관비",
+   "target": "OpenDART get_full_financial_statement OFS 2025",
+   "result": "OK",
+   "detail": "일반관리비(판관비) 확인. '영업수익' 계정 부재 → 순영업수익 proxy DERIVED",
+   "retryable": false
+  },
+  {
+   "step": "KISA FY2023 정보기술부문 투자액",
+   "target": "WebSearch",
+   "result": "NOT_FOUND",
+   "detail": "정보보호 투자액(427.62억)만 확인",
+   "retryable": true
+  },
+  {
+   "step": "KISA FY2025 정보기술부문 투자액 직접값",
+   "target": "WebSearch",
+   "result": "NOT_FOUND",
+   "detail": "비율 9.1%로 역산(DERIVED)",
+   "retryable": true
+  },
+  {
+   "step": "WebFetch 기사 본문",
+   "target": "언론사 사이트",
+   "result": "BLOCKED",
+   "detail": "프로토콜 5.1(전 언론사 DNS 실패)에 따라 미시도. 모든 뉴스 근거 SECONDARY_UNCONFIRMED",
+   "retryable": true
+  },
+  {
+   "step": "KISA 공시 원문",
+   "target": "isds.kisa.or.kr",
+   "result": "BLOCKED",
+   "detail": "프로토콜상 차단 호스트; 미시도",
+   "retryable": false
+  },
+  {
+   "step": "추가 WebSearch(IT예산 총액·차세대·클라우드·AI·DC·캡티브 SI·LG U+)",
+   "target": "WebSearch",
+   "result": "BLOCKED",
+   "detail": "세션 공용 WebSearch 한도(200회/turn) 소진. 6개 은행 공통 비교 검색 6회만 수행 후 차단 — 우회 검색 미시도",
+   "retryable": true
+  }
+ ],
+ "open_questions": [
+  "FY2025 KISA 정보기술부문 투자액 직접 보도값(DERIVED 약 3,998억 검증)",
+  "FY2023 정보기술부문 투자액",
+  "E09 출처가 딜사이트인지 디지털데일리인지 특정",
+  "2026 IT 예산 총액, 차세대·클라우드·AI·DC 계획 — 검색 한도 소진으로 미조사",
+  "우리FIS 위탁 범위 및 LG U+ 거래",
+  "그룹 중복: 우리카드(KA20)와 우리FIS 공동 인프라"
+ ]
+}

@@ -1,0 +1,635 @@
+{
+  "account_id": "KA05",
+  "original_name": "한국전력공사",
+  "research_date": "2026-10-16",
+  "researcher": "agent:KA05",
+  "entity": {
+    "legal_name_ko": "한국전력공사",
+    "legal_name_en": "Korea Electric Power Corporation (KEPCO)",
+    "corp_code": "00159193",
+    "stock_code": "015760",
+    "business_reg_no": null,
+    "parent_group": "공공기관(시장형 공기업) — PUBLIC_UTILITY",
+    "related_key_accounts": [],
+    "industry_detail": "전력 송배전·판매 (연결: 발전자회사·한전KDN 등)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "한전 별도(OFS) 및 연결(CFS) 병기. 연결에는 발전자회사·한전KDN 등 포함 → ICT 조달 대상 산정은 별도 기준 권장",
+    "exclusions": "한국수력원자력·발전자회사, 한전KDN(캡티브 ICT), 한전KPS, 한전기술 등 자회사",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "DART 00159193, 코스피 015760. 공공기관 조달 규정 적용, 캡티브 ICT 자회사 한전KDN 존재(일반 지식, 본 조사 근거 문서 미확보)."
+  },
+  "facts": [
+    {
+      "fact_id": "KA05-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 97429346000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F02",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 93398896000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F03",
+      "metric": "revenue",
+      "fiscal_year": 2023,
+      "value": 88219461000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 13490557000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F05",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 8364710000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E05"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F06",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": -4541648000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E06"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F07",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 254927457000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E07"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F08",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 246807795000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E08"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F09",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 239714965000000,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA05-E09"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F10",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 95536164000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E10"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F11",
+      "metric": "revenue",
+      "fiscal_year": 2024,
+      "value": 91646582000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E11"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F12",
+      "metric": "revenue",
+      "fiscal_year": 2023,
+      "value": 85825593000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E12"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F13",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 8540000000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E13"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F14",
+      "metric": "operating_income",
+      "fiscal_year": 2024,
+      "value": 3166658000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E14"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F15",
+      "metric": "operating_income",
+      "fiscal_year": 2023,
+      "value": -6503918000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E15"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F16",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 144616481000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E16"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F17",
+      "metric": "total_assets",
+      "fiscal_year": 2024,
+      "value": 139472103000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E17"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "fact_id": "KA05-F18",
+      "metric": "total_assets",
+      "fiscal_year": 2023,
+      "value": 138838342000000,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA05-E18"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "[가설·미검증] 전력 ICT·AMI·전력망 통신 상당 부분을 캡티브 자회사 한전KDN이 수행하는 것으로 알려짐 → 외부 통신사 addressability 제약. 근거 문서 미확보.",
+      "incumbent": "한전KDN (미검증)",
+      "lgu_relationship": null,
+      "evidence_ids": []
+    },
+    {
+      "category": "CONNECTIVITY",
+      "observation": "[가설·미검증] AMI 스마트미터 원격검침 통신(LTE-M/NB-IoT 등) 대규모 IoT 회선 가능성. 통신사별 점유·LG U+ 모뎀/회선 공급 보도 미확인.",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA05-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액 thstrm_amount",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=97,429,346,000,000 (원)",
+      "reported_value": "97,429,346,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 손익계산서 매출액 frmtrm_amount",
+      "quoted_statement": "account_nm=매출액, frmtrm_amount=93,398,896,000,000 (원)",
+      "reported_value": "93,398,896,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E03",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 손익계산서 매출액 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=매출액, bfefrmtrm_amount=88,219,461,000,000 (원)",
+      "reported_value": "88,219,461,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E04",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 thstrm_amount",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=13,490,557,000,000 (원)",
+      "reported_value": "13,490,557,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-E05",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 frmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, frmtrm_amount=8,364,710,000,000 (원)",
+      "reported_value": "8,364,710,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E06",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 손익계산서 영업이익 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, bfefrmtrm_amount=-4,541,648,000,000 (원)",
+      "reported_value": "-4,541,648,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E07",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 thstrm_amount",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=254,927,457,000,000 (원)",
+      "reported_value": "254,927,457,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-E08",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 frmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, frmtrm_amount=246,807,795,000,000 (원)",
+      "reported_value": "246,807,795,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E09",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (CFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "연결재무제표 재무상태표 자산총계 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, bfefrmtrm_amount=239,714,965,000,000 (원)",
+      "reported_value": "239,714,965,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E10",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 손익계산서 매출액 thstrm_amount",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=95,536,164,000,000 (원)",
+      "reported_value": "95,536,164,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-E11",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 손익계산서 매출액 frmtrm_amount",
+      "quoted_statement": "account_nm=매출액, frmtrm_amount=91,646,582,000,000 (원)",
+      "reported_value": "91,646,582,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E12",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 손익계산서 매출액 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=매출액, bfefrmtrm_amount=85,825,593,000,000 (원)",
+      "reported_value": "85,825,593,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E13",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 손익계산서 영업이익 thstrm_amount",
+      "quoted_statement": "account_nm=영업이익, thstrm_amount=8,540,000,000,000 (원)",
+      "reported_value": "8,540,000,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-E14",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 손익계산서 영업이익 frmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, frmtrm_amount=3,166,658,000,000 (원)",
+      "reported_value": "3,166,658,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E15",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 손익계산서 영업이익 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=영업이익, bfefrmtrm_amount=-6,503,918,000,000 (원)",
+      "reported_value": "-6,503,918,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E16",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표 재무상태표 자산총계 thstrm_amount",
+      "quoted_statement": "account_nm=자산총계, thstrm_amount=144,616,481,000,000 (원)",
+      "reported_value": "144,616,481,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA05-E17",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "재무제표 재무상태표 자산총계 frmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, frmtrm_amount=139,472,103,000,000 (원)",
+      "reported_value": "139,472,103,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    },
+    {
+      "evidence_id": "KA05-E18",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한국전력공사 2025 사업보고서 주요재무계정 (OFS)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "document_id": "20260317000686",
+      "publication_date": "2026-03-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2023",
+      "page_or_section": "재무제표 재무상태표 자산총계 bfefrmtrm_amount",
+      "quoted_statement": "account_nm=자산총계, bfefrmtrm_amount=138,838,342,000,000 (원)",
+      "reported_value": "138,838,342,000,000",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "FY2024/FY2023 값은 2025 사업보고서의 전기/전전기 비교 수치(재작성 가능성 있음)"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company",
+      "result": "OK",
+      "detail": "00159193 / 015760 (첫 호출 Too Many Requests, 재시도 성공)",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2023-2025",
+      "target": "OpenDART get_financial_account 2025 11011",
+      "result": "OK",
+      "detail": "rcept 20260317000686. 금액이 백만원 단위 반올림 형태(…,000,000원)",
+      "retryable": false
+    },
+    {
+      "step": "ALIO 경영공시(정보화 예산·ICT 투자)",
+      "target": "alio.go.kr",
+      "result": "BLOCKED",
+      "detail": "직접 접속 미시도(WebFetch 차단 환경), WebSearch 한도 소진",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 / AMI / 한전KDN / LG U+ LTE-M 모뎀 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 WebSearch 한도(200회) 소진으로 KEPCO 관련 웹 검색 0회 수행",
+      "retryable": true
+    },
+    {
+      "step": "나라장터 계약",
+      "target": "PlayMCP koreaProcurement",
+      "result": "NOT_FOUND",
+      "detail": "최근 7일 한정 도구라 다년 계약 확인 부적합 — 미호출",
+      "retryable": true
+    },
+    {
+      "step": "KISA 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "ALIO 경영공시: 정보화 예산·ICT 투자액(FY2023-2025)",
+    "KISA 정보보호 공시 정보기술부문/정보보호부문 투자액",
+    "AMI 보급 계획(대수·사업비·기간) 및 원격검침 통신방식/회선 공급 통신사(LG U+ LTE-M 모뎀 여부)",
+    "한전KDN 위탁 범위·수의계약 규모 → 외부 사업자 addressable 비율",
+    "전력망 통신(광·무선) 조달 구조와 통신3사 점유"
+  ]
+}

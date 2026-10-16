@@ -1,0 +1,205 @@
+{
+  "account_id": "KA52",
+  "original_name": "토스증권",
+  "research_date": "2026-10-16",
+  "researcher": "agent:securities-batch",
+  "entity": {
+    "legal_name_ko": "토스증권 주식회사",
+    "legal_name_en": "Toss Securities Co., Ltd.",
+    "corp_code": "01527984",
+    "stock_code": null,
+    "business_reg_no": "5198701431",
+    "parent_group": "비바리퍼블리카(토스)",
+    "related_key_accounts": [
+      "KA27"
+    ],
+    "industry_detail": "증권업(온라인 브로커리지), 비상장(corp_cls E)",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "토스증권 법인 별도. 재무 수치 미확보",
+    "exclusions": "비바리퍼블리카(모회사), 토스뱅크, 토스페이먼츠 등",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "get_company_info: 대표 김규빈, 설립 2018-11-27, 강남구 테헤란로 133. 사업보고서 미제출 비상장사로 OpenDART 재무 API(FY2025) 데이터 없음(013); 감사보고서·연결감사보고서(2025.12)만 접수. 대규모기업집단현황공시 제출 → 공시대상기업집단 소속. 비바리퍼블리카(KA27) 연결 종속회사 여부는 원문 미확인(PROBABLE). 교차참조: KA27 조사파일은 비바리퍼블리카 지분 약 97%·연결 포함으로 기록(KA27-E12, 본 에이전트 미검증). 토스증권 공시 '특수관계인으로부터주식의취득'(20260831001451)은 KA27의 '특수관계인에대한주식의처분'(20260831001453)과 대응 — 모회사 지분 거래."
+  },
+  "facts": [
+    {
+      "fact_id": "KA52-F01",
+      "metric": "kisa_security_ratio",
+      "fiscal_year": 2024,
+      "value": 11.6,
+      "unit": "%",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA52-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "증권사 중 2위. 정보보호 내부인력 비중 1위"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA52-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구",
+      "amount": null,
+      "unit": null,
+      "period": "2026-2027",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA52-E04"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "정보보호 인력 중 내부 인력 비중이 증권사 중 최고(내재화 운영) — 외주 SI 의존 낮음 시사",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA52-E03"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA52-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "토스증권 공시검색 (OpenDART search_disclosures 2026-01-01~2026-10-16)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260401004239",
+      "document_id": "20260401004239",
+      "publication_date": "2026-04-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "공시목록",
+      "quoted_statement": "report_nm=감사보고서 (2025.12), rcept_no=20260401004239, flr_nm=삼일회계법인 / report_nm=연결감사보고서 (2025.12), rcept_no=20260401004244 / report_nm=대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)], rcept_no=20260528000502",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "재무 수치는 감사보고서 원문(dart.fss.or.kr 차단)에서만 확인 가능"
+    },
+    {
+      "evidence_id": "KA52-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "(주)비바리퍼블리카 사업보고서 주요재무계정 (OpenDART get_financial_account, bsns_year=2025, reprt_code=11011)",
+      "publisher": "금융감독원 OpenDART (via PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003713",
+      "document_id": "20260331003713",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 재무상태표 예수부채 당기",
+      "quoted_statement": "account_nm=예수부채, thstrm_amount=6,196,371,764,444 (원) [CFS] / 연결 매출액 2,698,320,674,904 vs 별도 매출액 667,170,757,364",
+      "reported_value": "6,196,371,764,444",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "모회사 연결에 예수부채(증권 투자자예수금 성격 추정) 존재 → 토스증권 연결 시사(해석)"
+    },
+    {
+      "evidence_id": "KA52-E03",
+      "tier": 2,
+      "source_type": "KISA_DISCLOSURE_VIA_PRESS",
+      "source_title": "잇따른 해킹 사고…증권사 정보보호 투자는 한투·토스 순",
+      "publisher": "뉴스토마토",
+      "source_url": "https://www.newstomato.com/ReadNews.aspx?no=1275684",
+      "document_id": null,
+      "publication_date": "2025-09-22",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2024",
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "한국투자증권(13.2%), 토스증권(11.6%), 신한투자증권(9.2%) ... / 정보보호 부문에 내부 인력을 가장 많이 고용한 곳은 토스증권이었습니다.",
+      "reported_value": "11.6",
+      "reported_unit": "%",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "2025년 공시=FY2024"
+    },
+    {
+      "evidence_id": "KA52-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "금감원, 증권사에 \"IT 보안 체계 전면 재점검\" 주문",
+      "publisher": "머니투데이방송(MTN)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2026100715100449066",
+      "document_id": null,
+      "publication_date": "2026-10-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "본문(WebSearch 요약 인용)",
+      "quoted_statement": "점검 대상에는 공격 IP 차단 및 피해 조사 여부를 비롯해 외부에 노출된 정보기술(IT) 자산과 서비스를 파악하고 보안을 강화했는지 여부 등 12개 항목이 포함됐다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "01527984",
+      "retryable": false
+    },
+    {
+      "step": "재무 FY2025",
+      "target": "OpenDART get_financial_account OFS 2025 11011",
+      "result": "NOT_FOUND",
+      "detail": "status 013 — 사업보고서 미제출(비상장). get_full_financial_statement OFS도 013",
+      "retryable": false
+    },
+    {
+      "step": "재무(감사보고서 원문)",
+      "target": "dart.fss.or.kr rcpNo=20260401004239",
+      "result": "BLOCKED",
+      "detail": "직접 접속 차단",
+      "retryable": true
+    },
+    {
+      "step": "모회사 연결 여부",
+      "target": "OpenDART get_financial_account 비바리퍼블리카 01212921",
+      "result": "OK",
+      "detail": "연결 예수부채 6.2조원 존재(연결 시사), 종속회사 목록은 미확인",
+      "retryable": true
+    },
+    {
+      "step": "KISA FY2025·금액",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "FY2024 비율 11.6%만 확인. 정보기술·정보보호 투자 금액 미확인",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 기사 본문 확인",
+      "target": "언론사 사이트 전체",
+      "result": "BLOCKED",
+      "detail": "프로토콜 v1.1 및 지시에 따라 DNS 차단 환경으로 시도하지 않음; 모든 기사 근거는 WebSearch 요약 기반 SECONDARY_UNCONFIRMED",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 조사",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회) 소진으로 이후 검색 불가. IT 계획(차세대·클라우드·AI·DC)·캡티브 SI·LG U+ 거래 검색은 미실시/미완료",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜 1절: 직접 접속 차단",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "KA27 조사파일(KA27-E13, 디지털데일리 2026-06-02 '토스증권, 몸집 커졌는데 보안 투자 비중은 뒷걸음')에 토스증권 정보기술부문 투자액 915억2461만원·정보보호 82억8927만원(공시연도 2026 → FY2025 추정) 기록 — 본 에이전트는 원문/검색결과 미확인으로 fact 미반영. 재검색 시 KA52 fact로 편입 필요",
+    "FY2025 영업수익·판관비·자산총계: 감사보고서(20260401004239) 원문 또는 보도로 확인 필요",
+    "KISA 정보기술·정보보호 투자 금액(FY2023–2025)",
+    "비바리퍼블리카(KA27) 연결 종속회사 여부·지분율 확인 — KA27 연결 IT 지출과 이중계산 위험",
+    "해외주식 거래 인프라·클라우드(퍼블릭) 사용 및 LG U+ 거래 미조사",
+    "특수관계인으로부터 주식 취득 공시(2026-08-31, 정정 2026-10-13) 내용 확인"
+  ]
+}

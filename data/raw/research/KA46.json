@@ -1,0 +1,161 @@
+{
+  "account_id": "KA46",
+  "original_name": "한국오라클",
+  "research_date": "2026-10-16",
+  "researcher": "agent:hyperscaler-KA46",
+  "entity": {
+    "legal_name_ko": "한국오라클 유한회사",
+    "legal_name_en": "Oracle Systems Korea",
+    "corp_code": "00203519",
+    "stock_code": null,
+    "business_reg_no": "1168127389",
+    "parent_group": "Oracle Corporation (미국)",
+    "related_key_accounts": [],
+    "industry_detail": "DB·애플리케이션 SW 및 OCI 클라우드 한국 판매 법인. DART 업종 58221, 설립 1989-11-01, 5월 결산",
+    "is_korean_entity": true,
+    "fiscal_year_end": "05",
+    "dart_available": true,
+    "economic_scope": "한국오라클 법인 + OCI 한국 리전(서울·춘천으로 알려짐, 본 조사에서 원문 미확인) 인프라. Oracle 글로벌은 context only",
+    "exclusions": "오라클랜드·오라클엔터테인먼트(무관), Oracle 글로벌",
+    "entity_status": "PROBABLE",
+    "entity_notes": "DART 감사보고서 FY2023.05~FY2026.05 공시(최신 2026-09-14 기재정정). 재무 API status 013. OCI 리전 DC 임차 계약 주체는 해외 Oracle 인프라 법인일 가능성."
+  },
+  "facts": [
+    {
+      "fact_id": "KA46-F01",
+      "metric": "revenue",
+      "fiscal_year": 2026,
+      "value": 17190,
+      "unit": "USD_mn",
+      "scope": "글로벌(Oracle Corp. FY2026 3분기 단일 분기)",
+      "evidence_ids": [
+        "KA46-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "분기값, 연간 아님. context only"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "OCI 서울/춘천 리전 호스팅 IDC(LG U+ 등) 확인 실패 — WebSearch 한도 소진",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA46-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "OpenDART company.json 기업개황",
+      "publisher": "금융감독원 OpenDART (PlayMCP 경유)",
+      "source_url": "https://opendart.fss.or.kr/api/company.json?corp_code=00203519",
+      "document_id": "00203519",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=한국오라클 유한회사, corp_name_eng=Oracle Systems Korea, ceo_nm=강병재, corp_cls=E, bizr_no=1168127389, induty_code=58221, est_dt=19891101, acc_mt=05, adres=서울특별시 강남구 영동대로 517 (아셈타워) 12,15,16,36층",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA46-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "한국오라클 감사보고서 (FY2026(2025.06~2026.05)) — 공시검색 결과",
+      "publisher": "금융감독원 DART (PlayMCP search_disclosures)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000078",
+      "document_id": "20260914000078",
+      "publication_date": "2026-09-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "공시목록",
+      "quoted_statement": "[기재정정]감사보고서 (2026.05) rcept_no=20260914000078 (우리회계법인, 2026-09-14); 감사보고서 (2026.05) 20260901000021; (2025.05) 20250902000011; (2024.05) 20240827000100; (2023.05) 20230821000032",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "감사보고서 존재만 확인. 본문(손익계산서)은 dart.fss.or.kr 직접 접속 차단 및 get_financial_account status 013으로 미확인"
+    },
+    {
+      "evidence_id": "KA46-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "오라클, 분기 매출 25조원 '어닝 서프라이즈'…주가 8% 급등",
+      "publisher": "헤럴드경제",
+      "source_url": "https://www.heraldk.com/article/2026031016004331063",
+      "document_id": null,
+      "publication_date": "2026-03-10",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026 Q3",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "회계연도 3분기(지난해 12월∼올해 2월) 매출액이 전년 동기 대비 22% 상승한 171억9000만달러(약 25조원)를 기록했다고 공시했다.",
+      "reported_value": "171.9",
+      "reported_unit": "억달러(원문 171억9000만달러)",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 법인 검색 '오라클'",
+      "target": "opendart-find_company",
+      "result": "OK",
+      "detail": "00203519 한국오라클",
+      "retryable": false
+    },
+    {
+      "step": "DART 공시검색",
+      "target": "00203519",
+      "result": "OK",
+      "detail": "감사보고서 5건(정정 포함)",
+      "retryable": false
+    },
+    {
+      "step": "DART 재무계정 FY2025",
+      "target": "00203519",
+      "result": "NOT_FOUND",
+      "detail": "status 013",
+      "retryable": false
+    },
+    {
+      "step": "한국오라클 매출 보도 검색",
+      "target": "WebSearch(2회)",
+      "result": "NOT_FOUND",
+      "detail": "본사 실적만 확인. '한국오라클 전 제품 약 10% 가격 인상' 보도 언급(출처 URL 불명, 미채택)",
+      "retryable": false
+    },
+    {
+      "step": "OCI 서울·춘천 리전 IDC/LG U+ 및 한국 투자 검색",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "WebSearch 한도 소진으로 미실행",
+      "retryable": true
+    },
+    {
+      "step": "WebSearch 추가 조회",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공용 WebSearch 한도(200회) 소진으로 이후 검색 불가",
+      "retryable": true
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사/공식 사이트",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5-1: 이 환경 WebFetch 전 언론사 DNS 실패 → 시도 생략, WebSearch 요약으로 진행(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "한국오라클 FY2026(2026.05) 매출·영업이익(감사보고서 원문)",
+    "OCI 서울·춘천 리전 호스팅 IDC(LG U+/SK/KT 등) 및 개소 시기 원문 확인",
+    "Oracle 한국 AI/클라우드 인프라 투자 발표 유무",
+    "LG U+–Oracle 공개 거래(OCI 전용선 FastConnect 파트너 등)"
+  ]
+}

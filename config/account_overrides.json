@@ -1,0 +1,262 @@
+{
+  "_note": "계정별 분석가 모델(Layer B/C). 모든 항목은 산식·근거(evidence_ids)·가정을 명시한다. force=true가 아니면 KISA 등 직접 근거가 우선한다.",
+  "KA08": {
+    "ts_anchor": {
+      "value_eok": 14000,
+      "fiscal_year": 2026,
+      "status": "ESTIMATED",
+      "tier": 2,
+      "range_width": 0.4,
+      "formula": "TS_2026(국내 인프라 투자 연평균) = 아마존 한국 누적 투자 전망 12.6조원 ÷ 9년(2023~2031) ≈ 1.4조원/년",
+      "inputs": [
+        {
+          "name": "한국 누적 투자 전망(~2031)",
+          "value": "126000",
+          "unit": "억원",
+          "evidence_ids": [
+            "KA08-E04"
+          ],
+          "fact_status": "SECONDARY_UNCONFIRMED"
+        },
+        {
+          "name": "기간(년)",
+          "value": "9",
+          "unit": "년"
+        }
+      ],
+      "evidence_ids": [
+        "KA08-E03",
+        "KA08-E04"
+      ],
+      "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 투자(건물·전력·서버 등 CAPEX 성격) 연평균'으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
+    },
+    "addressability_modifiers": {
+      "DC_COLO": 0.5,
+      "HW_DEVICE": 0.0
+    },
+    "bridge_override": {
+      "organic_cagr": [
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "ai": [
+        0.0,
+        0.1,
+        0.3
+      ]
+    },
+    "notes": [
+      "AWS코리아는 유한책임회사 전환으로 감사보고서 미공시(보도) — 매출·비용 재무 근거 없음",
+      "인천 가좌동 자체 DC(약 100MW) 등 자가 구축 확대로 제3자 코로케이션 접근률 50% 하향(C-ADDR 수정)",
+      "서버 HW는 글로벌 직접 조달로 접근 불가(0%)",
+      "2031 기본 시나리오는 투자 페이스 유지(유기 성장 0%)로 가정 — 7.85조(2023~27)와 7조(2025~31) 프로그램 합산 시 연 1.4~1.65조 수준과 정합"
+    ]
+  },
+  "KA32": {
+    "raw_direct": {
+      "value_eok": 136.0,
+      "category": "CONNECTIVITY",
+      "fpr_share": 0.5,
+      "status": "SCENARIO",
+      "formula": "RAW_2026(관측 가능 하한 시나리오) = USFK 임차 통신 BOA 2건(LG U+·KT, 각 3년 상한 $14,574,525) 연환산 합계 = $29.15M ÷ 3 × 1,400원 ≈ 136억원",
+      "evidence_ids": [
+        "KA32-E01",
+        "KA32-E03"
+      ]
+    },
+    "notes": [
+      "주한미군은 일반 재무제표 모델 비적용. TS(전체 IT 예산) 공개자료 없음 → UNKNOWN",
+      "BOA 상한은 계약 한도이지 지출액이 아님: LG U+ BOA 누적 집행 $59,351로 상한 대비 이용률이 매우 낮음 → RAW·FPR은 상한 시나리오",
+      "FPR = RAW × 50% (2개 BOA 중 1개 보유)",
+      "USFK 전역 이동통신 계약(W91QVN24R0121, 2025~2029) 수주자·금액 미확인 — 확인 시 반영 필요"
+    ]
+  },
+  "KA03": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA18": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA19": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA22": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(하나INS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA24": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
+      "농협은행: DART API 재무 미제공(감사보고서만), KISA 금액 미확인 → UNKNOWN. 주요 은행으로 우선 추가 조사 대상"
+    ]
+  },
+  "KA04": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA20": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA21": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA35": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
+      "KB손해보험: IFRS17로 판관비 계정 없음, KISA 미확인 → 금융 판관비 기준 추정 불가 → UNKNOWN"
+    ]
+  },
+  "KA39": {
+    "addressability_modifiers": {
+      "SI_BUILD": 0.5,
+      "IT_OPS": 0.5
+    },
+    "notes": [
+      "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+    ]
+  },
+  "KA14": {
+    "addressability_modifiers": {
+      "DC_COLO": 0.5
+    },
+    "capture_modifiers": {
+      "CLOUD": 0.3,
+      "AI_INFRA": 0.3,
+      "DC_COLO": 0.5
+    },
+    "infra_drivers": [
+      {
+        "driver_id": "KA14-INFRA-AI",
+        "description": "삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정",
+        "annual_eok_2031": {
+          "low": 2500,
+          "base": 5000,
+          "high": 8300
+        },
+        "evidence_ids": [
+          "KA14-E08"
+        ],
+        "source_fact": "KA14 dc_investment 2026 50000억원 (연결, SECONDARY_UNCONFIRMED)"
+      }
+    ],
+    "bridge_override": {
+      "ai": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "notes": [
+      "삼성SDS는 클라우드·AI DC 직접 경쟁사(동탄·구미 등 자체 DC) → DC 접근률 50%, 클라우드·AI 인프라 포획 상한 70% 하향",
+      "AI 증분은 계정별 인프라 드라이버로 대체(이중계산 방지: 산업군 AI 증분 0으로 설정)",
+      "삼성 그룹 캡티브 매출 84% — 자체 소비 기준 TS만 사용"
+    ]
+  },
+  "KA01": {
+    "addressability_modifiers": {
+      "DC_COLO": 0.5
+    },
+    "capture_modifiers": {
+      "CLOUD": 0.5,
+      "AI_INFRA": 0.5
+    },
+    "notes": [
+      "LG CNS는 자체 DC(상암·가산·부산) 보유 및 클라우드 MSP·AI DC 경쟁사 → DC 접근률 50%, 클라우드·AI 포획 상한 50% 하향",
+      "LG 계열사: LG U+와 상호 거래(관계사 거래) — 합산 시 그룹 내부거래 주의"
+    ]
+  },
+  "KA06": {
+    "notes": [
+      "구글: 국내 법인 매출(3개 법인 합산 6,831억)은 판매 매출이며 IT 지출이 아님. 국내 인프라 투자 공개액 없음 → TS UNKNOWN. 서울 리전이 LG U+ IDC(평촌·가산·논현)에 임차된 것으로 보도 — LG U+ 기존 고객. CR 입력 시 하한 확인 가능"
+    ]
+  },
+  "KA07": {
+    "notes": [
+      "마이크로소프트: 국내 매출(Tier 3)만 확인, Azure 국내 리전 코로케이션 사업자 미확인 → TS UNKNOWN. KT–MS 5년 2.4조 협력(보도)은 경쟁 구도 신호"
+    ]
+  },
+  "KA45": {
+    "notes": [
+      "메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+    ]
+  },
+  "KA42": {
+    "notes": [
+      "Fastly: 글로벌 매출만 확인. 서울 POP 호스팅 IDC 미확인 → TS UNKNOWN"
+    ]
+  },
+  "KA43": {
+    "notes": [
+      "Valve: 비상장, 국내 법인 없음. Steam CDN 캐시 일부 LG U+ 망 관찰(보도) → TS UNKNOWN"
+    ]
+  },
+  "KA44": {
+    "notes": [
+      "차이나유니콤: 국내 법인 매출 미확인, 글로벌 수치만 → TS UNKNOWN. 국제회선·로밍 도매 거래 구조"
+    ]
+  },
+  "KA46": {
+    "notes": [
+      "한국오라클: OCI 국내 리전 호스팅 IDC 미확인(검색 한도 소진) → TS UNKNOWN"
+    ]
+  },
+  "KA28": {
+    "notes": [
+      "코람코자산운용: DART 감사보고서만, 데이터센터 펀드 정보 미수집 → UNKNOWN"
+    ]
+  },
+  "KA50": {
+    "notes": [
+      "키암코인천도화동DC 펀드: 운용사 산은인프라자산운용(DART). 용량·임차인·투자비 미수집 → UNKNOWN"
+    ]
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "account_id": "KA06",
+  "original_name": "구글클라우드",
+  "research_date": "2026-10-16",
+  "researcher": "agent:hyperscaler-KA06",
+  "entity": {
+    "legal_name_ko": "구글클라우드코리아 유한회사",
+    "legal_name_en": "Google Cloud Korea LLC (DART 영문 표기 'Goolge Cloud Korea LLC')",
+    "corp_code": "01476954",
+    "stock_code": null,
+    "business_reg_no": "1038601049",
+    "parent_group": "Alphabet Inc. / Google LLC (미국)",
+    "related_key_accounts": [],
+    "industry_detail": "Google Cloud(GCP/Workspace) 한국 판매·지원 법인. DART 업종코드 63, 설립 2018-02-05, 강남파이낸스센터 22층",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "구글클라우드코리아 법인 + Google Cloud 서울 리전(asia-northeast3) 인프라(LG U+ IDC 임차). Alphabet 글로벌 capex는 context only(scope=글로벌)",
+    "exclusions": "구글코리아 유한회사(01473717, 광고·검색 영업), 구글페이먼트코리아(01476866, 결제), YouTube 등",
+    "entity_status": "PROBABLE",
+    "entity_notes": "DART 외부감사 감사보고서 FY2022~FY2025 공시 확인(외감 대상). 그러나 OpenDART get_financial_account는 감사보고서 제출사 재무를 제공하지 않아(status 013) 매출 원문 미확인. LG U+ IDC 임차 계약의 실제 계약 주체는 Google LLC 또는 해외 인프라 법인일 가능성 — 국내 법인 매출에 클라우드 인프라 비용이 반영되지 않을 수 있음."
+  },
+  "facts": [
+    {
+      "fact_id": "KA06-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 6831,
+      "unit": "억원",
+      "scope": "그룹(구글 한국 법인 3사 합산: 구글코리아+구글클라우드코리아+구글페이먼트코리아 추정)",
+      "evidence_ids": [
+        "KA06-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "KA06 계약주체 단독 아님. 한국 클라우드 매출 상당 부분은 해외 법인(Google Asia Pacific 등) 귀속 구조라 과소 표시."
+    },
+    {
+      "fact_id": "KA06-F02",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 684,
+      "unit": "억원",
+      "scope": "그룹(구글 한국 법인 3사 합산)",
+      "evidence_ids": [
+        "KA06-E03"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA06-F03",
+      "metric": "revenue",
+      "fiscal_year": 2020,
+      "value": 583,
+      "unit": "억원",
+      "scope": "법인 별도(구글클라우드코리아)",
+      "evidence_ids": [
+        "KA06-E04"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "FY2020 첫 공개 수치(2021-04 보도). 최신 단독 매출 미확인."
+    },
+    {
+      "fact_id": "KA06-F04",
+      "metric": "it_capex",
+      "fiscal_year": 2025,
+      "value": 91400,
+      "unit": "USD_mn",
+      "scope": "글로벌",
+      "evidence_ids": [
+        "KA06-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "Alphabet 전사 capex. 한국 TS 사용 금지 — context only"
+    },
+    {
+      "fact_id": "KA06-F05",
+      "metric": "it_capex",
+      "fiscal_year": 2026,
+      "value": 175000,
+      "unit": "USD_mn",
+      "scope": "글로벌",
+      "evidence_ids": [
+        "KA06-E09"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026 가이던스 175~185십억달러의 하단. context only"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "KA06-D01",
+      "type": "CLOUD_MIGRATION",
+      "description": "Google Cloud 서울 리전 AI(Gemini 2.5 Flash ML 처리) 국내 처리·소버린 전략 강화(2025-07), 서울 리전 컴퓨팅 인프라 지속 확장",
+      "amount": null,
+      "unit": null,
+      "period": "2025-",
+      "direction": "UP",
+      "evidence_ids": [
+        "KA06-E06"
+      ]
+    }
+  ],
+  "competitive": [
+    {
+      "category": "DC_COLO",
+      "observation": "Google Cloud 서울 리전(2020 개소)은 자체 DC가 아니라 LG U+ IDC(평촌 메가센터, 가산디지털센터, 논현 데이터센터 + 협력 중소 IDC) 임차 방식으로 운영(보도)",
+      "incumbent": "LG유플러스",
+      "lgu_relationship": "2018-11 IDC 임대 계약 보도 — LG U+가 서울 리전 코로케이션 공급자(기존 거래, 방어 대상)",
+      "evidence_ids": [
+        "KA06-E05",
+        "KA06-E06"
+      ]
+    },
+    {
+      "category": "AI_INFRA",
+      "observation": "LG U+–Google/Google Cloud MWC25(2025-03) 전방위 AI 협력: 익시오에 Gemini 적용, Vertex AI 활용 검토",
+      "incumbent": "LG유플러스(파트너)",
+      "lgu_relationship": "LG U+가 Google Cloud의 고객(AI 모델·Vertex AI 구매)이자 파트너",
+      "evidence_ids": [
+        "KA06-E07"
+      ]
+    },
+    {
+      "category": "CONNECTIVITY",
+      "observation": "LG U+–Google Cloud 5G MEC 협력 보도자료 존재(날짜 미확인)",
+      "incumbent": null,
+      "lgu_relationship": "과거 5G MEC 협력",
+      "evidence_ids": [
+        "KA06-E08"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA06-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "OpenDART company.json 기업개황",
+      "publisher": "금융감독원 OpenDART (PlayMCP 경유)",
+      "source_url": "https://opendart.fss.or.kr/api/company.json?corp_code=01476954",
+      "document_id": "01476954",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=구글클라우드코리아 유한회사, corp_name_eng=Goolge Cloud Korea LLC, ceo_nm=스빌렌이바노프카라이바노프, corp_cls=E, bizr_no=1038601049, induty_code=63, est_dt=20180205, acc_mt=12, adres=서울특별시 강남구 테헤란로 152 (강남파이낸스센터)22층",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "구글클라우드코리아 감사보고서 (FY2025) — 공시검색 결과",
+      "publisher": "금융감독원 DART (PlayMCP search_disclosures)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001545",
+      "document_id": "20260414001545",
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "공시목록",
+      "quoted_statement": "감사보고서 (2025.12) rcept_no=20260414001545 (한영회계법인, 2026-04-14); (2024.12) 20250411002761; (2023.12) 20240411003141; (2022.12) 20230413000364",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "감사보고서 존재만 확인. 본문(손익계산서)은 dart.fss.or.kr 직접 접속 차단 및 get_financial_account status 013으로 미확인"
+    },
+    {
+      "evidence_id": "KA06-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "구글 한국 장부 '6831억' 찍었다…숨겨둔 진짜 성적표는?",
+      "publisher": "뉴시스",
+      "source_url": "https://www.newsis.com/view/NISX20260414_0003590701",
+      "document_id": null,
+      "publication_date": "2026-04-14",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "구글이 지난해 한국 법인 3곳에서 총 6831억원의 매출을 거둔 것으로 나타났다. 광고 재판매, 앱마켓(구글 플레이) 결제 대행, 클라우드 판매·지원 등을 통해 거둔 수익으로 전년 대비 7.9% 늘었다. … 총 영업이익은 684억원으로 15.1% 증가했다.",
+      "reported_value": "6831",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "같은 기사: 구글코리아 '지난해 매출 4076억원, 영업익 412억원'. 3사 = 구글코리아·구글클라우드코리아·구글페이먼트코리아로 추정. 구글클라우드코리아 단독 FY2025 매출은 검색 요약에 없음"
+    },
+    {
+      "evidence_id": "KA06-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "'IT공룡' 첫 공개한 韓매출 보니..웃는놈·우는놈·수상한놈",
+      "publisher": "다음(언론사 재배포)",
+      "source_url": "https://v.daum.net/v/20210417110022472",
+      "document_id": null,
+      "publication_date": "2021-04-17",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2020",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "(구글클라우드코리아 매출은) 전년 대비 128.2% 성장한 583억원으로 집계됐다.",
+      "reported_value": "583",
+      "reported_unit": "억원",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "검색 요약상 인용. 어떤 기사 URL의 문장인지 요약 간 귀속이 완전히 명확하지 않음. 다른 요약은 '2021년 감사보고서 기준 구글클라우드코리아 매출 1,018억원'을 언급(출처 URL 불명) → fact 미채택"
+    },
+    {
+      "evidence_id": "KA06-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "[단독]구글, 韓 데이터센터 둔다…LGU+와 계약",
+      "publisher": "머니투데이",
+      "source_url": "https://www.mt.co.kr/tech/2018/11/01/2018110107383217485",
+      "document_id": null,
+      "publication_date": "2018-11-01",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "구글은 LG유플러스와 최근 IDC(인터넷데이터센터) 임대 계약을 체결했다. LG유플러스의 평촌 메가센터, 가산디지털센터, LG유플러스가 협력하고 있는 중소 IDC 1곳 등 3곳의 IDC를 활용해 구글의 '서울 리전(Region)'을 운영한다는 계약이다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA06-E06",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "구글클라우드 \"제미나이 2.5 플래시 ML처리, 서울리전서 합니다\"",
+      "publisher": "뉴스1",
+      "source_url": "https://www.news1.kr/it-science/general-it/5839089",
+      "document_id": null,
+      "publication_date": "2025-07",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "구글 클라우드는 2020년 서울 리전(Seoul region)을 설립했다. 업계에 따르면 구글 클라우드 서울 리전은 구글이 직접 구축한 데이터센터가 아닌 LG유플러스의 데이터센터(평촌 메가센터·가산디지털센터·논현데이터센터 등)를 임차한 방식으로 운영되고 있다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "뉴시스 2025-07-08(NISX20250708_0003243260)도 서울 리전 AI 처리·소버린 전략 보도. '5년간 서울 리전 컴퓨팅 인프라 확장'(요약)"
+    },
+    {
+      "evidence_id": "KA06-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "LG유플러스-구글 MWC25 AI 협력",
+      "publisher": "비즈워치",
+      "source_url": "https://news.bizwatch.co.kr/article/mobile/2025/03/04/0031",
+      "document_id": null,
+      "publication_date": "2025-03-04",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "LG유플러스와 구글, 구글 클라우드는 3일(현지시간) 스페인 바르셀로나에서 열린 MWC25 현장에서 AI 경쟁력 강화를 위한 전방위 협력안을 발표했다. … 통화 에이전트 서비스인 익시오에 제미나이를 적용해 …",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "Vertex AI, 'Grounding with Google Search' 도입 검토; 홈·디지털 채널·일하는 방식 AI 도입 검토"
+    },
+    {
+      "evidence_id": "KA06-E08",
+      "tier": 1,
+      "source_type": "PRESS_RELEASE",
+      "source_title": "LG유플러스, 구글 클라우드와 5G MEC 협력한다",
+      "publisher": "LG",
+      "source_url": "https://www.lg.co.kr/media/release/22447",
+      "document_id": null,
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 결과 제목만",
+      "quoted_statement": "LG유플러스, 구글 클라우드와 5G MEC 협력한다",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "제목만 확인, 날짜·본문 미확인"
+    },
+    {
+      "evidence_id": "KA06-E09",
+      "tier": 3,
+      "source_type": "NEWS",
+      "source_title": "Alphabet Inc. Q4 2025 Earnings: The $270B Infrastructure Reset",
+      "publisher": "Global Data Center Hub / opendatascience.com",
+      "source_url": "https://www.globaldatacenterhub.com/p/alphabet-inc-q4-2025-earnings-the",
+      "document_id": null,
+      "publication_date": "2026-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "The company projected 2026 capex of $175 billion to $185 billion, up from $91.4 billion a year ago.",
+      "reported_value": "91.4",
+      "reported_unit": "USD bn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "한 출처는 이후 2026 가이던스 $180–190B 상향(CNBC 인용, 날짜 미확인) — 단일 출처라 미채택"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 법인 검색 '구글'",
+      "target": "opendart-find_company",
+      "result": "OK",
+      "detail": "01473717 구글코리아, 01476954 구글클라우드코리아, 01476866 구글페이먼트코리아",
+      "retryable": false
+    },
+    {
+      "step": "DART 기업개황",
+      "target": "01476954, 01473717",
+      "result": "OK",
+      "detail": "둘 다 corp_cls E, 12월 결산, 동일 주소(강남파이낸스센터 22층)",
+      "retryable": false
+    },
+    {
+      "step": "DART 공시검색 2023-01~2026-10",
+      "target": "01476954, 01473717",
+      "result": "OK",
+      "detail": "각각 감사보고서 FY2022~FY2025 4건(한영회계법인)",
+      "retryable": false
+    },
+    {
+      "step": "DART 재무계정 FY2025",
+      "target": "01476954",
+      "result": "NOT_FOUND",
+      "detail": "status 013 — 감사보고서 제출사는 API 미제공",
+      "retryable": false
+    },
+    {
+      "step": "구글클라우드코리아 FY2025 단독 매출 웹검색",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "3사 합산(6831억)·구글코리아 단독(4076억)만 확인",
+      "retryable": false
+    },
+    {
+      "step": "구글 한국 신규 DC 투자 발표",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "2025~2026 한국 DC 투자 금액·MW 발표 미확인",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사/공식 사이트",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5-1: 이 환경 WebFetch 전 언론사 DNS 실패 → 시도 생략, WebSearch 요약으로 진행(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "구글클라우드코리아 FY2023~FY2025 단독 매출·영업이익(감사보고서 본문 필요)",
+    "LG U+ IDC 임차 계약 주체(국내 법인 vs Google LLC)와 계약 규모·MW",
+    "서울 리전 이외 한국 신규 DC/AI 인프라 투자 계획 유무",
+    "'2021년 감사보고서 기준 매출 1,018억원' 보도 출처·연도 확인(FY2021로 추정)"
+  ]
+}

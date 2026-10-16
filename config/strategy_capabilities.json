@@ -1,0 +1,69 @@
+{
+  "_note": "Strategic Opportunity Engine 정성 평가(Layer E). basis=ANALYST_JUDGMENT — 수치 근거는 MB(시장 벤치마크) 참조, 역량 평가는 공개 정보 기반 분석가 판단이며 사내 역량 진단으로 검증 필요. M&A는 확정 결론이 아닌 '검토 권고'.",
+  "areas": {
+    "Connectivity": {
+      "lgu_position": "기존 사업자. 기업회선 매출 2Q26 2,057억원(MB40). 다수 고객에서 이중망 중 1회선 공급자 지위",
+      "entry_feasibility": "HIGH", "competition": "HIGH — KT(전용회선 최대 사업자)·SK브로드밴드, 금융권 이중망 정책으로 단일사 100% 불가",
+      "required_capabilities": "금융·공공 등급 SLA, 이중화 설계, AIDC-클라우드 직결 회선, 보안 결합상품",
+      "capability_gap": "LOW", "investment_need": "LOW–MEDIUM", "difficulty": "LOW",
+      "recommendation": "방어·확장: AIDC·클라우드 연결 회선과 보안을 결합한 번들로 이중망 내 점유 확대. 커넥티드카·IoT(현대엘리베이터, KG모빌리티 인포콘 등) 회선 수요 공략",
+      "recommendation_type": "EXPAND", "evidence_refs": ["MB40"], "caveats": "고객별 기존 회선 점유율 미확인(내부 데이터 필요)"
+    },
+    "Data Center / IDC": {
+      "lgu_position": "AIDC 매출 1Q26 1,144억 → 2Q26 1,241억원(MB36, MB38). 상업용 DC 시장 CAGR 12.4%(MB16), 서울권 파이프라인 715MW(MB19)",
+      "entry_feasibility": "HIGH", "competition": "HIGH — KT클라우드·SK브로드밴드·외국계 콜로(Equinix 등)·하이퍼스케일러 자가 구축(AWS 인천 100MW 등)",
+      "required_capabilities": "전력(수전 용량) 확보, 고밀도·액체냉각 AI 랙, 하이퍼스케일 임대(빌드투수트), 수도권 입지",
+      "capability_gap": "MEDIUM — 전력·부지 선확보가 병목", "investment_need": "HIGH (CAPEX 집약)", "difficulty": "MEDIUM",
+      "recommendation": "투자 우선순위 상위: 고객별 수요(하이퍼스케일러·플랫폼·금융 DR)와 가용 용량·전력 일정을 대조한 용량 투자 검토. DC 펀드(코람코·키암코)와 리스백·운영 위탁 구조 검토",
+      "recommendation_type": "INVEST", "evidence_refs": ["MB15", "MB16", "MB18", "MB19", "MB36", "MB38"],
+      "caveats": "하이퍼스케일러 수요는 자가 구축 전환 리스크가 크고 TS 정의가 다름(국내 투자 기준)"
+    },
+    "AI Infrastructure": {
+      "lgu_position": "AIDC 사업 보유. GPUaaS·AI 추론 인프라 확대 단계(사내 데이터로 검증 필요)",
+      "entry_feasibility": "MEDIUM", "competition": "HIGH — 하이퍼스케일러, 네이버클라우드·NHN클라우드·KT클라우드, 정부 국가AI컴퓨팅센터(MB20)",
+      "required_capabilities": "GPU 조달(공급망), 고밀도 전력·냉각, AI 플랫폼·MLOps, 소버린 AI 레퍼런스",
+      "capability_gap": "MEDIUM–HIGH", "investment_need": "HIGH", "difficulty": "HIGH",
+      "recommendation": "제휴+선택적 투자: GPU 클라우드 사업자·하이퍼스케일러와 소버린/AI 존 제휴로 AIDC 가동률 확보, 금융·공공 AI 추론 수요 선점",
+      "recommendation_type": "PARTNER", "evidence_refs": ["MB04a", "MB20", "MB21", "MB22"], "caveats": "GPU 가격·공급 변동성, 수요 실현 시점 불확실"
+    },
+    "Cloud": {
+      "lgu_position": "MSP·멀티클라우드 연결 상품 보유(AWS 파트너십 보도, KA08-E09 등)",
+      "entry_feasibility": "MEDIUM", "competition": "HIGH — 전문 MSP(메가존·베스핀 등), SI 계열 MSP(LG CNS·삼성SDS), 하이퍼스케일러 직판",
+      "required_capabilities": "하이퍼스케일러 최상위 파트너 등급, 금융 클라우드 규제 대응(CSP 안전성 평가), FinOps",
+      "capability_gap": "MEDIUM", "investment_need": "MEDIUM", "difficulty": "MEDIUM",
+      "recommendation": "제휴 중심: 하이퍼스케일러·국내 CSP와 '회선+IDC+클라우드' 결합 오퍼, 금융권 퍼블릭 클라우드 전환(MB14) 공략",
+      "recommendation_type": "PARTNER", "evidence_refs": ["MB10", "MB13", "MB14"], "caveats": "재판매 마진 낮음 — 매출 규모 대비 이익 기여 검토 필요"
+    },
+    "Security": {
+      "lgu_position": "자체 정보보호 투자 확대 중. 기업 대상 관리형 보안 사업은 전문 보안기업 대비 열위(분석가 판단)",
+      "entry_feasibility": "MEDIUM", "competition": "HIGH — SK쉴더스·안랩·이글루코퍼레이션 등 전문기업, 그룹 계열 보안(에스원 등)",
+      "required_capabilities": "관제(SOC)·MDR, 제로트러스트·SASE, 금융보안 인증, 보안 컨설팅 인력",
+      "capability_gap": "HIGH", "investment_need": "MEDIUM–HIGH", "difficulty": "MEDIUM",
+      "recommendation": "인수·제휴 검토 대상(확정 아님): 고객 보안 지출 증가(MB24, MB30)와 2027 금융권 정보보호 공시 의무화를 근거로, 역량 격차·인수 가능성·결합 시너지(회선+보안)를 별도 실사에서 검증",
+      "recommendation_type": "M&A_REVIEW", "evidence_refs": ["MB24", "MB26", "MB30", "MB31"],
+      "caveats": "고객 보안 Spending 규모만으로 M&A 결론 불가 — 대상 기업 밸류에이션·통합 리스크 미검토"
+    },
+    "AI Transformation / SI": {
+      "lgu_position": "AX 프로젝트 레퍼런스 초기 단계(분석가 판단)",
+      "entry_feasibility": "LOW", "competition": "VERY HIGH — 그룹 캡티브 SI(신한DS·우리FIS·하나INS·KB데이타시스템·농협정보시스템 등)와 대형 SI",
+      "required_capabilities": "도메인(금융·제조) 컨설팅, LLM 기반 업무 자동화 구축 역량, SI 파트너 생태계",
+      "capability_gap": "HIGH", "investment_need": "MEDIUM", "difficulty": "HIGH",
+      "recommendation": "선택적 제휴: 인프라(AIDC·회선) 결합형 AX 사업에 한정, SI 파트너와 컨소시엄",
+      "recommendation_type": "PARTNER", "evidence_refs": [], "caveats": "캡티브 SI 구조로 접근률 낮음(C-ADDR 20~35%)"
+    },
+    "SI / Managed Services": {
+      "lgu_position": "네트워크·IDC 운영 위탁 역량 보유, 전사 ITO는 제한적(분석가 판단)",
+      "entry_feasibility": "LOW", "competition": "VERY HIGH — 캡티브 SI, 대형 SI",
+      "required_capabilities": "인프라 운영 대행(MSP), 장애 대응 SLA",
+      "capability_gap": "MEDIUM", "investment_need": "LOW", "difficulty": "MEDIUM",
+      "recommendation": "인프라 관리형 서비스(네트워크·IDC·보안 운영)에 집중, 전사 ITO 진입은 비우선",
+      "recommendation_type": "MAINTAIN", "evidence_refs": [], "caveats": ""
+    },
+    "기타": {
+      "lgu_position": "SW·HW 재판매는 부수 사업",
+      "entry_feasibility": "LOW", "competition": "HIGH — 벤더 직판·총판",
+      "required_capabilities": "벤더 파트너십", "capability_gap": "LOW", "investment_need": "LOW", "difficulty": "LOW",
+      "recommendation": "결합 판매 수준 유지", "recommendation_type": "MAINTAIN", "evidence_refs": [], "caveats": ""
+    }
+  }
+}

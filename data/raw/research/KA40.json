@@ -1,0 +1,217 @@
+{
+  "account_id": "KA40",
+  "original_name": "한화시스템(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:defense-ict-KA40",
+  "entity": {
+    "legal_name_ko": "한화시스템(주)",
+    "legal_name_en": "HANWHA SYSTEMS Co., Ltd.",
+    "corp_code": "00339391",
+    "stock_code": "272210",
+    "business_reg_no": "5138117175",
+    "parent_group": "한화그룹 (한화에어로스페이스 계열로 알려짐 — 이 세션에서 지분 미확인)",
+    "related_key_accounts": [],
+    "industry_detail": "DEFENSE_ICT: 방산전자(레이다·전자전·지휘통제) + ICT 부문(한화그룹 SI/ITO). DART 업종코드 26299, 코스피",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "재무: 연결·별도 병기. ICT 부문 별도 세그먼트는 사업보고서 부문정보 필요(이 세션 미조회). 방산 매출원가는 IT 지출 아님",
+    "exclusions": "한화 계열사 IT 지출 제외. 방산 부문 원가 제외",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('한화시스템') → 00339391, get_company_info '한화시스템(주)', 본사 경북 구미시 산호대로 264-60, 설립 2000-01-11, 결산월 12. FY2025 주요계정 rcept_no 20260513000644(5월 접수 — 정정 사업보고서 가능성, 미확인)"
+  },
+  "facts": [
+    {
+      "fact_id": "KA40-F01",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 3664150568020,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA40-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 2,803,686,058,274원, FY2023 2,452,494,865,652원"
+    },
+    {
+      "fact_id": "KA40-F02",
+      "metric": "revenue",
+      "fiscal_year": 2025,
+      "value": 3091485354880,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA40-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 2,793,633,003,560원, FY2023 2,450,585,394,825원"
+    },
+    {
+      "fact_id": "KA40-F03",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 119898725355,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA40-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 219,345,297,682원"
+    },
+    {
+      "fact_id": "KA40-F04",
+      "metric": "operating_income",
+      "fiscal_year": 2025,
+      "value": 279977530600,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA40-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": "FY2024 225,139,628,817원"
+    },
+    {
+      "fact_id": "KA40-F05",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 10327265554498,
+      "unit": "원",
+      "scope": "연결",
+      "evidence_ids": [
+        "KA40-E01"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA40-F06",
+      "metric": "total_assets",
+      "fiscal_year": 2025,
+      "value": 9343422758617,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA40-E02"
+      ],
+      "verification_status": "VERIFIED",
+      "analyst_interpretation": ""
+    },
+    {
+      "fact_id": "KA40-F07",
+      "metric": "operating_expense",
+      "fiscal_year": 2025,
+      "value": 2811507824280,
+      "unit": "원",
+      "scope": "법인 별도",
+      "evidence_ids": [
+        "KA40-E02"
+      ],
+      "verification_status": "DERIVED",
+      "analyst_interpretation": "별도 매출 3,091,485,354,880 - 영업이익 279,977,530,600. 고객 제공 원가(외주·HW/SW 재판매 등) 포함 — 자체 IT 소비로 합산 금지"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "IT_OPS",
+      "observation": "ICT 부문이 한화그룹 계열사 SI/ITO 수행으로 알려짐 — 한화 계열 고객 IT 지출과 이중계상 위험. ICT 부문 매출·계열 비중 미확보",
+      "incumbent": "한화시스템 ICT부문",
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA40-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한화시스템 2025 사업보고서 주요계정(연결)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000644",
+      "document_id": "20260513000644",
+      "publication_date": "2026-05-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "연결재무제표 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=3,664,150,568,020 / account_nm=영업이익, thstrm_amount=119,898,725,355 / account_nm=자산총계, thstrm_amount=10,327,265,554,498 (원)",
+      "reported_value": "3,664,150,568,020",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 2,803,686,058,274, 전전기 2,452,494,865,652; 전기 영업이익 219,345,297,682. 연결 자산총계 FY2024 5,810,354,385,245 → FY2025 10.33조로 급증, 연결 총포괄손익 2,397,007,828,607(지분상품 평가이익 추정, 미검증). 연결 영업이익 < 별도: 연결 자회사(해외·위성 등) 손실 추정"
+    },
+    {
+      "evidence_id": "KA40-E02",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "한화시스템 2025 사업보고서 주요계정(별도)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000644",
+      "document_id": "20260513000644",
+      "publication_date": "2026-05-13",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "재무제표(OFS) 손익계산서 매출액/영업이익 당기, 재무상태표 자산총계 당기",
+      "quoted_statement": "account_nm=매출액, thstrm_amount=3,091,485,354,880 / account_nm=영업이익, thstrm_amount=279,977,530,600 / account_nm=자산총계, thstrm_amount=9,343,422,758,617 (원)",
+      "reported_value": "3,091,485,354,880",
+      "reported_unit": "원",
+      "verification_status": "VERIFIED",
+      "notes": "전기 매출 2,793,633,003,560, 전전기 2,450,585,394,825; 전기 영업이익 225,139,628,817. "
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "'한화시스템' → 00339391",
+      "retryable": false
+    },
+    {
+      "step": "기본 재무 FY2025",
+      "target": "OpenDART get_financial_account 11011",
+      "result": "OK",
+      "detail": "rcept_no 20260513000644. CFS/OFS 매출·영업이익·자산 확보. 매출원가·CAPEX·부문정보 미조회",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 직접 접속 차단(환경 점검 결과)",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch(언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1: 이 환경에서 WebFetch 전 언론사 DNS 실패 — 재시도 금지 지시에 따라 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch(KISA 공시·DC/AI 투자·캡티브 비중·LG U+ 관계)",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회/턴) 소진으로 검색 미수행 — 우회 금지 지시에 따라 미시도. 후속 세션에서 재조사 필요",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 FY2023-2025",
+      "target": "WebSearch / isds.kisa.or.kr",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진 및 포털 차단으로 정보기술부문·정보보호부문 투자액 미확보(의무공시 대상으로 알려져 있으나 이 세션에서 미확인)",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "KISA 정보보호 공시 정보기술부문/정보보호부문 투자액·인력 FY2023-FY2025 (2024~2026 공시)",
+    "자체 DC/클라우드/AI 인프라 투자 발표(금액·MW·기간)",
+    "캡티브(계열사) 매출 비중 — 사업보고서 특수관계자 주석 또는 공정위 내부거래 보도",
+    "공개된 LG U+ 거래(IDC·회선·제휴) 보도",
+    "사업보고서 부문정보: ICT 부문 매출·영업이익",
+    "rcept_no 20260513000644가 정정 사업보고서인지 확인",
+    "자산 급증(5.8조→10.3조) 원인(지분 평가/인수)"
+  ]
+}

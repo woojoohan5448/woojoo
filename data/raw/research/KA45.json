@@ -1,0 +1,257 @@
+{
+  "account_id": "KA45",
+  "original_name": "페이스북",
+  "research_date": "2026-10-16",
+  "researcher": "agent:hyperscaler-KA45",
+  "entity": {
+    "legal_name_ko": "페이스북코리아 유한회사",
+    "legal_name_en": "Facebook Korea Limited",
+    "corp_code": "01469635",
+    "stock_code": null,
+    "business_reg_no": "1208760695",
+    "parent_group": "Meta Platforms, Inc. (미국)",
+    "related_key_accounts": [],
+    "industry_detail": "Meta(Facebook/Instagram/WhatsApp) 한국 광고 영업·마케팅 지원 법인. DART 업종 71310(광고대행), 설립 2010-10-12",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "페이스북코리아 법인 + Meta의 한국 망 접속(캐시서버·피어링·망 이용대가). Meta 글로벌 capex는 context only",
+    "exclusions": "Meta 글로벌, 해외 광고 계약법인(Meta Platforms Ireland 등)",
+    "entity_status": "UNCERTAIN",
+    "entity_notes": "DART상 법인명은 여전히 '페이스북코리아 유한회사'(메타플랫폼스코리아 검색 시 not_found). 감사보고서 FY2022~FY2025 공시 확인, 재무 API status 013. 망 이용·캐시서버 계약은 국내 법인이 아니라 Meta Platforms(해외) 계약 가능성이 높아 LG U+ 구매 주체 매핑 불확실."
+  },
+  "facts": [
+    {
+      "fact_id": "KA45-F01",
+      "metric": "it_capex",
+      "fiscal_year": 2025,
+      "value": 72200,
+      "unit": "USD_mn",
+      "scope": "글로벌",
+      "evidence_ids": [
+        "KA45-E06"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "Meta 전사 capex. context only"
+    },
+    {
+      "fact_id": "KA45-F02",
+      "metric": "it_capex",
+      "fiscal_year": 2026,
+      "value": 125000,
+      "unit": "USD_mn",
+      "scope": "글로벌",
+      "evidence_ids": [
+        "KA45-E07"
+      ],
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "analyst_interpretation": "2026 가이던스 $125–145B 하단(2026-04 상향). context only"
+    }
+  ],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "CONNECTIVITY",
+      "observation": "2016~17 페이스북이 KT 캐시 경유 SKB·LG U+ 트래픽을 해외망으로 우회 → 2018-03 방통위 제재 → 2019-01 SK브로드밴드와 망이용대가 타결. LG U+는 망 사용료 요구했으나 받지 못함(2019-01 보도)",
+      "incumbent": "KT(캐시서버 호스팅, 과거) / SK브로드밴드(유료 계약)",
+      "lgu_relationship": "LG U+ 망 사용료 미수취(2019 보도). 이후 LG U+–Meta 계약 여부 미확인",
+      "evidence_ids": [
+        "KA45-E03",
+        "KA45-E04",
+        "KA45-E05"
+      ]
+    },
+    {
+      "category": "DC_COLO",
+      "observation": "Meta 한국 자체 DC·AI DC 투자 발표 미확인",
+      "incumbent": null,
+      "lgu_relationship": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA45-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "OpenDART company.json 기업개황",
+      "publisher": "금융감독원 OpenDART (PlayMCP 경유)",
+      "source_url": "https://opendart.fss.or.kr/api/company.json?corp_code=01469635",
+      "document_id": "01469635",
+      "publication_date": null,
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "기업개황",
+      "quoted_statement": "corp_name=페이스북코리아 유한회사, corp_name_eng=Facebook Korea Limited, ceo_nm=데미안여관야오, corp_cls=E, bizr_no=1208760695, induty_code=71310, est_dt=20101012, acc_mt=12, adres=서울특별시 강남구 테헤란로 142 (캐피탈타워) 23층",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "evidence_id": "KA45-E02",
+      "tier": 1,
+      "source_type": "DART_FILING",
+      "source_title": "페이스북코리아 감사보고서 (FY2025) — 공시검색 결과",
+      "publisher": "금융감독원 DART (PlayMCP search_disclosures)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260402001603",
+      "document_id": "20260402001603",
+      "publication_date": "2026-04-02",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "공시목록",
+      "quoted_statement": "감사보고서 (2025.12) rcept_no=20260402001603 (한영회계법인); (2024.12) 20250402001815; (2023.12) 20240408001725; (2022.12) 20230406001570",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "감사보고서 존재만 확인. 본문(손익계산서)은 dart.fss.or.kr 직접 접속 차단 및 get_financial_account status 013으로 미확인"
+    },
+    {
+      "evidence_id": "KA45-E03",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "해외 사업자, 공짜 망 사용 논란 지속",
+      "publisher": "뉴시스",
+      "source_url": "https://mobile.newsis.com/view/NISX20190127_0000542120",
+      "document_id": null,
+      "publication_date": "2019-01-27",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "앞서 LG유플러스 등은 페이스북에 망 사용료 지불을 요구했지만 받지 못했다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "같은 시기 보도: 페이스북–SK브로드밴드 망 이용대가 협상 최종 타결(2019-01)"
+    },
+    {
+      "evidence_id": "KA45-E04",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "페이스북 접속경로 변경·캐시서버 협상 관련 보도",
+      "publisher": "비즈워치",
+      "source_url": "https://news.bizwatch.co.kr/article/mobile/2017/11/28/0023",
+      "document_id": null,
+      "publication_date": "2017-11-28",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "페이스북은 KT에 추가 망 대가를 지불하는 대신 SK브로드밴드와 LG유플러스의 무선 트래픽을 KT 망이 아닌 해외사업자의 망으로 변경했다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "요약상 인용, 기사 귀속(비즈워치/아주경제 등) 일부 불명확. 통신사 IDC 캐시서버 설치 요구 vs 망대가 거부 갈등"
+    },
+    {
+      "evidence_id": "KA45-E05",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "갑질 '페이스북'에 국내 첫 제재…",
+      "publisher": "이투데이",
+      "source_url": "https://www.etoday.co.kr/news/view/1606164",
+      "document_id": null,
+      "publication_date": "2018-03",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": null,
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "글로벌 인터넷 플랫폼 기업인 페이스북에 대해 규제당국이 이용자 피해를 이유로 징계를 내린 것은 이번이 처음이다.",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "방통위 2018-03 접속경로 임의변경 제재(과징금 액수 미확인)"
+    },
+    {
+      "evidence_id": "KA45-E06",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "Meta estimates 2026 capex to be between $115-135bn",
+      "publisher": "DatacenterDynamics",
+      "source_url": "https://datacenterdynamics.com/en/news/meta-estimates-2026-capex-to-be-between-115-135bn/",
+      "document_id": null,
+      "publication_date": "2026-01-29",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "Last year, Meta spent $72.2 billion on capex … 2026 capex at $115–135 billion",
+      "reported_value": "72.2",
+      "reported_unit": "USD bn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": "Fortune 2026-04-29: Q1 2026 실적에서 2026 capex 가이던스 $125–145B로 상향"
+    },
+    {
+      "evidence_id": "KA45-E07",
+      "tier": 2,
+      "source_type": "NEWS",
+      "source_title": "Meta Zuckerberg $145 billion AI spending ROI",
+      "publisher": "Fortune",
+      "source_url": "https://www.fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/",
+      "document_id": null,
+      "publication_date": "2026-04-29",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2026",
+      "page_or_section": "WebSearch 요약",
+      "quoted_statement": "raised full-year 2026 capital expenditure guidance to $125 billion to $145 billion, up from $115 billion to $135 billion",
+      "reported_value": "125-145",
+      "reported_unit": "USD bn",
+      "verification_status": "SECONDARY_UNCONFIRMED",
+      "notes": ""
+    }
+  ],
+  "research_log": [
+    {
+      "step": "DART 법인 검색 '메타플랫폼스'",
+      "target": "opendart-find_company",
+      "result": "NOT_FOUND",
+      "detail": "not_found",
+      "retryable": false
+    },
+    {
+      "step": "DART 법인 검색 '페이스북'",
+      "target": "opendart-find_company",
+      "result": "OK",
+      "detail": "01469635 페이스북코리아",
+      "retryable": false
+    },
+    {
+      "step": "DART 공시검색/재무",
+      "target": "01469635",
+      "result": "OK",
+      "detail": "감사보고서 4건; get_financial_account FY2025 status 013",
+      "retryable": false
+    },
+    {
+      "step": "페이스북코리아 매출 보도 검색",
+      "target": "WebSearch(3회)",
+      "result": "NOT_FOUND",
+      "detail": "2025 매출 보도 미확인",
+      "retryable": false
+    },
+    {
+      "step": "Meta–LG U+ 망이용료 계약 최신 검색",
+      "target": "WebSearch(2회)",
+      "result": "NOT_FOUND",
+      "detail": "2019 이후 LG U+ 계약 보도 미확인",
+      "retryable": false
+    },
+    {
+      "step": "Meta 한국 DC 투자",
+      "target": "WebSearch",
+      "result": "NOT_FOUND",
+      "detail": "해외(미국·캐나다) 투자만 확인",
+      "retryable": false
+    },
+    {
+      "step": "WebFetch 본문 확인",
+      "target": "언론사/공식 사이트",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5-1: 이 환경 WebFetch 전 언론사 DNS 실패 → 시도 생략, WebSearch 요약으로 진행(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    }
+  ],
+  "open_questions": [
+    "페이스북코리아 FY2025 매출(감사보고서 원문)",
+    "Meta–LG U+ 현재 망 이용대가/캐시서버(FNA) 계약 여부와 규모",
+    "Meta 국내 캐시서버 위치(KT·SKB·LG U+ IDC)",
+    "방통위 2018 제재 과징금 액수(원문 미확인)"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "account_id": "KA31",
+  "original_name": "씨제이올리브네트웍스(주)",
+  "research_date": "2026-10-16",
+  "researcher": "agent:it-service-KA31",
+  "entity": {
+    "legal_name_ko": "씨제이올리브네트웍스(주)",
+    "legal_name_en": "CJ OliveNetworks Co., Ltd",
+    "corp_code": "00223799",
+    "stock_code": null,
+    "business_reg_no": "1048136565",
+    "parent_group": "CJ그룹(대규모기업집단 공시 제출 계열사)",
+    "related_key_accounts": [],
+    "industry_detail": "IT서비스(CJ그룹 SI/ITO, 클라우드). 비상장(corp_cls=E), DART 업종코드 6202",
+    "is_korean_entity": true,
+    "fiscal_year_end": "12",
+    "dart_available": true,
+    "economic_scope": "비상장 외부감사 대상 — OpenDART 재무 API 미제공. 감사보고서(2025.12) 원문만 존재",
+    "exclusions": "CJ 계열사 IT 지출 제외",
+    "entity_status": "CONFIRMED",
+    "entity_notes": "OpenDART find_company('씨제이올리브네트웍스') → 00223799, get_company_info '씨제이올리브네트웍스(주)', 용산구 한강대로 366 트윈시티남산, 설립 1995-03-15, corp_cls E"
+  },
+  "facts": [],
+  "drivers": [],
+  "competitive": [
+    {
+      "category": "SI_BUILD",
+      "observation": "CJ그룹 캡티브 IT서비스: 공정거래법상 '동일인등출자계열회사와의 상품·용역거래' 공시가 분기마다 다수 제출됨 → 계열 고객 IT 지출과 이중계상 위험. 금액은 원문 미열람",
+      "incumbent": "씨제이올리브네트웍스",
+      "lgu_relationship": null,
+      "evidence_ids": [
+        "KA31-E01"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "KA31-E01",
+      "tier": 1,
+      "source_type": "DART_API",
+      "source_title": "씨제이올리브네트웍스 공시 목록(search_disclosures 2025-01-01~2026-10-16)",
+      "publisher": "금융감독원 OpenDART (PlayMCP)",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004681",
+      "document_id": "20260331004681",
+      "publication_date": "2026-03-31",
+      "accessed_at": "2026-10-16",
+      "fiscal_period": "FY2025",
+      "page_or_section": "공시 목록",
+      "quoted_statement": "report_nm=감사보고서 (2025.12), rcept_no=20260331004681, flr_nm=삼일회계법인 / report_nm=동일인등출자계열회사와의상품ㆍ용역거래, rcept_no=20260929000674 / report_nm=대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)], rcept_no=20260601001488",
+      "reported_value": null,
+      "reported_unit": null,
+      "verification_status": "VERIFIED",
+      "notes": "총 44건. 계열회사 상품·용역거래 공시가 반복(2025-12-31, 2026-03-04 x3, 2026-06-19 x3, 2026-09-29 x3, 변경 2026-08-14·2026-10-08) — 계열 캡티브 거래가 이사회 의결 대상 규모임을 시사"
+    }
+  ],
+  "research_log": [
+    {
+      "step": "법인 식별",
+      "target": "OpenDART find_company/get_company_info",
+      "result": "OK",
+      "detail": "'씨제이올리브네트웍스' → 00223799, 비상장(E)",
+      "retryable": false
+    },
+    {
+      "step": "기본 재무 FY2025",
+      "target": "OpenDART get_financial_account / get_full_financial_statement OFS",
+      "result": "NOT_FOUND",
+      "detail": "status 013 조회된 데이타 없음(비상장). 감사보고서 rcept 20260331004681 원문은 dart.fss.or.kr 차단으로 열람 불가",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 원문",
+      "target": "isds.kisa.or.kr",
+      "result": "BLOCKED",
+      "detail": "프로토콜상 직접 접속 차단(환경 점검 결과)",
+      "retryable": false
+    },
+    {
+      "step": "기사 본문 확인",
+      "target": "WebFetch(언론사)",
+      "result": "BLOCKED",
+      "detail": "프로토콜 5.1: 이 환경에서 WebFetch 전 언론사 DNS 실패 — 재시도 금지 지시에 따라 미시도, WebSearch 요약만 사용(SECONDARY_UNCONFIRMED)",
+      "retryable": false
+    },
+    {
+      "step": "WebSearch(KISA 공시·DC/AI 투자·캡티브 비중·LG U+ 관계)",
+      "target": "WebSearch",
+      "result": "BLOCKED",
+      "detail": "세션 공유 WebSearch 한도(200회/턴) 소진으로 검색 미수행 — 우회 금지 지시에 따라 미시도. 후속 세션에서 재조사 필요",
+      "retryable": true
+    },
+    {
+      "step": "KISA 정보보호 공시 FY2023-2025",
+      "target": "WebSearch / isds.kisa.or.kr",
+      "result": "NOT_FOUND",
+      "detail": "검색 한도 소진 및 포털 차단",
+      "retryable": true
+    }
+  ],
+  "open_questions": [
+    "FY2025 매출·영업이익·자산(감사보고서 20260331004681 또는 대규모기업집단현황공시 20260601001488)",
+    "계열회사 상품·용역거래 공시 금액(20260929000674 등)",
+    "KISA 정보보호 공시 정보기술부문/정보보호부문 투자액 FY2023-FY2025",
+    "자체 DC/클라우드 투자 및 LG U+ 거래 보도"
+  ]
+}
