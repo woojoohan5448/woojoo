@@ -81,6 +81,48 @@ export interface Dashboard {
   portfolio: { aggregate: Record<string, AggRow>; by_segment: Record<string, DimRow>; by_family: Record<string, DimRow>; overlap_groups: { group_id: string; name: string; members: string[]; risk: string; type: string; note: string }[] }
   strategy: StrategyRow[]
   issues_summary: Record<string, number>
+  recon?: Recon
+  initiatives?: Initiative[]
+  priority_sensitivity?: PrioritySensitivity
+}
+
+/* Phase 3A — metric ledger & official-source selection (models/recon/ledger.py) */
+export interface LedgerEntry {
+  key: string; value_eok: number | null; official_source: 'EXTERNAL_MODEL' | 'INTERNAL_APPROVED' | null
+  base_year: number | null; data_status: string | null; approval_status: string; evidence_ids: string[]; selection_id: string | null
+  source_ref?: string; replaced_external_value?: number | null; scenario_reference?: { value_eok: number | null; status: string; note: string }
+}
+export interface InternalRec {
+  record_id: string; measure_id: string; area_level: string; area_id: string; fiscal_year: number; period_type: string; case_id: string
+  value_eok: string; raw: { value: string; unit: string; formula: string | null }; status: string; definition_ref: string; synthetic: boolean
+  source_id: string; as_of: string; version: number; quarantined: boolean
+}
+export interface ReconRow { record_id: string; account_id: string; area: string; fiscal_year: number; internal_measure: string; internal_eok: string; status: string; external_measure: string; external_eok: string | null; comparability: string; judgement: string; diff_pct?: string; synthetic: boolean }
+export interface Recon {
+  contract_version: string; policy_version: string; mode: string
+  policy: Record<string, { default_source: string; internal_candidates: string[]; fallback: string; pending?: string }>
+  switch_requirements: string[]; n_internal_records: number; n_selections: number; n_switched: number; contains_synthetic: boolean
+  selection_audit: { selection_id: string; account_id: string; slot_key: string; record_id: string; applied: boolean; unmet: string[]; synthetic: boolean }[]
+  issues: { code: string; severity: string; message: string; record_id: string | null }[]; quarantined: string[]
+  accounts: Record<string, { engine_ref: string; source_hash: string | null; ledger: LedgerEntry[]; internal: InternalRec[]; recon_rows: ReconRow[] }>
+}
+
+/* Phase 3A — Opportunity-to-Action (models/strategy_actions.py) */
+export type LensLevel = 'SUFFICIENT' | 'PARTIAL' | 'INSUFFICIENT'
+export interface Lens { level: LensLevel; basis: string; facts: string[]; flags: string[]; refs?: string[]; accounts?: string[] }
+export interface Initiative {
+  initiative_id: string; area: string; status: 'CANDIDATE' | 'NEEDS_VALIDATION' | 'ANALYSIS_HYPOTHESIS'; approval_status: 'PROPOSED'
+  opportunity: { FPR_2026: number; FPR_2031: number; FPR_CAGR: number | null; n_accounts: number; top_accounts: { account_id: string; FPR_2031: number }[] }
+  lenses: { market: Lens; demand: Lens; capture: Lens }
+  why: string[]; gap: string[]; option: { type: string | null; label: string; text: string | null; mode: string }; 
+  priority: { baseline_score: number; baseline_rank: number; rank_min: number; rank_max: number; stability: string; note: string }
+  actions: { action_id: string; text: string; lens: string; owner_role: string; status: 'PROPOSED' }[]
+  verification_case?: { title: string; finding: string; implication: string } | null
+}
+export interface PrioritySensitivity {
+  weights_baseline: Record<string, number>; method: string
+  scenarios: { id: string; label: string; weights: Record<string, number>; ranks: Record<string, number>; scores: Record<string, number> }[]
+  components: Record<string, Record<string, number>>
 }
 
 export type MetricKey = 'TS' | 'RAW' | 'FPR' | 'REV'

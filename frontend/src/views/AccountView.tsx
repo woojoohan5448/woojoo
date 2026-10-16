@@ -11,6 +11,7 @@ import { TermTip } from '../components/Term'
 import { GLOSSARY, termLabel } from '../lib/glossary'
 import { isApprovedTarget, resolveMetric, targetView } from '../lib/data'
 import ProductRevenueDrilldown from '../extensions/ProductRevenueDrilldown'
+import ReconPanel from '../components/ReconPanel'
 
 interface Props {
   data: Dashboard; account: Account; scen: Scenario; setScen: (s: Scenario) => void; addr: AddrCase; setAddr: (a: AddrCase) => void
@@ -224,18 +225,8 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
             <p className="mt-2 text-[11.5px] text-ink3">이 정보는 ③ 전략과제 도출의 Demand Evidence로 연결됩니다(관측 ID 기준).</p>
           </section>
         )}
-        {/* Phase 4 reconciliation (internal vs external) */}
-        <section className="card p-4">
-          <h3 className="text-[15px] font-bold">External vs Sales Reconciliation <span className="text-[12px] font-normal text-ink3">(Phase 4 · 사내 데이터)</span></h3>
-          {!a.reconciliation ? <p className="mt-1 text-[12.5px] text-ink3">사내 데이터 미입력 — 영업 추정 TS/RAW/FPR, 실제 매출(CR), 경영진 목표가 승인되면 외부 추정과의 차이·Opportunity Gap이 표시됩니다(관리자 입력 → Excel Import).</p> : (
-            <div className="mt-2 overflow-x-auto">
-              <table className="w-full min-w-[560px] text-[12.5px] num"><thead><tr className="text-left text-ink3"><th className="py-1">지표</th><th>외부 추정</th><th>영업 추정</th><th>차이</th><th>판정</th><th>담당</th></tr></thead>
-                <tbody>{a.reconciliation.rows.map(r => <tr key={`${r.year}${r.metric}`} className="border-t border-line"><td className="py-1">{r.year} {r.metric}</td><td>{eok(r.external, 'ESTIMATED')}</td><td>{r.sales === null ? '—' : eok(r.sales, 'VERIFIED')}</td>
-                  <td>{r.diff_pct === null ? '—' : pct(r.diff_pct, 0)}</td><td><Pill tone={r.flag === 'ALIGNED' ? 'ok' : r.flag.startsWith('REVIEW') ? 'warn' : 'neutral'}>{r.flag}</Pill></td><td className="text-ink3">{r.sales_rep ?? ''}</td></tr>)}</tbody></table>
-              <div className="mt-2 text-[12.5px] num">사내 CR {eok(a.reconciliation.internal_cr, 'VERIFIED')} · 경영진 목표 {eok(a.reconciliation.management_target, 'VERIFIED')} · Opportunity Gap(FPR−CR) {eok(a.reconciliation.opportunity_gap, 'ESTIMATED')}</div>
-              {a.reconciliation.notes.map((n, i) => <p key={i} className="text-[12px]" style={{ color: 'var(--warn)' }}>{n}</p>)}
-            </div>)}
-        </section>
+        {/* Phase 3A: Internal–External Reconciliation (ledger + six internal fields; Phase 4 sales estimate inside) */}
+        <ReconPanel data={data} account={a} scen={scen} addr={addr} onInspect={(x) => { setSel(x); setInspOpen(true) }} />
 
         <details className="card p-4" open={showDeep} onToggle={e => setShowDeep((e.target as HTMLDetailsElement).open)}>
           <summary className="cursor-pointer text-[15px] font-bold">상세 분석 — Wallet 구성(카테고리 분해) · TS Bridge 2026→2031</summary>
