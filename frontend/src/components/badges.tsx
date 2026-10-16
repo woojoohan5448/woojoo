@@ -44,7 +44,7 @@ export function Swatch({ color }: { color: string }) {
 const GRADE_STYLE: Record<string, { fg: string; label: string }> = {
   ESTIMATED_HIGH: { fg: 'var(--ok)', label: '추정 · HIGH' }, ESTIMATED_MEDIUM: { fg: 'var(--warn)', label: '추정 · MEDIUM' },
   ESTIMATED_LOW: { fg: 'var(--err)', label: '추정 · LOW CONFIDENCE' },
-  INTERNAL_REQUIRED: { fg: 'var(--c-ts)', label: 'INTERNAL INPUT REQUIRED' }, INSUFFICIENT_EVIDENCE: { fg: 'var(--ink-3)', label: 'RESEARCH GAP' },
+  INTERNAL_REQUIRED: { fg: 'var(--c-ts)', label: '사내 입력 필요' }, INSUFFICIENT_EVIDENCE: { fg: 'var(--ink-3)', label: 'RESEARCH GAP' },
   NOT_APPLICABLE: { fg: 'var(--ink-3)', label: 'NOT APPLICABLE' }, ERROR: { fg: 'var(--err)', label: 'VALIDATION ERROR' },
   VERIFIED: { fg: 'var(--ok)', label: 'VERIFIED' }, DERIVED: { fg: 'var(--ok)', label: 'DERIVED' },
 }

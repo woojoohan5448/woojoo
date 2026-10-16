@@ -14,15 +14,11 @@ await p.click('[role=dialog] button:has-text("다음")'); await p.waitForTimeout
 ok((await p.locator('[role=dialog]').innerText()).includes('Realistical Addressable Wallet'), 'vNext: onboarding step 2 explains TS→RAW→FPR with original terms')
 await p.keyboard.press('Escape'); await p.waitForTimeout(200)
 ok(await p.locator('[role=dialog]').count() === 0, 'vNext: onboarding closes with Esc')
-ok(await p.locator('[data-testid=overview]').count() === 1, 'vNext: Strategic Overview is the first screen')
-ok((await p.locator('[data-testid=kpi-target]').innerText()).includes('INTERNAL INPUT REQUIRED'), 'vNext D1: 2031 Target KPI shows INTERNAL INPUT REQUIRED without approved targets')
-ok((await p.locator('[data-testid=kpi-coverage]').innerText()).includes('53 /'), 'vNext: analysed (53) vs valid-data accounts shown separately')
-ok(await p.locator('[data-testid=area-table] tbody tr').count() === 8, 'vNext: business-area table shows evidence level separate from score')
-// keyboard-accessible glossary tooltip
-await p.locator('button[data-term="RAW"]').first().focus(); await p.waitForTimeout(150)
-ok((await p.locator('[role=tooltip]').first().innerText()).includes('LGU+ 공략 가능 시장'), 'vNext: glossary tooltip opens on keyboard focus')
-await p.keyboard.press('Escape')
-await p.click('nav[aria-label="분석 단계"] button:has-text("고객별 사업기회")'); await p.waitForTimeout(500)
+// vNext correction: first screen = ① 고객별 사업기회 (AS-IS); AS-IS/TO-BE groups in the menu
+ok((await p.locator('[data-testid=tab-purpose]').innerText()).includes('① 고객별 사업기회'), 'vNext-C: first screen is ① 고객별 사업기회 with purpose line')
+ok(await p.locator('nav[aria-label="분석 단계"] [role=group][aria-label^="AS-IS"] button').count() === 2 && await p.locator('nav[aria-label="분석 단계"] [role=group][aria-label^="TO-BE"] button').count() === 2, 'vNext-C: menu groups AS-IS (①②) and TO-BE (③④)')
+const order = (await p.locator('nav[aria-label="분석 단계"] button').allInnerTexts()).map(t => t.replace(/\s+/g, ''))
+ok(order.join('|') === '①고객별사업기회|②전사기회분석|③전략과제도출|④전략적시사점|⑤데이터·운영관리', `vNext-C: menu order ${order.join('|')}`)
 const insp = () => p.locator('aside[aria-label="근거 및 계산 패널"]').innerText()
 ok((await insp()).includes('국민은행 · TS 2026'), 'default account KA03 inspector shows TS 2026')
 // click the 2031 FPR bar via ECharts instance-independent approach: find svg path elements of bars and click label text
@@ -62,10 +58,22 @@ await p.check('input[aria-label="시나리오 목표 보기"]'); await p.waitFor
 const tgtAfter = await p.locator('main').innerText()
 ok(!tgtBefore.includes('시나리오 참고값') && tgtAfter.includes('시나리오 참고값'), 'vNext D1: scenario target appears only after explicit toggle')
 await p.uncheck('input[aria-label="시나리오 목표 보기"]'); await p.waitForTimeout(200)
-for (const tab of ['전략 인사이트', '전사 기회 분석', '전략과제 우선순위', '데이터·운영 관리']) {
+for (const tab of ['전사 기회 분석', '전략과제 도출', '전략적 시사점', '데이터·운영 관리']) {
   await p.click(`nav[aria-label="분석 단계"] button:has-text("${tab}")`); await p.waitForTimeout(400)
   ok((await p.locator('main').innerText()).length > 200, `tab renders: ${tab}`)
 }
+await p.click('nav[aria-label="분석 단계"] button:has-text("전략과제 도출")'); await p.waitForTimeout(300)
+ok((await p.locator('[data-testid=derivation-flow]').innerText()).includes('Demand Evidence'), 'vNext-C: ③ shows Opportunity Pool → Demand Evidence → Capability Gap → Strategic Initiative')
+await p.click('nav[aria-label="분석 단계"] button:has-text("전략적 시사점")'); await p.waitForTimeout(400)
+ok(await p.locator('[data-testid=overview]').count() === 1, 'vNext-C: former Strategic Overview lives in ④ 전략적 시사점')
+ok((await p.locator('[data-testid=kpi-target]').innerText()).includes('사내 목표 미입력'), 'vNext D1: Target KPI shows 사내 목표 미입력 without approved targets')
+ok((await p.locator('[data-testid=kpi-coverage]').innerText()).includes('53 /'), 'vNext: analysed (53) vs valid-data accounts shown separately')
+ok(await p.locator('[data-testid=area-table] tbody tr').count() === 8, 'vNext: business-area table shows evidence level separate from score')
+ok(await p.locator('[data-testid=decisions] li').count() >= 4, 'vNext-C: ④ lists management decisions required')
+await p.locator('button[data-term="RAW"]').first().focus(); await p.waitForTimeout(150)
+ok((await p.locator('[role=tooltip]').first().innerText()).includes('LGU+ 공략 가능 시장'), 'vNext: glossary tooltip opens on keyboard focus')
+await p.keyboard.press('Escape')
+await p.click('nav[aria-label="분석 단계"] button:has-text("데이터·운영 관리")'); await p.waitForTimeout(300)
 for (const tab of ['데이터 신뢰도', '분석 기준·산식', '관리자 입력 · Excel Import']) {
   await p.click(`nav[aria-label="데이터·운영 관리 하위 메뉴"] button:has-text("${tab}")`); await p.waitForTimeout(400)
   ok((await p.locator('main').innerText()).length > 200, `ops sub-menu renders: ${tab}`)

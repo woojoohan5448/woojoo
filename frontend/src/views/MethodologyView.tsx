@@ -31,7 +31,7 @@ export default function MethodologyView({ data }: { data: Dashboard }) {
           <li><b>RAW</b> = Σ(TS_i × Addressability_i), <b>FPR</b> = Σ(RAW_i × Capture_Ceiling_i). 불변식 0 ≤ FPR ≤ RAW ≤ TS 자동 검증.</li>
           <li><b>CR</b>은 사내 데이터만 사용(미입력=NULL). C-SOW=CR/RAW, PCR=CR/FPR, Upside=FPR−CR.</li>
           <li><b>2031</b>: TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution (Low/Base/High).</li>
-          <li><b>Target 2031</b>: 경영진 승인 목표만 공식 값(KPI·합계). 없으면 INTERNAL INPUT REQUIRED. FPR_2031×{p.target_rule.attainment_of_fpr_2031} 시나리오는 '시나리오 목표 보기'를 켤 때만 참고용으로 표시.</li>
+          <li><b>Target 2031</b>: 경영진 승인 목표만 공식 값(KPI·합계). 없으면 사내 입력 필요(INTERNAL_REQUIRED). FPR_2031×{p.target_rule.attainment_of_fpr_2031} 시나리오는 '시나리오 목표 보기'를 켤 때만 참고용으로 표시.</li>
           <li>상태 5종: VERIFIED · DERIVED · ESTIMATED · SCENARIO · UNKNOWN. 추정치는 유효숫자 2자리·'≈'로 표시해 과도한 정밀성을 피함.</li>
         </ol>
         <p className="mt-2 text-[12px] text-ink3">상세: docs/METHODOLOGY.md · DATA_DICTIONARY.md · RESEARCH_PROTOCOL.md</p>

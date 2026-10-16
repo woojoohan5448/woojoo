@@ -80,7 +80,7 @@ import type { Account, NAClass, Selection } from '../types'
 import { GLOSSARY } from './glossary'
 
 export const NA_LABEL: Record<string, string> = {
-  INTERNAL_REQUIRED: 'INTERNAL INPUT REQUIRED', INSUFFICIENT_EVIDENCE: 'RESEARCH GAP', NOT_APPLICABLE: 'NOT APPLICABLE', ERROR: 'VALIDATION ERROR',
+  INTERNAL_REQUIRED: '사내 입력 필요', INSUFFICIENT_EVIDENCE: 'RESEARCH GAP', NOT_APPLICABLE: 'NOT APPLICABLE', ERROR: 'VALIDATION ERROR',
 }
 export const NA_KO: Record<string, string> = {
   INTERNAL_REQUIRED: '사내 데이터 입력 대기', INSUFFICIENT_EVIDENCE: '근거 부족(조사 공백)', NOT_APPLICABLE: '지표 비적용', ERROR: '검증 오류',
@@ -100,6 +100,10 @@ export function naInfo(a: Account, sel: Pick<Selection, 'year' | 'metric'>): { c
 /** Text for a missing value: never a bare N/A — always the reason class. */
 export function missingText(a: Account, sel: Pick<Selection, 'year' | 'metric'>, fallback = 'N/A'): string {
   const n = naInfo(a, sel)
+  if (n?.class === 'INTERNAL_REQUIRED') {  // short Korean status (state code INTERNAL_REQUIRED unchanged)
+    const m = sel.metric === 'REV' ? (sel.year === 2026 ? 'CR' : 'TARGET') : sel.metric
+    return m === 'CR' ? '사내 매출 미입력' : m === 'TARGET' || m === 'TARGET_SOW' ? '사내 목표 미입력' : '사내 매출 미입력'
+  }
   return n && NA_LABEL[n.class] ? NA_LABEL[n.class] : fallback
 }
 

@@ -45,7 +45,7 @@ describe('chart options', () => {
     const o: any = opportunityOption(a, 'base', 'base', { year: 2026, metric: 'RAW' }, P, false)
     const main = o.series.filter((s: any) => s.type === 'bar' && s.name === '2026')[0]
     expect(main.data[1].itemStyle.borderWidth).toBe(2.5)
-    expect(main.data[3].label.formatter()).toBe('INTERNAL INPUT REQUIRED')  // missing CR shows its reason class, never 0
+    expect(main.data[3].label.formatter()).toBe('사내 매출 미입력')  // missing CR shows its reason class, never 0
   })
   it('category and bridge options build for estimated accounts and return null bridge for unknown', () => {
     expect((categoryOption(a, 2026, 'base', 'base', { year: 2026, metric: 'TS' }, P) as any).series.length).toBe(3)

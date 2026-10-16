@@ -22,20 +22,22 @@ const STEPS = [
           <li><b>{GLOSSARY.TS.no} {GLOSSARY.TS.en} (TS)</b> — {GLOSSARY.TS.ko}: 판매 불가 영역까지 포함한 전체 시장</li>
           <li><b>{GLOSSARY.RAW.no} {GLOSSARY.RAW.en} (RAW)</b> — {GLOSSARY.RAW.ko}: RAW ≤ TS</li>
           <li><b>{GLOSSARY.FPR.no} {GLOSSARY.FPR.en} (FPR)</b> — {GLOSSARY.FPR.ko}: FPR ≤ RAW</li>
-          <li><b>④ CR · ⑧ Target</b> — 사내 실적·승인 목표. 없으면 0이 아니라 <b>INTERNAL INPUT REQUIRED</b></li>
+          <li><b>④ CR · ⑧ Target</b> — 사내 실적·승인 목표. 없으면 0이 아니라 <b>사내 입력 필요</b></li>
         </ul>
         <p className="mt-2 text-[12px] text-ink3">세 지표는 포함 관계이므로 더하지 않습니다.</p>
       </>) },
-  { title: '53개 고객 분석 → 전사 전략과제',
+  { title: '53개 고객 분석 → 전사 전략과제 (AS-IS → TO-BE)',
     body: (
       <>
         <ol className="space-y-1.5 text-[12.5px]">
-          <li><b>1. 고객별 사업기회</b> — 53개사 TS·RAW·FPR·CR·Target</li>
-          <li><b>2. 전사 기회 분석</b> — 산업·사업영역별 통합(부분합, 정의 상이 제외)</li>
-          <li><b>3. 전략과제 우선순위</b> — 사업영역 Opportunity Pool → Capability Gap → 전략과제 후보</li>
-          <li><b>4. 전략 인사이트</b> — 경영진 요약과 검증 필요사항</li>
+          <li><b>AS-IS · Account Intelligence</b></li>
+          <li className="pl-3">① 고객별 사업기회 — 53개사 TS·RAW·FPR·CR·Target과 2026~2031 성장 궤적</li>
+          <li className="pl-3">② 전사 기회 분석 — 산업·사업영역별 통합(부분합, 정의 상이 제외)</li>
+          <li><b>TO-BE · Strategic Intelligence</b></li>
+          <li className="pl-3">③ 전략과제 도출 — Opportunity Pool → Demand Evidence → Capability Gap → Strategic Initiative</li>
+          <li className="pl-3">④ 전략적 시사점 — 우선 검토 영역·옵션·의사결정 과제</li>
         </ol>
-        <p className="mt-2">전략 점수(매력도)와 <b>근거 수준</b>은 별개입니다. 근거가 부족한 영역의 권고는 "검토 가설"로만 표시됩니다.</p>
+        <p className="mt-2">AS-IS/TO-BE는 분석 단계의 구분입니다(AS-IS에도 2031 전망 포함). 전략 점수(매력도)와 <b>근거 수준</b>은 별개이며, 근거가 부족한 영역의 권고는 "검토 가설"입니다.</p>
       </>) },
 ]
 

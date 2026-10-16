@@ -76,8 +76,8 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
     <div className="space-y-4 p-4" data-testid="overview">
       {/* Message first */}
       <section className="card p-4">
-        <div className="kicker">전략 인사이트 · Strategic Overview</div>
-        <h2 className="mt-1 text-[20px] font-bold leading-snug">53개 Key Account의 사업기회를 근거 수준과 함께 요약합니다</h2>
+        <div className="kicker">TO-BE · ④ 전략적 시사점 · Strategic Implications</div>
+        <h2 className="mt-1 text-[20px] font-bold leading-snug">53개 고객 분석(①②)과 전략과제 도출(③)의 결론 — 근거 수준과 함께</h2>
         <p className="mt-1 text-[13px] text-ink2">
           분석 대상 <b>{n}개사</b> 중 수치가 산출된 고객 <b>{withData}개사</b>(TS 비교 합산 {a26.n_ts}개사 · <TermTip code="PARTIAL_SUM">정의 상이 {mismatch}개사 별도</TermTip>{rawOnly > 0 ? ` · 계약 기반 RAW만 ${rawOnly}개사` : ''}) · 수치 없음 {noData}개사.
           모든 합계는 <b>부분합 추정치</b>이며 확정된 전사 목표가 아닙니다. 사내 실적(CR) {crN}/{n}개사, 승인 Target {tgtApproved}/{n}개사.
@@ -90,10 +90,35 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
         <Kpi term="TS" label="2026 TS (고객 전체 IT 지출액)" value={eok(a26.TS, 'ESTIMATED')} sub={`→ 2031 ${eok(a31.TS, 'ESTIMATED')} · ${a26.n_ts}개사 부분합`} accent="var(--c-ts)" />
         <Kpi term="RAW" label="2031 RAW (LGU+ 공략 가능 시장)" value={eok(a31.RAW, 'ESTIMATED')} sub={`2026 ${eok(a26.RAW, 'ESTIMATED')} · ${a31.n_raw}개사 부분합`} accent="var(--c-raw)" />
         <Kpi term="FPR" label="2031 FPR (최대 확보 가능 매출)" value={eok(a31.FPR, 'ESTIMATED')} sub={`범위 ${eok(lo31.FPR, 'ESTIMATED')}~${eok(hi31.FPR, 'ESTIMATED')} (Low~High) · 2026 ${eok(a26.FPR, 'ESTIMATED')}`} accent="var(--c-fpr)" />
-        <Kpi testid="kpi-target" term="TARGET" label="2031 Target Revenue (2031년 목표 매출)" value={tgtApproved > 0 ? eok(a31.TARGET, 'VERIFIED') : 'INTERNAL INPUT REQUIRED'}
+        <Kpi testid="kpi-target" term="TARGET" label="2031 Target Revenue (2031년 목표 매출)" value={tgtApproved > 0 ? eok(a31.TARGET, 'VERIFIED') : '사내 목표 미입력'}
           sub={tgtApproved > 0 ? `경영진 승인 ${tgtApproved}개사 합계` : `승인 목표 0/${n}개사${showTgt ? ` · 시나리오 참고값 ${eok(a31.TARGET_scenario ?? null, 'SCENARIO')}(공식 합계 아님)` : ''}`} accent="var(--c-rev)" />
         <Kpi testid="kpi-areas" term="EVIDENCE_LEVEL" label="사업영역 기회 · 근거 수준" value={`${strat.length}개 영역`}
           sub={`근거 충분 ${levelCount.SUFFICIENT} · 일부 ${levelCount.PARTIAL} · 부족 ${levelCount.INSUFFICIENT} · 외부 커버리지 ${data.meta.coverage ? pct(data.meta.coverage.current.external_coverage) : '—'}`} />
+      </section>
+
+      {/* Options & decisions (conclusion of ③) */}
+      <section className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="card p-4" aria-labelledby="opts">
+          <h3 id="opts" className="text-[15px] font-bold">투자·제휴·상품화 옵션 (사업영역별, ③ 엔진 결과)</h3>
+          <ul className="mt-2 space-y-1.5 text-[12.5px]" data-testid="options">{[...strat].sort((x, y) => y.priority_score - x.priority_score).map(s => (
+            <li key={s.area} className="flex flex-wrap items-baseline gap-1.5 border-t border-line pt-1.5">
+              <b className="min-w-[150px]">{s.area}</b>
+              <Pill tone={s.evidence?.recommendation_mode === 'HYPOTHESIS' ? 'warn' : 'ok'}>{REC_KO[s.recommendation_type ?? ''] ?? '—'}{s.evidence?.recommendation_mode === 'HYPOTHESIS' ? ' · 검토 가설' : ' · 우선 검토'}</Pill>
+              <span className="text-ink3">{LEVEL_LABEL[s.evidence?.evidence_level ?? 'INSUFFICIENT']} · 가정 의존도 {s.evidence?.assumption_dependency == null ? '—' : s.evidence.assumption_dependency < 0 ? '감소 가정' : pct(s.evidence.assumption_dependency, 0)}</span>
+            </li>))}
+          </ul>
+          <p className="mt-2 text-[11.5px] text-ink3">근거 충분 영역만 '우선 검토', 그 외는 '검토 가설'. 확정 과제·투자 결정이 아닙니다. 전략과제 후보(WHY/GAP/OPTION/ACTION)는 Phase 3에서 고객 근거와 연결해 도출합니다.</p>
+        </div>
+        <div className="card p-4" aria-labelledby="decide">
+          <h3 id="decide" className="text-[15px] font-bold">경영진 의사결정 필요 사항</h3>
+          <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-[12.5px]" data-testid="decisions">
+            <li>2031 Target Revenue 승인(현재 승인 {tgtApproved}/{n}개사) — 승인 전에는 Target·Target SOW 산출 불가</li>
+            <li>우선순위 가중치 확정(현재 v1 기준안: 규모 35·성장 20·수요 고객 15·진입 15·신뢰도 15 − 난이도)</li>
+            <li>2031 접근률·포획상한 상향(LG U+ 역량 확대 가정) 승인 — 2031 FPR 증가분의 {pct(capShare, 0)}에 해당</li>
+            <li>근거 수준 판정 기준(충분: 근거 비중 50%·근거 고객 5개사) 및 '기존 공급자 관찰'의 근거 인정 여부</li>
+            <li>가정 의존도가 높은 영역({highDep.map(s => s.area).join(', ') || '없음'})의 투자 판단 보류 여부 — 민감도·고객 수요 검증 후 재평가</li>
+          </ol>
+        </div>
       </section>
 
       {/* Five executive questions */}
@@ -104,7 +129,7 @@ export default function OverviewView({ data, onNavigate, onSelect }: { data: Das
             { q: '① 53개 KA의 전체 IT Spending은?', a: `${eok(a26.TS, 'ESTIMATED')} (2026) → ${eok(a31.TS, 'ESTIMATED')} (2031)`, s: `${a26.n_ts}개사 부분합 · 대부분 추정`, t: 'TS' },
             { q: '② LGU+가 공략할 수 있는 시장은?', a: `${eok(a26.RAW, 'ESTIMATED')} → ${eok(a31.RAW, 'ESTIMATED')}`, s: `${pct(a26.RAW / (a26.TS || 1), 0)} of TS (2026)`, t: 'RAW' },
             { q: '③ 최대 확보 가능 매출은?', a: `${eok(a26.FPR, 'ESTIMATED')} → ${eok(a31.FPR, 'ESTIMATED')}`, s: `CAGR ${pct(cagr(a26.FPR, a31.FPR))} · 증가분의 ${pct(capShare, 0)}는 U+ 역량 확대 가정`, t: 'FPR' },
-            { q: '④ 목표와 현재 매출 사이 성장 기회는?', a: crN === 0 && tgtApproved === 0 ? 'INTERNAL INPUT REQUIRED' : `CR ${crN}개사 · Target ${tgtApproved}개사`, s: '사내 CR·승인 Target 입력 후 산출(관리자 입력·Excel Import)', t: 'UPSIDE' },
+            { q: '④ 목표와 현재 매출 사이 성장 기회는?', a: crN === 0 && tgtApproved === 0 ? '사내 매출·목표 미입력' : `CR ${crN}개사 · Target ${tgtApproved}개사`, s: '사내 CR·승인 Target 입력 후 산출(관리자 입력·Excel Import)', t: 'UPSIDE' },
             { q: '⑤ 무엇을 우선 준비해야 하는가?', a: `검토 후보 영역 ${topAreas.slice(0, 3).map(s => s.area).join(' · ')}`, s: '전략과제 도출·우선순위 확정은 Phase 3 · 근거 수준 함께 확인', t: 'PRIORITY_SCORE' },
           ].map((x, i) => (
             <li key={i} className="rounded-md border border-line bg-sunk p-2.5">

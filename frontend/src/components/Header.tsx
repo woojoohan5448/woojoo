@@ -50,7 +50,7 @@ export default function Header({ data, mode, theme, setTheme, compact = false, s
         <Kpi term="Y2031" label="2031 TS" value={eok(a31.TS, 'ESTIMATED')} sub={cov(a31.n_ts)} accent="var(--c-ts)" />
         <Kpi term="Y2031" label="2031 RAW" value={eok(a31.RAW, 'ESTIMATED')} sub={cov(a31.n_raw)} accent="var(--c-raw)" />
         <Kpi term="Y2031" label="2031 FPR" value={eok(a31.FPR, 'ESTIMATED')} sub={cov(a31.n_fpr)} accent="var(--c-fpr)" />
-        <Kpi term="TARGET" label="2031 Target" value={tgtApproved > 0 ? eok(a31.TARGET, 'VERIFIED') : 'INTERNAL INPUT REQUIRED'} sub={tgtApproved > 0 ? `경영진 승인 ${tgtApproved}개사` : `승인 목표 0/${n}${showTgt ? ` · 시나리오 참고 ${eok(a31.TARGET_scenario ?? null, 'SCENARIO')}` : ''}`} accent="var(--c-rev)" />
+        <Kpi term="TARGET" label="2031 Target" value={tgtApproved > 0 ? eok(a31.TARGET, 'VERIFIED') : '사내 목표 미입력'} sub={tgtApproved > 0 ? `경영진 승인 ${tgtApproved}개사` : `승인 목표 0/${n}${showTgt ? ` · 시나리오 참고 ${eok(a31.TARGET_scenario ?? null, 'SCENARIO')}` : ''}`} accent="var(--c-rev)" />
         <Kpi label="합산 제외" value={`${a26.n_mismatch + (n - a26.n_ts - a26.n_mismatch)}개사`} sub={`정의상이 ${a26.n_mismatch} · 미확인/비적용 ${n - a26.n_ts - a26.n_mismatch}`} />
         {data.meta.coverage && <Kpi label="외부 데이터 커버리지" value={`${(data.meta.coverage.current.external_coverage * 100).toFixed(1)}%`} sub={`RESEARCH GAP ${data.meta.coverage.current.external_missing} · 기준선 ${data.meta.coverage.baseline ? (data.meta.coverage.baseline.external_coverage * 100).toFixed(1) + '%' : '-'}`} />}
         {data.meta.contains_internal_data && <Kpi label="사내 데이터" value="포함" sub="외부 반출 금지" accent="var(--err)" />}

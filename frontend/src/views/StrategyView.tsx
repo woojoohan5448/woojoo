@@ -30,7 +30,19 @@ export default function StrategyView({ data, palette: p, onSelect, themeKey }: {
   return (
     <div className="space-y-4 p-4">
       <section className="card p-4">
-        <h2 className="text-[18px] font-bold">전략과제 우선순위 <span className="text-[13px] font-semibold text-ink3">Strategic Priorities · 사업영역 Opportunity Pool (기존 Strategic Opportunity Engine)</span></h2>
+        <h2 className="text-[18px] font-bold">③ 전략과제 도출 <span className="text-[13px] font-semibold text-ink3">Strategic Initiatives · 기존 Strategic Opportunity Engine 재사용</span></h2>
+        <ol className="mt-2 flex flex-wrap items-stretch gap-1.5 text-[12px]" aria-label="도출 흐름" data-testid="derivation-flow">
+          {[
+            ['Opportunity Pool', `사업영역 ${rows.length}개 · FPR 2031 ${eok(rows.reduce((x, r) => x + r.FPR_2031, 0), 'ESTIMATED')} (모델 추정)`],
+            ['Demand Evidence', `수요 신호 보유 고객 ${new Set(rows.flatMap(r => r.evidence?.signals.map(s => s.account_id) ?? [])).size}개사 · 근거 충분 영역 ${rows.filter(r => r.evidence?.evidence_level === 'SUFFICIENT').length}개`],
+            ['Capability Gap', '영역별 역량 격차 — 분석가 가설(사내 검증 필요)'],
+            ['Strategic Initiative', '후보 도출은 Phase 3 (현재: 사업영역 단위 검토)'],
+          ].map(([k, v], i) => (
+            <li key={k} className="flex items-center gap-1.5">
+              <span className="rounded-md border border-line bg-sunk px-2.5 py-1.5"><b className="block">{k}</b><span className="text-ink3">{v}</span></span>
+              {i < 3 && <span aria-hidden className="text-ink3">→</span>}
+            </li>))}
+        </ol>
         <p className="text-[12.5px] text-ink2">53개 고객의 카테고리별 수요(RAW·FPR)를 사업영역으로 통합하고 LG U+ 역량·경쟁·실행 난이도를 결합해 우선순위를 산정합니다. 수요 집계는 TS 산출 {cov.n_ts}개사 + 특수모델 고객 부분합이며, 역량 평가는 공개정보 기반 분석가 판단(사내 진단으로 검증 필요)입니다. <b>M&A는 확정 결론이 아닌 검토 권고</b>입니다.</p>
         <p className="mt-1 text-[12.5px] text-ink2"><b>전략 점수(매력도)와 근거 수준은 별개 지표</b>입니다. 근거 충분이 아닌 영역의 권고는 <b>검토 가설</b>이며, 가정 의존도가 높은 영역은 민감도·고객 수요 검증 후 재평가합니다. 고객 수요 기반 전략과제 후보·WHY/GAP/OPTION/ACTION은 Phase 3에서 제공됩니다.</p>
       </section>

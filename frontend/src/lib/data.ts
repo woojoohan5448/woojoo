@@ -27,7 +27,7 @@ export function targetView(r: MetricRec): MetricRec {
   let m = MASKED.get(r)
   if (!m) {
     m = { ...r, value: null, low: null, high: null, status: 'UNKNOWN', masked: true,
-      notes: ['경영진 승인 Target 없음 — INTERNAL INPUT REQUIRED. 시나리오 목표(FPR×달성률)는 "시나리오 목표 보기"를 켤 때만 참고용으로 표시됩니다.', ...r.notes] }
+      notes: ['경영진 승인 Target 없음 — 사내 입력 필요(INTERNAL_REQUIRED). 시나리오 목표(FPR×달성률)는 "시나리오 목표 보기"를 켤 때만 참고용으로 표시됩니다.', ...r.notes] }
     MASKED.set(r, m)
   }
   return m

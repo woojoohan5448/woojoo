@@ -137,7 +137,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
                     <td><span className="text-ink2">{r.a.confidence} → {r.b.confidence}</span></td>
                   </tr>
                 ))}
-                <tr className="border-t border-line"><td className="py-1.5 font-semibold">CR → Target</td><td>{m26.CR.value === null ? <span className="text-ink3 text-[11px]">INTERNAL INPUT REQUIRED</span> : fmtRec(m26.CR)}</td><td>{targetView(a.m.target.TARGET).value === null ? <span className="text-ink3 text-[11px]">INTERNAL INPUT REQUIRED</span> : <>{fmtRec(a.m.target.TARGET)} {!isApprovedTarget(a.m.target.TARGET) && <Pill tone="warn">시나리오 참고값</Pill>}</>}</td><td>{signedEok(targetView(a.m.target.TARGET_INCREMENT).value)}</td><td>—</td><td className="text-ink2">{isApprovedTarget(a.m.target.TARGET) ? '경영진 승인' : '승인 목표 없음'}</td></tr>
+                <tr className="border-t border-line"><td className="py-1.5 font-semibold">CR → Target</td><td>{m26.CR.value === null ? <span className="text-ink3 text-[11px]">사내 매출 미입력</span> : fmtRec(m26.CR)}</td><td>{targetView(a.m.target.TARGET).value === null ? <span className="text-ink3 text-[11px]">사내 목표 미입력</span> : <>{fmtRec(a.m.target.TARGET)} {!isApprovedTarget(a.m.target.TARGET) && <Pill tone="warn">시나리오 참고값</Pill>}</>}</td><td>{signedEok(targetView(a.m.target.TARGET_INCREMENT).value)}</td><td>—</td><td className="text-ink2">{isApprovedTarget(a.m.target.TARGET) ? '경영진 승인' : '승인 목표 없음'}</td></tr>
               </tbody>
             </table>
           </div>
@@ -149,7 +149,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
         {/* Phase 4 reconciliation (internal vs external) */}
         <section className="card p-4">
           <h3 className="text-[15px] font-bold">External vs Sales Reconciliation <span className="text-[12px] font-normal text-ink3">(Phase 4 · 사내 데이터)</span></h3>
-          {!a.reconciliation ? <p className="mt-1 text-[12.5px] text-ink3">INTERNAL INPUT REQUIRED — 영업 추정 TS/RAW/FPR, 실제 매출(CR), 경영진 목표가 승인되면 외부 추정과의 차이·Opportunity Gap이 표시됩니다(관리자 입력 → Excel Import).</p> : (
+          {!a.reconciliation ? <p className="mt-1 text-[12.5px] text-ink3">사내 데이터 미입력 — 영업 추정 TS/RAW/FPR, 실제 매출(CR), 경영진 목표가 승인되면 외부 추정과의 차이·Opportunity Gap이 표시됩니다(관리자 입력 → Excel Import).</p> : (
             <div className="mt-2 overflow-x-auto">
               <table className="w-full min-w-[560px] text-[12.5px] num"><thead><tr className="text-left text-ink3"><th className="py-1">지표</th><th>외부 추정</th><th>영업 추정</th><th>차이</th><th>판정</th><th>담당</th></tr></thead>
                 <tbody>{a.reconciliation.rows.map(r => <tr key={`${r.year}${r.metric}`} className="border-t border-line"><td className="py-1">{r.year} {r.metric}</td><td>{eok(r.external, 'ESTIMATED')}</td><td>{r.sales === null ? '—' : eok(r.sales, 'VERIFIED')}</td>
