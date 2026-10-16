@@ -56,6 +56,6 @@
   - 재개: PHASE3A_REPORT §4(잔여 리스크)·§5(연동 준비) 확인 → Blocker 해소 후 Phase 3B 승인 요청.
 
 ## 6. 최종 인계 (외부 개발 종료, 2026-10-16)
-- 기준선 태그 `v3.0-phase3a-final`. 보존 태그 `v1.0-checkpoint`·`v2.0-phase1-4-checkpoint`·`v2.1-pre-vnext`·`v2.2-pre-phase3a`.
+- 기준선 태그 `v3.0-phase3a-final`(코드 기준선, 커밋 1d87624) · 인계 태그 `v3.0-phase3a-handoff`(검증 문서 포함). 보존 태그 `v1.0-checkpoint`·`v2.0-phase1-4-checkpoint`·`v2.1-pre-vnext`·`v2.2-pre-phase3a`.
 - 사내 환경: 루트 `INTERNAL_SETUP.md`(설치·실행·빌드·테스트·환경변수·Windows 점검) → `INTERNAL_INTEGRATION_HANDOFF.md`(계산 흐름·키·출처 정책·Phase 3B·Blocker·불변 기준선).
 - 패키지 재생성: `python3 tools/make_handoff.py && python3 tools/check_handoff.py`.

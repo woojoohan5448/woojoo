@@ -64,6 +64,6 @@ python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최�
 - 다음: 사내 Excel Import·Phase 3B는 Blocker B1·B2·B3·B4·B6·B8 해소 후 별도 승인.
 
 ## 최종 인계 (2026-10-16) — 외부 개발 종료
-- 기준선 태그 `v3.0-phase3a-final`(브랜치 `vnext-phase3a`). 이후 사내 개발 환경에서 이어서 진행.
+- 기준선 태그 `v3.0-phase3a-final`(코드 기준선, 커밋 1d87624) · 인계 태그 `v3.0-phase3a-handoff`(검증 문서 포함)(브랜치 `vnext-phase3a`). 이후 사내 개발 환경에서 이어서 진행.
 - 인계 패키지 `KA_Dashboard_Phase3A_Handoff.zip` = `python3 tools/make_handoff.py` → `python3 tools/check_handoff.py`.
 - 사내 재현 `INTERNAL_SETUP.md`, 통합 작업 인계 `INTERNAL_INTEGRATION_HANDOFF.md`, 인계 검증 결과 `docs/handoff/HANDOFF_VERIFICATION.md`.

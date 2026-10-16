@@ -65,7 +65,10 @@ def main():
         for p in files:
             rel = p.relative_to(ROOT).as_posix()
             b = p.read_bytes()
-            z.writestr(rel, b)
+            zi = zipfile.ZipInfo(rel, date_time=datetime.fromtimestamp(p.stat().st_mtime).timetuple()[:6])
+            zi.compress_type = zipfile.ZIP_DEFLATED
+            zi.external_attr = 0o644 << 16  # rw-r--r-- on extraction
+            z.writestr(zi, b)
             manifest["files"][rel] = {"sha256": hashlib.sha256(b).hexdigest(), "bytes": len(b)}
         info["n_files"] = len(files) + 2
         z.writestr("HANDOFF_BUILD_INFO.json", json.dumps(info, ensure_ascii=False, indent=1))

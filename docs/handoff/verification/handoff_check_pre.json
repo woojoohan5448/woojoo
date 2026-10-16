@@ -1,0 +1,85 @@
+{
+ "zip": "KA_Dashboard_Phase3A_Handoff.zip",
+ "files": 391,
+ "size_mb": 25.6,
+ "required": "63/63",
+ "missing": [],
+ "forbidden": [],
+ "logs_outside_docs": [],
+ "secret_hits": [],
+ "internal_data_flags": [],
+ "accounts": 53,
+ "contains_internal_data": false,
+ "git": {
+  "branch": "vnext-phase3a",
+  "commit": "1d8762473d2712c8832eaf7834df34fe677d06f0",
+  "commit_short": "1d87624",
+  "tags_at_commit": [
+   "v3.0-phase3a-final"
+  ],
+  "preserved_tags": [
+   "v1.0-checkpoint",
+   "v2.0-phase1-4-checkpoint",
+   "v2.1-pre-vnext",
+   "v2.2-pre-phase3a",
+   "v3.0-phase3a-final"
+  ],
+  "tracked_changes": ""
+ },
+ "data_version": "20261016T205848Z",
+ "baseline": {
+  "accounts": 53,
+  "initiatives": 8,
+  "initiatives_approved": 0,
+  "priority_scores": {
+   "Connectivity": 73.3,
+   "AI Infrastructure": 63.4,
+   "Data Center / IDC": 63.3,
+   "Cloud": 47.2,
+   "Security": 39.6,
+   "AI Transformation / SI": 24.9,
+   "SI / Managed Services": 22.2,
+   "기타": 20.3
+  },
+  "recon_switched": 0,
+  "recon_internal_records": 0
+ },
+ "by_top_dir": {
+  "(root)": 13,
+  "backend": 3,
+  "config": 10,
+  "contracts": 1,
+  "data": 136,
+  "docs": 91,
+  "frontend": 44,
+  "models": 25,
+  "reports": 12,
+  "research": 4,
+  "tests": 20,
+  "tools": 6,
+  "wheels": 26
+ },
+ "largest_files": [
+  {
+   "path": "data/processed/dashboard.json",
+   "mb": 3.7
+  },
+  {
+   "path": "Key_Account_Dashboard.html",
+   "mb": 3.51
+  },
+  {
+   "path": "frontend/dist/assets/index-C23t77pM.js",
+   "mb": 3.5
+  },
+  {
+   "path": "frontend/src/data/dashboard.json",
+   "mb": 2.93
+  },
+  {
+   "path": "frontend/public/data/dashboard.json",
+   "mb": 2.93
+  }
+ ],
+ "problems": []
+}
