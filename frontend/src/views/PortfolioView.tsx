@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
-import type { Account, Dashboard } from '../types'
+import type { Account, AddrCase, Dashboard, Scenario } from '../types'
+import PortfolioTrajectory from '../components/PortfolioTrajectory'
 import EChart from '../components/EChart'
 import type { Palette } from '../components/charts'
 import { BRIDGE_LABEL } from '../components/charts'
@@ -26,7 +27,7 @@ function AccountList({ title, rows, fmt, onSelect, note }: { title: string; rows
   )
 }
 
-export default function PortfolioView({ data, palette: p, onSelect, themeKey }: { data: Dashboard; palette: Palette; onSelect: (id: string) => void; themeKey: string }) {
+export default function PortfolioView({ data, palette: p, onSelect, themeKey, scen, setScen, addr, setAddr }: { data: Dashboard; palette: Palette; onSelect: (id: string) => void; themeKey: string; scen: Scenario; setScen: (s: Scenario) => void; addr: AddrCase; setAddr: (a: AddrCase) => void }) {
   const [dim, setDim] = useState<'segment' | 'family'>('segment')
   const accs = data.accounts
   const est = accs.filter(a => a.m['2026'].TS.value !== null && a.aggregate_class !== 'DEFINITION_MISMATCH')
@@ -81,6 +82,7 @@ export default function PortfolioView({ data, palette: p, onSelect, themeKey }: 
         <h2 className="text-[18px] font-bold">전사 기회 분석 <span className="text-[13px] font-semibold text-ink3">Opportunity Portfolio</span></h2>
         <p className="text-[12.5px] text-ink2">53개 Key Account 통합. 모든 합계는 <b>근거가 있는 고객의 부분합</b>입니다(2026 TS 산출 {agg.n_ts}개사, 정의 상이 {agg.n_mismatch}개사 별도). 계열사·공급자-구매자 중복 위험은 하단 표 참조.</p>
       </section>
+      <PortfolioTrajectory data={data} palette={p} themeKey={themeKey} scen={scen} setScen={setScen} addr={addr} setAddr={setAddr} onSelect={onSelect} />
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
         <section className="card p-4">
           <div className="flex items-center justify-between"><h3 className="text-[15px] font-bold">산업별 RAW·FPR (2026 vs 2031 Base)</h3>

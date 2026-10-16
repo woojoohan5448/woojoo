@@ -114,7 +114,7 @@ export default function App() {
           {PURPOSE[tab] && <p className="px-4 pt-3 text-[12.5px] text-ink2" data-testid="tab-purpose"><b className="mr-1.5 text-ink">{GROUPS.flatMap(g => g.tabs).find(t => t.id === tab)?.no} {GROUPS.flatMap(g => g.tabs).find(t => t.id === tab)?.label}</b>{PURPOSE[tab]}</p>}
           {tab === 'overview' && <OverviewView data={data} onNavigate={setTab} onSelect={selectAccount} />}
           {tab === 'account' && <AccountView data={data} account={account} scen={scen} setScen={setScen} addr={addr} setAddr={setAddr} sel={sel} setSel={setSel} palette={palette} themeKey={theme} onSelectAccount={setAccountId} showTgt={showTgt} />}
-          {tab === 'portfolio' && <PortfolioView data={data} palette={palette} onSelect={selectAccount} themeKey={theme} />}
+          {tab === 'portfolio' && <PortfolioView data={data} palette={palette} onSelect={selectAccount} themeKey={theme} scen={scen} setScen={setScen} addr={addr} setAddr={setAddr} />}
           {tab === 'strategy' && <StrategyView data={data} palette={palette} onSelect={selectAccount} themeKey={theme} />}
           {tab === 'quality' && <QualityView data={data} onSelect={selectAccount} />}
           {tab === 'admin' && <AdminView data={data} mode={mode} onSaved={() => loadDashboard().then(r => { setData(r.data); setMode(r.mode) })} />}

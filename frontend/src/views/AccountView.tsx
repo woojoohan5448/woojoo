@@ -12,22 +12,13 @@ import { GLOSSARY, termLabel } from '../lib/glossary'
 import { isApprovedTarget, resolveMetric, targetView } from '../lib/data'
 import ProductRevenueDrilldown from '../extensions/ProductRevenueDrilldown'
 import ReconPanel from '../components/ReconPanel'
+import Seg from '../components/Seg'
 
 interface Props {
   data: Dashboard; account: Account; scen: Scenario; setScen: (s: Scenario) => void; addr: AddrCase; setAddr: (a: AddrCase) => void
   sel: Selection; setSel: (s: Selection) => void; palette: Palette; themeKey: string; onSelectAccount: (id: string) => void; showTgt?: boolean
 }
 
-function Seg<T extends string>({ value, options, onChange, label }: { value: T; options: { v: T; l: string }[]; onChange: (v: T) => void; label: string }) {
-  return (
-    <div role="radiogroup" aria-label={label} className="inline-flex rounded-md border border-line bg-panel p-0.5">
-      {options.map(o => (
-        <button key={o.v} role="radio" aria-checked={value === o.v} onClick={() => onChange(o.v)}
-          className={`rounded px-2.5 py-1 text-[12px] font-semibold ${value === o.v ? 'bg-ink text-surface' : 'text-ink2 hover:text-ink'}`}>{o.l}</button>
-      ))}
-    </div>
-  )
-}
 
 export default function AccountView({ data, account: a, scen, setScen, addr, setAddr, sel, setSel, palette, themeKey, onSelectAccount, showTgt = false }: Props) {
   const [log, setLog] = useState(false)
@@ -39,6 +30,8 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
   const [illus, setIllus] = useState('')
   const traj = useMemo(() => trajectory(a, scen, addr), [a, scen, addr, showTgt])
   const trajOpt = useMemo(() => trajectoryOption(traj, palette, { band: showBand, log, selected: sel.year && ['TS', 'RAW', 'FPR'].includes(sel.metric) ? { year: sel.year, metric: sel.metric } : null }), [traj, palette, showBand, log, sel])
+  const fprAux = useMemo(() => ({ ...traj, series: traj.series.filter(x => x.metric === 'FPR') }), [traj])
+  const fprAuxOpt = useMemo(() => trajectoryOption(fprAux, palette, { band: showBand, log: false, selected: sel.year && sel.metric === 'FPR' ? { year: sel.year, metric: 'FPR' } : null }), [fprAux, palette, showBand, sel])
   const opt = useMemo(() => opportunityOption(a, scen, addr, sel, palette, log), [a, scen, addr, sel, palette, log, showTgt])
   const catOpt = useMemo(() => categoryOption(a, catYear, scen, addr, sel, palette), [a, catYear, scen, addr, sel, palette])
   const brOpt = useMemo(() => bridgeOption(a, scen, sel, palette), [a, scen, sel, palette])
@@ -144,6 +137,17 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
           ) : <div className="mt-3 rounded-md border border-dashed border-line p-6 text-center text-[13px] text-ink2"><b>{missingText(a, { year: 2026, metric: 'TS' })}</b> — {naInfo(a, { year: 2026, metric: 'TS' })?.reason ?? '근거 부족'}. 0으로 표시하지 않습니다.</div>}
           {illus && <p className="mt-1 rounded bg-sunk px-2 py-1 text-[12px] text-ink2" role="status">{illus}</p>}
           <p className="mt-1 text-[11.5px] text-ink3" data-testid="illus-note">{ILLUSTRATIVE_NOTE} TS·RAW·FPR은 포함 관계(TS ≥ RAW ≥ FPR)이며 서로 더하지 않습니다. 끝점 클릭 → 수치 산출 근거.</p>
+
+          {/* Phase 3A-4: FPR zoom — separate small chart with its own linear axis (no dual axis on the main chart) */}
+          {hasModel && fprAux.series.length > 0 && fprAux.series[0].values.some(v => v != null) && (
+            <div className="mt-3 rounded-md border border-line p-2" data-testid="fpr-aux">
+              <div className="flex flex-wrap items-baseline justify-between gap-2 text-[12.5px]">
+                <span className="font-semibold">FPR 확대 보조 차트 <span className="font-normal text-ink3">(별도 축 · TS·RAW 생략 · 이중축 아님)</span></span>
+                <span className="text-[11px] text-ink3">{traj.series[0].values[0] && traj.series[2].values[0] ? `FPR 2026 = TS의 ${pct((traj.series[2].values[0] ?? 0) / (traj.series[0].values[0] ?? 1), 1)} — 주 차트에서 하단에 붙어 보이는 FPR·CR·Target을 확대` : 'FPR·CR·Target 확대'}</span>
+              </div>
+              <EChart option={fprAuxOpt} height={240} ariaLabel={`${a.original_name} FPR 확대 보조 차트`} themeKey={themeKey}
+                onClick={(p) => { const d = p.data; if (!d?.metric || d.kind === 'ILLUSTRATIVE') return; setSel({ year: d.year === 2026 ? 2026 : 2031, metric: d.metric }); setInspOpen(true) }} />
+            </div>)}
 
           {/* Summary (ratios, CAGR, deltas live here, not on the chart) */}
           <div className="mt-3 overflow-x-auto">
