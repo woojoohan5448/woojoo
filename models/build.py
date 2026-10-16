@@ -1077,6 +1077,11 @@ def main():
         "portfolio": portfolio, "strategy": strat,
         "issues_summary": {sev: sum(1 for i in issues if i["severity"] == sev) for sev in ("ERROR", "WARN", "INFO")},
     }
+    # Phase 3A: metric ledger + official-source selection (additive; engine values unchanged, empty internal store → defaults)
+    from models.recon.ledger import build_block as _recon_block
+    out["recon"] = _recon_block(accounts, DATA_VERSION)
+    if any(not r.get("synthetic") for a in out["recon"]["accounts"].values() for r in a["internal"]):
+        out["meta"]["contains_internal_data"] = True
     # Phase 1/2: coverage & N/A taxonomy summary for the dashboard
     from models.audit import audit as _audit, coverage as _coverage
     _cov = _coverage(_audit(jsonable(out), "current"))
