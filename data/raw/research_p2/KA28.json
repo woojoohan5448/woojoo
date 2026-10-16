@@ -1,0 +1,105 @@
+{
+ "account_id": "KA28",
+ "original_name": "코람코자산운용",
+ "research_date": "2026-10-16",
+ "researcher": "claude:p2-dart-recheck",
+ "supplement_of": "research_p1/KA28.json",
+ "facts": [
+  {
+   "fact_id": "KA28-P2-F01",
+   "metric": "dc_vehicle_ict_opex",
+   "fiscal_year": 2025,
+   "value": 53881061,
+   "unit": "원",
+   "scope": "가산랜드마크DC PFV(코람코 펀드 출자·자산관리 관계, KA28 법인 아님) 통신비+전력비",
+   "evidence_ids": [
+    "KA28-P2-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "Triple Net 책임임차 구조 → DC 운영비(전력·회선·설비)는 책임임차인이 부담, 펀드/PFV의 ICT 비용은 0.5억 수준"
+  },
+  {
+   "fact_id": "KA28-P2-F02",
+   "metric": "other",
+   "fiscal_year": 2025,
+   "value": "MASTER_LEASE_TRIPLE_NET_20+20",
+   "unit": "text",
+   "scope": "가산랜드마크DC PFV",
+   "evidence_ids": [
+    "KA28-P2-E01"
+   ],
+   "verification_status": "VERIFIED",
+   "analyst_interpretation": "LG U+ 기회는 펀드의 IT 지출이 아니라 책임임차인/운영사 측(운영위탁·회선·상면) — TS 정의(고객 IT 지출)로는 측정 불가"
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "KA28-P2-E01",
+   "tier": 1,
+   "source_type": "DART_AUDIT_REPORT",
+   "source_title": "가산랜드마크데이터센터피에프브이 감사보고서 (2025.12)",
+   "publisher": "안진회계법인/DART",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406003009",
+   "document_id": "20260406003009",
+   "publication_date": "2026-04-06",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025(2025.04~12)",
+   "page_or_section": "손익계산서; 주석 7 특수관계자; 주석 13(5) Lease Agreement",
+   "quoted_statement": "영업수익(임대수입) 9,327,823,302 / 영업비용 5,800,579,011 (통신비 71,435 · 전력비 53,809,626 · 감가상각비 3,063,457,583 · 지급수수료 2,310,181,227) · 100% 책임임차(Master Lease), Triple Net, 임대차기간 20년+20년 · 특수관계자: (주)코람코자산운용(이사 지명권), 코람코일반사모투자신탁제130호(주주)",
+   "reported_value": "9327823302 / 5800579011",
+   "reported_unit": "원",
+   "verification_status": "VERIFIED",
+   "notes": "MyDART download_document find로 발췌(OpenDART 직접 API는 프록시 차단)"
+  },
+  {
+   "evidence_id": "KA28-P2-E02",
+   "tier": 1,
+   "source_type": "DART_AUDIT_REPORT",
+   "source_title": "코람코시화데이터센터피에프브이 감사보고서 (2025.12)",
+   "publisher": "삼영회계법인/DART",
+   "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413002815",
+   "document_id": "20260413002815",
+   "publication_date": "2026-04-13",
+   "accessed_at": "2026-10-16",
+   "fiscal_period": "FY2025",
+   "page_or_section": "주석 9 유형자산; 주석 21(2) 자산관리위탁계약; 현금흐름표",
+   "quoted_statement": "토지 47,600,295천원 · 건설중인자산 14,819,237천원(당기 취득 8,115,325천원) · ㈜코람코자산운용과 자산관리업무위탁계약 · 영업수익 없음(개발 단계)",
+   "reported_value": "62419532",
+   "reported_unit": "천원",
+   "verification_status": "VERIFIED",
+   "notes": "시화 DC는 개발 단계 — 운영 IT 지출 없음"
+  }
+ ],
+ "drivers": [],
+ "competitive": [],
+ "research_log": [
+  {
+   "date": "2026-10-16",
+   "action": "OpenDART 재조사(사용자 제공 키는 프록시 403으로 직접 호출 불가 → PlayMCP OpenDART/MyDART 경유): 코람코 관련 DC PFV 감사보고서 2건 확인",
+   "tools": [
+    "opendart-find_company",
+    "MyDART search_disclosures",
+    "MyDART download_document"
+   ]
+  }
+ ],
+ "open_questions": [
+  "가산랜드마크DC 책임임차인(운영사) 명칭 — 감사보고서 미기재. LG U+가 책임임차인/운영사라면 KA28은 '고객'이 아니라 공급 파트너 관계",
+  "KA28 자산운용사 본체의 사무용 IT 비용(감사보고서 판관비에 전산 계정 없음)"
+ ],
+ "recovery_levels_tried": [
+  {
+   "level": "L1_DIRECT",
+   "result": "found",
+   "detail": "DC PFV 손익: ICT성 비용 0.54억(통신비·전력비) — 책임임차 구조로 TS 미미"
+  },
+  {
+   "level": "L3_CONTRACT",
+   "result": "found",
+   "detail": "Master Lease Triple Net 20+20년"
+  }
+ ],
+ "conflicts": [],
+ "comparables": [],
+ "estimation_inputs": []
+}

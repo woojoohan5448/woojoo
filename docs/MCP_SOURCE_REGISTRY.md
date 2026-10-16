@@ -47,3 +47,8 @@
 - 정상 MCP 우선: ItNewsSearch(결과 없음) → WebSearch 보완. 해외 공공 API는 프록시 차단(위 표).
 - 결과: **KA45 메타 복구**(망 이용대가 동등가치 2방법, SCENARIO·ESTIMATED_LOW·정의 상이) — `data/raw/research_p2/KA45.json`.
 - 미복구 사유: KA41 신협(금융사는 정보보호 공시 의무 제외, 중앙회 IT 예산 비공개), KA42/43(국가별 지출·트래픽 원천 차단), KA32(USAspending 차단), KA28/KA50(DC 펀드의 운영위탁 단가 근거 없음).
+
+## 6. OpenDART 직접 API 재시도 (2026-10-16)
+- 사용자 제공 OpenDART 키로 `opendart.fss.or.kr` 직접 호출 → **프록시 CONNECT 403(connect_rejected)**. 키는 세션 임시 파일에만 두고 저장소·커밋에 기록하지 않음.
+- 대체: PlayMCP OpenDART/MyDART(동일 DART 데이터) 경유 재조사 — KA28 관련 DC PFV 감사보고서 2건 확보(`data/raw/research_p2/KA28.json`), KA41·KA50 공시 0건, KA42·KA43 국내 법인 없음 확인.
+- 재시도 조건: 네트워크 허용 목록에 opendart.fss.or.kr 추가 시 `DART_API_KEY` 환경변수로 `research/collectors/dart_collector.py` 실행 가능(사내 환경에서는 사내 정책 확인).
