@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vitest'
 import { eok, pct, roundForStatus } from '../lib/format'
 import { BUNDLED, resolveMetric, setScenarioTargetVisible } from '../lib/data'
 import { FRAMEWORK, GLOSSARY, termLabel } from '../lib/glossary'
+import { interpolate, trajectory } from '../lib/trajectory'
+import { trajectoryOption } from '../components/trajectoryChart'
+import type { AddrCase, Scenario } from '../types'
 import { opportunityOption, categoryOption, bridgeOption, type Palette } from '../components/charts'
 
 const P: Palette = { ts: '#2a78d6', raw: '#1baf7a', fpr: '#c4006f', rev: '#eb6834', ink1: '#111', ink2: '#444', ink3: '#777', line: '#ddd', surface: '#fff', sunk: '#eee' }
@@ -76,5 +79,47 @@ describe('vNext glossary & D1', () => {
       expect(['SUFFICIENT', 'PARTIAL', 'INSUFFICIENT']).toContain(s.evidence!.evidence_level)
       expect(s.evidence!.n_accounts_signal).toBeLessThanOrEqual(s.evidence!.n_accounts_model)
     }
+  })
+})
+
+describe('vNext correction — 2026–2031 Opportunity Growth Trajectory', () => {
+  const SC: Scenario[] = ['low', 'base', 'high']
+  const AD: AddrCase[] = ['base', 'expansion']
+  it('chart endpoints equal engine values exactly for all 53 accounts × 3 scenarios × 2 cases (no 0-fill)', () => {
+    let checked = 0
+    for (const a of BUNDLED.accounts) for (const s of SC) for (const d of AD) {
+      const t = trajectory(a, s, d)
+      for (const x of t.series) {
+        const r31 = x.metric === 'TS' ? a.m['2031'][s].TS : x.metric === 'RAW' ? (d === 'base' ? a.m['2031'][s].RAW_base : a.m['2031'][s].RAW_expansion) : (d === 'base' ? a.m['2031'][s].FPR_base : a.m['2031'][s].FPR_expansion)
+        expect(x.values[0]).toBe(a.m['2026'][x.metric].value)
+        expect(x.values[5]).toBe(r31.value)
+        x.values.forEach(v => { if (v !== null) expect(v).toBeGreaterThan(0) })
+        checked++
+      }
+    }
+    expect(checked).toBe(53 * 3 * 2 * 3)
+  })
+  it('interpolates 2027–2030 with the CAGR formula and refuses invalid endpoints', () => {
+    const v = interpolate(100, 200)!
+    for (let i = 1; i < 5; i++) expect(v[i]).toBeCloseTo(100 * Math.pow(2, i / 5), 10)
+    expect(interpolate(null, 200)).toBeNull(); expect(interpolate(0, 200)).toBeNull(); expect(interpolate(100, -1)).toBeNull()
+  })
+  it('keeps TS ≥ RAW ≥ FPR on every interpolated year for all accounts', () => {
+    for (const a of BUNDLED.accounts) expect(trajectory(a, 'base', 'base').violations).toEqual([])
+  })
+  it('shows no CR point and no Target marker without internal data; scenario target only when toggled', () => {
+    const a = BUNDLED.accounts.find(x => x.account_id === 'KA03')!
+    let t = trajectory(a, 'base', 'base')
+    expect(t.cr).toBeNull(); expect(t.target).toBeNull(); expect(t.crMissing && t.targetMissing).toBe(true)
+    setScenarioTargetVisible(true)
+    t = trajectory(a, 'base', 'base')
+    expect(t.target?.approved).toBe(false)
+    setScenarioTargetVisible(false)
+    const o: any = trajectoryOption(trajectory(a, 'base', 'base'), P, { band: true, log: false })
+    expect(o.yAxis.type).toBe('value')                       // single linear axis, no dual axis
+    expect(Array.isArray(o.yAxis)).toBe(false)
+    expect(o.series.filter((x: any) => x.id?.startsWith('line-')).map((x: any) => x.id)).toEqual(['line-TS', 'line-RAW', 'line-FPR'])
+    expect(o.series.some((x: any) => x.id?.startsWith('line-') && x.stack)).toBe(false)  // lines are never stacked
+    expect(o.series.some((x: any) => x.id === 'target' || x.id === 'cr')).toBe(false)
   })
 })

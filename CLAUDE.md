@@ -24,7 +24,7 @@ python3 -m models.export_xlsx                # Excel 내보내기
 python3 -m models.internal.excel_io template|preview <xlsx>|approve <batch> --approver 이름|status
 python3 -m pytest -q                         # 40 tests (vNext 기준선 4 포함) (모델·API·Excel import·QA 결합 재검증 샌드박스·릴리스 가드)
 cd frontend && npx tsc --noEmit && npx vitest run && npm run build && npm run build:single
-uvicorn backend.app:app --port 8000 ; node tests/e2e/dashboard.e2e.mjs   # E2E 29 checks (API·정적 HTML 둘 다: node tests/e2e/dashboard.e2e.mjs file:///…/Key_Account_Dashboard.html)
+uvicorn backend.app:app --port 8000 ; node tests/e2e/dashboard.e2e.mjs   # E2E 46 checks; 라벨 겹침: node tests/e2e/trajectory_overlap.mjs (API·정적 HTML 둘 다: node tests/e2e/dashboard.e2e.mjs file:///…/Key_Account_Dashboard.html)
 python3 tools/make_release.py && python3 tools/check_release.py   # 이관 패키지(사내 데이터·비밀·허용경로 밖 Excel 차단) + 내용 검사
 python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최종 QA 감사 → reports/final_qa/*.md
 ```
@@ -38,7 +38,8 @@ python3 -m models.qa.final_audit && python3 -m reports.final_qa_reports   # 최�
 `config/` 가정·보정 · `models/` 엔진(spending·addressability·capture·forecasting·validation·internal·audit·priority·build) · `backend/` FastAPI · `frontend/` React · `data/phase1/` Phase 1 산출물 · `docs/` 문서 · `reports/` 보고서 · `tools/` 패키저 · `tests/`
 
 ## vNext
-- Phase 0 설계: `docs/vnext/PHASE0_ASIS_TOBE.md` (D1~D5 승인). **Phase 1 완료**: `docs/vnext/PHASE1_REPORT.md`, 브랜치 `vnext-phase1`(push 안 함). Phase 2 이상은 사용자 승인 후.
+- Phase 0 설계: `docs/vnext/PHASE0_ASIS_TOBE.md` (D1~D5 승인). Phase 1: `docs/vnext/PHASE1_REPORT.md`. **Correction(메뉴 AS-IS→TO-BE·판서형 성장 궤적) 완료**: `docs/vnext/CORRECTION_REPORT.md`, 브랜치 `vnext-correction`(push 안 함). 다음 작업은 사용자 승인 후.
+- 메뉴: ① 고객별 사업기회(첫 화면) ② 전사 기회 분석 [AS-IS] → ③ 전략과제 도출 ④ 전략적 시사점 [TO-BE] → ⑤ 데이터·운영 관리. 핵심 차트 = 2026–2031 Opportunity Growth Trajectory(`lib/trajectory.ts`, `components/trajectoryChart.ts`): 끝값 = 엔진 값, 중간연도 = CAGR 보간(Illustrative), CR·Target 비연결, 이중축·누적 금지.
 - 데이터 키·API 키는 표기 변경으로 바꾸지 않는다. 핵심 용어는 `frontend/src/lib/glossary.ts`(①~⑧ 판서자 원문, "Realistical" 유지)만 사용.
 - D1: 공식 Target = 경영진 승인(`target_source=MANAGEMENT_APPROVED`)만. 시나리오 목표는 토글 시 참고값, KPI·합계 제외.
 - 사업기회 근거 상태(`area_evidence.tier`)와 금액 산정 방식(`value_basis`)은 별개 필드. 전략 점수와 근거 수준을 섞지 않는다.

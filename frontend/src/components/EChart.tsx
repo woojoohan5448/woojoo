@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react'
 import * as echarts from 'echarts/core'
 import { BarChart, CustomChart, ScatterChart, LineChart } from 'echarts/charts'
-import { GridComponent, TooltipComponent, LegendComponent, MarkLineComponent, DataZoomComponent, TitleComponent, AriaComponent } from 'echarts/components'
+import { GridComponent, TooltipComponent, LegendComponent, MarkLineComponent, MarkAreaComponent, DataZoomComponent, TitleComponent, AriaComponent } from 'echarts/components'
+import { LabelLayout } from 'echarts/features'
 import { SVGRenderer } from 'echarts/renderers'
 
-echarts.use([BarChart, CustomChart, ScatterChart, LineChart, GridComponent, TooltipComponent, LegendComponent, MarkLineComponent, DataZoomComponent, TitleComponent, AriaComponent, SVGRenderer])
+echarts.use([BarChart, CustomChart, ScatterChart, LineChart, GridComponent, TooltipComponent, LegendComponent, MarkLineComponent, MarkAreaComponent, LabelLayout, DataZoomComponent, TitleComponent, AriaComponent, SVGRenderer])
 
 export type EOption = echarts.EChartsCoreOption
 

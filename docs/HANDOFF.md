@@ -39,3 +39,8 @@
   - 변경 파일: backend `models/build.py`(target_source·aggregate D1·opportunity_evidence), `models/validation/checks.py`(TARGET_SOW 검토 분류), `config/demand_signal_map.json`(신규); frontend `lib/glossary.ts`·`components/Term.tsx`·`components/Onboarding.tsx`·`views/OverviewView.tsx`(신규), `App.tsx`·`Header.tsx`·`lib/data.ts`·`lib/format.ts`·`types.ts`·`views/{Account,Strategy,Methodology,Portfolio,Quality}View.tsx`·`components/{Inspector,charts}`; tests `test_vnext_baseline.py`·`fixtures/vnext_baseline.json`·`core.test.ts`·`e2e/dashboard.e2e.mjs`.
   - 테스트: pytest 40 · vitest 9 · E2E 29(API) + 29(정적 HTML).
   - 재개: Phase 2(성장 궤적 차트) 착수 전 PHASE1_REPORT §9 검토사항 확인.
+- Correction(2026-10-16): 브랜치 `vnext-correction`(push 금지 — 사용자 결정 대기). 결과 `docs/vnext/CORRECTION_REPORT.md`, 캡처 `docs/screenshots/vnext/correction/`.
+  - Step A(커밋 48e6de5): 메뉴 AS-IS→TO-BE 재배치·목적 문구·결측 문구 한국어 단축·③ 도출 흐름·④ 옵션/의사결정.
+  - Step B: 성장 궤적 차트(`lib/trajectory.ts`·`components/trajectoryChart.ts`), 고객 화면 A~F 재구성, 근거 패널 접이식, ECharts MarkArea·LabelLayout 등록.
+  - 테스트: pytest 40 · vitest 13 · E2E 46(API)+46(정적) · 라벨 겹침 0/144.
+  - 선행 재조사: OpenDART 직접 API는 프록시 403 → PlayMCP로 KA28 DC PFV 감사보고서 확보(값 생성 없음), KA41·KA50 공시 0건, KA42·KA43 국내 법인 없음.
