@@ -7,3 +7,4 @@ __pycache__/
 data/internal_inputs/*.csv
 !data/internal_inputs/management_inputs.csv
 data/raw/dart/
+lgu_key_account_intel.zip
