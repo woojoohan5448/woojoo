@@ -1,6 +1,6 @@
 # N/A RECOVERY STATUS (53 accounts)
 
-data_version 20261016T043326Z · 외부 커버리지 88.9% · 복구율 67.2%
+data_version 20261016T044819Z · 외부 커버리지 90.8% · 복구율 72.4%
 
 | ID | 고객 | TS 방법 | TS 2026 등급 | 외부 결측 | 상태 | 비고 |
 |---|---|---|---|---|---|---|
@@ -48,7 +48,7 @@ data_version 20261016T043326Z · 외부 커버리지 88.9% · 복구율 67.2%
 | KA42 | Fastly, Inc. | UNKNOWN | INSUFFICIENT_EVIDENCE | 6 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | Fastly: 글로벌 매출만 확인. 서울 POP 호스팅 IDC 미확인 → TS UNKNOWN |
 | KA43 | Valve Corporation | UNKNOWN | INSUFFICIENT_EVIDENCE | 6 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | Valve: 비상장, 국내 법인 없음. Steam CDN 캐시 일부 LG U+ 망 관찰(보도) → TS UNKNOWN |
 | KA44 | 차이나유니콤 | ACCOUNT_SPECIFIC | ESTIMATED_MEDIUM | 0 | 조사 완료 · 추정 완료 · 내부 데이터 필요 | Phase1: 국내 법인 구매원가 상한으로 TS 복구(공급사 미공시). 그룹 외 매출 132.8억 |
-| KA45 | 페이스북 | UNKNOWN | INSUFFICIENT_EVIDENCE | 6 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | 메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요 |
+| KA45 | 페이스북 | ACCOUNT_SPECIFIC | ESTIMATED_LOW | 0 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | Phase2: 망 이용대가 동등가치 시나리오(매출비율법 204억·트래픽법 479억, 중간 342억) — 실제 지급액 아님, 정 |
 | KA46 | 한국오라클 | ACCOUNT_SPECIFIC | ESTIMATED_LOW | 0 | 조사 완료 · 추가 검증 필요 · 내부 데이터 필요 | Phase1: 한국오라클 감사보고서로 국내 인프라 지출 복구(리전 MW 미확인) |
 | KA47 | (주)가비아 | AUDIT_IT_COMPONENTS | ESTIMATED_MEDIUM | 0 | 조사 완료 · 추정 완료 · 내부 데이터 필요 |  |
 | KA48 | (주)카카오페이 | KISA_IT_INVESTMENT | ESTIMATED_MEDIUM | 0 | 조사 완료 · 추정 완료 · 내부 데이터 필요 |  |

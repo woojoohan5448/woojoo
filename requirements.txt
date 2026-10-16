@@ -1,0 +1,8 @@
+# Python 3.11+ (tested 3.13). Offline install: pip download -r requirements.txt -d wheels/ ; pip install --no-index -f wheels/ -r requirements.txt
+fastapi==0.115.4
+uvicorn==0.53.0
+python-multipart>=0.0.9
+openpyxl==3.1.5
+requests>=2.31
+pytest>=8.0
+httpx>=0.27

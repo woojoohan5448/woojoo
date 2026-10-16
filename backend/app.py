@@ -15,13 +15,16 @@ from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 ROOT = Path(__file__).resolve().parents[1]
-DASH = ROOT / "data" / "processed" / "dashboard.json"
+import sys as _sys
+_sys.path.insert(0, str(ROOT))
+from models.common import PROCESSED  # honours KAI_DATA_OUT sandbox
+DASH = PROCESSED / "dashboard.json"
 MGMT = ROOT / "data" / "internal_inputs" / "management_inputs.csv"
 DIST = ROOT / "frontend" / "dist"
 FIELDS = ["account_id", "original_name", "cr_2026_ytd_eok", "cr_2026_ytd_asof", "cr_2026_forecast_eok", "cr_basis",
@@ -135,6 +138,58 @@ def save_inputs(p: MgmtPayload):
         from models.build import main as build  # re-run model → validation applied
         out = build()
     return {"saved": len(p.rows), "data_version": out["meta"]["data_version"], "issues_summary": out["issues_summary"]}
+
+
+# ---------------------------------------------------------------- Phase 3: Excel import (사내 데이터)
+class ApprovePayload(BaseModel):
+    approver: str
+    rows: list[int] | None = None
+
+
+@app.get("/api/import/template")
+def import_template():
+    from models.internal.excel_io import make_template
+    return FileResponse(make_template(), filename="KeyAccount_Internal_Input_Template.xlsx")
+
+
+@app.post("/api/import/preview")
+async def import_preview(file: UploadFile = File(...)):
+    from models.internal.excel_io import STORE, preview
+    if not (file.filename or "").lower().endswith((".xlsx", ".xlsm")):
+        raise HTTPException(422, "xlsx 파일만 지원")
+    up = STORE / "uploads"
+    up.mkdir(parents=True, exist_ok=True)
+    dest = up / f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}_{Path(file.filename).name}"
+    dest.write_bytes(await file.read())
+    b = preview(dest)
+    return {k: b[k] for k in ("batch_id", "file", "status", "summary", "issues")} | {
+        "rows": [{k: r.get(k) for k in ("row_id", "sheet", "excel_row", "layer", "mapping", "errors", "warnings", "diff", "normalized")} for r in b["rows"]]}
+
+
+@app.get("/api/import/batches")
+def import_batches():
+    from models.internal.excel_io import status
+    return status()
+
+
+@app.post("/api/import/approve/{batch_id}")
+def import_approve(batch_id: str, p: ApprovePayload):
+    from models.internal.excel_io import approve
+    try:
+        with _lock:
+            b = approve(batch_id, p.approver, p.rows)
+            from models.build import main as build
+            out = build()
+    except (ValueError, FileNotFoundError) as e:
+        raise HTTPException(422, str(e))
+    return {"batch_id": batch_id, "applied_rows": b["applied_rows"], "data_version": out["meta"]["data_version"],
+            "issues_summary": out["issues_summary"], "contains_internal_data": out["meta"].get("contains_internal_data")}
+
+
+@app.post("/api/import/reject/{batch_id}")
+def import_reject(batch_id: str, p: ApprovePayload):
+    from models.internal.excel_io import reject
+    return reject(batch_id, p.approver)
 
 
 @app.get("/api/export/xlsx")

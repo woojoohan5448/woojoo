@@ -13,3 +13,4 @@ data/internal_store/
 data/internal_inputs/uploads/
 data/internal_inputs/*.xlsx
 !data/internal_inputs/templates/
+dist_release/

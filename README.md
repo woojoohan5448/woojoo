@@ -29,6 +29,17 @@ cd frontend && npx vitest run            # 포맷·차트·지표 해석 (6)
 node tests/e2e/dashboard.e2e.mjs         # 브라우저 E2E (서버 실행 상태, 14)
 ```
 
+## Phase 1~4 (v2) 명령
+```bash
+python3 -m models.audit current            # N/A 분류·커버리지
+python3 -m models.validation.anomaly       # 오류 재검증 R01~R10
+python3 -m reports.phase1_reports          # Phase 1 게이트 보고서 (data/phase1/)
+python3 -m models.internal.excel_io template|preview <xlsx>|approve <batch> --approver 이름|status
+python3 tools/make_release.py              # 사내 이관 패키지 (사내 데이터 감지 시 차단)
+```
+Windows 사내 PC: `setup_windows.bat` → `run_dashboard.bat` (Excel CLI: `import_excel.bat`) — **Windows 실행은 미검증**, `docs/DEPLOYMENT_GUIDE.md` 참조.
+문서: `CLAUDE.md` · `docs/HANDOFF.md` · `docs/PHASE_STATUS.md` · `docs/PROJECT_STATE.md` · `docs/NEXT_ACTIONS.md` · `docs/FINANCIAL_METHODOLOGY.md` · `docs/INTERNAL_EXCEL_SPEC.md` · `docs/ARCHITECTURE.md` · `docs/MCP_SOURCE_REGISTRY.md`
+
 ## 정적 빌드 vs 데이터 API
 | | 정적(단일 HTML / dist) | API(FastAPI) |
 |---|---|---|

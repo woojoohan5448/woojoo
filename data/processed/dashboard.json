@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "20261016T043326Z",
-  "generated_at": "2026-10-16T04:33:27.645594+00:00",
+  "data_version": "20261016T044819Z",
+  "generated_at": "2026-10-16T04:48:20.784667+00:00",
   "unit": "억원",
   "currency": "KRW",
   "n_accounts": 53,
@@ -13,17 +13,17 @@
   },
   "metric_status_2026": {
    "TS": {
-    "ESTIMATED": 46,
-    "UNKNOWN": 7
+    "ESTIMATED": 47,
+    "UNKNOWN": 6
    },
    "RAW": {
-    "ESTIMATED": 46,
-    "UNKNOWN": 6,
+    "ESTIMATED": 47,
+    "UNKNOWN": 5,
     "SCENARIO": 1
    },
    "FPR": {
-    "ESTIMATED": 46,
-    "UNKNOWN": 6,
+    "ESTIMATED": 47,
+    "UNKNOWN": 5,
     "SCENARIO": 1
    },
    "CR": {
@@ -33,10 +33,49 @@
   "fact_status": {
    "VERIFIED": 514,
    "DERIVED": 65,
-   "SECONDARY_UNCONFIRMED": 198
+   "SECONDARY_UNCONFIRMED": 201
   },
   "fx_usd_krw": 1400.0,
-  "is_test_data": false
+  "is_test_data": false,
+  "contains_internal_data": false,
+  "internal_store_error": null,
+  "coverage": {
+   "current": {
+    "external_fields": 315,
+    "external_covered": 286,
+    "external_coverage": 0.9079,
+    "external_missing": 29,
+    "verified_or_derived": 0,
+    "internal_required": 318,
+    "not_applicable": 3,
+    "errors": 0,
+    "by_class": {
+     "ESTIMATED_HIGH": 10,
+     "ESTIMATED_MEDIUM": 53,
+     "ESTIMATED_LOW": 223,
+     "INTERNAL_REQUIRED": 318,
+     "INSUFFICIENT_EVIDENCE": 29,
+     "NOT_APPLICABLE": 3
+    }
+   },
+   "baseline": {
+    "external_fields": 318,
+    "external_covered": 202,
+    "external_coverage": 0.6352,
+    "external_missing": 116,
+    "verified_or_derived": 0,
+    "internal_required": 318,
+    "not_applicable": 0,
+    "errors": 0,
+    "by_class": {
+     "ESTIMATED_HIGH": 13,
+     "ESTIMATED_MEDIUM": 53,
+     "ESTIMATED_LOW": 136,
+     "INTERNAL_REQUIRED": 318,
+     "INSUFFICIENT_EVIDENCE": 116
+    }
+   }
+  }
  },
  "params": {
   "version": "1.0.0",
@@ -4823,6 +4862,7 @@
     "LG CNS는 자체 DC(상암·가산·부산) 보유 및 클라우드 MSP·AI DC 경쟁사 → DC 접근률 50%, 클라우드·AI 포획 상한 50% 하향",
     "LG 계열사: LG U+와 상호 거래(관계사 거래) — 합산 시 그룹 내부거래 주의"
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA01-F09",
@@ -6605,6 +6645,7 @@
     "기타의무형자산 9,175백만원 취득 성격(DMS/커넥티드 시스템 여부)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -8843,6 +8884,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA03-F11",
@@ -10723,6 +10765,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "TS model (SG&A×12.5%)",
@@ -12984,6 +13027,7 @@
     "한전KDN 감사보고서 특수관계자 주석(한전 매출액)으로 위탁 규모 역산 — MyDART audit_report로 후속 가능"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -15115,6 +15159,7 @@
     "구글: 국내 법인 매출(3개 법인 합산 6,831억)은 판매 매출이며 IT 지출이 아님. 국내 인프라 투자 공개액 없음 → TS UNKNOWN. 서울 리전이 LG U+ IDC(평촌·가산·논현)에 임차된 것으로 보도 — LG U+ 기존 고객. CR 입력 시 하한 확인 가능",
     "Phase1: 구글클라우드코리아 감사보고서(VERIFIED)로 국내 인프라 지출 복구. 기존 '3개 법인 합산 매출 6,831억'은 판매 매출로 TS 근거 아님(충돌 기록). 서울 리전은 LG U+ IDC 임차 보도 — LG U+ 기존 고객"
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA06-F01",
@@ -17126,6 +17171,7 @@
     "마이크로소프트: 국내 매출(Tier 3)만 확인, Azure 국내 리전 코로케이션 사업자 미확인 → TS UNKNOWN. KT–MS 5년 2.4조 협력(보도)은 경쟁 구도 신호",
     "Phase1: 한국MS 감사보고서상 판매법인 구조(로열티 1.72조, DC 비용 해외 귀속) → 법인 재무로 TS 불가, 용량 시나리오만 제시"
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA07-F01",
@@ -19135,6 +19181,7 @@
     "서버 HW는 글로벌 직접 조달로 접근 불가(0%)",
     "2031 기본 시나리오는 투자 페이스 유지(유기 성장 0%)로 가정 — 7.85조(2023~27)와 7조(2025~31) 프로그램 합산 시 연 1.4~1.65조 수준과 정합"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -20876,6 +20923,7 @@
     "통신/회선 공급사, LG U+ 공개 거래 미확인"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -22584,6 +22632,7 @@
     "통신비 2,265억의 통신사별 구성"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA10-F06",
@@ -24246,6 +24295,7 @@
     "KISA FY2024/FY2025 IT·정보보호 투자액 (IT서비스 기업은 고객 사업 IT 비용 포함 가능성)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -25989,6 +26039,7 @@
     "E06 기사 원문 URL 확인"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -27571,6 +27622,7 @@
     "현금흐름표 무형자산 취득 단독 금액(MyDART sections로 후속)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [
     {
@@ -29432,6 +29484,7 @@
     "AI 증분은 계정별 인프라 드라이버로 대체(이중계산 방지: 산업군 AI 증분 0으로 설정)",
     "삼성 그룹 캡티브 매출 84% — 자체 소비 기준 TS만 사용"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -30956,6 +31009,7 @@
     "기계장치 취득 60.4억의 성격"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -33186,6 +33240,7 @@
     "KISA 정보기술부문 투자액 FY2024/25 원값 (byline.network/2025/07/13_2918723-2 본문)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [
     {
@@ -35463,6 +35518,7 @@
     "전산비 수취 계열사 확인(특수관계자 주석)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -37408,6 +37464,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA18-F17",
@@ -39408,6 +39465,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA19-F16",
@@ -41232,6 +41290,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "TS model (SG&A×12.5%)",
@@ -43088,6 +43147,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "TS model (SG&A×12.5%)",
@@ -44963,6 +45023,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(하나INS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "TS model (SG&A×12.5%)",
@@ -46705,6 +46766,7 @@
     "용역비 1,995.6억 중 IT/그룹 서비스 비중"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -48493,6 +48555,7 @@
     "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
     "농협은행: DART API 재무 미제공(감사보고서만), KISA 금액 미확인 → UNKNOWN. 주요 은행으로 우선 추가 조사 대상"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -50558,6 +50621,7 @@
     "미래에셋증권 KISA 정보보호 공시 IT 투자액(공시 여부)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "TS model (SG&A×12.5%)",
@@ -52467,6 +52531,7 @@
     "get_company_info 미호출로 영문명·사업자번호 공란"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -54290,6 +54355,7 @@
     "FY2023·FY2024 IT투자액 원문 금액(비율 역산치 검증)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -55623,6 +55689,7 @@
     "코람코자산운용: DART 감사보고서만, 데이터센터 펀드 정보 미수집 → UNKNOWN",
     "Phase1: 코람코 감사보고서(VERIFIED) 영업수익 467.5억. 가산 DC 26MW(IT)를 LG U+가 운영(보도) — 펀드의 IT 지출 정의(운영위탁·연결 비용) 단가 근거 없음 → TS INSUFFICIENT 유지. 시화 40MW·의정부 100MW(2030~) 계획"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -57187,6 +57254,7 @@
     "AWS 사용 규모·자체 DC/코로케이션 여부·회선 공급사, LG U+ 거래 미확인"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -58902,6 +58970,7 @@
     "종업원 수"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -60587,6 +60656,7 @@
     "통신비 525.7억의 공급 통신사 구성 및 LG U+ 비중"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": null,
@@ -62314,6 +62384,7 @@
     "FPR = RAW × 50% (2개 BOA 중 1개 보유)",
     "Phase1: 이동통신 계약 추정가 약 $7.5M(5년, 5,000회선) 반영 — 수주자 미확인"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -65082,6 +65153,7 @@
     "KG그룹 내 최대주주(KG케미칼/KG스틸 등) 지분 구조 확인"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -66658,6 +66730,7 @@
     "KISA 정보보호 공시 의무 여부"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -68620,6 +68693,7 @@
     "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
     "KB손해보험: IFRS17로 판관비 계정 없음, KISA 미확인 → 금융 판관비 기준 추정 불가 → UNKNOWN"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -70339,6 +70413,7 @@
     "유형자산 취득 514억(FY2025) 급증 원인(DC/차세대 장비?)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -72175,6 +72250,7 @@
     "FY2025 별도 자산 급증(17.3조→28.8조원) 원인 확인"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -73771,6 +73847,7 @@
     "회원 수(거래자 수)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -75696,6 +75773,7 @@
    "override_notes": [
     "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -77339,6 +77417,7 @@
     "한화시스템 단독 KISA IT/정보보호 투자액 FY2024/25"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [
     {
@@ -78467,6 +78546,7 @@
    "override_notes": [
     "Phase1: 신협 차세대 3,500억원대(2027~2029, 보도·예산 미확정) — 2026 TS 근거 부족, 2027 이후 드라이버로만 기록"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [
     {
@@ -79613,6 +79693,7 @@
    "override_notes": [
     "Fastly: 글로벌 매출만 확인. 서울 POP 호스팅 IDC 미확인 → TS UNKNOWN"
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA42-F03",
@@ -80714,6 +80795,7 @@
    "override_notes": [
     "Valve: 비상장, 국내 법인 없음. Steam CDN 캐시 일부 LG U+ 망 관찰(보도) → TS UNKNOWN"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -82450,6 +82532,7 @@
    "override_notes": [
     "Phase1: 국내 법인 구매원가 상한으로 TS 복구(공급사 미공시). 그룹 외 매출 132.8억"
    ],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -82580,16 +82663,66 @@
    },
    "overlap_groups": [],
    "anchor": {
-    "method": "UNKNOWN",
-    "fiscal_year": null,
-    "value": null,
-    "fact_status": "UNKNOWN",
-    "evidence_ids": [],
-    "tier": null,
-    "formula": "근거 부족 — 추정 불가",
-    "inputs": []
+    "method": "ACCOUNT_SPECIFIC",
+    "fiscal_year": 2025,
+    "value": 341.9,
+    "fact_status": "SCENARIO",
+    "evidence_ids": [
+     "KA45-P1-E03",
+     "KA45-P2-E01",
+     "KA45-P2-E02",
+     "KA45-P2-E03"
+    ],
+    "tier": 3,
+    "formula": "TS(시나리오, L6) = 평균[ 매출비율법 1.9%×광고 총판매액 10,752.2억(FY2025)=204.3억 , 트래픽법 전용회선시장 11,150억×메타 트래픽 4.3%=479.4억 ] = 341.9억 (범위 204~479)",
+    "inputs": [
+     {
+      "name": "광고 총판매액",
+      "value": "10752.2",
+      "unit": "억원",
+      "evidence_ids": [
+       "KA45-P1-E03"
+      ],
+      "fact_status": "VERIFIED"
+     },
+     {
+      "name": "매출 대비 망이용대가 비율(네이버·카카오 2016 평균)",
+      "value": "0.019",
+      "evidence_ids": [
+       "KA45-P2-E01",
+       "KA45-P2-E03"
+      ],
+      "fact_status": "SECONDARY_UNCONFIRMED"
+     },
+     {
+      "name": "국내 인터넷 전용회선 시장",
+      "value": "11150",
+      "unit": "억원",
+      "evidence_ids": [
+       "KA45-P2-E01"
+      ],
+      "fact_status": "SECONDARY_UNCONFIRMED"
+     },
+     {
+      "name": "메타 국내 트래픽 점유율(2023Q4)",
+      "value": "0.043",
+      "evidence_ids": [
+       "KA45-P2-E02"
+      ],
+      "fact_status": "SECONDARY_UNCONFIRMED"
+     }
+    ],
+    "definition_note": "정의 상이: 메타의 국내 IT 지출이 아니라 '국내 CP 요율로 환산한 망 이용대가 동등가치'. 실제 지급액(캐시서버 무상 수용 가능성)은 사내 계약으로 확인 필요 → 포트폴리오 합계에서 별도 표시",
+    "range_width": 0.4,
+    "already_fy2026": false
    },
-   "conf_parts": {},
+   "conf_parts": {
+    "officiality": 8,
+    "entity_match": 4,
+    "directness": 8,
+    "recency": 15,
+    "consistency": 5
+   },
    "mix": {
     "CONNECTIVITY": 0.4,
     "DC_COLO": 0.35,
@@ -82630,69 +82763,157 @@
    "m": {
     "2026": {
      "TS": {
-      "value": null,
-      "low": null,
-      "high": null,
-      "status": "UNKNOWN",
-      "confidence": 0,
-      "formula": "근거 부족 — 추정 불가",
-      "inputs": [],
-      "evidence_ids": [],
+      "value": 359.0,
+      "low": 205.14,
+      "high": 526.53,
+      "status": "ESTIMATED",
+      "confidence": 35,
+      "formula": "TS(시나리오, L6) = 평균[ 매출비율법 1.9%×광고 총판매액 10,752.2억(FY2025)=204.3억 , 트래픽법 전용회선시장 11,150억×메타 트래픽 4.3%=479.4억 ] = 341.9억 (범위 204~479) → × (1+0.05)^1 (B-G26)",
+      "inputs": [
+       {
+        "name": "광고 총판매액",
+        "value": "10752.2",
+        "unit": "억원",
+        "evidence_ids": [
+         "KA45-P1-E03"
+        ],
+        "fact_status": "VERIFIED"
+       },
+       {
+        "name": "매출 대비 망이용대가 비율(네이버·카카오 2016 평균)",
+        "value": "0.019",
+        "evidence_ids": [
+         "KA45-P2-E01",
+         "KA45-P2-E03"
+        ],
+        "fact_status": "SECONDARY_UNCONFIRMED"
+       },
+       {
+        "name": "국내 인터넷 전용회선 시장",
+        "value": "11150",
+        "unit": "억원",
+        "evidence_ids": [
+         "KA45-P2-E01"
+        ],
+        "fact_status": "SECONDARY_UNCONFIRMED"
+       },
+       {
+        "name": "메타 국내 트래픽 점유율(2023Q4)",
+        "value": "0.043",
+        "evidence_ids": [
+         "KA45-P2-E02"
+        ],
+        "fact_status": "SECONDARY_UNCONFIRMED"
+       }
+      ],
+      "evidence_ids": [
+       "KA45-P1-E03",
+       "KA45-P2-E01",
+       "KA45-P2-E02",
+       "KA45-P2-E03"
+      ],
       "assumption_ids": [
        "B-G26",
        "B-RANGE"
       ],
       "notes": [
-       "앵커 방법: UNKNOWN",
-       "앵커 회계연도: FYNone"
+       "앵커 방법: ACCOUNT_SPECIFIC",
+       "앵커 회계연도: FY2025",
+       "정의 상이: 메타의 국내 IT 지출이 아니라 '국내 CP 요율로 환산한 망 이용대가 동등가치'. 실제 지급액(캐시서버 무상 수용 가능성)은 사내 계약으로 확인 필요 → 포트폴리오 합계에서 별도 표시"
       ],
       "unit": "억원",
-      "by_cat": null
+      "by_cat": {
+       "CONNECTIVITY": 143.6,
+       "DC_COLO": 125.65,
+       "CLOUD": 0.0,
+       "AI_INFRA": 0.0,
+       "SECURITY": 0.0,
+       "SI_BUILD": 0.0,
+       "IT_OPS": 17.95,
+       "SW_LICENSE": 0.0,
+       "HW_DEVICE": 53.85,
+       "INTERNAL_LABOR": 17.95
+      },
+      "grade": "ESTIMATED_LOW"
      },
      "RAW": {
-      "value": null,
-      "low": null,
-      "high": null,
-      "status": "UNKNOWN",
-      "confidence": 0,
+      "value": 258.48,
+      "low": 147.7,
+      "high": 379.1,
+      "status": "ESTIMATED",
+      "confidence": 25,
       "formula": "RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]",
       "inputs": [
        {
         "name": "TS_2026",
-        "value": null,
+        "value": "358.995",
         "unit": "억원"
        }
       ],
-      "evidence_ids": [],
+      "evidence_ids": [
+       "KA45-P1-E03",
+       "KA45-P2-E01",
+       "KA45-P2-E02",
+       "KA45-P2-E03"
+      ],
       "assumption_ids": [
        "A-MIX",
        "C-ADDR"
       ],
       "notes": [],
       "unit": "억원",
-      "by_cat": null
+      "by_cat": {
+       "CONNECTIVITY": 136.42,
+       "DC_COLO": 113.08,
+       "CLOUD": 0.0,
+       "AI_INFRA": 0.0,
+       "SECURITY": 0.0,
+       "SI_BUILD": 0.0,
+       "IT_OPS": 3.59,
+       "SW_LICENSE": 0.0,
+       "HW_DEVICE": 5.38,
+       "INTERNAL_LABOR": 0.0
+      },
+      "grade": "ESTIMATED_LOW"
      },
      "FPR": {
-      "value": null,
-      "low": null,
-      "high": null,
-      "status": "UNKNOWN",
-      "confidence": 0,
+      "value": 101.86,
+      "low": 58.21,
+      "high": 149.4,
+      "status": "ESTIMATED",
+      "confidence": 15,
       "formula": "FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]",
       "inputs": [
        {
         "name": "RAW_2026",
-        "value": null,
+        "value": "258.476400",
         "unit": "억원"
        }
       ],
-      "evidence_ids": [],
+      "evidence_ids": [
+       "KA45-P1-E03",
+       "KA45-P2-E01",
+       "KA45-P2-E02",
+       "KA45-P2-E03"
+      ],
       "assumption_ids": [
        "C-CAP"
       ],
       "notes": [],
       "unit": "억원",
-      "by_cat": null
+      "by_cat": {
+       "CONNECTIVITY": 61.39,
+       "DC_COLO": 39.58,
+       "CLOUD": 0.0,
+       "AI_INFRA": 0.0,
+       "SECURITY": 0.0,
+       "SI_BUILD": 0.0,
+       "IT_OPS": 0.358995,
+       "SW_LICENSE": 0.0,
+       "HW_DEVICE": 0.538492,
+       "INTERNAL_LABOR": 0.0
+      },
+      "grade": "ESTIMATED_LOW"
      },
      "CR": {
       "value": null,
@@ -82733,7 +82954,7 @@
        },
        {
         "name": "RAW_2026",
-        "value": null
+        "value": "258.476400"
        }
       ],
       "evidence_ids": [],
@@ -82755,7 +82976,7 @@
        },
        {
         "name": "FPR_2026",
-        "value": null
+        "value": "101.86483125"
        }
       ],
       "evidence_ids": [],
@@ -82773,7 +82994,7 @@
       "inputs": [
        {
         "name": "FPR_2026",
-        "value": null
+        "value": "101.86483125"
        },
        {
         "name": "CR",
@@ -82789,14 +83010,19 @@
     "2031": {
      "low": {
       "RAW_base": {
-       "value": null,
+       "value": 258.03,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 10,
        "formula": "RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-ADDR",
         "B-BRIDGE",
@@ -82804,17 +83030,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 136.42,
+        "DC_COLO": 113.08,
+        "CLOUD": 0.0,
+        "AI_INFRA": 0.0,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.0,
+        "IT_OPS": 3.14,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 5.38,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "FPR_base": {
-       "value": null,
+       "value": 101.88,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 5,
        "formula": "FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-CAP",
         "C-ADDR",
@@ -82822,17 +83065,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 61.39,
+        "DC_COLO": 39.58,
+        "CLOUD": 0.0,
+        "AI_INFRA": 0.0,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.0,
+        "IT_OPS": 0.376945,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 0.538492,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "RAW_expansion": {
-       "value": null,
+       "value": 268.26,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 10,
        "formula": "RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-ADDR",
         "B-BRIDGE",
@@ -82840,17 +83100,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 136.42,
+        "DC_COLO": 119.37,
+        "CLOUD": 0.0,
+        "AI_INFRA": 0.0,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.0,
+        "IT_OPS": 4.4,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 8.08,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "FPR_expansion": {
-       "value": null,
+       "value": 104.5,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 5,
        "formula": "FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-CAP",
         "C-ADDR",
@@ -82858,37 +83135,102 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 61.39,
+        "DC_COLO": 41.78,
+        "CLOUD": 0.0,
+        "AI_INFRA": 0.0,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.0,
+        "IT_OPS": 0.527723,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 0.807739,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "TS": {
-       "value": null,
+       "value": 344.64,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 20,
        "formula": "TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]",
        "inputs": [
         {
          "name": "TS_2026",
-         "value": null
+         "value": "358.995"
         }
        ],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "B-BRIDGE",
         "B-ALLOC"
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 143.6,
+        "DC_COLO": 125.65,
+        "CLOUD": 0.0,
+        "AI_INFRA": 0.0,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.0,
+        "IT_OPS": 12.56,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 53.85,
+        "INTERNAL_LABOR": 8.97
+       },
+       "grade": "ESTIMATED_LOW"
       },
-      "bridge": null,
+      "bridge": {
+       "total": 344.64,
+       "by_cat": {
+        "CONNECTIVITY": 143.6,
+        "DC_COLO": 125.65,
+        "CLOUD": 0.0,
+        "AI_INFRA": 0.0,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.0,
+        "IT_OPS": 12.56,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 53.85,
+        "INTERNAL_LABOR": 8.97
+       },
+       "components": {
+        "organic": 0.0,
+        "cloud": 0.0,
+        "ai": 0.0,
+        "infra": 0.0,
+        "regulatory": 0.0,
+        "efficiency": -17.95,
+        "substitution": -0.0,
+        "other": 0.0
+       },
+       "organic_cagr": 0.0,
+       "clamped": [
+        "SW_LICENSE"
+       ],
+       "params": {
+        "organic_cagr": 0.0,
+        "cloud": 0.0,
+        "ai": 0.0,
+        "regulatory": 0.0,
+        "efficiency": 0.05,
+        "substitution": 0.0
+       }
+      },
       "TS_CAGR": {
-       "value": null,
+       "value": -0.008131,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 20,
        "formula": "(TS_2031/TS_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -82897,11 +83239,11 @@
        "unit": "%"
       },
       "RAW_CAGR": {
-       "value": null,
+       "value": -0.000347,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 10,
        "formula": "(RAW_2031/RAW_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -82910,11 +83252,11 @@
        "unit": "%"
       },
       "FPR_CAGR": {
-       "value": null,
+       "value": 3.5e-05,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 5,
        "formula": "(FPR_2031/FPR_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -82925,14 +83267,19 @@
      },
      "base": {
       "RAW_base": {
-       "value": null,
+       "value": 325.35,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "ESTIMATED",
+       "confidence": 10,
        "formula": "RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-ADDR",
         "B-BRIDGE",
@@ -82940,17 +83287,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 165.97,
+        "DC_COLO": 139.2,
+        "CLOUD": 1.79,
+        "AI_INFRA": 6.28,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.897488,
+        "IT_OPS": 4.65,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 6.55,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "FPR_base": {
-       "value": null,
+       "value": 126.94,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "ESTIMATED",
+       "confidence": 5,
        "formula": "FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-CAP",
         "C-ADDR",
@@ -82958,17 +83322,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 74.69,
+        "DC_COLO": 48.72,
+        "CLOUD": 0.323096,
+        "AI_INFRA": 1.88,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.107698,
+        "IT_OPS": 0.55823,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 0.655158,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "RAW_expansion": {
-       "value": null,
+       "value": 339.84,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 10,
        "formula": "RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-ADDR",
         "B-BRIDGE",
@@ -82976,17 +83357,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 165.97,
+        "DC_COLO": 146.93,
+        "CLOUD": 2.15,
+        "AI_INFRA": 7.18,
+        "SECURITY": 0.0,
+        "SI_BUILD": 1.26,
+        "IT_OPS": 6.51,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 9.83,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "FPR_expansion": {
-       "value": null,
+       "value": 130.57,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 5,
        "formula": "FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-CAP",
         "C-ADDR",
@@ -82994,37 +83392,102 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 74.69,
+        "DC_COLO": 51.43,
+        "CLOUD": 0.387715,
+        "AI_INFRA": 2.15,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.150778,
+        "IT_OPS": 0.781522,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 0.982738,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "TS": {
-       "value": null,
+       "value": 446.11,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "ESTIMATED",
+       "confidence": 20,
        "formula": "TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]",
        "inputs": [
         {
          "name": "TS_2026",
-         "value": null
+         "value": "358.995"
         }
        ],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "B-BRIDGE",
         "B-ALLOC"
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 174.71,
+        "DC_COLO": 154.67,
+        "CLOUD": 3.59,
+        "AI_INFRA": 8.97,
+        "SECURITY": 0.0,
+        "SI_BUILD": 3.59,
+        "IT_OPS": 18.61,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 65.52,
+        "INTERNAL_LABOR": 16.45
+       },
+       "grade": "ESTIMATED_LOW"
       },
-      "bridge": null,
+      "bridge": {
+       "total": 446.11,
+       "by_cat": {
+        "CONNECTIVITY": 174.71,
+        "DC_COLO": 154.67,
+        "CLOUD": 3.59,
+        "AI_INFRA": 8.97,
+        "SECURITY": 0.0,
+        "SI_BUILD": 3.59,
+        "IT_OPS": 18.61,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 65.52,
+        "INTERNAL_LABOR": 16.45
+       },
+       "components": {
+        "organic": 77.78,
+        "cloud": 0.0,
+        "ai": 17.95,
+        "infra": 0.0,
+        "regulatory": 0.0,
+        "efficiency": -10.77,
+        "substitution": -0.0,
+        "other": 0.0
+       },
+       "organic_cagr": 0.04,
+       "clamped": [
+        "SW_LICENSE"
+       ],
+       "params": {
+        "organic_cagr": 0.04,
+        "cloud": 0.0,
+        "ai": 0.05,
+        "regulatory": 0.0,
+        "efficiency": 0.03,
+        "substitution": 0.0
+       }
+      },
       "TS_CAGR": {
-       "value": null,
+       "value": 0.044407,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 20,
        "formula": "(TS_2031/TS_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -83033,11 +83496,11 @@
        "unit": "%"
       },
       "RAW_CAGR": {
-       "value": null,
+       "value": 0.047095,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 10,
        "formula": "(RAW_2031/RAW_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -83046,11 +83509,11 @@
        "unit": "%"
       },
       "FPR_CAGR": {
-       "value": null,
+       "value": 0.044991,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 5,
        "formula": "(FPR_2031/FPR_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -83061,14 +83524,19 @@
      },
      "high": {
       "RAW_base": {
-       "value": null,
+       "value": 401.75,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 10,
        "formula": "RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-ADDR",
         "B-BRIDGE",
@@ -83076,17 +83544,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 200.44,
+        "DC_COLO": 169.39,
+        "CLOUD": 3.59,
+        "AI_INFRA": 12.56,
+        "SECURITY": 0.0,
+        "SI_BUILD": 1.79,
+        "IT_OPS": 6.06,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 7.91,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "FPR_base": {
-       "value": null,
+       "value": 155.63,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 5,
        "formula": "FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-CAP",
         "C-ADDR",
@@ -83094,17 +83579,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 90.2,
+        "DC_COLO": 59.29,
+        "CLOUD": 0.646191,
+        "AI_INFRA": 3.77,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.215397,
+        "IT_OPS": 0.726603,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 0.791222,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "RAW_expansion": {
-       "value": null,
+       "value": 420.77,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 10,
        "formula": "RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-ADDR",
         "B-BRIDGE",
@@ -83112,17 +83614,34 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 200.44,
+        "DC_COLO": 178.8,
+        "CLOUD": 4.31,
+        "AI_INFRA": 14.36,
+        "SECURITY": 0.0,
+        "SI_BUILD": 2.51,
+        "IT_OPS": 8.48,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 11.87,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "FPR_expansion": {
-       "value": null,
+       "value": 160.37,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 5,
        "formula": "FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]",
        "inputs": [],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "C-CAP",
         "C-ADDR",
@@ -83130,37 +83649,102 @@
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 90.2,
+        "DC_COLO": 62.58,
+        "CLOUD": 0.775429,
+        "AI_INFRA": 4.31,
+        "SECURITY": 0.0,
+        "SI_BUILD": 0.301556,
+        "IT_OPS": 1.02,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 1.19,
+        "INTERNAL_LABOR": 0.0
+       },
+       "grade": "ESTIMATED_LOW"
       },
       "TS": {
-       "value": null,
+       "value": 557.64,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "SCENARIO",
+       "confidence": 20,
        "formula": "TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]",
        "inputs": [
         {
          "name": "TS_2026",
-         "value": null
+         "value": "358.995"
         }
        ],
-       "evidence_ids": [],
+       "evidence_ids": [
+        "KA45-P1-E03",
+        "KA45-P2-E01",
+        "KA45-P2-E02",
+        "KA45-P2-E03"
+       ],
        "assumption_ids": [
         "B-BRIDGE",
         "B-ALLOC"
        ],
        "notes": [],
        "unit": "억원",
-       "by_cat": null
+       "by_cat": {
+        "CONNECTIVITY": 210.99,
+        "DC_COLO": 188.21,
+        "CLOUD": 7.18,
+        "AI_INFRA": 17.95,
+        "SECURITY": 0.0,
+        "SI_BUILD": 7.18,
+        "IT_OPS": 24.22,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 79.12,
+        "INTERNAL_LABOR": 22.78
+       },
+       "grade": "ESTIMATED_LOW"
       },
-      "bridge": null,
+      "bridge": {
+       "total": 557.64,
+       "by_cat": {
+        "CONNECTIVITY": 210.99,
+        "DC_COLO": 188.21,
+        "CLOUD": 7.18,
+        "AI_INFRA": 17.95,
+        "SECURITY": 0.0,
+        "SI_BUILD": 7.18,
+        "IT_OPS": 24.22,
+        "SW_LICENSE": 0.0,
+        "HW_DEVICE": 79.12,
+        "INTERNAL_LABOR": 22.78
+       },
+       "components": {
+        "organic": 168.49,
+        "cloud": 0.0,
+        "ai": 35.9,
+        "infra": 0.0,
+        "regulatory": 0.0,
+        "efficiency": -7.18,
+        "substitution": -0.0,
+        "other": 0.0
+       },
+       "organic_cagr": 0.08,
+       "clamped": [
+        "SW_LICENSE"
+       ],
+       "params": {
+        "organic_cagr": 0.08,
+        "cloud": 0.0,
+        "ai": 0.1,
+        "regulatory": 0.0,
+        "efficiency": 0.02,
+        "substitution": 0.0
+       }
+      },
       "TS_CAGR": {
-       "value": null,
+       "value": 0.092075,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 20,
        "formula": "(TS_2031/TS_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -83169,11 +83753,11 @@
        "unit": "%"
       },
       "RAW_CAGR": {
-       "value": null,
+       "value": 0.092211,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 10,
        "formula": "(RAW_2031/RAW_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -83182,11 +83766,11 @@
        "unit": "%"
       },
       "FPR_CAGR": {
-       "value": null,
+       "value": 0.088469,
        "low": null,
        "high": null,
-       "status": "UNKNOWN",
-       "confidence": 0,
+       "status": "DERIVED",
+       "confidence": 5,
        "formula": "(FPR_2031/FPR_2026)^(1/5) − 1",
        "inputs": [],
        "evidence_ids": [],
@@ -83198,16 +83782,16 @@
     },
     "target": {
      "TARGET": {
-      "value": null,
+      "value": 63.47,
       "low": null,
       "high": null,
-      "status": "UNKNOWN",
-      "confidence": 0,
-      "formula": "FPR_2031 미산출 → Target 산출 불가",
+      "status": "SCENARIO",
+      "confidence": 5,
+      "formula": "Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요",
       "inputs": [
        {
         "name": "FPR_2031(base)",
-        "value": null
+        "value": "126.9365349721472640000"
        }
       ],
       "evidence_ids": [],
@@ -83220,20 +83804,20 @@
       "unit": "억원"
      },
      "TARGET_SOW": {
-      "value": null,
+      "value": 0.195077,
       "low": null,
       "high": null,
-      "status": "UNKNOWN",
-      "confidence": 0,
+      "status": "SCENARIO",
+      "confidence": 5,
       "formula": "Target_SOW = Target_2031 / RAW_2031(base)",
       "inputs": [
        {
         "name": "Target_2031",
-        "value": null
+        "value": "63.46826748607363200000"
        },
        {
         "name": "RAW_2031(base)",
-        "value": null
+        "value": "325.35060678364608000"
        }
       ],
       "evidence_ids": [],
@@ -83271,7 +83855,7 @@
    },
    "family": "GLOBAL_NET",
    "infra_drivers": [],
-   "aggregate_class": "EXCLUDED_UNKNOWN",
+   "aggregate_class": "DEFINITION_MISMATCH",
    "research_log": [
     {
      "step": "DART 법인 검색 '메타플랫폼스'",
@@ -83371,15 +83955,28 @@
      "detail": "프로토콜상 DNS 차단 — 미시도",
      "retryable": false,
      "_phase": "P1"
+    },
+    {
+     "date": "2026-10-16",
+     "action": "P2 간접근거 조사: 망 이용대가 동등가치(트래픽 점유율법·매출비율법) — 국회의원실 구글 추산 방법론 차용",
+     "tools": [
+      "WebSearch",
+      "PlayMCP ItNewsSearch(결과 없음)"
+     ],
+     "_phase": "P2"
     }
    ],
    "source_hash": "823c21d8d5835777",
    "research_status": "NEEDS_REVIEW",
    "narrative": {
-    "ts_2026": "TS_2026 산출 불가(UNKNOWN): 직접 IT 지출 근거와 신뢰 가능한 추정 기준 부족",
-    "ts_basis": "UNKNOWN: 근거 부족 — 추정 불가",
-    "raw_logic": "TS 미산출로 RAW·FPR 산출 불가",
-    "fpr_logic": "TS 미산출로 RAW·FPR 산출 불가",
+    "ts_2026": "TS_2026 359억 (범위 205억~527억), 상태 ESTIMATED",
+    "ts_basis": "ACCOUNT_SPECIFIC: TS(시나리오, L6) = 평균[ 매출비율법 1.9%×광고 총판매액 10,752.2억(FY2025)=204.3억 , 트래픽법 전용회선시장 11,150억×메타 트래픽 4.3%=479.4억 ] = 341.9억 (범위 204~479)",
+    "raw_logic": "RAW = TS × 카테고리별 접근 가능률. 상위 접근 영역: Connectivity / Network 136억, Data Center / Colocation / Hosting 113억, Hardware / Devices / Servers 5억. 내부 IT 인건비(접근률 0)와 SW 라이선스·HW(낮은 접근률)는 제외 비중이 큼.",
+    "fpr_logic": "FPR = RAW × 현실적 포획 상한(이중망·멀티벤더·경쟁 고려). 상위: Connectivity / Network 61억, Data Center / Colocation / Hosting 40억, Hardware / Devices / Servers 1억",
+    "ts_2031_drivers": "TS_2031(base) 446억 — 주요 동인: 자연 성장 +78억, AI 투자 +18억, 효율화 절감 -11억",
+    "uncertainty": "2031 TS 시나리오 범위 345억 (Low) ~ 558억 (High)",
+    "key_opportunity": "2031 FPR 상위 영역: Connectivity / Network 75억, Data Center / Colocation / Hosting 49억",
+    "raw_2031_drivers": "RAW 증가 기여 상위: Connectivity / Network +30억, Data Center / Colocation / Hosting +26억",
     "open_questions": [
      "페이스북코리아 FY2025 매출(감사보고서 원문)",
      "Meta–LG U+ 현재 망 이용대가/캐시서버(FNA) 계약 여부와 규모",
@@ -83387,19 +83984,11 @@
      "방통위 2018 제재 과징금 액수(원문 미확인)",
      "Meta(해외법인)의 한국 ISP 망 이용대가 금액(비공개)",
      "LG U+ IDC 내 Meta 캐시서버(FNA) 존재 여부",
-     "SKB 계약 2021 이후 갱신 여부"
+     "SKB 계약 2021 이후 갱신 여부",
+     "메타 실제 LG U+ 지급액(캐시서버·전용회선) — 사내 계약 확인 필요"
     ]
    },
    "issues": [
-    {
-     "account_id": "KA45",
-     "severity": "WARN",
-     "code": "TS_UNKNOWN",
-     "message": "TS_2026 산출 근거 부족(UNKNOWN). 합계에서 제외됨.",
-     "metric": "TS",
-     "year": 2026,
-     "scenario": null
-    },
     {
      "account_id": "KA45",
      "severity": "INFO",
@@ -83407,6 +83996,15 @@
      "message": "CR_2026 미입력(NULL) — 0으로 처리하지 않음. C-SOW·Upside N/A.",
      "metric": "CR",
      "year": 2026,
+     "scenario": null
+    },
+    {
+     "account_id": "KA45",
+     "severity": "INFO",
+     "code": "TARGET_SCENARIO",
+     "message": "2031 Target은 경영진 입력 없음 → SCENARIO(FPR×달성률). 경영진 의사결정 필요.",
+     "metric": "TARGET",
+     "year": 2031,
      "scenario": null
     },
     {
@@ -83673,6 +84271,60 @@
      "_phase": "P1",
      "account_id": "KA45",
      "source_hash": "9b60ef2380be56a7"
+    },
+    {
+     "evidence_id": "KA45-P2-E01",
+     "tier": 2,
+     "source_type": "NEWS",
+     "source_title": "최수진 의원, 구글 망 이용 대가 규모 추산",
+     "publisher": "아시아경제",
+     "source_url": "https://view.asiae.co.kr/article/2025101308082068538",
+     "publication_date": "2025-10-13",
+     "accessed_at": "2026-10-16",
+     "fiscal_period": "FY2024",
+     "page_or_section": "WebSearch 요약",
+     "quoted_statement": "네이버·카카오의 매출액 대비 망 이용대가 비중(2016년 1.8%·2.0%) 평균 1.9%를 구글코리아 추정 매출에 대입 → 2,147억원; 트래픽 기준: KISDI 국내 인터넷 전용회선 시장 1조1,150억원 × 구글 트래픽 점유율 31.2% → 3,479억원",
+     "verification_status": "SECONDARY_UNCONFIRMED",
+     "notes": "국회의원실 자체 추산 방법론(공식 납부액 아님). 교차: 한국경제 https://www.hankyung.com/article/2025101336297",
+     "_phase": "P2",
+     "account_id": "KA45",
+     "source_hash": "0585ce4b26cb64fd"
+    },
+    {
+     "evidence_id": "KA45-P2-E02",
+     "tier": 2,
+     "source_type": "NEWS",
+     "source_title": "[국감2023] 국내 트래픽 1등 구글, 망사용료는 안내 (과기정통부 제출자료)",
+     "publisher": "디지털데일리",
+     "source_url": "https://m.ddaily.co.kr/page/view/2023102618124097958",
+     "publication_date": "2023-10-26",
+     "accessed_at": "2026-10-16",
+     "fiscal_period": "2023Q4",
+     "page_or_section": "WebSearch 요약",
+     "quoted_statement": "국내 통신망 트래픽: 구글 28.6%, 넷플릭스 5.5%, 메타(페이스북) 4.3%, 네이버 1.7%, 카카오 1.1% (과기정통부, 2023년 4분기 기준 보도 인용)",
+     "verification_status": "SECONDARY_UNCONFIRMED",
+     "notes": "교차: 뉴데일리 2024-08-16 https://biz.newdaily.co.kr/site/data/html/2024/08/16/2024081600110.html. 2022Q4 메타 3.5%(대한경제 2022-02-03)",
+     "_phase": "P2",
+     "account_id": "KA45",
+     "source_hash": "39a06ea0421ed01f"
+    },
+    {
+     "evidence_id": "KA45-P2-E03",
+     "tier": 2,
+     "source_type": "NEWS",
+     "source_title": "네이버 2016년 망 이용대가 734억원(매출 1.8%), 카카오 약 300억원(2.0%)",
+     "publisher": "디지털타임스",
+     "source_url": "https://www.dt.co.kr/article/11124492",
+     "publication_date": null,
+     "accessed_at": "2026-10-16",
+     "fiscal_period": "FY2016",
+     "page_or_section": "WebSearch 요약",
+     "quoted_statement": "네이버가 2017년 언론을 통해 밝힌 2016년도 망 이용대가 납부액은 734억원 ... 카카오 역시 2016년에 망 이용 대가로 약 300억원",
+     "verification_status": "SECONDARY_UNCONFIRMED",
+     "notes": "비율 기준연도 2016 — 현재 적용 시 시차 위험",
+     "_phase": "P2",
+     "account_id": "KA45",
+     "source_hash": "b0ef354f88d55a0b"
     }
    ],
    "facts": [
@@ -83782,6 +84434,46 @@
      ],
      "verification_status": "VERIFIED",
      "_phase": "P1"
+    },
+    {
+     "fact_id": "KA45-P2-F01",
+     "metric": "korea_traffic_share",
+     "fiscal_year": 2023,
+     "value": 0.043,
+     "unit": "ratio",
+     "scope": "국내 통신망 트래픽(2023Q4)",
+     "evidence_ids": [
+      "KA45-P2-E02"
+     ],
+     "verification_status": "SECONDARY_UNCONFIRMED",
+     "_phase": "P2"
+    },
+    {
+     "fact_id": "KA45-P2-F02",
+     "metric": "domestic_leased_internet_market",
+     "fiscal_year": 2024,
+     "value": 11150,
+     "unit": "억원",
+     "scope": "국내 인터넷 전용회선 시장(KISDI, 의원실 인용)",
+     "evidence_ids": [
+      "KA45-P2-E01"
+     ],
+     "verification_status": "SECONDARY_UNCONFIRMED",
+     "_phase": "P2"
+    },
+    {
+     "fact_id": "KA45-P2-F03",
+     "metric": "domestic_cp_network_fee_ratio",
+     "fiscal_year": 2016,
+     "value": 0.019,
+     "unit": "ratio",
+     "scope": "네이버 1.8%·카카오 2.0% 평균",
+     "evidence_ids": [
+      "KA45-P2-E01",
+      "KA45-P2-E03"
+     ],
+     "verification_status": "SECONDARY_UNCONFIRMED",
+     "_phase": "P2"
     }
    ],
    "drivers": [],
@@ -83823,14 +84515,63 @@
     "방통위 2018 제재 과징금 액수(원문 미확인)",
     "Meta(해외법인)의 한국 ISP 망 이용대가 금액(비공개)",
     "LG U+ IDC 내 Meta 캐시서버(FNA) 존재 여부",
-    "SKB 계약 2021 이후 갱신 여부"
+    "SKB 계약 2021 이후 갱신 여부",
+    "메타 실제 LG U+ 지급액(캐시서버·전용회선) — 사내 계약 확인 필요",
+    "2024~2025 메타 트래픽 점유율 최신치(과기정통부)"
    ],
    "override_notes": [
-    "메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+    "메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요",
+    "Phase2: 망 이용대가 동등가치 시나리오(매출비율법 204억·트래픽법 479억, 중간 342억) — 실제 지급액 아님, 정의 상이로 포트폴리오 합계 제외"
    ],
-   "conflicts": [],
-   "comparables": [],
-   "estimation_inputs": [],
+   "reconciliation": null,
+   "conflicts": [
+    {
+     "topic": "두 방법 간 2.3배 차이",
+     "detail": "매출법 204억 vs 트래픽법 479억 — 중간값을 기준값, 두 값을 범위로 사용"
+    }
+   ],
+   "comparables": [
+    {
+     "name": "구글(의원실 추산)",
+     "value_eok": "2,147(매출법)~3,479(트래픽법)",
+     "evidence_ids": [
+      "KA45-P2-E01"
+     ]
+    }
+   ],
+   "estimation_inputs": [
+    {
+     "name": "광고 총판매액 FY2025",
+     "value": 10752.2,
+     "unit": "억원",
+     "evidence_ids": [
+      "KA45-P1-E03"
+     ]
+    },
+    {
+     "name": "매출 대비 망이용대가 비율",
+     "value": 0.019,
+     "evidence_ids": [
+      "KA45-P2-E01",
+      "KA45-P2-E03"
+     ]
+    },
+    {
+     "name": "전용회선 시장",
+     "value": 11150,
+     "unit": "억원",
+     "evidence_ids": [
+      "KA45-P2-E01"
+     ]
+    },
+    {
+     "name": "메타 트래픽 점유율",
+     "value": 0.043,
+     "evidence_ids": [
+      "KA45-P2-E02"
+     ]
+    }
+   ],
    "recovery_levels_tried": [
     {
      "level": "L1_DIRECT",
@@ -83861,32 +84602,37 @@
      "level": "L6_SCENARIO",
      "result": "not_applicable",
      "detail": "근거 없음"
+    },
+    {
+     "level": "L6_SCENARIO",
+     "result": "found",
+     "detail": "망 이용대가 동등가치 2방법(매출 1.9%×광고총판매액 10,752억=204억 / 전용회선시장 11,150억×4.3%=479억)"
     }
    ],
    "na_class": {
     "2026|TS": {
-     "class": "INSUFFICIENT_EVIDENCE",
-     "reason": "앵커 UNKNOWN — 메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+     "class": "ESTIMATED_LOW",
+     "reason": "ACCOUNT_SPECIFIC · conf 35"
     },
     "2026|RAW": {
-     "class": "INSUFFICIENT_EVIDENCE",
-     "reason": "앵커 UNKNOWN — 메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+     "class": "ESTIMATED_LOW",
+     "reason": "ACCOUNT_SPECIFIC · conf 25"
     },
     "2026|FPR": {
-     "class": "INSUFFICIENT_EVIDENCE",
-     "reason": "앵커 UNKNOWN — 메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+     "class": "ESTIMATED_LOW",
+     "reason": "ACCOUNT_SPECIFIC · conf 15"
     },
     "2031|TS": {
-     "class": "INSUFFICIENT_EVIDENCE",
-     "reason": "앵커 UNKNOWN — 메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+     "class": "ESTIMATED_LOW",
+     "reason": "ACCOUNT_SPECIFIC · conf 20"
     },
     "2031|RAW": {
-     "class": "INSUFFICIENT_EVIDENCE",
-     "reason": "앵커 UNKNOWN — 메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+     "class": "ESTIMATED_LOW",
+     "reason": "ACCOUNT_SPECIFIC · conf 10"
     },
     "2031|FPR": {
-     "class": "INSUFFICIENT_EVIDENCE",
-     "reason": "앵커 UNKNOWN — 메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
+     "class": "ESTIMATED_LOW",
+     "reason": "ACCOUNT_SPECIFIC · conf 5"
     },
     "2026|CR": {
      "class": "INTERNAL_REQUIRED",
@@ -83906,11 +84652,11 @@
     },
     "2031|TARGET": {
      "class": "INTERNAL_REQUIRED",
-     "reason": "FPR 미산출"
+     "reason": "경영진 목표 미입력 — 화면에는 FPR×50% 시나리오 표시값만 존재"
     },
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
-     "reason": "사내 CR(현재 매출) 미입력"
+     "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
     }
    }
   },
@@ -85585,6 +86331,7 @@
    "override_notes": [
     "Phase1: 한국오라클 감사보고서로 국내 인프라 지출 복구(리전 MW 미확인)"
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA46-F01",
@@ -87399,6 +88146,7 @@
     "가비아는 IT 서비스 공급자: 성격별 비용 대부분이 판매원가이므로 '자사 IT 지출'로 직접 사용 금지"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -89180,6 +89928,7 @@
     "클라우드(카카오엔터프라이즈/외부 CSP) 비용이 지급수수료에 포함된 금액"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -90848,6 +91597,7 @@
     "지급수수료 1,249억 내역(위탁운영·재판매)"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [
@@ -91995,6 +92745,7 @@
     "키암코인천도화동DC 펀드: 운용사 산은인프라자산운용(DART). 용량·임차인·투자비 미수집 → UNKNOWN",
     "Phase1: 도화동 DC 최대 80MW 수전, 2026-10 착공 예정·주민 반대 → 2026년 운영 지출 없음(NOT_APPLICABLE), 2031 임차인·개시시점 미확인"
    ],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": null,
@@ -93571,6 +94322,7 @@
     "그룹 중복: 비바리퍼블리카(KA27)와 IT 인프라·인력 공유 여부"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [],
    "comparables": [],
    "estimation_inputs": [],
@@ -95357,6 +96109,7 @@
     "전산 인력 수 및 인건비"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA27-E13 (KA52 open_questions)",
@@ -97102,6 +97855,7 @@
     "합병 후 KA27로 통합 처리 여부"
    ],
    "override_notes": [],
+   "reconciliation": null,
    "conflicts": [
     {
      "existing_fact_id": "KA53-F03",
@@ -97200,11 +97954,12 @@
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
-    "n_mismatch": 4,
+    "n_mismatch": 5,
     "excluded": [
      "KA06",
      "KA07",
      "KA08",
+     "KA45",
      "KA46"
     ]
    },
@@ -97216,11 +97971,12 @@
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
-    "n_mismatch": 4,
+    "n_mismatch": 5,
     "excluded": [
      "KA06",
      "KA07",
      "KA08",
+     "KA45",
      "KA46"
     ]
    },
@@ -97232,11 +97988,12 @@
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
-    "n_mismatch": 4,
+    "n_mismatch": 5,
     "excluded": [
      "KA06",
      "KA07",
      "KA08",
+     "KA45",
      "KA46"
     ]
    },
@@ -97248,11 +98005,12 @@
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
-    "n_mismatch": 4,
+    "n_mismatch": 5,
     "excluded": [
      "KA06",
      "KA07",
      "KA08",
+     "KA45",
      "KA46"
     ]
    }
@@ -97463,7 +98221,7 @@
     "TS_2031": 0.0,
     "RAW_2031": 0.0,
     "FPR_2031": 0.0,
-    "n": 3,
+    "n": 2,
     "n_est": 0,
     "conf_sum": 0
    },
@@ -97597,7 +98355,7 @@
     "TS_2031": 136.19,
     "RAW_2031": 99.33,
     "FPR_2031": 38.75,
-    "n": 4,
+    "n": 3,
     "n_est": 1,
     "conf_sum": 51
    }
@@ -97740,11 +98498,12 @@
    "FPR_2031_high": 6024.34,
    "FPR_CAGR": 0.083424,
    "n_accounts": 43,
-   "FPR_2031_definition_mismatch": 961.57,
+   "FPR_2031_definition_mismatch": 1036.26,
    "mismatch_accounts": [
     "KA06",
     "KA07",
     "KA08",
+    "KA45",
     "KA46"
    ],
    "demand_confidence": 27,
@@ -97799,11 +98558,12 @@
    "FPR_2031_high": 5354.85,
    "FPR_CAGR": 0.39335,
    "n_accounts": 40,
-   "FPR_2031_definition_mismatch": 872.35,
+   "FPR_2031_definition_mismatch": 874.23,
    "mismatch_accounts": [
     "KA06",
     "KA07",
     "KA08",
+    "KA45",
     "KA46"
    ],
    "demand_confidence": 30,
@@ -97861,11 +98621,12 @@
    "FPR_2031_high": 5273.57,
    "FPR_CAGR": 0.091398,
    "n_accounts": 42,
-   "FPR_2031_definition_mismatch": 1318.01,
+   "FPR_2031_definition_mismatch": 1366.73,
    "mismatch_accounts": [
     "KA06",
     "KA07",
     "KA08",
+    "KA45",
     "KA46"
    ],
    "demand_confidence": 29,
@@ -97925,7 +98686,7 @@
    "FPR_2031_high": 2204.56,
    "FPR_CAGR": 0.255309,
    "n_accounts": 40,
-   "FPR_2031_definition_mismatch": 68.57,
+   "FPR_2031_definition_mismatch": 68.89,
    "mismatch_accounts": [
     "KA06",
     "KA07",
@@ -98048,7 +98809,7 @@
    "FPR_2031_high": 425.77,
    "FPR_CAGR": 0.217636,
    "n_accounts": 35,
-   "FPR_2031_definition_mismatch": 22.86,
+   "FPR_2031_definition_mismatch": 22.96,
    "mismatch_accounts": [
     "KA06",
     "KA07",
@@ -98105,7 +98866,7 @@
    "FPR_2031_high": 337.44,
    "FPR_CAGR": 0.111741,
    "n_accounts": 32,
-   "FPR_2031_definition_mismatch": 29.79,
+   "FPR_2031_definition_mismatch": 30.35,
    "mismatch_accounts": [
     "KA06",
     "KA07",
@@ -98163,7 +98924,7 @@
    "FPR_2031_high": 306.0,
    "FPR_CAGR": 0.041788,
    "n_accounts": 24,
-   "FPR_2031_definition_mismatch": 1.68,
+   "FPR_2031_definition_mismatch": 2.34,
    "mismatch_accounts": [],
    "demand_confidence": 28,
    "top_accounts": [
@@ -98205,7 +98966,7 @@
  ],
  "issues_summary": {
   "ERROR": 0,
-  "WARN": 21,
-  "INFO": 166
+  "WARN": 20,
+  "INFO": 167
  }
 }

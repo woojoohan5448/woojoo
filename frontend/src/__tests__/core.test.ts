@@ -36,11 +36,11 @@ describe('chart options', () => {
     expect(o.grid[0].width).toBe(o.grid[1].width)
     expect(o.xAxis[0].max).toBe(o.xAxis[1].max)
   })
-  it('highlights the selected bar and labels missing CR as N/A (not zero)', () => {
+  it('highlights the selected bar and labels missing CR with its N/A reason class (not zero)', () => {
     const o: any = opportunityOption(a, 'base', 'base', { year: 2026, metric: 'RAW' }, P, false)
     const main = o.series.filter((s: any) => s.type === 'bar' && s.name === '2026')[0]
     expect(main.data[1].itemStyle.borderWidth).toBe(2.5)
-    expect(main.data[3].label.formatter()).toContain('N/A')
+    expect(main.data[3].label.formatter()).toBe('INTERNAL INPUT REQUIRED')  // missing CR shows its reason class, never 0
   })
   it('category and bridge options build for estimated accounts and return null bridge for unknown', () => {
     expect((categoryOption(a, 2026, 'base', 'base', { year: 2026, metric: 'TS' }, P) as any).series.length).toBe(3)

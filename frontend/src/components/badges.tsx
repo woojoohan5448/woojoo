@@ -40,3 +40,17 @@ export function Pill({ children, tone = 'neutral' }: { children: React.ReactNode
 export function Swatch({ color }: { color: string }) {
   return <span className="inline-block h-2.5 w-2.5 rounded-sm align-middle" style={{ background: color }} aria-hidden />
 }
+
+const GRADE_STYLE: Record<string, { fg: string; label: string }> = {
+  ESTIMATED_HIGH: { fg: 'var(--ok)', label: '추정 · HIGH' }, ESTIMATED_MEDIUM: { fg: 'var(--warn)', label: '추정 · MEDIUM' },
+  ESTIMATED_LOW: { fg: 'var(--err)', label: '추정 · LOW CONFIDENCE' },
+  INTERNAL_REQUIRED: { fg: 'var(--c-ts)', label: 'INTERNAL INPUT REQUIRED' }, INSUFFICIENT_EVIDENCE: { fg: 'var(--ink-3)', label: 'RESEARCH GAP' },
+  NOT_APPLICABLE: { fg: 'var(--ink-3)', label: 'NOT APPLICABLE' }, ERROR: { fg: 'var(--err)', label: 'VALIDATION ERROR' },
+  VERIFIED: { fg: 'var(--ok)', label: 'VERIFIED' }, DERIVED: { fg: 'var(--ok)', label: 'DERIVED' },
+}
+export function GradeBadge({ grade }: { grade?: string | null }) {
+  if (!grade) return null
+  const g = GRADE_STYLE[grade] ?? { fg: 'var(--ink-3)', label: grade }
+  return <span className="inline-flex items-center gap-1 rounded px-1.5 py-0.5 text-[11px] font-semibold border whitespace-nowrap"
+    style={{ color: g.fg, borderColor: g.fg }} title={grade}>{g.label}</span>
+}

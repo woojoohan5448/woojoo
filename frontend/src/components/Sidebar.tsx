@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Dashboard } from '../types'
-import { RESEARCH_STATUS_LABEL, SEGMENT_LABEL, eok } from '../lib/format'
+import { RESEARCH_STATUS_LABEL, SEGMENT_LABEL, eok, missingText } from '../lib/format'
 import { ConfidenceMeter } from './badges'
 
 type SortKey = 'id' | 'name' | 'ts' | 'fpr' | 'conf'
@@ -59,7 +59,7 @@ export default function Sidebar({ data, selected, onSelect }: { data: Dashboard;
                 </div>
                 <div className="mt-0.5 flex items-center justify-between gap-2 text-[11px] text-ink3">
                   <span className="truncate">{SEGMENT_LABEL[a.segment] ?? a.segment} · {RESEARCH_STATUS_LABEL[a.research_status]}</span>
-                  <span className="num shrink-0 text-ink2">{ts.value !== null ? eok(ts.value, ts.status) : a.m['2026'].RAW.value !== null ? 'RAW만' : 'N/A'}</span>
+                  <span className="num shrink-0 text-ink2">{ts.value !== null ? eok(ts.value, ts.status) : a.m['2026'].RAW.value !== null ? 'RAW만' : missingText(a, { year: 2026, metric: 'TS' }) === 'RESEARCH GAP' ? 'GAP' : missingText(a, { year: 2026, metric: 'TS' })}</span>
                 </div>
                 <div className="mt-1"><ConfidenceMeter value={ts.confidence} width={90} /></div>
               </button>

@@ -1,4 +1,6 @@
 export type Status = 'VERIFIED' | 'DERIVED' | 'ESTIMATED' | 'SCENARIO' | 'UNKNOWN'
+export type Grade = 'ESTIMATED_HIGH' | 'ESTIMATED_MEDIUM' | 'ESTIMATED_LOW'
+export type NAClass = 'VERIFIED' | 'DERIVED' | Grade | 'INTERNAL_REQUIRED' | 'INSUFFICIENT_EVIDENCE' | 'NOT_APPLICABLE' | 'ERROR'
 export type Scenario = 'low' | 'base' | 'high'
 export type AddrCase = 'base' | 'expansion'
 export type Category =
@@ -9,6 +11,7 @@ export interface MetricRec {
   value: number | null; low: number | null; high: number | null; status: Status; confidence: number
   formula: string; inputs: Input[]; evidence_ids: string[]; assumption_ids: string[]; notes: string[]; unit: string
   by_cat?: Record<Category, number> | null
+  grade?: Grade
 }
 export interface Bridge { components: Record<string, number>; params: Record<string, number | string>; clamped: string[]; organic_cagr?: number }
 export interface Block2031 {
@@ -32,12 +35,17 @@ export interface Entity {
 export interface Account {
   account_id: string; original_name: string; segment: string; family: string; pilot: boolean
   entity: Entity; overlap_groups: string[]; research_status: string; aggregate_class: string
-  anchor: { method: string; fiscal_year: number | null; value: number | null; fact_status: string; evidence_ids: string[]; tier: number | null; formula: string; inputs: Input[]; definition_note?: string }
+  anchor: { method: string; fiscal_year: number | null; value: number | null; fact_status: string; evidence_ids: string[]; tier: number | null; formula: string; inputs: Input[]; definition_note?: string; alternatives?: { method: string; fiscal_year: number; value: string }[]; coverage_basis?: string; note?: string }
   conf_parts: Record<string, number>; mix: Record<Category, number>; rates_2026: Record<Category, number>; caps_2026: Record<Category, number>
   sec_ratio: number | null
   m: { '2026': Record<'TS' | 'RAW' | 'FPR' | 'CR' | 'CSOW' | 'PCR' | 'UPSIDE', MetricRec>; '2031': Record<Scenario, Block2031>; target: Record<'TARGET' | 'TARGET_SOW' | 'UPSIDE_2031' | 'TARGET_INCREMENT', MetricRec> }
   narrative: Record<string, string | string[]>; issues: Issue[]; evidence: Evidence[]; facts: Fact[]; drivers: Driver[]; competitive: Competitive[]
-  open_questions: string[]; override_notes: string[]; infra_drivers: unknown[]; research_log: { step: string; target: string; result: string; detail: string }[]
+  open_questions: string[]; override_notes: string[]; infra_drivers: unknown[];
+  na_class: Record<string, { class: NAClass; reason: string }>
+  conflicts?: { existing_fact_id?: string; existing_value?: unknown; new_value?: unknown; unit?: string; explanation?: string; evidence_ids?: string[] }[]
+  comparables?: { peer_account_or_company?: string; metric?: string; value?: unknown; unit?: string; why_comparable?: string }[]
+  estimation_inputs?: { name?: string; value?: unknown; unit?: string; basis?: string; evidence_ids?: string[] }[]
+  reconciliation?: Reconciliation | null; research_log: { step: string; target: string; result: string; detail: string }[]
 }
 export interface AggRow { TS: number; RAW: number; FPR: number; TARGET: number; n_ts: number; n_raw: number; n_fpr: number; n_mismatch: number; excluded: string[] }
 export interface DimRow { TS_2026: number; RAW_2026: number; FPR_2026: number; TS_2031: number; RAW_2031: number; FPR_2031: number; n: number; n_est: number; conf_sum: number }
@@ -49,7 +57,7 @@ export interface StrategyRow {
   priority_score: number; score_formula: string
 }
 export interface Dashboard {
-  meta: { data_version: string; generated_at: string; unit: string; n_accounts: number; status_counts: Record<string, number>; metric_status_2026: Record<string, Record<string, number>>; fact_status: Record<string, number>; fx_usd_krw: number; is_test_data: boolean }
+  meta: { coverage?: { current: Coverage; baseline: Coverage | null }; contains_internal_data?: boolean; internal_layers?: Record<string, number>; data_version: string; generated_at: string; unit: string; n_accounts: number; status_counts: Record<string, number>; metric_status_2026: Record<string, Record<string, number>>; fact_status: Record<string, number>; fx_usd_krw: number; is_test_data: boolean }
   params: any; parameter_evidence: Record<string, { basis: string; refs: string[]; comment: string }>
   intensity_calibration: Record<string, { basis: string; n: number; low: number; base: number; high: number; observations: { account_id: string; ratio: number; fy: number }[] }>
   market_benchmarks: { items: { item_id: string; topic: string; metric: string; value: number | string; unit: string; year: number; scope?: string; evidence_id: string }[]; evidence: Evidence[] }
@@ -74,3 +82,9 @@ export interface ProductRevenuePoint {
   lgu_revenue: number | null; capture_rate: number | null; competitor_shares?: Record<string, number> | null
   status: Status; evidence_ids: string[]
 }
+
+export interface Reconciliation {
+  rows: { year: number; metric: string; external: number | null; sales: number | null; diff_pct: number | null; flag: string; sales_rep?: string | null; rationale?: string | null }[]
+  internal_cr: number | null; management_target: number | null; opportunity_gap: number | null; notes: string[]
+}
+export interface Coverage { external_fields: number; external_covered: number; external_coverage: number; external_missing: number; internal_required: number; not_applicable: number; errors: number; by_class: Record<string, number> }

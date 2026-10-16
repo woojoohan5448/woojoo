@@ -33,9 +33,9 @@ const t3 = await insp()
 ok(t3.includes('(주)카카오 · FPR 2031'), 'account switch keeps year/metric selection and syncs inspector')
 ok((await p.locator('h2').first().innerText()).includes('카카오'), 'account header synced')
 // unknown account shows N/A not zero
-await p.fill('input[aria-label="고객 검색"]', '농협은행'); await p.waitForTimeout(200)
+await p.fill('input[aria-label="고객 검색"]', '코람코'); await p.waitForTimeout(200)
 await p.locator('aside[aria-label="고객 선택"] li button').first().click(); await p.waitForTimeout(400)
-ok((await p.locator('main').innerText()).includes('미확인(UNKNOWN)'), 'unknown account shows UNKNOWN notice (no zero fill)')
+ok((await p.locator('main').innerText()).includes('RESEARCH GAP'), 'research-gap account shows RESEARCH GAP reason (no zero fill)')
 for (const tab of ['Executive Portfolio', 'Strategic Opportunity', 'Data Quality', '관리자 입력', 'Methodology']) {
   await p.click(`nav button:has-text("${tab}")`); await p.waitForTimeout(400)
   ok((await p.locator('main').innerText()).length > 200, `tab renders: ${tab}`)

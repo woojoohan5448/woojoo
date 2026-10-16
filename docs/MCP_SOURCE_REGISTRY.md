@@ -29,6 +29,8 @@
 | WebFetch 원문 열람 | NOT_AVAILABLE | DNS/프록시 차단 | 네트워크 정책 변경 시 |
 | 세션 도구 노출 지연 | 관측됨 | 세션 시작 시 2개 서버만 노출 → 진단 중 갱신 | 새 세션에서 미노출 시 재진단(MCP_DIAGNOSTICS.md) |
 | KISA 정보보호 공시 포털 | NOT_AVAILABLE | 직접 접속 불가, 해당 MCP 없음 | 포털 MCP/접속 허용 시 원문 대조 |
+| 해외 공공 API (api.usaspending.gov · data.sec.gov · peeringdb.com · store.steampowered.com) | NOT_AVAILABLE | 2026-10-16 curl 시 프록시 CONNECT 403 (네트워크 정책) | 허용 목록 추가 시 KA32(USFK 계약 obligation)·KA42(Fastly 10-K 지역·PeeringDB 서울 POP)·KA43(Steam 국가별 트래픽) 재조사 |
+| ItNewsSearch "메타 트래픽 점유율" | EMPTY_RESULT | 2026-10-16 호출 결과 null 1건(검색어 커버리지 한계) | 키워드 변형 재시도, WebSearch로 대체 완료(KA45-P2-E02) |
 
 ## 4. 원하는 데이터 → 사용할 도구
 | 데이터 | 1순위 | 2순위 |
@@ -39,3 +41,9 @@
 | 산업 성장률 | KOSIS(거시) | WebSearch(시장조사 보도) |
 | IT 투자·DC·AI 계획 | WebSearch | ItNewsSearch(교차확인 필수) |
 | 보안·네트워크 수요 | WebSearch(KISA 공시 보도) | MyDART(정보보호 관련 주석) |
+
+## 5. Phase 2 재개 조사 로그 (2026-10-16)
+- 대상: 잔여 RESEARCH GAP 7개 계정(KA28·KA32·KA41·KA42·KA43·KA45·KA50) — 기존 P1 조사(recovery_levels_tried)를 반복하지 않고 **미시도 간접 근거**만 탐색.
+- 정상 MCP 우선: ItNewsSearch(결과 없음) → WebSearch 보완. 해외 공공 API는 프록시 차단(위 표).
+- 결과: **KA45 메타 복구**(망 이용대가 동등가치 2방법, SCENARIO·ESTIMATED_LOW·정의 상이) — `data/raw/research_p2/KA45.json`.
+- 미복구 사유: KA41 신협(금융사는 정보보호 공시 의무 제외, 중앙회 IT 예산 비공개), KA42/43(국가별 지출·트래픽 원천 차단), KA32(USAspending 차단), KA28/KA50(DC 펀드의 운영위탁 단가 근거 없음).

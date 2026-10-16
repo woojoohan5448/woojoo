@@ -4,6 +4,62 @@ import { eok } from '../lib/format'
 
 interface Row { account_id: string; cr_2026_ytd_eok: string; cr_2026_ytd_asof: string; cr_2026_forecast_eok: string; cr_basis: string; target_revenue_2031_eok: string; target_basis: string }
 
+function ExcelImport({ mode, onSaved }: { mode: 'api' | 'static'; onSaved: () => void }) {
+  const [batch, setBatch] = useState<any>(null)
+  const [approver, setApprover] = useState('')
+  const [msg, setMsg] = useState('')
+  const [busy, setBusy] = useState(false)
+  const upload = async (f: File) => {
+    setBusy(true); setMsg('')
+    try {
+      const fd = new FormData(); fd.append('file', f)
+      const r = await fetch('/api/import/preview', { method: 'POST', body: fd }); const j = await r.json()
+      if (!r.ok) throw new Error(j.detail ?? r.status); setBatch(j)
+    } catch (e) { setMsg(`미리보기 실패: ${String(e)}`) } finally { setBusy(false) }
+  }
+  const approve = async () => {
+    setBusy(true)
+    try {
+      const r = await fetch(`/api/import/approve/${batch.batch_id}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ approver }) })
+      const j = await r.json(); if (!r.ok) throw new Error(j.detail ?? r.status)
+      setMsg(`승인·저장 완료: ${j.applied_rows}행 반영, 재계산 v${j.data_version}, 검증 ${JSON.stringify(j.issues_summary)}`); setBatch(null); onSaved()
+    } catch (e) { setMsg(`승인 실패: ${String(e)}`) } finally { setBusy(false) }
+  }
+  return (
+    <section className="card p-4">
+      <h2 className="text-[18px] font-bold">사내 Excel Import (Phase 3)</h2>
+      <p className="mt-1 text-[12.5px] text-ink2">① 템플릿 내려받기 → ② 파일 업로드(형식·고객 매핑·단위·연도 검증, 기존값 대비 차이) → ③ 검토 후 승인자 입력·승인 → ④ 승인 데이터만 버전 저장 → ⑤ 재계산·대시보드 갱신. 영업 추정치는 외부 추정을 덮어쓰지 않고 Reconciliation으로만 비교합니다.</p>
+      <p className="mt-1 text-[12px]" style={{ color: 'var(--err)' }}>사내 기밀 데이터 — 승인된 사내 환경에서만 사용. 외부 LLM·MCP로 전송되는 경로 없음. 원본 Excel·저장소는 Git 제외.</p>
+      {mode !== 'api' ? <p className="mt-2 text-[12.5px] text-ink3">정적 빌드에서는 업로드 불가 — 로컬 실행기(run_dashboard.bat / uvicorn)로 실행하거나 CLI: <code>python -m models.internal.excel_io preview 파일.xlsx</code></p> : (
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <a href="/api/import/template" className="rounded-md border border-line px-3 py-1.5 text-[13px] font-semibold no-underline">템플릿 다운로드</a>
+          <label className="rounded-md border border-line px-3 py-1.5 text-[13px] font-semibold cursor-pointer">Excel 선택<input type="file" accept=".xlsx,.xlsm" className="hidden" onChange={e => e.target.files?.[0] && upload(e.target.files[0])} /></label>
+          {busy && <span className="text-[12px] text-ink3">처리 중…</span>}
+        </div>)}
+      {msg && <p className="mt-2 text-[12.5px] text-ink2">{msg}</p>}
+      {batch && (
+        <div className="mt-3">
+          <div className="text-[12.5px] num">배치 {batch.batch_id} · 행 {batch.summary.rows} (유효 {batch.summary.valid}, 오류 {batch.summary.invalid}) · 차이 {JSON.stringify(batch.summary.diff)}</div>
+          {batch.issues?.map((i: any, k: number) => <div key={k} className="text-[12px]" style={{ color: 'var(--err)' }}>[{i.sheet}] {i.message}</div>)}
+          <div className="mt-2 max-h-[320px] overflow-auto"><table className="w-full min-w-[820px] text-[12px]">
+            <thead className="sticky top-0 bg-panel"><tr className="text-left text-ink3"><th className="py-1">시트·행</th><th>매핑</th><th>정규화 값</th><th>변경</th><th>오류·경고</th></tr></thead>
+            <tbody>{batch.rows.map((r: any) => (
+              <tr key={r.row_id} className="border-t border-line align-top">
+                <td className="py-1">{r.sheet} #{r.excel_row}</td>
+                <td>{r.mapping.status === 'MAPPED' ? `${r.mapping.account_id} (${r.mapping.method})` : <span style={{ color: 'var(--err)' }}>{r.mapping.status} {r.mapping.candidates?.join(', ')}</span>}</td>
+                <td className="num">{r.normalized?.fiscal_year} {r.normalized?.period_type ?? r.normalized?.metric ?? ''} {r.normalized?.value_eok ? `${Number(r.normalized.value_eok).toLocaleString('ko-KR')}억` : ''}</td>
+                <td>{r.diff ? `${r.diff.type}${r.diff.old_value_eok ? ` (${r.diff.old_value_eok}→${r.diff.new_value_eok})` : ''}` : '-'}</td>
+                <td style={{ color: r.errors.length ? 'var(--err)' : 'var(--warn)' }}>{[...r.errors, ...r.warnings].join(' · ')}</td></tr>))}</tbody></table></div>
+          <div className="mt-2 flex items-center gap-2">
+            <input value={approver} onChange={e => setApprover(e.target.value)} placeholder="승인자 이름(필수)" aria-label="승인자" className="rounded border border-line bg-surface px-2 py-1 text-[13px]" />
+            <button onClick={approve} disabled={!approver || busy || batch.summary.valid === 0} className="rounded-md bg-brand px-3 py-1.5 text-[13px] font-semibold text-white disabled:opacity-40">유효 행 승인·저장·재계산</button>
+            <button onClick={() => setBatch(null)} className="rounded-md border border-line px-3 py-1.5 text-[13px]">취소</button>
+          </div>
+        </div>)}
+    </section>
+  )
+}
+
 export default function AdminView({ data, mode, onSaved }: { data: Dashboard; mode: 'api' | 'static'; onSaved: () => void }) {
   const [rows, setRows] = useState<Record<string, Row>>({})
   const [msg, setMsg] = useState('')
@@ -36,8 +92,9 @@ export default function AdminView({ data, mode, onSaved }: { data: Dashboard; mo
 
   return (
     <div className="space-y-4 p-4">
+      <ExcelImport mode={mode} onSaved={onSaved} />
       <section className="card p-4">
-        <h2 className="text-[18px] font-bold">관리자 입력 — Current Revenue · 2031 Target (사내 데이터)</h2>
+        <h2 className="text-[18px] font-bold">관리자 입력(간이) — Current Revenue · 2031 Target (사내 데이터)</h2>
         <p className="mt-1 text-[12.5px] text-ink2">CR_2026과 2031 Target은 공개자료로 확인할 수 없는 <b>사내 데이터</b>입니다. 비워두면 <b>NULL(미확인)</b>으로 처리되며 0원으로 간주하지 않습니다. 입력 시 C-SOW·Potential Capture Rate·Upside·Target SOW가 재계산되고 무결성 검증이 수행됩니다.</p>
         <p className="mt-1 text-[12px] text-ink3">현재 모드: {mode === 'api' ? 'API — 저장 시 data/internal_inputs/management_inputs.csv 갱신 후 모델 재빌드' : '정적 빌드 — 입력 후 CSV를 내려받아 data/internal_inputs/에 저장하고 `python3 -m models.build` 실행'}</p>
         <div className="mt-3 flex gap-2">

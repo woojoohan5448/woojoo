@@ -1,535 +1,589 @@
 {
-  "_note": "계정별 분석가 모델(Layer B/C). 모든 항목은 산식·근거(evidence_ids)·가정을 명시한다. force=true가 아니면 KISA 등 직접 근거가 우선한다.",
-  "KA08": {
-    "ts_anchor": {
-      "value_eok": 14000,
-      "fiscal_year": 2026,
-      "status": "ESTIMATED",
-      "tier": 2,
-      "range_width": 0.4,
-      "formula": "TS_2026(국내 인프라 투자 연평균) = 아마존 한국 누적 투자 전망 12.6조원 ÷ 9년(2023~2031) ≈ 1.4조원/년",
-      "inputs": [
-        {
-          "name": "한국 누적 투자 전망(~2031)",
-          "value": "126000",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA08-E04"
-          ],
-          "fact_status": "SECONDARY_UNCONFIRMED"
-        },
-        {
-          "name": "기간(년)",
-          "value": "9",
-          "unit": "년"
-        }
-      ],
-      "evidence_ids": [
-        "KA08-E03",
-        "KA08-E04"
-      ],
-      "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 투자(건물·전력·서버 등 CAPEX 성격) 연평균'으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
+ "_note": "계정별 분석가 모델(Layer B/C). 모든 항목은 산식·근거(evidence_ids)·가정을 명시한다. force=true가 아니면 KISA 등 직접 근거가 우선한다.",
+ "KA08": {
+  "ts_anchor": {
+   "value_eok": 14000,
+   "fiscal_year": 2026,
+   "status": "ESTIMATED",
+   "tier": 2,
+   "range_width": 0.4,
+   "formula": "TS_2026(국내 인프라 투자 연평균) = 아마존 한국 누적 투자 전망 12.6조원 ÷ 9년(2023~2031) ≈ 1.4조원/년",
+   "inputs": [
+    {
+     "name": "한국 누적 투자 전망(~2031)",
+     "value": "126000",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA08-E04"
+     ],
+     "fact_status": "SECONDARY_UNCONFIRMED"
     },
-    "addressability_modifiers": {
-      "DC_COLO": 0.5,
-      "HW_DEVICE": 0.0
-    },
-    "bridge_override": {
-      "organic_cagr": [
-        -0.05,
-        0.0,
-        0.05
-      ],
-      "ai": [
-        0.0,
-        0.1,
-        0.3
-      ]
-    },
-    "notes": [
-      "AWS코리아는 유한책임회사 전환으로 감사보고서 미공시(보도) — 매출·비용 재무 근거 없음",
-      "인천 가좌동 자체 DC(약 100MW) 등 자가 구축 확대로 제3자 코로케이션 접근률 50% 하향(C-ADDR 수정)",
-      "서버 HW는 글로벌 직접 조달로 접근 불가(0%)",
-      "2031 기본 시나리오는 투자 페이스 유지(유기 성장 0%)로 가정 — 7.85조(2023~27)와 7조(2025~31) 프로그램 합산 시 연 1.4~1.65조 수준과 정합"
-    ]
+    {
+     "name": "기간(년)",
+     "value": "9",
+     "unit": "년"
+    }
+   ],
+   "evidence_ids": [
+    "KA08-E03",
+    "KA08-E04"
+   ],
+   "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 투자(건물·전력·서버 등 CAPEX 성격) 연평균'으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
   },
-  "KA32": {
-    "raw_direct": {
-      "value_eok": 157.0,
-      "category": "CONNECTIVITY",
-      "fpr_share": 0.5,
-      "status": "SCENARIO",
-      "formula": "RAW_2026(관측 가능 하한 시나리오) = 임차통신 BOA 2건(LG U+·KT 각 3년 상한 $14,574,525) 연환산 $9.72M + USFK 전역 이동통신(W91QVN24R0121, 5년 약 $7.5M) 연환산 $1.5M = $11.22M × 1,400원 ≈ 157억원",
-      "evidence_ids": [
-        "KA32-E01",
-        "KA32-E03",
-        "KA32-P1-E01"
-      ]
-    },
-    "notes": [
-      "주한미군은 일반 재무제표 모델 비적용. TS(전체 IT 예산) 공개자료 없음 → UNKNOWN",
-      "BOA 상한은 계약 한도이지 지출액이 아님: LG U+ BOA 누적 집행 $59,351로 상한 대비 이용률이 매우 낮음 → RAW·FPR은 상한 시나리오",
-      "FPR = RAW × 50% (2개 BOA 중 1개 보유)",
-      "Phase1: 이동통신 계약 추정가 약 $7.5M(5년, 5,000회선) 반영 — 수주자 미확인"
-    ]
+  "addressability_modifiers": {
+   "DC_COLO": 0.5,
+   "HW_DEVICE": 0.0
   },
-  "KA03": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "bridge_override": {
+   "organic_cagr": [
+    -0.05,
+    0.0,
+    0.05
+   ],
+   "ai": [
+    0.0,
+    0.1,
+    0.3
+   ]
   },
-  "KA18": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "notes": [
+   "AWS코리아는 유한책임회사 전환으로 감사보고서 미공시(보도) — 매출·비용 재무 근거 없음",
+   "인천 가좌동 자체 DC(약 100MW) 등 자가 구축 확대로 제3자 코로케이션 접근률 50% 하향(C-ADDR 수정)",
+   "서버 HW는 글로벌 직접 조달로 접근 불가(0%)",
+   "2031 기본 시나리오는 투자 페이스 유지(유기 성장 0%)로 가정 — 7.85조(2023~27)와 7조(2025~31) 프로그램 합산 시 연 1.4~1.65조 수준과 정합"
+  ]
+ },
+ "KA32": {
+  "raw_direct": {
+   "value_eok": 157.0,
+   "category": "CONNECTIVITY",
+   "fpr_share": 0.5,
+   "status": "SCENARIO",
+   "formula": "RAW_2026(관측 가능 하한 시나리오) = 임차통신 BOA 2건(LG U+·KT 각 3년 상한 $14,574,525) 연환산 $9.72M + USFK 전역 이동통신(W91QVN24R0121, 5년 약 $7.5M) 연환산 $1.5M = $11.22M × 1,400원 ≈ 157억원",
+   "evidence_ids": [
+    "KA32-E01",
+    "KA32-E03",
+    "KA32-P1-E01"
+   ]
   },
-  "KA19": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "notes": [
+   "주한미군은 일반 재무제표 모델 비적용. TS(전체 IT 예산) 공개자료 없음 → UNKNOWN",
+   "BOA 상한은 계약 한도이지 지출액이 아님: LG U+ BOA 누적 집행 $59,351로 상한 대비 이용률이 매우 낮음 → RAW·FPR은 상한 시나리오",
+   "FPR = RAW × 50% (2개 BOA 중 1개 보유)",
+   "Phase1: 이동통신 계약 추정가 약 $7.5M(5년, 5,000회선) 반영 — 수주자 미확인"
+  ]
+ },
+ "KA03": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA22": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(하나INS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "notes": [
+   "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA18": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA24": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
-      "농협은행: DART API 재무 미제공(감사보고서만), KISA 금액 미확인 → UNKNOWN. 주요 은행으로 우선 추가 조사 대상"
-    ]
+  "notes": [
+   "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA19": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA04": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "notes": [
+   "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA22": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA20": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "notes": [
+   "그룹 캡티브 IT 자회사(하나INS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA24": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA21": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "notes": [
+   "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
+   "농협은행: DART API 재무 미제공(감사보고서만), KISA 금액 미확인 → UNKNOWN. 주요 은행으로 우선 추가 조사 대상"
+  ]
+ },
+ "KA04": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA35": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
-      "KB손해보험: IFRS17로 판관비 계정 없음, KISA 미확인 → 금융 판관비 기준 추정 불가 → UNKNOWN"
-    ]
+  "notes": [
+   "그룹 캡티브 IT 자회사(신한DS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA20": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA39": {
-    "addressability_modifiers": {
-      "SI_BUILD": 0.5,
-      "IT_OPS": 0.5
-    },
-    "notes": [
-      "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
-    ]
+  "notes": [
+   "그룹 캡티브 IT 자회사(우리FIS) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA21": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
   },
-  "KA14": {
-    "addressability_modifiers": {
-      "DC_COLO": 0.5
+  "notes": [
+   "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA35": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
+  },
+  "notes": [
+   "그룹 캡티브 IT 자회사(KB데이타시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인.",
+   "KB손해보험: IFRS17로 판관비 계정 없음, KISA 미확인 → 금융 판관비 기준 추정 불가 → UNKNOWN"
+  ]
+ },
+ "KA39": {
+  "addressability_modifiers": {
+   "SI_BUILD": 0.5,
+   "IT_OPS": 0.5
+  },
+  "notes": [
+   "그룹 캡티브 IT 자회사(농협정보시스템) 존재 → SI 구축·IT 운영 접근률 50% 하향(C-ADDR 보정). 캡티브 존재는 공개 정보 기반이나 본 조사에서 원문 미확인."
+  ]
+ },
+ "KA14": {
+  "addressability_modifiers": {
+   "DC_COLO": 0.5
+  },
+  "capture_modifiers": {
+   "CLOUD": 0.3,
+   "AI_INFRA": 0.3,
+   "DC_COLO": 0.5
+  },
+  "infra_drivers": [
+   {
+    "driver_id": "KA14-INFRA-AI",
+    "description": "삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정",
+    "annual_eok_2031": {
+     "low": 2500,
+     "base": 5000,
+     "high": 8300
     },
-    "capture_modifiers": {
-      "CLOUD": 0.3,
-      "AI_INFRA": 0.3,
-      "DC_COLO": 0.5
-    },
-    "infra_drivers": [
-      {
-        "driver_id": "KA14-INFRA-AI",
-        "description": "삼성SDS 2031년까지 AI 인프라 5조원 투자 계획(보도, 연결) → 자체 소비 TS에는 감가상각 형태로 반영: 5조원 ÷ 내용연수 6년 ≈ 8,300억/년(전량 가동 시). Low 30%·Base 60%·High 100% 가동 가정",
-        "annual_eok_2031": {
-          "low": 2500,
-          "base": 5000,
-          "high": 8300
-        },
-        "evidence_ids": [
-          "KA14-E08"
-        ],
-        "source_fact": "KA14 dc_investment 2026 50000억원 (연결, SECONDARY_UNCONFIRMED)"
-      }
+    "evidence_ids": [
+     "KA14-E08"
     ],
-    "bridge_override": {
-      "ai": [
-        0.0,
-        0.0,
-        0.0
-      ]
+    "source_fact": "KA14 dc_investment 2026 50000억원 (연결, SECONDARY_UNCONFIRMED)"
+   }
+  ],
+  "bridge_override": {
+   "ai": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "notes": [
+   "삼성SDS는 클라우드·AI DC 직접 경쟁사(동탄·구미 등 자체 DC) → DC 접근률 50%, 클라우드·AI 인프라 포획 상한 70% 하향",
+   "AI 증분은 계정별 인프라 드라이버로 대체(이중계산 방지: 산업군 AI 증분 0으로 설정)",
+   "삼성 그룹 캡티브 매출 84% — 자체 소비 기준 TS만 사용"
+  ]
+ },
+ "KA01": {
+  "addressability_modifiers": {
+   "DC_COLO": 0.5
+  },
+  "capture_modifiers": {
+   "CLOUD": 0.5,
+   "AI_INFRA": 0.5
+  },
+  "notes": [
+   "LG CNS는 자체 DC(상암·가산·부산) 보유 및 클라우드 MSP·AI DC 경쟁사 → DC 접근률 50%, 클라우드·AI 포획 상한 50% 하향",
+   "LG 계열사: LG U+와 상호 거래(관계사 거래) — 합산 시 그룹 내부거래 주의"
+  ]
+ },
+ "KA06": {
+  "notes": [
+   "구글: 국내 법인 매출(3개 법인 합산 6,831억)은 판매 매출이며 IT 지출이 아님. 국내 인프라 투자 공개액 없음 → TS UNKNOWN. 서울 리전이 LG U+ IDC(평촌·가산·논현)에 임차된 것으로 보도 — LG U+ 기존 고객. CR 입력 시 하한 확인 가능",
+   "Phase1: 구글클라우드코리아 감사보고서(VERIFIED)로 국내 인프라 지출 복구. 기존 '3개 법인 합산 매출 6,831억'은 판매 매출로 TS 근거 아님(충돌 기록). 서울 리전은 LG U+ IDC 임차 보도 — LG U+ 기존 고객"
+  ],
+  "ts_anchor": {
+   "value_eok": 1236.25,
+   "fiscal_year": 2025,
+   "status": "ESTIMATED",
+   "tier": 1,
+   "range_width": 0.25,
+   "grade": "ESTIMATED_MEDIUM",
+   "formula": "TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
+   "inputs": [
+    {
+     "name": "설비관련비용",
+     "value": "352.75",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA06-P1-E02"
+     ],
+     "fact_status": "VERIFIED"
     },
-    "notes": [
-      "삼성SDS는 클라우드·AI DC 직접 경쟁사(동탄·구미 등 자체 DC) → DC 접근률 50%, 클라우드·AI 인프라 포획 상한 70% 하향",
-      "AI 증분은 계정별 인프라 드라이버로 대체(이중계산 방지: 산업군 AI 증분 0으로 설정)",
-      "삼성 그룹 캡티브 매출 84% — 자체 소비 기준 TS만 사용"
-    ]
-  },
-  "KA01": {
-    "addressability_modifiers": {
-      "DC_COLO": 0.5
+    {
+     "name": "네트워크장비 취득",
+     "value": "420.99",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA06-P1-E04"
+     ],
+     "fact_status": "VERIFIED"
     },
-    "capture_modifiers": {
-      "CLOUD": 0.5,
-      "AI_INFRA": 0.5
+    {
+     "name": "리스 현금유출(IDC 포함 여부 미공시)",
+     "value": "462.51",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA06-P1-E05"
+     ],
+     "fact_status": "VERIFIED"
     },
-    "notes": [
-      "LG CNS는 자체 DC(상암·가산·부산) 보유 및 클라우드 MSP·AI DC 경쟁사 → DC 접근률 50%, 클라우드·AI 포획 상한 50% 하향",
-      "LG 계열사: LG U+와 상호 거래(관계사 거래) — 합산 시 그룹 내부거래 주의"
-    ]
-  },
-  "KA06": {
-    "notes": [
-      "구글: 국내 법인 매출(3개 법인 합산 6,831억)은 판매 매출이며 IT 지출이 아님. 국내 인프라 투자 공개액 없음 → TS UNKNOWN. 서울 리전이 LG U+ IDC(평촌·가산·논현)에 임차된 것으로 보도 — LG U+ 기존 고객. CR 입력 시 하한 확인 가능",
-      "Phase1: 구글클라우드코리아 감사보고서(VERIFIED)로 국내 인프라 지출 복구. 기존 '3개 법인 합산 매출 6,831억'은 판매 매출로 TS 근거 아님(충돌 기록). 서울 리전은 LG U+ IDC 임차 보도 — LG U+ 기존 고객"
-    ],
-    "ts_anchor": {
-      "value_eok": 1236.25,
-      "fiscal_year": 2025,
-      "status": "ESTIMATED",
-      "tier": 1,
-      "range_width": 0.25,
-      "grade": "ESTIMATED_MEDIUM",
-      "formula": "TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산)",
-      "inputs": [
-        {
-          "name": "설비관련비용",
-          "value": "352.75",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA06-P1-E02"
-          ],
-          "fact_status": "VERIFIED"
-        },
-        {
-          "name": "네트워크장비 취득",
-          "value": "420.99",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA06-P1-E04"
-          ],
-          "fact_status": "VERIFIED"
-        },
-        {
-          "name": "리스 현금유출(IDC 포함 여부 미공시)",
-          "value": "462.51",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA06-P1-E05"
-          ],
-          "fact_status": "VERIFIED"
-        },
-        {
-          "name": "인프라 운영지원 수익(교차검증)",
-          "value": "1142.61",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA06-P1-E01"
-          ],
-          "fact_status": "VERIFIED"
-        }
-      ],
-      "evidence_ids": [
-        "KA06-P1-E01",
-        "KA06-P1-E02",
-        "KA06-P1-E04",
-        "KA06-P1-E05"
-      ],
-      "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 지출(설비비용+장비 CAPEX+리스)' 기준으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
-    },
-    "addressability_modifiers": {
-      "HW_DEVICE": 0.0
+    {
+     "name": "인프라 운영지원 수익(교차검증)",
+     "value": "1142.61",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA06-P1-E01"
+     ],
+     "fact_status": "VERIFIED"
     }
+   ],
+   "evidence_ids": [
+    "KA06-P1-E01",
+    "KA06-P1-E02",
+    "KA06-P1-E04",
+    "KA06-P1-E05"
+   ],
+   "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 지출(설비비용+장비 CAPEX+리스)' 기준으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
   },
-  "KA07": {
-    "notes": [
-      "마이크로소프트: 국내 매출(Tier 3)만 확인, Azure 국내 리전 코로케이션 사업자 미확인 → TS UNKNOWN. KT–MS 5년 2.4조 협력(보도)은 경쟁 구도 신호",
-      "Phase1: 한국MS 감사보고서상 판매법인 구조(로열티 1.72조, DC 비용 해외 귀속) → 법인 재무로 TS 불가, 용량 시나리오만 제시"
-    ],
-    "ts_anchor": {
-      "value_eok": 2550,
-      "fiscal_year": 2026,
-      "status": "SCENARIO",
-      "tier": 3,
-      "range_width": 0.5,
-      "grade": "ESTIMATED_LOW",
-      "formula": "TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
-      "inputs": [
-        {
-          "name": "운영 용량(Tier3)",
-          "value": "85",
-          "unit": "MW",
-          "evidence_ids": [
-            "KA07-P1-E08"
-          ],
-          "fact_status": "SECONDARY_UNCONFIRMED"
-        },
-        {
-          "name": "임대료 환산",
-          "value": "30.0",
-          "unit": "억원/MW/년",
-          "evidence_ids": [
-            "DCB-E01"
-          ],
-          "assumption_id": "B-DCRENT"
-        }
-      ],
-      "evidence_ids": [
-        "KA07-P1-E08",
-        "DCB-E01"
-      ],
-      "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 지출(설비비용+장비 CAPEX+리스)' 기준으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
-    },
-    "addressability_modifiers": {
-      "HW_DEVICE": 0.0
-    }
-  },
-  "KA45": {
-    "notes": [
-      "메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요"
-    ]
-  },
-  "KA42": {
-    "notes": [
-      "Fastly: 글로벌 매출만 확인. 서울 POP 호스팅 IDC 미확인 → TS UNKNOWN"
-    ]
-  },
-  "KA43": {
-    "notes": [
-      "Valve: 비상장, 국내 법인 없음. Steam CDN 캐시 일부 LG U+ 망 관찰(보도) → TS UNKNOWN"
-    ]
-  },
-  "KA44": {
-    "notes": [
-      "Phase1: 국내 법인 구매원가 상한으로 TS 복구(공급사 미공시). 그룹 외 매출 132.8억"
-    ],
-    "ts_anchor": {
-      "value_eok": 104.38,
-      "fiscal_year": 2025,
-      "status": "ESTIMATED",
-      "tier": 1,
-      "range_width": 0.3,
-      "grade": "ESTIMATED_MEDIUM",
-      "formula": "TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
-      "inputs": [
-        {
-          "name": "매출원가 비인건 잔여",
-          "value": "104.38",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA44-P1-E01",
-            "KA44-P1-E03"
-          ],
-          "fact_status": "DERIVED"
-        }
-      ],
-      "evidence_ids": [
-        "KA44-P1-E01",
-        "KA44-P1-E03"
-      ]
-    }
-  },
-  "KA46": {
-    "notes": [
-      "Phase1: 한국오라클 감사보고서로 국내 인프라 지출 복구(리전 MW 미확인)"
-    ],
-    "ts_anchor": {
-      "value_eok": 847.36,
-      "fiscal_year": 2026,
-      "status": "ESTIMATED",
-      "tier": 1,
-      "range_width": 0.4,
-      "grade": "ESTIMATED_LOW",
-      "formula": "TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
-      "inputs": [
-        {
-          "name": "컴퓨터장치 취득",
-          "value": "663.41",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA46-P1-E03"
-          ],
-          "fact_status": "VERIFIED"
-        },
-        {
-          "name": "호스팅(DC 상면) 비용 후보",
-          "value": "183.95",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA46-P1-E05"
-          ],
-          "fact_status": "VERIFIED"
-        }
-      ],
-      "evidence_ids": [
-        "KA46-P1-E03",
-        "KA46-P1-E05"
-      ],
-      "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 지출(설비비용+장비 CAPEX+리스)' 기준으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
-    },
-    "addressability_modifiers": {
-      "HW_DEVICE": 0.0
-    }
-  },
-  "KA28": {
-    "notes": [
-      "코람코자산운용: DART 감사보고서만, 데이터센터 펀드 정보 미수집 → UNKNOWN",
-      "Phase1: 코람코 감사보고서(VERIFIED) 영업수익 467.5억. 가산 DC 26MW(IT)를 LG U+가 운영(보도) — 펀드의 IT 지출 정의(운영위탁·연결 비용) 단가 근거 없음 → TS INSUFFICIENT 유지. 시화 40MW·의정부 100MW(2030~) 계획"
-    ]
-  },
-  "KA50": {
-    "notes": [
-      "키암코인천도화동DC 펀드: 운용사 산은인프라자산운용(DART). 용량·임차인·투자비 미수집 → UNKNOWN",
-      "Phase1: 도화동 DC 최대 80MW 수전, 2026-10 착공 예정·주민 반대 → 2026년 운영 지출 없음(NOT_APPLICABLE), 2031 임차인·개시시점 미확인"
-    ]
-  },
-  "KA34": {
-    "ts_anchor": {
-      "value_eok": 46.36,
-      "fiscal_year": 2025,
-      "status": "ESTIMATED",
-      "tier": 1,
-      "range_width": 0.4,
-      "grade": "ESTIMATED_LOW",
-      "formula": "TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
-      "inputs": [
-        {
-          "name": "자체 IT 소비 프록시",
-          "value": "23.18",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA34-P1-E02"
-          ],
-          "fact_status": "VERIFIED"
-        },
-        {
-          "name": "포괄률",
-          "value": "0.5",
-          "unit": "ratio",
-          "assumption_id": "B-COMP"
-        }
-      ],
-      "evidence_ids": [
-        "KA34-P1-E02"
-      ]
-    }
-  },
-  "KA15": {
-    "ts_anchor": {
-      "value_eok": 148.62,
-      "fiscal_year": 2025,
-      "status": "ESTIMATED",
-      "tier": 1,
-      "range_width": 0.4,
-      "grade": "ESTIMATED_LOW",
-      "formula": "TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
-      "inputs": [
-        {
-          "name": "매출",
-          "value": "5241.51",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA15-P1-E01"
-          ],
-          "fact_status": "VERIFIED"
-        },
-        {
-          "name": "용역원가(고객 원가)",
-          "value": "3429",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA15-P1-E01"
-          ]
-        },
-        {
-          "name": "집약도",
-          "value": "0.082",
-          "unit": "ratio",
-          "assumption_id": "B-INT"
-        }
-      ],
-      "evidence_ids": [
-        "KA15-P1-E01"
-      ]
-    }
-  },
-  "KA38": {
-    "ts_anchor": {
-      "value_eok": 1561,
-      "fiscal_year": 2026,
-      "status": "SCENARIO",
-      "tier": 1,
-      "range_width": 0.5,
-      "grade": "ESTIMATED_LOW",
-      "formula": "TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
-      "inputs": [
-        {
-          "name": "차세대 사업예산(VAT포함)",
-          "value": "3370",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA38-P1-E01",
-            "KA38-P1-E03"
-          ],
-          "fact_status": "VERIFIED"
-        },
-        {
-          "name": "AI 인프라 사업예산",
-          "value": "250",
-          "unit": "억원",
-          "evidence_ids": [
-            "KA38-P1-E02"
-          ],
-          "fact_status": "VERIFIED"
-        }
-      ],
-      "evidence_ids": [
-        "KA38-P1-E01",
-        "KA38-P1-E02",
-        "KA38-P1-E03"
-      ]
-    }
-  },
-  "KA41": {
-    "notes": [
-      "Phase1: 신협 차세대 3,500억원대(2027~2029, 보도·예산 미확정) — 2026 TS 근거 부족, 2027 이후 드라이버로만 기록"
-    ]
+  "addressability_modifiers": {
+   "HW_DEVICE": 0.0
   }
+ },
+ "KA07": {
+  "notes": [
+   "마이크로소프트: 국내 매출(Tier 3)만 확인, Azure 국내 리전 코로케이션 사업자 미확인 → TS UNKNOWN. KT–MS 5년 2.4조 협력(보도)은 경쟁 구도 신호",
+   "Phase1: 한국MS 감사보고서상 판매법인 구조(로열티 1.72조, DC 비용 해외 귀속) → 법인 재무로 TS 불가, 용량 시나리오만 제시"
+  ],
+  "ts_anchor": {
+   "value_eok": 2550,
+   "fiscal_year": 2026,
+   "status": "SCENARIO",
+   "tier": 3,
+   "range_width": 0.5,
+   "grade": "ESTIMATED_LOW",
+   "formula": "TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음",
+   "inputs": [
+    {
+     "name": "운영 용량(Tier3)",
+     "value": "85",
+     "unit": "MW",
+     "evidence_ids": [
+      "KA07-P1-E08"
+     ],
+     "fact_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+     "name": "임대료 환산",
+     "value": "30.0",
+     "unit": "억원/MW/년",
+     "evidence_ids": [
+      "DCB-E01"
+     ],
+     "assumption_id": "B-DCRENT"
+    }
+   ],
+   "evidence_ids": [
+    "KA07-P1-E08",
+    "DCB-E01"
+   ],
+   "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 지출(설비비용+장비 CAPEX+리스)' 기준으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
+  },
+  "addressability_modifiers": {
+   "HW_DEVICE": 0.0
+  }
+ },
+ "KA45": {
+  "notes": [
+   "메타: 글로벌 CAPEX만 확인(국내 적용 불가) → TS UNKNOWN. 망 이용·캐시 서버 관계 확인 필요",
+   "Phase2: 망 이용대가 동등가치 시나리오(매출비율법 204억·트래픽법 479억, 중간 342억) — 실제 지급액 아님, 정의 상이로 포트폴리오 합계 제외"
+  ],
+  "ts_anchor": {
+   "value_eok": 341.9,
+   "fiscal_year": 2025,
+   "status": "SCENARIO",
+   "tier": 3,
+   "range_width": 0.4,
+   "grade": "ESTIMATED_LOW",
+   "formula": "TS(시나리오, L6) = 평균[ 매출비율법 1.9%×광고 총판매액 10,752.2억(FY2025)=204.3억 , 트래픽법 전용회선시장 11,150억×메타 트래픽 4.3%=479.4억 ] = 341.9억 (범위 204~479)",
+   "inputs": [
+    {
+     "name": "광고 총판매액",
+     "value": "10752.2",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA45-P1-E03"
+     ],
+     "fact_status": "VERIFIED"
+    },
+    {
+     "name": "매출 대비 망이용대가 비율(네이버·카카오 2016 평균)",
+     "value": "0.019",
+     "evidence_ids": [
+      "KA45-P2-E01",
+      "KA45-P2-E03"
+     ],
+     "fact_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+     "name": "국내 인터넷 전용회선 시장",
+     "value": "11150",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA45-P2-E01"
+     ],
+     "fact_status": "SECONDARY_UNCONFIRMED"
+    },
+    {
+     "name": "메타 국내 트래픽 점유율(2023Q4)",
+     "value": "0.043",
+     "evidence_ids": [
+      "KA45-P2-E02"
+     ],
+     "fact_status": "SECONDARY_UNCONFIRMED"
+    }
+   ],
+   "evidence_ids": [
+    "KA45-P1-E03",
+    "KA45-P2-E01",
+    "KA45-P2-E02",
+    "KA45-P2-E03"
+   ],
+   "definition_note": "정의 상이: 메타의 국내 IT 지출이 아니라 '국내 CP 요율로 환산한 망 이용대가 동등가치'. 실제 지급액(캐시서버 무상 수용 가능성)은 사내 계약으로 확인 필요 → 포트폴리오 합계에서 별도 표시"
+  }
+ },
+ "KA42": {
+  "notes": [
+   "Fastly: 글로벌 매출만 확인. 서울 POP 호스팅 IDC 미확인 → TS UNKNOWN"
+  ]
+ },
+ "KA43": {
+  "notes": [
+   "Valve: 비상장, 국내 법인 없음. Steam CDN 캐시 일부 LG U+ 망 관찰(보도) → TS UNKNOWN"
+  ]
+ },
+ "KA44": {
+  "notes": [
+   "Phase1: 국내 법인 구매원가 상한으로 TS 복구(공급사 미공시). 그룹 외 매출 132.8억"
+  ],
+  "ts_anchor": {
+   "value_eok": 104.38,
+   "fiscal_year": 2025,
+   "status": "ESTIMATED",
+   "tier": 1,
+   "range_width": 0.3,
+   "grade": "ESTIMATED_MEDIUM",
+   "formula": "TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서)",
+   "inputs": [
+    {
+     "name": "매출원가 비인건 잔여",
+     "value": "104.38",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA44-P1-E01",
+      "KA44-P1-E03"
+     ],
+     "fact_status": "DERIVED"
+    }
+   ],
+   "evidence_ids": [
+    "KA44-P1-E01",
+    "KA44-P1-E03"
+   ]
+  }
+ },
+ "KA46": {
+  "notes": [
+   "Phase1: 한국오라클 감사보고서로 국내 인프라 지출 복구(리전 MW 미확인)"
+  ],
+  "ts_anchor": {
+   "value_eok": 847.36,
+   "fiscal_year": 2026,
+   "status": "ESTIMATED",
+   "tier": 1,
+   "range_width": 0.4,
+   "grade": "ESTIMATED_LOW",
+   "formula": "TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰",
+   "inputs": [
+    {
+     "name": "컴퓨터장치 취득",
+     "value": "663.41",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA46-P1-E03"
+     ],
+     "fact_status": "VERIFIED"
+    },
+    {
+     "name": "호스팅(DC 상면) 비용 후보",
+     "value": "183.95",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA46-P1-E05"
+     ],
+     "fact_status": "VERIFIED"
+    }
+   ],
+   "evidence_ids": [
+    "KA46-P1-E03",
+    "KA46-P1-E05"
+   ],
+   "definition_note": "정의 상이: 하이퍼스케일러 TS는 '국내 인프라 지출(설비비용+장비 CAPEX+리스)' 기준으로, 다른 고객의 비용(감가상각 포함 운영비) 기준 IT 지출과 합산할 수 없음 → 포트폴리오 합계에서 별도 표시"
+  },
+  "addressability_modifiers": {
+   "HW_DEVICE": 0.0
+  }
+ },
+ "KA28": {
+  "notes": [
+   "코람코자산운용: DART 감사보고서만, 데이터센터 펀드 정보 미수집 → UNKNOWN",
+   "Phase1: 코람코 감사보고서(VERIFIED) 영업수익 467.5억. 가산 DC 26MW(IT)를 LG U+가 운영(보도) — 펀드의 IT 지출 정의(운영위탁·연결 비용) 단가 근거 없음 → TS INSUFFICIENT 유지. 시화 40MW·의정부 100MW(2030~) 계획"
+  ]
+ },
+ "KA50": {
+  "notes": [
+   "키암코인천도화동DC 펀드: 운용사 산은인프라자산운용(DART). 용량·임차인·투자비 미수집 → UNKNOWN",
+   "Phase1: 도화동 DC 최대 80MW 수전, 2026-10 착공 예정·주민 반대 → 2026년 운영 지출 없음(NOT_APPLICABLE), 2031 임차인·개시시점 미확인"
+  ]
+ },
+ "KA34": {
+  "ts_anchor": {
+   "value_eok": 46.36,
+   "fiscal_year": 2025,
+   "status": "ESTIMATED",
+   "tier": 1,
+   "range_width": 0.4,
+   "grade": "ESTIMATED_LOW",
+   "formula": "TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가",
+   "inputs": [
+    {
+     "name": "자체 IT 소비 프록시",
+     "value": "23.18",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA34-P1-E02"
+     ],
+     "fact_status": "VERIFIED"
+    },
+    {
+     "name": "포괄률",
+     "value": "0.5",
+     "unit": "ratio",
+     "assumption_id": "B-COMP"
+    }
+   ],
+   "evidence_ids": [
+    "KA34-P1-E02"
+   ]
+  }
+ },
+ "KA15": {
+  "ts_anchor": {
+   "value_eok": 148.62,
+   "fiscal_year": 2025,
+   "status": "ESTIMATED",
+   "tier": 1,
+   "range_width": 0.4,
+   "grade": "ESTIMATED_LOW",
+   "formula": "TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대",
+   "inputs": [
+    {
+     "name": "매출",
+     "value": "5241.51",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA15-P1-E01"
+     ],
+     "fact_status": "VERIFIED"
+    },
+    {
+     "name": "용역원가(고객 원가)",
+     "value": "3429",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA15-P1-E01"
+     ]
+    },
+    {
+     "name": "집약도",
+     "value": "0.082",
+     "unit": "ratio",
+     "assumption_id": "B-INT"
+    }
+   ],
+   "evidence_ids": [
+    "KA15-P1-E01"
+   ]
+  }
+ },
+ "KA38": {
+  "ts_anchor": {
+   "value_eok": 1561,
+   "fiscal_year": 2026,
+   "status": "SCENARIO",
+   "tier": 1,
+   "range_width": 0.5,
+   "grade": "ESTIMATED_LOW",
+   "formula": "TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인",
+   "inputs": [
+    {
+     "name": "차세대 사업예산(VAT포함)",
+     "value": "3370",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA38-P1-E01",
+      "KA38-P1-E03"
+     ],
+     "fact_status": "VERIFIED"
+    },
+    {
+     "name": "AI 인프라 사업예산",
+     "value": "250",
+     "unit": "억원",
+     "evidence_ids": [
+      "KA38-P1-E02"
+     ],
+     "fact_status": "VERIFIED"
+    }
+   ],
+   "evidence_ids": [
+    "KA38-P1-E01",
+    "KA38-P1-E02",
+    "KA38-P1-E03"
+   ]
+  }
+ },
+ "KA41": {
+  "notes": [
+   "Phase1: 신협 차세대 3,500억원대(2027~2029, 보도·예산 미확정) — 2026 TS 근거 부족, 2027 이후 드라이버로만 기록"
+  ]
+ }
 }

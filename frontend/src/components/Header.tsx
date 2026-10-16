@@ -44,7 +44,9 @@ export default function Header({ data, mode, theme, setTheme }: { data: Dashboar
         <Kpi label="2031 RAW" value={eok(a31.RAW, 'ESTIMATED')} sub={cov(a31.n_raw)} accent="var(--c-raw)" />
         <Kpi label="2031 FPR" value={eok(a31.FPR, 'ESTIMATED')} sub={cov(a31.n_fpr)} accent="var(--c-fpr)" />
         <Kpi label="2031 Target" value={eok(a31.TARGET, 'SCENARIO')} sub={`${tgtScenario ? '시나리오(경영진 미입력)' : ''} · ${tgtN}개사`} accent="var(--c-rev)" />
-        <Kpi label="합산 제외" value={`${a26.n_mismatch + (n - a26.n_ts - a26.n_mismatch)}개사`} sub={`정의상이 ${a26.n_mismatch} · 미확인 ${n - a26.n_ts - a26.n_mismatch}`} />
+        <Kpi label="합산 제외" value={`${a26.n_mismatch + (n - a26.n_ts - a26.n_mismatch)}개사`} sub={`정의상이 ${a26.n_mismatch} · 미확인/비적용 ${n - a26.n_ts - a26.n_mismatch}`} />
+        {data.meta.coverage && <Kpi label="외부 데이터 커버리지" value={`${(data.meta.coverage.current.external_coverage * 100).toFixed(1)}%`} sub={`RESEARCH GAP ${data.meta.coverage.current.external_missing} · 기준선 ${data.meta.coverage.baseline ? (data.meta.coverage.baseline.external_coverage * 100).toFixed(1) + '%' : '-'}`} />}
+        {data.meta.contains_internal_data && <Kpi label="사내 데이터" value="포함" sub="외부 반출 금지" accent="var(--err)" />}
       </div>
     </header>
   )

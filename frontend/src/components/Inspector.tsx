@@ -1,7 +1,7 @@
 import type { Account, AddrCase, Dashboard, Evidence, MetricRec, Scenario, Selection } from '../types'
-import { CAT_LABEL, METRIC_LABEL, STATUS_LABEL, eok, fmtRec, pct } from '../lib/format'
+import { CAT_LABEL, METRIC_LABEL, NA_KO, STATUS_LABEL, eok, fmtRec, missingText, naInfo, pct } from '../lib/format'
 import { resolveMetric } from '../lib/data'
-import { ConfidenceMeter, Pill, StatusBadge } from './badges'
+import { ConfidenceMeter, GradeBadge, Pill, StatusBadge } from './badges'
 import { BRIDGE_LABEL } from './charts'
 
 function Section({ n, title, children }: { n: number; title: string; children: React.ReactNode }) {
@@ -127,9 +127,10 @@ export default function Inspector({ data, account: a, sel, scen, addr }: Props) 
       <div className="kicker">{a.original_name} · {label}</div>
       <h3 className="text-[15px] font-semibold text-ink2 mt-0.5">{METRIC_LABEL[sel.metric === 'REV' ? (sel.year === 2026 ? 'CR' : 'TARGET') : sel.metric]}</h3>
       <div className="flex items-baseline gap-2 mt-1">
-        <span className="num text-[28px] font-bold leading-none">{fmtRec(rec)}</span>
+        <span className="num text-[28px] font-bold leading-none">{rec.value === null ? <span className="text-[18px]">{missingText(a, sel)}</span> : fmtRec(rec)}</span>
       </div>
-      <div className="flex flex-wrap items-center gap-2 mt-2"><StatusBadge status={rec.status} /><ConfidenceMeter value={rec.confidence} /></div>
+      <div className="flex flex-wrap items-center gap-2 mt-2"><StatusBadge status={rec.status} /><GradeBadge grade={rec.grade ?? (rec.value === null ? naInfo(a, sel)?.class : naInfo(a, sel)?.class === 'INTERNAL_REQUIRED' ? 'INTERNAL_REQUIRED' : null)} /><ConfidenceMeter value={rec.confidence} /></div>
+      {naInfo(a, sel) && (rec.value === null || naInfo(a, sel)?.class === 'INTERNAL_REQUIRED') && <div className="mt-2 rounded border border-line bg-sunk p-2 text-[12px]"><b>{NA_KO[naInfo(a, sel)!.class] ?? naInfo(a, sel)!.class}</b> — {naInfo(a, sel)!.reason}</div>}
 
       <Section n={1} title="수치 및 단위">
         <div className="num">{rec.value === null ? '값 없음 — ' + (rec.notes[0] ?? '근거 부족') : `${rec.unit === '%' ? pct(rec.value, 2) : `${rec.value.toLocaleString('ko-KR', { maximumFractionDigits: 2 })} 억원 (KRW)`}`}</div>
@@ -157,7 +158,15 @@ export default function Inspector({ data, account: a, sel, scen, addr }: Props) 
         {(sel.metric === 'TS' && sel.year === 2026) && <div className="text-[12px] text-ink2 mt-1 num">구성: {Object.entries(a.conf_parts).map(([k, v]) => `${k} ${v}`).join(' · ')}</div>}
         <div className="text-[11px] text-ink3 mt-1">분석 품질 평가 점수(0–100)이며 통계적 확률이 아닙니다.</div>
       </Section>
-      <Section n={8} title="불확실성 및 추가 확인 필요사항">
+      {(sel.metric === 'TS' || sel.bridgeComponent) && (a.anchor.alternatives?.length || a.conflicts?.length || a.estimation_inputs?.length || a.comparables?.length) ? (
+        <Section n={8} title="교차검증 · 대안 추정 · 근거 충돌">
+          {a.anchor.alternatives?.length ? <div className="mb-1"><div className="text-ink3 text-[11px]">채택하지 않은 대안 앵커</div>{a.anchor.alternatives.map((x, i) => <div key={i} className="num text-[12px]">{x.method} FY{x.fiscal_year}: {eok(Number(x.value), 'ESTIMATED')}</div>)}</div> : null}
+          {a.anchor.coverage_basis && <div className="text-[12px] text-ink2 mb-1">포괄률 근거: {a.anchor.coverage_basis}</div>}
+          {a.anchor.note && <div className="text-[12px] text-ink2 mb-1">비고: {a.anchor.note}</div>}
+          {a.conflicts?.length ? <div className="mb-1"><div className="text-ink3 text-[11px]">근거 충돌 기록 ({a.conflicts.length})</div><ul className="list-disc pl-4 text-[12px]">{a.conflicts.slice(0, 5).map((c, i) => <li key={i}><span className="num">{String(c.existing_value ?? '')} → {String(c.new_value ?? '')} {c.unit ?? ''}</span> {c.explanation?.slice(0, 160)}</li>)}</ul></div> : null}
+          {a.estimation_inputs?.length ? <div><div className="text-ink3 text-[11px]">모델 입력(간접 근거)</div><ul className="list-disc pl-4 text-[12px]">{a.estimation_inputs.slice(0, 5).map((e, i) => <li key={i}>{e.name}: <span className="num">{String(e.value)} {e.unit}</span>{e.basis ? ` — ${String(e.basis).slice(0, 100)}` : ''}</li>)}</ul></div> : null}
+        </Section>) : null}
+      <Section n={9} title="불확실성 및 추가 확인 필요사항">
         <ul className="list-disc pl-4 space-y-0.5">
           {metricIssues.filter(i => i.severity !== 'INFO' || ['SOURCE_NOT_OPENED', 'CR_NULL', 'TARGET_SCENARIO', 'SOW_COMPARE_NA', 'CORRECTION_APPLIED'].includes(i.code)).slice(0, 8).map((i, k) =>
             <li key={k}><span style={{ color: i.severity === 'ERROR' ? 'var(--err)' : i.severity === 'WARN' ? 'var(--warn)' : 'var(--ink-3)' }}>[{i.severity}]</span> {i.message}</li>)}

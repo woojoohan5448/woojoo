@@ -3,8 +3,8 @@ import type { Account, AddrCase, Dashboard, MetricKey, Scenario, Selection } fro
 import EChart from '../components/EChart'
 import Inspector from '../components/Inspector'
 import { bridgeOption, categoryOption, opportunityOption, rowLabel, type Palette } from '../components/charts'
-import { ConfidenceMeter, Pill, StatusBadge, Swatch } from '../components/badges'
-import { RESEARCH_STATUS_LABEL, SEGMENT_LABEL, eok, fmtRec, pct, signedEok } from '../lib/format'
+import { ConfidenceMeter, GradeBadge, Pill, StatusBadge, Swatch } from '../components/badges'
+import { NA_KO, RESEARCH_STATUS_LABEL, SEGMENT_LABEL, eok, fmtRec, missingText, naInfo, pct, signedEok } from '../lib/format'
 import { resolveMetric } from '../lib/data'
 import ProductRevenueDrilldown from '../extensions/ProductRevenueDrilldown'
 
@@ -81,7 +81,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
               <label className="inline-flex items-center gap-1"><input type="checkbox" checked={showTable} onChange={e => setShowTable(e.target.checked)} />표 보기</label>
             </div>
           </div>
-          {!hasModel && <div className="mt-3 rounded-md border border-dashed border-line p-3 text-[13px] text-ink2">이 고객은 신뢰할 만한 IT 지출 근거·추정 기준이 부족하여 TS/RAW/FPR이 <b>미확인(UNKNOWN)</b>입니다. 0으로 표시하지 않습니다. 아래 '추가 확인 필요사항'과 Data Quality 탭을 참고하세요.</div>}
+          {!hasModel && <div className="mt-3 rounded-md border border-dashed border-line p-3 text-[13px] text-ink2"><b>{missingText(a, { year: 2026, metric: 'TS' })}</b> — {naInfo(a, { year: 2026, metric: 'TS' })?.reason ?? '근거 부족'}. 0으로 표시하지 않습니다. 아래 '계정별 분석가 보정'과 '추가 검증 필요', Data Quality 탭을 참고하세요.</div>}
           <EChart option={opt} height={300} ariaLabel={`${a.original_name} 2026·2031 TS, RAW, FPR, 매출 비교 막대그래프`} themeKey={themeKey}
             onClick={(p) => { if (p.data?.metric) setSel({ year: p.data.year, metric: p.data.metric }) }} />
           {showTable && (
@@ -89,7 +89,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
               <thead><tr className="text-left text-ink3"><th className="py-1">지표</th><th>2026</th><th>상태</th><th>2031 ({scen}/{addr})</th><th>상태</th></tr></thead>
               <tbody>{ROWS.map(m => {
                 const r26 = resolveMetric(a, { year: 2026, metric: m }, scen, addr).rec, r31 = resolveMetric(a, { year: 2031, metric: m }, scen, addr).rec
-                return <tr key={m} className="border-t border-line"><td className="py-1">{rowLabel(m, 2026).split('  ')[0]}/{rowLabel(m, 2031).split('  ')[0]}</td><td>{fmtRec(r26)}</td><td>{r26 && <StatusBadge status={r26.status} compact />}</td><td>{fmtRec(r31)}</td><td>{r31 && <StatusBadge status={r31.status} compact />}</td></tr>
+                return <tr key={m} className="border-t border-line"><td className="py-1">{rowLabel(m, 2026).split('  ')[0]}/{rowLabel(m, 2031).split('  ')[0]}</td><td>{r26?.value === null ? missingText(a, { year: 2026, metric: m }) : fmtRec(r26)}</td><td>{r26 && (r26.grade ? <GradeBadge grade={r26.grade} /> : <StatusBadge status={r26.status} compact />)}</td><td>{r31?.value === null ? missingText(a, { year: 2031, metric: m }) : fmtRec(r31)}</td><td>{r31 && (r31.grade ? <GradeBadge grade={r31.grade} /> : <StatusBadge status={r31.status} compact />)}</td></tr>
               })}</tbody>
             </table>
           )}
@@ -103,8 +103,8 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
               <button key={x.l} onClick={() => setSel({ year: x.y, metric: x.k })}
                 className={`rounded-md border p-2 text-left ${sel.metric === x.k ? 'border-ink' : 'border-line'} bg-sunk`}>
                 <div className="kicker">{x.l}</div>
-                <div className="num text-[15px] font-bold">{fmtRec(x.r)}</div>
-                <div className="text-[10.5px] text-ink3">{x.r.value === null ? (m26.CR.value === null && x.k !== 'TARGET_SOW' ? 'CR 미입력 → N/A' : x.r.status === 'UNKNOWN' ? '산출 불가' : '') : x.r.status}</div>
+                <div className="num text-[15px] font-bold">{x.r.value === null ? <span className="text-[12px]">{missingText(a, { year: x.y, metric: x.k })}</span> : fmtRec(x.r)}</div>
+                <div className="text-[10.5px] text-ink3">{x.r.value === null ? (NA_KO[naInfo(a, { year: x.y, metric: x.k })?.class ?? ''] ?? '') : naInfo(a, { year: x.y, metric: x.k })?.class === 'INTERNAL_REQUIRED' ? '시나리오 값 — 경영진 입력 필요' : x.r.status}</div>
               </button>
             ))}
           </div>
@@ -123,19 +123,34 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
                   { l: 'FPR (Capture Opportunity)', a: m26.FPR, b: fpr31, c: b.FPR_CAGR, k: 'FPR_CAGR' as const },
                 ].map(r => (
                   <tr key={r.l} className="border-t border-line">
-                    <td className="py-1.5 font-semibold">{r.l}</td><td>{fmtRec(r.a)}</td><td>{fmtRec(r.b)}</td>
+                    <td className="py-1.5 font-semibold">{r.l}</td>
+                    <td>{r.a.value === null ? <span className="text-ink3 text-[11px]">{missingText(a, { year: 2026, metric: r.k.split('_')[0] as any })}</span> : fmtRec(r.a)} <GradeBadge grade={r.a.grade} /></td>
+                    <td>{r.b.value === null ? <span className="text-ink3 text-[11px]">{missingText(a, { year: 2031, metric: r.k.split('_')[0] as any })}</span> : fmtRec(r.b)} <GradeBadge grade={r.b.grade} /></td>
                     <td>{signedEok(delta(r.a.value, r.b.value))}</td>
                     <td><button className="underline decoration-dotted" onClick={() => setSel({ year: 2031, metric: r.k })}>{pct(r.c.value)}</button></td>
                     <td><span className="text-ink2">{r.a.confidence} → {r.b.confidence}</span></td>
                   </tr>
                 ))}
-                <tr className="border-t border-line"><td className="py-1.5 font-semibold">CR → Target</td><td>{fmtRec(m26.CR)}</td><td>{fmtRec(a.m.target.TARGET)}</td><td>{signedEok(a.m.target.TARGET_INCREMENT.value)}</td><td>—</td><td className="text-ink2">{a.m.target.TARGET.status}</td></tr>
+                <tr className="border-t border-line"><td className="py-1.5 font-semibold">CR → Target</td><td>{m26.CR.value === null ? <span className="text-ink3 text-[11px]">INTERNAL INPUT REQUIRED</span> : fmtRec(m26.CR)}</td><td>{fmtRec(a.m.target.TARGET)} {naInfo(a, { year: 2031, metric: 'REV' })?.class === 'INTERNAL_REQUIRED' && <Pill tone="warn">시나리오</Pill>}</td><td>{signedEok(a.m.target.TARGET_INCREMENT.value)}</td><td>—</td><td className="text-ink2">{a.m.target.TARGET.status}</td></tr>
               </tbody>
             </table>
           </div>
           <p className="mt-2 text-[12px] text-ink2"><b>주요 변화 원인:</b> {String(a.narrative.ts_2031_drivers ?? 'N/A')}</p>
           {a.narrative.raw_2031_drivers && <p className="text-[12px] text-ink2">{String(a.narrative.raw_2031_drivers)}</p>}
           <p className="text-[11px] text-ink3 mt-1">시장 성장률(벤치마크), 고객 IT 지출 성장률(TS CAGR), LG U+ 매출 성장률(FPR/Target)은 서로 다른 개념입니다.</p>
+        </section>
+
+        {/* Phase 4 reconciliation (internal vs external) */}
+        <section className="card p-4">
+          <h3 className="text-[15px] font-bold">External vs Sales Reconciliation <span className="text-[12px] font-normal text-ink3">(Phase 4 · 사내 데이터)</span></h3>
+          {!a.reconciliation ? <p className="mt-1 text-[12.5px] text-ink3">INTERNAL INPUT REQUIRED — 영업 추정 TS/RAW/FPR, 실제 매출(CR), 경영진 목표가 승인되면 외부 추정과의 차이·Opportunity Gap이 표시됩니다(관리자 입력 → Excel Import).</p> : (
+            <div className="mt-2 overflow-x-auto">
+              <table className="w-full min-w-[560px] text-[12.5px] num"><thead><tr className="text-left text-ink3"><th className="py-1">지표</th><th>외부 추정</th><th>영업 추정</th><th>차이</th><th>판정</th><th>담당</th></tr></thead>
+                <tbody>{a.reconciliation.rows.map(r => <tr key={`${r.year}${r.metric}`} className="border-t border-line"><td className="py-1">{r.year} {r.metric}</td><td>{eok(r.external, 'ESTIMATED')}</td><td>{r.sales === null ? '—' : eok(r.sales, 'VERIFIED')}</td>
+                  <td>{r.diff_pct === null ? '—' : pct(r.diff_pct, 0)}</td><td><Pill tone={r.flag === 'ALIGNED' ? 'ok' : r.flag.startsWith('REVIEW') ? 'warn' : 'neutral'}>{r.flag}</Pill></td><td className="text-ink3">{r.sales_rep ?? ''}</td></tr>)}</tbody></table>
+              <div className="mt-2 text-[12.5px] num">사내 CR {eok(a.reconciliation.internal_cr, 'VERIFIED')} · 경영진 목표 {eok(a.reconciliation.management_target, 'VERIFIED')} · Opportunity Gap(FPR−CR) {eok(a.reconciliation.opportunity_gap, 'ESTIMATED')}</div>
+              {a.reconciliation.notes.map((n, i) => <p key={i} className="text-[12px]" style={{ color: 'var(--warn)' }}>{n}</p>)}
+            </div>)}
         </section>
 
         <div className="grid grid-cols-1 gap-4 2xl:grid-cols-2">

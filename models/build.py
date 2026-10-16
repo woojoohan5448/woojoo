@@ -14,13 +14,13 @@ from decimal import Decimal
 
 from models.addressability.raw import addressability_rates, category_mix, raw as raw_calc, split
 from models.capture.fpr import capture_ceilings, fpr as fpr_calc
-from models.common import (CATEGORIES, CONFIG, D, D0, EXPORTS, INTERNAL, PROCESSED, RAW_RESEARCH, ROOT,
+from models.common import (CATEGORIES, CONFIG, D, D0, EXPORTS, INTERNAL, PROCESSED, RAW_RESEARCH, ROOT, SANDBOX,
                            SCENARIOS, cagr, load_csv, load_json, q2, safe_div, to_eok)
 from models.forecasting.bridge import bridge
 from models.spending.ts import select_anchor, ts_2026
 from models.validation.checks import validate_account
 
-FRONT_DATA = ROOT / "frontend" / "public" / "data"
+FRONT_DATA = (PROCESSED.parent / "frontend_data") if SANDBOX else ROOT / "frontend" / "public" / "data"
 DATA_VERSION = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
 
@@ -39,6 +39,13 @@ def load_inputs():
         market["items"] = market["items"] + [dict(i, topic=i.get("topic") or i.get("metric")) for i in dcb.get("items", [])]
         market["evidence"] = market["evidence"] + dcb.get("evidence", [])
     mgmt = {r["account_id"]: r for r in load_csv(INTERNAL / "management_inputs.csv")}
+    # Phase 3: approved internal Excel layers (data/internal_store) take precedence over the legacy CSV
+    try:
+        from models.internal.excel_io import management_rows_for_build
+        for aid, r in management_rows_for_build().items():
+            mgmt[aid] = {**mgmt.get(aid, {}), **{k: v for k, v in r.items() if v not in (None, "")}, "_from_internal_store": True}
+    except Exception as e:  # store absent/corrupt → never silently mix; surface in meta
+        mgmt.setdefault("_internal_store_error", {"error": str(e)})
     return params, seed, overrides, corrections, overlap, strategy, pev, market, mgmt
 
 
@@ -48,19 +55,21 @@ def load_research(aid: str, corrections: list[dict], issues: list[dict]) -> dict
         return None
     r = json.loads(p.read_text(encoding="utf-8"))
     r["_source_hash"] = hashlib.sha256(p.read_bytes()).hexdigest()[:16]
-    sp = RAW_RESEARCH.parent / "research_p1" / f"{aid}.json"
-    if sp.exists():  # Phase 1 supplement (raw file stays immutable)
+    for phase, sub in (("P1", "research_p1"), ("P2", "research_p2")):
+        sp = RAW_RESEARCH.parent / sub / f"{aid}.json"
+        if not sp.exists():  # supplements keep the raw file immutable
+            continue
         sup = json.loads(sp.read_text(encoding="utf-8"))
         for k in ("facts", "evidence", "drivers", "competitive", "research_log", "open_questions"):
             r.setdefault(k, [])
-            r[k] = r[k] + [dict(x, _phase="P1") if isinstance(x, dict) else x for x in sup.get(k, [])]
+            r[k] = r[k] + [dict(x, _phase=phase) if isinstance(x, dict) else x for x in sup.get(k, [])]
         for k in ("conflicts", "comparables", "estimation_inputs", "recovery_levels_tried"):
-            r[k] = sup.get(k, [])
+            r[k] = (r.get(k, []) if phase != "P1" else []) + sup.get(k, [])
         if sup.get("entity"):
             for ek, ev in sup["entity"].items():
                 if ev not in (None, "", []) and not r["entity"].get(ek):
                     r["entity"][ek] = ev
-        r["_supplement_hash"] = hashlib.sha256(sp.read_bytes()).hexdigest()[:16]
+        r[f"_supplement_hash{'' if phase == 'P1' else '_' + phase.lower()}"] = hashlib.sha256(sp.read_bytes()).hexdigest()[:16]
     for c in corrections:
         if c["account_id"] != aid:
             continue
@@ -412,6 +421,35 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
             "infra_drivers": infra_inputs}
 
 
+# --------------------------------------------------------------------------- Phase 4 reconciliation
+def reconcile(acc, model, mrow):
+    """External estimate vs sales-rep estimate (SALES_ESTIMATE layer) + internal CR/target. Never overwrites."""
+    if not mrow or not (mrow.get("sales_estimates") or mrow.get("cr_2026_forecast_eok") or mrow.get("target_revenue_2031_eok")):
+        return None
+    rows = []
+    ext = {("2026", "TS"): model["m"]["2026"]["TS"]["value"], ("2026", "RAW"): model["m"]["2026"]["RAW"]["value"],
+           ("2026", "FPR"): model["m"]["2026"]["FPR"]["value"], ("2031", "TS"): model["m"]["2031"]["base"]["TS"]["value"],
+           ("2031", "RAW"): model["m"]["2031"]["base"]["RAW_base"]["value"], ("2031", "FPR"): model["m"]["2031"]["base"]["FPR_base"]["value"]}
+    for (y, m), ev in ext.items():
+        se = (mrow.get("sales_estimates") or {}).get(f"{y}|{m}")
+        sv = D(se["value_eok"]) if se else None
+        diff = (sv - ev) / ev if (sv is not None and ev not in (None, 0)) else None
+        flag = "NO_SALES_INPUT" if sv is None else "NO_EXTERNAL" if ev is None else \
+            "ALIGNED" if abs(diff) <= Decimal("0.2") else "REVIEW_SALES_HIGHER" if diff > 0 else "REVIEW_SALES_LOWER"
+        rows.append({"year": int(y), "metric": m, "external": ev, "sales": sv, "diff_pct": diff, "flag": flag,
+                     "sales_rep": (se or {}).get("sales_rep"), "rationale": (se or {}).get("rationale")})
+    cr = model["m"]["2026"]["CR"]["value"]
+    fpr = model["m"]["2026"]["FPR"]["value"]
+    tgt = D(mrow["target_revenue_2031_eok"]) if mrow.get("target_revenue_2031_eok") else None
+    notes = []
+    if cr is not None and fpr is not None and cr > fpr:
+        notes.append("CR > 외부 FPR: 접근률·포획 상한 가정 과소 가능 — 영업 추정 RAW/FPR과 대조 필요")
+    if any(r["flag"].startswith("REVIEW") for r in rows):
+        notes.append("영업 추정과 외부 추정 차이 ±20% 초과 항목 존재 — 정의(비용 vs 예산, 법인 범위) 확인 후 승인된 Account Plan 값 결정")
+    return {"rows": rows, "internal_cr": cr, "management_target": tgt,
+            "opportunity_gap": (fpr - cr) if (cr is not None and fpr is not None) else None, "notes": notes}
+
+
 # --------------------------------------------------------------------------- grading (Phase 1 taxonomy)
 GRADES = ["ESTIMATED_LOW", "ESTIMATED_MEDIUM", "ESTIMATED_HIGH"]
 
@@ -732,6 +770,8 @@ def write_sqlite(accounts, evidence, issues, params, market, strategy_rows, mgmt
         cur.execute("INSERT INTO data_quality_issues VALUES (?,?,?,?,?,?,?,?)",
                     (i["account_id"], i["severity"], i["code"], i["message"], i.get("metric"), i.get("year"), i.get("scenario"), DATA_VERSION))
     for aid, r in mgmt.items():
+        if aid.startswith("_"):
+            continue
         cur.execute("INSERT INTO management_inputs VALUES (?,?,?,?,?,?,?)",
                     (aid, r.get("cr_2026_ytd_eok"), r.get("cr_2026_forecast_eok"), r.get("cr_basis"), r.get("target_revenue_2031_eok"),
                      r.get("target_basis"), r.get("updated_at")))
@@ -837,6 +877,7 @@ def main():
         acc["competitive"] = acc["_competitive"]
         acc["open_questions"] = (research or {}).get("open_questions", [])
         acc["override_notes"] = (ov or {}).get("notes", [])
+        acc["reconciliation"] = reconcile(acc, model, mgmt.get(aid))
         assign_grades(acc, ov)
         acc["conflicts"] = (research or {}).get("conflicts", [])
         acc["comparables"] = (research or {}).get("comparables", [])
@@ -877,16 +918,25 @@ def main():
         "meta": {"data_version": DATA_VERSION, "generated_at": datetime.now(timezone.utc).isoformat(), "unit": "억원",
                  "currency": "KRW", "n_accounts": len(accounts), "status_counts": status_counts,
                  "metric_status_2026": metric_status, "fact_status": fact_status, "fx_usd_krw": float(fxr),
-                 "is_test_data": False},
+                 "is_test_data": False,
+                 "contains_internal_data": any(isinstance(v, dict) and v.get("_from_internal_store") for v in mgmt.values()) or
+                 any(isinstance(v, dict) and (v.get("cr_2026_forecast_eok") or v.get("target_revenue_2031_eok")) for v in mgmt.values()),
+                 "internal_store_error": (mgmt.get("_internal_store_error") or {}).get("error")},
         "params": params, "parameter_evidence": pev, "intensity_calibration": calib,
         "market_benchmarks": market,
         "accounts": [{k: v for k, v in a.items() if not k.startswith("_")} for a in accounts],
         "portfolio": portfolio, "strategy": strat,
         "issues_summary": {sev: sum(1 for i in issues if i["severity"] == sev) for sev in ("ERROR", "WARN", "INFO")},
     }
+    # Phase 1/2: coverage & N/A taxonomy summary for the dashboard
+    from models.audit import audit as _audit, coverage as _coverage
+    _cov = _coverage(_audit(jsonable(out), "current"))
+    _base = load_json(ROOT / "data" / "phase1" / "baseline_coverage.json", None)
+    out["meta"]["coverage"] = {"current": _cov, "baseline": _base}
     FRONT_DATA.mkdir(parents=True, exist_ok=True)
     (FRONT_DATA / "dashboard.json").write_text(json.dumps(jsonable(out), ensure_ascii=False), encoding="utf-8")
-    (ROOT / "frontend" / "src" / "data" / "dashboard.json").write_text(json.dumps(jsonable(out), ensure_ascii=False), encoding="utf-8")
+    if not SANDBOX:
+        (ROOT / "frontend" / "src" / "data" / "dashboard.json").write_text(json.dumps(jsonable(out), ensure_ascii=False), encoding="utf-8")
     (PROCESSED / "dashboard.json").write_text(json.dumps(jsonable(out), ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"data_version={DATA_VERSION} accounts={len(accounts)} evidence={len(evidence)} "
           f"issues={out['issues_summary']} status={status_counts}")

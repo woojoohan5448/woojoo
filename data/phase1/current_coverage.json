@@ -1,8 +1,8 @@
 {
  "external_fields": 315,
- "external_covered": 280,
- "external_coverage": 0.8889,
- "external_missing": 35,
+ "external_covered": 286,
+ "external_coverage": 0.9079,
+ "external_missing": 29,
  "verified_or_derived": 0,
  "internal_required": 318,
  "not_applicable": 3,
@@ -10,9 +10,9 @@
  "by_class": {
   "ESTIMATED_HIGH": 10,
   "ESTIMATED_MEDIUM": 53,
-  "ESTIMATED_LOW": 217,
+  "ESTIMATED_LOW": 223,
   "INTERNAL_REQUIRED": 318,
-  "INSUFFICIENT_EVIDENCE": 35,
+  "INSUFFICIENT_EVIDENCE": 29,
   "NOT_APPLICABLE": 3
  },
  "frontend_sync_errors": [],
@@ -34,8 +34,8 @@
   }
  },
  "initial_external_missing": 116,
- "recovered_external_fields": 78,
- "na_recovery_rate": 0.6724,
+ "recovered_external_fields": 84,
+ "na_recovery_rate": 0.7241,
  "recovered_keys": [
   "KA06|2026|TS",
   "KA06|2026|RAW",
@@ -97,6 +97,12 @@
   "KA44|2031|TS",
   "KA44|2031|RAW",
   "KA44|2031|FPR",
+  "KA45|2026|TS",
+  "KA45|2026|RAW",
+  "KA45|2026|FPR",
+  "KA45|2031|TS",
+  "KA45|2031|RAW",
+  "KA45|2031|FPR",
   "KA46|2026|TS",
   "KA46|2026|RAW",
   "KA46|2026|FPR",

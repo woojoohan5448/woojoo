@@ -1,6 +1,6 @@
 /** Pure ECharts option builders (unit-testable, no DOM). */
 import type { Account, AddrCase, Category, MetricKey, Scenario, Selection } from '../types'
-import { CAT_LABEL, STATUS_LABEL, eok, pct } from '../lib/format'
+import { CAT_LABEL, GRADE_LABEL, NA_KO, STATUS_LABEL, eok, missingText, naInfo, pct } from '../lib/format'
 import { evidenceCount, resolveMetric } from '../lib/data'
 
 export interface Palette { ts: string; raw: string; fpr: string; rev: string; ink1: string; ink2: string; ink3: string; line: string; surface: string; sunk: string }
@@ -15,10 +15,12 @@ const SHORT: Record<MetricKey, string> = { TS: 'TS', RAW: 'RAW', FPR: 'FPR', REV
 function tooltipHtml(a: Account, year: 2026 | 2031, m: MetricKey, scen: Scenario, addr: AddrCase): string {
   const { rec, label } = resolveMetric(a, { year, metric: m }, scen, addr)
   if (!rec) return ''
-  const val = rec.value === null ? 'N/A (미확인·미입력)' : eok(rec.value, rec.status)
+  const na = naInfo(a, { year, metric: m })
+  const val = rec.value === null ? `${missingText(a, { year, metric: m })} — ${na ? NA_KO[na.class] ?? '' : ''}` : eok(rec.value, rec.status)
+  const grade = rec.grade ? ` · 신뢰등급 ${GRADE_LABEL[rec.grade]}` : ''
   const range = rec.low !== null && rec.high !== null && rec.value !== null ? `<div>범위 ${eok(rec.low, 'ESTIMATED', { approx: false })} ~ ${eok(rec.high, 'ESTIMATED', { approx: false })}</div>` : ''
   return `<div style="font-size:12px;line-height:1.5"><b>${label}</b><div style="font-size:14px;font-weight:700">${val}</div>${range}
-    <div>상태: ${rec.status} (${STATUS_LABEL[rec.status]}) · 신뢰도 ${rec.confidence}/100</div>
+    <div>상태: ${rec.status} (${STATUS_LABEL[rec.status]})${grade} · 신뢰도 ${rec.confidence}/100</div>
     <div>연결 출처 ${evidenceCount(a, rec)}건 · 가정 ${rec.assumption_ids.length}건</div><div style="opacity:.7">클릭하면 근거 패널에 산출 과정 표시</div></div>`
 }
 
@@ -74,7 +76,7 @@ export function opportunityOption(a: Account, scen: Scenario, addr: AddrCase, se
           },
           label: {
             show: true, position: v === null ? 'insideLeft' : 'right', color: p.ink1, fontSize: 12, fontWeight: 600,
-            formatter: () => v === null ? (m === 'REV' && y === 2026 ? 'N/A · 사내 매출 미입력' : 'N/A · 미확인') : `${eok(v, r!.status)}${share}`,
+            formatter: () => v === null ? missingText(a, { year: y, metric: m }) : `${eok(v, r!.status)}${share}${r?.grade === 'ESTIMATED_LOW' ? ' · LOW' : ''}`,
           },
         }
       }),

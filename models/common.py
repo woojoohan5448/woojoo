@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 from decimal import Decimal, ROUND_HALF_UP, getcontext
 from pathlib import Path
 
@@ -12,8 +13,11 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config"
 RAW_RESEARCH = ROOT / "data" / "raw" / "research"
 INTERNAL = ROOT / "data" / "internal_inputs"
-PROCESSED = ROOT / "data" / "processed"
-EXPORTS = ROOT / "data" / "exports"
+# KAI_DATA_OUT: isolated output root (tests / sandbox recompute) — never mixes test data into production outputs
+_OUT = os.environ.get("KAI_DATA_OUT")
+PROCESSED = Path(_OUT) / "processed" if _OUT else ROOT / "data" / "processed"
+EXPORTS = Path(_OUT) / "exports" if _OUT else ROOT / "data" / "exports"
+SANDBOX = bool(_OUT)
 
 STATUSES = ("VERIFIED", "DERIVED", "ESTIMATED", "SCENARIO", "UNKNOWN")
 SCENARIOS = ("low", "base", "high")
