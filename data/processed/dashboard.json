@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "20261016T051757Z",
-  "generated_at": "2026-10-16T05:17:59.039153+00:00",
+  "data_version": "20261016T123435Z",
+  "generated_at": "2026-10-16T12:34:36.730335+00:00",
   "unit": "억원",
   "currency": "KRW",
   "n_accounts": 53,
@@ -4136,7 +4136,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.116419,
@@ -4158,7 +4159,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -4184,7 +4186,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -5051,6 +5054,106 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA01-D02"
+      ]
+     },
+     "FPR_2031": 163.78
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA01-D01",
+       "KA01-D03"
+      ]
+     },
+     "FPR_2031": 43.62
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA01-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA01-C01",
+       "KA01-C04"
+      ]
+     },
+     "FPR_2031": 97.2
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA01-C02"
+      ]
+     },
+     "FPR_2031": 30.34
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 44.1
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA01-C03"
+      ]
+     },
+     "FPR_2031": 8.93
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.89
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.67
     }
    }
   },
@@ -6192,7 +6295,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.119955,
@@ -6214,7 +6318,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -6240,7 +6345,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -6884,6 +6990,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA02-C01"
+      ]
+     },
+     "FPR_2031": 4.06
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.36
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.38
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.38
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.90432
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.846938
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA02-C02"
+      ]
+     },
+     "FPR_2031": 0.625361
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.263953
     }
    }
   },
@@ -8017,7 +8193,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.126415,
@@ -8039,7 +8216,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -8065,7 +8243,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -9196,6 +9375,116 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA03-C04"
+      ]
+     },
+     "FPR_2031": 154.24
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA03-D04"
+      ]
+     },
+     "FPR_2031": 72.35
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA03-D04"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA03-C03"
+      ]
+     },
+     "FPR_2031": 65.38
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 57.72
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA03-D01"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 67.68
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA03-D02"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA03-C02"
+      ]
+     },
+     "FPR_2031": 13.46
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA03-D02"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA03-C01"
+      ]
+     },
+     "FPR_2031": 17.09
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.22
     }
    }
   },
@@ -10343,7 +10632,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.126375,
@@ -10365,7 +10655,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -10391,7 +10682,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -11182,6 +11474,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 28.25
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.26
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 11.97
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 10.57
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 12.46
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA04-C01"
+      ]
+     },
+     "FPR_2031": 2.46
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.13
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.5
     }
    }
   },
@@ -12323,7 +12685,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.125519,
@@ -12345,7 +12708,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -12371,7 +12735,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -13499,6 +13864,77 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA05-C02"
+      ]
+     },
+     "FPR_2031": 243.6
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 51.22
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 80.45
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 49.92
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 62.28
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 42.21
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA05-C01",
+       "KA05-C03"
+      ]
+     },
+     "FPR_2031": 29.88
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 10.47
     }
    }
   },
@@ -14743,7 +15179,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.164062,
@@ -14765,7 +15202,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -14791,7 +15229,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -15771,6 +16210,97 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA06-C03"
+      ]
+     },
+     "FPR_2031": 107.11
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA06-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA06-C02"
+      ]
+     },
+     "FPR_2031": 127.25
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA06-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA06-C01",
+       "KA06-C04"
+      ]
+     },
+     "FPR_2031": 219.7
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA06-D01"
+      ]
+     },
+     "FPR_2031": 12.8
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.79
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 4.27
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.46
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.207899
     }
    }
   },
@@ -16935,7 +17465,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.164062,
@@ -16957,7 +17488,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -16983,7 +17515,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -17854,6 +18387,89 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 192.12
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA07-D01",
+       "KA07-P1-D01"
+      ]
+     },
+     "FPR_2031": 228.25
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA07-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA07-C01",
+       "KA07-C04"
+      ]
+     },
+     "FPR_2031": 394.06
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA07-C02",
+       "KA07-C03"
+      ]
+     },
+     "FPR_2031": 22.95
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.97
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.65
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.21
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.372897
     }
    }
   },
@@ -19010,7 +19626,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.168823,
@@ -19032,7 +19649,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -19058,7 +19676,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -19921,6 +20540,104 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA08-C04"
+      ]
+     },
+     "FPR_2031": 598.5
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA08-D01",
+       "KA08-D02",
+       "KA08-D03",
+       "KA08-D04",
+       "KA08-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA08-C02"
+      ]
+     },
+     "FPR_2031": 441.0
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA08-D01",
+       "KA08-D03",
+       "KA08-D04",
+       "KA08-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA08-C01",
+       "KA08-C05"
+      ]
+     },
+     "FPR_2031": 573.3
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA08-C03"
+      ]
+     },
+     "FPR_2031": 25.2
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 47.88
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.4
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 18.06
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.98
     }
    }
   },
@@ -21056,7 +21773,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.144838,
@@ -21078,7 +21796,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -21104,7 +21823,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -21696,6 +22416,86 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 430.03
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA09-D01"
+      ]
+     },
+     "FPR_2031": 437.0
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA09-C01"
+      ]
+     },
+     "FPR_2031": 506.08
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 196.57
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA09-C02"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 59.86
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 20.6
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 12.42
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 27.69
     }
    }
   },
@@ -22827,7 +23627,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.154364,
@@ -22849,7 +23650,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -22875,7 +23677,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -23516,6 +24319,83 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 563.28
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA10-D01",
+       "KA10-D02"
+      ]
+     },
+     "FPR_2031": 676.02
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA10-C01"
+      ]
+     },
+     "FPR_2031": 725.77
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 94.54
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 72.34
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 19.66
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.68
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 39.28
     }
    }
   },
@@ -24649,7 +25529,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.141793,
@@ -24671,7 +25552,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -24697,7 +25579,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -25231,6 +26114,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 21.26
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 11.43
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 25.22
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.92
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 6.7
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA11-C01"
+      ]
+     },
+     "FPR_2031": 1.16
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.889818
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.12
     }
    }
   },
@@ -26364,7 +27317,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.133432,
@@ -26386,7 +27340,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -26412,7 +27367,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -27052,6 +28008,82 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA12-C01"
+      ]
+     },
+     "FPR_2031": 30.24
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.92
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 10.57
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.33
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 5.73
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA12-C02"
+      ]
+     },
+     "FPR_2031": 3.31
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.27
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.24
     }
    }
   },
@@ -28195,7 +29227,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.143288,
@@ -28217,7 +29250,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -28243,7 +29277,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -28723,6 +29758,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 18.14
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.64
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA13-C01"
+      ]
+     },
+     "FPR_2031": 21.54
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.71
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 4.6
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA13-C02"
+      ]
+     },
+     "FPR_2031": 0.987528
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.764444
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.961224
     }
    }
   },
@@ -29899,7 +31004,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.110531,
@@ -29921,7 +31027,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -29947,7 +31054,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -30645,6 +31753,113 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA14-C03"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KA14-INFRA-AI"
+      ]
+     },
+     "FPR_2031": 615.81
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA14-D01",
+       "KA14-D02",
+       "KA14-D03"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA14-C02"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KA14-INFRA-AI"
+      ]
+     },
+     "FPR_2031": 103.12
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA14-D02",
+       "KA14-D03"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KA14-INFRA-AI"
+      ]
+     },
+     "FPR_2031": 246.98
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 17.55
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 88.32
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA14-C01"
+      ]
+     },
+     "FPR_2031": 6.16
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.75
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.87
     }
    }
   },
@@ -31799,7 +33014,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.154432,
@@ -31821,7 +33037,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -31847,7 +33064,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -32258,6 +33476,70 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 11.46
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.75
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 14.76
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA15-C01"
+      ]
+     },
+     "FPR_2031": 1.92
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.45
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.399491
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.135878
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.799236
     }
    }
   },
@@ -33412,7 +34694,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.134932,
@@ -33434,7 +34717,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -33460,7 +34744,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -34588,6 +35873,83 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA16-C01",
+       "KA16-C03"
+      ]
+     },
+     "FPR_2031": 58.31
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 15.06
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 20.4
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 15.92
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA16-D01"
+      ]
+     },
+     "FPR_2031": 8.1
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.38
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA16-C02"
+      ]
+     },
+     "FPR_2031": 4.39
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.41
     }
    }
   },
@@ -35731,7 +37093,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.119955,
@@ -35753,7 +37116,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -35779,7 +37143,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -36922,6 +38287,77 @@
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
     }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA17-C01"
+      ]
+     },
+     "FPR_2031": 9.52
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.19
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.23
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.24
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.12
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.99
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA17-C02",
+       "KA17-C03"
+      ]
+     },
+     "FPR_2031": 1.47
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.619124
+    }
    }
   },
   {
@@ -38056,7 +39492,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.126537,
@@ -38078,7 +39515,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -38104,7 +39542,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -38965,6 +40404,86 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA18-C02"
+      ]
+     },
+     "FPR_2031": 134.7
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 63.1
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 57.1
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 50.36
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA18-D01"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 58.15
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 11.75
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA18-C01"
+      ]
+     },
+     "FPR_2031": 14.93
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.18
     }
    }
   },
@@ -40100,7 +41619,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.125746,
@@ -40122,7 +41642,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -40148,7 +41669,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -41043,6 +42565,86 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA19-C02"
+      ]
+     },
+     "FPR_2031": 114.98
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 54.32
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 48.72
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 43.24
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA19-D02"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 55.0
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 10.04
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA19-C01"
+      ]
+     },
+     "FPR_2031": 12.72
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.11
     }
    }
   },
@@ -42190,7 +43792,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.127279,
@@ -42212,7 +43815,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -42238,7 +43842,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -42947,6 +44552,70 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 20.26
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.42
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.59
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.53
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.9
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA20-C01"
+      ]
+     },
+     "FPR_2031": 1.77
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.25
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.08
     }
    }
   },
@@ -44097,7 +45766,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.126153,
@@ -44119,7 +45789,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -44145,7 +45816,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -44884,6 +46556,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 45.19
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 21.26
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 19.15
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 16.94
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 20.52
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.94
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA21-C01"
+      ]
+     },
+     "FPR_2031": 5.0
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.41
     }
    }
   },
@@ -46015,7 +47757,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.125768,
@@ -46037,7 +47780,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -46063,7 +47807,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -46824,6 +48569,86 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA22-C02"
+      ]
+     },
+     "FPR_2031": 118.55
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 55.99
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 50.23
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 44.58
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA22-D01"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 56.55
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 10.35
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA22-C01"
+      ]
+     },
+     "FPR_2031": 13.12
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.3
     }
    }
   },
@@ -47967,7 +49792,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.118767,
@@ -47989,7 +49815,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -48015,7 +49842,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -48645,6 +50473,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA23-C02"
+      ]
+     },
+     "FPR_2031": 36.2
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 16.83
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 15.35
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.46
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 14.12
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.31
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA23-C01"
+      ]
+     },
+     "FPR_2031": 8.03
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.93
     }
    }
   },
@@ -49790,7 +51688,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.127279,
@@ -49812,7 +51711,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -49838,7 +51738,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -50541,6 +52442,77 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA24-C02"
+      ]
+     },
+     "FPR_2031": 148.05
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 68.83
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 62.78
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 55.06
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 57.75
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 12.91
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA24-C01",
+       "KA24-C03"
+      ]
+     },
+     "FPR_2031": 16.43
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.91
     }
    }
   },
@@ -51686,7 +53658,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.117316,
@@ -51708,7 +53681,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -51734,7 +53708,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -52676,6 +54651,81 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 59.82
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA25-D03"
+      ]
+     },
+     "FPR_2031": 28.47
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 25.33
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 22.61
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA25-D01",
+       "KA25-D02"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 31.11
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 10.45
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.22
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.17
     }
    }
   },
@@ -53807,7 +55857,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.117036,
@@ -53829,7 +55880,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -53855,7 +55907,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -54622,6 +56675,81 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 50.12
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 23.97
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 21.22
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA26-D03"
+      ]
+     },
+     "FPR_2031": 19.01
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA26-D01",
+       "KA26-D02"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 27.41
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.75
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 11.07
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.65
     }
    }
   },
@@ -55759,7 +57887,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.130406,
@@ -55781,7 +57910,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -55807,7 +57937,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -56523,6 +58654,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 71.96
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 33.47
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 71.26
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 41.84
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 35.31
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 5.27
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA27-C01"
+      ]
+     },
+     "FPR_2031": 5.15
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.68
     }
    }
   },
@@ -57246,7 +59447,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      },
      "TARGET_SOW": {
       "value": null,
@@ -57268,7 +59470,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": null
      },
      "UPSIDE_2031": {
       "value": null,
@@ -57294,7 +59497,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      }
     }
    },
@@ -57988,6 +60192,81 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "사내 CR(현재 매출) 미입력"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA28-P1-D01"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA28-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA28-C01",
+       "KA28-C02"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
     }
    }
   },
@@ -59119,7 +61398,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.144131,
@@ -59141,7 +61421,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -59167,7 +61448,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -59561,6 +61843,80 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1316.96
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1346.36
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1550.97
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA29-C01"
+      ]
+     },
+     "FPR_2031": 604.16
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA29-D02"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 223.44
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 63.57
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 37.95
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 84.71
     }
    }
   },
@@ -60704,7 +63060,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.119955,
@@ -60726,7 +63083,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -60752,7 +63110,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -61377,6 +63736,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA30-C01"
+      ]
+     },
+     "FPR_2031": 28.04
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.41
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.51
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.53
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.25
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 5.85
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 4.32
+    },
+    "기타": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA30-C02"
+      ]
+     },
+     "FPR_2031": 1.82
     }
    }
   },
@@ -62510,7 +64939,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.13634,
@@ -62532,7 +64962,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -62558,7 +64989,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -63152,6 +65584,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 20.55
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 11.6
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 24.32
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.89
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 11.81
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA31-C01"
+      ]
+     },
+     "FPR_2031": 1.15
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.835434
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.07
     }
    }
   },
@@ -64133,7 +66635,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.25,
@@ -64155,7 +66658,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -64181,7 +66685,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -65007,6 +67512,88 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA32-C01",
+       "KA32-C02",
+       "KA32-C05"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "CONTRACT_CATEGORY"
+      ]
+     },
+     "FPR_2031": 86.67
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.0
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.0
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.0
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA32-C04"
+      ]
+     },
+     "FPR_2031": 0.0
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.0
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA32-C03"
+      ]
+     },
+     "FPR_2031": 0.0
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.0
     }
    }
   },
@@ -66138,7 +68725,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.120471,
@@ -66160,7 +68748,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -66186,7 +68775,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -67819,6 +70409,90 @@
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
     }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA33-C01"
+      ]
+     },
+     "FPR_2031": 8.14
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.71
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.76
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.75
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA33-D02"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA33-C03"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 1.53
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.7
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA33-C02"
+      ]
+     },
+     "FPR_2031": 1.26
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.53032
+    }
    }
   },
   {
@@ -68953,7 +71627,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.143288,
@@ -68975,7 +71650,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -69001,7 +71677,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -69503,6 +72180,71 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.62
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.862085
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.93
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.600196
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.411812
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA34-C01",
+       "KA34-C02"
+      ]
+     },
+     "FPR_2031": 0.08835
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.068392
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.085997
     }
    }
   },
@@ -70651,7 +73393,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.127279,
@@ -70673,7 +73416,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -70699,7 +73443,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -71563,6 +74308,71 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 35.73
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 16.61
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 15.15
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.29
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.94
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.12
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA35-C01",
+       "KA35-C02"
+      ]
+     },
+     "FPR_2031": 3.96
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.91
     }
    }
   },
@@ -72706,7 +75516,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.143288,
@@ -72728,7 +75539,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -72754,7 +75566,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -73341,6 +76154,71 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA36-C01",
+       "KA36-C02"
+      ]
+     },
+     "FPR_2031": 8.35
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 4.43
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.91
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.09
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.12
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.454461
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.351798
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.442357
     }
    }
   },
@@ -74503,7 +77381,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.118177,
@@ -74525,7 +77404,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -74551,7 +77431,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -75227,6 +78108,74 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 19.81
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.29
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.4
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.41
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA37-D01"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 8.74
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.46
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 4.39
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.06
     }
    }
   },
@@ -76412,7 +79361,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.118767,
@@ -76434,7 +79384,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -76460,7 +79411,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -76957,6 +79909,86 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 43.63
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA38-P1-D02"
+      ]
+     },
+     "FPR_2031": 20.28
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 18.5
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 16.23
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 17.02
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA38-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA38-C01"
+      ]
+     },
+     "FPR_2031": 7.61
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA38-P1-D01"
+      ]
+     },
+     "FPR_2031": 9.68
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.33
     }
    }
   },
@@ -78178,7 +81210,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.126846,
@@ -78200,7 +81233,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -78226,7 +81260,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -78919,6 +81954,75 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 47.62
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 22.23
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 20.19
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 17.76
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA39-D01",
+       "KA39-D02"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 19.72
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 4.15
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 5.28
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.54
     }
    }
   },
@@ -80060,7 +83164,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.143288,
@@ -80082,7 +83187,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -80108,7 +83214,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -80664,6 +83771,70 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 54.12
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 28.74
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 64.25
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 20.01
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.73
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.95
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA40-C01"
+      ]
+     },
+     "FPR_2031": 2.28
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.87
     }
    }
   },
@@ -81385,7 +84556,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      },
      "TARGET_SOW": {
       "value": null,
@@ -81407,7 +84579,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": null
      },
      "UPSIDE_2031": {
       "value": null,
@@ -81433,7 +84606,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      }
     }
    },
@@ -81902,6 +85076,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "사내 CR(현재 매출) 미입력"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Transformation / SI": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA41-P1-D01"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA41-P1-D01"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
     }
    }
   },
@@ -82623,7 +85867,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      },
      "TARGET_SOW": {
       "value": null,
@@ -82645,7 +85890,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": null
      },
      "UPSIDE_2031": {
       "value": null,
@@ -82671,7 +85917,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      }
     }
    },
@@ -83082,6 +86329,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "사내 CR(현재 매출) 미입력"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA42-C02"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA42-C01"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
     }
    }
   },
@@ -83803,7 +87120,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      },
      "TARGET_SOW": {
       "value": null,
@@ -83825,7 +87143,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": null
      },
      "UPSIDE_2031": {
       "value": null,
@@ -83851,7 +87170,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      }
     }
    },
@@ -84235,6 +87555,70 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "사내 CR(현재 매출) 미입력"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA43-C01"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Data Center / IDC": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
     }
    }
   },
@@ -85386,7 +88770,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.195077,
@@ -85408,7 +88793,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -85434,7 +88820,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -86072,6 +89459,73 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA44-C01",
+       "KA44-C02",
+       "KA44-C03",
+       "KA44-C04"
+      ]
+     },
+     "FPR_2031": 22.8
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.575395
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 14.87
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.098639
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.0
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.03288
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.170424
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.200016
     }
    }
   },
@@ -87318,7 +90772,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.195077,
@@ -87340,7 +90795,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -87366,7 +90822,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -88179,6 +91636,77 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA45-C01",
+       "KA45-C03"
+      ]
+     },
+     "FPR_2031": 74.69
+    },
+    "AI Infrastructure": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.88
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA45-C02"
+      ]
+     },
+     "FPR_2031": 48.72
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.323096
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.0
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.107698
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.55823
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.655158
     }
    }
   },
@@ -89343,7 +92871,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.164062,
@@ -89365,7 +92894,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -89391,7 +92921,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -90045,6 +93576,81 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 63.84
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA46-P1-D01"
+      ]
+     },
+     "FPR_2031": 75.85
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA46-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA46-C01",
+       "KA46-C02"
+      ]
+     },
+     "FPR_2031": 130.95
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.63
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 4.64
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.54
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.06
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.123913
     }
    }
   },
@@ -91188,7 +94794,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.154432,
@@ -91210,7 +94817,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -91236,7 +94844,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -91890,6 +95499,80 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 15.64
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA47-D01"
+      ]
+     },
+     "FPR_2031": 18.76
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA47-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA47-C01"
+      ]
+     },
+     "FPR_2031": 20.14
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.62
+    },
+    "Security": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.97
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.545052
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.185387
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.09
     }
    }
   },
@@ -93025,7 +96708,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.128753,
@@ -93047,7 +96731,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -93073,7 +96758,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -93759,6 +97445,76 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 41.39
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 19.63
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA48-C01"
+      ]
+     },
+     "FPR_2031": 40.95
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 24.24
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 24.81
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.05
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.95
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.11
     }
    }
   },
@@ -94927,7 +98683,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.152999,
@@ -94949,7 +98706,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -94975,7 +98733,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -95511,6 +99270,80 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 41.02
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA49-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA49-C01"
+      ]
+     },
+     "FPR_2031": 49.77
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 53.01
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.98
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 7.15
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.46
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.48433
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 2.86
     }
    }
   },
@@ -96234,7 +100067,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      },
      "TARGET_SOW": {
       "value": null,
@@ -96256,7 +100090,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": null
      },
      "UPSIDE_2031": {
       "value": null,
@@ -96282,7 +100117,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": null
      }
     }
    },
@@ -96787,6 +100623,80 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "사내 CR(현재 매출) 미입력"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Infrastructure": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA50-P1-D01"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "Data Center / IDC": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "DEMAND_SIGNAL",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA50-P1-D01"
+      ],
+      "INCUMBENT_OBSERVED": [
+       "KA50-C01"
+      ]
+     },
+     "FPR_2031": null
+    },
+    "Cloud": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "Security": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "AI Transformation / SI": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "SI / Managed Services": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
+    },
+    "기타": {
+     "tier": "UNVERIFIED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": null
     }
    }
   },
@@ -97922,7 +101832,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.117399,
@@ -97944,7 +101855,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -97970,7 +101882,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -98349,6 +102262,82 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA51-C02"
+      ]
+     },
+     "FPR_2031": 28.98
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 13.77
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 12.27
+    },
+    "Cloud": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA51-C01"
+      ]
+     },
+     "FPR_2031": 10.94
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE"
+     ],
+     "observation_ids": {
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 14.84
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 5.06
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 6.41
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.54
     }
    }
   },
@@ -99498,7 +103487,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.116575,
@@ -99520,7 +103510,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -99546,7 +103537,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -100277,6 +104269,81 @@
     "2031|TARGET_SOW": {
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
+    }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 19.35
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 9.33
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.19
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.38
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "DEMAND_SIGNAL"
+     ],
+     "observation_ids": {
+      "DEMAND_SIGNAL": [
+       "KA52-D01"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 11.47
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 3.38
+    },
+    "SI / Managed Services": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA52-C01",
+       "KA52-C02"
+      ]
+     },
+     "FPR_2031": 4.27
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.02
     }
    }
   },
@@ -101412,7 +105479,8 @@
       "notes": [
        "경영진 의사결정 필요(시나리오 목표)"
       ],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "TARGET_SOW": {
       "value": 0.129778,
@@ -101434,7 +105502,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "%"
+      "unit": "%",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      },
      "UPSIDE_2031": {
       "value": null,
@@ -101460,7 +105529,8 @@
       "evidence_ids": [],
       "assumption_ids": [],
       "notes": [],
-      "unit": "억원"
+      "unit": "억원",
+      "target_source": "SCENARIO_FPR_ATTAINMENT"
      }
     }
    },
@@ -102070,6 +106140,74 @@
      "class": "INTERNAL_REQUIRED",
      "reason": "Target이 시나리오 값 — 경영진 목표 입력 필요"
     }
+   },
+   "area_evidence": {
+    "Connectivity": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 15.08
+    },
+    "AI Infrastructure": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 7.06
+    },
+    "Data Center / IDC": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 14.93
+    },
+    "Cloud": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 8.79
+    },
+    "Security": {
+     "tier": "EVIDENCE_BASED",
+     "value_basis": "ACCOUNT_SPECIFIC_SHARE",
+     "evidence_types": [
+      "ACCOUNT_SPECIFIC_SHARE",
+      "INCUMBENT_OBSERVED"
+     ],
+     "observation_ids": {
+      "INCUMBENT_OBSERVED": [
+       "KA53-C01"
+      ],
+      "ACCOUNT_SPECIFIC_SHARE": [
+       "KISA_SECURITY_RATIO"
+      ]
+     },
+     "FPR_2031": 8.0
+    },
+    "AI Transformation / SI": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.11
+    },
+    "SI / Managed Services": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 1.08
+    },
+    "기타": {
+     "tier": "MODEL_ESTIMATED",
+     "value_basis": "MODEL_ALLOCATED",
+     "evidence_types": [],
+     "observation_ids": {},
+     "FPR_2031": 0.769602
+    }
    }
   }
  ],
@@ -102079,7 +106217,7 @@
     "TS": 113542.25,
     "RAW": 29950.11,
     "FPR": 8199.81,
-    "TARGET": 0.0,
+    "TARGET": null,
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
@@ -102090,13 +106228,16 @@
      "KA08",
      "KA45",
      "KA46"
-    ]
+    ],
+    "TARGET_scenario": 0.0,
+    "n_target_approved": 0,
+    "n_target_scenario": 0
    },
    "2031_low": {
     "TS": 132795.94,
     "RAW": 43395.55,
     "FPR": 11998.53,
-    "TARGET": 0.0,
+    "TARGET": null,
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
@@ -102107,13 +106248,16 @@
      "KA08",
      "KA45",
      "KA46"
-    ]
+    ],
+    "TARGET_scenario": 0.0,
+    "n_target_approved": 0,
+    "n_target_scenario": 0
    },
    "2031_base": {
     "TS": 170615.49,
     "RAW": 59328.4,
     "FPR": 16168.26,
-    "TARGET": 8084.13,
+    "TARGET": null,
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
@@ -102124,13 +106268,16 @@
      "KA08",
      "KA45",
      "KA46"
-    ]
+    ],
+    "TARGET_scenario": 8084.13,
+    "n_target_approved": 0,
+    "n_target_scenario": 43
    },
    "2031_high": {
     "TS": 215030.59,
     "RAW": 79081.71,
     "FPR": 21367.81,
-    "TARGET": 0.0,
+    "TARGET": null,
     "n_ts": 42,
     "n_raw": 43,
     "n_fpr": 43,
@@ -102141,7 +106288,10 @@
      "KA08",
      "KA45",
      "KA46"
-    ]
+    ],
+    "TARGET_scenario": 0.0,
+    "n_target_approved": 0,
+    "n_target_scenario": 0
    }
   },
   "by_segment": {
@@ -102672,7 +106822,86 @@
    ],
    "caveats": "고객별 기존 회선 점유율 미확인(내부 데이터 필요)",
    "priority_score": 73.3,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 43,
+    "n_accounts_signal": 1,
+    "n_accounts_incumbent_obs": 18,
+    "n_accounts_specific_share": 2,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 2015.03,
+     "MODEL_ESTIMATED": 2848.14,
+     "UNVERIFIED": 144.14
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA01",
+      "KA02",
+      "KA03",
+      "KA05",
+      "KA12",
+      "KA14",
+      "KA16",
+      "KA17",
+      "KA18",
+      "KA19",
+      "KA22",
+      "KA23",
+      "KA24",
+      "KA30",
+      "KA32",
+      "KA33",
+      "KA36",
+      "KA44",
+      "KA51"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA09",
+      "KA10",
+      "KA11",
+      "KA15",
+      "KA20",
+      "KA21",
+      "KA25",
+      "KA26",
+      "KA27",
+      "KA29",
+      "KA31",
+      "KA34",
+      "KA35",
+      "KA37",
+      "KA39",
+      "KA47",
+      "KA48",
+      "KA49",
+      "KA52",
+      "KA53"
+     ],
+     "UNVERIFIED": [
+      "KA04",
+      "KA13",
+      "KA38",
+      "KA40"
+     ]
+    },
+    "evidence_share": 0.402417,
+    "evidence_level": "PARTIAL",
+    "signals": [
+     {
+      "account_id": "KA01",
+      "signal_id": "KA01-D02",
+      "type": "OVERSEAS_EXPANSION",
+      "description": "인도네시아 자카르타 AI 데이터센터(LG 시나르마스 통해 KMG와 계약, 수전 30MW, 향후 220MW 확장 계획) 구축 사업 약 1,000억원, 2026년 말 완공 목표. 고객 DC 구축(DBO) 매출이며 LG CNS 자체 IT 소비 아님",
+      "period": "2025-2026",
+      "evidence_ids": [
+       "KA01-E09"
+      ]
+     }
+    ],
+    "assumption_dependency": 0.139811,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "HYPOTHESIS"
+   }
   },
   {
    "area": "AI Infrastructure",
@@ -102735,7 +106964,232 @@
    ],
    "caveats": "GPU 가격·공급 변동성, 수요 실현 시점 불확실",
    "priority_score": 63.4,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 40,
+    "n_accounts_signal": 9,
+    "n_accounts_incumbent_obs": 2,
+    "n_accounts_specific_share": 1,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 1449.39,
+     "MODEL_ESTIMATED": 1799.13,
+     "UNVERIFIED": 177.48
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA01",
+      "KA03",
+      "KA09",
+      "KA10",
+      "KA14",
+      "KA25",
+      "KA38",
+      "KA47",
+      "KA49"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA11",
+      "KA12",
+      "KA15",
+      "KA16",
+      "KA17",
+      "KA18",
+      "KA19",
+      "KA20",
+      "KA21",
+      "KA22",
+      "KA23",
+      "KA26",
+      "KA27",
+      "KA29",
+      "KA30",
+      "KA31",
+      "KA33",
+      "KA34",
+      "KA35",
+      "KA37",
+      "KA39",
+      "KA44",
+      "KA48",
+      "KA51",
+      "KA52",
+      "KA53"
+     ],
+     "UNVERIFIED": [
+      "KA02",
+      "KA04",
+      "KA05",
+      "KA13",
+      "KA24",
+      "KA36",
+      "KA40"
+     ]
+    },
+    "evidence_share": 0.423055,
+    "evidence_level": "PARTIAL",
+    "signals": [
+     {
+      "account_id": "KA01",
+      "signal_id": "KA01-D01",
+      "type": "DC_BUILD",
+      "description": "부산 'AI 박스 캠퍼스': 컨테이너형 AI 데이터센터(GPU 576장, 1.2MW급) 'AI 박스' 50개 집적 계획(2026년 3월 발표). 투자금액·일정 미공개",
+      "period": "2026-",
+      "evidence_ids": [
+       "KA01-E08"
+      ]
+     },
+     {
+      "account_id": "KA01",
+      "signal_id": "KA01-D03",
+      "type": "AI_INVESTMENT",
+      "description": "2026년 2분기 실적발표: 신규 AI 플랫폼·차세대 기술 R&D·피지컬 AI·AI 인재 투자 확대로 영업이익률 8.4%(-1.2%p). 상반기 1조원 이상 대형 DBO 수주(삼송·죽전 하이퍼스케일 AI DC 등). 2026 CAPEX 금액 미공개",
+      "period": "2026",
+      "evidence_ids": [
+       "KA01-E09",
+       "KA01-E10"
+      ]
+     },
+     {
+      "account_id": "KA03",
+      "signal_id": "KA03-D04",
+      "type": "DC_BUILD",
+      "description": "KB 통합IT센터(김포 한강신도시) 2019년 7월 준공, 연면적 40,236㎡, 그룹 계열사 IT 인프라 통합. 신규 DC 계획은 미발견. 총투자액 미확인(2016년 계획 공사비 1800여억원).",
+      "period": "2019(완료)",
+      "evidence_ids": [
+       "KA03-E21"
+      ]
+     },
+     {
+      "account_id": "KA09",
+      "signal_id": "KA09-D01",
+      "type": "AI_INVESTMENT",
+      "description": "별도 유형자산 취득 FY2024 1,977억 → FY2025 2,204억(+11.5%), 연결 3,796억 → 4,792억(+26.2%). AI/GPU·DC 투자 구체 계획(안산 DC 증설, AI DC)은 이번 세션 검색 한도로 미확인",
+      "period": "2024-2025",
+      "evidence_ids": [
+       "KA09-E03",
+       "KA09-E04"
+      ]
+     },
+     {
+      "account_id": "KA10",
+      "signal_id": "KA10-D01",
+      "type": "AI_INVESTMENT",
+      "description": "DART 비유동자산취득결정 공시 3건(2026-03-31, 2026-06-25, 2026-07-14) — GPU/DC 설비 취득으로 추정되나 대상·금액 본문 미확인",
+      "period": "2026",
+      "evidence_ids": [
+       "KA10-E01"
+      ]
+     },
+     {
+      "account_id": "KA10",
+      "signal_id": "KA10-D02",
+      "type": "AI_INVESTMENT",
+      "description": "KISA 정보기술부문 투자 FY2023 5,201억 → FY2024 약 6,529억(DERIVED). 각 세종 확장·GPU 투자·소버린 AI 사업계획 금액은 검색 한도로 미확인",
+      "period": "2023-2024",
+      "evidence_ids": [
+       "KA10-E02",
+       "KA10-E03"
+      ]
+     },
+     {
+      "account_id": "KA14",
+      "signal_id": "KA14-D01",
+      "type": "AI_INVESTMENT",
+      "description": "2031년까지 총 10조원 투자(AI 인프라 5조, M&A 4조, AX·AI 서비스/플랫폼 1조). KKR 유치금 약 1.2조원 활용",
+      "period": "2026-2031",
+      "evidence_ids": [
+       "KA14-E08"
+      ]
+     },
+     {
+      "account_id": "KA14",
+      "signal_id": "KA14-D02",
+      "type": "DC_BUILD",
+      "description": "AI 인프라 110MW→230MW(2029)→800MW 이상(2031). 구미 AI DC 60MW 2029-03 가동(CAPEX형), 동탄 DC 서관 GPU 전 층 2027 가동 예정",
+      "period": "2026-2031",
+      "evidence_ids": [
+       "KA14-E07",
+       "KA14-E10"
+      ]
+     },
+     {
+      "account_id": "KA14",
+      "signal_id": "KA14-D03",
+      "type": "DC_BUILD",
+      "description": "해남 국가AI컴퓨팅센터(삼성SDS 컨소시엄, 출자 4000억원: 공공 1160억/민간 2840억, GPU 1만5000장, 2028 가동). 지분투자형",
+      "period": "2026-2028",
+      "evidence_ids": [
+       "KA14-E09"
+      ]
+     },
+     {
+      "account_id": "KA25",
+      "signal_id": "KA25-D03",
+      "type": "AI_INVESTMENT",
+      "description": "전방위 AI 경영 강화(투자·보안 영역) 보도. 금액 미확인",
+      "period": "2026",
+      "evidence_ids": [
+       "KA25-E14"
+      ]
+     },
+     {
+      "account_id": "KA28",
+      "signal_id": "KA28-P1-D01",
+      "type": "DC_BUILD",
+      "description": "2032년까지 약 10조원 투자, 수전 약 1.4GW·IT 1GW DC 운영 목표. 2026-02 IDC 2본부 신설. 파이프라인: 가산(26MW IT, 가동), 시화 40MW(DCI·현대건설), 의정부 100MW(2030~), 부산 장림, 구로(마누스), 안산 성곡",
+      "period": "~2032 (다년 누적)",
+      "evidence_ids": [
+       "KA28-P1-E06",
+       "KA28-P1-E08"
+      ]
+     },
+     {
+      "account_id": "KA38",
+      "signal_id": "KA38-P1-D02",
+      "type": "AI_INVESTMENT",
+      "description": "온프레미스 생성형 AI 인프라·클라우드 네이티브 환경 구축 — 250억원(VAT포함), 11개월",
+      "period": "2026-2027",
+      "evidence_ids": [
+       "KA38-P1-E02"
+      ]
+     },
+     {
+      "account_id": "KA47",
+      "signal_id": "KA47-D01",
+      "type": "DC_BUILD",
+      "description": "연결 유형자산 취득 FY2024 2,104억 → FY2025 458억: 대형 설비(IDC 등) 투자가 FY2024에 집중된 것으로 보임. 별도 556억 → 187억. 구체 프로젝트 미확인",
+      "period": "2024-2025",
+      "evidence_ids": [
+       "KA47-E03",
+       "KA47-E04"
+      ]
+     },
+     {
+      "account_id": "KA49",
+      "signal_id": "KA49-P1-D01",
+      "type": "AI_INVESTMENT",
+      "description": "정보통신산업진흥원 AI컴퓨팅자원 활용기반 강화사업(GPU 확보·구축·운용지원) 협약, 총협약금액 1조 100억원",
+      "period": "2025-08-01~2030-12-31",
+      "evidence_ids": [
+       "KA49-P1-E04"
+      ]
+     },
+     {
+      "account_id": "KA50",
+      "signal_id": "KA50-P1-D01",
+      "type": "DC_BUILD",
+      "description": "인천 도화동 최대 80MW 데이터센터 신축. 2023-04 건축허가, 2026-10 착공 예정 보도(2026-08 기사). 특고압선 약 4.7km 매설 예정. 주민 반대(전자파·소음)로 민관협의체 운영 중 — 착공 지연 리스크",
+      "period": "착공 2026-10(예정)~준공 미확인",
+      "evidence_ids": [
+       "KA50-P1-E02",
+       "KA50-P1-E03"
+      ]
+     }
+    ],
+    "assumption_dependency": 0.739264,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "HYPOTHESIS"
+   }
   },
   {
    "area": "Data Center / IDC",
@@ -102800,7 +107254,149 @@
    ],
    "caveats": "하이퍼스케일러 수요는 자가 구축 전환 리스크가 크고 TS 정의가 다름(국내 투자 기준)",
    "priority_score": 63.3,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 42,
+    "n_accounts_signal": 4,
+    "n_accounts_incumbent_obs": 7,
+    "n_accounts_specific_share": 1,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 1724.04,
+     "MODEL_ESTIMATED": 2127.65,
+     "UNVERIFIED": 249.25
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA01",
+      "KA03",
+      "KA09",
+      "KA10",
+      "KA13",
+      "KA14",
+      "KA47",
+      "KA48"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA11",
+      "KA12",
+      "KA15",
+      "KA16",
+      "KA17",
+      "KA18",
+      "KA19",
+      "KA20",
+      "KA21",
+      "KA22",
+      "KA23",
+      "KA25",
+      "KA26",
+      "KA27",
+      "KA29",
+      "KA30",
+      "KA31",
+      "KA33",
+      "KA34",
+      "KA35",
+      "KA37",
+      "KA39",
+      "KA44",
+      "KA49",
+      "KA51",
+      "KA52",
+      "KA53"
+     ],
+     "UNVERIFIED": [
+      "KA02",
+      "KA04",
+      "KA05",
+      "KA24",
+      "KA36",
+      "KA38",
+      "KA40"
+     ]
+    },
+    "evidence_share": 0.420402,
+    "evidence_level": "PARTIAL",
+    "signals": [
+     {
+      "account_id": "KA01",
+      "signal_id": "KA01-D01",
+      "type": "DC_BUILD",
+      "description": "부산 'AI 박스 캠퍼스': 컨테이너형 AI 데이터센터(GPU 576장, 1.2MW급) 'AI 박스' 50개 집적 계획(2026년 3월 발표). 투자금액·일정 미공개",
+      "period": "2026-",
+      "evidence_ids": [
+       "KA01-E08"
+      ]
+     },
+     {
+      "account_id": "KA03",
+      "signal_id": "KA03-D04",
+      "type": "DC_BUILD",
+      "description": "KB 통합IT센터(김포 한강신도시) 2019년 7월 준공, 연면적 40,236㎡, 그룹 계열사 IT 인프라 통합. 신규 DC 계획은 미발견. 총투자액 미확인(2016년 계획 공사비 1800여억원).",
+      "period": "2019(완료)",
+      "evidence_ids": [
+       "KA03-E21"
+      ]
+     },
+     {
+      "account_id": "KA14",
+      "signal_id": "KA14-D02",
+      "type": "DC_BUILD",
+      "description": "AI 인프라 110MW→230MW(2029)→800MW 이상(2031). 구미 AI DC 60MW 2029-03 가동(CAPEX형), 동탄 DC 서관 GPU 전 층 2027 가동 예정",
+      "period": "2026-2031",
+      "evidence_ids": [
+       "KA14-E07",
+       "KA14-E10"
+      ]
+     },
+     {
+      "account_id": "KA14",
+      "signal_id": "KA14-D03",
+      "type": "DC_BUILD",
+      "description": "해남 국가AI컴퓨팅센터(삼성SDS 컨소시엄, 출자 4000억원: 공공 1160억/민간 2840억, GPU 1만5000장, 2028 가동). 지분투자형",
+      "period": "2026-2028",
+      "evidence_ids": [
+       "KA14-E09"
+      ]
+     },
+     {
+      "account_id": "KA28",
+      "signal_id": "KA28-P1-D01",
+      "type": "DC_BUILD",
+      "description": "2032년까지 약 10조원 투자, 수전 약 1.4GW·IT 1GW DC 운영 목표. 2026-02 IDC 2본부 신설. 파이프라인: 가산(26MW IT, 가동), 시화 40MW(DCI·현대건설), 의정부 100MW(2030~), 부산 장림, 구로(마누스), 안산 성곡",
+      "period": "~2032 (다년 누적)",
+      "evidence_ids": [
+       "KA28-P1-E06",
+       "KA28-P1-E08"
+      ]
+     },
+     {
+      "account_id": "KA47",
+      "signal_id": "KA47-D01",
+      "type": "DC_BUILD",
+      "description": "연결 유형자산 취득 FY2024 2,104억 → FY2025 458억: 대형 설비(IDC 등) 투자가 FY2024에 집중된 것으로 보임. 별도 556억 → 187억. 구체 프로젝트 미확인",
+      "period": "2024-2025",
+      "evidence_ids": [
+       "KA47-E03",
+       "KA47-E04"
+      ]
+     },
+     {
+      "account_id": "KA50",
+      "signal_id": "KA50-P1-D01",
+      "type": "DC_BUILD",
+      "description": "인천 도화동 최대 80MW 데이터센터 신축. 2023-04 건축허가, 2026-10 착공 예정 보도(2026-08 기사). 특고압선 약 4.7km 매설 예정. 주민 반대(전자파·소음)로 민관협의체 운영 중 — 착공 지연 리스크",
+      "period": "착공 2026-10(예정)~준공 미확인",
+      "evidence_ids": [
+       "KA50-P1-E02",
+       "KA50-P1-E03"
+      ]
+     }
+    ],
+    "assumption_dependency": 0.160171,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "HYPOTHESIS"
+   }
   },
   {
    "area": "Cloud",
@@ -102861,7 +107457,85 @@
    ],
    "caveats": "재판매 마진 낮음 — 매출 규모 대비 이익 기여 검토 필요",
    "priority_score": 47.2,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 40,
+    "n_accounts_signal": 1,
+    "n_accounts_incumbent_obs": 4,
+    "n_accounts_specific_share": 0,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 666.38,
+     "MODEL_ESTIMATED": 751.72,
+     "UNVERIFIED": 162.97
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA01",
+      "KA15",
+      "KA26",
+      "KA29",
+      "KA51"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA03",
+      "KA09",
+      "KA10",
+      "KA11",
+      "KA12",
+      "KA14",
+      "KA16",
+      "KA17",
+      "KA18",
+      "KA19",
+      "KA20",
+      "KA21",
+      "KA22",
+      "KA23",
+      "KA25",
+      "KA27",
+      "KA30",
+      "KA31",
+      "KA33",
+      "KA34",
+      "KA35",
+      "KA37",
+      "KA39",
+      "KA44",
+      "KA47",
+      "KA48",
+      "KA49",
+      "KA52",
+      "KA53"
+     ],
+     "UNVERIFIED": [
+      "KA02",
+      "KA04",
+      "KA05",
+      "KA13",
+      "KA24",
+      "KA36",
+      "KA38",
+      "KA40"
+     ]
+    },
+    "evidence_share": 0.421472,
+    "evidence_level": "PARTIAL",
+    "signals": [
+     {
+      "account_id": "KA26",
+      "signal_id": "KA26-D03",
+      "type": "CLOUD_MIGRATION",
+      "description": "정보보호 투자 항목에 클라우드 보호 플랫폼·클라우드 기반 사외 접속 보안 포함 → 클라우드 사용 확대 시사(금액 미분리)",
+      "period": "2024",
+      "evidence_ids": [
+       "KA26-E09"
+      ]
+     }
+    ],
+    "assumption_dependency": 0.773008,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "HYPOTHESIS"
+   }
   },
   {
    "area": "Security",
@@ -102923,7 +107597,231 @@
    ],
    "caveats": "고객 보안 Spending 규모만으로 M&A 결론 불가 — 대상 기업 밸류에이션·통합 리스크 미검토",
    "priority_score": 39.6,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 39,
+    "n_accounts_signal": 12,
+    "n_accounts_incumbent_obs": 3,
+    "n_accounts_specific_share": 25,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 980.85,
+     "MODEL_ESTIMATED": 48.16,
+     "UNVERIFIED": 158.4
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA01",
+      "KA03",
+      "KA04",
+      "KA09",
+      "KA10",
+      "KA11",
+      "KA12",
+      "KA14",
+      "KA16",
+      "KA18",
+      "KA19",
+      "KA21",
+      "KA22",
+      "KA25",
+      "KA26",
+      "KA27",
+      "KA29",
+      "KA31",
+      "KA33",
+      "KA37",
+      "KA39",
+      "KA48",
+      "KA49",
+      "KA51",
+      "KA52",
+      "KA53"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA15",
+      "KA17",
+      "KA20",
+      "KA23",
+      "KA30",
+      "KA34",
+      "KA35",
+      "KA47"
+     ],
+     "UNVERIFIED": [
+      "KA02",
+      "KA05",
+      "KA13",
+      "KA24",
+      "KA36",
+      "KA38",
+      "KA40"
+     ]
+    },
+    "evidence_share": 0.826045,
+    "evidence_level": "SUFFICIENT",
+    "signals": [
+     {
+      "account_id": "KA03",
+      "signal_id": "KA03-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026년 정보보호 예산 편성 860억7500만원, 2027년 1000억원 이상으로 증액 계획(그룹 정보보호 관리체계 재정립). 단 2026 상반기 집행률 27%로 저조, 3년간 집행률 60% 미만.",
+      "period": "2027",
+      "evidence_ids": [
+       "KA03-E17",
+       "KA03-E18"
+      ]
+     },
+     {
+      "account_id": "KA16",
+      "signal_id": "KA16-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "정보보호 투자 FY2025 92억(전년 대비 10%+ 증가, 보도). 보안 투자 상향 추세",
+      "period": "2025",
+      "evidence_ids": [
+       "KA16-E30"
+      ]
+     },
+     {
+      "account_id": "KA18",
+      "signal_id": "KA18-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026년 정보보호 예산 405억원(기사 제목 '신한·우리, 보안 예산 줄였다'). 2027년부터 금융권 정보보호 공시 의무화 예정.",
+      "period": "2026",
+      "evidence_ids": [
+       "KA18-E11",
+       "KA18-E08"
+      ]
+     },
+     {
+      "account_id": "KA19",
+      "signal_id": "KA19-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026 정보보호 예산 감액 보도('신한·우리, 보안 예산 줄였다'), IT 예산 대비 9.9%. 기사 부제상 AI·클라우드 환경 대응 강화 언급(세부 금액 미확인).",
+      "period": "2026",
+      "evidence_ids": [
+       "KA19-E10",
+       "KA19-E09"
+      ]
+     },
+     {
+      "account_id": "KA22",
+      "signal_id": "KA22-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026년 KISA 정보보호 자율공시 첫 참여 보도(미확정), 2027년 금융권 의무공시 예정. 2026 IT 예산 대비 정보보호 예산 비중 12.2%로 5대 은행 최고.",
+      "period": "2026-2027",
+      "evidence_ids": [
+       "KA22-E07",
+       "KA22-E10"
+      ]
+     },
+     {
+      "account_id": "KA25",
+      "signal_id": "KA25-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026년 정보보호 예산 전년 대비 26% 증액(자체공개, 예산 기준)",
+      "period": "2026",
+      "evidence_ids": [
+       "KA25-E11"
+      ]
+     },
+     {
+      "account_id": "KA25",
+      "signal_id": "KA25-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원이 증권사에 IT 보안체계 전면 재점검(12개 항목) 요구 → 보안·외부노출 IT자산 점검 투자 압력",
+      "period": "2026-2027",
+      "evidence_ids": [
+       "KA25-E13"
+      ]
+     },
+     {
+      "account_id": "KA26",
+      "signal_id": "KA26-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "정보보호 투자 FY2024 167억→FY2025 187.6억; IT 투자(파생) 1,261억→약 1,770억. 클라우드 보호 플랫폼·클라우드 기반 사외접속 보안 투자 언급",
+      "period": "2025",
+      "evidence_ids": [
+       "KA26-E10",
+       "KA26-E09"
+      ]
+     },
+     {
+      "account_id": "KA26",
+      "signal_id": "KA26-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구(12개 항목)",
+      "period": "2026-2027",
+      "evidence_ids": [
+       "KA26-E12"
+      ]
+     },
+     {
+      "account_id": "KA29",
+      "signal_id": "KA29-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2025년 말 개인정보 유출 사고 이후 보안 투자 확대 압력(FY2025 공시는 사고 이전 투자분)",
+      "period": "2026-",
+      "evidence_ids": [
+       "KA29-E02"
+      ]
+     },
+     {
+      "account_id": "KA33",
+      "signal_id": "KA33-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2025-12 대고객 서비스·커넥티드카 서비스 대상 ISMS 인증 취득, CISO/CPO를 정보보안팀장 겸직으로 전환. 정보보호 투자 FY2023 6.8억→FY2025 9.57억(보도).",
+      "period": "2025-",
+      "evidence_ids": [
+       "KA33-E51",
+       "KA33-E53"
+      ]
+     },
+     {
+      "account_id": "KA37",
+      "signal_id": "KA37-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구(12개 항목)",
+      "period": "2026-2027",
+      "evidence_ids": [
+       "KA37-E12"
+      ]
+     },
+     {
+      "account_id": "KA39",
+      "signal_id": "KA39-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "정보보호 투자 FY2024 약 100억 → FY2025 124억(대폭 증액 보도)",
+      "period": "2025",
+      "evidence_ids": [
+       "KA39-E10",
+       "KA39-E11"
+      ]
+     },
+     {
+      "account_id": "KA39",
+      "signal_id": "KA39-D02",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구",
+      "period": "2026-2027",
+      "evidence_ids": [
+       "KA39-E12"
+      ]
+     },
+     {
+      "account_id": "KA52",
+      "signal_id": "KA52-D01",
+      "type": "REGULATORY_SECURITY",
+      "description": "2026-10 금감원 증권사 IT 보안체계 전면 재점검 요구",
+      "period": "2026-2027",
+      "evidence_ids": [
+       "KA52-E04"
+      ]
+     }
+    ],
+    "assumption_dependency": 0.600943,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "RECOMMENDATION"
+   }
   },
   {
    "area": "AI Transformation / SI",
@@ -102980,7 +107878,107 @@
    "evidence_refs": [],
    "caveats": "캡티브 SI 구조로 접근률 낮음(C-ADDR 20~35%)",
    "priority_score": 24.9,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 35,
+    "n_accounts_signal": 2,
+    "n_accounts_incumbent_obs": 11,
+    "n_accounts_specific_share": 0,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 47.09,
+     "MODEL_ESTIMATED": 212.37,
+     "UNVERIFIED": 59.36
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA01",
+      "KA03",
+      "KA04",
+      "KA11",
+      "KA12",
+      "KA13",
+      "KA14",
+      "KA20",
+      "KA31",
+      "KA34",
+      "KA38"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA09",
+      "KA10",
+      "KA15",
+      "KA16",
+      "KA17",
+      "KA18",
+      "KA19",
+      "KA21",
+      "KA22",
+      "KA23",
+      "KA25",
+      "KA26",
+      "KA27",
+      "KA29",
+      "KA30",
+      "KA33",
+      "KA35",
+      "KA37",
+      "KA39",
+      "KA44",
+      "KA47",
+      "KA48",
+      "KA49",
+      "KA51",
+      "KA52",
+      "KA53"
+     ],
+     "UNVERIFIED": [
+      "KA02",
+      "KA05",
+      "KA24",
+      "KA36",
+      "KA40"
+     ]
+    },
+    "evidence_share": 0.147704,
+    "evidence_level": "INSUFFICIENT",
+    "signals": [
+     {
+      "account_id": "KA03",
+      "signal_id": "KA03-D02",
+      "type": "NEXT_GEN_CORE",
+      "description": "코어뱅킹 현대화(계정계 클라우드·탈메인프레임) — 5년 4단계 사업. 2단계 총 2704억원 규모 공고(AI 기반 코볼→자바 변환, AI로 인력 투입 감소 시 사업비 변경 조항).",
+      "period": "2026-(기간 미확인)",
+      "evidence_ids": [
+       "KA03-E19",
+       "KA03-E20"
+      ]
+     },
+     {
+      "account_id": "KA38",
+      "signal_id": "KA38-P1-D01",
+      "type": "NEXT_GEN_CORE",
+      "description": "계정계·통합단말·대내외 인터페이스·DR 인프라 최신화(Java 전환) — 사업예산 3,370억원(VAT포함), 28개월",
+      "period": "2026-2029",
+      "evidence_ids": [
+       "KA38-P1-E01"
+      ]
+     },
+     {
+      "account_id": "KA41",
+      "signal_id": "KA41-P1-D01",
+      "type": "NEXT_GEN_CORE",
+      "description": "차세대 정보시스템 개편(3500억원대), 2026-06 추진단 출범, 2027 착수·2029 하반기 오픈",
+      "period": "2027-2029",
+      "evidence_ids": [
+       "KA41-P1-E01",
+       "KA41-P1-E02"
+      ]
+     }
+    ],
+    "assumption_dependency": 0.711311,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "HYPOTHESIS"
+   }
   },
   {
    "area": "SI / Managed Services",
@@ -103037,7 +108035,107 @@
    "evidence_refs": [],
    "caveats": "",
    "priority_score": 22.2,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 32,
+    "n_accounts_signal": 2,
+    "n_accounts_incumbent_obs": 16,
+    "n_accounts_specific_share": 0,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 150.29,
+     "MODEL_ESTIMATED": 127.69,
+     "UNVERIFIED": 4.25
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA02",
+      "KA03",
+      "KA05",
+      "KA16",
+      "KA17",
+      "KA18",
+      "KA19",
+      "KA21",
+      "KA22",
+      "KA23",
+      "KA24",
+      "KA27",
+      "KA33",
+      "KA35",
+      "KA38",
+      "KA40",
+      "KA52"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA01",
+      "KA09",
+      "KA10",
+      "KA11",
+      "KA12",
+      "KA14",
+      "KA15",
+      "KA20",
+      "KA25",
+      "KA26",
+      "KA29",
+      "KA30",
+      "KA31",
+      "KA34",
+      "KA37",
+      "KA39",
+      "KA44",
+      "KA47",
+      "KA48",
+      "KA49",
+      "KA51",
+      "KA53"
+     ],
+     "UNVERIFIED": [
+      "KA04",
+      "KA13",
+      "KA36"
+     ]
+    },
+    "evidence_share": 0.532523,
+    "evidence_level": "SUFFICIENT",
+    "signals": [
+     {
+      "account_id": "KA03",
+      "signal_id": "KA03-D02",
+      "type": "NEXT_GEN_CORE",
+      "description": "코어뱅킹 현대화(계정계 클라우드·탈메인프레임) — 5년 4단계 사업. 2단계 총 2704억원 규모 공고(AI 기반 코볼→자바 변환, AI로 인력 투입 감소 시 사업비 변경 조항).",
+      "period": "2026-(기간 미확인)",
+      "evidence_ids": [
+       "KA03-E19",
+       "KA03-E20"
+      ]
+     },
+     {
+      "account_id": "KA38",
+      "signal_id": "KA38-P1-D01",
+      "type": "NEXT_GEN_CORE",
+      "description": "계정계·통합단말·대내외 인터페이스·DR 인프라 최신화(Java 전환) — 사업예산 3,370억원(VAT포함), 28개월",
+      "period": "2026-2029",
+      "evidence_ids": [
+       "KA38-P1-E01"
+      ]
+     },
+     {
+      "account_id": "KA41",
+      "signal_id": "KA41-P1-D01",
+      "type": "NEXT_GEN_CORE",
+      "description": "차세대 정보시스템 개편(3500억원대), 2026-06 추진단 출범, 2027 착수·2029 하반기 오픈",
+      "period": "2027-2029",
+      "evidence_ids": [
+       "KA41-P1-E01",
+       "KA41-P1-E02"
+      ]
+     }
+    ],
+    "assumption_dependency": -0.588116,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "RECOMMENDATION"
+   }
   },
   {
    "area": "기타",
@@ -103090,7 +108188,74 @@
    "evidence_refs": [],
    "caveats": "",
    "priority_score": 20.3,
-   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
+   "score_formula": "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도",
+   "evidence": {
+    "n_accounts_model": 24,
+    "n_accounts_signal": 0,
+    "n_accounts_incumbent_obs": 1,
+    "n_accounts_specific_share": 0,
+    "fpr2031_by_tier": {
+     "EVIDENCE_BASED": 1.82,
+     "MODEL_ESTIMATED": 235.93,
+     "UNVERIFIED": 26.75
+    },
+    "accounts_by_tier": {
+     "EVIDENCE_BASED": [
+      "KA30"
+     ],
+     "MODEL_ESTIMATED": [
+      "KA01",
+      "KA03",
+      "KA09",
+      "KA10",
+      "KA11",
+      "KA12",
+      "KA14",
+      "KA15",
+      "KA16",
+      "KA17",
+      "KA18",
+      "KA19",
+      "KA20",
+      "KA21",
+      "KA22",
+      "KA23",
+      "KA25",
+      "KA26",
+      "KA27",
+      "KA29",
+      "KA31",
+      "KA33",
+      "KA34",
+      "KA35",
+      "KA37",
+      "KA39",
+      "KA44",
+      "KA47",
+      "KA48",
+      "KA49",
+      "KA51",
+      "KA52",
+      "KA53"
+     ],
+     "UNVERIFIED": [
+      "KA02",
+      "KA04",
+      "KA05",
+      "KA13",
+      "KA24",
+      "KA36",
+      "KA38",
+      "KA40"
+     ]
+    },
+    "evidence_share": 0.006895,
+    "evidence_level": "INSUFFICIENT",
+    "signals": [],
+    "assumption_dependency": -0.382383,
+    "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+    "recommendation_mode": "HYPOTHESIS"
+   }
   }
  ],
  "issues_summary": {

@@ -1,6 +1,6 @@
 # STRATEGIC SYNTHESIS — 53 Key Account 통합 시사점 (Layer E)
 
-data_version 20261016T051757Z · 단위 억원 · 모든 합계는 근거 있는 고객 부분합
+data_version 20261016T123435Z · 단위 억원 · 모든 합계는 근거 있는 고객 부분합
 
 ## 1. 핵심 요약
 

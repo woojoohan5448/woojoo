@@ -311,7 +311,7 @@ OpportunityPool ──► CapabilityAssessment(영역 × 8 진단항목)   [stat
 | R2 AI Infra 성장의 62%가 B-ALLOC 가정 | AI 과제 과대평가 | 가정 기여분 분리, 민감도(배분 0.3~0.5) 표시 |
 | R3 CR·Target·Account Plan 모두 미입력(외부 환경) | ④⑤⑥⑧ 화면이 대부분 'INTERNAL INPUT REQUIRED' | 합성 데이터 데모 모드(명시 표기)로 화면 검증, 실데이터는 사내 환경 |
 | R4 역량 평가가 공개정보 기반 분석가 판단 | 'Gap'을 사실로 오인 | 차원별 상태 표기, 사내 역량 진단 템플릿(Excel 레이어 확장) 제안 |
-| R5 플랫폼 2개사(쿠팡·카카오)가 비교 가능 FPR_2026의 44% | 영역 집계 왜곡 | 집중도 표기, 상위 고객 제외 민감도 |
+| R5 상위 2개사 집중(비교 가능 FPR_2026의 약 45%: 쿠팡·네이버클라우드 — Phase 1 재계산으로 정정. 쿠팡·카카오는 44%) | 영역 집계 왜곡 | 집중도 표기(전략 인사이트 검증 필요사항), 상위 고객 제외 민감도 |
 | R6 IA 대개편에 따른 회귀 | 기존 기능 손실 | 값 스냅샷 테스트, 기존 컴포넌트 재사용(이동 위주) |
 | R7 번들 크기 증가(현 2.9MB) | 정적 HTML 로딩 | 차트 컴포넌트 공유, 데이터 중복 저장 금지(보간은 런타임 계산) |
 | R8 Windows·사내 실데이터 미검증(기존) | 이관 리스크 | 기존 체크리스트 유지 |
@@ -329,3 +329,10 @@ OpportunityPool ──► CapabilityAssessment(영역 × 8 진단항목)   [stat
 | **D5** | 첫 화면 | (a) **전략 인사이트(신규)** / (b) 고객별 사업기회(현행) | (a) — 단, 마지막 사용 탭 기억 기능 유지 |
 
 **승인 시 Phase 1부터 착수하며, 각 Phase 종료 시 변경 내용·검증 결과·남은 문제·다음 단계 조건을 보고한다.**
+
+---
+
+## 11. 승인 결과 및 Phase 1 반영 (2026-10-16)
+- **승인**: D1~D5 권고안 승인 + 보완조건 A(근거 수준 3분류·금액과 분리) · B(수요 신호 70건·경쟁 관찰 102건 연결 키 사전 설계, 모델 수요 vs 관측 신호 구분) · C(AI Infrastructure 가정 의존도 표시) · D(전략 점수와 근거 신뢰도 분리, 근거 불충분 시 확정 투자 권고 금지).
+- **Phase 1 결과**: `docs/vnext/PHASE1_REPORT.md` (브랜치 `vnext-phase1`). 근거 수준·가정 의존도 정의와 데이터 구조는 같은 문서 §6.
+- **§7 설계 갱신**: OpportunityPool의 `n_accounts_evidence`·`allocation_basis`는 Phase 1에서 `strategy[].evidence`(n_accounts_signal·fpr2031_by_tier·evidence_level·assumption_dependency)와 `accounts[].area_evidence`(tier·value_basis·observation_ids)로 구현됨. DemandSignal 매핑은 `config/demand_signal_map.json`.

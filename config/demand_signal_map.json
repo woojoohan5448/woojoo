@@ -1,0 +1,16 @@
+{
+ "_note": "vNext: 고객별 수요 신호(research drivers[].type) → 비용 카테고리(by_cat) 매핑. 사업영역은 model_parameters.categories[].biz_area를 따른다. 'OTHER'·EFFICIENCY·RESTRUCTURING 등 방향이 불명확한 유형은 분석가 분류 전까지 매핑하지 않는다(수요 신호로 집계하지 않음).",
+ "types": {
+  "DC_BUILD": ["DC_COLO", "AI_INFRA"],
+  "AI_INVESTMENT": ["AI_INFRA"],
+  "REGULATORY_SECURITY": ["SECURITY"],
+  "CLOUD_MIGRATION": ["CLOUD"],
+  "NEXT_GEN_CORE": ["SI_BUILD", "IT_OPS"],
+  "OVERSEAS_EXPANSION": ["CONNECTIVITY"]
+ },
+ "evidence_level_rule": {
+  "_note": "사업영역 근거 수준(표시 규칙, Phase 1). evidence_share = EVIDENCE_BASED 계정의 FPR_2031 비중. 전략 점수와 별개 지표.",
+  "SUFFICIENT": {"min_evidence_share": 0.5, "min_evidence_accounts": 5},
+  "PARTIAL": {"min_evidence_share": 0.25}
+ }
+}

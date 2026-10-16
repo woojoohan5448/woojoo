@@ -1,6 +1,6 @@
 # ENTITY RESOLUTION REPORT
 
-기준일 2026-10-16 · data_version 20261016T051757Z
+기준일 2026-10-16 · data_version 20261016T123435Z
 
 **53개 원본 고객 전원 유지.** 매핑 상태: CONFIRMED 43 · PROBABLE 6 · UNCERTAIN 4
 

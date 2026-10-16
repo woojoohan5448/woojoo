@@ -13,7 +13,7 @@ export default function QualityView({ data, onSelect }: { data: Dashboard; onSel
   return (
     <div className="space-y-4 p-4">
       <section className="card p-4">
-        <h2 className="text-[18px] font-bold">Data Quality &amp; Research Coverage</h2>
+        <h2 className="text-[18px] font-bold">데이터 신뢰도 <span className="text-[13px] font-semibold text-ink3">Data Quality &amp; Research Coverage</span></h2>
         <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
           {Object.entries(data.issues_summary).map(([k, v]) => <div key={k} className="rounded-md bg-sunk p-2"><div className="kicker">{k}</div><div className="num text-[20px] font-bold" style={{ color: k === 'ERROR' ? 'var(--err)' : k === 'WARN' ? 'var(--warn)' : 'var(--ink-2)' }}>{v}</div></div>)}
           <div className="rounded-md bg-sunk p-2"><div className="kicker">원천 사실 검증</div><div className="text-[12px] num">{Object.entries(data.meta.fact_status).map(([k, v]) => `${k} ${v}`).join(' · ')}</div></div>

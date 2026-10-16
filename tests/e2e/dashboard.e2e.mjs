@@ -8,6 +8,21 @@ const errors = []; p.on('pageerror', e => errors.push(e.message))
 const ok = (c, m) => { if (!c) { console.error('FAIL', m); process.exitCode = 1 } else console.log('PASS', m) }
 await p.goto(base, { waitUntil: 'networkidle' })
 await p.evaluate(() => localStorage.clear()); await p.reload({ waitUntil: 'networkidle' }); await p.waitForTimeout(600)
+// vNext Phase 1: first visit → 3-step onboarding, then 전략 인사이트 (Strategic Overview) is the first screen
+ok(await p.locator('[role=dialog][aria-labelledby=onb-title]').count() === 1, 'vNext: onboarding shown on first visit')
+await p.click('[role=dialog] button:has-text("다음")'); await p.waitForTimeout(150)
+ok((await p.locator('[role=dialog]').innerText()).includes('Realistical Addressable Wallet'), 'vNext: onboarding step 2 explains TS→RAW→FPR with original terms')
+await p.keyboard.press('Escape'); await p.waitForTimeout(200)
+ok(await p.locator('[role=dialog]').count() === 0, 'vNext: onboarding closes with Esc')
+ok(await p.locator('[data-testid=overview]').count() === 1, 'vNext: Strategic Overview is the first screen')
+ok((await p.locator('[data-testid=kpi-target]').innerText()).includes('INTERNAL INPUT REQUIRED'), 'vNext D1: 2031 Target KPI shows INTERNAL INPUT REQUIRED without approved targets')
+ok((await p.locator('[data-testid=kpi-coverage]').innerText()).includes('53 /'), 'vNext: analysed (53) vs valid-data accounts shown separately')
+ok(await p.locator('[data-testid=area-table] tbody tr').count() === 8, 'vNext: business-area table shows evidence level separate from score')
+// keyboard-accessible glossary tooltip
+await p.locator('button[data-term="RAW"]').first().focus(); await p.waitForTimeout(150)
+ok((await p.locator('[role=tooltip]').first().innerText()).includes('LGU+ 공략 가능 시장'), 'vNext: glossary tooltip opens on keyboard focus')
+await p.keyboard.press('Escape')
+await p.click('nav[aria-label="분석 단계"] button:has-text("고객별 사업기회")'); await p.waitForTimeout(500)
 const insp = () => p.locator('aside[aria-label="근거 및 계산 패널"]').innerText()
 ok((await insp()).includes('국민은행 · TS 2026'), 'default account KA03 inspector shows TS 2026')
 // click the 2031 FPR bar via ECharts instance-independent approach: find svg path elements of bars and click label text
@@ -39,9 +54,25 @@ ok(await p.locator('[data-testid=fpr31-decomp]').count() === 1 && main3.includes
 await p.fill('input[aria-label="고객 검색"]', '코람코'); await p.waitForTimeout(200)
 await p.locator('aside[aria-label="고객 선택"] li button').first().click(); await p.waitForTimeout(400)
 ok((await p.locator('main').innerText()).includes('RESEARCH GAP'), 'research-gap account shows RESEARCH GAP reason (no zero fill)')
-for (const tab of ['Executive Portfolio', 'Strategic Opportunity', 'Data Quality', '관리자 입력', 'Methodology']) {
-  await p.click(`nav button:has-text("${tab}")`); await p.waitForTimeout(400)
+// D1 toggle: scenario target only when explicitly requested
+await p.fill('input[aria-label="고객 검색"]', '국민은행'); await p.waitForTimeout(200)
+await p.locator('aside[aria-label="고객 선택"] li button').first().click(); await p.waitForTimeout(400)
+const tgtBefore = await p.locator('main').innerText()
+await p.check('input[aria-label="시나리오 목표 보기"]'); await p.waitForTimeout(300)
+const tgtAfter = await p.locator('main').innerText()
+ok(!tgtBefore.includes('시나리오 참고값') && tgtAfter.includes('시나리오 참고값'), 'vNext D1: scenario target appears only after explicit toggle')
+await p.uncheck('input[aria-label="시나리오 목표 보기"]'); await p.waitForTimeout(200)
+for (const tab of ['전략 인사이트', '전사 기회 분석', '전략과제 우선순위', '데이터·운영 관리']) {
+  await p.click(`nav[aria-label="분석 단계"] button:has-text("${tab}")`); await p.waitForTimeout(400)
   ok((await p.locator('main').innerText()).length > 200, `tab renders: ${tab}`)
 }
+for (const tab of ['데이터 신뢰도', '분석 기준·산식', '관리자 입력 · Excel Import']) {
+  await p.click(`nav[aria-label="데이터·운영 관리 하위 메뉴"] button:has-text("${tab}")`); await p.waitForTimeout(400)
+  ok((await p.locator('main').innerText()).length > 200, `ops sub-menu renders: ${tab}`)
+}
+await p.click(`nav[aria-label="데이터·운영 관리 하위 메뉴"] button:has-text("분석 기준·산식")`); await p.waitForTimeout(300)
+ok((await p.locator('[data-testid=framework-table] tbody tr').count()) === 10, 'vNext: Methodology lists ①~⑧ framework terms from the central glossary')
+await p.click(`nav[aria-label="데이터·운영 관리 하위 메뉴"] button:has-text("관리자 입력")`); await p.waitForTimeout(300)
+ok((await p.locator('main').innerText()).includes('템플릿'), 'vNext: admin input & Excel Import preserved under 데이터·운영 관리')
 ok(errors.length === 0, `no page errors (${errors.join('; ')})`)
 await b.close()

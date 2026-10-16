@@ -81,7 +81,7 @@ def validate_account(acc: dict) -> list[dict]:
     if csow is None:
         out.append(_issue(a, "INFO", "SOW_COMPARE_NA", "C-SOW 미확인 → Target SOW 개선 여부 확인 불가", "TARGET_SOW", 2031))
     elif tsow is not None and tsow <= csow:
-        out.append(_issue(a, "WARN", "TARGET_SOW_NOT_ABOVE", f"Target SOW {tsow:.3f} ≤ C-SOW {csow:.3f}: 목표 미달 또는 경영진 의사결정 필요", "TARGET_SOW", 2031))
+        out.append(_issue(a, "INFO", "TARGET_SOW_NOT_ABOVE", f"[목표 적정성 검토] Target SOW {tsow:.3f} ≤ C-SOW {csow:.3f} — 데이터 오류가 아니라 목표 수준 검토 사항(⑧)", "TARGET_SOW", 2031))
     # Lineage
     for yr, blk in (("2026", m26),):
         for k, rec in blk.items():

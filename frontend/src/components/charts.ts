@@ -9,7 +9,7 @@ const ROWS: MetricKey[] = ['TS', 'RAW', 'FPR', 'REV']
 const PARENT: Partial<Record<MetricKey, MetricKey>> = { RAW: 'TS', FPR: 'RAW', REV: 'FPR' }
 export const metricColor = (p: Palette, m: MetricKey) => ({ TS: p.ts, RAW: p.raw, FPR: p.fpr, REV: p.rev }[m])
 export const rowLabel = (m: MetricKey, year: 2026 | 2031) =>
-  ({ TS: 'TS  Total IT Spending', RAW: 'RAW  Addressable Wallet', FPR: 'FPR  Full Potential', REV: year === 2026 ? 'CR  Current Revenue' : 'Target Revenue' }[m])
+  ({ TS: 'TS  고객 전체 IT 지출액', RAW: 'RAW  LGU+ 공략 가능 시장', FPR: 'FPR  최대 확보 가능 매출', REV: year === 2026 ? 'CR  현재 매출' : 'Target  2031 목표 매출' }[m])
 const SHORT: Record<MetricKey, string> = { TS: 'TS', RAW: 'RAW', FPR: 'FPR', REV: 'CR│Target' }
 
 function tooltipHtml(a: Account, year: 2026 | 2031, m: MetricKey, scen: Scenario, addr: AddrCase): string {

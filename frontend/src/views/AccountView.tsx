@@ -5,12 +5,12 @@ import Inspector from '../components/Inspector'
 import { bridgeOption, categoryOption, opportunityOption, rowLabel, type Palette } from '../components/charts'
 import { ConfidenceMeter, GradeBadge, Pill, StatusBadge, Swatch } from '../components/badges'
 import { EVIDENCE_BASIS_LABEL, NA_KO, RESEARCH_STATUS_LABEL, SOURCE_LEVEL_LABEL, SEGMENT_LABEL, eok, fmtRec, missingText, naInfo, pct, signedEok } from '../lib/format'
-import { resolveMetric } from '../lib/data'
+import { isApprovedTarget, resolveMetric, targetView } from '../lib/data'
 import ProductRevenueDrilldown from '../extensions/ProductRevenueDrilldown'
 
 interface Props {
   data: Dashboard; account: Account; scen: Scenario; setScen: (s: Scenario) => void; addr: AddrCase; setAddr: (a: AddrCase) => void
-  sel: Selection; setSel: (s: Selection) => void; palette: Palette; themeKey: string; onSelectAccount: (id: string) => void
+  sel: Selection; setSel: (s: Selection) => void; palette: Palette; themeKey: string; onSelectAccount: (id: string) => void; showTgt?: boolean
 }
 
 function Seg<T extends string>({ value, options, onChange, label }: { value: T; options: { v: T; l: string }[]; onChange: (v: T) => void; label: string }) {
@@ -24,11 +24,11 @@ function Seg<T extends string>({ value, options, onChange, label }: { value: T; 
   )
 }
 
-export default function AccountView({ data, account: a, scen, setScen, addr, setAddr, sel, setSel, palette, themeKey, onSelectAccount }: Props) {
+export default function AccountView({ data, account: a, scen, setScen, addr, setAddr, sel, setSel, palette, themeKey, onSelectAccount, showTgt = false }: Props) {
   const [log, setLog] = useState(false)
   const [catYear, setCatYear] = useState<2026 | 2031>(2026)
   const [showTable, setShowTable] = useState(false)
-  const opt = useMemo(() => opportunityOption(a, scen, addr, sel, palette, log), [a, scen, addr, sel, palette, log])
+  const opt = useMemo(() => opportunityOption(a, scen, addr, sel, palette, log), [a, scen, addr, sel, palette, log, showTgt])
   const catOpt = useMemo(() => categoryOption(a, catYear, scen, addr, sel, palette), [a, catYear, scen, addr, sel, palette])
   const brOpt = useMemo(() => bridgeOption(a, scen, sel, palette), [a, scen, sel, palette])
   const m26 = a.m['2026'], b = a.m['2031'][scen]
@@ -104,13 +104,13 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
               { k: 'CSOW' as const, y: 2026 as const, l: 'C-SOW 2026', r: m26.CSOW },
               { k: 'PCR' as const, y: 2026 as const, l: 'Potential Capture Rate', r: m26.PCR },
               { k: 'UPSIDE' as const, y: 2026 as const, l: 'Upside 2026', r: m26.UPSIDE },
-              { k: 'TARGET_SOW' as const, y: 2031 as const, l: 'Target SOW 2031', r: a.m.target.TARGET_SOW },
+              { k: 'TARGET_SOW' as const, y: 2031 as const, l: 'Target SOW 2031', r: targetView(a.m.target.TARGET_SOW) },
             ].map(x => (
               <button key={x.l} onClick={() => setSel({ year: x.y, metric: x.k })}
                 className={`rounded-md border p-2 text-left ${sel.metric === x.k ? 'border-ink' : 'border-line'} bg-sunk`}>
                 <div className="kicker">{x.l}</div>
                 <div className="num text-[15px] font-bold">{x.r.value === null ? <span className="text-[12px]">{missingText(a, { year: x.y, metric: x.k })}</span> : fmtRec(x.r)}</div>
-                <div className="text-[10.5px] text-ink3">{x.r.value === null ? (NA_KO[naInfo(a, { year: x.y, metric: x.k })?.class ?? ''] ?? '') : naInfo(a, { year: x.y, metric: x.k })?.class === 'INTERNAL_REQUIRED' ? '시나리오 값 — 경영진 입력 필요' : x.r.status}</div>
+                <div className="text-[10.5px] text-ink3">{x.r.value === null ? (NA_KO[naInfo(a, { year: x.y, metric: x.k })?.class ?? ''] ?? '') : naInfo(a, { year: x.y, metric: x.k })?.class === 'INTERNAL_REQUIRED' ? '시나리오 참고값 — 공식 목표 아님' : x.r.status}</div>
               </button>
             ))}
           </div>
@@ -137,7 +137,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
                     <td><span className="text-ink2">{r.a.confidence} → {r.b.confidence}</span></td>
                   </tr>
                 ))}
-                <tr className="border-t border-line"><td className="py-1.5 font-semibold">CR → Target</td><td>{m26.CR.value === null ? <span className="text-ink3 text-[11px]">INTERNAL INPUT REQUIRED</span> : fmtRec(m26.CR)}</td><td>{fmtRec(a.m.target.TARGET)} {naInfo(a, { year: 2031, metric: 'REV' })?.class === 'INTERNAL_REQUIRED' && <Pill tone="warn">시나리오</Pill>}</td><td>{signedEok(a.m.target.TARGET_INCREMENT.value)}</td><td>—</td><td className="text-ink2">{a.m.target.TARGET.status}</td></tr>
+                <tr className="border-t border-line"><td className="py-1.5 font-semibold">CR → Target</td><td>{m26.CR.value === null ? <span className="text-ink3 text-[11px]">INTERNAL INPUT REQUIRED</span> : fmtRec(m26.CR)}</td><td>{targetView(a.m.target.TARGET).value === null ? <span className="text-ink3 text-[11px]">INTERNAL INPUT REQUIRED</span> : <>{fmtRec(a.m.target.TARGET)} {!isApprovedTarget(a.m.target.TARGET) && <Pill tone="warn">시나리오 참고값</Pill>}</>}</td><td>{signedEok(targetView(a.m.target.TARGET_INCREMENT).value)}</td><td>—</td><td className="text-ink2">{isApprovedTarget(a.m.target.TARGET) ? '경영진 승인' : '승인 목표 없음'}</td></tr>
               </tbody>
             </table>
           </div>
@@ -234,6 +234,7 @@ export default function AccountView({ data, account: a, scen, setScen, addr, set
 
       {/* Evidence inspector */}
       <aside className="card h-fit p-4 xl:sticky xl:top-4 xl:max-h-[calc(100vh-150px)] xl:overflow-y-auto scroll-thin" aria-label="근거 및 계산 패널">
+        <div className="mb-2 border-b border-line pb-1.5 text-[12px] font-bold text-ink2">수치 산출 근거 <span className="font-normal text-ink3">Evidence &amp; Calculation Inspector</span></div>
         <div className="mb-2 flex items-center justify-between"><div className="kicker">Evidence &amp; Calculation Inspector</div>
           <ConfidenceMeter value={m26.TS.confidence} /></div>
         <Inspector data={data} account={a} sel={sel} scen={scen} addr={addr} />

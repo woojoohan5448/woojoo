@@ -430,6 +430,7 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
         tgt, tstatus, tconf, tformula = None, "UNKNOWN", 0, "FPR_2031 미산출 → Target 산출 불가"
     raw31b = target_ref["RAW_base"]["value"] if target_ref else None
     tsow = safe_div(tgt, raw31b)
+    tsource = "MANAGEMENT_APPROVED" if tgt_in else ("SCENARIO_FPR_ATTAINMENT" if tgt is not None else None)
     tg = {"TARGET": rec(tgt, tstatus, tconf, tformula, assumption_ids=["D-TGT"] if not tgt_in else [],
                         inputs=[{"name": "FPR_2031(base)", "value": str(target_ref["FPR_base"]["value"]) if target_ref and target_ref["FPR_base"]["value"] is not None else None}],
                         notes=["경영진 입력 목표" if tgt_in else "경영진 의사결정 필요(시나리오 목표)"]),
@@ -441,6 +442,10 @@ def model_account(row, research, override, params, pev, mgmt_row, fxr, issues):
           "TARGET_INCREMENT": rec((tgt - cr) if (cr is not None and tgt is not None) else None, "DERIVED", tconf,
                                   "Target 증분 = Target_2031 − CR_2026 (CR 미확인 시 N/A)")}
 
+    # vNext D1: a target's origin is explicit. Only MANAGEMENT_APPROVED targets are official (KPI/aggregate);
+    # the FPR×attainment scenario stays computed but is shown only on explicit user request.
+    for k in ("TARGET", "TARGET_SOW", "TARGET_INCREMENT"):
+        tg[k]["target_source"] = tsource
     m26["TS"]["by_cat"], m26["RAW"]["by_cat"], m26["FPR"]["by_cat"] = ts_by, raw26_by, fpr26_by
     return {"anchor": anchor, "conf_parts": conf_parts, "mix": mix, "rates_2026": a26, "caps_2026": c26,
             "sec_ratio": sec_ratio, "m": {"2026": m26, "2031": m31, "target": tg}, "family": family,
@@ -595,7 +600,7 @@ def aggregate(accounts):
         for scen in (["base"] if yr == "2026" else list(SCENARIOS)):
             key = f"{yr}_{scen}"
             agg = {"TS": D0, "RAW": D0, "FPR": D0, "TARGET": D0, "n_ts": 0, "n_raw": 0, "n_fpr": 0,
-                   "n_mismatch": 0, "excluded": []}
+                   "n_mismatch": 0, "excluded": [], "TARGET_scenario": D0, "n_target_approved": 0, "n_target_scenario": 0}
             for a in accounts:
                 if yr == "2026":
                     blk = a["m"]["2026"]
@@ -613,8 +618,14 @@ def aggregate(accounts):
                     agg["RAW"] += raw; agg["n_raw"] += 1
                 if fpr is not None:
                     agg["FPR"] += fpr; agg["n_fpr"] += 1
-                if yr == "2031" and a["m"]["target"]["TARGET"]["value"] is not None and scen == "base":
-                    agg["TARGET"] += a["m"]["target"]["TARGET"]["value"]
+                t_ = a["m"]["target"]["TARGET"]
+                if yr == "2031" and t_["value"] is not None and scen == "base":
+                    if t_.get("target_source") == "MANAGEMENT_APPROVED":  # vNext D1: official sum = approved targets only
+                        agg["TARGET"] += t_["value"]; agg["n_target_approved"] += 1
+                    else:
+                        agg["TARGET_scenario"] += t_["value"]; agg["n_target_scenario"] += 1
+            if agg["n_target_approved"] == 0:
+                agg["TARGET"] = None  # no approved target → not 0 (INTERNAL INPUT REQUIRED)
             out[key] = agg
     return out
 
@@ -702,6 +713,104 @@ def strategy_engine(accounts, params, strategy):
             o["score_formula"] = "35×규모(FPR_2031 상대) + 20×성장률(상대) + 15×수요 고객 수(상대) + 15×진입 가능성 + 15×수요 신뢰도 − 실행 난이도"
         out.sort(key=lambda o: o["priority_score"], reverse=True)
     return out
+
+
+def opportunity_evidence(accounts, params, strat, sigmap):
+    """vNext (additive, values unchanged): separate the EVIDENCE STATUS of each account×area opportunity from its AMOUNT.
+
+    Amount: always the model value (by_cat). value_basis says how the category share was set
+      ACCOUNT_SPECIFIC_SHARE (KISA security ratio, contract category) | MODEL_ALLOCATED (industry mix A-MIX).
+    Evidence tier (first matching rule wins):
+      EVIDENCE_BASED  — the account has ≥1 sourced observation for this area: DEMAND_SIGNAL (research driver),
+                        ACCOUNT_SPECIFIC_SHARE, or INCUMBENT_OBSERVED (competitive observation = spend observed)
+      MODEL_ESTIMATED — no area observation, but the account's TS rests on its own evidence (disclosure/financials)
+      UNVERIFIED      — neither (TS from industry average, scenario or contract-only)
+    Also per area: model vs observed demand-account counts, evidence level, assumption dependency of growth."""
+    cats = params["categories"]
+    alloc = params["increment_allocation"]
+    tmap = sigmap.get("types", {})
+    rule = sigmap.get("evidence_level_rule", {})
+    by_area = {s["area"]: s for s in strat}
+    agg = {a: {"tiers": {"EVIDENCE_BASED": D0, "MODEL_ESTIMATED": D0, "UNVERIFIED": D0},
+               "tier_accounts": {"EVIDENCE_BASED": set(), "MODEL_ESTIMATED": set(), "UNVERIFIED": set()},
+               "signal_accounts": set(), "incumbent_accounts": set(), "specific_accounts": set(), "signals": [],
+               "inc_total": D0, "inc_assumed": D0} for a in by_area}
+    for acc in accounts:
+        m26, m31 = acc["m"]["2026"], acc["m"]["2031"]["base"]
+        f31_by = (m31["FPR_base"] or {}).get("by_cat") or {}
+        basis = (acc.get("evidence_basis") or {}).get("basis")
+        ov_raw = {}
+        obs = {}  # area -> {type: [ids]}
+        for d in acc.get("_drivers", []) or []:
+            for c in tmap.get(d.get("type"), []):
+                ar = cats[c]["biz_area"]
+                obs.setdefault(ar, {}).setdefault("DEMAND_SIGNAL", []).append(d.get("driver_id"))
+                if ar in agg and acc["aggregate_class"] != "DEFINITION_MISMATCH":
+                    agg[ar]["signals"].append({"account_id": acc["account_id"], "signal_id": d.get("driver_id"), "type": d.get("type"),
+                                               "description": (d.get("description") or "")[:160], "period": d.get("period"),
+                                               "evidence_ids": d.get("evidence_ids", [])})
+        for i, cobs in enumerate(acc.get("_competitive", []) or []):
+            c = cobs.get("category")
+            if c in cats:
+                obs.setdefault(cats[c]["biz_area"], {}).setdefault("INCUMBENT_OBSERVED", []).append(f"{acc['account_id']}-C{i + 1:02d}")
+        if acc.get("sec_ratio") is not None:
+            obs.setdefault(cats["SECURITY"]["biz_area"], {}).setdefault("ACCOUNT_SPECIFIC_SHARE", []).append("KISA_SECURITY_RATIO")
+        if acc["m"]["2026"]["TS"]["value"] is None and m26["RAW"]["value"] is not None:  # contract-category RAW (raw_direct)
+            for c, v in (m26["RAW"].get("by_cat") or {}).items():
+                if v:
+                    obs.setdefault(cats[c]["biz_area"], {}).setdefault("ACCOUNT_SPECIFIC_SHARE", []).append("CONTRACT_CATEGORY")
+                    ov_raw[cats[c]["biz_area"]] = True
+        for d in acc.get("infra_drivers", []) or []:
+            for c in alloc.get("infra", {}):
+                obs.setdefault(cats[c]["biz_area"], {}).setdefault("ACCOUNT_SPECIFIC_SHARE", []).append(d.get("driver_id"))
+        area_ev = {}
+        for ar in by_area:
+            ccs = [c for c in cats if cats[c]["biz_area"] == ar]
+            f31 = sum((f31_by.get(c) or D0) for c in ccs)
+            o = obs.get(ar, {})
+            tier = "EVIDENCE_BASED" if o else ("MODEL_ESTIMATED" if basis in ("DIRECT_IT_DISCLOSURE", "RECONSTRUCTED_FINANCIALS") else "UNVERIFIED")
+            vb = "ACCOUNT_SPECIFIC_SHARE" if "ACCOUNT_SPECIFIC_SHARE" in o else "MODEL_ALLOCATED"
+            area_ev[ar] = {"tier": tier, "value_basis": vb, "evidence_types": sorted(o), "observation_ids": {k: v[:12] for k, v in o.items()},
+                           "FPR_2031": f31 if f31_by else None}
+            if acc["aggregate_class"] == "DEFINITION_MISMATCH" or not f31_by or f31 <= 0:
+                continue
+            A_ = agg[ar]
+            A_["tiers"][tier] += f31
+            A_["tier_accounts"][tier].add(acc["account_id"])
+            if "DEMAND_SIGNAL" in o: A_["signal_accounts"].add(acc["account_id"])
+            if "INCUMBENT_OBSERVED" in o: A_["incumbent_accounts"].add(acc["account_id"])
+            if "ACCOUNT_SPECIFIC_SHARE" in o: A_["specific_accounts"].add(acc["account_id"])
+            # assumption dependency of TS growth in this area: increments allocated by B-ALLOC (excl. account infra drivers)
+            t26, t31 = m26["TS"].get("by_cat") or {}, (m31["TS"] or {}).get("by_cat") or {}
+            br = m31.get("bridge") or {}
+            if t26 and t31:
+                g = D(str(br.get("organic_cagr", 0)))
+                infra = D(str((br.get("components") or {}).get("infra", 0)))
+                for c in ccs:
+                    org = t26[c] * (1 + g) ** 5
+                    inc_total = t31[c] - t26[c]
+                    inc_assumed = t31[c] - org - infra * D(str(alloc.get("infra", {}).get(c, 0)))
+                    A_["inc_total"] += inc_total
+                    A_["inc_assumed"] += inc_assumed
+        acc["area_evidence"] = area_ev
+    for ar, s in by_area.items():
+        A_ = agg[ar]
+        tot = sum(A_["tiers"].values(), D0)
+        share = (A_["tiers"]["EVIDENCE_BASED"] / tot) if tot > 0 else None
+        n_ev = len(A_["tier_accounts"]["EVIDENCE_BASED"])
+        suf, par = rule.get("SUFFICIENT", {}), rule.get("PARTIAL", {})
+        level = ("SUFFICIENT" if share is not None and share >= D(str(suf.get("min_evidence_share", .5))) and n_ev >= suf.get("min_evidence_accounts", 5)
+                 else "PARTIAL" if share is not None and share >= D(str(par.get("min_evidence_share", .25))) else "INSUFFICIENT")
+        dep = (A_["inc_assumed"] / A_["inc_total"]) if A_["inc_total"] > 0 else None
+        s["evidence"] = {
+            "n_accounts_model": s["n_accounts"], "n_accounts_signal": len(A_["signal_accounts"]),
+            "n_accounts_incumbent_obs": len(A_["incumbent_accounts"]), "n_accounts_specific_share": len(A_["specific_accounts"]),
+            "fpr2031_by_tier": A_["tiers"], "accounts_by_tier": {k: sorted(v) for k, v in A_["tier_accounts"].items()},
+            "evidence_share": share, "evidence_level": level, "signals": A_["signals"][:40],
+            "assumption_dependency": dep,
+            "assumption_dependency_note": "2026→2031 TS 증가분 중 브리지 배분 가정(B-ALLOC: 클라우드·AI·규제·효율·대체 증분)에서 생긴 비중. 자연 성장·계정별 인프라 동인 제외",
+            "recommendation_mode": "RECOMMENDATION" if level == "SUFFICIENT" else "HYPOTHESIS",
+        }
 
 
 # --------------------------------------------------------------------------- serialisation
@@ -845,7 +954,8 @@ def write_exports(accounts):
             "TS_2031_low": v(m31["low"]["TS"]), "TS_2031_base": v(m31["base"]["TS"]), "TS_2031_high": v(m31["high"]["TS"]),
             "RAW_2031_base": v(m31["base"]["RAW_base"]), "RAW_2031_expansion": v(m31["base"]["RAW_expansion"]),
             "FPR_2031_base": v(m31["base"]["FPR_base"]), "FPR_2031_expansion": v(m31["base"]["FPR_expansion"]),
-            "TARGET_2031": v(t["TARGET"]), "TARGET_2031_status": t["TARGET"]["status"], "TARGET_SOW": v(t["TARGET_SOW"]),
+            "TARGET_2031": v(t["TARGET"]), "TARGET_2031_status": t["TARGET"]["status"],
+            "TARGET_2031_source": t["TARGET"].get("target_source"), "TARGET_SOW": v(t["TARGET_SOW"]),
             "TS_CAGR": v(m31["base"]["TS_CAGR"]), "RAW_CAGR": v(m31["base"]["RAW_CAGR"]), "FPR_CAGR": v(m31["base"]["FPR_CAGR"]),
         })
     import csv
@@ -935,6 +1045,7 @@ def main():
         "overlap_groups": overlap.get("groups", []),
     }
     strat = strategy_engine(accounts, params, strategy)
+    opportunity_evidence(accounts, params, strat, load_json(CONFIG / "demand_signal_map.json", {"types": {}}))
     db = write_sqlite(accounts, evidence, issues, params, market, strat, mgmt)
     write_exports(accounts)
 

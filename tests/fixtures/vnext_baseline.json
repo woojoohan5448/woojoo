@@ -1,0 +1,11311 @@
+{
+"data_version": "20261016T051757Z",
+"accounts": {
+"KA01": {
+"2026|TS": [
+4933.18,
+4313.0,
+5581.54,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+987.46,
+863.32,
+1117.24,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+257.13,
+224.8,
+290.92,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+5347.96,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1315.16,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1587.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+325.99,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+365.93,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+6544.61,
+4675.65,
+8864.74,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1733.08,
+1149.82,
+2474.83,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+2092.48,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+403.52,
+285.01,
+551.73,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+455.58,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+7835.0,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+2187.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+2640.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+487.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+552.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+201.76,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.116419,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA02": {
+"2026|TS": [
+125.66,
+60.41,
+242.4,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"TS_FY2025 = 매출(revenue) × 산업 IT 집약도 0.0080 (B-INT, Tier 3) → × (1+0.04)^1 (B-G26)"
+],
+"2026|RAW": [
+27.64,
+13.29,
+53.33,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+6.51,
+3.13,
+12.55,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+130.81,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+35.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+44.63,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+8.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+9.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+158.24,
+62.89,
+367.55,
+"ESTIMATED",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+45.09,
+16.94,
+110.67,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+56.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+10.82,
+4.05,
+26.67,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+12.59,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+190.53,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+57.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+71.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+13.83,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+16.09,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+5.41,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.119955,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA03": {
+"2026|TS": [
+5580.75,
+4879.17,
+6314.22,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+987.29,
+863.17,
+1117.05,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+247.31,
+216.22,
+279.81,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+6105.79,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1378.81,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1739.25,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+350.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+409.21,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+7353.68,
+5338.21,
+9889.85,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1804.14,
+1205.47,
+2631.3,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+2262.27,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+456.14,
+306.37,
+664.61,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+533.65,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+8741.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+2325.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+2896.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+587.41,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+687.15,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+228.07,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.126415,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA04": {
+"2026|TS": [
+1022.63,
+826.28,
+1084.05,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+181.07,
+146.31,
+191.95,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+45.33,
+36.63,
+48.05,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1118.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+252.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+319.04,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+64.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+75.04,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1347.5,
+904.02,
+1697.93,
+"ESTIMATED",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+330.81,
+204.31,
+452.0,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+414.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+83.61,
+51.9,
+114.14,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+97.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1601.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+426.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+531.21,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+107.67,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+125.97,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+41.81,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.126375,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA05": {
+"2026|TS": [
+5904.13,
+2866.08,
+10126.83,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"TS_FY2025 = 매출(revenue) × 산업 IT 집약도 0.0060 (B-INT, Tier 3) → × (1+0.03)^1 (B-G26)"
+],
+"2026|RAW": [
+1473.08,
+715.09,
+2526.64,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+375.65,
+182.35,
+644.32,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+5904.13,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1759.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+2207.85,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+445.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+512.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+7329.44,
+2866.08,
+14751.28,
+"ESTIMATED",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+2270.67,
+854.09,
+4809.79,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+2844.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+570.02,
+216.22,
+1202.69,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+658.59,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+8600.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+2804.2,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+3500.04,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+701.19,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+812.11,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+285.01,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.125519,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA06": {
+"2026|TS": [
+1421.69,
+973.55,
+1931.64,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+51,
+"TS_FY2025(국내 인프라 지출) = 설비관련비용 352.8억 + 네트워크장비 취득 421.0억 + 리스 지출 462.5억 = 1,236.3억 (구글클라우드코리아 감사보고서). 교차검증: 서울 리전 인프라 운영지원 수익 1,142.6억(원가가산) → × (1+0.15)^1 (B-G26)"
+],
+"2026|RAW": [
+567.96,
+388.93,
+771.69,
+"ESTIMATED",
+"ESTIMATED_LOW",
+41,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+196.73,
+134.71,
+267.29,
+"ESTIMATED",
+"ESTIMATED_LOW",
+31,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+2027.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+921.07,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1010.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+311.29,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+334.53,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+3187.91,
+1388.55,
+6738.18,
+"ESTIMATED",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1470.72,
+630.74,
+3165.31,
+"ESTIMATED",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+1629.87,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+482.58,
+213.17,
+1018.26,
+"ESTIMATED",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+522.72,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+4959.3,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+2329.67,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+2597.2,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+749.44,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+816.08,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+241.29,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.164062,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA07": {
+"2026|TS": [
+2550.0,
+1275.0,
+3825.0,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"TS_2026(시나리오, L6 용량 모델) = 부산 리전 운영 용량 85MW(Tier3 단독) × 코로케이션 임대료 30.0억/MW/년(수도권 25만원/kW/월 가정, DCB01) — 부산은 수도권보다 낮을 수 있음"
+],
+"2026|RAW": [
+1018.73,
+509.36,
+1528.09,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+352.86,
+176.43,
+529.28,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+3637.02,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1652.08,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1812.59,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+558.34,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+6,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+600.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+6,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+5717.97,
+1818.51,
+13342.82,
+"ESTIMATED",
+"ESTIMATED_LOW",
+26,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+2637.95,
+826.04,
+6267.88,
+"ESTIMATED",
+"ESTIMATED_LOW",
+16,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+2923.41,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+865.58,
+279.17,
+2016.33,
+"ESTIMATED",
+"ESTIMATED_LOW",
+6,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+937.57,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+6,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+8895.22,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+4178.59,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+4658.45,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+1344.22,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+6,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+1463.76,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+6,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+432.79,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.164062,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA08": {
+"2026|TS": [
+14000.0,
+8400.0,
+19600.0,
+"SCENARIO",
+"ESTIMATED_LOW",
+51,
+"TS_2026(국내 인프라 투자 연평균) = 아마존 한국 누적 투자 전망 12.6조원 ÷ 9년(2023~2031) ≈ 1.4조원/년"
+],
+"2026|RAW": [
+4018.0,
+2410.8,
+5625.2,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+1386.0,
+831.6,
+1940.4,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+10132.93,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+3255.38,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+3549.66,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+1156.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+1231.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+15120.0,
+6079.76,
+30895.12,
+"ESTIMATED",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+5074.3,
+1953.23,
+11002.31,
+"ESTIMATED",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+5634.3,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+1713.32,
+694.04,
+3565.04,
+"ESTIMATED",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+1848.71,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+22067.94,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+7858.79,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+8829.26,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+2546.45,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+2777.11,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+856.66,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.168823,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA09": {
+"2026|TS": [
+8884.51,
+7697.14,
+10229.64,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+73,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.07)^1 (B-G26)"
+],
+"2026|RAW": [
+3046.3,
+2639.18,
+3507.51,
+"ESTIMATED",
+"ESTIMATED_LOW",
+63,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+882.96,
+764.95,
+1016.64,
+"ESTIMATED",
+"ESTIMATED_LOW",
+53,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+10743.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+58,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+4314.34,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+4995.67,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+1271.44,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+1405.45,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+14110.6,
+9307.95,
+20854.39,
+"ESTIMATED",
+"ESTIMATED_LOW",
+58,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+5835.0,
+3737.75,
+8851.48,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+6779.16,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+1690.26,
+1101.52,
+2534.54,
+"ESTIMATED",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+1879.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+18112.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+58,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+7687.57,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+8947.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+2201.27,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+2457.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+845.13,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.144838,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA10": {
+"2026|TS": [
+8189.98,
+6478.4,
+10341.94,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+68,
+"TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.12)^2 (B-G26)"
+],
+"2026|RAW": [
+2998.26,
+2371.67,
+3786.07,
+"ESTIMATED",
+"ESTIMATED_LOW",
+58,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+943.89,
+746.63,
+1191.9,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+11353.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+4794.19,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+5484.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+1516.11,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+1660.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+16384.13,
+8980.89,
+29178.3,
+"ESTIMATED",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+7118.13,
+3792.28,
+13097.58,
+"ESTIMATED",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+8177.14,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+2197.56,
+1199.27,
+3970.21,
+"ESTIMATED",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+2422.88,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+23106.85,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+10372.23,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+11943.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+3144.09,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+3483.7,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+1098.78,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.154364,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA11": {
+"2026|TS": [
+648.61,
+535.13,
+776.39,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+58,
+"TS_FY2023 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^3 (B-G26)"
+],
+"2026|RAW": [
+160.68,
+132.57,
+192.34,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+46.14,
+38.07,
+55.23,
+"ESTIMATED",
+"ESTIMATED_LOW",
+38,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+703.14,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+206.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+245.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+59.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+67.0,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+860.48,
+580.12,
+1233.08,
+"ESTIMATED",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+266.96,
+170.34,
+398.38,
+"ESTIMATED",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+318.4,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+75.71,
+49.34,
+111.44,
+"ESTIMATED",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+85.27,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1030.14,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+332.81,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+397.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+93.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+105.22,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+37.85,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.141793,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA12": {
+"2026|TS": [
+607.69,
+515.53,
+707.97,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.03)^2 (B-G26)"
+],
+"2026|RAW": [
+174.74,
+148.24,
+203.58,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+46.9,
+39.79,
+54.64,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+601.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+204.34,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+249.2,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+55.12,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+62.21,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+748.32,
+510.37,
+1031.26,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+260.83,
+173.35,
+371.71,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+317.82,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+69.61,
+46.76,
+98.35,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+78.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+885.19,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+319.06,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+388.05,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+84.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+95.94,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+34.8,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.133432,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA13": {
+"2026|TS": [
+544.1,
+317.13,
+1007.36,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"TS_FY2025 = 매출(revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+132.76,
+77.38,
+245.79,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+38.74,
+22.58,
+71.72,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+589.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+170.55,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+201.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+50.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+55.66,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+721.83,
+343.79,
+1599.91,
+"ESTIMATED",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+221.03,
+99.4,
+510.95,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+261.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+63.34,
+29.15,
+144.26,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+70.92,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+864.15,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+275.98,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+327.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+77.92,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+87.6,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+31.67,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.143288,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA14": {
+"2026|TS": [
+5989.67,
+4363.9,
+7701.0,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+58,
+"정보기술부문 투자액 = 정보보호부문 투자액 ÷ 정보보호/IT 비율(인접 연도(FY2023) 자사 공시 비율) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+1283.75,
+935.31,
+1650.54,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+265.48,
+193.42,
+341.33,
+"ESTIMATED",
+"ESTIMATED_LOW",
+38,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+8693.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+3103.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+3588.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+684.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+750.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+12227.45,
+6334.05,
+21362.15,
+"ESTIMATED",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+4955.91,
+2261.15,
+9412.28,
+"ESTIMATED",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+5622.79,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+1095.56,
+498.61,
+2088.5,
+"ESTIMATED",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+1184.06,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+16615.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+7320.66,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+8206.16,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+1624.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+1739.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+547.78,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.110531,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA15": {
+"2026|TS": [
+166.45,
+93.63,
+249.68,
+"ESTIMATED",
+"ESTIMATED_LOW",
+56,
+"TS_FY2025 = (매출 5,241.5억 − 용역원가 3,429억[고객 재판매·서비스 원가]) × IT서비스 집약도 8.2%(LG CNS 8.6%·CJ올리브 7.7% 평균) — MSP 재판매 매출에 집약도를 그대로 곱하면 과대 → × (1+0.12)^1 (B-G26)"
+],
+"2026|RAW": [
+60.92,
+34.27,
+91.38,
+"ESTIMATED",
+"ESTIMATED_LOW",
+46,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+19.19,
+10.8,
+28.79,
+"ESTIMATED",
+"ESTIMATED_LOW",
+36,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+230.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+97.41,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+111.4,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+30.82,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+33.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+332.99,
+129.8,
+704.44,
+"ESTIMATED",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+144.64,
+54.79,
+316.15,
+"ESTIMATED",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+166.11,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+44.67,
+17.34,
+95.87,
+"ESTIMATED",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+49.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+469.63,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+210.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+242.63,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+63.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+70.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+22.34,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.154432,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA16": {
+"2026|TS": [
+1144.81,
+833.6,
+1570.87,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 666.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%] → × (1+0.03)^1 (B-G26)"
+],
+"2026|RAW": [
+324.55,
+236.33,
+445.34,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+88.64,
+64.54,
+121.62,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1133.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+379.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+458.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+103.68,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+116.06,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1409.73,
+825.26,
+2288.22,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+485.26,
+276.38,
+815.76,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+586.78,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+130.95,
+75.5,
+217.97,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+147.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1667.59,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+594.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+718.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+158.85,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+179.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+65.48,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.134932,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA17": {
+"2026|TS": [
+294.74,
+212.55,
+404.32,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 170.0억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%] → × (1+0.04)^1 (B-G26)"
+],
+"2026|RAW": [
+64.84,
+46.76,
+88.95,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+15.26,
+11.0,
+20.93,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+306.83,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+82.66,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+104.67,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+19.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+22.99,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+371.16,
+221.27,
+613.06,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+105.75,
+59.61,
+184.59,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+133.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+25.37,
+14.26,
+44.49,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+29.53,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+446.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+134.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+168.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+32.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+37.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+12.69,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.119955,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA18": {
+"2026|TS": [
+4865.7,
+4254.01,
+5505.19,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+858.4,
+750.49,
+971.22,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+215.42,
+188.34,
+243.73,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+5323.47,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1199.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1511.52,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+305.13,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+356.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+6411.47,
+4654.23,
+8622.68,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1569.78,
+1048.42,
+2290.27,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+1967.15,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+397.27,
+266.77,
+578.94,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+464.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+7621.06,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+2024.23,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+2520.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+511.69,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+598.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+198.64,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.126537,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA19": {
+"2026|TS": [
+4197.9,
+3670.16,
+4749.62,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+73,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+754.01,
+659.22,
+853.11,
+"ESTIMATED",
+"ESTIMATED_LOW",
+63,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+186.99,
+163.48,
+211.57,
+"ESTIMATED",
+"ESTIMATED_LOW",
+53,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+4592.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+58,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1051.31,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1331.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+265.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+311.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+5531.52,
+4015.46,
+7439.25,
+"ESTIMATED",
+"ESTIMATED_LOW",
+58,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1372.32,
+919.15,
+1997.81,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+1726.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+345.13,
+232.09,
+502.38,
+"ESTIMATED",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+405.26,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+6575.09,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+58,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+1765.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+2205.94,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+48,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+444.02,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+521.02,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+172.56,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.125746,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA20": {
+"2026|TS": [
+724.77,
+588.39,
+918.11,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%] → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+125.75,
+102.09,
+159.29,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+31.91,
+25.9,
+40.42,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+792.96,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+175.99,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+220.81,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+45.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+52.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+955.02,
+643.75,
+1438.02,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+230.99,
+142.87,
+378.09,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+288.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+58.8,
+36.62,
+96.04,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+68.47,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1135.19,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+298.47,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+370.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+75.82,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+88.34,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+29.4,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.127279,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA21": {
+"2026|TS": [
+1640.85,
+1332.1,
+2078.57,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 731.4억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%] → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+292.01,
+237.06,
+369.9,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+72.86,
+59.15,
+92.3,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1795.22,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+407.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+514.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+103.31,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+120.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+2162.12,
+1457.43,
+3255.63,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+532.76,
+330.86,
+869.34,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+668.95,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+134.42,
+83.87,
+219.2,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+157.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2570.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+686.27,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+855.81,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+173.04,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+202.66,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+67.21,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.126153,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA22": {
+"2026|TS": [
+4327.05,
+3783.08,
+4895.75,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+776.82,
+679.16,
+878.92,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+192.71,
+168.49,
+218.04,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+4734.14,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1083.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1371.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+273.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+320.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+5701.69,
+4138.99,
+7668.12,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1414.02,
+947.0,
+2058.64,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+1779.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+355.68,
+239.17,
+517.75,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+417.59,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+6777.38,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+1819.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+2272.89,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+457.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+536.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+177.84,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.125768,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA23": {
+"2026|TS": [
+1295.04,
+1051.37,
+1640.52,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 577.2억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%] → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+263.54,
+213.95,
+333.85,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+60.9,
+49.44,
+77.15,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1416.88,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+366.14,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+466.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+86.79,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+102.25,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1706.46,
+1150.28,
+2569.52,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+472.53,
+297.24,
+762.11,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+598.94,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+112.24,
+70.46,
+181.99,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+132.38,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2028.4,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+601.62,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+757.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+143.67,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+169.33,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+56.12,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.118767,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA24": {
+"2026|TS": [
+5296.65,
+4279.67,
+5614.78,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"TS_FY2025 = 판관비(sga) × 산업 IT 집약도 0.1252 (B-INT, Tier 3) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+918.97,
+742.52,
+974.17,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+233.18,
+188.41,
+247.19,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+5794.96,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+1286.12,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+1613.71,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+329.6,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+382.7,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+6979.32,
+4682.3,
+8794.33,
+"ESTIMATED",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1688.09,
+1039.18,
+2312.26,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+2107.31,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+429.72,
+266.32,
+587.34,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+500.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+8296.04,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+2181.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+2706.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+554.07,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+645.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+214.86,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.127279,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA25": {
+"2026|TS": [
+2204.64,
+1789.81,
+2792.77,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 982.6억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%] → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+466.17,
+378.46,
+590.53,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+105.13,
+85.35,
+133.17,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+2412.06,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+644.85,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+831.0,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+150.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+179.76,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+2905.03,
+1958.2,
+4374.26,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+827.6,
+523.51,
+1328.95,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+1058.51,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+194.18,
+122.29,
+314.04,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+231.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+3453.09,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+1049.08,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+1331.15,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+247.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+294.83,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+97.09,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.117316,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA26": {
+"2026|TS": [
+1858.5,
+1624.86,
+2102.76,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+67,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+395.93,
+346.16,
+447.97,
+"ESTIMATED",
+"ESTIMATED_LOW",
+57,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+88.87,
+77.7,
+100.55,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+2033.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+52,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+547.23,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+706.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+127.47,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+152.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+2448.92,
+1777.73,
+3293.51,
+"ESTIMATED",
+"ESTIMATED_LOW",
+52,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+701.56,
+478.44,
+1005.35,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+898.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+164.22,
+111.45,
+237.09,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+196.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2910.93,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+52,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+888.57,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+1129.18,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+209.55,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+249.65,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+82.11,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.117036,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA27": {
+"2026|TS": [
+2137.74,
+1836.51,
+2458.4,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.1)^1 (B-G26)"
+],
+"2026|RAW": [
+505.88,
+434.6,
+581.77,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+130.38,
+112.01,
+149.94,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+2600.89,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+742.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+910.72,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+195.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+225.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+3461.7,
+2234.4,
+5094.65,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+1027.32,
+638.08,
+1559.59,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+1259.52,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+267.94,
+168.15,
+404.57,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+309.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+4430.13,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+1356.16,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+1660.99,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+351.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+406.79,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+133.97,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.130406,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA28": {
+"2026|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"근거 부족 — 추정 불가"
+],
+"2026|RAW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+null,
+"UNKNOWN",
+"FPR_2031 미산출 → Target 산출 불가"
+],
+"target|TARGET_SOW": [
+null,
+"UNKNOWN",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA29": {
+"2026|TS": [
+27525.75,
+23847.08,
+31693.2,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.07)^1 (B-G26)"
+],
+"2026|RAW": [
+9473.18,
+8207.14,
+10907.44,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+2725.07,
+2360.88,
+3137.65,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+33286.18,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+13417.51,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+15601.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+3931.68,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+4359.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+43717.1,
+28837.65,
+64610.52,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+18136.66,
+11624.33,
+27501.27,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+21146.63,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+5228.12,
+3406.23,
+7841.05,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+5829.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+56114.65,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+23885.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+27886.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+6810.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+7621.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+2614.06,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.144131,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA30": {
+"2026|TS": [
+868.23,
+626.13,
+1191.04,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 500.9억 ÷ 포괄률 0.600 [CORP_전산비: 분석가 가정(실측 없음): 일반기업 판관비 전산비·전산수수료가 IT 비용의 약 60%] → × (1+0.04)^1 (B-G26)"
+],
+"2026|RAW": [
+191.01,
+137.75,
+262.03,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+44.95,
+32.42,
+61.67,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+903.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+243.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+308.34,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+58.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+67.72,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1093.34,
+651.81,
+1805.95,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+311.52,
+175.59,
+543.75,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+392.09,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+74.74,
+42.0,
+131.06,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+86.98,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1316.48,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+396.38,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+495.72,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+95.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+111.18,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+37.37,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.119955,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA31": {
+"2026|TS": [
+671.88,
+570.63,
+781.91,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^2 (B-G26)"
+],
+"2026|RAW": [
+176.19,
+149.64,
+205.04,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+47.62,
+40.44,
+55.42,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+728.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+226.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+278.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+62.67,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+72.05,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+891.35,
+618.61,
+1241.84,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+290.52,
+192.42,
+419.11,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+355.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+79.22,
+53.22,
+113.26,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+91.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1067.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+360.14,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+439.65,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+97.32,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+112.2,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+39.61,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.13634,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA32": {
+"2026|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"근거 부족 — 추정 불가"
+],
+"2026|RAW": [
+157.0,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2026(관측 가능 하한 시나리오) = 임차통신 BOA 2건(LG U+·KT 각 3년 상한 $14,574,525) 연환산 $9.72M + USFK 전역 이동통신(W91QVN24R0121, 5년 약 $7.5M) 연환산 $1.5M = $11.22M × 1,400원 ≈ 157억원"
+],
+"2026|FPR": [
+78.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+157.0,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+157.0,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+78.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+78.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+173.34,
+null,
+null,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+173.34,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+86.67,
+null,
+null,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+86.67,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+191.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+191.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+95.51,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+95.51,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+43.34,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.25,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA33": {
+"2026|TS": [
+249.6,
+216.0,
+282.48,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+65,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.04)^1 (B-G26)"
+],
+"2026|RAW": [
+54.3,
+46.99,
+61.45,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+55,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+12.88,
+11.15,
+14.58,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+45,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+259.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+69.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+87.41,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+16.65,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+19.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+314.31,
+224.86,
+428.32,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+88.76,
+59.95,
+127.97,
+"ESTIMATED",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+111.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+21.39,
+14.41,
+30.96,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+24.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+378.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+50,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+113.08,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+141.02,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+40,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+27.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+31.73,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+30,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+10.69,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.120471,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA34": {
+"2026|TS": [
+48.68,
+28.37,
+70.1,
+"ESTIMATED",
+"ESTIMATED_LOW",
+56,
+"TS_FY2025 = 자체 IT 소비 프록시(감가상각+무형상각) 23.2억 ÷ IT서비스 포괄률 0.5. 교차검증: 비통과 매출(3,986.9억×18%)×8.2% ≈ 58.8억. 매출의 82%는 IBK기업은행 대상 통과성 원가 → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+11.88,
+6.92,
+17.1,
+"ESTIMATED",
+"ESTIMATED_LOW",
+46,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+3.47,
+2.02,
+4.99,
+"ESTIMATED",
+"ESTIMATED_LOW",
+36,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+52.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+15.26,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+18.02,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+4.47,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+4.98,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+64.58,
+30.76,
+111.33,
+"ESTIMATED",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+19.77,
+8.89,
+35.55,
+"ESTIMATED",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+23.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+5.67,
+2.61,
+10.04,
+"ESTIMATED",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+6.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+77.31,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+24.69,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+29.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+6.97,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+7.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+2.83,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.143288,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA35": {
+"2026|TS": [
+1278.17,
+1037.67,
+1619.15,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 569.7억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%] → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+221.76,
+180.04,
+280.92,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+56.27,
+45.68,
+71.28,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1398.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+310.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+389.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+79.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+92.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1684.23,
+1135.29,
+2536.04,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+407.37,
+251.96,
+666.79,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+508.53,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+103.7,
+64.57,
+169.37,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+120.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2001.98,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+526.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+653.15,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+133.71,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+155.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+51.85,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.127279,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA36": {
+"2026|TS": [
+250.39,
+145.94,
+463.59,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"TS_FY2025 = 매출(operating_revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+61.1,
+35.61,
+113.12,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+17.83,
+10.39,
+33.01,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+271.45,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+78.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+92.69,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+23.02,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+25.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+332.19,
+158.21,
+736.28,
+"ESTIMATED",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+101.72,
+45.75,
+235.14,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+120.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+29.15,
+13.41,
+66.39,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+32.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+397.68,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+127.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+150.62,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+35.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+40.31,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+14.57,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.143288,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA37": {
+"2026|TS": [
+717.07,
+522.44,
+921.95,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+53,
+"정보기술부문 투자액 = 정보보호부문 투자액 ÷ 정보보호/IT 비율(인접 연도(FY2024) 자사 공시 비율) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+148.21,
+107.98,
+190.55,
+"ESTIMATED",
+"ESTIMATED_LOW",
+43,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+33.91,
+24.71,
+43.6,
+"ESTIMATED",
+"ESTIMATED_LOW",
+33,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+784.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+205.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+28,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+263.23,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+28,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+48.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+18,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+57.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+18,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+944.88,
+571.59,
+1444.04,
+"ESTIMATED",
+"ESTIMATED_LOW",
+38,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+264.66,
+149.75,
+432.46,
+"ESTIMATED",
+"ESTIMATED_LOW",
+28,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+336.7,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+28,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+62.55,
+35.29,
+102.84,
+"ESTIMATED",
+"ESTIMATED_LOW",
+18,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+74.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+18,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1123.14,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+38,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+336.36,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+28,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+424.81,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+28,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+79.98,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+18,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+94.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+18,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+31.28,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.118177,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA38": {
+"2026|TS": [
+1561.0,
+780.5,
+2341.5,
+"SCENARIO",
+"ESTIMATED_LOW",
+56,
+"TS_2026(L3 계약 기반 하한 시나리오) = 차세대 3,370억(VAT 포함, 28개월)÷1.1÷28×12 = 1,313억 + 생성형 AI 인프라 250억(11개월)÷1.1÷11×12 = 248억. 기존 운영비 미포함 → 하한, 착수 시점·낙찰자 미확인"
+],
+"2026|RAW": [
+317.66,
+158.83,
+476.5,
+"SCENARIO",
+"ESTIMATED_LOW",
+46,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+73.41,
+36.7,
+110.11,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1707.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+441.33,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+562.79,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+104.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+123.25,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+2056.91,
+853.93,
+3667.45,
+"ESTIMATED",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+569.57,
+220.66,
+1087.75,
+"ESTIMATED",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+721.94,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+135.29,
+52.31,
+259.75,
+"ESTIMATED",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+159.57,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2444.97,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+41,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+725.16,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+912.93,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+31,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+173.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+204.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+21,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+67.65,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.118767,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA39": {
+"2026|TS": [
+1713.16,
+1248.16,
+2202.63,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+58,
+"정보기술부문 투자액 = 정보보호부문 투자액 ÷ 정보보호/IT 비율(인접 연도(FY2024) 자사 공시 비율) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+300.14,
+218.67,
+385.89,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+75.67,
+55.13,
+97.29,
+"ESTIMATED",
+"ESTIMATED_LOW",
+38,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1874.33,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+419.6,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+527.89,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+107.09,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+124.69,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+2257.4,
+1365.59,
+3449.94,
+"ESTIMATED",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+549.89,
+305.71,
+912.45,
+"ESTIMATED",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+687.99,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+139.5,
+78.02,
+231.12,
+"ESTIMATED",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+162.82,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2683.29,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+709.69,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+882.31,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+179.76,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+209.87,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+23,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+69.75,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.126846,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA40": {
+"2026|TS": [
+1623.03,
+945.99,
+3004.92,
+"ESTIMATED",
+"ESTIMATED_LOW",
+30,
+"TS_FY2025 = 매출(revenue) × 산업 IT 집약도 0.0500 (B-INT, Tier 3) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+396.02,
+230.82,
+733.2,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+115.56,
+67.35,
+213.95,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1759.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+508.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+600.83,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+149.18,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+166.02,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+2153.2,
+1025.53,
+4772.5,
+"ESTIMATED",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+659.32,
+296.52,
+1524.17,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+780.78,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+188.95,
+86.95,
+430.32,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+211.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2577.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+823.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+976.29,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+232.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+261.3,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+94.47,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.143288,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA41": {
+"2026|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"근거 부족 — 추정 불가"
+],
+"2026|RAW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+null,
+"UNKNOWN",
+"FPR_2031 미산출 → Target 산출 불가"
+],
+"target|TARGET_SOW": [
+null,
+"UNKNOWN",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA42": {
+"2026|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"근거 부족 — 추정 불가"
+],
+"2026|RAW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+null,
+"UNKNOWN",
+"FPR_2031 미산출 → Target 산출 불가"
+],
+"target|TARGET_SOW": [
+null,
+"UNKNOWN",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA43": {
+"2026|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"근거 부족 — 추정 불가"
+],
+"2026|RAW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+null,
+"UNKNOWN",
+"FPR_2031 미산출 → Target 산출 불가"
+],
+"target|TARGET_SOW": [
+null,
+"UNKNOWN",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA44": {
+"2026|TS": [
+109.6,
+73.07,
+149.26,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+51,
+"TS_FY2025 = 매출원가 중 인건비·임차료·감가상각 제외 잔여 104.4억 (회선·IDC 등 외부 구매 상한, 차이나유니콤오퍼레이션스코리아 감사보고서) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+78.91,
+52.61,
+107.47,
+"ESTIMATED",
+"ESTIMATED_LOW",
+41,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+31.1,
+20.73,
+42.35,
+"ESTIMATED",
+"ESTIMATED_LOW",
+31,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+105.22,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+78.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+81.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+31.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+31.9,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+136.19,
+70.14,
+231.86,
+"ESTIMATED",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+99.33,
+52.52,
+167.04,
+"ESTIMATED",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+103.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+38.75,
+20.74,
+64.71,
+"ESTIMATED",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+39.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+170.24,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+122.65,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+128.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+47.51,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+48.96,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+19.38,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.195077,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA45": {
+"2026|TS": [
+359.0,
+205.14,
+526.53,
+"SCENARIO",
+"ESTIMATED_LOW",
+35,
+"TS(시나리오, L6) = 평균[ 매출비율법 1.9%×광고 총판매액 10,752.2억(FY2025)=204.3억 , 트래픽법 전용회선시장 11,150억×메타 트래픽 4.3%=479.4억 ] = 341.9억 (범위 204~479) → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+258.48,
+147.7,
+379.1,
+"SCENARIO",
+"ESTIMATED_LOW",
+25,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+101.86,
+58.21,
+149.4,
+"SCENARIO",
+"ESTIMATED_LOW",
+15,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+344.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+20,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+258.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+10,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+268.26,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+10,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+101.88,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+104.5,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+446.11,
+196.93,
+817.87,
+"ESTIMATED",
+"ESTIMATED_LOW",
+20,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+325.35,
+147.44,
+589.23,
+"ESTIMATED",
+"ESTIMATED_LOW",
+10,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+339.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+10,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+126.94,
+58.22,
+228.26,
+"ESTIMATED",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+130.57,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+557.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+20,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+401.75,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+10,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+420.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+10,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+155.63,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+160.37,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+5,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+63.47,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.195077,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA46": {
+"2026|TS": [
+847.36,
+508.42,
+1186.3,
+"ESTIMATED",
+"ESTIMATED_LOW",
+51,
+"TS_FY2026(5월 결산, 국내 인프라 지출) = 컴퓨터장치 취득 663.4억(OCI 리전 장비) + 호스팅 비용 184.0억 = 847.4억. 장비 취득이 전년 대비 2.4배로 일회성 가능 → 저신뢰"
+],
+"2026|RAW": [
+338.52,
+203.11,
+473.93,
+"ESTIMATED",
+"ESTIMATED_LOW",
+41,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+117.25,
+70.35,
+164.15,
+"ESTIMATED",
+"ESTIMATED_LOW",
+31,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1208.57,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+548.98,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+602.32,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+185.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+199.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1900.07,
+725.14,
+4138.21,
+"ESTIMATED",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+876.59,
+329.39,
+1943.95,
+"ESTIMATED",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+971.44,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+287.63,
+111.32,
+625.35,
+"ESTIMATED",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+311.55,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2955.86,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+36,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+1388.54,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+1547.99,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+26,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+446.68,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+486.4,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+16,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+143.81,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.164062,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA47": {
+"2026|TS": [
+227.1,
+180.64,
+301.73,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 163.4억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%] → × (1+0.12)^1 (B-G26)"
+],
+"2026|RAW": [
+83.12,
+66.11,
+110.43,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+26.19,
+20.83,
+34.79,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+314.83,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+132.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+151.99,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+42.05,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+46.05,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+454.33,
+250.42,
+851.27,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+197.34,
+105.71,
+382.05,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+226.63,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+60.95,
+33.45,
+115.85,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+67.19,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+640.74,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+287.56,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+331.04,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+87.2,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+96.6,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+30.48,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.154432,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA48": {
+"2026|TS": [
+1260.6,
+1082.97,
+1449.69,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+68,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.1)^1 (B-G26)"
+],
+"2026|RAW": [
+305.45,
+262.41,
+351.26,
+"ESTIMATED",
+"ESTIMATED_LOW",
+58,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+77.1,
+66.24,
+88.67,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1533.71,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+448.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+554.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+116.35,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+135.26,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+2041.32,
+1317.6,
+3004.25,
+"ESTIMATED",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+617.93,
+384.9,
+936.41,
+"ESTIMATED",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+764.29,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+159.12,
+99.96,
+240.12,
+"ESTIMATED",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+185.32,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+2612.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+814.27,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+1005.34,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+208.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+243.3,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+79.56,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.128753,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA49": {
+"2026|TS": [
+609.26,
+484.6,
+809.45,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 438.5억 ÷ 포괄률 0.806 [CLOUD_INFRA: 실측 n=1: 네이버클라우드 (유형상각 2,996.9+통신비 2,265.3)/KISA IT 6,529(FY24 파생)=0.806, 범위 ±20%] → × (1+0.12)^1 (B-G26)"
+],
+"2026|RAW": [
+224.12,
+178.26,
+297.76,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+69.6,
+55.36,
+92.47,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+844.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+358.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+413.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+112.2,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+123.51,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1218.83,
+671.8,
+2283.74,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+531.82,
+285.12,
+1028.93,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+614.64,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+162.74,
+89.24,
+309.51,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+180.2,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1718.94,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+774.46,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+896.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+232.96,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+259.1,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+81.37,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.152999,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA50": {
+"2026|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"근거 부족 — 추정 불가"
+],
+"2026|RAW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+null,
+"UNKNOWN",
+"FPR_2031 미산출 → Target 산출 불가"
+],
+"target|TARGET_SOW": [
+null,
+"UNKNOWN",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA51": {
+"2026|TS": [
+1066.12,
+905.46,
+1240.7,
+"ESTIMATED",
+"ESTIMATED_HIGH",
+62,
+"TS_FY2024 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.05)^2 (B-G26)"
+],
+"2026|RAW": [
+224.94,
+191.04,
+261.77,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+52,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+50.8,
+43.14,
+59.12,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+42,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+1166.42,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+47,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+311.23,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+37,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+400.83,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+37,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+72.76,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+27,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+86.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+27,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+1404.81,
+990.65,
+1943.29,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+47,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+399.55,
+264.33,
+589.57,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+510.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+37,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+93.81,
+61.8,
+139.41,
+"ESTIMATED",
+"ESTIMATED_LOW",
+27,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+111.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+27,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1669.84,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+47,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+506.61,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+37,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+642.53,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+37,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+119.79,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+27,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+142.39,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+27,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+46.91,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.117399,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA52": {
+"2026|TS": [
+724.76,
+588.39,
+918.1,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+57,
+"TS_FY2025 = 감사·사업보고서 IT 비용 항목 합계 323.0억 ÷ 포괄률 0.468 [FIN_전산업무비: 실측 n=2: 국민은행 전산업무비 2,530.8/KISA IT 5,315=0.476, 우리은행 1,849.2/4,016.8=0.460 (FY2025), 범위 ±20%] → × (1+0.05)^1 (B-G26)"
+],
+"2026|RAW": [
+156.33,
+126.91,
+198.03,
+"ESTIMATED",
+"ESTIMATED_LOW",
+47,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+34.82,
+28.26,
+44.1,
+"ESTIMATED",
+"ESTIMATED_LOW",
+37,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+792.95,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+215.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+279.53,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+50.03,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+60.09,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+955.01,
+643.74,
+1438.01,
+"ESTIMATED",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+276.13,
+175.17,
+442.42,
+"ESTIMATED",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+354.8,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+64.38,
+40.61,
+103.98,
+"ESTIMATED",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+77.17,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+1135.18,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+42,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+349.25,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+444.93,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+32,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+82.08,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+98.08,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+22,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+32.19,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.116575,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+},
+"KA53": {
+"2026|TS": [
+452.1,
+388.4,
+519.92,
+"ESTIMATED",
+"ESTIMATED_MEDIUM",
+68,
+"TS_FY2025 = KISA 정보보호 공시 정보기술부문 투자액 → × (1+0.1)^1 (B-G26)"
+],
+"2026|RAW": [
+107.95,
+92.74,
+124.14,
+"ESTIMATED",
+"ESTIMATED_LOW",
+58,
+"RAW_2026 = Σ(TS_i × Addressability_i)  [C-ADDR 2026, A-MIX]"
+],
+"2026|FPR": [
+27.6,
+23.71,
+31.74,
+"ESTIMATED",
+"ESTIMATED_LOW",
+48,
+"FPR_2026 = Σ(RAW_i × Capture_Ceiling_i)  [C-CAP 2026]"
+],
+"2026|CR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"미입력(NULL) — 0원 아님"
+],
+"2026|CSOW": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"C-SOW = CR_2026 / RAW_2026"
+],
+"2026|PCR": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Potential Capture Rate = CR_2026 / FPR_2026"
+],
+"2026|UPSIDE": [
+null,
+null,
+null,
+"UNKNOWN",
+null,
+0,
+"Upside_2026 = FPR_2026 − CR_2026 (CR 미확인 시 N/A)"
+],
+"2031|low|TS": [
+550.05,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|low|RAW_base": [
+158.43,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|low|RAW_expansion": [
+195.01,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|low|FPR_base": [
+41.52,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|low|FPR_expansion": [
+47.98,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|TS": [
+732.1,
+472.54,
+1077.44,
+"ESTIMATED",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|base|RAW_base": [
+218.9,
+136.11,
+332.08,
+"ESTIMATED",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|base|RAW_expansion": [
+269.28,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|base|FPR_base": [
+56.82,
+35.67,
+85.77,
+"ESTIMATED",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|base|FPR_expansion": [
+65.82,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|TS": [
+936.91,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+53,
+"TS_2031 = TS_2026 + Organic + Cloud + AI + Infra + Regulatory − Efficiency − Substitution [B-BRIDGE]"
+],
+"2031|high|RAW_base": [
+288.77,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_base]"
+],
+"2031|high|RAW_expansion": [
+354.76,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+43,
+"RAW_2031 = Σ(TS_2031_i × Addressability_i) [C-ADDR 2031_expansion]"
+],
+"2031|high|FPR_base": [
+74.58,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"2031|high|FPR_expansion": [
+86.49,
+null,
+null,
+"SCENARIO",
+"ESTIMATED_LOW",
+33,
+"FPR_2031 = Σ(RAW_2031_i × Capture_Ceiling_i) [C-CAP 2031]"
+],
+"target|TARGET": [
+28.41,
+"SCENARIO",
+"Target_2031(시나리오) = FPR_2031(base) × 0.5 [D-TGT] — 경영진 의사결정 필요"
+],
+"target|TARGET_SOW": [
+0.129778,
+"SCENARIO",
+"Target_SOW = Target_2031 / RAW_2031(base)"
+]
+}
+},
+"portfolio_aggregate": {
+"2026_base": {
+"TS": 113542.25,
+"RAW": 29950.11,
+"FPR": 8199.81,
+"TARGET": 0.0,
+"n_ts": 42,
+"n_raw": 43,
+"n_fpr": 43,
+"n_mismatch": 5,
+"excluded": [
+"KA06",
+"KA07",
+"KA08",
+"KA45",
+"KA46"
+]
+},
+"2031_low": {
+"TS": 132795.94,
+"RAW": 43395.55,
+"FPR": 11998.53,
+"TARGET": 0.0,
+"n_ts": 42,
+"n_raw": 43,
+"n_fpr": 43,
+"n_mismatch": 5,
+"excluded": [
+"KA06",
+"KA07",
+"KA08",
+"KA45",
+"KA46"
+]
+},
+"2031_base": {
+"TS": 170615.49,
+"RAW": 59328.4,
+"FPR": 16168.26,
+"TARGET": 8084.13,
+"n_ts": 42,
+"n_raw": 43,
+"n_fpr": 43,
+"n_mismatch": 5,
+"excluded": [
+"KA06",
+"KA07",
+"KA08",
+"KA45",
+"KA46"
+]
+},
+"2031_high": {
+"TS": 215030.59,
+"RAW": 79081.71,
+"FPR": 21367.81,
+"TARGET": 0.0,
+"n_ts": 42,
+"n_raw": 43,
+"n_fpr": 43,
+"n_mismatch": 5,
+"excluded": [
+"KA06",
+"KA07",
+"KA08",
+"KA45",
+"KA46"
+]
+}
+},
+"strategy": [
+{
+"area": "Connectivity",
+"RAW_2026": 7436.72,
+"FPR_2026": 3354.38,
+"RAW_2031": 11108.1,
+"FPR_2031": 5007.31,
+"FPR_2031_expansion": 5007.31,
+"FPR_2031_high": 6024.34,
+"FPR_CAGR": 0.083424,
+"n_accounts": 43,
+"priority_score": 73.3,
+"recommendation_type": "EXPAND"
+},
+{
+"area": "AI Infrastructure",
+"RAW_2026": 2679.74,
+"FPR_2026": 652.36,
+"RAW_2031": 12367.46,
+"FPR_2031": 3426.0,
+"FPR_2031_expansion": 3915.43,
+"FPR_2031_high": 5354.85,
+"FPR_CAGR": 0.39335,
+"n_accounts": 40,
+"priority_score": 63.4,
+"recommendation_type": "PARTNER"
+},
+{
+"area": "Data Center / IDC",
+"RAW_2026": 7693.12,
+"FPR_2026": 2648.3,
+"RAW_2031": 12422.64,
+"FPR_2031": 4100.94,
+"FPR_2031_expansion": 4328.77,
+"FPR_2031_high": 5273.57,
+"FPR_CAGR": 0.091398,
+"n_accounts": 42,
+"priority_score": 63.3,
+"recommendation_type": "INVEST"
+},
+{
+"area": "Cloud",
+"RAW_2026": 3554.06,
+"FPR_2026": 507.22,
+"RAW_2031": 9179.81,
+"FPR_2031": 1581.07,
+"FPR_2031_expansion": 1897.28,
+"FPR_2031_high": 2204.56,
+"FPR_CAGR": 0.255309,
+"n_accounts": 40,
+"priority_score": 47.2,
+"recommendation_type": "PARTNER"
+},
+{
+"area": "Security",
+"RAW_2026": 3578.14,
+"FPR_2026": 536.72,
+"RAW_2031": 6596.67,
+"FPR_2031": 1187.4,
+"FPR_2031_expansion": 1781.1,
+"FPR_2031_high": 1441.28,
+"FPR_CAGR": 0.172114,
+"n_accounts": 39,
+"priority_score": 39.6,
+"recommendation_type": "M&A_REVIEW"
+},
+{
+"area": "AI Transformation / SI",
+"RAW_2026": 1191.15,
+"FPR_2026": 119.11,
+"RAW_2031": 2656.88,
+"FPR_2031": 318.83,
+"FPR_2031_expansion": 446.36,
+"FPR_2031_high": 425.77,
+"FPR_CAGR": 0.217636,
+"n_accounts": 35,
+"priority_score": 24.9,
+"recommendation_type": "PARTNER"
+},
+{
+"area": "SI / Managed Services",
+"RAW_2026": 1661.77,
+"FPR_2026": 166.18,
+"RAW_2031": 2351.84,
+"FPR_2031": 282.22,
+"FPR_2031_expansion": 395.11,
+"FPR_2031_high": 337.44,
+"FPR_CAGR": 0.111741,
+"n_accounts": 32,
+"priority_score": 22.2,
+"recommendation_type": "MAINTAIN"
+},
+{
+"area": "기타",
+"RAW_2026": 2155.41,
+"FPR_2026": 215.54,
+"RAW_2031": 2645.0,
+"FPR_2031": 264.5,
+"FPR_2031_expansion": 431.23,
+"FPR_2031_high": 306.0,
+"FPR_CAGR": 0.041788,
+"n_accounts": 24,
+"priority_score": 20.3,
+"recommendation_type": "MAINTAIN"
+}
+]
+}

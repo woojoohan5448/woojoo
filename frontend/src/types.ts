@@ -12,6 +12,8 @@ export interface MetricRec {
   formula: string; inputs: Input[]; evidence_ids: string[]; assumption_ids: string[]; notes: string[]; unit: string
   by_cat?: Record<Category, number> | null
   grade?: Grade
+  target_source?: 'MANAGEMENT_APPROVED' | 'SCENARIO_FPR_ATTAINMENT' | null
+  masked?: boolean
 }
 export interface Bridge { components: Record<string, number>; params: Record<string, number | string>; clamped: string[]; organic_cagr?: number }
 export interface Block2031 {
@@ -47,9 +49,11 @@ export interface Account {
   conflicts?: { existing_fact_id?: string; existing_value?: unknown; new_value?: unknown; unit?: string; explanation?: string; evidence_ids?: string[] }[]
   comparables?: { peer_account_or_company?: string; metric?: string; value?: unknown; unit?: string; why_comparable?: string }[]
   estimation_inputs?: { name?: string; value?: unknown; unit?: string; basis?: string; evidence_ids?: string[] }[]
+  area_evidence?: Record<string, AccountAreaEvidence>
   reconciliation?: Reconciliation | null; research_log: { step: string; target: string; result: string; detail: string }[]
 }
-export interface AggRow { TS: number; RAW: number; FPR: number; TARGET: number; n_ts: number; n_raw: number; n_fpr: number; n_mismatch: number; excluded: string[] }
+export interface AggRow { TS: number; RAW: number; FPR: number; TARGET: number | null; n_ts: number; n_raw: number; n_fpr: number; n_mismatch: number; excluded: string[]
+  TARGET_scenario?: number; n_target_approved?: number; n_target_scenario?: number }
 export interface DimRow { TS_2026: number; RAW_2026: number; FPR_2026: number; TS_2031: number; RAW_2031: number; FPR_2031: number; n: number; n_est: number; conf_sum: number }
 export interface StrategyRow {
   area: string; categories: Category[]; RAW_2026: number; FPR_2026: number; RAW_2031: number; FPR_2031: number; FPR_2031_expansion: number; FPR_2031_high: number
@@ -57,7 +61,17 @@ export interface StrategyRow {
   lgu_position?: string; entry_feasibility?: string; competition?: string; required_capabilities?: string; capability_gap?: string
   investment_need?: string; difficulty?: string; recommendation?: string; recommendation_type?: string; evidence_refs?: string[]; caveats?: string
   priority_score: number; score_formula: string
+  evidence?: AreaEvidence
 }
+export type EvidenceTier = 'EVIDENCE_BASED' | 'MODEL_ESTIMATED' | 'UNVERIFIED'
+export interface AreaEvidence {
+  n_accounts_model: number; n_accounts_signal: number; n_accounts_incumbent_obs: number; n_accounts_specific_share: number
+  fpr2031_by_tier: Record<EvidenceTier, number>; accounts_by_tier: Record<EvidenceTier, string[]>
+  evidence_share: number | null; evidence_level: 'SUFFICIENT' | 'PARTIAL' | 'INSUFFICIENT'
+  signals: { account_id: string; signal_id: string; type: string; description: string; period?: string; evidence_ids: string[] }[]
+  assumption_dependency: number | null; assumption_dependency_note: string; recommendation_mode: 'RECOMMENDATION' | 'HYPOTHESIS'
+}
+export interface AccountAreaEvidence { tier: EvidenceTier; value_basis: 'ACCOUNT_SPECIFIC_SHARE' | 'MODEL_ALLOCATED'; evidence_types: string[]; observation_ids: Record<string, string[]>; FPR_2031: number | null }
 export interface Dashboard {
   meta: { coverage?: { current: Coverage; baseline: Coverage | null }; contains_internal_data?: boolean; internal_layers?: Record<string, number>; data_version: string; generated_at: string; unit: string; n_accounts: number; status_counts: Record<string, number>; metric_status_2026: Record<string, Record<string, number>>; fact_status: Record<string, number>; fx_usd_krw: number; is_test_data: boolean }
   params: any; parameter_evidence: Record<string, { basis: string; refs: string[]; comment: string }>

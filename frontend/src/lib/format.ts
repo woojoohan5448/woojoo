@@ -67,14 +67,17 @@ export const SOURCE_LEVEL_LABEL: Record<string, string> = {
   BENCHMARK: '벤치마크', MIXED: '혼합', SECONDARY: '2차 출처', '-': '',
 }
 
+/** English metric names come from the central glossary (판서자 원문, e.g. "Realistical"). Keys unchanged. */
 export const METRIC_LABEL: Record<string, string> = {
-  TS: 'Total IT Spending', RAW: 'Realistically Addressable Wallet', FPR: 'U+ Full Potential Revenue',
-  CR: 'Current Revenue', TARGET: '2031 Target Revenue', REV: 'Revenue', CSOW: 'Current Share of Wallet',
-  PCR: 'Potential Capture Rate', UPSIDE: 'Upside Potential', TARGET_SOW: 'Target SOW',
+  TS: `${GLOSSARY.TS.en} (${GLOSSARY.TS.ko})`, RAW: `${GLOSSARY.RAW.en} (${GLOSSARY.RAW.ko})`, FPR: `${GLOSSARY.FPR.en} (${GLOSSARY.FPR.ko})`,
+  CR: `${GLOSSARY.CR.en} (${GLOSSARY.CR.ko})`, TARGET: `${GLOSSARY.TARGET.en} (${GLOSSARY.TARGET.ko})`, REV: 'Revenue',
+  CSOW: `${GLOSSARY.CSOW.en} (${GLOSSARY.CSOW.ko})`, PCR: `${GLOSSARY.PCR.en} (${GLOSSARY.PCR.ko})`,
+  UPSIDE: `${GLOSSARY.UPSIDE.en} (${GLOSSARY.UPSIDE.ko})`, TARGET_SOW: `${GLOSSARY.TARGET_SOW.en} (${GLOSSARY.TARGET_SOW.ko})`,
   TS_CAGR: 'TS CAGR', RAW_CAGR: 'RAW CAGR', FPR_CAGR: 'FPR CAGR',
 }
 
 import type { Account, NAClass, Selection } from '../types'
+import { GLOSSARY } from './glossary'
 
 export const NA_LABEL: Record<string, string> = {
   INTERNAL_REQUIRED: 'INTERNAL INPUT REQUIRED', INSUFFICIENT_EVIDENCE: 'RESEARCH GAP', NOT_APPLICABLE: 'NOT APPLICABLE', ERROR: 'VALIDATION ERROR',
@@ -99,3 +102,6 @@ export function missingText(a: Account, sel: Pick<Selection, 'year' | 'metric'>,
   const n = naInfo(a, sel)
   return n && NA_LABEL[n.class] ? NA_LABEL[n.class] : fallback
 }
+
+export const TIER_LABEL: Record<string, string> = { EVIDENCE_BASED: 'Evidence-based (근거 확인)', MODEL_ESTIMATED: 'Model-estimated (모델 추정)', UNVERIFIED: 'Unverified (검증 근거 부족)' }
+export const LEVEL_LABEL: Record<string, string> = { SUFFICIENT: '근거 충분', PARTIAL: '근거 일부', INSUFFICIENT: '근거 부족' }

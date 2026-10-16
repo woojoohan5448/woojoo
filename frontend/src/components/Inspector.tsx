@@ -1,8 +1,16 @@
 import type { Account, AddrCase, Dashboard, Evidence, MetricRec, Scenario, Selection } from '../types'
+import { TermTip } from './Term'
 import { CAT_LABEL, METRIC_LABEL, NA_KO, STATUS_LABEL, eok, fmtRec, missingText, naInfo, pct } from '../lib/format'
 import { resolveMetric } from '../lib/data'
 import { ConfidenceMeter, GradeBadge, Pill, StatusBadge } from './badges'
 import { BRIDGE_LABEL } from './charts'
+
+function termCode(sel: Selection): string {
+  if (sel.metric === 'REV') return sel.year === 2026 ? 'CR' : 'TARGET'
+  if (sel.metric.endsWith('_CAGR')) return 'Y2031'
+  if (sel.year === 2031 && ['TS', 'RAW', 'FPR'].includes(sel.metric)) return sel.metric
+  return sel.metric
+}
 
 function Section({ n, title, children }: { n: number; title: string; children: React.ReactNode }) {
   return (
@@ -125,7 +133,7 @@ export default function Inspector({ data, account: a, sel, scen, addr }: Props) 
   return (
     <div>
       <div className="kicker">{a.original_name} · {label}</div>
-      <h3 className="text-[15px] font-semibold text-ink2 mt-0.5">{METRIC_LABEL[sel.metric === 'REV' ? (sel.year === 2026 ? 'CR' : 'TARGET') : sel.metric]}</h3>
+      <h3 className="text-[15px] font-semibold text-ink2 mt-0.5"><TermTip code={termCode(sel)}>{METRIC_LABEL[sel.metric === 'REV' ? (sel.year === 2026 ? 'CR' : 'TARGET') : sel.metric]}</TermTip></h3>
       <div className="flex items-baseline gap-2 mt-1">
         <span className="num text-[28px] font-bold leading-none">{rec.value === null ? <span className="text-[18px]">{missingText(a, sel)}</span> : fmtRec(rec)}</span>
       </div>

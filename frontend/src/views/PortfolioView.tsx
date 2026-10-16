@@ -78,7 +78,7 @@ export default function PortfolioView({ data, palette: p, onSelect, themeKey }: 
   return (
     <div className="space-y-4 p-4">
       <section className="card p-4">
-        <h2 className="text-[18px] font-bold">Executive Portfolio View</h2>
+        <h2 className="text-[18px] font-bold">전사 기회 분석 <span className="text-[13px] font-semibold text-ink3">Opportunity Portfolio</span></h2>
         <p className="text-[12.5px] text-ink2">53개 Key Account 통합. 모든 합계는 <b>근거가 있는 고객의 부분합</b>입니다(2026 TS 산출 {agg.n_ts}개사, 정의 상이 {agg.n_mismatch}개사 별도). 계열사·공급자-구매자 중복 위험은 하단 표 참조.</p>
       </section>
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
